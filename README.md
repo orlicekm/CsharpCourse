@@ -1,3 +1,3 @@
-# IBT_ICS
+# C# course
 
 TODO

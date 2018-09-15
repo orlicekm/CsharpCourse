@@ -15,7 +15,7 @@
 ---
 #Literature to study
 ##C# 7.0 in a Nutshell: The Definitive Reference
-![nieco](/Lecture01/Assets/img/CsharpinNUtshell.jpg)
+![nieco](/Lectures/Lecture01/Assets/img/CsharpinNUtshell.jpg)
 ISBN 9781491987650
 
 +++

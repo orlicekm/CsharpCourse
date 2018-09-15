@@ -1,6 +1,3 @@
-# GitPitch - The Template
+# Lecture 01
 
-*THE FASTEST WAY FROM IDEA TO PRESENTATION*
-
-For details, see the complete template documentation [here](https://gitpitch.com/docs/the-template).
-
+[Slides](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture01)

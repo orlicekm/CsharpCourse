@@ -40,9 +40,8 @@ todo
 </div>
 
 ---
-<h2>Visual Studio<h2>
-<img src="/Lectures/Lecture01/Assets/img/VisualStudioLogo.png" />
-<a href="Download"https://visualstudio.microsoft.com</a>
+<a href="https://visualstudio.microsoft.com/en/vs/"> <img src="/Lectures/Lecture01/Assets/img/VisualStudioLogo.png" /></a>
+<a href="https://visualstudio.microsoft.com/en/free-developer-offers">Free download</a>
 
 +++
 <h2>Instalation<h2>

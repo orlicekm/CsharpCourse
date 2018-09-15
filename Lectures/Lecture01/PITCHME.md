@@ -5,19 +5,17 @@
 </div>
 
 ---
-#Syllabus of lectures:
-//todo
+<h2>Syllabus of lectures:</h2>
+todo
 
 +++
-#Syllabus of laboratories
-//todo
+<h2>Syllabus of laboratories</h2>
+todo
 
 ---
-<div class="center">
 <h2>Literature to study</h2>
 <img src="/Lectures/Lecture01/Assets/img/CsharpinNutshell.jpg" />
 </br>ISBN 9781491987650
-<div>
 
 +++
 <h2>Recommended literature</h2>
@@ -31,7 +29,7 @@
 </div>
 
 +++
-<h2>Recommended literature<h/2>
+<h2>Recommended literature</h2>
 <div class="left">
 <img src="/Lectures/Lecture01/Assets/img/DesignPatterns.png" />
 </br>ISBN 9780201633610
@@ -40,3 +38,16 @@
 <img src="/Lectures/Lecture01/Assets/img/UnitTesting.png" />
 </br>ISBN 9781617290893
 </div>
+
+---
+<h2>Visual Studio<h2>
+<img src="/Lectures/Lecture01/Assets/img/VisualStudioLogo.png" />
+<a href="Download"https://visualstudio.microsoft.com</a>
+
++++
+<h2>Instalation<h2>
+todo
+
+<!-- Linky pre fit a fekt? -->
++++
+<h2></h2>

@@ -13,10 +13,11 @@
 //todo
 
 ---
+<div>
 #Literature to study
 <img src="/Lectures/Lecture01/Assets/img/CsharpinNutshell.jpg" />
 </br>ISBN 9781491987650
-
+<div>
 +++
 Recommended literature
 <div class="left">

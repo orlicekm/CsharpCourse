@@ -41,12 +41,12 @@ todo
 
 ---
 <img src="/Lectures/Lecture01/Assets/img/VisualStudioLogo.png" />
-<a href="https://visualstudio.microsoft.com/vs/">Free download</a>
+</br><a href="https://visualstudio.microsoft.com/vs/">Free download</a>
 
 <!-- Linky pre fit a fekt? -->
 
 +++
-### Compare Visual Studio versions
+## Compare Visual Studio versions
 |  Supported Features                | Community |  Professional | Enterprise |
 | ---------------------------------- | --------- | ------------- | ---------- |
 | Supported Usage scenarios          | ⚫⚫⚫◯  | ⚫⚫⚫⚫     | ⚫⚫⚫⚫   |
@@ -59,8 +59,66 @@ todo
 
 
 +++
-<h2>Instalation<h2>
-todo
+<h2>Installation</h2>
+
+1.  Download Visual Studio
+2.  Install the Visual Studio installer
+3.  Select workloads
+    * Select individual components
+    * Select language packs 
+4. Start developing
+
+<a href="https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2017">Installation guide</a>
 
 ---
-<h1>Tools</h1>
+## Recommended tools  
+[**Resharper**](https://www.jetbrains.com/resharper/)  
+Extends Visual Studio with code inspections. For most inspections provides quick-fixes to improve code in one way or another. Help safely organize code and move it around the solution.
+
++++
+[**Code metrices**](https://marketplace.visualstudio.com/items?itemName=vkacmar.RoslynCodeMetrices)  
+Visual Studio extension that helps to monitor the code complexity. As you type, the method complexity "health" is updated, and the complexity is shown near the method.
+
++++
+[**Postifx templates**](https://github.com/controlflow/resharper-postfix)  
+Visual Studio extension. The basic idea is to prevent caret jumps backwards while typing C# code.
+
++++
+[**Mnemonic Templates**](https://github.com/JetBrains/mnemonics)  
+Templates for ReSharper that let you quickly generate code and data structures by typing in names.
+
++++
+[**LinqPad**](http://www.linqpad.net/)  
+Program that is not just for LINQ queries, but any C# expression, statement block or program. Put an end to those hundreds of Visual Studio Console projects cluttering your source folder and join the revolution of LINQPad scripters and incremental developers.
+
++++
+[**DotPeek**](https://www.jetbrains.com/decompiler/)  
+Tool based on ReSharper's bundled decompiler. It can reliably decompile any .NET assembly into equivalent C# or IL code.
+
++++
+[**MarkdownEditor**](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)  
+A full featured Markdown editor with live preview and syntax highlighting. Supports GitHub flavored Markdown.
+
++++
+[**Entity Framework 6 Power Tools**](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EntityFramework6PowerToolsCommunityEdition)  
+Useful design-time utilities for EF 6, accessible through the Visual Studio Solution Explorer context menu when right-clicking on a file containing a derived DbContext class.
+
++++
+[**OzCode**](https://www.oz-code.com/)  
+Advanced debugging tools. Analyze your queries and see how items passed through the LINQ pipeline from the comfort of Visual Studio.
+
++++
+[**GitFlow**](https://marketplace.visualstudio.com/items?itemName=vs-publisher-57624.GitFlowforVisualStudio2017)  
+Team Explorer extension integrates GitFlow into your development workflow. It lets you easily create and finish feature, release and hotfix branches right from Team Explorer. 
+
+---
+## References:
+
+[C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
+[Visual Studio Documentation](https://docs.microsoft.com/en-us/visualstudio)  
+[Microsoft Visual Studio](https://visualstudio.microsoft.com)  
+[Resharper](https://www.jetbrains.com/resharper/)  
+[IW5](https://github.com/FitIW/5)  
+
+
+Google images

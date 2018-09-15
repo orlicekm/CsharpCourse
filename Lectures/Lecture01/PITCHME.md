@@ -1,4 +1,4 @@
-# Introduction to the C# language and .NET Platform
+﻿# Introduction to the C# language and .NET Platform
 ## Language basics, syntax, instalation and introduction to Visual Studio
 <div class="right">
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
@@ -40,13 +40,27 @@ todo
 </div>
 
 ---
-<a href="https://visualstudio.microsoft.com/en/vs/"><img src="/Lectures/Lecture01/Assets/img/VisualStudioLogo.png" /></a>
-<a href="https://visualstudio.microsoft.com/en/free-developer-offers">Free download</a>
+<img src="/Lectures/Lecture01/Assets/img/VisualStudioLogo.png" />
+<a href="https://visualstudio.microsoft.com/vs/">Free download</a>
+
+<!-- Linky pre fit a fekt? -->
+
++++
+### Compare Visual Studio versions
+|  Supported Features                | Community |  Professional | Enterprise |
+| ---------------------------------- | --------- | ------------- | ---------- |
+| Supported Usage scenarios          | ⚫⚫⚫◯  | ⚫⚫⚫⚫     | ⚫⚫⚫⚫   |
+| Development Platform Support       | ⚫⚫⚫◯  | ⚫⚫⚫⚫     | ⚫⚫⚫⚫   |
+| Integrated Development Environment | ⚫⚫⚫◯  | ⚫⚫⚫◯      | ⚫⚫⚫⚫  |
+| Advanced Debugging and Diagnostics | ⚫⚫◯◯  | ⚫⚫◯◯      | ⚫⚫⚫⚫  |
+| Testing Tools                      | ⚫◯◯◯  | ⚫◯◯◯       | ⚫⚫⚫⚫  |
+| Cross-platform Development         | ⚫⚫◯◯  | ⚫⚫◯◯      | ⚫⚫⚫⚫  |
+| Collaboration Tools and Features   | ⚫⚫⚫◯  | ⚫⚫⚫◯      | ⚫⚫⚫⚫  |
+
 
 +++
 <h2>Instalation<h2>
 todo
 
-<!-- Linky pre fit a fekt? -->
-+++
-<h2></h2>
+---
+<h1>Tools</h1>

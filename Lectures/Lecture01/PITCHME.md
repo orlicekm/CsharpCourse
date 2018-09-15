@@ -16,7 +16,7 @@
 #Literature to study
 <div class="center">
     <img src="/Lectures/Lecture01/Assets/img/CsharpinNutshell.jpg" />
-    </br>ISBN 9781491987650
+    
 <div>
 
 +++

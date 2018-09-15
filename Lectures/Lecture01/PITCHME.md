@@ -40,7 +40,7 @@ todo
 </div>
 
 ---
-<a href="https://visualstudio.microsoft.com/en/vs/"> <img src="/Lectures/Lecture01/Assets/img/VisualStudioLogo.png" /></a>
+<a href="https://visualstudio.microsoft.com/en/vs/"><img src="/Lectures/Lecture01/Assets/img/VisualStudioLogo.png" /></a>
 <a href="https://visualstudio.microsoft.com/en/free-developer-offers">Free download</a>
 
 +++

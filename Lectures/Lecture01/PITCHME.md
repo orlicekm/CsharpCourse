@@ -13,14 +13,14 @@
 //todo
 
 ---
-#Literature to study
 <div class="center">
+<h2>Literature to study</h2>
 <img src="/Lectures/Lecture01/Assets/img/CsharpinNutshell.jpg" />
 </br>ISBN 9781491987650
 <div>
 
 +++
-Recommended literature
+<h2>Recommended literature</h2>
 <div class="left">
 <img src="/Lectures/Lecture01/Assets/img/PrincipesPatternsPracticesinCsharp.png" />
 </br>ISBN 9780131857254
@@ -31,12 +31,12 @@ Recommended literature
 </div>
 
 +++
-Recommended literature
+<h2>Recommended literature<h/2>
 <div class="left">
 <img src="/Lectures/Lecture01/Assets/img/DesignPatterns.png" />
-ISBN 9780201633610
+</br>ISBN 9780201633610
 </div>
 <div class="right">
 <img src="/Lectures/Lecture01/Assets/img/UnitTesting.png" />
-ISBN 9781617290893
+</br>ISBN 9781617290893
 </div>

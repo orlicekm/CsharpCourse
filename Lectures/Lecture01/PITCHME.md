@@ -14,28 +14,29 @@
 
 ---
 #Literature to study
-##C# 7.0 in a Nutshell: The Definitive Reference
-![CsharpinNutshell](/Lectures/Lecture01/Assets/img/CsharpinNutshell.jpg)
+## C# 7.0 in a Nutshell: The Definitive Reference
+![C#inNutshell](/Lectures/Lecture01/Assets/img/CsharpinNutshell.jpg)
+
 ISBN 9781491987650
 
 +++
 Recommended literature
 <div class="left">
-    <img src="./Assets/img/PrincipesPatternsPracticesinCsharp.png" />
+    ![PrincipesPatternsPracticesInC#](/Lectures/Lecture01/Assets/img/PrincipesPatternsPracticesinCsharp.png)
     ISBN 9780131857254
 </div>
 <div class="right">
-    <img src="./Assets/img/CleanCode.png" />
+    ![CleanCode](/Lectures/Lecture01/Assets/img/CleanCode.png)
     ISBN 9780132350884
 </div>
 
 +++
 Recommended literature
 <div class="left">
-    <img src="./Assets/img/DesignPatterns.png" />
+    ![DesignPatterns](/Lectures/Lecture01/Assets/img/DesignPatterns.png)
     ISBN 9780201633610
 </div>
 <div class="right">
-    <img src="./Assets/img/UnitTesting.png" />
+    ![UnitTesting](/Lectures/Lecture01/Assets/img/UnitTesting.png)
     ISBN 9781617290893
 </div>

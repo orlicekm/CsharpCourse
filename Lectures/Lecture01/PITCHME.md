@@ -40,6 +40,9 @@ todo
 </div>
 
 ---
+# Visual Studio
+
++++
 <div class="center" >
 <img src="/Lectures/Lecture01/Assets/img/VisualStudioLogo.png" />
 </br><a href="https://visualstudio.microsoft.com/vs/">Free download</a>
@@ -80,7 +83,9 @@ todo
 </div>
 
 ---
-## Recommended tools  
+# Recommended tools  
+
++++
 [**Resharper**](https://www.jetbrains.com/resharper/)  
 Extends Visual Studio with code inspections. For most inspections provides quick-fixes to improve code in one way or another. Help safely organize code and move it around the solution.
 <div class="right">
@@ -185,34 +190,74 @@ Applications provide better response times and require less compute power. </br>
 
 +++
 ## Open source
-[**.NET Foundation**](https://dotnetfoundation.org/)
+* [**.NET Foundation**](https://dotnetfoundation.org/)
 * Independent, Innovative, Commencially-friendly
 * Google, JetBrains, Red Hat, Samsung, Unity...
 
 ---
 ## .NET Framework
-Based on Common Language Runtime (CLR) with additional libraries
+
 <div class="left">
 <ul>
-  <li>Library types</li>
-  <ul>
-    <li>Core Framework</li>
-    <ul>
-      <li>System.dll</li>
-      <li>System.Xml.dll</li>
-      <li>System.Dynamic.dll</li>
-    </ul> 
-    <li>Application technologies</li>
-    <ul>
-      <li>WPF - (PresentationCore.dll)</li>
-      <li>WCF</li>
-    </ul> 
-  </ul> 
-</ul>    
+  <li>Software framework developed by Microsoft</li>
+  <li>Provides language interoperability</li>
+  <li>Executed in the Common Language Runtime (CLR)</li>
+  <li>Includes a Standard libraries</li>
+</ul>
+<div class="right">
+<img src="/Lectures/Lecture01/Assets/img/Common_Language_Infrastructure.png" />
 </div>
+
++++
+## Architecture
+<div class="center">
+<img src="/Lectures/Lecture01/Assets/img/dot_net_architecture.png" />
+</div>
+
++++
+## CLR - Common Language Runtime
+* The virtual machine component of Microsoft's .NET framework 
+* Manages the execution
+* Just-in-time compilation
+* Similar to Java Virtual Machine
+
+<div class="center">
+<img src="/Lectures/Lecture01/Assets/img/dot_net_clr.png" />
+</div>
+
++++
+### Benefits:
+* performance improvements
+* The ability to easily use components developed in other languages
+* Extensible types provided by a class library.
+* Language features such as inheritance, interfaces, and overloading for OOP
+* Support for explicit free threading that allows creation of multithreaded
+* Support for structured exception handling
+* Support for custom attributes
+* Garbage collection
+* Use of delegates instead of function pointers
+
++++
+## Standard Libraries
+|  Library               | Namespaces | 
+|------------------------| ---------- |
+| Base Class Library     | System, System.Collections, System.Collections.Generic, System.Diagnostics, System.IO, System.Text, System.Threading... |
+| Runtime Infrastructure Library  | System, System.Reflection, System.Runtime.CompilerServices, System.Runtime.InteropServices... |
+| Network Library | System, System.Net, System.Net.Sockets...  |
+| Reflection Library | System.Globalization, System.Reflection...  | 
+| XML Library  | System.Xml  |
+| ⋮        | ⋮  |
+
++++
+## In The Nutshell
 <div class="right">
 <img src="/Lectures/Lecture01/Assets/img/Csh_in_nutshell_framework.png" />
 </div>
+
+---
+# C# Language Basics
+todo
+
 ---
 ## References:
 
@@ -221,6 +266,7 @@ Based on Common Language Runtime (CLR) with additional libraries
 [Microsoft Visual Studio](https://visualstudio.microsoft.com)  
 [Microsoft](https://www.microsoft.com)  
 [Resharper](https://www.jetbrains.com/resharper/)  
+[Wikipedia](https://en.wikipedia.org)  
 [IW5](https://github.com/FitIW/5)  
 
 

@@ -62,13 +62,14 @@ todo
 
 +++
 <h2>Installation</h2>
-
+<div class="center">
 1.  Download Visual Studio
 2.  Install the Visual Studio installer
 3.  Select workloads
     * Select individual components
     * Select language packs 
 4. Start developing
+</div>
 
 <div class="right">
 <a href="https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2017">Installation guide</a>

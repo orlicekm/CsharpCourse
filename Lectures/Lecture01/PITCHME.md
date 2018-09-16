@@ -207,7 +207,7 @@ Applications provide better response times and require less compute power. </br>
 +++
 ## Architecture
 <div class="center">
-<img src="/Lectures/Lecture01/Assets/img/dot_net_architecture.png" />
+<img src="/Lectures/Lecture01/Assets/img/dot_net_architecture.jpg" />
 </div>
 
 +++
@@ -224,14 +224,14 @@ Applications provide better response times and require less compute power. </br>
 +++
 ## Benefits:
 * Performance improvements
-* The ability to easily use components developed in other languages
+* Easy use of components developed in other languages
 * Extensible types provided by a class library
-* Language features such as inheritance, interfaces, and overloading for OOP
-* Supports explicit free threading that allows creation of multithreaded
-* Supports structured exception handling
-* Supports custom attributes
+* Inheritance, interfaces, and overloading for OOP
+* Free threading
+* Structured exception handling
+* Custom attributes
 * Garbage collection
-* Use of delegates instead of function pointers
+* Delegates instead of function pointers
 
 +++
 ## Standard Libraries
@@ -245,7 +245,7 @@ Applications provide better response times and require less compute power. </br>
 | ⋮        | ⋮  |
 
 +++
-# Application models
+## Application models
 <div class="center">
 <img src="/Lectures/Lecture01/Assets/img/dot_net_libraries.png" />
 </div>
@@ -267,7 +267,7 @@ Applications provide better response times and require less compute power. </br>
 
 +++
 <div class="center">
-<img src="/Lectures/Lecture01/Assets/img/gc_collecting.0png" />
+<img src="/Lectures/Lecture01/Assets/img/gc_collecting.png" />
 </div>
 
 ---

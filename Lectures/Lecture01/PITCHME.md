@@ -141,7 +141,7 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 
 ---
 # Why choose .NET?
-## Productive
+## Productivity
 * Develop high quality applications faster
 * Modern language constructs
   *  Generics
@@ -167,6 +167,25 @@ Applications provide better response times and require less compute power. </br>
 <img src="/Lectures/Lecture01/Assets/img/Performance.png" />
 </br>Comparation of web application frameworks with tasks like JSON serialization, database access, and server side template rendering.
 </div>
+
++++
+## Security
+* Immediate security benefits via its managed runtime
+* Prevent critical issues like bad pointer manipulation
+* Quick releases when threats are discovered
+
++++
+## Large ecosystem
+* Libraries from the [NuGet package manager](https://www.nuget.org/)
+* Visual studio [marketplace](https://marketplace.visualstudio.com/)
+* [Extensive partners network](https://vspartner.com/Directory)
+* comumunity, MVPs, support organization...
+
++++
+## Open source
+[**.NET Foundation**](https://dotnetfoundation.org/)
+* Independent, Innovative, Commencially-friendly
+* Google, JetBrains, Red Hat, Samsung, Unity...
 
 ---
 ## .NET Framework

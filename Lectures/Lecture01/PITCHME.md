@@ -140,11 +140,63 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 </div>
 
 ---
+## Why choose .NET?
+### Productive
+* Develop high quality applications faster
+* Modern language constructs
+  *  Generics
+  *  Language Integrated Query (LINQ)
+  *  Asynchronous programming
+* Extensive class libraries
+* Common APIs
+* Multi-language support
+
++++
+### Amost every platform
+* iOS
+* Android
+* Windows
+* Windows server
+* Linux
+* Microservises on cloud
+
++++
+### Performance
+Applications provide better response times and require less compute power. 
+<img src="/Lectures/Lecture01/Assets/img/Performance.png" />
+</br>Comparation of web application frameworks with tasks like JSON serialization, database access, and server side template rendering.
+
+---
+## .NET Framework
+Based on Common Language Runtime (CLR) with additional libraries
+<div class="left">
+<ul>
+  <li>Library types</li>
+  <ul>
+    <li>Core Framework</li>
+    <ul>
+      <li>System.dll</li>
+      <li>System.Xml.dll</li>
+      <li>System.Dynamic.dll</li>
+    </ul> 
+    <li>Application technologies</li>
+    <ul>
+      <li>WPF - (PresentationCore.dll)</li>
+      <li>WCF</li>
+    </ul> 
+  </ul> 
+</ul>    
+</div>
+<div class="right">
+<img src="/Lectures/Lecture01/Assets/img/Csh_in_nutshell_framework.png" />
+</div>
+---
 ## References:
 
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [Visual Studio Documentation](https://docs.microsoft.com/en-us/visualstudio)  
 [Microsoft Visual Studio](https://visualstudio.microsoft.com)  
+[Microsoft](https://www.microsoft.com)  
 [Resharper](https://www.jetbrains.com/resharper/)  
 [IW5](https://github.com/FitIW/5)  
 

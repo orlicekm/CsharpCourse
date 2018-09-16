@@ -63,12 +63,16 @@ todo
 +++
 <h2>Installation</h2>
 <div class="center">
-1.  Download Visual Studio
-2.  Install the Visual Studio installer
-3.  Select workloads
-    * Select individual components
-    * Select language packs 
-4. Start developing
+<ol type="1">
+  <li>Download Visual Studio</li>
+  <li>Install the Visual Studio installer</li>
+  <li>Select workloads</li>
+    <ul>
+    <li>Select individual components</li>
+    <li>Select language packs</li>
+    </ul>
+  <li>Start developing</li>
+</ol>
 </div>
 
 <div class="right">

@@ -89,7 +89,7 @@ Extends Visual Studio with code inspections. For most inspections provides quick
 Visual Studio extension that helps to monitor the code complexity. As you type, the method complexity "health" is updated, and the complexity is shown near the method.
 
 
-<!---+++
+<!---
 [**Postifx templates**](https://github.com/controlflow/resharper-postfix)  
 Visual Studio extension. The basic idea is to prevent caret jumps backwards while typing C# code.
 NOT UPDATED -->

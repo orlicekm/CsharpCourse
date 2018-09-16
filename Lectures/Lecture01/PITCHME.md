@@ -85,9 +85,16 @@ todo
 Extends Visual Studio with code inspections. For most inspections provides quick-fixes to improve code in one way or another. Help safely organize code and move it around the solution.
 
 +++
+[**Azure DevOps**](https://visualstudio.microsoft.com/team-services/)  
+Before Visual Studio Team Services. 
+* Xloud-hosted private Git repos
+* Agile planning
+* Build managment
+* Test Plans
+
++++
 [**Code metrices**](https://marketplace.visualstudio.com/items?itemName=vkacmar.RoslynCodeMetrices)  
 Visual Studio extension that helps to monitor the code complexity. As you type, the method complexity "health" is updated, and the complexity is shown near the method.
-
 
 <!---
 [**Postifx templates**](https://github.com/controlflow/resharper-postfix)  

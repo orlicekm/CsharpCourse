@@ -87,10 +87,7 @@ todo
 
 +++
 [**Resharper**](https://www.jetbrains.com/resharper/)  
-Extends Visual Studio with code inspections. For most inspections provides quick-fixes to improve code in one way or another. Help safely organize code and move it around the solution.
-<div class="right">
-<a href="https://www.jetbrains.com/resharper/features/">Features</a>
-</div>
+Extends Visual Studio with code inspections. For most inspections provides quick-fixes to improve code in one way or another. Help safely organize code and move it around the solution. For more details see [features](https://www.jetbrains.com/resharper/features/).
 
 +++
 [**Azure DevOps**](https://visualstudio.microsoft.com/team-services/)  
@@ -139,10 +136,7 @@ Advanced debugging tools. Analyze your queries and see how items passed through 
 
 +++
 [**GitFlow**](https://marketplace.visualstudio.com/items?itemName=vs-publisher-57624.GitFlowforVisualStudio2017)  
-Team Explorer extension integrates GitFlow into your development workflow. It lets you easily create and finish feature, release and hotfix branches right from Team Explorer. 
-<div class="right">
-<a href="https://git-scm.com/book/en/v2">Pro Git book</a>
-</div>
+Team Explorer extension integrates GitFlow into your development workflow. It lets you easily create and finish feature, release and hotfix branches right from Team Explorer.  For more deails about git recommends [Pro Git book](https://git-scm.com/book/en/v2).
 
 ---
 # Why choose .NET?
@@ -195,15 +189,17 @@ Applications provide better response times and require less compute power. </br>
 * Google, JetBrains, Red Hat, Samsung, Unity...
 
 ---
-## .NET Framework
+# .NET
 
++++
 <div class="left">
-<ul>
-  <li>Software framework developed by Microsoft</li>
-  <li>Provides language interoperability</li>
-  <li>Executed in the Common Language Runtime (CLR)</li>
-  <li>Includes a Standard libraries</li>
-</ul>
+  <ul>
+    <li>Provides language interoperability</li>
+    <li>Executed in the Common Language Runtime (CLR)</li>
+    <li>Includes a Standard libraries</li>
+  </ul>
+</div>
+
 <div class="right">
 <img src="/Lectures/Lecture01/Assets/img/Common_Language_Infrastructure.png" />
 </div>
@@ -226,14 +222,14 @@ Applications provide better response times and require less compute power. </br>
 </div>
 
 +++
-### Benefits:
-* performance improvements
+## Benefits:
+* Performance improvements
 * The ability to easily use components developed in other languages
-* Extensible types provided by a class library.
+* Extensible types provided by a class library
 * Language features such as inheritance, interfaces, and overloading for OOP
-* Support for explicit free threading that allows creation of multithreaded
-* Support for structured exception handling
-* Support for custom attributes
+* Supports explicit free threading that allows creation of multithreaded
+* Supports structured exception handling
+* Supports custom attributes
 * Garbage collection
 * Use of delegates instead of function pointers
 
@@ -249,14 +245,36 @@ Applications provide better response times and require less compute power. </br>
 | ⋮        | ⋮  |
 
 +++
+# Application models
+<div class="center">
+<img src="/Lectures/Lecture01/Assets/img/dot_net_libraries.png" />
+</div>
+
++++
 ## In The Nutshell
-<div class="right">
+<div class="center">
 <img src="/Lectures/Lecture01/Assets/img/Csh_in_nutshell_framework.png" />
 </div>
 
++++
+## Garbage collector
+* Automated memory management without need of programmer intervention
+* Based on reachability from GC roots
+* 3 generations
+<div class="center">
+<img src="/Lectures/Lecture01/Assets/img/gc_generations.png" />
+</div>
+
++++
+<div class="center">
+<img src="/Lectures/Lecture01/Assets/img/gc_collecting.0png" />
+</div>
+
 ---
-# C# Language Basics
-todo
+# C#
+
++++
+todo hello world
 
 ---
 ## References:

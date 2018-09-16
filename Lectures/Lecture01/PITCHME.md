@@ -68,8 +68,8 @@ todo
   <li>Install the Visual Studio installer</li>
   <li>Select workloads</li>
     <ul>
-    <li>Select individual components</li>
-    <li>Select language packs</li>
+      <li>Select individual components</li>
+      <li>Select language packs</li>
     </ul>
   <li>Start developing</li>
 </ol>
@@ -87,10 +87,14 @@ Extends Visual Studio with code inspections. For most inspections provides quick
 +++
 [**Azure DevOps**](https://visualstudio.microsoft.com/team-services/)  
 Before Visual Studio Team Services. 
-* Xloud-hosted private Git repos
-* Agile planning
-* Build managment
-* Test Plans
+<div class="left">
+  <ul>
+    <li>Xloud-hosted private Git repos
+    <li>Agile planning
+    <li>Build managment
+    <li>Test Plans
+  </ul>
+</div>
 
 +++
 [**Code metrices**](https://marketplace.visualstudio.com/items?itemName=vkacmar.RoslynCodeMetrices)  

@@ -40,10 +40,12 @@ todo
 </div>
 
 ---
+<div class="center" >
 <img src="/Lectures/Lecture01/Assets/img/VisualStudioLogo.png" />
 </br><a href="https://visualstudio.microsoft.com/vs/">Free download</a>
+</div>
 
-<!-- Linky pre fit a fekt? -->
+<!-- Links for fit, fekt? -->
 
 +++
 ## Compare Visual Studio versions
@@ -68,7 +70,9 @@ todo
     * Select language packs 
 4. Start developing
 
+<div class="right">
 <a href="https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2017">Installation guide</a>
+</div>
 
 ---
 ## Recommended tools  
@@ -79,9 +83,11 @@ Extends Visual Studio with code inspections. For most inspections provides quick
 [**Code metrices**](https://marketplace.visualstudio.com/items?itemName=vkacmar.RoslynCodeMetrices)  
 Visual Studio extension that helps to monitor the code complexity. As you type, the method complexity "health" is updated, and the complexity is shown near the method.
 
+<!--
 +++
 [**Postifx templates**](https://github.com/controlflow/resharper-postfix)  
 Visual Studio extension. The basic idea is to prevent caret jumps backwards while typing C# code.
+NOT UPDATED -->
 
 +++
 [**Mnemonic Templates**](https://github.com/JetBrains/mnemonics)  

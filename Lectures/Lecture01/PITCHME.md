@@ -83,13 +83,16 @@ todo
 ## Recommended tools  
 [**Resharper**](https://www.jetbrains.com/resharper/)  
 Extends Visual Studio with code inspections. For most inspections provides quick-fixes to improve code in one way or another. Help safely organize code and move it around the solution.
+<div class="right">
+<a href="https://www.jetbrains.com/resharper/features/">Features</a>
+</div>
 
 +++
 [**Azure DevOps**](https://visualstudio.microsoft.com/team-services/)  
 Before Visual Studio Team Services. 
 <div class="left">
   <ul>
-    <li>Xloud-hosted private Git repos
+    <li>Cloud-hosted private Git repos
     <li>Agile planning
     <li>Build managment
     <li>Test Plans
@@ -132,6 +135,9 @@ Advanced debugging tools. Analyze your queries and see how items passed through 
 +++
 [**GitFlow**](https://marketplace.visualstudio.com/items?itemName=vs-publisher-57624.GitFlowforVisualStudio2017)  
 Team Explorer extension integrates GitFlow into your development workflow. It lets you easily create and finish feature, release and hotfix branches right from Team Explorer. 
+<div class="right">
+<a href="https://git-scm.com/book/en/v2">Pro Git book</a>
+</div>
 
 ---
 ## References:

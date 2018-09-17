@@ -177,7 +177,7 @@ Applications provide better response times and require less compute power. </br>
 * Libraries from the [NuGet package manager](https://www.nuget.org/)
 * Visual studio [marketplace](https://marketplace.visualstudio.com/)
 * [Extensive partners network](https://vspartner.com/Directory)
-* comumunity, MVPs, support organization...
+* Comumunity, MVPs, support organization...
 
 +++
 ## Open source
@@ -189,7 +189,7 @@ Applications provide better response times and require less compute power. </br>
 # .NET Platform
 
 +++
-<div class="left">
+<div class="center-left">
   <ul>
     <li>Provides language interoperability</li>
     <li>Executed in the Common Language Runtime (CLR)</li>
@@ -197,7 +197,7 @@ Applications provide better response times and require less compute power. </br>
   </ul>
 </div>
 
-<div class="right">
+<div class="center-right">
 <img src="/Lectures/Lecture01/Assets/img/Common_Language_Infrastructure.png" />
 </div>
 
@@ -231,6 +231,20 @@ Applications provide better response times and require less compute power. </br>
 * Delegates instead of function pointers
 
 +++
+## Garbage collector
+* Automated memory management without need of programmer intervention
+* Based on reachability from GC roots
+* 3 generations
+<div class="center">
+<img src="/Lectures/Lecture01/Assets/img/gc_generations.png" />
+</div>
+
++++
+<div class="center">
+<img src="/Lectures/Lecture01/Assets/img/gc_collecting.png" />
+</div>
+
++++
 ## Standard Libraries
 |  Library               | Namespaces | 
 |------------------------| ---------- |
@@ -253,25 +267,21 @@ Applications provide better response times and require less compute power. </br>
 <img src="/Lectures/Lecture01/Assets/img/Csh_in_nutshell_framework.png" />
 </div>
 
-+++
-## Garbage collector
-* Automated memory management without need of programmer intervention
-* Based on reachability from GC roots
-* 3 generations
-<div class="center">
-<img src="/Lectures/Lecture01/Assets/img/gc_generations.png" />
-</div>
-
-+++
-<div class="center">
-<img src="/Lectures/Lecture01/Assets/img/gc_collecting.png" />
-</div>
-
 ---
 # C# Basics
 
 +++
-todo hello world
+## Hello World
+?code=/Lectures/Lecture01/Assets/code/HelloWorld.cs&lang=C#
+@[1]
+@[3-4, 15]
+@[5-6, 14]
+@[7-8, 13]
+@[9]
+@[11]
+@[12]
+
+[Code sample](/Lectures/Lecture01/Assets/code/HelloWorld.cs)
 
 ---
 ## References:

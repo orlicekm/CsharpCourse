@@ -270,6 +270,15 @@ Applications provide better response times and require less compute power. </br>
 ---
 # C# Basics
 
++++
+## C# is
+* Multi-paradigm programming language
+* Strong typing
+* Object oriented (class-based)
+* Imperative, declarative
+* Functional, generic
+* Based on c++
+
 +++?code=/Lectures/Lecture01/Assets/code/HelloWorld.cs&lang=C#&title=Hello World
 @[1]
 @[3-4, 15]
@@ -281,6 +290,81 @@ Applications provide better response times and require less compute power. </br>
 
 [Code sample](/Lectures/Lecture01/Assets/code/HelloWorld.cs)
 
++++
+## Identifiers
+* Name given to entities such as variables, methods, classes, etc.
+* Tokens which uniquely identify an element
+* `value` is a identifier:  
+  ```C#
+  int value;
+* Reserved keywords can not be used unless prefix `@` is added  
+  ```C#
+  int @class;
++++
+## Keywords
+* Reserved words that have special meaning
+* Meaning can not be changed
+* Can not be directly used as identifies
+* `long` is a keyword:
+  ```C#
+  long count;
+* [List of all Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
+
++++
+## Contextual Keywords
+* specific meaning in a limited program context
+* an be used as identifiers outside that context
+* [List of all Contextual Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
+
++++
+## Literals
+* Data inserted in code
+* E.g:
+  ```
+  42
+  Hello World
+  3.14159
++++
+## Delimiters
+* Characters used for code structuralization
+* Curly brackets `{, }`
+  * Creates code blocks
+  * Used to *impart a scope*
+* Semicolon `;`
+  * Delimits statements
+  * Statement can be written in multiple lines.
+  ```C#
+  Console.WriteLine
+    (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10);
+  ```
+
++++
+## Operators
+  * Used to combine multiple expressions
+  * E.g., `. () * + -`
+
++++
+## Comments
+* Line
+  ```C#
+  // line comment
+  ```
+* Block
+  ```C#
+  /* Comment can be split
+  into multiple lines */
+  ```
+  * **Do not use block comments!**
+* Documenting 
+  ```C#
+  /// <summary>
+  /// Documents class, method, property, ...
+  /// </summary>
+  ```
+
++++
+
+
 ---
 ## References:
 
@@ -288,8 +372,9 @@ Applications provide better response times and require less compute power. </br>
 [Visual Studio Documentation](https://docs.microsoft.com/en-us/visualstudio)  
 [Microsoft Visual Studio](https://visualstudio.microsoft.com)  
 [Microsoft](https://www.microsoft.com)  
-[Resharper](https://www.jetbrains.com/resharper/)  
+[Resharper](https://www.jetbrains.com/resharper)  
 [Wikipedia](https://en.wikipedia.org)  
+[Programiz](https://www.programiz.com)
 [IW5](https://github.com/FitIW/5)  
 
 

@@ -40,9 +40,6 @@ todo
 </div>
 
 ---
-# Visual Studio
-
-+++
 <div class="center" >
 <img src="/Lectures/Lecture01/Assets/img/VisualStudioLogo.png" />
 </br><a href="https://visualstudio.microsoft.com/vs/">Free download</a>
@@ -139,7 +136,7 @@ Advanced debugging tools. Analyze your queries and see how items passed through 
 Team Explorer extension integrates GitFlow into your development workflow. It lets you easily create and finish feature, release and hotfix branches right from Team Explorer.  For more deails about git recommends [Pro Git book](https://git-scm.com/book/en/v2).
 
 ---
-# Why choose .NET?
+# Why To Choose .NET?
 
 +++
 ## Productivity
@@ -189,7 +186,7 @@ Applications provide better response times and require less compute power. </br>
 * Google, JetBrains, Red Hat, Samsung, Unity...
 
 ---
-# .NET
+# .NET Platform
 
 +++
 <div class="left">
@@ -222,7 +219,7 @@ Applications provide better response times and require less compute power. </br>
 </div>
 
 +++
-## Benefits:
+## Benefits
 * Performance improvements
 * Easy use of components developed in other languages
 * Extensible types provided by a class library
@@ -271,7 +268,7 @@ Applications provide better response times and require less compute power. </br>
 </div>
 
 ---
-# C#
+# C# Basics
 
 +++
 todo hello world

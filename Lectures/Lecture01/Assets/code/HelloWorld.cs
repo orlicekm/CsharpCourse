@@ -10,6 +10,6 @@ namespace HelloWorld                                     // Namespace declaratio
 
             Console.WriteLine("Press any key to exit."); // Statement 2
             Console.ReadKey();                           // Statement 3
-        }                                                // End of method
+        }
     }
 }

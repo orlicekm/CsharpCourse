@@ -272,7 +272,7 @@ Applications provide better response times and require less compute power. </br>
 
 +++
 ## Hello World
-?code=/Lectures/Lecture01/Assets/code/HelloWorld.cs&lang=C#
+---?code=/Lectures/Lecture01/Assets/code/HelloWorld.cs&lang=C#
 @[1]
 @[3-4, 15]
 @[5-6, 14]

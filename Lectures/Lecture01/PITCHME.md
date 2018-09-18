@@ -352,7 +352,7 @@ Applications provide better response times and require less compute power. </br>
   /* Comment can be split
   into multiple lines */
   ```
-  * **Do not use block comments!**
+  * **Do not use block comments!!!**
 * Documenting 
   ```C#
   /// <summary>

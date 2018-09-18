@@ -309,8 +309,8 @@ Applications provide better response times and require less compute power. </br>
 
 +++
 ## Contextual Keywords
-* specific meaning in a limited program context
-* an be used as identifiers outside that context
+* Specific meaning in a limited program context
+* An be used as identifiers outside that context
 * [List of all Contextual Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
 
 +++
@@ -356,11 +356,140 @@ Applications provide better response times and require less compute power. </br>
 * Documenting 
   ```C#
   /// <summary>
-  /// Documents class, method ...
+  /// Documents class, method...
   /// </summary>
   ```
 
+---
+## Data types
+* Classification of data which tells the compiler or interpreter how the programmer intends to use the data
+* **Value type**
+  * Directly contain data
+  * Each variable have their own copy of the data
+  * It is not possible for operations on variable to affect another
+* **Reference types** (objects)
+  * Store references to their data
+  * Multible variables can reference the same object
+  * It is possible for operations on variable to affect another
+* [Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/types-and-variables)
+
 +++
+## Value Types
+* **Simple Types**
+  * Signed integral: `sbyte, short, int, long`
+  * Unsigned integral: `byte, ushort, uint, ulong`
+  * Unicode characters: `char`
+  * IEEE floating point: `float, double`
+  * High-precision decimal: `decimal`
+  * Boolean: `bool`
+* **Enum types**
+  * User-defined types of the form `enum E {...}`
+* **Struct types**
+  * User-defined types of the form `struct S {...}`
+* **Nullable value types**
+  * Extensions of all other value types with a `null` value
+
++++
+### Literals notation
+* Classical
+  * E.g., `127`, `42`, etc...
+* Hexadecimal
+  * E.g., `0x7F`, `0x2A` etc... 
+* Decimal 
+  * `'.'` character as a delimiter
+  * `'e'` character as an exponent
+* Rules
+  * If literal contains `'.'`, or `'e'` than data type is decimal
+  * Else data type is the smallest one that fits `int, uint, long, ulong`.
+
++++
+### Numerical data types specification
+* Using specific character as a suffix
+
+```C#
+ Console.WriteLine(1f.GetType());  // Float   (float)
+ Console.WriteLine(1d.GetType());  // Double  (doulbe)
+ Console.WriteLine(1m.GetType());  // decimal (decimal)
+ Console.WriteLine(1u.GetType());  // UInt32  (uint)
+ Console.WriteLine(1L.GetType());  // Int64   (long)
+ Console.WriteLine(1ul.GetType()); // UInt64  (ulong) 
+```
+
++++
+### Numerical data types casting
+* Transformation of **integral type** to **integral type**:
+  * *implicit* in case that *target type* can accommodate the whole range of *source type*
+  * *explicit* otherwise
+* Transformation of **decimal type** to **decimal type**:
+  * `float` can be *implicitly* casted to `double`
+  * `double` has to be casted *explicitly* to `float`
+* Transformation of **integral type** to **decimal type**:
+  * Casting is *implicit* to `float`, `double`, and `decimal`
+* Transformation of **decimal type** to **integral type**:
+  * Casting has to be *explicit* 
+    * *Truncation* can occur
+    * *Lost precision*
+
+---
+## Arithmetic operations
+* `+` addition
+* `-` subtraction
+* `*` multiplication
+* `/` division
+* `++` incrementation
+* `--` decrementation
+
++++
+### Byte, sbyte, short, ushort
+* 8 and 16 bits types do not have arithmetical operations
+  * E.g., `byte, sbyte, short, ushort`
+  * Compiler does implicit cast to large type `int, uint`
+  ```C#
+  short x = 1, y = 1;
+  short z = x + y;    // Compile-time error
+  ```
+  * Solution is to do explicit cast
+  ```C#
+  short x = 1, y = 1;
+  short z = (short)(x + y); // OK
+  ```
+
++++
+### Numerical Overflow
+* Overflow of integral types
+
+```C#
+int a = int.MinValue;
+a--;
+Console.WriteLine(a == int.MaxValue); // True
+```
+
+* Usage of `checked` keyword or compiler option **/checked+**
+
+```C#
+int a = int.MinValue;
+var i = checked(a--); // throw OverflowException
+Console.WriteLine(i == int.MaxValue);  
+
++++
+### Truncation and precision loss
+* Types `float` and `double` are stored in binary form. Therefore, only multiples of 2 are stored precisely.
+
+```C#
+float f1 = 0.09f * 100f;
+float f2 = 0.09f * 99.999999f;
+Assert.False(f1>f2);
+```
+* `decimal` is stored in decimal form, but it has still a limitted precision
+
+```C#
+decimal m = 1M  /  6M;                          // 0.1666666666666666666666666667M
+double  d = 1.0 / 6.0;                          // 0.16666666666666666
+decimal notQuiteWholeM = m + m + m + m + m + m; // 1.0000000000000000000000000002M
+double  notQuiteWholeD = d + d + d + d + d + d; // 0.99999999999999989      
+Console.WriteLine(notQuiteWholeM == 1M);        // False
+Console.WriteLine(notQuiteWholeD < 1.0);        // True
+```
 
 
 ---

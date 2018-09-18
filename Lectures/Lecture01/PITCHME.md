@@ -189,13 +189,7 @@ Applications provide better response times and require less compute power. </br>
 # .NET Platform
 
 +++
-<div class="center-left">
-  <ul>
-    <li>Provides language interoperability</li>
-    <li>Executed in the Common Language Runtime (CLR)</li>
-    <li>Includes a Standard libraries</li>
-  </ul>
-</div>
+##Provides language interoperability
 
 <div class="center-right">
 <img src="/Lectures/Lecture01/Assets/img/Common_Language_Infrastructure.png" />
@@ -297,9 +291,11 @@ Applications provide better response times and require less compute power. </br>
 * `value` is a identifier:  
   ```C#
   int value;
+  ```
 * Reserved keywords can not be used unless prefix `@` is added  
   ```C#
   int @class;
+  ```
 +++
 ## Keywords
 * Reserved words that have special meaning
@@ -308,6 +304,7 @@ Applications provide better response times and require less compute power. </br>
 * `long` is a keyword:
   ```C#
   long count;
+  ```
 * [List of all Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
 
 +++
@@ -324,6 +321,7 @@ Applications provide better response times and require less compute power. </br>
   42
   Hello World
   3.14159
+  ```
 +++
 ## Delimiters
 * Characters used for code structuralization
@@ -335,7 +333,7 @@ Applications provide better response times and require less compute power. </br>
   * Statement can be written in multiple lines.
   ```C#
   Console.WriteLine
-    (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9 + 10);
+    (1 + 2 + 3 + 4 + 5);
   ```
 
 +++
@@ -358,7 +356,7 @@ Applications provide better response times and require less compute power. </br>
 * Documenting 
   ```C#
   /// <summary>
-  /// Documents class, method, property, ...
+  /// Documents class, method ...
   /// </summary>
   ```
 

@@ -6,11 +6,11 @@
 
 ---
 ## Syllabus of lectures:  
-* todo
+* to do
 
 +++
 ## Syllabus of laboratories  
-* todo
+* to do
 
 ---
 # Literature
@@ -57,7 +57,7 @@
 * Available for Windows and Mac
 * Feature-rich program that can be used for many aspects of software development:
     * editor
-    * debuger
+    * debugger
     * builder 
     * completion tools
     * graphical designers
@@ -78,7 +78,7 @@
 
 
 +++
-## Compare Visual Studio versions
+## Comparation of Visual Studio versions
 |  Supported Features                | Community |  Professional | Enterprise |
 | ---------------------------------- | --------- | ------------- | ---------- |
 | Supported Usage scenarios          | ⚫⚫⚫◯  | ⚫⚫⚫⚫     | ⚫⚫⚫⚫   |
@@ -114,7 +114,7 @@
 
 +++
 ### [Resharper](https://www.jetbrains.com/resharper/)  
-Extends Visual Studio with code inspections. For most inspections provides quick-fixes to improve code in one way or another. Help safely organize code and move it around the solution. For more details see [features](https://www.jetbrains.com/resharper/features/).
+Extends Visual Studio with code inspections. For most inspections provides quick-fixes to improve code in one way or another. Helps safely organize code and move it around the solution. For more details see [features](https://www.jetbrains.com/resharper/features/).
 
 +++
 ### [Azure DevOps](https://visualstudio.microsoft.com/team-services/)  
@@ -170,7 +170,7 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 
 +++
 ## Productivity
-* Develop high quality applications faster
+* To develop high quality applications faster
 * Modern language constructs
   *  Generics
   *  Language Integrated Query (LINQ)
@@ -207,7 +207,7 @@ Applications provide better response times and require less compute power. </br>
 * Libraries from the [NuGet package manager](https://www.nuget.org/)
 * Visual studio [marketplace](https://marketplace.visualstudio.com/)
 * [Extensive partners network](https://vspartner.com/Directory)
-* Comumunity, MVPs, support organization...
+* Community, MVPs, support organization...
 
 +++
 ## Open source
@@ -339,7 +339,7 @@ Applications provide better response times and require less compute power. </br>
 +++
 ## Contextual Keywords
 * Specific meaning in a limited program context
-* An be used as identifiers outside that context
+* Can be used as identifiers outside that context
 [List of all Contextual Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
 
 +++

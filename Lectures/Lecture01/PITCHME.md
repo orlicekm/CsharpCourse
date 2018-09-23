@@ -189,7 +189,7 @@ Applications provide better response times and require less compute power. </br>
 # .NET Platform
 
 +++
-##Provides language interoperability
+<h2>Provides language interoperability</h2>
 
 <div class="center-right">
 <img src="/Lectures/Lecture01/Assets/img/Common_Language_Infrastructure.png" />
@@ -273,7 +273,7 @@ Applications provide better response times and require less compute power. </br>
 * Functional, generic
 * Based on c++
 
-+++?code=/Lectures/Lecture01/Assets/code/HelloWorld.cs&lang=C#&title=Hello World
++++?code=/Lectures/Lecture01/Assets/code/HelloWorld.cs&lang=C#&title=Hello World Sample
 @[1]
 @[3-4, 15]
 @[5-6, 14]
@@ -418,13 +418,13 @@ Applications provide better response times and require less compute power. </br>
 +++
 ### Numerical data types casting
 * Transformation of **integral type** to **integral type**:
-  * *implicit* in case that *target type* can accommodate the whole range of *source type*
+  * *implicit* when that *target type* can accommodate the whole range of *source type*
   * *explicit* otherwise
 * Transformation of **decimal type** to **decimal type**:
   * `float` can be *implicitly* casted to `double`
   * `double` has to be casted *explicitly* to `float`
 * Transformation of **integral type** to **decimal type**:
-  * Casting is *implicit* to `float`, `double`, and `decimal`
+  * Casting is *implicit*
 * Transformation of **decimal type** to **integral type**:
   * Casting has to be *explicit* 
     * *Truncation* can occur
@@ -440,7 +440,7 @@ Applications provide better response times and require less compute power. </br>
 * `--` decrementation
 
 +++
-### Byte, sbyte, short, ushort
+### Byte, sbyte, short, ushort types
 * 8 and 16 bits types do not have arithmetical operations
   * E.g., `byte, sbyte, short, ushort`
   * Compiler does implicit cast to large type `int, uint`
@@ -457,39 +457,699 @@ Applications provide better response times and require less compute power. </br>
 +++
 ### Numerical Overflow
 * Overflow of integral types
-
-```C#
-int a = int.MinValue;
-a--;
-Console.WriteLine(a == int.MaxValue); // True
-```
-
+  ```C#
+  int a = int.MinValue;
+  a--;
+  Console.WriteLine(a == int.MaxValue); // True
+  ```
 * Usage of `checked` keyword or compiler option **/checked+**
-
-```C#
-int a = int.MinValue;
-var i = checked(a--); // throw OverflowException
-Console.WriteLine(i == int.MaxValue);  
+  ```C#
+  int a = int.MinValue;
+  var i = checked(a--); // throw OverflowException
+  Console.WriteLine(i == int.MaxValue);
+  ```
 
 +++
 ### Truncation and precision loss
 * Types `float` and `double` are stored in binary form. Therefore, only multiples of 2 are stored precisely.
-
-```C#
-float f1 = 0.09f * 100f;
-float f2 = 0.09f * 99.999999f;
-Assert.False(f1>f2);
-```
+  ```C#
+  float f1 = 0.09f * 100f;
+  float f2 = 0.09f * 99.999999f;
+  Assert.False(f1>f2);
+  ```
 * `decimal` is stored in decimal form, but it has still a limitted precision
+  ```C#
+  decimal m = 1M  /  6M;                          // 0.1666666666666666666666666667M
+  double  d = 1.0 / 6.0;                          // 0.16666666666666666
+  decimal notQuiteWholeM = m + m + m + m + m + m; // 1.0000000000000000000000000002M
+  double  notQuiteWholeD = d + d + d + d + d + d; // 0.99999999999999989      
+  Console.WriteLine(notQuiteWholeM == 1M);        // False
+  Console.WriteLine(notQuiteWholeD < 1.0);        // True
+  ```
+
++++
+## Bitwise operations
+| Operator |   Meaning   |      Example     |   Result    |
+| -------- | ----------- | ---------------- | ----------- |
+|    `~`   |     Not     |         `~0xfU`  | 0xfffffffOU |
+|    `&`   |     And     |   `0xf0 & 0x33`  | 0x30        |
+|  <code>&#124;</code> |      Or     |<code>0xf0 &#x7c; 0x33</code> | 0xf3        |
+|    `^`   |     Xor     | `0xff00 ^ 0x00ff`| 0xffff      |
+|   `<<`   |  Left shift |  `0x20 << 2`     | 0x80        |
+|   `>>`   | Right shift |  `0x20 >> 1`     | 0x10        |
+ 
++++
+## Nullable value types
+* Do not have to be declared before they can be used. 
+* For each non-nullable value type `T` there is a corresponding nullable value type `T?`, which can hold an additional value, `null`. 
+* For instance, `int?` is a type that can hold any 32-bit integer or the value `null`.
+
++++
+## Boolean type
+* `System.Boolean`/`bool`
+* store logical values - `true` or `false`
+* `sizeof(bool) == sizeof(uint8) == sizeof(sbyte)`
+* Nothing can be casted to `bool`
+* Operators:
+  * Equality `==, !=`
+  * Conditional operators `&&, ||`
+  ```C#
+  public bool UseUmbrela(bool rainy, bool sunny, bool windy) {
+    return !windy && (rainy || sunny);
+  }
+  ```
+* Often used for *Lazy evaluation* 
+
++++
+## Character type
+* `System.Char`/`char`
+* Literal is denoted by a single-quote, e.g. `'a'`
+* Can be cast to integral type
+  * *Implicit* cast to `ushort`
+  * *Explicit* cast to others
+
++++
+##  Reference types
+* **Class types**
+  * Ultimate base class of all other types: `object`
+  * Unicode strings: `string`
+  * User-defined types of the form `class C {...}`
+* **Interface types**
+  * User-defined types of the form `interface I {...}`
+* **Array types**
+  * Single- and multi-dimensional, e.g. `int[]` and `int[,]`
+* **Delegate types**
+  *User-defined types of the form `delegate int D(...)`
+* Supports generics, whereby they can be parameterized with other types.
+
++++
+### Class
+* Defines a data structure that contains:
+  * Data members (*fields*)
+  * Function members (*methods*, *properties*, and others). 
+* Class types support single inheritance and polymorphism, mechanisms whereby derived classes can extend and specialize base classes.
+
++++
+### Struct
+* Similar to a class type in that it represents a structure with data members and function members.
+* **Unlike classes**, *structs* are value types and do not typically require heap allocation. 
+* Struct types do not support user-specified inheritance, and all struct types implicitly inherit from type object.
+
++++
+### Interface
+* Defines a contract as a named set of public function members. 
+* A *class* or *struct* that implements an interface must provide implementations of the interface’s function members. 
+* An interface may inherit from multiple base interfaces, and a class or struct may implement multiple interfaces.
+
++++
+### Delegate
+* Represents references to methods with a particular parameter list and return type. 
+* Makes it possible to treat methods as entities that can be assigned to variables and passed as parameters. 
+* Are analogous to function types provided by functional languages. 
+  * They are also similar to the concept of function pointers found in some other languages.
+  * Unlike function pointers, delegates are object-oriented and **type-safe**.
+
++++
+## Boxing/Unboxing
+* C#'s type system is unified such that a value of any type can be treated as an `object`. 
+* Every type in C# directly or indirectly derives from the `object` class type, and `object` is the ultimate *base class* of all types. 
+* Values of reference types are treated as objects simply by viewing the values as type object. 
+* Values of value types are treated as objects by performing **boxing** and **unboxing** operations. 
+
++++?code=/Lectures/Lecture01/Assets/code/Boxing.cs&lang=C#&title=Boxing Sample
+[@7]
+[@8]
+[@9]
+
++++
+### String
+* `System.String` / `string`
+* Represents sequence of characters
+* Reference data type
+* Literal is denote by double-quotes. e.g., `"string value"`
+* Verbatim string is denote by `@` prefix, e.g., 
+  ```C#
+  @"Multi-line
+  string"
+  ```
+* Use `string.Empty` to assigned empty strings, never `""`
+
++++
+* String concatenation by `+` operator
+  * `string s = "a" + "b"  // ab`
+  * Not all operands needs to be strings themselves.
+  * Non string operands get called `ToString()` method no them.
+  ```C#
+  string s = "a" + 5; // a5
+  ```
+  * For multiple string concatenation operations avoid usage of `+`
+    * Use `System.Text.StringBuilder`
+    * `s = System.String.Format("{0} times {1} = {2}", i, j, (i*j));`
+    * `s = $"{i} times {j} = {i*j}";`
+
++++
+### Array
+* Represents fixed length data structure of homogeneous items
+* Stored in sequential block of memory
+* Declaration:
+  ```C#
+  char[] characters = new char[5];
+  char[] characters = new char[] {'a','b','c'};
+  char[] characters = {'a','b','c'};
+  ```
+* Access to array items:
+  ```C#
+  characters[0] = 'a';
+  characters[1] = 'b';
+  for (int I = 0; I < characters.Length; i++)
+  {
+    Console.WriteLine(characters[i]);
+  }
+  ```
+* Initialization
+  * Value types - default value
+  * Reference types - `null`
+* Array range checked
+  * Access out of array range throws `IndexOutOfRangeException`.
+  
++++
+#### Single- and multi-dimensional arrays
+* Unlike the types listed above, array types do not have to be declared before they can be used.
+* Instead, array types are constructed by following a type name with square brackets. 
+* For example:
+  * `int[]` is a single-dimensional array of int,
+  * `int[,]` is a two-dimensional array of int,
+  * `int[][]` is a single-dimensional array of single-dimensional array of int.
+  
++++
+#### Matrix
+* Declared by `[,]`
+  ```C#
+  int[,] matrix = new int[3,3];
+  int[,] matrix = new int[,] {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
+  ```
+* Item access:
+  ```C#
+  for (int i = 0; i < matrix.GetLength(0); i++)
+    for (int j = 0; j < matrix.GetLength(1); j++)
+      matrix[i, j] = i * 3 + j;
+  ```
+
++++
+#### Array of arrays
+* Declared by `[][]`
+  ```C#
+  int[][] matrix = new int[3][];
+  ```
+* Item access:
+  ```C#
+  matrix[i][j] = 5;
+  ```
+
+--- 
+### Variables
+* Including *fields*, *array elements*, *local variables*, and *parameters* represents storage locations.
+* Every variable has a type that determines what values can be stored in the variable.
+* **Non-nullable** value type
+  * A value of that *exact type*
+* **Nullable** value type
+  * A *null* value or a value of that *exact type*
+* **Object**
+  * A *null* reference, a reference to an *object* of any reference type, or a reference to a *boxed value* of any value type
+* **Class** type
+  * A *null* reference, a reference to an *instance of that class* type, or a reference to an instance of a class *derived* from that class type
+* **Interface** type
+  * A *null* reference, a reference to an *instance of a class* type that *implements* that interface type, or a reference to a *boxed* value of a value type that implements that interface type
+* **Array** type
+  * A *null* reference, a reference to an *instance of that array* type, or a reference to an *instance of a compatible array* type
+* **Delegate** type
+  * A *null* reference or a reference to an *instance of a compatible delegate* type
+
++++  
+### Stack vs Heap
+* **Stack**
+  * Allocated block of memory for *local variables, parameters*
+* **Heap**
+  * Storage for *reference data types*
+  * Managed by *Garbage Collector*  
+* Local variable has to be *assigned before reading*
+* Method has to be *called with all arguments*
+* All other values are initialized automatically
+
++++
+### Default values
+|    Type   | Default value  |  
+| --------- | -------------- | 
+| Reference | `null`         |
+| Numerical | `0`            |
+| Enums     | `0`            |
+| Char      | `'\0'`         |
+| Boolean   | `false`        |
+
++++?code=/Lectures/Lecture01/Assets/code/DefaultValue.cs&lang=C#&title=Default Value Sample
+[@8-9]
+[@10-11]
+[@5, 12]
+
+---
+## Parameters
+* Parameters can be passed to a method as:
+  * Value
+    * Going in
+  * Ref reference
+    * Going in
+  * Out reference
+    * Going out
+    * Variable does not need to be initialized before method call
+    * Variable needs to be assigned before return from a method
+
++++?code=/Lectures/Lecture01/Assets/code/ValueParameter.cs&lang=C#&title=Value Parameter Sample
+
++++?code=/Lectures/Lecture01/Assets/code/RefParameter.cs&lang=C#&title=Ref Parameter Sample
+
++++?code=/Lectures/Lecture01/Assets/code/OutParameter.cs&lang=C#&title=Out Parameter Sample
+
++++
+### Parameter with `params[]`
+* Can be used only with the *last parameter* in a method signature
+* Has to be declared as an array
+* Used to pass multiple variables of the same type
+  ```C#
+  void Foo(int x = 2) { … }
+  ```
+  ```C#
+  Foo();
+  ```
+
++++
+### Named parameters
+* Usually used with method calls on methods with *multiple optional parameters*
+* Reduce the number of method overrides
+  ```C#
+  void Foo(int x = 2, int y = 3) { … }
+  ```
+  ```C#
+  Foo(y:4, x:4);
+  Foo(y: ++a, x: --a); 
+  Foo(y: 1);
+  ```
+
+---
+## Operators
+* Operators are *unary, binary, ternary*
+* *Binary* operators use **infix** notation, operator is in between operands
+* **Primary expression**
+  * Used to build the language
+  * `Math.Log(1)` contains two primary operators `.` and `()`
+
+### Table of operators
+| Category        | Operator symbol | Operator name               | Example        | User overloadable |
+|-----------------|-----------------|-----------------------------|----------------|-------------------|
+| Primary         | .               | Member access               | x.y            | No                |
+|                 | -> (unsafe)     | Pointer to struct           | x->y           | No                |
+|                 | ()              | Function cal                | x()            | No                |
+|                 | []              | Array/Index                 | a[x]           | via indexer       |
+|                 | ++              | Post-increment              | x++            | No                |
+|                 | --              | Post-decrement              | x--            | No                |
+|                 | new             | Create instance             | new x()        | No                |
+|                 | stackalloc      | Unsafe stack allocation     | stackalloc(10) | No                |
+|                 | typeof          | Get type from identifier    | typeof(int)    | No                |
+|                 | checked         | Integral overflow check on  | checked(x)     | No                |
+|                 | unchecked       | Integral overflow check off | unchecked(x)   | No                |
+|                 | default         | Default value               | default(int)   | No                |
+|                 | await           | Await                       | await myTask   | No                |
+
++++
+| Category        | Operator symbol | Operator name               | Example        | User overloadable |
+|-----------------|-----------------|-----------------------------|----------------|-------------------|
+| Unary           | sizeof          | Get size of struct          | sizeof(int)    | No                |
+|                 | +               | Positive value of           | +x             | Yes               |
+|                 | -               | Negative value of           | -x             | Yes               |
+|                 | !               | Not                         | !x             | Yes               |
+|                 | ++              | Pre-increment               | ++x            | Yes               |
+|                 | --              | Pre-decrement               | --x            | Yes               |
+|                 | ()              | Cast                        | (int)x         | No                |
+|                 | * (unsafe)      | Value at address            | *x             | No                |
+|                 | &(unsafe)       | Address of value            | &x             | No                |
+
++++
+| Category        | Operator symbol | Operator name               | Example        | User overloadable |
+|-----------------|-----------------|-----------------------------|----------------|-------------------|
+| Multi-privative | *               | Multiply                    | x * y          | Yes               |
+|                 | /               | Divide                      | x / y          | Yes               |
+|                 | %               | Remainder                   | x % y          | Yes               |
+| Additive        | +               | Add                         | x+y            | Yes               |
+|                 | -               | Subtract                    | x-y            | Yes               |
+| Shift           | <<              | Shift left                  | x<<y           | Yes               |
+|                 | >>              | Shift right                 | x>>y           | Yes               |
+| Relational      | <               | Less than                   | x<y            | Yes               |
+|                 | >               | Greater than                | x>y            | Yes               |
+|                 | <=              | Less than or equals to      | x<=y           | Yes               |
+|                 | >=              | Greater than or exuals to   | x>=y           | Yes               |
+
++++
+| Category        | Operator symbol | Operator name               | Example        | User overloadable |
+|-----------------|-----------------|-----------------------------|----------------|-------------------|
+| Relational      | is              | Type is or is subclass of   | x is y         | No                |
+|                 | as              | Type conversion             | x as y         | No                |
+| Logical And     | &               | And                         | x & y          | Yes               |
+| Logical Xor     | ^               | Exclusive Or                | x ^ y          | Yes               |
+| Logical Or      | &#x7c;          | Or                          | x &#x7c; y     | Yes               |
+| Conditional And | &&              | Conditional And             | x && y         | Via &             |
+| Conditional Or  | &#x7c;&#x7c;    | Conditional or              |x &#x7c;&#x7c; y| Via &             |
+| Null coalescing | ??              | Null coalescing             | x ??           | No                |
+| Conditional     | ?:              | Conditional                 | isTrue? x : y  | No                |
+| Assignment      | =               | Assign                      | x = y          | No                |
+|                 | *=              | Multiply self by            | x*=2           | Via *             |
+
++++
+| Category        | Operator symbol | Operator name               | Example        | User overloadable |
+|-----------------|-----------------|-----------------------------|----------------|-------------------|
+| Assignment      | /=              | Divide self by              | x/=2           | Via /             |
+|                 | +=              | Add self by                 | x+=2           | Via +             |
+|                 | -=              | Substract from self         | x-=2           | Via -             |
+|                 | <<=             | Shift self left by          | x<<=2          | Via <<            |
+|                 | >>=             | Shift self right by         | x>>=2          | Via >>            |
+|                 | &=              | Add self by                 | x&=2           | Via &             |
+|                 | ^=              | Exclusive-Or self by        | x^=2           | Via ^             |
+|                 | &#x7c;=         | Or self by                  | x &#x7c;=2     | Via &#x7c;        |
+| Lambda          | =>              | Lambda                      | x => x+1       | No                |
+
++++
+## Expressions
+* Returns some value after computation
+* The simplest expression is *constant* or *variable*, e.g., `5`
+* Expression can be combined using operators
+  * `5*4`
+  * `(5*4)+1`
+
++++
+### Void expression
+* *Do not have a value*
+* Cannot be combined with other operators
+* E.g., `{}, return, etc...`
+
++++
+### Assigning expression
+* E.g., `x=x+5`
+* Can be part of another expression
+  * `y = 5 * (x = 2);`
+* Can be used to initialize multiple variables:
+  * `a = b = c = d = e = 0;`
+* Combination of operators
+  * `x+=5`, the same meaning as `x=x+5`
+
++++
+### Priority and assignment
+* Priority is evaluated by the *priority of operators*.
+* Operators with *the same priority* are evaluated starting with *the most left one*.
+* Left-associative operators
+  * `8/4/2` equals `(8/4)/2`
+* Right-associative operators
+  * `x = y = 3;`
+
+---
+## Statements - Selection
+* Used to define a program control flow
+* `if`, `switch` keywords
+* Conditional (ternary) operand `?:`
+
++++
+### if
+  ```C#
+  if (5 < 2 * 3)
+  {
+    Console.WriteLine("true");
+    Console.WriteLine("Let's move on!");
+  }
+  else
+  {
+    Console.WriteLine("False"); // False        
+  }
+  ```
+
++++
+### switch
+```C#
+switch (cardNumber)
+{
+  case 10:
+  case 13:
+    Console.WriteLine("King");
+    break;
+  case 12:
+    Console.WriteLine("Queen");
+    break;
+  case 11:
+    Console.WriteLine("Jack");
+    break;
+  case -1 :                         // Joker is −1
+    goto case 12;                   // In this game joker counts as queen
+  default:                          // Executes for any other cardNumber
+    Console.WriteLine(cardNumber);
+    break;
+}
+```
+
++++
+## Statements - Cycles
+### while
+* `do {} while();` runs once at minimal
+```C#
+int i = 0;
+while (i < 3)
+{
+  Console.WriteLine(i);
+  i++;
+}
+```
+
++++
+### for
+```C#
+for (int i = 0, prevFib = 1, curFib = 1; i < 10; i++)
+{
+  Console.WriteLine(prevFib);
+  int newFib = prevFib + curFib;
+  prevFib = curFib; curFib = newFib;
+}
+```
+
++++
+### foreach
+* block is evaluated for each item in a given `IEnumerable` sequence
+```C#
+foreach (char c in "beer") // c is the iteration variable
+{
+  Console.WriteLine(c);
+}
+```
+
++++
+## Statements - Jump statements
+* `break`,`continue`,`goto`,`return`,`throw`
+
++++
+### break
+* ends an iteration of a cycle
+```C#
+int x = 0;
+while (true)
+{
+  if (x++ > 5)
+  {  
+    break; // break from the loop
+  } 
+}
+// execution continues here after break
+```
+
++++
+### continue
+* end one cycle iteration
+```C#
+for (int i = 0; i < 10; i++)
+{
+  if ((i % 2) == 0) // If i is even,
+  {
+    continue; // continue with next iteration
+  }
+  Console.Write(i + " ");
+}
+```
+
+### goto
+* switch program flow to selected label
+```C#
+int i = 1;
+startLoop:
+if (i <= 5)
+{
+  Console.Write(i + " ");
+  i++;
+  goto startLoop;
+}
+```
+
++++
+### return
+* return from a method call
+* return value based on a method return type
+  
+```C#
+public decimal Return(decimal d)
+{
+  decimal p = d * 100m;
+  return p; // Return to the calling method with value
+}
+```
+
++++
+### throw
+* handles for exceptional situations
+```C#
+private static void Throw(object obj)
+{
+  if (obj == null)
+  {
+    throw new ArgumentNullException("obj");
+  }
+}
+```
+
++++
+## Statements - Others
+### using
+  * Encapsulated usage of disposable resource
+  
+```C#
+using (var file = File.Open(@"c:\Filepath.txt", FileMode.OpenOrCreate))
+{
+  file.Write(buffer, offset, count);
+} // file.Dispose() is called here
+```
+
++++
+### lock
+* For safe access to resource from concurrent context
+* Simplification of Monitor synchronization primitive
 
 ```C#
-decimal m = 1M  /  6M;                          // 0.1666666666666666666666666667M
-double  d = 1.0 / 6.0;                          // 0.16666666666666666
-decimal notQuiteWholeM = m + m + m + m + m + m; // 1.0000000000000000000000000002M
-double  notQuiteWholeD = d + d + d + d + d + d; // 0.99999999999999989      
-Console.WriteLine(notQuiteWholeM == 1M);        // False
-Console.WriteLine(notQuiteWholeD < 1.0);        // True
+lock(@lock)
+{
+  i = i++;
+}
 ```
+
+---
+### Namespaces
+* Groups classes and interfaces to named groups
+* Namespace `System.Security.Cryptography` contains class e.g., RSA.
+* Usage of types from given namespace
+
+  ```C#
+  System.Security.Cryptography.RSA rsa = System.Security.Cryptography.RSA.Create();
+  ```
+* Directive `using`
+
+  ```C#
+  using System.Security.Cryptography;
+  public class Namespaces
+  {
+    public void Method()
+    {
+      RSA rsa = RSA.Create(); // Don't need fully qualified name
+    }
+  }
+  ```
+
++++
+
+## Namespaces
+### Keyword `namespace`
+
+```C#
+namespace Outer.Middle.Inner
+{
+  class Class1 { ... }
+  class Class2 { ... }
+}
+```
+
+* Same as:
+
+```C#
+namespace Outer
+{  
+  namespace Middle
+  {
+    namespace Inner
+    {
+      class Class1 { ... }
+      class Class2 { ... }
+    }
+  }
+}
+```
+
++++
+### Namespaces - Rules
+* Names declared in an outer scope are implicitly imported into inner one.
+
+```C#
+namespace Outer
+{
+  namespace Middle
+  {
+    internal class Class1 { ... }
+  
+    namespace Inner
+    {
+      internal class Class2 : Class1 { ... }
+    }
+  }
+}
+```
+
++++ 
+### Repetition of namespaces
+* Namespace name can be repeated until a collision of names of inner types occurs. 
+* The same namespace can be declared in multiple places.
+  
+```C#
+namespace Outer.Middle.Inner
+{
+  class Class1 {}
+}
+...
+namespace Outer.Middle.Inner
+{
+  class Class2 { }
+}
+```
+
++++
+### Inner `using` directives
+* `using` can be used in inner namespace to limit its scope
+  
+```C#
+namespace N1
+{
+  class Class1 { }
+}
+namespace N2
+{
+  using N1;
+  class Class2 : Class1 { }
+}
+namespace N2
+{
+  class Class3 : Class1 { } // Compile-time error
+}
+```  
+
+---
+# Git
 
 
 ---
@@ -503,6 +1163,7 @@ Console.WriteLine(notQuiteWholeD < 1.0);        // True
 [Wikipedia](https://en.wikipedia.org)  
 [Programiz](https://www.programiz.com)
 [IW5](https://github.com/FitIW/5)  
+[C# in depth](http://csharpindepth.com) 
 
 
 Google images

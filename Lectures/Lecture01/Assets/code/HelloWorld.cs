@@ -1,6 +1,6 @@
 using System;                                            // Importing namespace
 
-namespace HelloWorld                                     // Namespace declaration
+namespace HelloWorldExample                              // Namespace declaration
 {
     class Hello                                          // Class declaration
     {

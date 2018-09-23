@@ -129,7 +129,7 @@ Before Visual Studio Team Services.
 </div>
 
 +++
-#### [Code metrices](https://marketplace.visualstudio.com/items?itemName=vkacmar.RoslynCodeMetrices)  
+### [Code metrices](https://marketplace.visualstudio.com/items?itemName=vkacmar.RoslynCodeMetrices)  
 Visual Studio extension that helps to monitor the code complexity. As you type, the method complexity "health" is updated, and the complexity is shown near the method.
 
 <!---
@@ -138,31 +138,31 @@ Visual Studio extension. The basic idea is to prevent caret jumps backwards whil
 NOT UPDATED -->
 
 +++
-#### [Mnemonic Templates](https://github.com/JetBrains/mnemonics)  
+### [Mnemonic Templates](https://github.com/JetBrains/mnemonics)  
 Templates for ReSharper that let you quickly generate code and data structures by typing in names.
 
 +++
-#### [LinqPad](http://www.linqpad.net/)  
+### [LinqPad](http://www.linqpad.net/)  
 Program that is not just for LINQ queries, but any C# expression, statement block or program. Put an end to those hundreds of Visual Studio Console projects cluttering your source folder and join the revolution of LINQPad scripters and incremental developers.
 
 +++
-#### [DotPeek](https://www.jetbrains.com/decompiler/)  
+### [DotPeek](https://www.jetbrains.com/decompiler/)  
 Tool based on ReSharper's bundled decompiler. It can reliably decompile any .NET assembly into equivalent C# or IL code.
 
 +++
-#### [MarkdownEditor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)  
+### [MarkdownEditor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)  
 A full featured Markdown editor with live preview and syntax highlighting. Supports GitHub flavored Markdown.
 
 +++
-#### [Entity Framework 6 Power Tools](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EntityFramework6PowerToolsCommunityEdition)  
+### [Entity Framework 6 Power Tools](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EntityFramework6PowerToolsCommunityEdition)  
 Useful design-time utilities for EF 6, accessible through the Visual Studio Solution Explorer context menu when right-clicking on a file containing a derived DbContext class.
 
 +++
-#### [OzCode](https://www.oz-code.com/)  
+### [OzCode](https://www.oz-code.com/)  
 Advanced debugging tools. Analyze your queries and see how items passed through the LINQ pipeline from the comfort of Visual Studio.
 
 +++
-#### [GitFlow](https://marketplace.visualstudio.com/items?itemName=vs-publisher-57624.GitFlowforVisualStudio2017)  
+### [GitFlow](https://marketplace.visualstudio.com/items?itemName=vs-publisher-57624.GitFlowforVisualStudio2017)  
 Team Explorer extension integrates GitFlow into your development workflow. It lets you easily create and finish feature, release and hotfix branches right from Team Explorer.  For more deails about git recommends [Pro Git book](https://git-scm.com/book/en/v2).
 
 ---
@@ -498,11 +498,11 @@ Applications provide better response times and require less compute power. </br>
 ### Truncation and precision loss
 * `float` and `double` are stored in binary form
   * which means only multiples of 2 are stored precisely
-  ```C#
-  float f1 = 0.09f * 100f;
-  float f2 = 0.09f * 99.999999f;
-  Assert.False(f1>f2);
-  ```
+```C#
+float f1 = 0.09f * 100f;
+float f2 = 0.09f * 99.999999f;
+Assert.False(f1>f2);
+```
 * `decimal` is stored in decimal form, but it has still a limitted precision
   ```C#
   decimal m = 1M  /  6M;                          // 0.1666666666666666666666666667M
@@ -630,6 +630,9 @@ Applications provide better response times and require less compute power. </br>
   * [`s = System.String.Format("{0} times {1} = {2}", i, j, (i*j));`](https://docs.microsoft.com/en-us/dotnet/api/system.string.format?view=netframework-4.7.2#System_String_Format_System_IFormatProvider_System_String_System_Object_System_Object_System_Object_)
   * [`s = $"{i} times {j} = {i*j}";`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated)
 
+<!-- special charakters? (@, $)-->
+<!-- table of escape sequences? -->
+
 +++
 ### Array
 * Represents fixed length data structure of homogeneous items
@@ -652,6 +655,8 @@ Applications provide better response times and require less compute power. </br>
 * Including *fields*, *array elements*, *local variables*, and *parameters* represents storage locations
 * Has a type that determines what values can be stored in the variable
 
++++
+#### Variable types
 | Type | Value |
 | ---- | ----- |
 | **Non-nullable** type | value of that *exact type* |
@@ -967,7 +972,7 @@ Applications provide better response times and require less compute power. </br>
 [Code sample](/Lectures/Lecture01/Assets/code/Using.cs)
   
 +++?code=/Lectures/Lecture01/Assets/code/Lock.cs&lang=C#&title=Lock Sample
-@[7, 9-13]
+@[5, 9-13]
 [Code sample](/Lectures/Lecture01/Assets/code/Lock.cs)
 
 ---
@@ -1048,7 +1053,8 @@ namespace Outer.Middle.Inner
 {
   class Class1 {}
 }
-...
+```
+```C#
 namespace Outer.Middle.Inner
 {
   class Class2 { }
@@ -1073,11 +1079,10 @@ namespace N2
 {
   class Class3 : Class1 { } // Compile-time error
 }
-```  
+```
 
----
-# Git
-
+<!-- git basics? -->
+<!-- git flow? -->
 
 ---
 ## References:

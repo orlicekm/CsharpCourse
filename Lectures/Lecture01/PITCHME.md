@@ -5,14 +5,17 @@
 </div>
 
 ---
-<h2>Syllabus of lectures:</h2>
+## Syllabus of lectures:  
 todo
 
 +++
-<h2>Syllabus of laboratories</h2>
+## Syllabus of laboratories  
 todo
 
 ---
+# Literature
+
++++
 <h2>Literature to study</h2>
 <img src="/Lectures/Lecture01/Assets/img/CsharpinNutshell.jpg" />
 </br>ISBN 9781491987650
@@ -46,6 +49,29 @@ todo
 </div>
 
 <!-- Links for fit, fekt? -->
+
++++
+## Welcome to the Visual Studio
+
+* Integrated development environment (IDE)
+* Available for Windows and Mac
+* Feature-rich program that can be used for many aspects of software development:
+    * editor
+    * debuger
+    * builder 
+    * completion tools
+    * graphical designers
+    * etc..
+
++++
+<img src="/Lectures/Lecture01/Assets/img/VisualStudioIde.png" />
+
+<!-- create a program? -->
+<!-- basic components tour? -->
+<!-- popular productivity features?-->
+<!-- debug in vs? -->
+<!-- customize vs? -->
+
 
 +++
 ## Compare Visual Studio versions
@@ -83,11 +109,11 @@ todo
 # Recommended tools  
 
 +++
-[**Resharper**](https://www.jetbrains.com/resharper/)  
+## [Resharper](https://www.jetbrains.com/resharper/)  
 Extends Visual Studio with code inspections. For most inspections provides quick-fixes to improve code in one way or another. Help safely organize code and move it around the solution. For more details see [features](https://www.jetbrains.com/resharper/features/).
 
 +++
-[**Azure DevOps**](https://visualstudio.microsoft.com/team-services/)  
+## [Azure DevOps](https://visualstudio.microsoft.com/team-services/)  
 Before Visual Studio Team Services. 
 <div class="left">
   <ul>
@@ -99,7 +125,7 @@ Before Visual Studio Team Services.
 </div>
 
 +++
-[**Code metrices**](https://marketplace.visualstudio.com/items?itemName=vkacmar.RoslynCodeMetrices)  
+### [Code metrices](https://marketplace.visualstudio.com/items?itemName=vkacmar.RoslynCodeMetrices)  
 Visual Studio extension that helps to monitor the code complexity. As you type, the method complexity "health" is updated, and the complexity is shown near the method.
 
 <!---
@@ -108,31 +134,31 @@ Visual Studio extension. The basic idea is to prevent caret jumps backwards whil
 NOT UPDATED -->
 
 +++
-[**Mnemonic Templates**](https://github.com/JetBrains/mnemonics)  
+### [Mnemonic Templates](https://github.com/JetBrains/mnemonics)  
 Templates for ReSharper that let you quickly generate code and data structures by typing in names.
 
 +++
-[**LinqPad**](http://www.linqpad.net/)  
+### [LinqPad](http://www.linqpad.net/)  
 Program that is not just for LINQ queries, but any C# expression, statement block or program. Put an end to those hundreds of Visual Studio Console projects cluttering your source folder and join the revolution of LINQPad scripters and incremental developers.
 
 +++
-[**DotPeek**](https://www.jetbrains.com/decompiler/)  
+### [DotPeek](https://www.jetbrains.com/decompiler/)  
 Tool based on ReSharper's bundled decompiler. It can reliably decompile any .NET assembly into equivalent C# or IL code.
 
 +++
-[**MarkdownEditor**](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)  
+### [MarkdownEditor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)  
 A full featured Markdown editor with live preview and syntax highlighting. Supports GitHub flavored Markdown.
 
 +++
-[**Entity Framework 6 Power Tools**](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EntityFramework6PowerToolsCommunityEdition)  
+### [Entity Framework 6 Power Tools](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EntityFramework6PowerToolsCommunityEdition)  
 Useful design-time utilities for EF 6, accessible through the Visual Studio Solution Explorer context menu when right-clicking on a file containing a derived DbContext class.
 
 +++
-[**OzCode**](https://www.oz-code.com/)  
+### [OzCode](https://www.oz-code.com/)  
 Advanced debugging tools. Analyze your queries and see how items passed through the LINQ pipeline from the comfort of Visual Studio.
 
 +++
-[**GitFlow**](https://marketplace.visualstudio.com/items?itemName=vs-publisher-57624.GitFlowforVisualStudio2017)  
+### [GitFlow](https://marketplace.visualstudio.com/items?itemName=vs-publisher-57624.GitFlowforVisualStudio2017)  
 Team Explorer extension integrates GitFlow into your development workflow. It lets you easily create and finish feature, release and hotfix branches right from Team Explorer.  For more deails about git recommends [Pro Git book](https://git-scm.com/book/en/v2).
 
 ---
@@ -151,12 +177,6 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 
 +++
 ## Amost every platform
-* iOS
-* Android
-* Windows
-* Windows server
-* Linux
-* Microservises on cloud
 
 +++
 ## Performance
@@ -189,7 +209,7 @@ Applications provide better response times and require less compute power. </br>
 # .NET Platform
 
 +++
-<h2>Provides language interoperability</h2>
+<h2>Language interoperability</h2>
 
 <div class="center-right">
 <img src="/Lectures/Lecture01/Assets/img/Common_Language_Infrastructure.png" />
@@ -225,7 +245,7 @@ Applications provide better response times and require less compute power. </br>
 * Delegates instead of function pointers
 
 +++
-## Garbage collector
+### Garbage collector
 * Automated memory management without need of programmer intervention
 * Based on reachability from GC roots
 * 3 generations

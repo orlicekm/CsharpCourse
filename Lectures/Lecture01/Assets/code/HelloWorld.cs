@@ -2,7 +2,7 @@ using System;                                            // Importing namespace
 
 namespace HelloWorldExample                              // Namespace declaration
 {
-    class Hello                                          // Class declaration
+    class HelloWorld                                     // Class declaration
     {
         private static void Main(string[] args)          // Method declaration
         {

@@ -6,11 +6,11 @@
 
 ---
 ## Syllabus of lectures:  
-todo
+* todo
 
 +++
 ## Syllabus of laboratories  
-todo
+* todo
 
 ---
 # Literature
@@ -64,7 +64,11 @@ todo
     * etc..
 
 +++
+<h2>Components</h2>
+
+<div class="center">
 <img src="/Lectures/Lecture01/Assets/img/VisualStudioIde.png" />
+</div>
 
 <!-- create a program? -->
 <!-- basic components tour? -->
@@ -109,11 +113,11 @@ todo
 # Recommended tools  
 
 +++
-## [Resharper](https://www.jetbrains.com/resharper/)  
+### [Resharper](https://www.jetbrains.com/resharper/)  
 Extends Visual Studio with code inspections. For most inspections provides quick-fixes to improve code in one way or another. Help safely organize code and move it around the solution. For more details see [features](https://www.jetbrains.com/resharper/features/).
 
 +++
-## [Azure DevOps](https://visualstudio.microsoft.com/team-services/)  
+### [Azure DevOps](https://visualstudio.microsoft.com/team-services/)  
 Before Visual Studio Team Services. 
 <div class="left">
   <ul>
@@ -125,40 +129,40 @@ Before Visual Studio Team Services.
 </div>
 
 +++
-### [Code metrices](https://marketplace.visualstudio.com/items?itemName=vkacmar.RoslynCodeMetrices)  
+#### [Code metrices](https://marketplace.visualstudio.com/items?itemName=vkacmar.RoslynCodeMetrices)  
 Visual Studio extension that helps to monitor the code complexity. As you type, the method complexity "health" is updated, and the complexity is shown near the method.
 
 <!---
-[**Postifx templates**](https://github.com/controlflow/resharper-postfix)  
+#### [Postifx templates](https://github.com/controlflow/resharper-postfix)  
 Visual Studio extension. The basic idea is to prevent caret jumps backwards while typing C# code.
 NOT UPDATED -->
 
 +++
-### [Mnemonic Templates](https://github.com/JetBrains/mnemonics)  
+#### [Mnemonic Templates](https://github.com/JetBrains/mnemonics)  
 Templates for ReSharper that let you quickly generate code and data structures by typing in names.
 
 +++
-### [LinqPad](http://www.linqpad.net/)  
+#### [LinqPad](http://www.linqpad.net/)  
 Program that is not just for LINQ queries, but any C# expression, statement block or program. Put an end to those hundreds of Visual Studio Console projects cluttering your source folder and join the revolution of LINQPad scripters and incremental developers.
 
 +++
-### [DotPeek](https://www.jetbrains.com/decompiler/)  
+#### [DotPeek](https://www.jetbrains.com/decompiler/)  
 Tool based on ReSharper's bundled decompiler. It can reliably decompile any .NET assembly into equivalent C# or IL code.
 
 +++
-### [MarkdownEditor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)  
+#### [MarkdownEditor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)  
 A full featured Markdown editor with live preview and syntax highlighting. Supports GitHub flavored Markdown.
 
 +++
-### [Entity Framework 6 Power Tools](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EntityFramework6PowerToolsCommunityEdition)  
+#### [Entity Framework 6 Power Tools](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EntityFramework6PowerToolsCommunityEdition)  
 Useful design-time utilities for EF 6, accessible through the Visual Studio Solution Explorer context menu when right-clicking on a file containing a derived DbContext class.
 
 +++
-### [OzCode](https://www.oz-code.com/)  
+#### [OzCode](https://www.oz-code.com/)  
 Advanced debugging tools. Analyze your queries and see how items passed through the LINQ pipeline from the comfort of Visual Studio.
 
 +++
-### [GitFlow](https://marketplace.visualstudio.com/items?itemName=vs-publisher-57624.GitFlowforVisualStudio2017)  
+#### [GitFlow](https://marketplace.visualstudio.com/items?itemName=vs-publisher-57624.GitFlowforVisualStudio2017)  
 Team Explorer extension integrates GitFlow into your development workflow. It lets you easily create and finish feature, release and hotfix branches right from Team Explorer.  For more deails about git recommends [Pro Git book](https://git-scm.com/book/en/v2).
 
 ---
@@ -177,6 +181,12 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 
 +++
 ## Amost every platform
+* iOS
+* Android
+* Windows
+* Windows server
+* Linux
+* Microservises on cloud
 
 +++
 ## Performance
@@ -301,7 +311,6 @@ Applications provide better response times and require less compute power. </br>
 @[9]
 @[11]
 @[12]
-
 [Code sample](/Lectures/Lecture01/Assets/code/HelloWorld.cs)
 
 +++
@@ -325,23 +334,19 @@ Applications provide better response times and require less compute power. </br>
   ```C#
   long count;
   ```
-* [List of all Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
+[List of all Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
 
 +++
 ## Contextual Keywords
 * Specific meaning in a limited program context
 * An be used as identifiers outside that context
-* [List of all Contextual Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
+[List of all Contextual Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
 
 +++
 ## Literals
 * Data inserted in code
-* E.g:
-  ```
-  42
-  Hello World
-  3.14159
-  ```
+* E.g., `42, Hello World, 3.14159`
+
 +++
 ## Delimiters
 * Characters used for code structuralization
@@ -382,16 +387,16 @@ Applications provide better response times and require less compute power. </br>
 
 ---
 ## Data types
-* Classification of data which tells the compiler or interpreter how the programmer intends to use the data
+* tells the compiler or interpreter how the programmer intends to use the data
 * **Value type**
-  * Directly contain data
+  * Directly contains data
   * Each variable have their own copy of the data
-  * It is not possible for operations on variable to affect another
+  * It is not possible for operations on variable to affects another
 * **Reference types** (objects)
   * Store references to their data
   * Multible variables can reference the same object
   * It is possible for operations on variable to affect another
-* [Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/types-and-variables)
+[Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/types-and-variables)
 
 +++
 ## Value Types
@@ -414,13 +419,13 @@ Applications provide better response times and require less compute power. </br>
 * Classical
   * E.g., `127`, `42`, etc...
 * Hexadecimal
-  * E.g., `0x7F`, `0x2A` etc... 
+  * E.g., `0x7F`, `0x2A`, etc... 
 * Decimal 
   * `'.'` character as a delimiter
   * `'e'` character as an exponent
 * Rules
   * If literal contains `'.'`, or `'e'` than data type is decimal
-  * Else data type is the smallest one that fits `int, uint, long, ulong`.
+  * Else data type is the smallest one that fits `int, uint, long, ulong`
 
 +++
 ### Numerical data types specification
@@ -438,7 +443,7 @@ Applications provide better response times and require less compute power. </br>
 +++
 ### Numerical data types casting
 * Transformation of **integral type** to **integral type**:
-  * *implicit* when that *target type* can accommodate the whole range of *source type*
+  * *implicit* when *target type* can accommodate the whole range of *source type*
   * *explicit* otherwise
 * Transformation of **decimal type** to **decimal type**:
   * `float` can be *implicitly* casted to `double`
@@ -447,8 +452,8 @@ Applications provide better response times and require less compute power. </br>
   * Casting is *implicit*
 * Transformation of **decimal type** to **integral type**:
   * Casting has to be *explicit* 
-    * *Truncation* can occur
-    * *Lost precision*
+    * Lost precision
+    * Truncation can occur
 
 ---
 ## Arithmetic operations
@@ -491,7 +496,8 @@ Applications provide better response times and require less compute power. </br>
 
 +++
 ### Truncation and precision loss
-* Types `float` and `double` are stored in binary form. Therefore, only multiples of 2 are stored precisely.
+* `float` and `double` are stored in binary form
+  * which means only multiples of 2 are stored precisely
   ```C#
   float f1 = 0.09f * 100f;
   float f2 = 0.09f * 99.999999f;
@@ -520,19 +526,23 @@ Applications provide better response times and require less compute power. </br>
  
 +++
 ## Nullable value types
-* Do not have to be declared before they can be used. 
-* For each non-nullable value type `T` there is a corresponding nullable value type `T?`, which can hold an additional value, `null`. 
-* For instance, `int?` is a type that can hold any 32-bit integer or the value `null`.
+* Do not have to be declared before they can be used
+* For each non-nullable value type `T` there is a corresponding nullable value type `T?
+  * Which can hold an **additional value**, `null`
+* E g. `int?` can hold
+  * Any 32-bit integee
+  * `null`
 
 +++
 ## Boolean type
 * `System.Boolean`/`bool`
-* store logical values - `true` or `false`
+* Store logical values 
+  * `true` or `false`
 * `sizeof(bool) == sizeof(uint8) == sizeof(sbyte)`
 * Nothing can be casted to `bool`
 * Operators:
-  * Equality `==, !=`
-  * Conditional operators `&&, ||`
+  * Equality `==`, `!=`
+  * Conditional operators `&&`, `||`
   ```C#
   public bool UseUmbrela(bool rainy, bool sunny, bool windy) {
     return !windy && (rainy || sunny);
@@ -543,7 +553,7 @@ Applications provide better response times and require less compute power. </br>
 +++
 ## Character type
 * `System.Char`/`char`
-* Literal is denoted by a single-quote, e.g. `'a'`
+* Literal is denoted by a single-quote, e.g., `'a'`
 * Can be cast to integral type
   * *Implicit* cast to `ushort`
   * *Explicit* cast to others
@@ -557,49 +567,42 @@ Applications provide better response times and require less compute power. </br>
 * **Interface types**
   * User-defined types of the form `interface I {...}`
 * **Array types**
-  * Single- and multi-dimensional, e.g. `int[]` and `int[,]`
+  * Single- and multi-dimensional, e.g., `int[]` and `int[,]`
 * **Delegate types**
-  *User-defined types of the form `delegate int D(...)`
+  * User-defined types of the form `delegate int D(...)`
 * Supports generics, whereby they can be parameterized with other types.
 
 +++
 ### Class
-* Defines a data structure that contains:
+* **data structure** that contains:
   * Data members (*fields*)
-  * Function members (*methods*, *properties*, and others). 
-* Class types support single inheritance and polymorphism, mechanisms whereby derived classes can extend and specialize base classes.
+  * Function members (*methods*, *properties* and others). 
+* Supports
+  * Single inheritance 
+  * Polymorphism 
+* Can extend and specialize base classes
 
 +++
 ### Struct
-* Similar to a class type in that it represents a structure with data members and function members.
-* **Unlike classes**, *structs* are value types and do not typically require heap allocation. 
-* Struct types do not support user-specified inheritance, and all struct types implicitly inherit from type object.
+* Similar to a class type
+* **Unlike classes**, *structs* are value types and do not typically require heap allocation
+* Struct types do not support
+  * User-specified inheritance
+  * Struct types implicitly inherit from type `object`
 
 +++
 ### Interface
-* Defines a contract as a named set of public function members. 
-* A *class* or *struct* that implements an interface must provide implementations of the interface’s function members. 
-* An interface may inherit from multiple base interfaces, and a class or struct may implement multiple interfaces.
+* **Contract** as a named set of public function members
+* A *class* or *struct* that implements an interface must provide implementations of the interface’s function members
+* An interface may inherit from multiple base interfaces, and a class or struct may implement multiple interfaces
 
 +++
 ### Delegate
-* Represents references to methods with a particular parameter list and return type. 
-* Makes it possible to treat methods as entities that can be assigned to variables and passed as parameters. 
-* Are analogous to function types provided by functional languages. 
-  * They are also similar to the concept of function pointers found in some other languages.
-  * Unlike function pointers, delegates are object-oriented and **type-safe**.
-
-+++
-## Boxing/Unboxing
-* C#'s type system is unified such that a value of any type can be treated as an `object`. 
-* Every type in C# directly or indirectly derives from the `object` class type, and `object` is the ultimate *base class* of all types. 
-* Values of reference types are treated as objects simply by viewing the values as type object. 
-* Values of value types are treated as objects by performing **boxing** and **unboxing** operations. 
-
-+++?code=/Lectures/Lecture01/Assets/code/Boxing.cs&lang=C#&title=Boxing Sample
-[@7]
-[@8]
-[@9]
+* **References to methods** with a particular parameter list and return type
+* Makes it possible to treat methods as entities that can be assigned to variables and passed as parameters
+* Are analogous to function types provided by functional languages
+  * They are also similar to the concept of function pointers found in some other languages
+  * Unlike function pointers, delegates are object-oriented and **type-safe**
 
 +++
 ### String
@@ -607,103 +610,57 @@ Applications provide better response times and require less compute power. </br>
 * Represents sequence of characters
 * Reference data type
 * Literal is denote by double-quotes. e.g., `"string value"`
-* Verbatim string is denote by `@` prefix, e.g., 
+* Verbatim string is denote by `@` prefix, e.g.,
   ```C#
   @"Multi-line
   string"
   ```
-* Use `string.Empty` to assigned empty strings, never `""`
+* Use `string.Empty` to assigned empty strings instead of `""`
 
 +++
-* String concatenation by `+` operator
-  * `string s = "a" + "b"  // ab`
-  * Not all operands needs to be strings themselves.
-  * Non string operands get called `ToString()` method no them.
+#### String concatenation
+* `+` operator
+* Not all operands needs to be strings themselves
+* Non string operands get called `ToString()` method on them
   ```C#
   string s = "a" + 5; // a5
   ```
-  * For multiple string concatenation operations avoid usage of `+`
-    * Use `System.Text.StringBuilder`
-    * `s = System.String.Format("{0} times {1} = {2}", i, j, (i*j));`
-    * `s = $"{i} times {j} = {i*j}";`
+* For multiple string concatenation operations avoid usage of `+`, use:
+  * [`System.Text.StringBuilder`](https://docs.microsoft.com/en-us/dotnet/api/system.text.stringbuilder?view=netframework-4.7.2)
+  * [`s = System.String.Format("{0} times {1} = {2}", i, j, (i*j));`](https://docs.microsoft.com/en-us/dotnet/api/system.string.format?view=netframework-4.7.2#System_String_Format_System_IFormatProvider_System_String_System_Object_System_Object_System_Object_)
+  * [`s = $"{i} times {j} = {i*j}";`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated)
 
 +++
 ### Array
 * Represents fixed length data structure of homogeneous items
 * Stored in sequential block of memory
-* Declaration:
-  ```C#
-  char[] characters = new char[5];
-  char[] characters = new char[] {'a','b','c'};
-  char[] characters = {'a','b','c'};
-  ```
-* Access to array items:
-  ```C#
-  characters[0] = 'a';
-  characters[1] = 'b';
-  for (int I = 0; I < characters.Length; i++)
-  {
-    Console.WriteLine(characters[i]);
-  }
-  ```
+* Do not have to be declared before it can be used
 * Initialization
   * Value types - default value
   * Reference types - `null`
-* Array range checked
-  * Access out of array range throws `IndexOutOfRangeException`.
-  
-+++
-#### Single- and multi-dimensional arrays
-* Unlike the types listed above, array types do not have to be declared before they can be used.
-* Instead, array types are constructed by following a type name with square brackets. 
-* For example:
-  * `int[]` is a single-dimensional array of int,
-  * `int[,]` is a two-dimensional array of int,
-  * `int[][]` is a single-dimensional array of single-dimensional array of int.
-  
-+++
-#### Matrix
-* Declared by `[,]`
-  ```C#
-  int[,] matrix = new int[3,3];
-  int[,] matrix = new int[,] {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};
-  ```
-* Item access:
-  ```C#
-  for (int i = 0; i < matrix.GetLength(0); i++)
-    for (int j = 0; j < matrix.GetLength(1); j++)
-      matrix[i, j] = i * 3 + j;
-  ```
+* Access out of array range throws `IndexOutOfRangeException`
+* Instead, array types are constructed by following a type name with square brackets
+  * `int[]` single-dimensional array of int
+  * `int[,]` two-dimensional array of int (matrix)
+  * `int[][]` is a single-dimensional array of single-dimensional array of int
 
-+++
-#### Array of arrays
-* Declared by `[][]`
-  ```C#
-  int[][] matrix = new int[3][];
-  ```
-* Item access:
-  ```C#
-  matrix[i][j] = 5;
-  ```
++++?code=/Lectures/Lecture01/Assets/code/Array.cs&lang=C#&title=Array Sample
+[Code sample](/Lectures/Lecture01/Assets/code/Array.cs)
 
 --- 
 ### Variables
-* Including *fields*, *array elements*, *local variables*, and *parameters* represents storage locations.
-* Every variable has a type that determines what values can be stored in the variable.
-* **Non-nullable** value type
-  * A value of that *exact type*
-* **Nullable** value type
-  * A *null* value or a value of that *exact type*
-* **Object**
-  * A *null* reference, a reference to an *object* of any reference type, or a reference to a *boxed value* of any value type
-* **Class** type
-  * A *null* reference, a reference to an *instance of that class* type, or a reference to an instance of a class *derived* from that class type
-* **Interface** type
-  * A *null* reference, a reference to an *instance of a class* type that *implements* that interface type, or a reference to a *boxed* value of a value type that implements that interface type
-* **Array** type
-  * A *null* reference, a reference to an *instance of that array* type, or a reference to an *instance of a compatible array* type
-* **Delegate** type
-  * A *null* reference or a reference to an *instance of a compatible delegate* type
+* Including *fields*, *array elements*, *local variables*, and *parameters* represents storage locations
+* Has a type that determines what values can be stored in the variable
+
+| Type | Value |
+| ---- | ----- |
+| **Non-nullable** type | value of that *exact type* |
+| **Nullable**  type| *null* value value or of that *exact type* |
+| **Object** | *null* reference, a reference to an *object* of any reference type, or a reference to a *boxed value* of any value type|
+| **Class** type | *null* reference, a reference to an *instance of that class* type, or a reference to an instance of a class *derived* from that class type|
+| **Interface** type | *null* reference, a reference to an *instance of a class* type that *implements* that interface type, or a reference to a *boxed* value of a value type that implements that interface type|
+| **Array** type | *null* reference, a reference to an *instance of that array* type, or a reference to an *instance of a compatible array* type|
+| **Delegate** type | *null* reference or a reference to an *instance of a compatible delegate* type|
 
 +++  
 ### Stack vs Heap
@@ -727,9 +684,23 @@ Applications provide better response times and require less compute power. </br>
 | Boolean   | `false`        |
 
 +++?code=/Lectures/Lecture01/Assets/code/DefaultValue.cs&lang=C#&title=Default Value Sample
-[@8-9]
-[@10-11]
-[@5, 12]
+@[8-9]
+@[10-11]
+@[5, 12]
+[Code sample](/Lectures/Lecture01/Assets/code/DefaultValue.cs)
+
++++
+## Boxing/Unboxing
+* C#'s type system is unified such that a value of any type can be treated as an `object`
+* Every type in C# directly or indirectly derives from the `object` class type, and `object` is the ultimate *base class* of all types
+* Values of reference types are treated as objects simply by viewing the values as type object
+* Values of value types are treated as objects by performing **boxing** and **unboxing** operations
+
++++?code=/Lectures/Lecture01/Assets/code/Boxing.cs&lang=C#&title=Boxing Sample
+@[7]
+@[8]
+@[9]
+[Code sample](/Lectures/Lecture01/Assets/code/Boxing.cs)
 
 ---
 ## Parameters
@@ -744,10 +715,13 @@ Applications provide better response times and require less compute power. </br>
     * Variable needs to be assigned before return from a method
 
 +++?code=/Lectures/Lecture01/Assets/code/ValueParameter.cs&lang=C#&title=Value Parameter Sample
+[Code sample](/Lectures/Lecture01/Assets/code/ValueParameter.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/RefParameter.cs&lang=C#&title=Ref Parameter Sample
+[Code sample](/Lectures/Lecture01/Assets/code/RefParameter.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/OutParameter.cs&lang=C#&title=Out Parameter Sample
+[Code sample](/Lectures/Lecture01/Assets/code/OutParameter.cs)
 
 +++
 ### Parameter with `params[]`
@@ -776,12 +750,13 @@ Applications provide better response times and require less compute power. </br>
 
 ---
 ## Operators
-* Operators are *unary, binary, ternary*
+* *unary, binary, ternary*
 * *Binary* operators use **infix** notation, operator is in between operands
 * **Primary expression**
   * Used to build the language
   * `Math.Log(1)` contains two primary operators `.` and `()`
 
++++
 ### Table of operators
 | Category        | Operator symbol | Operator name               | Example        | User overloadable |
 |-----------------|-----------------|-----------------------------|----------------|-------------------|
@@ -860,8 +835,12 @@ Applications provide better response times and require less compute power. </br>
 * Returns some value after computation
 * The simplest expression is *constant* or *variable*, e.g., `5`
 * Expression can be combined using operators
-  * `5*4`
-  * `(5*4)+1`
+  ```C#
+  5*4
+  ```
+  ```C#
+  (5*4)+1
+  ```
 
 +++
 ### Void expression
@@ -873,198 +852,128 @@ Applications provide better response times and require less compute power. </br>
 ### Assigning expression
 * E.g., `x=x+5`
 * Can be part of another expression
-  * `y = 5 * (x = 2);`
+  ```
+  y = 5 * (x = 2);
+  ```
 * Can be used to initialize multiple variables:
-  * `a = b = c = d = e = 0;`
+  ```
+  a = b = c = d = e = 0;
+  ```
 * Combination of operators
   * `x+=5`, the same meaning as `x=x+5`
 
 +++
 ### Priority and assignment
-* Priority is evaluated by the *priority of operators*.
-* Operators with *the same priority* are evaluated starting with *the most left one*.
+* Priority is evaluated by the *priority of operators*
+* *The same priority* operators are evaluated starting with *the most left one*
 * Left-associative operators
   * `8/4/2` equals `(8/4)/2`
 * Right-associative operators
-  * `x = y = 3;`
+  ```
+  x = y = 3;
+  ```
 
 ---
 ## Statements - Selection
 * Used to define a program control flow
-* `if`, `switch` keywords
+* `if`
+* `switch`
 * Conditional (ternary) operand `?:`
 
-+++
-### if
-  ```C#
-  if (5 < 2 * 3)
-  {
-    Console.WriteLine("true");
-    Console.WriteLine("Let's move on!");
-  }
-  else
-  {
-    Console.WriteLine("False"); // False        
-  }
-  ```
++++?code=/Lectures/Lecture01/Assets/code/If.cs&lang=C#&title=If Sample
+@[7-11]
+@[12-15]
+[Code sample](/Lectures/Lecture01/Assets/code/If.cs)
 
-+++
-### switch
-```C#
-switch (cardNumber)
-{
-  case 10:
-  case 13:
-    Console.WriteLine("King");
-    break;
-  case 12:
-    Console.WriteLine("Queen");
-    break;
-  case 11:
-    Console.WriteLine("Jack");
-    break;
-  case -1 :                         // Joker is −1
-    goto case 12;                   // In this game joker counts as queen
-  default:                          // Executes for any other cardNumber
-    Console.WriteLine(cardNumber);
-    break;
-}
-```
++++?code=/Lectures/Lecture01/Assets/code/Switch.cs&lang=C#&title=Switch Sample
+@[9-10, 26]
+@[11-14]
+@[15-22]
+@[23-25]
+[Code sample](/Lectures/Lecture01/Assets/code/Switch.cs)
+
++++?code=/Lectures/Lecture01/Assets/code/TernaryOperand.cs&lang=C#&title=Ternary Operand Sample
+@[7-10]
+[Code sample](/Lectures/Lecture01/Assets/code/TernaryOperand.cs)
 
 +++
 ## Statements - Cycles
-### while
-* `do {} while();` runs once at minimal
-```C#
-int i = 0;
-while (i < 3)
-{
-  Console.WriteLine(i);
-  i++;
-}
-```
+* `while`
+* `do while`
+* `for`
+* `foreach`
 
-+++
-### for
-```C#
-for (int i = 0, prevFib = 1, curFib = 1; i < 10; i++)
-{
-  Console.WriteLine(prevFib);
-  int newFib = prevFib + curFib;
-  prevFib = curFib; curFib = newFib;
-}
-```
 
-+++
-### foreach
-* block is evaluated for each item in a given `IEnumerable` sequence
-```C#
-foreach (char c in "beer") // c is the iteration variable
-{
-  Console.WriteLine(c);
-}
-```
++++?code=/Lectures/Lecture01/Assets/code/While.cs&lang=C#&title=While Sample
+@[7-12]
+[Code sample](/Lectures/Lecture01/Assets/code/While.cs)
+
++++?code=/Lectures/Lecture01/Assets/code/DoWhile.cs&lang=C#&title=Do While Sample
+@[7-12]
+[Code sample](/Lectures/Lecture01/Assets/code/DoWhile.cs)
+
++++?code=/Lectures/Lecture01/Assets/code/For.cs&lang=C#&title=For Sample
+@[7-10]
+[Code sample](/Lectures/Lecture01/Assets/code/For.cs)
+
++++?code=/Lectures/Lecture01/Assets/code/Foreach.cs&lang=C#&title=Foreach Sample
+@[7-10]
+[Code sample](/Lectures/Lecture01/Assets/code/Foreach.cs)
 
 +++
 ## Statements - Jump statements
-* `break`,`continue`,`goto`,`return`,`throw`
+* `break`
+* `continue`
+* `goto`
+* `return`
+* `throw`
 
-+++
-### break
-* ends an iteration of a cycle
-```C#
-int x = 0;
-while (true)
-{
-  if (x++ > 5)
-  {  
-    break; // break from the loop
-  } 
-}
-// execution continues here after break
-```
 
-+++
-### continue
-* end one cycle iteration
-```C#
-for (int i = 0; i < 10; i++)
-{
-  if ((i % 2) == 0) // If i is even,
-  {
-    continue; // continue with next iteration
-  }
-  Console.Write(i + " ");
-}
-```
++++?code=/Lectures/Lecture01/Assets/code/Break.cs&lang=C#&title=Break Sample
+@[7-15]
+[Code sample](/Lectures/Lecture01/Assets/code/Break.cs)
 
-### goto
-* switch program flow to selected label
-```C#
-int i = 1;
-startLoop:
-if (i <= 5)
-{
-  Console.Write(i + " ");
-  i++;
-  goto startLoop;
-}
-```
++++?code=/Lectures/Lecture01/Assets/code/Continue.cs&lang=C#&title=Continue Sample
+@[7-14]
+[Code sample](/Lectures/Lecture01/Assets/code/Continue.cs)
 
-+++
-### return
-* return from a method call
-* return value based on a method return type
-  
-```C#
-public decimal Return(decimal d)
-{
-  decimal p = d * 100m;
-  return p; // Return to the calling method with value
-}
-```
++++?code=/Lectures/Lecture01/Assets/code/Goto.cs&lang=C#&title=Goto Sample
+@[7-14]
+[Code sample](/Lectures/Lecture01/Assets/code/Goto.cs)
 
-+++
-### throw
-* handles for exceptional situations
-```C#
-private static void Throw(object obj)
-{
-  if (obj == null)
-  {
-    throw new ArgumentNullException("obj");
-  }
-}
-```
++++?code=/Lectures/Lecture01/Assets/code/Return.cs&lang=C#&title=Return Sample
+@[5-9]
+@[11-16]
+[Code sample](/Lectures/Lecture01/Assets/code/Return.cs)
+
++++?code=/Lectures/Lecture01/Assets/code/Goto.cs&lang=C#&title=Goto Sample
+@[7-14]
+[Code sample](/Lectures/Lecture01/Assets/code/Goto.cs)
+
++++?code=/Lectures/Lecture01/Assets/code/Throw.cs&lang=C#&title=Throw Sample
+@[7-17]
+[Code sample](/Lectures/Lecture01/Assets/code/Throw.cs)
 
 +++
 ## Statements - Others
-### using
+* `using`
   * Encapsulated usage of disposable resource
+* `lock`
+  * For safe access to resource from concurrent context
+  * Simplification of Monitor synchronization primitive
+
++++?code=/Lectures/Lecture01/Assets/code/Using.cs&lang=C#&title=Using Sample
+@[7-10]
+[Code sample](/Lectures/Lecture01/Assets/code/Using.cs)
   
-```C#
-using (var file = File.Open(@"c:\Filepath.txt", FileMode.OpenOrCreate))
-{
-  file.Write(buffer, offset, count);
-} // file.Dispose() is called here
-```
-
-+++
-### lock
-* For safe access to resource from concurrent context
-* Simplification of Monitor synchronization primitive
-
-```C#
-lock(@lock)
-{
-  i = i++;
-}
-```
++++?code=/Lectures/Lecture01/Assets/code/Lock.cs&lang=C#&title=Lock Sample
+@[7, 9-13]
+[Code sample](/Lectures/Lecture01/Assets/code/Lock.cs)
 
 ---
-### Namespaces
+## Namespaces
 * Groups classes and interfaces to named groups
-* Namespace `System.Security.Cryptography` contains class e.g., RSA.
+* Namespace `System.Security.Cryptography` contains class e.g., RSA
 * Usage of types from given namespace
 
   ```C#
@@ -1085,7 +994,6 @@ lock(@lock)
 
 +++
 
-## Namespaces
 ### Keyword `namespace`
 
 ```C#
@@ -1095,8 +1003,7 @@ namespace Outer.Middle.Inner
   class Class2 { ... }
 }
 ```
-
-* Same as:
+ Same as:
 
 ```C#
 namespace Outer
@@ -1114,7 +1021,7 @@ namespace Outer
 
 +++
 ### Namespaces - Rules
-* Names declared in an outer scope are implicitly imported into inner one.
+* Names declared in an outer scope are implicitly imported into inner one
 
 ```C#
 namespace Outer
@@ -1133,8 +1040,8 @@ namespace Outer
 
 +++ 
 ### Repetition of namespaces
-* Namespace name can be repeated until a collision of names of inner types occurs. 
-* The same namespace can be declared in multiple places.
+* Namespace name can be repeated until a collision of names of inner types occurs
+* The same namespace can be declared in multiple places
   
 ```C#
 namespace Outer.Middle.Inner

@@ -1,4 +1,4 @@
-namespace ValueExample
+namespace ValueParameterExample
 {
     class ValueParameter
     {

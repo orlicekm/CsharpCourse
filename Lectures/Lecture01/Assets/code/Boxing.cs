@@ -1,6 +1,6 @@
-namespace Boxing
+namespace BoxingExample
 {
-    class BoxingExample
+    class Boxing
     {
         static void Main()
         {

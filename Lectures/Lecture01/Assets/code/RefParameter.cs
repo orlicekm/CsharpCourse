@@ -1,6 +1,6 @@
-namespace ValueExample
+namespace RefParameterExample
 {
-    class DefaultValue
+    class RefParameter
     {
         private static void Foo(ref int p)
         {

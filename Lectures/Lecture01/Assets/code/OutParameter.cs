@@ -1,8 +1,8 @@
-namespace ValueExample
+namespace OutParameterExample
 {
-    class DefaultValue
+    class OutParameter
     {
-        private static void Split(string name, out string firstNames, out string lastName)
+        private static void Foo(string name, out string firstNames, out string lastName)
         {
             int i = name.LastIndexOf(' ');
             firstNames = name.Substring(0, i);
@@ -11,7 +11,7 @@ namespace ValueExample
 
         static void Main()
         {
-            Split("Stevie Ray Vaughan", out var a, out var b);
+            Foo("Stevie Ray Vaughan", out var a, out var b);
             Console.WriteLine(a); // Stevie Ray
             Console.WriteLine(b); // Vaughan
         }

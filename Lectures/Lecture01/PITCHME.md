@@ -333,12 +333,14 @@ Applications provide better response times and require less compute power. </br>
   ```C#
   long count;
   ```
+
 [List of all Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
 
 +++
 ## Contextual Keywords
 * Specific meaning in a limited program context
 * Can be used as identifiers outside that context
+
 [List of all Contextual Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
 
 +++
@@ -428,7 +430,7 @@ Applications provide better response times and require less compute power. </br>
 
 +++
 ### Numerical data types specification
-* Using specific character as a suffix
+Using specific character as a suffix
 
 ```C#
  Console.WriteLine(1f.GetType());  // Float   (float)
@@ -625,9 +627,9 @@ Assert.False(f1>f2);
   string s = "a" + 5; // a5
   ```
 * For multiple string concatenation operations avoid usage of `+`, use:
-  * [`System.Text.StringBuilder`](https://docs.microsoft.com/en-us/dotnet/api/system.text.stringbuilder?view=netframework-4.7.2)
-  * [`s = System.String.Format("{0} times {1} = {2}", i, j, (i*j));`](https://docs.microsoft.com/en-us/dotnet/api/system.string.format?view=netframework-4.7.2#System_String_Format_System_IFormatProvider_System_String_System_Object_System_Object_System_Object_)
-  * [`s = $"{i} times {j} = {i*j}";`](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated)
+  * `System.Text.StringBuilder`
+  * `s = System.String.Format("{0} times {1} = {2}", i, j, (i*j));`
+  * `s = $"{i} times {j} = {i*j}";`
 
 <!-- special charakters? (@, $)-->
 <!-- table of escape sequences? -->
@@ -647,6 +649,8 @@ Assert.False(f1>f2);
   * `int[][]` is a single-dimensional array of single-dimensional array of int
 
 +++?code=/Lectures/Lecture01/Assets/code/Array.cs&lang=C#&title=Array Sample
+@[7-10]
+@[12-22]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Array.cs)
 
 --- 
@@ -897,7 +901,7 @@ Assert.False(f1>f2);
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Switch.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/TernaryOperand.cs&lang=C#&title=Ternary Operand Sample
-@[7-10]
+@[7-9]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/TernaryOperand.cs)
 
 +++
@@ -922,7 +926,7 @@ Assert.False(f1>f2);
 
 +++?code=/Lectures/Lecture01/Assets/code/Foreach.cs&lang=C#&title=Foreach Sample
 @[7-10]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Foreach.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/ForEach.cs)
 
 +++
 ## Statements - Jump statements

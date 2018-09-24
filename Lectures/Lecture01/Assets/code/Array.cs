@@ -4,14 +4,21 @@ namespace ArrayExample
     {
         static void Main()
         {
-            if (5 < 2 * 3)
+            //declaration
+            char[] characters = new char[5];
+            char[] characters1 = new char[] { 'a', 'b', 'c' };
+            char[] characters2 = { 'a', 'b', 'c' };
+
+            //access
+            characters[0] = 'a';
+            characters[1] = 'b';
+            for (int I = 0; I < characters.Length; i++)
             {
-                Console.WriteLine("true");
-                Console.WriteLine("Let's move on!");
+                Console.WriteLine(characters[i]);
             }
-            else
+            foreach (var character in characters)
             {
-                Console.WriteLine("False"); // False        
+                Console.WriteLine(character);
             }
         }
     }

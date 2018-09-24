@@ -647,7 +647,7 @@ Assert.False(f1>f2);
   * `int[][]` is a single-dimensional array of single-dimensional array of int
 
 +++?code=/Lectures/Lecture01/Assets/code/Array.cs&lang=C#&title=Array Sample
-[Code sample](/Lectures/Lecture01/Assets/code/Array.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Array.cs)
 
 --- 
 ### Variables
@@ -691,7 +691,7 @@ Assert.False(f1>f2);
 @[8-9]
 @[10-11]
 @[5, 12]
-[Code sample](/Lectures/Lecture01/Assets/code/DefaultValue.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/DefaultValue.cs)
 
 +++
 ## Boxing/Unboxing
@@ -704,7 +704,7 @@ Assert.False(f1>f2);
 @[7]
 @[8]
 @[9]
-[Code sample](/Lectures/Lecture01/Assets/code/Boxing.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Boxing.cs)
 
 ---
 ## Parameters
@@ -719,13 +719,13 @@ Assert.False(f1>f2);
     * Variable needs to be assigned before return from a method
 
 +++?code=/Lectures/Lecture01/Assets/code/ValueParameter.cs&lang=C#&title=Value Parameter Sample
-[Code sample](/Lectures/Lecture01/Assets/code/ValueParameter.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/ValueParameter.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/RefParameter.cs&lang=C#&title=Ref Parameter Sample
-[Code sample](/Lectures/Lecture01/Assets/code/RefParameter.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/RefParameter.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/OutParameter.cs&lang=C#&title=Out Parameter Sample
-[Code sample](/Lectures/Lecture01/Assets/code/OutParameter.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/OutParameter.cs)
 
 +++
 ### Parameter with `params[]`
@@ -887,18 +887,18 @@ Assert.False(f1>f2);
 +++?code=/Lectures/Lecture01/Assets/code/If.cs&lang=C#&title=If Sample
 @[7-11]
 @[12-15]
-[Code sample](/Lectures/Lecture01/Assets/code/If.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/If.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/Switch.cs&lang=C#&title=Switch Sample
 @[9-10, 26]
 @[11-14]
 @[15-22]
 @[23-25]
-[Code sample](/Lectures/Lecture01/Assets/code/Switch.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Switch.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/TernaryOperand.cs&lang=C#&title=Ternary Operand Sample
 @[7-10]
-[Code sample](/Lectures/Lecture01/Assets/code/TernaryOperand.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/TernaryOperand.cs)
 
 +++
 ## Statements - Cycles
@@ -910,19 +910,19 @@ Assert.False(f1>f2);
 
 +++?code=/Lectures/Lecture01/Assets/code/While.cs&lang=C#&title=While Sample
 @[7-12]
-[Code sample](/Lectures/Lecture01/Assets/code/While.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/While.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/DoWhile.cs&lang=C#&title=Do While Sample
 @[7-12]
-[Code sample](/Lectures/Lecture01/Assets/code/DoWhile.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/DoWhile.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/For.cs&lang=C#&title=For Sample
 @[7-10]
-[Code sample](/Lectures/Lecture01/Assets/code/For.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/For.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/Foreach.cs&lang=C#&title=Foreach Sample
 @[7-10]
-[Code sample](/Lectures/Lecture01/Assets/code/Foreach.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Foreach.cs)
 
 +++
 ## Statements - Jump statements
@@ -935,28 +935,28 @@ Assert.False(f1>f2);
 
 +++?code=/Lectures/Lecture01/Assets/code/Break.cs&lang=C#&title=Break Sample
 @[7-15]
-[Code sample](/Lectures/Lecture01/Assets/code/Break.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Break.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/Continue.cs&lang=C#&title=Continue Sample
 @[7-14]
-[Code sample](/Lectures/Lecture01/Assets/code/Continue.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Continue.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/Goto.cs&lang=C#&title=Goto Sample
 @[7-14]
-[Code sample](/Lectures/Lecture01/Assets/code/Goto.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Goto.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/Return.cs&lang=C#&title=Return Sample
 @[5-9]
 @[11-16]
-[Code sample](/Lectures/Lecture01/Assets/code/Return.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Return.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/Goto.cs&lang=C#&title=Goto Sample
 @[7-14]
-[Code sample](/Lectures/Lecture01/Assets/code/Goto.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Goto.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/Throw.cs&lang=C#&title=Throw Sample
 @[7-17]
-[Code sample](/Lectures/Lecture01/Assets/code/Throw.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Throw.cs)
 
 +++
 ## Statements - Others
@@ -968,11 +968,11 @@ Assert.False(f1>f2);
 
 +++?code=/Lectures/Lecture01/Assets/code/Using.cs&lang=C#&title=Using Sample
 @[7-10]
-[Code sample](/Lectures/Lecture01/Assets/code/Using.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Using.cs)
   
 +++?code=/Lectures/Lecture01/Assets/code/Lock.cs&lang=C#&title=Lock Sample
 @[5, 9-13]
-[Code sample](/Lectures/Lecture01/Assets/code/Lock.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Lock.cs)
 
 ---
 ## Namespaces
@@ -1092,9 +1092,7 @@ namespace N2
 [Microsoft](https://www.microsoft.com)  
 [Resharper](https://www.jetbrains.com/resharper)  
 [Wikipedia](https://en.wikipedia.org)  
-[Programiz](https://www.programiz.com)
+[Programiz](https://www.programiz.com)  
 [IW5](https://github.com/FitIW/5)  
 [C# in depth](http://csharpindepth.com) 
-
-
-Google images
+and Google images...

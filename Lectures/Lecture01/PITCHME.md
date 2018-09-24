@@ -64,7 +64,6 @@
     * etc..
 
 +++
-<h2>Components</h2>
 
 <div class="center">
 <img src="/Lectures/Lecture01/Assets/img/VisualStudioIde.jpg" />
@@ -311,7 +310,7 @@ Applications provide better response times and require less compute power. </br>
 @[9]
 @[11]
 @[12]
-[Code sample](/Lectures/Lecture01/Assets/code/HelloWorld.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/HelloWorld.cs)
 
 +++
 ## Identifiers

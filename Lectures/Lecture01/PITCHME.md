@@ -397,6 +397,7 @@ Applications provide better response times and require less compute power. </br>
   * Store references to their data
   * Multible variables can reference the same object
   * It is possible for operations on variable to affect another
+
 [Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/types-and-variables)
 
 +++
@@ -1098,5 +1099,5 @@ namespace N2
 [Wikipedia](https://en.wikipedia.org)  
 [Programiz](https://www.programiz.com)  
 [IW5](https://github.com/FitIW/5)  
-[C# in depth](http://csharpindepth.com) 
+[C# in depth](http://csharpindepth.com)  
 and Google images...

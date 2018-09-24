@@ -64,6 +64,7 @@
     * etc..
 
 +++
+<h2>Components</h2>
 
 <div class="center">
 <img src="/Lectures/Lecture01/Assets/img/VisualStudioIde.jpg" />

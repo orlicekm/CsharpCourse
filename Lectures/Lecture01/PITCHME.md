@@ -13,48 +13,14 @@
 * to do
 
 ---
-# Literature
-
-+++
-<h2>Literature to study</h2>
-<img src="/Lectures/Lecture01/Assets/img/CsharpinNutshell.jpg" />
-</br>ISBN 9781491987650
-
-+++
-<h2>Recommended literature</h2>
-<div class="left">
-<img src="/Lectures/Lecture01/Assets/img/PrincipesPatternsPracticesinCsharp.png" />
-</br>ISBN 9780131857254
-</div>
-<div class="right">
-<img src="/Lectures/Lecture01/Assets/img/CleanCode.png" />
-</br>ISBN 9780132350884
-</div>
-
-+++
-<h2>Recommended literature</h2>
-<div class="left">
-<img src="/Lectures/Lecture01/Assets/img/DesignPatterns.png" />
-</br>ISBN 9780201633610
-</div>
-<div class="right">
-<img src="/Lectures/Lecture01/Assets/img/UnitTesting.png" />
-</br>ISBN 9781617290893
-</div>
-
----
 <div class="center" >
 <img src="/Lectures/Lecture01/Assets/img/VisualStudioLogo.png" />
-</br><a href="https://visualstudio.microsoft.com/vs/">Free download</a>
+</br>
 </div>
 
 <!-- Links for fit, fekt? -->
 
-+++
-## Welcome to the Visual Studio
-
 * Integrated development environment (IDE)
-* Available for Windows and Mac
 * Feature-rich program that can be used for many aspects of software development:
     * editor
     * debugger
@@ -62,6 +28,7 @@
     * completion tools
     * graphical designers
     * etc..
+* [Free download](https://visualstudio.microsoft.com/vs/")
 
 +++
 
@@ -104,12 +71,23 @@
 </ol>
 </div>
 
+<!-- what components should be required -->
+
+
 <div class="right">
 <a href="https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2017">Installation guide</a>
 </div>
 
 ---
-# Recommended tools  
+## Recommended extensions and tools
+* Resharper
+* Azure DevOps
+* Code metrices
+* Mnemonic templates
+* LinqPad
+* DotPeek
+* Entity Framework 6 Power tools
+* GitFlow
 
 +++
 ### [Resharper](https://www.jetbrains.com/resharper/)  
@@ -137,7 +115,7 @@ Visual Studio extension. The basic idea is to prevent caret jumps backwards whil
 NOT UPDATED -->
 
 +++
-### [Mnemonic Templates](https://github.com/JetBrains/mnemonics)  
+### [Mnemonic templates](https://github.com/JetBrains/mnemonics)  
 Templates for ReSharper that let you quickly generate code and data structures by typing in names.
 
 +++
@@ -148,26 +126,30 @@ Program that is not just for LINQ queries, but any C# expression, statement bloc
 ### [DotPeek](https://www.jetbrains.com/decompiler/)  
 Tool based on ReSharper's bundled decompiler. It can reliably decompile any .NET assembly into equivalent C# or IL code.
 
+<!-- student's doent needs it
 +++
 ### [MarkdownEditor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)  
 A full featured Markdown editor with live preview and syntax highlighting. Supports GitHub flavored Markdown.
+-->
 
 +++
 ### [Entity Framework 6 Power Tools](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EntityFramework6PowerToolsCommunityEdition)  
 Useful design-time utilities for EF 6, accessible through the Visual Studio Solution Explorer context menu when right-clicking on a file containing a derived DbContext class.
 
+<!-- We dont have a license, do we?
 +++
 ### [OzCode](https://www.oz-code.com/)  
 Advanced debugging tools. Analyze your queries and see how items passed through the LINQ pipeline from the comfort of Visual Studio.
+-->
+
 
 +++
 ### [GitFlow](https://marketplace.visualstudio.com/items?itemName=vs-publisher-57624.GitFlowforVisualStudio2017)  
 Team Explorer extension integrates GitFlow into your development workflow. It lets you easily create and finish feature, release and hotfix branches right from Team Explorer.  For more deails about git recommends [Pro Git book](https://git-scm.com/book/en/v2).
 
 ---
-# Why To Choose .NET?
+## Why To Choose .NET?
 
-+++
 ## Productivity
 * To develop high quality applications faster
 * Modern language constructs
@@ -346,12 +328,17 @@ Applications provide better response times and require less compute power. </br>
 +++
 ## Literals
 * Data inserted in code
-* E.g., `42, Hello World, 3.14159`
+* E.g., 
+  ```C#
+  42
+  'Hello World'
+  3.14159
+  ```
 
 +++
 ## Delimiters
 * Characters used for code structuralization
-* Curly brackets `{, }`
+* Curly braces `{, }`
   * Creates code blocks
   * Used to *impart a scope*
 * Semicolon `;`
@@ -528,11 +515,11 @@ Assert.False(f1>f2);
  
 +++
 ## Nullable value types
-* Do not have to be declared before they can be used
-* For each non-nullable value type `T` there is a corresponding nullable value type `T?
+* Do not have to be assigned before they can be used
+* For each non-nullable value type `T` there is a corresponding nullable value type `T`?
   * Which can hold an **additional value**, `null`
-* E g. `int?` can hold
-  * Any 32-bit integee
+* E. g., `int?` can hold
+  * Any 32-bit integer
   * `null`
 
 +++
@@ -572,7 +559,7 @@ Assert.False(f1>f2);
   * Single- and multi-dimensional, e.g., `int[]` and `int[,]`
 * **Delegate types**
   * User-defined types of the form `delegate int D(...)`
-* Supports generics, whereby they can be parameterized with other types.
+* Supports generics, whereby they can be parameterized with other types
 
 +++
 ### Class
@@ -925,7 +912,7 @@ Assert.False(f1>f2);
 @[7-10]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/For.cs)
 
-+++?code=/Lectures/Lecture01/Assets/code/Foreach.cs&lang=C#&title=Foreach Sample
++++?code=/Lectures/Lecture01/Assets/code/ForEach.cs&lang=C#&title=Foreach Sample
 @[7-10]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/ForEach.cs)
 
@@ -954,10 +941,6 @@ Assert.False(f1>f2);
 @[5-9]
 @[11-16]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Return.cs)
-
-+++?code=/Lectures/Lecture01/Assets/code/Goto.cs&lang=C#&title=Goto Sample
-@[7-14]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Goto.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/Throw.cs&lang=C#&title=Throw Sample
 @[7-17]
@@ -1087,6 +1070,33 @@ namespace N2
 
 <!-- git basics? -->
 <!-- git flow? -->
+
+---
+<h2>Literature to study</h2>
+<img src="/Lectures/Lecture01/Assets/img/CsharpinNutshell.jpg" />
+</br>ISBN 9781491987650
+
++++
+<h2>Recommended literature</h2>
+<div class="left">
+<img src="/Lectures/Lecture01/Assets/img/PrincipesPatternsPracticesinCsharp.png" />
+</br>ISBN 9780131857254
+</div>
+<div class="right">
+<img src="/Lectures/Lecture01/Assets/img/CleanCode.png" />
+</br>ISBN 9780132350884
+</div>
+
++++
+<h2>Recommended literature</h2>
+<div class="left">
+<img src="/Lectures/Lecture01/Assets/img/DesignPatterns.png" />
+</br>ISBN 9780201633610
+</div>
+<div class="right">
+<img src="/Lectures/Lecture01/Assets/img/UnitTesting.png" />
+</br>ISBN 9781617290893
+</div>
 
 ---
 ## References:

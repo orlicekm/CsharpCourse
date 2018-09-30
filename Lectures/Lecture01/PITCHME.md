@@ -13,12 +13,38 @@
 * to do
 
 ---
+<h2>Literature to study</h2>
+<img src="/Lectures/Lecture01/Assets/img/CsharpinNutshell.jpg" />
+</br>ISBN 9781491987650
+
++++
+<h2>Recommended literature</h2>
+<div class="left">
+<img src="/Lectures/Lecture01/Assets/img/PrincipesPatternsPracticesinCsharp.png" />
+</br>ISBN 9780131857254
+</div>
+<div class="right">
+<img src="/Lectures/Lecture01/Assets/img/CleanCode.png" />
+</br>ISBN 9780132350884
+</div>
+
++++
+<h2>Recommended literature</h2>
+<div class="left">
+<img src="/Lectures/Lecture01/Assets/img/DesignPatterns.png" />
+</br>ISBN 9780201633610
+</div>
+<div class="right">
+<img src="/Lectures/Lecture01/Assets/img/UnitTesting.png" />
+</br>ISBN 9781617290893
+</div>
+
+
+---
 <div class="center" >
 <img src="/Lectures/Lecture01/Assets/img/VisualStudioLogo.png" />
 </br>
 </div>
-
-<!-- Links for fit, fekt? -->
 
 * Integrated development environment (IDE)
 * Feature-rich program that can be used for many aspects of software development:
@@ -29,18 +55,12 @@
     * graphical designers
     * etc..
 * [Free download](https://visualstudio.microsoft.com/vs/")
+* [Installation guide](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2017)
 
 +++
-
 <div class="center">
 <img src="/Lectures/Lecture01/Assets/img/VisualStudioIde.jpg" />
 </div>
-
-<!-- create a program? -->
-<!-- basic components tour? -->
-<!-- popular productivity features?-->
-<!-- debug in vs? -->
-<!-- customize vs? -->
 
 
 +++
@@ -55,28 +75,14 @@
 | Cross-platform Development         | ⚫⚫◯◯  | ⚫⚫◯◯      | ⚫⚫⚫⚫  |
 | Collaboration Tools and Features   | ⚫⚫⚫◯  | ⚫⚫⚫◯      | ⚫⚫⚫⚫  |
 
-
 +++
-<h2>Installation</h2>
-<div class="center">
-<ol type="1">
-  <li>Download Visual Studio</li>
-  <li>Install the Visual Studio installer</li>
-  <li>Select workloads</li>
-    <ul>
-      <li>Select individual components</li>
-      <li>Select language packs</li>
-    </ul>
-  <li>Start developing</li>
-</ol>
-</div>
-
-<!-- what components should be required -->
-
-
-<div class="right">
-<a href="https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2017">Installation guide</a>
-</div>
+## Only Enterprise features
+* Code Map Debugger Integration
+* .NET Memory Dump Analysis
+* Test Case Management
+* Code Coverage with tests
+* IntelliTest
+* ⋮
 
 ---
 ## Recommended extensions and tools
@@ -86,6 +92,7 @@
 * Mnemonic templates
 * LinqPad
 * DotPeek
+* Markdown Editor
 * Entity Framework 6 Power tools
 * GitFlow
 
@@ -96,23 +103,14 @@ Extends Visual Studio with code inspections. For most inspections provides quick
 +++
 ### [Azure DevOps](https://visualstudio.microsoft.com/team-services/)  
 Before Visual Studio Team Services. 
-<div class="left">
-  <ul>
-    <li>Cloud-hosted private Git repos
-    <li>Agile planning
-    <li>Build managment
-    <li>Test Plans
-  </ul>
-</div>
+* Cloud-hosted private Git repos
+* Agile planning
+* Build managment
+* Test Plans
 
 +++
 ### [Code metrices](https://marketplace.visualstudio.com/items?itemName=vkacmar.RoslynCodeMetrices)  
 Visual Studio extension that helps to monitor the code complexity. As you type, the method complexity "health" is updated, and the complexity is shown near the method.
-
-<!---
-#### [Postifx templates](https://github.com/controlflow/resharper-postfix)  
-Visual Studio extension. The basic idea is to prevent caret jumps backwards while typing C# code.
-NOT UPDATED -->
 
 +++
 ### [Mnemonic templates](https://github.com/JetBrains/mnemonics)  
@@ -126,22 +124,13 @@ Program that is not just for LINQ queries, but any C# expression, statement bloc
 ### [DotPeek](https://www.jetbrains.com/decompiler/)  
 Tool based on ReSharper's bundled decompiler. It can reliably decompile any .NET assembly into equivalent C# or IL code.
 
-<!-- student's doent needs it
-+++
-### [MarkdownEditor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)  
+
+### [Markdown Editor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)  
 A full featured Markdown editor with live preview and syntax highlighting. Supports GitHub flavored Markdown.
--->
 
 +++
 ### [Entity Framework 6 Power Tools](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EntityFramework6PowerToolsCommunityEdition)  
 Useful design-time utilities for EF 6, accessible through the Visual Studio Solution Explorer context menu when right-clicking on a file containing a derived DbContext class.
-
-<!-- We dont have a license, do we?
-+++
-### [OzCode](https://www.oz-code.com/)  
-Advanced debugging tools. Analyze your queries and see how items passed through the LINQ pipeline from the comfort of Visual Studio.
--->
-
 
 +++
 ### [GitFlow](https://marketplace.visualstudio.com/items?itemName=vs-publisher-57624.GitFlowforVisualStudio2017)  
@@ -174,7 +163,8 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 <div class="center">
 Applications provide better response times and require less compute power. </br>
 <img src="/Lectures/Lecture01/Assets/img/Performance.png" />
-</br>Comparation of web application frameworks with tasks like JSON serialization, database access, and server side template rendering.
+</brComparation of web application frameworks with tasks like JSON serialization, database access, and server side template rendering.
+</br><a href="https://www.techempower.com/benchmarks/#section=data-r16&hw=ph&test=plaintext">Data source</a>
 </div>
 
 +++
@@ -245,8 +235,9 @@ Applications provide better response times and require less compute power. </br>
 </div>
 
 +++
+## In The Nutshell
 <div class="center">
-<img src="/Lectures/Lecture01/Assets/img/gc_collecting.png" />
+<img src="/Lectures/Lecture01/Assets/img/Csh_in_nutshell_framework.png" />
 </div>
 
 +++
@@ -264,12 +255,6 @@ Applications provide better response times and require less compute power. </br>
 ## Application models
 <div class="center">
 <img src="/Lectures/Lecture01/Assets/img/dot_net_libraries.png" />
-</div>
-
-+++
-## In The Nutshell
-<div class="center">
-<img src="/Lectures/Lecture01/Assets/img/Csh_in_nutshell_framework.png" />
 </div>
 
 ---
@@ -604,7 +589,6 @@ Assert.False(f1>f2);
   @"Multi-line
   string"
   ```
-* Use `string.Empty` to assigned empty strings instead of `""`
 
 +++
 #### String concatenation

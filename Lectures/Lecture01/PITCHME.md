@@ -124,7 +124,7 @@ Program that is not just for LINQ queries, but any C# expression, statement bloc
 ### [DotPeek](https://www.jetbrains.com/decompiler/)  
 Tool based on ReSharper's bundled decompiler. It can reliably decompile any .NET assembly into equivalent C# or IL code.
 
-
++++
 ### [Markdown Editor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)  
 A full featured Markdown editor with live preview and syntax highlighting. Supports GitHub flavored Markdown.
 
@@ -138,8 +138,15 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 
 ---
 ## Why To Choose .NET?
+* Productivity
+* Amost every platform
+* Performance
+* Security
+* Large ecosystem
+* Open source
 
-## Productivity
++++
+### Productivity
 * To develop high quality applications faster
 * Modern language constructs
   *  Generics
@@ -150,7 +157,7 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 * Multi-language support
 
 +++
-## Amost every platform
+### Amost every platform
 * iOS
 * Android
 * Windows
@@ -159,35 +166,43 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 * Microservises on cloud
 
 +++
-## Performance
+### Performance
 <div class="center">
 Applications provide better response times and require less compute power. </br>
 <img src="/Lectures/Lecture01/Assets/img/Performance.png" />
 </brComparation of web application frameworks with tasks like JSON serialization, database access, and server side template rendering.
-</br><a href="https://www.techempower.com/benchmarks/#section=data-r16&hw=ph&test=plaintext">Data source</a>
+</br>
+<a href="https://www.techempower.com/benchmarks/#section=data-r16&hw=ph&test=plaintext">Data source</a>
 </div>
 
 +++
-## Security
+### Security
 * Immediate security benefits via its managed runtime
 * Prevent critical issues like bad pointer manipulation
 * Quick releases when threats are discovered
 
 +++
-## Large ecosystem
+### Large ecosystem
 * Libraries from the [NuGet package manager](https://www.nuget.org/)
 * Visual studio [marketplace](https://marketplace.visualstudio.com/)
 * [Extensive partners network](https://vspartner.com/Directory)
 * Community, MVPs, support organization...
 
 +++
-## Open source
+### Open source
 * [**.NET Foundation**](https://dotnetfoundation.org/)
 * Independent, Innovative, Commencially-friendly
 * Google, JetBrains, Red Hat, Samsung, Unity...
 
 ---
 # .NET Platform
+* Language interoperability
+* Architecture
+* Common Language Runtime
+* Benefits
+* Garbage collector
+* In The Nutshell
+* Application models
 
 +++
 <h2>Language interoperability</h2>
@@ -199,7 +214,7 @@ Applications provide better response times and require less compute power. </br>
 +++
 ## Architecture
 <div class="center">
-<img src="/Lectures/Lecture01/Assets/img/dot_net_architecture.jpg" />
+<img src="/Lectures/Lecture01/Assets/img/dot_net_architecture.png" />
 </div>
 
 +++
@@ -259,6 +274,14 @@ Applications provide better response times and require less compute power. </br>
 
 ---
 # C# Basics
+* Identifiers
+* Keywords
+* Literals
+* Delimiters
+* Operators
+* Comments
+* Data types
+* Value Types
 
 +++
 ## C# is
@@ -394,12 +417,11 @@ Applications provide better response times and require less compute power. </br>
   * E.g., `127`, `42`, etc...
 * Hexadecimal
   * E.g., `0x7F`, `0x2A`, etc... 
+* Binary
+  * E.g., '0B110010', '0b0010_0110_0000_0011', etc...
 * Decimal 
   * `'.'` character as a delimiter
   * `'e'` character as an exponent
-* Rules
-  * If literal contains `'.'`, or `'e'` than data type is decimal
-  * Else data type is the smallest one that fits `int, uint, long, ulong`
 
 +++
 ### Numerical data types specification
@@ -627,8 +649,11 @@ Assert.False(f1>f2);
 
 --- 
 ### Variables
-* Including *fields*, *array elements*, *local variables*, and *parameters* represents storage locations
-* Has a type that determines what values can be stored in the variable
+* Name given to a storage area
+* Has a specific type, which determines:
+  * The size and layout of the memory
+  * The range of values that can be stored within that memory
+  * The set of operations that can be applied
 
 +++
 #### Variable types
@@ -686,19 +711,22 @@ Assert.False(f1>f2);
 ## Parameters
 * Parameters can be passed to a method as:
   * Value
-    * Going in
   * Ref reference
-    * Going in
+    * Variable **may be** modified by the called method
+  * In reference
+    * Variable **cannot** be modified by the called method
   * Out reference
-    * Going out
+    * Variable **must be** assigned by the called method
     * Variable does not need to be initialized before method call
-    * Variable needs to be assigned before return from a method
 
 +++?code=/Lectures/Lecture01/Assets/code/ValueParameter.cs&lang=C#&title=Value Parameter Sample
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/ValueParameter.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/RefParameter.cs&lang=C#&title=Ref Parameter Sample
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/RefParameter.cs)
+
++++?code=/Lectures/Lecture01/Assets/code/InParameter.cs&lang=C#&title=In Parameter Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/InParameter.cs)
 
 +++?code=/Lectures/Lecture01/Assets/code/OutParameter.cs&lang=C#&title=Out Parameter Sample
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/OutParameter.cs)
@@ -713,6 +741,19 @@ Assert.False(f1>f2);
   ```
   ```C#
   Foo();
+  ```
+
++++
+### Optional parameters
+* Has a default value as part of it's definition
+* If no argument is sent, the default value is used
+  ```C#
+  void Foo(int x = 2, int y = 3) { … }
+  ```
+  ```C#
+  Foo();
+  Foo(1); 
+  Foo(1, 2);
   ```
 
 +++
@@ -821,6 +862,7 @@ Assert.False(f1>f2);
   ```C#
   (5*4)+1
   ```
+* If you are not sure about priority, use '()'
 
 +++
 ### Void expression
@@ -904,7 +946,8 @@ Assert.False(f1>f2);
 ## Statements - Jump statements
 * `break`
 * `continue`
-* `goto`
+* `goto` 
+  * using leads to [Spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code)
 * `return`
 * `throw`
 

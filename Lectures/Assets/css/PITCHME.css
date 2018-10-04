@@ -19,8 +19,9 @@
 .reveal h4 {
     font-size: 1.1em; }
 
-.reveal span.menu-title.slide-title{
-     font-size: 30em;
+
+.reveal span.menu-title.slide-title {
+        @extend h3;
     }
 
 .gold {

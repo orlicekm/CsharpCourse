@@ -529,7 +529,9 @@ Assert.False(f1>f2);
   * Any 32-bit integer
   * `null`
 
-+++
++++?code=/Lectures/Lecture01/Assets/code/NullableType.cs&lang=C#&title=Nullable Type Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/NullableType.cs)
+
 
 +++
 ## Boolean type

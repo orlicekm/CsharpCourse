@@ -538,7 +538,9 @@ Assert.False(f1>f2);
 * `System.Boolean`/`bool`
 * Store logical values 
   * `true` or `false`
-* `sizeof(bool) == sizeof(uint8) == sizeof(sbyte)`
+  ```C#
+  sizeof(bool) == sizeof(uint8) == sizeof(sbyte) 
+  ```
 * Nothing can be casted to `bool`
 * Operators:
   * Equality `==`, `!=`
@@ -629,7 +631,7 @@ Assert.False(f1>f2);
   * `s = System.String.Format("{0} times {1} = {2}", i, j, (i*j));`
   * `s = $"{i} times {j} = {i*j}";`
 
-<!-- special charakters? (@, $)-->
+
 <!-- table of escape sequences? -->
 
 +++
@@ -800,6 +802,7 @@ Assert.False(f1>f2);
 |                 | await           | Await                       | await myTask   | No                |
 
 +++
+
 | Category        | Operator symbol | Operator name               | Example        | User overloadable |
 |-----------------|-----------------|-----------------------------|----------------|-------------------|
 | Unary           | sizeof          | Get size of struct          | sizeof(int)    | No                |
@@ -813,6 +816,7 @@ Assert.False(f1>f2);
 |                 | &(unsafe)       | Address of value            | &x             | No                |
 
 +++
+
 | Category        | Operator symbol | Operator name               | Example        | User overloadable |
 |-----------------|-----------------|-----------------------------|----------------|-------------------|
 | Multi-privative | *               | Multiply                    | x * y          | Yes               |
@@ -828,6 +832,7 @@ Assert.False(f1>f2);
 |                 | >=              | Greater than or exuals to   | x>=y           | Yes               |
 
 +++
+
 | Category        | Operator symbol | Operator name               | Example        | User overloadable |
 |-----------------|-----------------|-----------------------------|----------------|-------------------|
 | Relational      | is              | Type is or is subclass of   | x is y         | No                |
@@ -843,6 +848,7 @@ Assert.False(f1>f2);
 |                 | *=              | Multiply self by            | x*=2           | Via *             |
 
 +++
+
 | Category        | Operator symbol | Operator name               | Example        | User overloadable |
 |-----------------|-----------------|-----------------------------|----------------|-------------------|
 | Assignment      | /=              | Divide self by              | x/=2           | Via /             |
@@ -878,11 +884,11 @@ Assert.False(f1>f2);
 ### Assigning expression
 * E.g., `x=x+5`
 * Can be part of another expression
-  ```
+  ```C#
   y = 5 * (x = 2);
   ```
 * Can be used to initialize multiple variables:
-  ```
+  ```C#
   a = b = c = d = e = 0;
   ```
 * Combination of operators
@@ -895,7 +901,7 @@ Assert.False(f1>f2);
 * Left-associative operators
   * `8/4/2` equals `(8/4)/2`
 * Right-associative operators
-  ```
+  ```C#
   x = y = 3;
   ```
 
@@ -950,10 +956,10 @@ Assert.False(f1>f2);
 ## Statements - Jump statements
 * `break`
 * `continue`
-* `goto` 
-  * using leads to [Spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code)
 * `return`
 * `throw`
+* `goto` 
+  * using leads to [Spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code)
 
 
 +++?code=/Lectures/Lecture01/Assets/code/Break.cs&lang=C#&title=Break Sample
@@ -964,10 +970,6 @@ Assert.False(f1>f2);
 @[7-14]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Continue.cs)
 
-+++?code=/Lectures/Lecture01/Assets/code/Goto.cs&lang=C#&title=Goto Sample
-@[7-14]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Goto.cs)
-
 +++?code=/Lectures/Lecture01/Assets/code/Return.cs&lang=C#&title=Return Sample
 @[5-9]
 @[11-16]
@@ -976,6 +978,10 @@ Assert.False(f1>f2);
 +++?code=/Lectures/Lecture01/Assets/code/Throw.cs&lang=C#&title=Throw Sample
 @[7-17]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Throw.cs)
+
++++?code=/Lectures/Lecture01/Assets/code/Goto.cs&lang=C#&title=Goto Sample
+@[7-14]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/code/Goto.cs)
 
 +++
 ## Statements - Others
@@ -1141,4 +1147,7 @@ namespace N2
 [Programiz](https://www.programiz.com)  
 [IW5](https://github.com/FitIW/5)  
 [C# in depth](http://csharpindepth.com)  
-and Google images...
+
++++
+## Refences to used images:
+

@@ -20,17 +20,18 @@
     font-size: 1.1em; }
 
 
-.reveal span.menu-title.slide-title {
+    .reveal span.menu-title.slide-title {
         @extend h2;
-    margin: 0 0 20px 0;
-    color: #000;
-    font-family: "News Cycle", Impact, sans-serif;
-    font-weight: normal;
-    line-height: 1.2;
-    letter-spacing: normal;
-    text-transform: none;
-    text-shadow: none;
-    word-wrap: break-word;
+        margin: 0 0 20px 0;
+        color: #000;
+        font-family: "News Cycle", Impact, sans-serif;
+        font-weight: normal;
+        line-height: 1.2;
+        letter-spacing: normal;
+        text-transform: none;
+        text-shadow: none;
+        word-wrap: break-word;
+        text-align: center;
     }
 
 .gold {

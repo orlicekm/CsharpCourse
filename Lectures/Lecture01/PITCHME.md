@@ -530,6 +530,8 @@ Assert.False(f1>f2);
   * `null`
 
 +++
+
++++
 ## Boolean type
 * `System.Boolean`/`bool`
 * Store logical values 

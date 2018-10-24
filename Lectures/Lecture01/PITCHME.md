@@ -86,7 +86,7 @@
 
 ---
 ## Recommended extensions and tools
-* Resharper
+* [Resharper](#Resharper)
 * Azure DevOps
 * Code metrices
 * Mnemonic templates
@@ -1101,9 +1101,6 @@ namespace N2
   class Class3 : Class1 { } // Compile-time error
 }
 ```
-
-<!-- git basics? -->
-<!-- git flow? -->
 
 ---
 <h2>Literature to study</h2>

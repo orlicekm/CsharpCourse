@@ -1,18 +1,23 @@
-namespace BreakExample
+using Xunit;
+
+namespace Tests
 {
-    class Break
+    public class Break
     {
-        static void Main()
+        [Fact]
+        public void Test()
         {
             int x = 0;
             while (true)
             {
-                if (x++ > 5)
+                if (x++ >= 5)
                 {
                     break; // break from the loop
                 }
             }
+
             // execution continues here after break
+            Assert.Equal(5, x);
         }
     }
 }

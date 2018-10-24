@@ -1,8 +1,11 @@
-namespace UsingExample
+using System;
+using System.IO;
+
+namespace Tests
 {
-    class Using
+    public class Using
     {
-        static void Main()
+        public void Example()
         {
             using (var streamReader = new StreamReader("c:\\file.txt"))
             {

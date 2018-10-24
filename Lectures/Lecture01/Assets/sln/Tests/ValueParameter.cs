@@ -1,6 +1,9 @@
-namespace ValueParameterExample
+using System;
+using System.Text;
+
+namespace Tests
 {
-    class ValueParameter
+    public class ValueParameter
     {
         static void Foo(StringBuilder fooSB)
         {
@@ -8,7 +11,7 @@ namespace ValueParameterExample
             fooSB = null;
         }
 
-        static void Main()
+        public void Test()
         {
             StringBuilder sb = new StringBuilder();
             Foo(sb);

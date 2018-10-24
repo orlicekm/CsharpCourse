@@ -1,14 +1,17 @@
-namespace GotoExample
+using Xunit;
+
+namespace Tests
 {
-    class Goto
+    public class Goto
     {
-        static void Main()
+        [Fact]
+        public void Test()
         {
             int i = 1;
             startLoop:
             if (i <= 5)
             {
-                Console.Write(i + " ");
+                Assert.True(i <= 5);
                 i++;
                 goto startLoop;
             }

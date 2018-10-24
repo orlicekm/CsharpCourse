@@ -1,6 +1,9 @@
-namespace ReturnExample
+using System;
+using Xunit;
+
+namespace Tests
 {
-    class Return
+    public class Return
     {
         static double CalculateArea(int r)
         {
@@ -8,11 +11,13 @@ namespace ReturnExample
             return area;
         }
 
-        static void Main()
+        [Fact]
+        public void Test()
         {
             int radius = 5;
             double result = CalculateArea(radius);
-            Console.WriteLine($"The area is {result}");
+            double expectedResult = radius * radius * Math.PI;
+            Assert.Equal(result, expectedResult);
         }
     }
 }

@@ -1,8 +1,11 @@
-namespace ContinueExample
+using Xunit;
+
+namespace Tests
 {
-    class Continue
+    public class Continue
     {
-        static void Main()
+        [Fact]
+        public void Test()
         {
             for (int i = 0; i < 10; i++)
             {
@@ -10,7 +13,7 @@ namespace ContinueExample
                 {
                     continue; // continue with next iteration
                 }
-                Console.Write(i + " ");
+                Assert.True((i % 2) != 0);
             }
         }
     }

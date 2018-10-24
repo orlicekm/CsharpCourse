@@ -1,8 +1,8 @@
 using System;                                            // Importing namespace
 
-namespace HelloWorldExample                              // Namespace declaration
+namespace Tests                                          // Namespace declaration
 {
-    class HelloWorld                                     // Class declaration
+    public class HelloWorld                              // Class declaration
     {
         private static void Main(string[] args)          // Method declaration
         {

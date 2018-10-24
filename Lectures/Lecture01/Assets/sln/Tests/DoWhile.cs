@@ -1,13 +1,16 @@
-namespace DoWhileExample
+using Xunit;
+
+namespace Tests
 {
-    class DoWhile
+    public class DoWhile
     {
-        static void Main()
+        [Fact]
+        public void Test()
         {
             int i = 0;
             do
             {
-                Console.WriteLine(i);
+                Assert.True(i < 3);
                 i++;
             } while (i < 3);
         }

@@ -9,6 +9,7 @@ namespace Tests
         private string Foo(int cardNumber)
         {
             string result = string.Empty;
+
             switch (cardNumber)
             {
                 case 10:

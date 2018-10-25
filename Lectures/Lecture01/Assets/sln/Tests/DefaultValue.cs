@@ -11,8 +11,10 @@ namespace Tests
         {
             int x;
             //Console.WriteLine(x);        // Compile-time error
+
             int[] ints = new int[2];
             Assert.Equal(0, ints[0]);
+
             Assert.Equal(0, y);
         }
     }

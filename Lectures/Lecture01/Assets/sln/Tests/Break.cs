@@ -17,7 +17,7 @@ namespace Tests
             }
 
             // execution continues here after break
-            Assert.Equal(5, x);
+            Assert.Equal(6, x);
         }
     }
 }

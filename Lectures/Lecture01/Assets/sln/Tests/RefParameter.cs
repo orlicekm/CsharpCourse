@@ -14,7 +14,6 @@ namespace Tests
         {
             int x = 8;
             Foo(ref x);           // Ask Foo to deal directly with x
-            Assert.Equal(9, x);
         }
     }
 }

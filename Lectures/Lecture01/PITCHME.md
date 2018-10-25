@@ -86,7 +86,7 @@
 
 ---
 ## Recommended extensions and tools
-* [Resharper](#Resharper)
+* Resharper
 * Azure DevOps
 * Code metrices
 * Mnemonic templates
@@ -102,7 +102,7 @@ Extends Visual Studio with code inspections. For most inspections provides quick
 
 +++
 ### [Azure DevOps](https://visualstudio.microsoft.com/team-services/)  
-Before Visual Studio Team Services. 
+* Before Visual Studio Team Services. 
 * Cloud-hosted private Git repos
 * Agile planning
 * Build managment
@@ -323,15 +323,13 @@ Applications provide better response times and require less compute power. </br>
   ```C#
   long count;
   ```
-
-[List of all Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
+* [List of all Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
 
 +++
 ## Contextual Keywords
 * Specific meaning in a limited program context
 * Can be used as identifiers outside that context
-
-[List of all Contextual Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
+* [List of all Contextual Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
 
 +++
 ## Literals
@@ -392,8 +390,7 @@ Applications provide better response times and require less compute power. </br>
   * Store references to their data
   * Multible variables can reference the same object
   * It is possible for operations on variable to affect another
-
-[Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/types-and-variables)
+* [Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/types-and-variables)
 
 +++
 ## Value Types
@@ -530,6 +527,7 @@ Assert.False(f1>f2);
   * `null`
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/NullableType.cs&lang=C#&title=Nullable Type Sample
+@[10-11, 13-14]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/NullableType.cs)
 
 
@@ -646,8 +644,9 @@ Assert.False(f1>f2);
   * `int[][]` is a single-dimensional array of single-dimensional array of int
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/Array.cs&lang=C#&title=Array Sample
-@[7-10]
-@[12-22]
+@[11-13]
+@[15-16]
+@[18-21, 23-26]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Array.cs)
 
 --- 
@@ -692,9 +691,9 @@ Assert.False(f1>f2);
 | Boolean   | `false`        |
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/DefaultValue.cs&lang=C#&title=Default Value Sample
-@[8-9]
-@[10-11]
-@[5, 12]
+@[12-13]
+@[15-16]
+@[18]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/DefaultValue.cs)
 
 +++
@@ -705,9 +704,9 @@ Assert.False(f1>f2);
 * Values of value types are treated as objects by performing **boxing** and **unboxing** operations
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/Boxing.cs&lang=C#&title=Boxing Sample
-@[7]
-@[8]
-@[9]
+@[10]
+@[11]
+@[12]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Boxing.cs)
 
 ---
@@ -723,15 +722,19 @@ Assert.False(f1>f2);
     * Variable does not need to be initialized before method call
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/ValueParameter.cs&lang=C#&title=Value Parameter Sample
+@[8-19]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/ValueParameter.cs)
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/RefParameter.cs&lang=C#&title=Ref Parameter Sample
+@[7-17]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/RefParameter.cs)
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/InParameter.cs&lang=C#&title=In Parameter Sample
+@[7-19]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/InParameter.cs)
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/OutParameter.cs&lang=C#&title=Out Parameter Sample
+@[7-24]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/OutParameter.cs)
 
 +++
@@ -910,19 +913,16 @@ Assert.False(f1>f2);
 * Conditional (ternary) operand `?:`
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/If.cs&lang=C#&title=If Sample
-@[7-11]
-@[12-15]
+@[10-13]
+@[14-17]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/If.cs)
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/Switch.cs&lang=C#&title=Switch Sample
-@[9-10, 26]
-@[11-14]
-@[15-22]
-@[23-25]
+@[13-30]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Switch.cs)
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/TernaryOperand.cs&lang=C#&title=Ternary Operand Sample
-@[7-9]
+@[10-12]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/TernaryOperand.cs)
 
 +++
@@ -934,19 +934,19 @@ Assert.False(f1>f2);
 
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/While.cs&lang=C#&title=While Sample
-@[7-12]
+@[10-16]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/While.cs)
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/DoWhile.cs&lang=C#&title=Do While Sample
-@[7-12]
+@[10-15]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/DoWhile.cs)
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/For.cs&lang=C#&title=For Sample
-@[7-10]
+@[10-13]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/For.cs)
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/ForEach.cs&lang=C#&title=Foreach Sample
-@[7-10]
+@[10-14]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/ForEach.cs)
 
 +++
@@ -960,24 +960,24 @@ Assert.False(f1>f2);
 
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/Break.cs&lang=C#&title=Break Sample
-@[7-15]
+@[10-20]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Break.cs)
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/Continue.cs&lang=C#&title=Continue Sample
-@[7-14]
+@[10-17]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Continue.cs)
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/Return.cs&lang=C#&title=Return Sample
-@[5-9]
-@[11-16]
+@[8-12]
+@[17-20]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Return.cs)
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/Throw.cs&lang=C#&title=Throw Sample
-@[7-17]
+@[8-18]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Throw.cs)
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/Goto.cs&lang=C#&title=Goto Sample
-@[7-14]
+@[10-17]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Goto.cs)
 
 +++
@@ -989,11 +989,12 @@ Assert.False(f1>f2);
   * Simplification of Monitor synchronization primitive
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/Using.cs&lang=C#&title=Using Sample
-@[7-10]
+@[10-13]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Using.cs)
   
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/Lock.cs&lang=C#&title=Lock Sample
-@[5, 9-13]
+@[9-19]
+@[24-30]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Lock.cs)
 
 ---
@@ -1101,33 +1102,6 @@ namespace N2
   class Class3 : Class1 { } // Compile-time error
 }
 ```
-
----
-<h2>Literature to study</h2>
-<img src="/Lectures/Lecture01/Assets/img/CsharpinNutshell.jpg" />
-</br>ISBN 9781491987650
-
-+++
-<h2>Recommended literature</h2>
-<div class="left">
-<img src="/Lectures/Lecture01/Assets/img/PrincipesPatternsPracticesinCsharp.png" />
-</br>ISBN 9780131857254
-</div>
-<div class="right">
-<img src="/Lectures/Lecture01/Assets/img/CleanCode.png" />
-</br>ISBN 9780132350884
-</div>
-
-+++
-<h2>Recommended literature</h2>
-<div class="left">
-<img src="/Lectures/Lecture01/Assets/img/DesignPatterns.png" />
-</br>ISBN 9780201633610
-</div>
-<div class="right">
-<img src="/Lectures/Lecture01/Assets/img/UnitTesting.png" />
-</br>ISBN 9781617290893
-</div>
 
 ---
 ## References:

@@ -21,7 +21,7 @@ namespace Tests
         [Fact]
         public void Test()
         {
-            Assert.Equal(4, GetNumber(2));
+            Assert.Equal(6, GetNumber(2));
             Assert.Throws<IndexOutOfRangeException>(() => GetNumber(15));
         }
     }

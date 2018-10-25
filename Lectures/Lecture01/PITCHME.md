@@ -659,10 +659,31 @@ Assert.False(f1>f2);
 
 +++
 #### Variable types
+
+<table>
+  <tr>
+    <th>Type</th>
+    <th>Value</th>
+  </tr>
+  <tr>
+    <th>Non-nullable type</th>
+    <th><ul>
+      <li>value of that exact type</li>
+    </ul></th>
+  <tr>
+  <tr>
+    <th>Non-nullable type</th>
+    <th><ul>
+      <li>value of that exact type</li>
+    </ul></th>
+  <tr>
+</table>
+
+
 | Type | Value |
 | ---- | ----- |
-| **Non-nullable** type | value of that *exact type* |
-| **Nullable**  type| *null* value value or of that *exact type* |
+| **Non-nullable** type | * value of that *exact type* |
+| **Nullable**  type| * *null* value value or of that *exact type* |
 | **Object** | *null* reference, a reference to an *object* of any reference type, or a reference to a *boxed value* of any value type|
 | **Class** type | *null* reference, a reference to an *instance of that class* type, or a reference to an instance of a class *derived* from that class type|
 | **Interface** type | *null* reference, a reference to an *instance of a class* type that *implements* that interface type, or a reference to a *boxed* value of a value type that implements that interface type|

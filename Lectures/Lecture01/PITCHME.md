@@ -697,6 +697,23 @@ Assert.False(f1>f2);
 </ul></td>
 </tr>
 <tr>
+
+<tr>
+<td>⋮</td>
+<td>⋮</td>
+</tbody>
+</table
+
++++
+#### Variable types
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
 <td><strong>Interface</strong> type</td>
 <td><ul>
 <li><em>null</em> reference</li>
@@ -721,6 +738,7 @@ Assert.False(f1>f2);
 </tr>
 </tbody>
 </table>
+
 
 +++  
 ### Stack vs Heap

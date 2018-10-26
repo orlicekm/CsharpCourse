@@ -696,10 +696,6 @@ Assert.False(f1>f2);
 <li>reference to an instance of a class <em>derived</em> from that class type</li>
 </ul></td>
 </tr>
-<tr>
-<td>⋮</td>
-<td>⋮</td>
-</tr>
 </tbody>
 </table>
 

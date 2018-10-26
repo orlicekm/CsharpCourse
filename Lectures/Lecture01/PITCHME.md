@@ -701,7 +701,7 @@ Assert.False(f1>f2);
 <td>⋮</td>
 </tr>
 </tbody>
-</table
+</table>
 
 +++
 #### Variable types

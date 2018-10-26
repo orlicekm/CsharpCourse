@@ -323,12 +323,14 @@ Applications provide better response times and require less compute power. </br>
   ```C#
   long count;
   ```
+* e.g. `int, bool, if, for, class, false, public, break`
 * [List of all Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
 
 +++
 ## Contextual Keywords
 * Specific meaning in a limited program context
 * Can be used as identifiers outside that context
+* e.g. `var, awayt, async, where, set`
 * [List of all Contextual Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
 
 +++
@@ -847,89 +849,15 @@ Assert.False(f1>f2);
 
 ---
 ## Operators
-* *unary, binary, ternary*
+* Types
+  * *unary* e.g. `++x, sizeof(int), +x, (int)x`
+  * *binary* e.g. `x + y`
+  * *ternary* e.g. `(input > 0) ? "positive" : "negative"`
 * *Binary* operators use **infix** notation, operator is in between operands
 * **Primary expression**
   * Used to build the language
   * `Math.Log(1)` contains two primary operators `.` and `()`
-
-+++
-### Table of operators
-| Category        | Operator symbol | Operator name               | Example        | User overloadable |
-|-----------------|-----------------|-----------------------------|----------------|-------------------|
-| Primary         | .               | Member access               | x.y            | No                |
-|                 | -> (unsafe)     | Pointer to struct           | x->y           | No                |
-|                 | ()              | Function cal                | x()            | No                |
-|                 | []              | Array/Index                 | a[x]           | via indexer       |
-|                 | ++              | Post-increment              | x++            | No                |
-|                 | --              | Post-decrement              | x--            | No                |
-|                 | new             | Create instance             | new x()        | No                |
-|                 | stackalloc      | Unsafe stack allocation     | stackalloc(10) | No                |
-|                 | typeof          | Get type from identifier    | typeof(int)    | No                |
-|                 | checked         | Integral overflow check on  | checked(x)     | No                |
-|                 | unchecked       | Integral overflow check off | unchecked(x)   | No                |
-|                 | default         | Default value               | default(int)   | No                |
-|                 | await           | Await                       | await myTask   | No                |
-
-+++
-
-| Category        | Operator symbol | Operator name               | Example        | User overloadable |
-|-----------------|-----------------|-----------------------------|----------------|-------------------|
-| Unary           | sizeof          | Get size of struct          | sizeof(int)    | No                |
-|                 | +               | Positive value of           | +x             | Yes               |
-|                 | -               | Negative value of           | -x             | Yes               |
-|                 | !               | Not                         | !x             | Yes               |
-|                 | ++              | Pre-increment               | ++x            | Yes               |
-|                 | --              | Pre-decrement               | --x            | Yes               |
-|                 | ()              | Cast                        | (int)x         | No                |
-|                 | * (unsafe)      | Value at address            | *x             | No                |
-|                 | &(unsafe)       | Address of value            | &x             | No                |
-
-+++
-
-| Category        | Operator symbol | Operator name               | Example        | User overloadable |
-|-----------------|-----------------|-----------------------------|----------------|-------------------|
-| Multi-privative | *               | Multiply                    | x * y          | Yes               |
-|                 | /               | Divide                      | x / y          | Yes               |
-|                 | %               | Remainder                   | x % y          | Yes               |
-| Additive        | +               | Add                         | x+y            | Yes               |
-|                 | -               | Subtract                    | x-y            | Yes               |
-| Shift           | <<              | Shift left                  | x<<y           | Yes               |
-|                 | >>              | Shift right                 | x>>y           | Yes               |
-| Relational      | <               | Less than                   | x<y            | Yes               |
-|                 | >               | Greater than                | x>y            | Yes               |
-|                 | <=              | Less than or equals to      | x<=y           | Yes               |
-|                 | >=              | Greater than or exuals to   | x>=y           | Yes               |
-
-+++
-
-| Category        | Operator symbol | Operator name               | Example        | User overloadable |
-|-----------------|-----------------|-----------------------------|----------------|-------------------|
-| Relational      | is              | Type is or is subclass of   | x is y         | No                |
-|                 | as              | Type conversion             | x as y         | No                |
-| Logical And     | &               | And                         | x & y          | Yes               |
-| Logical Xor     | ^               | Exclusive Or                | x ^ y          | Yes               |
-| Logical Or      | &#x7c;          | Or                          | x &#x7c; y     | Yes               |
-| Conditional And | &&              | Conditional And             | x && y         | Via &             |
-| Conditional Or  | &#x7c;&#x7c;    | Conditional or              |x &#x7c;&#x7c; y| Via &             |
-| Null coalescing | ??              | Null coalescing             | x ??           | No                |
-| Conditional     | ?:              | Conditional                 | isTrue? x : y  | No                |
-| Assignment      | =               | Assign                      | x = y          | No                |
-|                 | *=              | Multiply self by            | x*=2           | Via *             |
-
-+++
-
-| Category        | Operator symbol | Operator name               | Example        | User overloadable |
-|-----------------|-----------------|-----------------------------|----------------|-------------------|
-| Assignment      | /=              | Divide self by              | x/=2           | Via /             |
-|                 | +=              | Add self by                 | x+=2           | Via +             |
-|                 | -=              | Substract from self         | x-=2           | Via -             |
-|                 | <<=             | Shift self left by          | x<<=2          | Via <<            |
-|                 | >>=             | Shift self right by         | x>>=2          | Via >>            |
-|                 | &=              | Add self by                 | x&=2           | Via &             |
-|                 | ^=              | Exclusive-Or self by        | x^=2           | Via ^             |
-|                 | &#x7c;=         | Or self by                  | x &#x7c;=2     | Via &#x7c;        |
-| Lambda          | =>              | Lambda                      | x => x+1       | No                |
+* [List of all operators](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/operators)
 
 +++
 ## Expressions

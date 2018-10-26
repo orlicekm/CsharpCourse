@@ -1111,9 +1111,15 @@ namespace N2
 [Resharper](https://www.jetbrains.com/resharper)  
 [Wikipedia](https://en.wikipedia.org)  
 [Programiz](https://www.programiz.com)  
-[IW5](https://github.com/FitIW/5)  
 [C# in depth](http://csharpindepth.com)  
 
 +++
 ## Refences to used images:
-
+[Amazon books](https://www.amazon.com/)  
+[Welcome to the Visual Studio IDE](https://docs.microsoft.com/en-us/visualstudio/ide/visual-studio-ide?view=vs-2017)  
+[Why Choose .NET?](https://www.microsoft.com/net/platform/why-choose-dotnet)  
+[Wikipedia .Net Framework](https://en.wikipedia.org/wiki/.NET_Framework)  
+[CLR In Process](https://scottdorman.github.io/2008/11/10/clr-4.0-in-process-side-by-side-clr-hosting/)  
+[CodeProject Improve garbage collector performance](https://www.codeproject.com/Articles/39246/NET-Best-Practice-No-2-Improve-garbage-collector)  
+[C# 7.0 in a Nutshell](http://www.albahari.com/nutshell/)  
+[.NET Core, .NET Framework, Xamarin](https://blogs.msdn.microsoft.com/cesardelatorre/2016/06/27/net-core-1-0-net-framework-xamarin-the-whatand-when-to-use-it/)  

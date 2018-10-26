@@ -659,36 +659,68 @@ Assert.False(f1>f2);
 
 +++
 #### Variable types
-
 <table>
-  <tr>
-    <th>Type</th>
-    <th>Value</th>
-  </tr>
-  <tr>
-    <th>Non-nullable type</th>
-    <th><ul>
-      <li>value of that exact type</li>
-    </ul></th>
-  <tr>
-  <tr>
-    <th>Non-nullable type</th>
-    <th><ul>
-      <li>value of that exact type</li>
-    </ul></th>
-  <tr>
+<thead>
+<tr>
+<th>Type</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Non-nullable</strong> type</td>
+<td><em><ul>
+  <li>value of that </em>exact type</li>
+</ul></td>
+</tr>
+<tr>
+<td><strong>Nullable</strong>  type</td>
+<td><ul>
+<li>null<em> value </li>
+<li>value of that </em>exact type</li>
+</ul></td>
+</tr>
+<tr>
+<td><strong>Object</strong></td>
+<td><ul>
+<li><em>null</em> reference</li>
+<li>reference to an <em>object</em> of any reference type</li>
+<li>reference to a <em>boxed value</em> of any value type</li>
+</ul></td>
+</tr>
+<tr>
+<td><strong>Class</strong> type</td>
+<td><ul>
+<li><em>null</em> reference</li>
+<li>reference to an <em>instance of that class</em> type</li>
+<li>reference to an instance of a class <em>derived</em> from that class type</li>
+</ul></td>
+</tr>
+<tr>
+<td><strong>Interface</strong> type</td>
+<td><ul>
+<li><em>null</em> reference</li>
+<li>reference to an <em>instance of a class</em> type that <em>implements</em> that interface type</li>
+<li>reference to a <em>boxed</em> value of a value type that implements that interface type</li>
+</ul></td>
+</tr>
+<tr>
+<td><strong>Array</strong> type</td>
+<td><ul>
+<li><em>null</em> reference</li>
+<li>reference to an <em>instance of that array</em> type</li>
+<li>reference to an <em>instance of a compatible array</em> type</li>
+</ul></td>
+</tr>
+<tr>
+<td><strong>Delegate</strong> type</td>
+<td><ul>
+<li><em>null</em> reference</li>
+<li>reference to an <em>instance of a compatible delegate</em> type</li>
+</ul></td>
+</tr>
+</tbody>
 </table>
-
-
-| Type | Value |
-| ---- | ----- |
-| **Non-nullable** type | * value of that *exact type* |
-| **Nullable**  type| * *null* value value or of that *exact type* |
-| **Object** | *null* reference, a reference to an *object* of any reference type, or a reference to a *boxed value* of any value type|
-| **Class** type | *null* reference, a reference to an *instance of that class* type, or a reference to an instance of a class *derived* from that class type|
-| **Interface** type | *null* reference, a reference to an *instance of a class* type that *implements* that interface type, or a reference to a *boxed* value of a value type that implements that interface type|
-| **Array** type | *null* reference, a reference to an *instance of that array* type, or a reference to an *instance of a compatible array* type|
-| **Delegate** type | *null* reference or a reference to an *instance of a compatible delegate* type|
 
 +++  
 ### Stack vs Heap

@@ -1,16 +1,16 @@
 # C# course
 
 ## Lectures
-* [Lecture01](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture01)  
-* [Lecture02](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture02)  
-* [Lecture03](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture03)  
-* [Lecture04](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture04)  
-* [Lecture05](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture05)  
-* [Lecture06](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture06)  
-* [Lecture07](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture07)  
-* [Lecture08](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture08)  
-* [Lecture09](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture09)  
-* [Lecture10](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture10)  
-* [Lecture11](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture11)  
-* [Lecture12](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture12)  
-* [Lecture13](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture13)
+* [Lecture01](/Lectures/Lecture01)  - Introduction to the C# language and .NET Platform
+* [Lecture02](/Lectures/Lecture02)  - Introduction to object-oriented programming and advanced programming constructs
+* [Lecture03](/Lectures/Lecture03)  
+* [Lecture04](/Lectures/Lecture04)  
+* [Lecture05](/Lectures/Lecture05)  
+* [Lecture06](/Lectures/Lecture06)  
+* [Lecture07](/Lectures/Lecture07)  
+* [Lecture08](/Lectures/Lecture08)  
+* [Lecture09](/Lectures/Lecture09)  
+* [Lecture10](/Lectures/Lecture10)  
+* [Lecture11](/Lectures/Lecture11)  
+* [Lecture12](/Lectures/Lecture12)  
+* [Lecture13](/Lectures/Lecture13)

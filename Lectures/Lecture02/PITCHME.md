@@ -1,10 +1,12 @@
-﻿# Title
-## Subtitle
+﻿# Introduction to object-oriented programming and advanced programming constructs
+## Exceptions, events, delegates, lambda expressions and generics
 <div class="right">
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
 </div>
 
 ---
+
+
 
 ---
 ## References:

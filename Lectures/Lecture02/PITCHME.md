@@ -22,7 +22,7 @@
 
 +++
 ### Three principes of OOP
-* OOP interconnects **data** and **logic***
+* OOP interconnects **data** and **logic**
   * **Encapsulation**
   * **Inheritance**
   * **Polymorphism**
@@ -58,15 +58,17 @@
 #### Polymorphism
 * Is the provision of a *single interface* to *entities of different types*
 * A polymorphic type is one whose operations can also be applied to values of some other type, or types
-* There are several fundamentally different kinds of polymorphism
-  * **Ad hoc polymorphism**:
-    * **Function overloading**
-    * *Function denotes different and potentially heterogeneous implementations* depending on a limited range of *individually specified types and combinations*
-  * **Parametric polymorphism**:
-    * Code is written *without mention of any specific type* and thus *can be used transparently with any number of new types*
-    * This is often known as **generics** in OOP, and *polymorphism* in functional programming
-  * **Subtyping** (*subtype polymorphism* or *inclusion polymorphism*):
-    * Name denotes instances of many different classes related by some common superclass
+
++++
+##### Polymorphism types
+* **Ad hoc polymorphism**:
+  * **Function overloading**
+  * *Function denotes different and potentially heterogeneous implementations* depending on a limited range of *individually specified types and combinations*
+* **Parametric polymorphism**:
+  * Code is written *without mention of any specific type* and thus *can be used transparently with any number of new types*
+  * This is often known as **generics** in OOP, and *polymorphism* in functional programming
+* **Subtyping** (*subtype polymorphism* or *inclusion polymorphism*):
+  * Name denotes instances of many different classes related by some common superclass
 
 ---
 ## Types
@@ -75,7 +77,8 @@
 * `interface` - mechanism to allow *subtype polymorphism*
 * `struct` - value type, alternation to class, do *not allow inheritance*, only *subtyping*
 
-+++
++++//todo
+### Class nieco
 * **instance** - concrete object, instance of a *class*
 * **field** – a member variable inside a class
 * **property** – an accessor for a field
@@ -87,11 +90,13 @@
   * `this` - a reference to a *current instance* of an object
   * `base` - a reference to a *subtype* of a *supper class*
 
++++
 ### Access modifiers
 * used for limiting access to *implementation details*
 * ensure *encapsulation* and leads to safe code
 * if a modifier is omitted, the most restrictive one is used
 
++++
 | Modifier | Visibility |
 |-|-|
 |`private` | visible only *inside of class* |
@@ -111,12 +116,13 @@
   }
   ```
   * `static` - only *one* instance for program run
-  * *non static* - classes are instanciated during program run
+  * *non static* - classes are *instanciated* during program run
 
 +++
-
+### Class can contains
 | | |
-|-|-||Preceding the keyword class |Attributes and class modifier |
+|-|-|
+|Preceding the keyword class |Attributes and class modifier |
 |Following YourClass Name    |Generic type parameters, a base class, and interfaces|
 |Within the braces           |Methods, properties, indexers, events, fields, constructors...|
 
@@ -124,15 +130,17 @@
 ### Field
 * Variable that is a member of a *class* or *struct**
 * Initialization
-  * Optional,
-  * Noninitializatialized has a *default* value (0, \0, null, false)
-  * *Before a constructor call*
+  * Optional
+  * Noninitializatialized has a *default* value (`0, \0, null, false`)
+  * Before a constructor call
   ```C#
   class Octopus
   {
-   string name;
-   public int Age = 10;
-  }  ```
+    string name;
+    public int Age = 10;
+  }
+  ```
+
 +++
 #### Field modifiers
 * `static`
@@ -198,7 +206,8 @@
     Console.WriteLine (Cube (4));
     Console.WriteLine (Cube (5));
     int Cube (int value) => value * value * value;
-  }  ```
+  }
+  ```
 
 +++
 ### Property
@@ -224,7 +233,9 @@
   {
     get { return y; }
     private set { y = Math.Round (value, 2); }
-  }  ```
+  }
+  ```
+
 +++
 #### Property modifiers
 * `static`

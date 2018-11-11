@@ -1,11 +1,11 @@
 ﻿namespace Tests
 {
-    public class Dog
+    public class Dog: Animal
     {
         string coatColor;
         int length;
 
-        public string Cry()
+        public override string Cry()
         {
             return "Woof!";
         }

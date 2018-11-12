@@ -519,7 +519,7 @@ public class Kitten : Cat {}
 
 +++
 ### System.Object
-* Object (`System.Object`) is a common *base* class of all types
+* Object (`System.Object`) is a common `base` class of all types
 * Each type can be cast to `System.Object`
 * `System.Object` methods:
   * ToString()
@@ -666,15 +666,15 @@ class Flea : Insect, ICarnivore { }
 * *Multiple inheritance* is not supported
 * *Multiple* `interface` *implementation* is supported
 
-```C#
- public interface IBoy {
+  ```C#
+  public interface IBoy {
     string Name {get;}
   }
-
+  
   public class Boy: IBoy {
     public string Name { }
   }
-```
+  ```
 
 +++
 #### Type Safety and Security
@@ -703,7 +703,7 @@ class Flea : Insect, ICarnivore { }
   * Whether or not an error occurred
 
 +++
-### try, catch, finally example
+### `try`, `catch`, `finally` example
 ```C#
 try
 {
@@ -841,6 +841,8 @@ class Test
   }
 }
 ```
+
++++
 ### Rethrow examples
 * Rethrow same exception
 ```C#
@@ -896,6 +898,8 @@ catch (FormatException ex)
 * `NullReferenceException`
   * The CLR throws this exception
   * Thrown when you attempt to access a member of an object whose value is null
+
++++
 
 ---
 ## References:

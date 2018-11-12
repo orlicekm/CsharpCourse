@@ -42,7 +42,7 @@
 * Reuse code and to independently extend original software via public classes
 * An *inherited class* is called a **subclass** of its **parent class** or **superclass** or **base class**
 
-+++?code=/Lectures/Lecture02/Assets/sln/Example/Animal;.cs&lang=C#&title=Inheritance Sample
++++?code=/Lectures/Lecture02/Assets/sln/Example/Animal.cs&lang=C#&title=Inheritance Sample
 @[3-6]
 @[3-4, 6]
 @[5]
@@ -779,11 +779,19 @@ class Test
   }
   ```
 * Furthermore, you can omit both the variable and the type
-  ```C#   catch { ... }  ```* Exception filters
-  ```C#   catch (WebException ex) when (ex.Status == WebExceptionStatus.Timeout)
+  ```C# 
+  catch { ... }
+  ```
+* Exception filters
+  ```C# 
+  catch (WebException ex) when (ex.Status == WebExceptionStatus.Timeout)
   {
     ...
-  }  ```+++### The `finally` block
+  }
+  ```
+
++++
+### The `finally` block
 * Always executes
   * Whether or not an exception is thrown
   * Whether or not the `try` block runs to completion
@@ -840,15 +848,19 @@ catch (Exception ex)
   // Log error
   ...
   throw; // Rethrow same exception
-}```* Rethrow a more specific exception
-```C#try
+}
+```
+* Rethrow a more specific exception
+```C#
+try
 {
   ... // Parse a DateTime from XML element data
 }
 catch (FormatException ex)
 {
   throw new XmlException ("Invalid DateTime", ex);
-}```
+}
+```
 
 +++
 ### Key Properties of `System.Exception`
@@ -857,7 +869,8 @@ catch (FormatException ex)
   * A string representing all the methods that are called from the origin of the exception to the catch block
 * `Message`
   * A string with a description of the error
-* `InnerException`  * The inner exception (if any) that caused the outer exception
+* `InnerException`
+  * The inner exception (if any) that caused the outer exception
   * InnerException may have another InnerException
 
 +++
@@ -880,7 +893,8 @@ catch (FormatException ex)
   * Thrown when the object upon which the function is called has been disposed
 * `NullReferenceException`
   * The CLR throws this exception
-  * Thrown when you attempt to access a member of an object whose value is null
+  * Thrown when you attempt to access a member of an object whose value is null
+
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  

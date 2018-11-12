@@ -483,14 +483,14 @@ public class Stock : Asset
 * Tests whether a reference conversion would
 * Usually before downcast
 
-+++?code=/Lectures/Lecture02/Assets/sln/Example/IsOperator.cs&lang=C#&title=IS Operator Example
++++?code=/Lectures/Lecture02/Assets/sln/Tests/IsOperator.cs&lang=C#&title=IS Operator Example
 @[5-13]
 @[8-12]
 @[10]
 @[11]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/IsOperator.cs)
 
-+++?code=/Lectures/Lecture02/Assets/sln/Example/PatternMatching.cs&lang=C#&title=IS Pattern Matching Example
++++?code=/Lectures/Lecture02/Assets/sln/Tests/PatternMatching.cs&lang=C#&title=IS Pattern Matching Example
 @[5-27]
 @[8-16]
 @[10]

@@ -900,6 +900,172 @@ catch (FormatException ex)
   * Thrown when you attempt to access a member of an object whose value is null
 
 +++
+### Delegates
+* An object that knows how to call a method
+* Defines:
+  * method's return type
+  * method's parameter types 
+
+```C#
+delegate int Transformer (int x);
+```
+is compatible with
+```C#
+static int Square (int x) => x * x;
+```
+
++++
+```C#
+delegate int Transformer (int x);
+class Test
+{
+ static void Main()
+137
+ {
+ Transformer t = Square; // Create delegate instance
+ int result = t(3); // Invoke delegate
+ Console.WriteLine (result); // 9
+ }
+ static int Square (int x) => x * x;
+}```
+
++++
+The statement:
+```C#
+Transformer t = Square;
+```
+is shorthand for:
+```C#
+Transformer t = new Transformer (Square);```
+The expression:
+```C#
+t(3)
+```
+is shorthand for:
+```C#
+t.Invoke(3)
+```
+
++++
+#### Plug-in Methods with Delegates
+```C#
+public delegate int Transformer (int x);
+class Util
+{
+ public static void Transform (int[] values, Transformer t)
+ {
+ for (int i = 0; i < values.Length; i++)
+ values[i] = t (values[i]);
+ }
+}
+class Test
+{
+ static void Main()
+ {
+ int[] values = { 1, 2, 3 };
+ Util.Transform (values, Square); // Hook in the Square method
+ foreach (int i in values)
+ Console.Write (i + " "); // 1 4 9
+ }
+ static int Square (int x) => x * x;
+}```
+
+The `Transform` method is a higher-order function (it’s a function that takes a function as an argument).
+
+
++++
+#### Multicast Delegates
+* Delegate instance can reference a list of target methods
+* The `+` and `+=` operators combine delegate instances
+* The `-` and `-=` operators remove delegate instances
+```C#
+SomeDelegate d = SomeMethod1;
+d += SomeMethod2;
+```
+* Invoking d will now call both `SomeMethod1` and `SomeMethod2`
+* Delegates are invoked in the order they are added
+* Thee caller receives the return value from the last method
+  * Preceding methods return values are discarded
+
++++
+public delegate void ProgressReporter (int percentComplete);
+public class Util
+{
+ public static void HardWork (ProgressReporter p)
+ {
+ for (int i = 0; i < 10; i++)
+ {
+ p (i * 10); // Invoke delegate
+ System.Threading.Thread.Sleep (100); // Simulate hard work
+ }
+ }
+}
++++
+class Test
+{
+ static void Main()
+ {
+ ProgressReporter p = WriteProgressToConsole;
+ p += WriteProgressToFile;
+ Util.HardWork (p);
+ }
+ static void WriteProgressToConsole (int percentComplete)
+ => Console.WriteLine (percentComplete);
+ static void WriteProgressToFile (int percentComplete)
+ => System.IO.File.WriteAllText ("progress.txt",
+ percentComplete.ToString());
+}
++++
+#### Instance method target example
+public delegate void ProgressReporter (int percentComplete);
+class Test
+{
+ static void Main()
+ {
+ X x = new X();
+ ProgressReporter p = x.InstanceProgress;
+ p(99); // 99
+ Console.WriteLine (p.Target == x); // True
+ Console.WriteLine (p.Method); // Void InstanceProgress(Int32)
+ }
+}
+class X
+{
+ public void InstanceProgress (int percentComplete)
+ => Console.WriteLine (percentComplete);
+}
+
++++
+#### `delegate` versus `interface`
+* A problem that can be solved with a delegate can also be solved with an interface
+* Delegate design may be a better if:
+  * The interface defines only a single method
+  * Multicast capability is needed
+  * The subscriber needs to implement the interface multiple times
+
++++
+#### Delegate compatibility
+* All are incompatible with one another
+```C#
+delegate void D1();
+delegate void D2();
+...
+D1 d1 = Method1;
+D2 d2 = d1; // Compile-time error
+```
+
++++
+#### Delegate equality
+* Delegates are equal if they reference the same methods in the
+same order
+```C#
+delegate void D();
+...
+D d1 = Method1;
+D d2 = Method1;
+Console.WriteLine (d1 == d2); // True```
+
++++
 ### Events
 
 ---

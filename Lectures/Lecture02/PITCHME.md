@@ -471,7 +471,7 @@ public class Stock : Asset
 * Downcasts
 * Return `null` if fails
 
-+++?code=/Lectures/Lecture02/Assets/sln/Example/AsOperator.cs&lang=C#&title=AS Operator Example
++++?code=/Lectures/Lecture02/Assets/sln/Tests/AsOperator.cs&lang=C#&title=AS Operator Example
 @[5-13]
 @[8-12]
 @[10]

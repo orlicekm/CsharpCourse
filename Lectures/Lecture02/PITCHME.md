@@ -135,6 +135,7 @@
 |Within the braces           |Methods, properties, indexers, events, fields, constructors...|
 
 +++
+### Class components
 * **field** – a member variable
 * **property** – an accessor for a field
 * **method** - named procedure of function
@@ -148,13 +149,13 @@
   * Optional
   * Noninitializatialized has a *default* value (`0, \0, null, false`)
   * Before a constructor call
-  ```C#
-  class Octopus
-  {
-    string name;
-    public int Age = 10;
-  }
-  ```
+    ```C#
+    class Octopus
+    {
+      string name;
+      public int Age = 10;
+    }
+    ```
 
 +++
 #### Field modifiers
@@ -170,8 +171,8 @@
 * *Procedures* and *functions* are in OOP called *methods*
 * Can access members of `class` or `struct`
 * Can
-  * *accept parameters* - *values*, *reference types*, `ref`
-  * *return result* - in return type (`return`), or `ref` or `out` parameters
+  * accept parameters - *values*, *reference types*, `ref`
+  * return result - in return type (`return`), or `ref` or `out` parameters
 
 +++
 #### Method modifiers
@@ -232,16 +233,16 @@
 
 +++
 #### Read-only and calculated property
-* *Read-only* if it specifies only a *get* accessor
-* *Write-only* if it specifies only a set accessor
+* *Read-only* if it specifies only a `get` accessor
+* *Write-only* if it specifies only a `set` accessor
   * Rarely used
 
 +++
 #### Get and set accessibility
 * *Get* and *set* accessors can have different access levels
 * Typical use:
-  * *public* property 
-  * *internal* or *private* access modifier on the *setter*
+  * `public` property 
+  * `internal` or `private` access modifier on the *setter*
   ```C#
   private decimal y;
   public decimal Y
@@ -331,7 +332,7 @@
 +++
 ### Deconstructors
 * Opposite to a constructor
-* C# 7
+* From C# 7
 * Deconstruction method must
   * Be called **Deconstruct**
   * Have one or more out parameters
@@ -406,23 +407,24 @@ abstract
 ```C#
 public abstract class Asset
 {
- // Note empty implementation
- public abstract decimal NetValue { get; }
+  // Note empty implementation
+  public abstract decimal NetValue { get; }
 }
 
 public class Stock : Asset
 {
- public long SharesOwned;
- public decimal CurrentPrice;
- // Override like a virtual method.
- public override decimal NetValue => CurrentPrice * SharesOwned;
+  public long SharesOwned;
+  public decimal CurrentPrice;
+  // Override like a virtual method.
+  public override decimal NetValue => CurrentPrice * SharesOwned;
 }
 ```
 
 +++
 ### Virtual
-* Can be overridden by subclasses wanting to provide a specialized implementation
-* Activation uses mechanism of late binding which chooses the appropriate implementation during runtime
+* Can be overridden by subclasses 
+* To provide a specialized implementation
+* Mechanism of **late binding**
 * Virtual can be:
   * Methods
   * Properties
@@ -440,7 +442,7 @@ public class Stock : Asset
 * Creates a *base* class reference from a *subclass* reference
 * Only *members* provided by given *base* class can be accessed through upcasted reference
 
-+++?code=/Lectures/Lecture02/Assets/sln/Example/UpCast.cs&lang=C#&title=Upcast Example
++++?code=/Lectures/Lecture02/Assets/sln/Tests/UpCast.cs&lang=C#&title=Upcast Example
 @[5-14]
 @[8-13]
 @[10]
@@ -453,7 +455,7 @@ public class Stock : Asset
 * Creates a *subclass* reference from a *base* class reference
 * It **fails**, if *base* class instance is not compatible with *inherited* one
 
-+++?code=/Lectures/Lecture02/Assets/sln/Example/DownCast.cs&lang=C#&title=Downcast Example
++++?code=/Lectures/Lecture02/Assets/sln/Tests/DownCast.cs&lang=C#&title=Downcast Example
 @[6-22]
 @[9-14]
 @[11]

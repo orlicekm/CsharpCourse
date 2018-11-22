@@ -97,9 +97,9 @@
 
 +++
 ### Access modifiers
-* used for limiting access to *implementation details*
-* ensure *encapsulation* and leads to safe code
-* if a modifier is omitted, the most restrictive one is used
+* Used for limiting access to *implementation details*
+* Ensure *encapsulation* and leads to safe code
+* If a modifier is omitted, the most restrictive one is used
 
 +++
 | Modifier | Visibility |
@@ -144,7 +144,7 @@
 
 +++
 ### Field
-* Variable that is a member of a *class* or *struct**
+* Variable that is a member of a *class* or *struct*
 * Initialization
   * Optional
   * Noninitializatialized has a *default* value (`0, \0, null, false`)
@@ -243,14 +243,14 @@
 * Typical use:
   * `public` property 
   * `internal` or `private` access modifier on the *setter*
-  ```C#
-  private decimal y;
-  public decimal Y
-  {
-    get { return y; }
-    private set { y = Math.Round (value, 2); }
-  }
-  ```
+    ```C#
+    private decimal y;
+    public decimal Y
+    {
+      get { return y; }
+      private set { y = Math.Round (value, 2); }
+    }
+    ```
 
 +++
 #### Property modifiers
@@ -427,6 +427,7 @@ public class Stock : Asset
 * Mechanism of **late binding**
 * Virtual can be:
   * Methods
+  * Properties
   * Properties
   * Indexers
   * Events
@@ -899,8 +900,8 @@ catch (FormatException ex)
   * The CLR throws this exception
   * Thrown when you attempt to access a member of an object whose value is null
 
-+++
-### Delegates
+---
+## Delegates
 * An object that knows how to call a method
 * Defines:
   * method's return type
@@ -919,15 +920,15 @@ static int Square (int x) => x * x;
 delegate int Transformer (int x);
 class Test
 {
- static void Main()
-137
- {
- Transformer t = Square; // Create delegate instance
- int result = t(3); // Invoke delegate
- Console.WriteLine (result); // 9
- }
- static int Square (int x) => x * x;
-}```
+  static void Main()
+  {
+    Transformer t = Square; // Create delegate instance
+    int result = t(3); // Invoke delegate
+    Console.WriteLine (result); // 9
+  }
+  static int Square (int x) => x * x;
+}
+```
 
 +++
 The statement:
@@ -936,7 +937,9 @@ Transformer t = Square;
 ```
 is shorthand for:
 ```C#
-Transformer t = new Transformer (Square);```
+Transformer t = new Transformer (Square);
+```
+
 The expression:
 ```C#
 t(3)
@@ -952,24 +955,24 @@ t.Invoke(3)
 public delegate int Transformer (int x);
 class Util
 {
- public static void Transform (int[] values, Transformer t)
- {
- for (int i = 0; i < values.Length; i++)
- values[i] = t (values[i]);
- }
+  public static void Transform (int[] values, Transformer t)
+  {
+    for (int i = 0; i < values.Length; i++)
+    values[i] = t (values[i]);
+  }
 }
 class Test
 {
- static void Main()
- {
- int[] values = { 1, 2, 3 };
- Util.Transform (values, Square); // Hook in the Square method
- foreach (int i in values)
- Console.Write (i + " "); // 1 4 9
- }
- static int Square (int x) => x * x;
-}```
-
+  static void Main()
+  {
+    int[] values = { 1, 2, 3 };
+    Util.Transform (values, Square); // Hook in the Square method
+    foreach (int i in values)
+      Console.Write (i + " "); // 1 4 9
+  }
+  static int Square (int x) => x * x;
+}
+```
 The `Transform` method is a higher-order function (it’s a function that takes a function as an argument).
 
 
@@ -988,52 +991,60 @@ d += SomeMethod2;
   * Preceding methods return values are discarded
 
 +++
+```C#
 public delegate void ProgressReporter (int percentComplete);
 public class Util
 {
- public static void HardWork (ProgressReporter p)
- {
- for (int i = 0; i < 10; i++)
- {
- p (i * 10); // Invoke delegate
- System.Threading.Thread.Sleep (100); // Simulate hard work
- }
- }
-}
+  public static void HardWork (ProgressReporter p)
+  {
+    for (int i = 0; i < 10; i++)
+    {
+      p (i * 10); // Invoke delegate
+      System.Threading.Thread.Sleep (100); // Simulate hard work
+    }
+  }
+}
+```
+
 +++
+```C#
 class Test
 {
- static void Main()
- {
- ProgressReporter p = WriteProgressToConsole;
- p += WriteProgressToFile;
- Util.HardWork (p);
- }
- static void WriteProgressToConsole (int percentComplete)
- => Console.WriteLine (percentComplete);
- static void WriteProgressToFile (int percentComplete)
- => System.IO.File.WriteAllText ("progress.txt",
- percentComplete.ToString());
-}
+  static void Main()
+  {
+    ProgressReporter p = WriteProgressToConsole;
+    p += WriteProgressToFile;
+    Util.HardWork (p);
+  }
+  static void WriteProgressToConsole (int percentComplete)
+    => Console.WriteLine (percentComplete);
+  static void WriteProgressToFile (int percentComplete)
+    => System.IO.File.WriteAllText ("progress.txt",
+       percentComplete.ToString());
+}
+```
+
 +++
 #### Instance method target example
+```C#
 public delegate void ProgressReporter (int percentComplete);
 class Test
 {
- static void Main()
- {
- X x = new X();
- ProgressReporter p = x.InstanceProgress;
- p(99); // 99
- Console.WriteLine (p.Target == x); // True
- Console.WriteLine (p.Method); // Void InstanceProgress(Int32)
- }
+  static void Main()
+  {
+    X x = new X();
+    ProgressReporter p = x.InstanceProgress;
+    p(99); // 99
+    Console.WriteLine (p.Target == x); // True
+    Console.WriteLine (p.Method); // Void InstanceProgress(Int32)
+  }
 }
 class X
 {
- public void InstanceProgress (int percentComplete)
- => Console.WriteLine (percentComplete);
+  public void InstanceProgress (int percentComplete)
+    => Console.WriteLine (percentComplete);
 }
+```
 
 +++
 #### `delegate` versus `interface`
@@ -1063,10 +1074,84 @@ delegate void D();
 ...
 D d1 = Method1;
 D d2 = Method1;
-Console.WriteLine (d1 == d2); // True```
+Console.WriteLine (d1 == d2); // True
+```
+
+---
+## Events
+* Construct that exposes the subset of delegate features required for the broadcaster/subscriber model
+
+```C#
+public delegate void PriceChangedHandler (decimal oldPrice, decimal newPrice);
+public class Broadcaster
+{
+  // Event declaration
+  public event PriceChangedHandler PriceChanged;
+}```
 
 +++
-### Events
+#### Standard Event Pattern* Used to provide consistency across Framework and user code
+
+##### Standard Event Pattern `EventArgs`
+* `System.EventArgs`
+* Predefined class with no members
+* Base class for conveying information for an event
+
+```C#
+public class PriceChangedEventArgs : System.EventArgs
+{
+  public readonly decimal LastPrice;
+  public readonly decimal NewPrice;
+
+  public PriceChangedEventArgs (decimal lastPrice, decimal newPrice)
+  {
+    LastPrice = lastPrice;
+    NewPrice = newPrice;
+  }
+}
+```
+
++++
+##### Standard Event Pattern Delegate
+* name must end with `EventHandler`
+* two arguments
+  * the first a subclass`object` *(broadcaster)*
+  * the second a subclass of `EventArgs` *(extra informations)*
+* return type `void`
+* .NET defines a generic delegate `System.EventHandler<>`
+  * can be used when an event doesn’t carry extra information
+
+```C#
+public delegate void EventHandler<TEventArgs>
+ (object source, TEventArgs e) where TEventArgs : EventArgs;
+```
+
++++
+```C#
+public class Stock
+{
+  ...
+  public event EventHandler<PriceChangedEventArgs> PriceChanged;
+
+  protected virtual void OnPriceChanged (PriceChangedEventArgs e)
+  {
+    if (PriceChanged != null) PriceChanged (this, e);
+  }
+}```
+
++++
+### Event Modifiers
+* virtual
+* overridden
+* abstract
+* sealed
+* static
+
+---
+## Lambda Expressions
+
+---
+## Generics
 
 ---
 ## References:

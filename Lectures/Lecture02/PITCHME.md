@@ -940,6 +940,7 @@ static int Square (int x) => x * x;
 ```
 
 +++
+### Delegates Example
 ```C#
 delegate int Transformer (int x);
 class Test
@@ -955,20 +956,36 @@ class Test
 ```
 
 +++
+### Delegates Shorthands
+
+<div class="right">
 The statement:
+</div>
+
 ```C#
 Transformer t = Square;
 ```
+
+<div class="right">
 is shorthand for:
+</div>
+
 ```C#
 Transformer t = new Transformer (Square);
 ```
 
+<div class="right">
 The expression:
+</div>
+
 ```C#
 t(3)
 ```
+
+<div class="right">
 is shorthand for:
+</div>
+
 ```C#
 t.Invoke(3)
 ```
@@ -1176,25 +1193,22 @@ public class Stock
 * From C# 3.0
 * Unnamed method written in place of a delegate instance
 * Form **(parameters) => expression-or-statement-block**
-
-```
-x => x * x;
-```
+  ```
+  x => x * x;
+  ```
 * parameter `x`
 * expression `x * x`
-
-```
-x => { return x * x; };```
+  ```
+  x => { return x * x; };  ```
 * Parameter `x`
 * Statement block `{ return x * x; }`
 
 +++
 ### Labda Expressions usage example
-```C#delegate int Transformer (int i);...
-Transformer sqr = x => x * x;
-Console.WriteLine (sqr(3)); // 9
-```
-
+  ```C#  delegate int Transformer (int i);  ...
+  Transformer sqr = x => x * x;
+  Console.WriteLine (sqr(3)); // 9
+  ```
 * `x` corresponds to `i`
 * `x * x` corresponds to return type `int`
 
@@ -1209,8 +1223,8 @@ int total = totalLength ("hello", "world"); // 10;
 +++ ### Explicitly Specifying Lambda Parameter Types* Compiler can usually infer the type contextually
 * When it can't, you must specify the type explicitly:
 
-```C#void Foo<T> (T x) {}
-void Bar<T> (Action<T> a) {}...Bar ((int x) => Foo (x));```+++### Lambda Expression Capturing Outer Variables
+  ```C#  void Foo<T> (T x) {}
+  void Bar<T> (Action<T> a) {}  ...  Bar ((int x) => Foo (x));  ```+++### Lambda Expression Capturing Outer Variables
 * *Outer variables* referenced by a lambda expression are called *captured variables*
 * *Lambda expression* that captures variables is called a *closure*
 * *Captured variables* 
@@ -1278,15 +1292,13 @@ public void Foo (Func<int,bool> predicate) { ... }
 * Several basic algorithms can be implemented using *generic methods*.
 * *Signature* of generic method contains generic type parameter.
 * *Generic method* can contain multiple *generic parameters*
-
-```C#
-static void Swap<T> (ref T a, ref T b) {
-  T temp = a;
-  a = b;
-  b = temp;
-}
-```
-
+  ```C#
+  static void Swap<T> (ref T a, ref T b) {
+    T temp = a;
+    a = b;
+    b = temp;
+  }
+  ```
 * Difference:
   * *opened type* – `Swap<T>`
   * *closed type* – `Swap<int>`

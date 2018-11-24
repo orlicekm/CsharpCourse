@@ -402,14 +402,14 @@ protected override void Finalize() {
 or simply
 </div>
 
-  ```C#
-  class Dog {
-    ~Dog()   {
-      // Cleanup code
-      ...
-    }
+```C#
+class Dog {
+  ~Dog()   {
+    // Cleanup code
+    ...
   }
-  ```
+}
+```
 
 
 +++
@@ -930,7 +930,11 @@ catch (FormatException ex)
 ```C#
 delegate int Transformer (int x);
 ```
+
+<div class="right">
 is compatible with
+</div>
+
 ```C#
 static int Square (int x) => x * x;
 ```

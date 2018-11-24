@@ -62,9 +62,8 @@
   * **inheritance**:
     * only *reuses implementation and establishes* a **syntactic relationship**
     * not necessarily a **semantic relationship**, inheritance does not ensure behavioral subtyping
-* To distinguish these concepts, **subtyping** is also known as **interface inheritance**
- whereas inheritance as defined here is known as implementation inheritance or code inheritance
-* Still, inheritance is a commonly used mechanism for establishing subtype relationships
+* **Subtyping** is also known as **interface inheritance** whereas inheritance as defined here is known as implementation inheritance or code inheritance
+* Still, **inheritance** is a commonly used mechanism for establishing subtype relationships
 
 +++
 #### Polymorphism
@@ -193,12 +192,13 @@
   ```C#
   int Foo(int x) => x * 2;
   ```
-* Method can have an empty return type (`void`)
+* Method witch empty return type (`void`):
   ```C#
   void Foo(int x) => Console.WriteLine(x);
   ```
 
 +++
+#### Method overloads
 * Return type is not a part of the signature
   ```C#
   void Foo (int x) {...}
@@ -374,22 +374,26 @@ var (width, height) = rect;
 * Runs on instance that is no more referenced before is garbage collected
 * `override`s `System.Object`'s method `Finalize()`
 
-```C#
-protected override void Finalize() {
-  // Cleanup code
-  ...
-  base.Finalize();
-}
-```
-or simply
-```C#
-class Dog {
-  ~Dog()   {
+  ```C#
+  protected override void Finalize() {
     // Cleanup code
     ...
+    base.Finalize();
   }
-}
-```
+  ```
+
+<div class="center">
+or simply
+</div>
+
+  ```C#
+  class Dog {
+    ~Dog()   {
+      // Cleanup code
+      ...
+    }
+  }
+  ```
 
 
 +++

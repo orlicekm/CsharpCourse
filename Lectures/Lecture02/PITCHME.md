@@ -1144,15 +1144,18 @@ Console.WriteLine (d1 == d2); // True
 * Construct that exposes the subset of delegate features required for the broadcaster/subscriber model
 
 ```C#
-public delegate void PriceChangedHandler (decimal oldPrice, decimal newPrice);
+public delegate void PriceChangedHandler (decimal oldPrice, decimal newPrice);
+
 public class Broadcaster
 {
   // Event declaration
   public event PriceChangedHandler PriceChanged;
-}```
+}
+```
 
 +++
-#### Standard Event Pattern* Used to provide consistency across Framework and user code
+#### Standard Event Pattern
+* Used to provide consistency across Framework and user code
 
 ##### Standard Event Pattern `EventArgs`
 * `System.EventArgs`
@@ -1200,7 +1203,8 @@ public class Stock
   {
     if (PriceChanged != null) PriceChanged (this, e);
   }
-}```
+}
+```
 
 +++
 ### Event Modifiers
@@ -1221,13 +1225,16 @@ public class Stock
 * parameter `x`
 * expression `x * x`
   ```
-  x => { return x * x; };  ```
+  x => { return x * x; };
+  ```
 * Parameter `x`
 * Statement block `{ return x * x; }`
 
 +++
 ### Labda Expressions Usage Example
-  ```C#  delegate int Transformer (int i);  ...
+  ```C#
+  delegate int Transformer (int i);
+  ...
   Transformer sqr = x => x * x;
   Console.WriteLine (sqr(3)); // 9
   ```
@@ -1242,10 +1249,19 @@ Func<string,string,int> totalLength = (s1, s2) => s1.Length + s2.Length;
 int total = totalLength ("hello", "world"); // 10;
 ```
 
-+++ ### Explicitly Specifying Lambda Parameter Types* Compiler can usually infer the type contextually
++++ 
+### Explicitly Specifying Lambda Parameter Types
+* Compiler can usually infer the type contextually
 * When it can't, you must specify the type explicitly:
-  ```C#  void Foo<T> (T x) {}
-  void Bar<T> (Action<T> a) {}  ...  Bar ((int x) => Foo (x));  ```+++### Lambda Expression Capturing Outer Variables
+  ```C#
+  void Foo<T> (T x) {}
+  void Bar<T> (Action<T> a) {}
+  ...
+  Bar ((int x) => Foo (x));
+  ```
+
++++
+### Lambda Expression Capturing Outer Variables
 * *Outer variables* referenced by a lambda expression are called *captured variables*
 * *Lambda expression* that captures variables is called a *closure*
 * *Captured variables* 
@@ -1272,7 +1288,13 @@ static void Main()
  Func<int> natural = Natural();
  Console.WriteLine (natural()); // 0
  Console.WriteLine (natural()); // 1
-}```+++### Extended Lifetime Example```C#static Func<int> Natural()
+}
+```
+
++++
+### Extended Lifetime Example
+```C#
+static Func<int> Natural()
 {
  return() => { int seed = 0; return seed++; };
 }
@@ -1281,7 +1303,9 @@ static void Main()
  Func<int> natural = Natural();
  Console.WriteLine (natural()); // 0
  Console.WriteLine (natural()); // 0
-}```
+}
+```
+
 +++
 ### Lambda Expressions vs Local Methods
 * Local methods functionality overlaps with that ofvlambda expressions
@@ -1306,8 +1330,8 @@ public void Foo (Func<int,bool> predicate) { ... }
     * `where T :` interface 
     * `where T :` class 
     * `where T :` struct 
-    *` where T :` new() 
-    * `where U : T`
+    * `where T :` new() 
+    * `where U : T` 
 
 +++
 ### Generic methods
@@ -1337,7 +1361,8 @@ public void Foo (Func<int,bool> predicate) { ... }
     (string,int) person = GetPerson(); // Could use 'var' here if we want
     Console.WriteLine (person.Item1); // Bob
     Console.WriteLine (person.Item2); // 23
-  }  ```
+  }
+  ```
 
 +++
 ### Named Tuples Example

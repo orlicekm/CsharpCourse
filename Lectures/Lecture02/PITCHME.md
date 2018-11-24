@@ -707,6 +707,24 @@ class Flea : Insect, ICarnivore { }
   * Elimination of type issues in  *compile time*
   * Sandboxing protects object state against outer modifications
 
++++
+## Covariance and Contravariance in Generics
+* [Read more](https://docs.microsoft.com/en-us/dotnet/standard/generics/covariance-and-contravariance)
+* **Covariance** allows use of more derived (more specific) than originally specified.
+  * You can assign an instance of `IEnumerable<Derived>` to a variable of type `IEnumerable<Base>`.  
+* **Contravariance** allows a use less derived (less specific) than initially specified. 
+  * You can assign an instance of `IEnumerable<Base>` to a variable of type `IEnumerable<Derived>`.
+
+* **Invariance** use only of the same type as initially specified.
+  *  Invariant generic type parameter is neither **covariant** nor **contravariant**.
+
++++?code=/Lectures/Lecture02/Assets/sln/Example/CovarianceContravariance.cs&lang=C#&title=Covariance Contravariance Example
+@[11]
+@[27-30]
+@[33-36]
+@[11-24]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Example/CovarianceContravariance.cs)
+
 ---
 ## Exceptions
 * Built-in error handling
@@ -1303,6 +1321,31 @@ public void Foo (Func<int,bool> predicate) { ... }
   * *opened type* – `Swap<T>`
   * *closed type* – `Swap<int>`
 * during a *runtime* all generics are of *closed type*
+
+---
+## Tuples
+* Simple way to store a set of values
+* Safely return multiple values from a method without resorting to out parameters 
+  ```C#
+  static (string,int) GetPerson() => ("Bob", 23);
+  static void Main()
+  {
+    (string,int) person = GetPerson(); // Could use 'var' here if we want
+    Console.WriteLine (person.Item1); // Bob
+    Console.WriteLine (person.Item2); // 23
+  }  ```
+
++++
+### Named Tuples Example
+```C#
+static (string Name, int Age) GetPerson() => ("Bob", 23);
+static void Main()
+{
+  var person = GetPerson();
+  Console.WriteLine (person.Name); // Bob
+  Console.WriteLine (person.Age); // 23
+}
+```
 
 
 ---

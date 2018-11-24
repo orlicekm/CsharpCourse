@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Animal.cs" />
     <Compile Include="Cat.cs" />
+    <Compile Include="CovarianceContravariance.cs" />
     <Compile Include="Dog.cs" />
     <Compile Include="Panda.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -1109,7 +1109,7 @@ class X
 ```
 
 +++
-#### `delegate` versus `interface`
+#### `delegate` vs `interface`
 * A problem that can be solved with a delegate can also be solved with an interface
 * Delegate design may be a better if:
   * The interface defines only a single method
@@ -1334,7 +1334,7 @@ public void Foo (Func<int,bool> predicate) { ... }
     * `where U : T` 
 
 +++
-### Generic methods
+### Generic Methods
 * Several basic algorithms can be implemented using *generic methods*.
 * *Signature* of generic method contains generic type parameter.
 * *Generic method* can contain multiple *generic parameters*

@@ -1141,14 +1141,99 @@ public class Stock
 
 +++
 ### Event Modifiers
-* virtual
-* overridden
-* abstract
-* sealed
-* static
+* `virtual`
+* `override`
+* `abstract`
+* `sealed`
+* `static`
 
 ---
 ## Lambda Expressions
+* From C# 3.0
+* Unnamed method written in place of a delegate instance
+* Form **(parameters) => expression-or-statement-block**
+
+```
+x => x * x;
+```
+* parameter `x`
+* expression `x * x`
+
+```
+x => { return x * x; };```
+* Parameter `x`
+* Statement block `{ return x * x; }`
+
++++
+### Labda Expressions usage example
+```C#delegate int Transformer (int i);...
+Transformer sqr = x => x * x;
+Console.WriteLine (sqr(3)); // 9
+```
+
+* `x` corresponds to `i`
+* `x * x` corresponds to return type `int`
+
++++
+### Lambda Expressions two parameters example
+
+```C#
+Func<string,string,int> totalLength = (s1, s2) => s1.Length + s2.Length;
+int total = totalLength ("hello", "world"); // 10;
+```
+
++++ ### Explicitly Specifying Lambda Parameter Types* Compiler can usually infer the type contextually
+* When it can't, you must specify the type explicitly:
+
+```C#void Foo<T> (T x) {}
+void Bar<T> (Action<T> a) {}...Bar ((int x) => Foo (x));```+++### Lambda Expression Capturing Outer Variables
+* *Outer variables* referenced by a lambda expression are called *captured variables*
+* *Lambda expression* that captures variables is called a *closure*
+* *Captured variables* 
+  * Are evaluated when the delegate is actually *invoked*
+  * Have their lifetimes *extended* to that of the delegate
+
+```C#
+int factor = 5;
+Func<int, int> multiplier = n => n * factor;
+factor = 10;
+Console.WriteLine (multiplier (3)); // 30
+```
+
++++
+```C#
+static Func<int> Natural()
+{
+ int seed = 0;
+ return () => seed++; // Returns a closure
+}
+static void Main()
+{
+ Func<int> natural = Natural();
+ Console.WriteLine (natural()); // 0
+ Console.WriteLine (natural()); // 1
+}```+++```C#static Func<int> Natural()
+{
+ return() => { int seed = 0; return seed++; };
+}
+static void Main()
+{
+ Func<int> natural = Natural();
+ Console.WriteLine (natural()); // 0
+ Console.WriteLine (natural()); // 0
+}```
++++
+### Lambda Expressions vs Local Methods
+* Local methods functionality overlaps with that ofvlambda expressions
+* Local methods advantages:
+    * Recursive without ugly hacks
+    * Avoid the clutter of specifying a delegate type
+    * Incur slightly less overhead
+* In many cases you *need* a delegate
+  *i.e., a method with a delegate-typed parameter:
+```C#
+public void Foo (Func<int,bool> predicate) { ... }
+```
 
 ---
 ## Generics

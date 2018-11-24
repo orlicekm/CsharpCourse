@@ -351,20 +351,36 @@ var rect = new Rectangle (3, 4);
 (float width, float height) = rect; // Deconstruction
 Console.WriteLine (width + " " + height); // 3 4
 ```
+
+<div class="center">
 or
+</div>
+
 ```C#
 float width, height;
 rect.Deconstruct (out width, out height);
 ```
+
+<div class="center">
 or
+</div>
+
 ```C#
 rect.Deconstruct (out var width, out var height);
 ```
+
+<div class="center">
 or
+</div>
+
 ```C#
 (var width, var height) = rect;
 ```
+
+<div class="center">
 or simply
+</div>
+
 ```C#
 var (width, height) = rect;
 ```
@@ -374,13 +390,13 @@ var (width, height) = rect;
 * Runs on instance that is no more referenced before is garbage collected
 * `override`s `System.Object`'s method `Finalize()`
 
-  ```C#
-  protected override void Finalize() {
-    // Cleanup code
-    ...
-    base.Finalize();
-  }
-  ```
+```C#
+protected override void Finalize() {
+  // Cleanup code
+  ...
+  base.Finalize();
+}
+```
 
 <div class="center">
 or simply

@@ -950,7 +950,7 @@ catch (FormatException ex)
 delegate int Transformer (int x);
 ```
 
-<div class="right">
+<div class="center">
 is compatible with
 </div>
 
@@ -977,7 +977,7 @@ class Test
 +++
 ### Delegates Shorthands
 
-<div class="right">
+<div class="center">
 The statement:
 </div>
 
@@ -985,7 +985,7 @@ The statement:
 Transformer t = Square;
 ```
 
-<div class="right">
+<div class="center">
 is shorthand for:
 </div>
 
@@ -993,7 +993,7 @@ is shorthand for:
 Transformer t = new Transformer (Square);
 ```
 
-<div class="right">
+<div class="center">
 The expression:
 </div>
 
@@ -1001,7 +1001,7 @@ The expression:
 t(3)
 ```
 
-<div class="right">
+<div class="center">
 is shorthand for:
 </div>
 
@@ -1244,7 +1244,6 @@ int total = totalLength ("hello", "world"); // 10;
 
 +++ ### Explicitly Specifying Lambda Parameter Types* Compiler can usually infer the type contextually
 * When it can't, you must specify the type explicitly:
-
   ```C#  void Foo<T> (T x) {}
   void Bar<T> (Action<T> a) {}  ...  Bar ((int x) => Foo (x));  ```+++### Lambda Expression Capturing Outer Variables
 * *Outer variables* referenced by a lambda expression are called *captured variables*

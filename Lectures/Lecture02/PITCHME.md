@@ -1237,6 +1237,37 @@ public void Foo (Func<int,bool> predicate) { ... }
 
 ---
 ## Generics
+* *Inheritance* increases reusability of *base type*
+* Allows use of templates
+* Introduces *type-safe code*, no more *casting* and *boxing*
+* Generic `interface`
+  * Parameters can be restricted with:
+    * `where T :` base class
+    * `where T :` interface 
+    * `where T :` class 
+    * `where T :` struct 
+    *` where T :` new() 
+    * `where U : T`
+
++++
+### Generic methods
+* Several basic algorithms can be implemented using *generic methods*.
+* *Signature* of generic method contains generic type parameter.
+* *Generic method* can contain multiple *generic parameters*
+
+```C#
+static void Swap<T> (ref T a, ref T b) {
+  T temp = a;
+  a = b;
+  b = temp;
+}
+```
+
+* Difference:
+  * *opened type* – `Swap<T>`
+  * *closed type* – `Swap<int>`
+* during a *runtime* all generics are of *closed type*
+
 
 ---
 ## References:

@@ -12,10 +12,5 @@
         {
             LivesLeft = livesLeft;
         }
-
-        public override string Cry()
-        {
-            return "Meow!";
-        }
     }
 }

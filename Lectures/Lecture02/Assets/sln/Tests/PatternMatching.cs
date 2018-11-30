@@ -8,21 +8,21 @@ namespace Tests
         [Fact]
         public void WithoutPatternMatchingTest()
         {
-            var dog = new Dog();
-            if (dog is Animal)
+            var unknownCat = new UnknownCat();
+            if (unknownCat is Cat)
             {
-                Assert.NotNull(dog as Animal);
+                Assert.NotNull(unknownCat as Cat);
             }
-            Assert.Null(dog as Animal);
+            Assert.Null(unknownCat as Cat);
         }
 
         [Fact]
         public void PatternMatchingTest()
         {
-            var dog = new Dog();
-            if (dog is Animal animal)
+            var unknownCat = new UnknownCat();
+            if (unknownCat is Cat cat)
             {
-                Assert.NotNull(animal);
+                Assert.NotNull(cat);
             }
         }
     }

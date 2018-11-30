@@ -8,8 +8,8 @@ namespace Tests
         [Fact]
         public void AsOperatorTest()
         {
-            var dog = new Dog();
-            Assert.Null(dog as Animal);
+            var unknownCat = new UnknownCat();
+            Assert.Null(unknownCat as Cat);
         }
     }
 }

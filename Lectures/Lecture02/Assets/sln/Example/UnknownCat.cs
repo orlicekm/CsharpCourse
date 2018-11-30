@@ -1,12 +1,21 @@
 ﻿namespace Example
 {
-    public abstract class UnknownCat: Animal
+    public class UnknownCat: Animal
     {
         public string Name { get; set; } = "Default Name";
 
-        protected UnknownCat(string name)
+        public UnknownCat()
+        {
+        }
+
+        public UnknownCat(string name)
         {
             Name = name;
+        }
+
+        public override string Cry()
+        {
+            return "Meow!";
         }
     }
 }

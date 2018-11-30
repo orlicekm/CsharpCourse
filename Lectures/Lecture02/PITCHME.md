@@ -324,14 +324,15 @@
   * `base` - refers to *base* class type instance
 
 +++?code=/Lectures/Lecture02/Assets/sln/Example/UnknownCat.cs&lang=C#&title=Constructor Overloading Sample
-@[3-11]
+@[3-20]
 @[5]
 @[7-10]
-@[5-10]
+@[11-14]
+@[5-14]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Example/UnknownCat.cs)
 
 +++?code=/Lectures/Lecture02/Assets/sln/Example/Cat.cs&lang=C#&title=Constructor Overloading Sample
-@[3-20]
+@[3-15]
 @[5]
 @[7-9]
 @[11-14]

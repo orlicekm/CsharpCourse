@@ -101,13 +101,15 @@
 * If a modifier is omitted, the most restrictive one is used
 
 +++
+
 | Modifier | Visibility |
 |-|-|
-|`private` | visible only *inside of class* |
-|`protected` | visible only *inside of class*, and all *inherited types* |
-|`public` | visible from *everywhere* |
-|`internal` | visible only inside a *same assembly*, or *friendly assembly* |
-|`protected internal` | visible only inside a *same assembly*, or *friendly assembly*, only for *inherited types* |
+|`public` | accessed *everywhere* |
+|`private` | accessed only in the **same** *class* or *struct* |
+|`protected` | accessed only by code in the **same** *class*, or in a *class* **that is derived** from that class |
+|`internal` | accessed in the **same assembly**, but not from another assembly |
+|`protected internal` | accessed in the assembly in which it is declared, or from within a **derived** *class* in another assembly |
+|`private protected` |  accessed **only within its declaring assembly**, by code in the same class or in a type that is derived from that class |
 
 ---
 ## Class
@@ -725,6 +727,19 @@ class Flea : Insect, ICarnivore { }
 @[11-24]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Example/CovarianceContravariance.cs)
 
++++
+## Boxing/Unboxing
+* C#'s type system is unified such that a value of any type can be treated as an `object`
+* Every type in C# directly or indirectly derives from the `object` class type, and `object` is the ultimate *base class* of all types
+* Values of reference types are treated as objects simply by viewing the values as type object
+* Values of value types are treated as objects by performing **boxing** and **unboxing** operations
+
++++?code=/Lectures/Lecture01/Assets/sln/Tests/Boxing.cs&lang=C#&title=Boxing Sample
+@[10]
+@[11]
+@[12]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/Boxing.cs)
+
 ---
 ## Exceptions
 * Built-in error handling
@@ -938,6 +953,38 @@ catch (FormatException ex)
 * `NullReferenceException`
   * The CLR throws this exception
   * Thrown when you attempt to access a member of an object whose value is null
+
+---
+## Generics
+* *Inheritance* increases reusability of *base type*
+* Allows use of templates
+* Introduces *type-safe code*, no more *casting* and *boxing*
+* Generic `interface`
+  * Parameters can be restricted with:
+    * `where T :` base class
+    * `where T :` interface 
+    * `where T :` class 
+    * `where T :` struct 
+    * `where T :` new() 
+    * `where U : T` 
+
++++
+### Generic Methods
+* Several basic algorithms can be implemented using *generic methods*.
+* *Signature* of generic method contains generic type parameter.
+* *Generic method* can contain multiple *generic parameters*
+  ```C#
+  static void Swap<T> (ref T a, ref T b) {
+    T temp = a;
+    a = b;
+    b = temp;
+  }
+  ```
+* Difference:
+  * *opened type* – `Swap<T>`
+  * *closed type* – `Swap<int>`
+* during a *runtime* all generics are of *closed type*
+
 
 ---
 ## Delegates
@@ -1308,47 +1355,17 @@ static void Main()
 
 +++
 ### Lambda Expressions vs Local Methods
-* Local methods functionality overlaps with that ofvlambda expressions
+* Local methods functionality overlaps with that overlaps lambda expressions
 * Local methods advantages:
-    * Recursive without ugly hacks
-    * Avoid the clutter of specifying a delegate type
-    * Incur slightly less overhead
+  * Recursive without ugly hacks
+  * Avoid the clutter of specifying a delegate type
+  * Incur slightly less overhead
 * In many cases you *need* a delegate
-  *i.e., a method with a delegate-typed parameter:
+  * i.e., a method with a delegate-typed parameter:
+
 ```C#
 public void Foo (Func<int,bool> predicate) { ... }
 ```
-
----
-## Generics
-* *Inheritance* increases reusability of *base type*
-* Allows use of templates
-* Introduces *type-safe code*, no more *casting* and *boxing*
-* Generic `interface`
-  * Parameters can be restricted with:
-    * `where T :` base class
-    * `where T :` interface 
-    * `where T :` class 
-    * `where T :` struct 
-    * `where T :` new() 
-    * `where U : T` 
-
-+++
-### Generic Methods
-* Several basic algorithms can be implemented using *generic methods*.
-* *Signature* of generic method contains generic type parameter.
-* *Generic method* can contain multiple *generic parameters*
-  ```C#
-  static void Swap<T> (ref T a, ref T b) {
-    T temp = a;
-    a = b;
-    b = temp;
-  }
-  ```
-* Difference:
-  * *opened type* – `Swap<T>`
-  * *closed type* – `Swap<int>`
-* during a *runtime* all generics are of *closed type*
 
 ---
 ## Tuples
@@ -1375,7 +1392,6 @@ static void Main()
   Console.WriteLine (person.Age); // 23
 }
 ```
-
 
 ---
 ## References:

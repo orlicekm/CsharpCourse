@@ -768,19 +768,6 @@ Assert.False(f1>f2);
 @[18]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/DefaultValue.cs)
 
-+++
-## Boxing/Unboxing
-* C#'s type system is unified such that a value of any type can be treated as an `object`
-* Every type in C# directly or indirectly derives from the `object` class type, and `object` is the ultimate *base class* of all types
-* Values of reference types are treated as objects simply by viewing the values as type object
-* Values of value types are treated as objects by performing **boxing** and **unboxing** operations
-
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/Boxing.cs&lang=C#&title=Boxing Sample
-@[10]
-@[11]
-@[12]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Boxing.cs)
-
 ---
 ## Parameters
 * Parameters can be passed to a method as:

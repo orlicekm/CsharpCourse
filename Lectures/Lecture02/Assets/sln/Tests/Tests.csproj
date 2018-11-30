@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AsOperator.cs" />
+    <Compile Include="Boxing.cs" />
     <Compile Include="DownCast.cs" />
     <Compile Include="IsOperator.cs" />
     <Compile Include="PatternMatching.cs" />

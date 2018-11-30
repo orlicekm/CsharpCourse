@@ -1,5 +1,5 @@
-﻿# Title
-## Subtitle
+﻿# Base class library, LINQ
+## Using LINQ to access collections, XML, MSSQL
 <div class="right">
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
 </div>

@@ -57,7 +57,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Array.cs" />
-    <Compile Include="Boxing.cs" />
     <Compile Include="Break.cs" />
     <Compile Include="Continue.cs" />
     <Compile Include="DefaultValue.cs" />

@@ -246,11 +246,11 @@
   * `public` property 
   * `internal` or `private` access modifier on the *setter*
     ```C#
-    private decimal y;
-    public decimal Y
+    private decimal foo;
+    public decimal Foo
     {
-      get { return y; }
-      private set { y = Math.Round (value, 2); }
+      get { return foo; }
+      private set { foo = Math.Round (value, 2); }
     }
     ```
 
@@ -1013,8 +1013,8 @@ class Test
 {
   static void Main()
   {
-    Transformer t = Square; // Create delegate instance
-    int result = t(3); // Invoke delegate
+    Transformer transformer = Square; // Create delegate instance
+    int result = transformer(3); // Invoke delegate
     Console.WriteLine (result); // 9
   }
   static int Square (int x) => x * x;
@@ -1029,7 +1029,7 @@ The statement:
 </div>
 
 ```C#
-Transformer t = Square;
+Transformer transformer = Square;
 ```
 
 <div class="center">
@@ -1037,7 +1037,7 @@ is shorthand for:
 </div>
 
 ```C#
-Transformer t = new Transformer (Square);
+Transformer transformer = new Transformer (Square);
 ```
 
 <div class="center">
@@ -1045,7 +1045,7 @@ The expression:
 </div>
 
 ```C#
-t(3)
+transformer(3)
 ```
 
 <div class="center">
@@ -1053,7 +1053,7 @@ is shorthand for:
 </div>
 
 ```C#
-t.Invoke(3)
+transformer.Invoke(3)
 ```
 
 +++
@@ -1062,10 +1062,10 @@ t.Invoke(3)
 public delegate int Transformer (int x);
 class Util
 {
-  public static void Transform (int[] values, Transformer t)
+  public static void Transform (int[] values, Transformer transformer)
   {
     for (int i = 0; i < values.Length; i++)
-    values[i] = t (values[i]);
+    values[i] = transformer (values[i]);
   }
 }
 class Test
@@ -1103,11 +1103,11 @@ d += SomeMethod2;
 public delegate void ProgressReporter (int percentComplete);
 public class Util
 {
-  public static void HardWork (ProgressReporter p)
+  public static void HardWork (ProgressReporter progressReporter)
   {
     for (int i = 0; i < 10; i++)
     {
-      p (i * 10); // Invoke delegate
+      progressReporter (i * 10); // Invoke delegate
       System.Threading.Thread.Sleep (100); // Simulate hard work
     }
   }
@@ -1121,8 +1121,8 @@ class Test
 {
   static void Main()
   {
-    ProgressReporter p = WriteProgressToConsole;
-    p += WriteProgressToFile;
+    ProgressReporter progressReporter = WriteProgressToConsole;
+    progressReporter += WriteProgressToFile;
     Util.HardWork (p);
   }
   static void WriteProgressToConsole (int percentComplete)
@@ -1141,14 +1141,14 @@ class Test
 {
   static void Main()
   {
-    X x = new X();
-    ProgressReporter p = x.InstanceProgress;
-    p(99); // 99
-    Console.WriteLine (p.Target == x); // True
-    Console.WriteLine (p.Method); // Void InstanceProgress(Int32)
+    Foo foo = new Foo();
+    ProgressReporter progressReporter = foo.InstanceProgress;
+    progressReporter(99); // 99
+    Console.WriteLine (progressReporter.Target == foo); // True
+    Console.WriteLine (progressReporter.Method); // Void InstanceProgress(Int32)
   }
 }
-class X
+class Foo
 {
   public void InstanceProgress (int percentComplete)
     => Console.WriteLine (percentComplete);
@@ -1167,11 +1167,11 @@ class X
 #### Delegate Compatibility
 * All are incompatible with one another
 ```C#
-delegate void D1();
-delegate void D2();
+delegate void Delegate1();
+delegate void Delegate2();
 ...
-D1 d1 = Method1;
-D2 d2 = d1; // Compile-time error
+Delegate1 delegate1 = Method1;
+Delegate2 delegate2 = delegate1; // Compile-time error
 ```
 
 +++
@@ -1179,11 +1179,11 @@ D2 d2 = d1; // Compile-time error
 * Delegates are equal if they reference the same methods in the
 same order
 ```C#
-delegate void D();
+delegate void Delegate();
 ...
-D d1 = Method1;
-D d2 = Method1;
-Console.WriteLine (d1 == d2); // True
+Delegate delegate1 = Method1;
+Delegate delegate2 = Method1;
+Console.WriteLine (delegate1 == delegate2); // True
 ```
 
 ---

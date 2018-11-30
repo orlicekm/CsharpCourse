@@ -1,14 +1,13 @@
-﻿namespace Tests
+﻿namespace Example
 {
-    public class Cat: Animal
+    public class Cat: UnknownCat
     {
-        public string Name { get; set; }
         public int LivesLeft { get; set; } = 9;
 
-        public Cat(string name)
+        public Cat(string name) : base(name)
         {
-            Name = name;
         }
+
         public Cat(string name, int livesLeft) : this(name)
         {
             LivesLeft = livesLeft;

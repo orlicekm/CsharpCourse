@@ -1,4 +1,4 @@
-﻿namespace Tests
+﻿namespace Example
 {
     public class Rectangle
     {

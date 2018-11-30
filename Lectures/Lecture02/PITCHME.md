@@ -294,7 +294,7 @@
 ### Constructor
 * Run initialization code on a class or struct
 * Defined like a method
-  * Method name and return type are reduced to the name of the enclosing type
+  * Method name and return type are reduced to the name of the enclosing typeanu
 * Constructors of *base* class are accessible
 
 +++?code=/Lectures/Lecture02/Assets/sln/Example/Panda.cs&lang=C#&title=Constructor Sample
@@ -323,13 +323,24 @@
   * `this` - refers to *this* type instance 
   * `base` - refers to *base* class type instance
 
++++?code=/Lectures/Lecture02/Assets/sln/Example/UnknownCat.cs&lang=C#&title=Constructor Overloading Sample
+@[3-11]
+@[5]
+@[7-10]
+@[5-10]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Example/UnknownCat.cs)
+
 +++?code=/Lectures/Lecture02/Assets/sln/Example/Cat.cs&lang=C#&title=Constructor Overloading Sample
-@[3-21]
-@[5-6]
-@[8-11]
-@[12-15]
-@[8-15]
+@[3-20]
+@[5]
+@[7-9]
+@[11-14]
+@[7-14]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Example/Cat.cs)
+
++++?code=/Lectures/Lecture02/Assets/sln/Tests/Constructor.cs&lang=C#&title=Constructor Overloading Test
+@[9-13]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/Constructor.cs)
 
 +++
 ### Deconstructors

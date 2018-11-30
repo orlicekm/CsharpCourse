@@ -1,4 +1,5 @@
 ﻿using System;
+using Example;
 using Xunit;
 
 namespace Tests

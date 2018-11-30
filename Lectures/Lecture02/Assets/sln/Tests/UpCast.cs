@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using Example;
+using Xunit;
 
 namespace Tests
 {

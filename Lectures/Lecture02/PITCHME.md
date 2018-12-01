@@ -721,7 +721,101 @@ class Flea : Insect, ICarnivore { }
   * Elimination of type issues in  *compile time*
   * Sandboxing protects object state against outer modifications
 
+---
+## Generics
+* C# has two mechanism for reusable code across different types
+  * *Inheritance* - expresses reusability with a *base type*
+  * *Generics* - express reusability with a “template” that contains “placeholder” types
+    * Type safe code
+    * Reduce casting and boxing
+
 +++
+### Generics Types
+* declares type parameters—placeholder types to be filled in by the consumer of the generic type
+  * i.e. `Stack<T>`, designed to stack instances of type `T`:
+    ```C#
+    public class Stack<T>
+    {
+      int position;
+      T[] data = new T[100];
+      public void Push (T obj) => data[position++] = obj;
+      public T Pop() => data[--position];
+    }    ```    used as    ```C#
+    var stack = new Stack<int>();
+    stack.Push (5);
+    stack.Push (10);
+    int x = stack.Pop(); // x is 10
+    int y = stack.Pop(); // y is 5    ```
+
++++
+### Generics Open/Close Types
+* *Opened type* – `Stack<T>`
+* *Closed type* – `Stack<int>`
+  * During a *runtime* all generics are of *closed type*
+
+```C#
+var stack = new Stack<T>(); // Illegal: What is T?
+```
+inside a class  its legal
+
+```
+public class Stack<T>
+{
+ ...
+ public Stack<T> Clone()
+ {
+ Stack<T> clone = new Stack<T>(); // Legal ...
+ }
+}```
+
++++
+### Why Geneerics
+* **Reusable across different types**
+  * i.e. we need a stack for multiple types:
+    * Generics
+    * Separate version of the class for every required element type
+      *  (e.i., `IntStack`, `StringStack` etc..)
+    * Stack that is generalized by using object:
+```C#
+public class ObjectStack
+{
+  int position;
+  object[] data = new object[10];
+  public void Push (object obj) => data[position++] = obj;
+  public object Pop() => data[--position];
+}```
+Require boxing and downcasting that could not be checked at compile time
+```C#
+ObjectStack stack = new ObjectStack();
+stack.Push ("s"); // Wrong type, but no error!
+int i = (int)stack.Pop(); // Downcast - runtime error
+```
+`ObjectStack` is functionally equivalent to `Stack<object>`
+
++++
+### Generic Methods
+* Several basic algorithms can be implemented using *generic methods*.
+* *Signature* of generic method contains generic type parameter.
+* *Generic method* can contain multiple *generic parameters*
+  ```C#
+  static void Swap<T> (ref T a, ref T b) {
+    T temp = a;
+    a = b;
+    b = temp;
+  }
+  ```
+
+### Generic Constraints
+* Parameters can be restricted with:
+  * `where T :` base class
+  * `where T :` interface 
+  * `where T :` class 
+  * `where T :` struct 
+  * `where T :` new() 
+  * `where U : T` 
+
+
+---
 ## Covariance and Contravariance in Generics
 * [Read more](https://docs.microsoft.com/en-us/dotnet/standard/generics/covariance-and-contravariance)
 * **Covariance** allows use of more derived (more specific) than originally specified.
@@ -965,37 +1059,6 @@ catch (FormatException ex)
 * `NullReferenceException`
   * The CLR throws this exception
   * Thrown when you attempt to access a member of an object whose value is null
-
----
-## Generics
-* *Inheritance* increases reusability of *base type*
-* Allows use of templates
-* Introduces *type-safe code*, no more *casting* and *boxing*
-* Generic `interface`
-  * Parameters can be restricted with:
-    * `where T :` base class
-    * `where T :` interface 
-    * `where T :` class 
-    * `where T :` struct 
-    * `where T :` new() 
-    * `where U : T` 
-
-+++
-### Generic Methods
-* Several basic algorithms can be implemented using *generic methods*.
-* *Signature* of generic method contains generic type parameter.
-* *Generic method* can contain multiple *generic parameters*
-  ```C#
-  static void Swap<T> (ref T a, ref T b) {
-    T temp = a;
-    a = b;
-    b = temp;
-  }
-  ```
-* Difference:
-  * *opened type* – `Swap<T>`
-  * *closed type* – `Swap<int>`
-* during a *runtime* all generics are of *closed type*
 
 
 ---

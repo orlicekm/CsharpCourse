@@ -478,11 +478,11 @@ public class Stock : Asset
 * Only *members* provided by given *base* class can be accessed through upcasted reference
 
 +++?code=/Lectures/Lecture02/Assets/sln/Tests/UpCast.cs&lang=C#&title=Upcast Example
-@[5-14]
-@[8-13]
-@[10]
+@[6-15]
+@[9-14]
 @[11]
 @[12]
+@[13]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/UpCast.cs)
 
 +++
@@ -491,14 +491,14 @@ public class Stock : Asset
 * It **fails**, if *base* class instance is not compatible with *inherited* one
 
 +++?code=/Lectures/Lecture02/Assets/sln/Tests/DownCast.cs&lang=C#&title=Downcast Example
-@[6-22]
-@[9-14]
-@[11]
+@[7-23]
+@[10-15]
 @[12]
 @[13]
-@[17-21]
-@[19]
+@[14]
+@[18-22]
 @[20]
+@[21]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/DownCast.cs)
 
 +++
@@ -507,10 +507,10 @@ public class Stock : Asset
 * Return `null` if fails
 
 +++?code=/Lectures/Lecture02/Assets/sln/Tests/AsOperator.cs&lang=C#&title=AS Operator Example
-@[5-13]
-@[8-12]
-@[10]
+@[6-14]
+@[9-13]
 @[11]
+@[12]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/AsOperator.cs)
 
 +++
@@ -519,22 +519,22 @@ public class Stock : Asset
 * Usually before downcast
 
 +++?code=/Lectures/Lecture02/Assets/sln/Tests/IsOperator.cs&lang=C#&title=IS Operator Example
-@[5-13]
-@[8-12]
-@[10]
+@[6-14]
+@[9-13]
 @[11]
+@[12]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/IsOperator.cs)
 
 +++?code=/Lectures/Lecture02/Assets/sln/Tests/PatternMatching.cs&lang=C#&title=IS Pattern Matching Example
-@[5-27]
-@[8-16]
-@[10]
-@[11-12,14]
-@[13,15]
-@[19-26]
-@[21]
-@[22-23, 25]
-@[24]
+@[6-28]
+@[9-17]
+@[11]
+@[12-13,15]
+@[14,16]
+@[20-27]
+@[22]
+@[23-24, 26]
+@[25]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/PatternMatching.cs)
 
 +++
@@ -841,6 +841,7 @@ int i = (int)stack.Pop(); // Downcast - runtime error
 * Values of value types are treated as objects by performing **boxing** and **unboxing** operations
 
 +++?code=/Lectures/Lecture01/Assets/sln/Tests/Boxing.cs&lang=C#&title=Boxing Sample
+@[8-15]
 @[10]
 @[11]
 @[12]

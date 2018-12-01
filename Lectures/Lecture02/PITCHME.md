@@ -805,6 +805,7 @@ int i = (int)stack.Pop(); // Downcast - runtime error
   }
   ```
 
++++
 ### Generic Constraints
 * Parameters can be restricted with:
   * `where T :` base class
@@ -840,7 +841,7 @@ int i = (int)stack.Pop(); // Downcast - runtime error
 * Values of reference types are treated as objects simply by viewing the values as type object
 * Values of value types are treated as objects by performing **boxing** and **unboxing** operations
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/Boxing.cs&lang=C#&title=Boxing Sample
++++?code=/Lectures/Lecture02/Assets/sln/Tests/Boxing.cs&lang=C#&title=Boxing Sample
 @[8-15]
 @[10]
 @[11]
@@ -1280,10 +1281,10 @@ public class Broadcaster
 #### Standard Event Pattern
 * Used to provide consistency across Framework and user code
 
-##### Standard Event Pattern `EventArgs`
-* `System.EventArgs`
-* Predefined class with no members
-* Base class for conveying information for an event
+* Standard Event Pattern `EventArgs`
+  * `System.EventArgs`
+  * Predefined class with no members
+  * Base class for conveying information for an event
 
 ```C#
 public class PriceChangedEventArgs : System.EventArgs

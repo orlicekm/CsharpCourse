@@ -1280,7 +1280,6 @@ public class Broadcaster
 +++
 #### Standard Event Pattern
 * Used to provide consistency across Framework and user code
-
 * Standard Event Pattern `EventArgs`
   * `System.EventArgs`
   * Predefined class with no members

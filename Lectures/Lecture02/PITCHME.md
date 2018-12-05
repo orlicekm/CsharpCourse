@@ -12,7 +12,7 @@
 * OOP Object interconnects data and behavior together
   * **Behavior** is described by **procedures** and **functions**, both called in OOP as **methods**
   * Data is stored in object's **member variable (field)**
-  * **Methods** and **fields** together creates objects
+  * **Methods** and **fields** together create objects
 
 +++?code=/Lectures/Lecture02/Assets/sln/Example/Dog.cs&lang=C#&title=OOP Sample
 @[3-14]
@@ -21,7 +21,7 @@
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Example/Dog.cs)
 
 +++
-### Three Principes of OOP
+### Three Principles of OOP
 * OOP interconnects **data** and **logic**
   * **Encapsulation**
   * **Inheritance**
@@ -56,7 +56,7 @@
 
 +++
 ##### Inheritance and Subtyping
-* In some languages inheritance and subtyping agree
+* In some languages inheritance and subtyping are no different
 * Generally in statically-typed class-based OO languages, such as (C++, C#, Java), whereas in others they differ
   * **subtyping** *establishes an is-a relationship*
   * **inheritance**:
@@ -128,7 +128,7 @@
 * *non static* - classes are **instanciated** during program run
 
 +++
-### Class can contains
+### Class may contain
 | | |
 |-|-|
 |Preceding the keyword class |Attributes and class modifier |
@@ -148,7 +148,7 @@
 * Variable that is a member of a *class* or *struct*
 * Initialization
   * Optional
-  * Noninitializatialized has a *default* value (`0, \0, null, false`)
+  * Noninitialized has a *default* value (`0, \0, null, false`)
   * Before a constructor call
     ```C#
     class Octopus
@@ -170,7 +170,7 @@
 +++
 ### Method
 * *Procedures* and *functions* are in OOP called *methods*
-* Can access members of `class` or `struct`
+* Can access to members of `class` or `struct`
 * Can
   * accept parameters - *values*, *reference types*, `ref`
   * return result - in return type (`return`), or `ref` or `out` parameters
@@ -190,7 +190,7 @@
   ```C#
   int Foo(int x) { return x * 2; }
   ```
-* Expression-bodied metod:
+* Expression-bodied method:
   ```C#
   int Foo(int x) => x * 2;
   ```
@@ -214,7 +214,7 @@
 
 +++
 #### Local Methods
-* Define a method inside another method
+* Defines a method inside another method
 * Is visible only to the enclosing method
 * Can access the local variables and parameters of the enclosing method
   ```C#
@@ -430,7 +430,7 @@ class Dog {
 ### Abstract Class
 * **Can never be instantiated**
 * Only its concrete subclasses can be instantiated
-* Cannot be sealed, thus must be possible to inherit from it
+* Cannot be sealed it must be possible to inherit from it
 * Able to define abstract members:
   * Like virtual members, except they don’t provide a default implementation
   * Implementation must be provided by the subclass unless that subclass is also declared
@@ -462,7 +462,6 @@ public class Stock : Asset
 * Virtual can be:
   * Methods
   * Properties
-  * Properties
   * Indexers
   * Events
 
@@ -470,7 +469,7 @@ public class Stock : Asset
 ### Type Compatibilty
 * Easeup usage of *subtypes*, ergo *virtual methods*
 * Compatibility of *types* of `class`, `struct` instances
-* Determines, to which type reference can be assigned reference of another type
+* Determines to which type reference can be assigned reference of another type
 
 +++
 #### Upcast
@@ -515,7 +514,7 @@ public class Stock : Asset
 
 +++
 #### Operator `is`
-* Tests whether a reference conversion would
+* Tests whether a reference conversion would succeed
 * Usually before downcast
 
 +++?code=/Lectures/Lecture02/Assets/sln/Tests/IsOperator.cs&lang=C#&title=IS Operator Example
@@ -648,7 +647,7 @@ Console.WriteLine(type); //Racing, Breeding, ForSosages
 * Declares only *specification*, not *implementation* of its members
 * All members are `public`
 * `class` or `struct` can implement **multiple** `interface`s
-* Implementation is provided by `class` or `struct` that implementats particular `interface`
+* Implementation is provided by `class` or `struct` that implementates particular `interface`
 * `interface` can declare
   * methods
   * properties
@@ -715,7 +714,7 @@ class Flea : Insect, ICarnivore { }
 #### Type Safety and Security
 * **Strongly typed language**
   * *type* has to be known in *compile time*
-* Support of Intellisence in Visual Studio
+* Support of Intellisense in Visual Studio
 * Keyword `dynamic` overcomes type safety mechanisms, and type is resolved in *runtime*
 * Benefits:
   * Elimination of type issues in  *compile time*
@@ -740,12 +739,16 @@ class Flea : Insect, ICarnivore { }
       T[] data = new T[100];
       public void Push (T obj) => data[position++] = obj;
       public T Pop() => data[--position];
-    }    ```    used as    ```C#
+    }
+    ```
+    used as
+    ```C#
     var stack = new Stack<int>();
     stack.Push (5);
     stack.Push (10);
     int x = stack.Pop(); // x is 10
-    int y = stack.Pop(); // y is 5    ```
+    int y = stack.Pop(); // y is 5
+    ```
 
 +++
 ### Generics Open/Close Types
@@ -764,9 +767,11 @@ public class Stack<T>
  ...
  public Stack<T> Clone()
  {
- Stack<T> clone = new Stack<T>(); // Legal ...
+ Stack<T> clone = new Stack<T>(); // Legal
+ ...
  }
-}```
+}
+```
 
 +++
 ### Why Geneerics
@@ -783,7 +788,8 @@ public class ObjectStack
   object[] data = new object[10];
   public void Push (object obj) => data[position++] = obj;
   public object Pop() => data[--position];
-}```
+}
+```
 Require boxing and downcasting that could not be checked at compile time
 ```C#
 ObjectStack stack = new ObjectStack();
@@ -796,7 +802,7 @@ int i = (int)stack.Pop(); // Downcast - runtime error
 ### Generic Methods
 * Several basic algorithms can be implemented using *generic methods*.
 * *Signature* of generic method contains generic type parameter.
-* *Generic method* can contain multiple *generic parameters*
+* *Generic method* may contain multiple *generic parameters*
   ```C#
   static void Swap<T> (ref T a, ref T b) {
     T temp = a;
@@ -1049,7 +1055,7 @@ catch (FormatException ex)
   * Thrown when a function argument is (unexpectedly) null
 * `System.ArgumentOutOfRangeException`
   * Subclass of `ArgumentException`
-  * When a (usually numeric) argument is out of radge (usually too big or too small)
+  * When a (usually numeric) argument is out of range (usually too big or too small)
 * `System.InvalidOperationException`
   * Thrown when the state of an object is unsuitable for a method to successfully execute
 * `System.NotSupportedException`
@@ -1171,7 +1177,7 @@ d += SomeMethod2;
 ```
 * Invoking d will now call both `SomeMethod1` and `SomeMethod2`
 * Delegates are invoked in the order they are added
-* Thee caller receives the return value from the last method
+* The caller receives the return value from the last method
   * Preceding methods return values are discarded
 
 +++

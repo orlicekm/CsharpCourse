@@ -82,7 +82,7 @@
 
 +++
 ### .NET API
-* [.NET Sstandard API](https://docs.microsoft.com/sk-sk/dotnet/api/?view=netstandard-2.0)
+* [.NET Standard API](https://docs.microsoft.com/sk-sk/dotnet/api/?view=netstandard-2.0)
 * API(Application programming interface):
   * Set of namespaces(classes, structs, interfaces, enums, delegates)
   * Allow the creation of applications which access the features or data of an:
@@ -119,9 +119,9 @@
 ```URI
           userinfo     host        port
           ┌─┴────┐ ┌────┴────────┐ ┌┴┐ 
-  https://john.doe@www.example.com:123/forum/questions/?tag=networking&order=newest#top
-  └─┬─┘ └───────┬────────────────────┘└─┬─────────────┘└──┬───────────────────────┘└┬─┘  
-  scheme     authority                 path              query                      fragment
+  https://john.doe@www.example.com:123/forum/questions/?tag=networking#top
+  └─┬─┘ └───────┬────────────────────┘└─┬─────────────┘└──┬──────────┘└┬─┘
+  scheme     authority                 path              query     fragment
 
   ldap://[2001:db8::7]/c=GB?objectClass?one
   └─┬┘ └───────┬─────┘└─┬─┘ └──────┬──────┘
@@ -141,7 +141,7 @@ scheme     path
 ```
 
 +++ 
-### URI in .NET Standard
+### URI Standard
 * `Uri`- object representation of URI
 * `UriBuilder` - custom URI constructors
 * Another classes:
@@ -150,9 +150,15 @@ scheme     path
   * `UriComponents`, `UriFormat`, `UriHostNameType`...
 
 ```C#
-Uri siteUri = new Uri("http://www.contoso.com/");
-WebRequest wr = WebRequest.Create(siteUri);
+var uri = new Uri("http://www.contoso.com/");
+WebRequest webRequest = WebRequest.Create(uri);
 ```
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/UriTest.cs&lang=C#&title=Uri in .NET Sample
+@[9-15]
+@[11,12]
+@[14]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/UriTest.cs)
 
 +++
 ### `System` Namespace Exceptions

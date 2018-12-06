@@ -103,7 +103,7 @@
   * Processing exceptions
 
 +++
-### `System` Namespace - URI
+### URI
 * Uniform Resource Identifier
   * string that identifies a particular resource
   * predefined set of syntax rules
@@ -113,7 +113,10 @@
 </br>
 </div>
 
-```
++++
+### URI examples
+
+```URI
           userinfo     host        port
           ┌─┴────┐ ┌────┴────────┐ ┌┴┐ 
   https://john.doe@www.example.com:123/forum/questions/?tag=networking&order=newest#top
@@ -135,6 +138,20 @@ scheme     path
   telnet://192.0.2.16:80/
   └──┬─┘ └──────┬──────┘│
   scheme    authority  path
+```
+
++++ 
+### URI in .NET Standard
+* `Uri`- object representation of URI
+* `UriBuilder` - custom URI constructors
+* Another classes:
+  * `UriFormatException`, `UriTypeConverter`, `FtpStyleUriParser`, `HttpStyleUriParser`...
+* Enums:
+  * `UriComponents`, `UriFormat`, `UriHostNameType`...
+
+```C#
+Uri siteUri = new Uri("http://www.contoso.com/");
+WebRequest wr = WebRequest.Create(siteUri);
 ```
 
 +++

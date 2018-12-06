@@ -66,6 +66,9 @@
   * Added a compat shim that allows referencing existing binaries
     * Even if they weren't built against *.NET Standard*
 
++++
+### .NET Standard Version Growing
+
 | Version |  #APIs | Growth % |
 |:--------|-------:|---------:|
 | 1.0     |  7,949 |          |
@@ -81,14 +84,14 @@
 ### .NET API
 * [.NET Sstandard API](https://docs.microsoft.com/sk-sk/dotnet/api/?view=netstandard-2.0)
 * API(Application programming interface):
-  * Set of namespaces(classes)
+  * Set of namespaces(classes, structs, interfaces, enums, delegates)
   * Allow the creation of applications which access the features or data of an:
     * Operating system
     * Application
     * Other service..
 
 ---
-## System Namespace
+## `System` Namespace
 * `using System;`
 * [Documentation](https://docs.microsoft.com/sk-sk/dotnet/api/system?view=netstandard-2.0)
 * Fundamental classes and base classes
@@ -100,8 +103,17 @@
   * Processing exceptions
 
 +++
-### System Namespace Exception classes
+### URI
+
++++
+### `System` Namespace Exceptions
+* 50+ basic exceptions
 * `Exception` - base class for all exceptions
+* `SystemException` - base class for system exceptions
+
+
+
+++++
   * `AggregateException` - errors that occur during application execution
   * `ApplicationException` - base class for application-defined exceptions
   * `SystemException` - base class for system exceptions

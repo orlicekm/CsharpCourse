@@ -103,7 +103,39 @@
   * Processing exceptions
 
 +++
-### URI
+### `System` Namespace - URI
+* Uniform Resource Identifier
+  * string that identifies a particular resource
+  * predefined set of syntax rules
+
+<div class="center" >
+<img src="/Lectures/Lecture03/Assets/img/UriSyntax.png" />
+</br>
+</div>
+
+```
+          userinfo     host        port
+          ┌─┴────┐ ┌────┴────────┐ ┌┴┐ 
+  https://john.doe@www.example.com:123/forum/questions/?tag=networking&order=newest#top
+  └─┬─┘ └───────┬────────────────────┘└─┬─────────────┘└──┬───────────────────────┘└┬─┘  
+  scheme     authority                 path              query                      fragment
+
+  ldap://[2001:db8::7]/c=GB?objectClass?one
+  └─┬┘ └───────┬─────┘└─┬─┘ └──────┬──────┘
+ scheme    authority  path       query
+
+  mailto:John.Doe@example.com
+  └──┬─┘ └─────────┬────────┘
+  scheme         path
+
+  tel:+1-816-555-1212
+  └┬┘ └──────┬──────┘
+scheme     path
+
+  telnet://192.0.2.16:80/
+  └──┬─┘ └──────┬──────┘│
+  scheme    authority  path
+```
 
 +++
 ### `System` Namespace Exceptions
@@ -144,7 +176,9 @@
 [Microsoft documentation github](https://github.com/MicrosoftDocs)
 [.NET Standard web](http://immo.landwerth.net)
 [.NET Standard github](https://github.com/dotnet/standard)
+[ Wikipedia](https://en.wikipedia.org)
 
++++
 ## Refences to used images:
 [.NET Standard version table](http://immo.landwerth.net/netstandard-versions/)
 [Introduction to .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)

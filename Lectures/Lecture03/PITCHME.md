@@ -1,5 +1,5 @@
 ﻿# .NET Standard, LINQ
-## Main .NET libraries, collections, MSSQL, XML
+## .NET Standard libraries, collections, MSSQL, XML
 <div class="right">
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
 </div>
@@ -36,12 +36,15 @@
 
 +++
 ### .NET Standard vs .NET Core
-* **.NET Standard** is a *specification* that *covers which APIs a .NET platform has to implement*
-* **.NET Core** is a concrete .NET *platform* and *implements the .NET Standard*
+* **.NET Standard**
+  * *specification* that *covers which APIs a .NET platform has to implement*
+* **.NET Core**
+  * **concrete .NET platform**
+  * *implements the .NET Standard*
 
 +++
 ### .NET Standard versions
-* Higher versions *incorporate* all APIs from previous versions
+* Higher versions **incorporate** all APIs from previous versions
 * Specific .NET platform to .NET Standard
   * .NET Standard version depends on which version of .NET Standard the platform is implementing
 * .NET Standard version choise

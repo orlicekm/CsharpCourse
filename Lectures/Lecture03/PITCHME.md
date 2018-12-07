@@ -103,7 +103,7 @@
   * Processing exceptions
 
 +++
-### URI
+## URI
 * Uniform Resource Identifier
   * string that identifies a particular resource
   * predefined set of syntax rules
@@ -142,7 +142,7 @@ scheme     path
 
 +++ 
 ### URI Standard
-* `Uri`- object representation of URI
+* `class Uri`- representation of URI
 * `UriBuilder` - custom URI constructors
 * Another classes:
   * `UriFormatException`, `UriTypeConverter`, `FtpStyleUriParser`, `HttpStyleUriParser`...
@@ -154,11 +154,42 @@ var uri = new Uri("http://www.contoso.com/");
 WebRequest webRequest = WebRequest.Create(uri);
 ```
 
-+++?code=/Lectures/Lecture03/Assets/sln/Tests/UriTest.cs&lang=C#&title=Uri in .NET Sample
++++?code=/Lectures/Lecture03/Assets/sln/Tests/UriTest.cs&lang=C#&title=Uri Sample
 @[9-15]
 @[11,12]
 @[14]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/UriTest.cs)
+
++++
+## Console
+* `class Console` - standard input, output, and error streams for console applications
+* Struct:
+  * `ConsoleKeyInfo`
+* Enums:
+  * `ConsoleKey`, `ConsoleSpecialKey`, `ConsoleSpecialKey`...
+
+```C#
+Console.WriteLine("Prints on ");
+Console.WriteLine("New line");
+
+Console.Write("Prints on ");
+Console.Write("Same line");
+```
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/ConsoleSample.cs&lang=C#&title=Console Sample
+@[7-20]
+@[9]
+@[11-12,19]
+@[13]
+@[15-16]
+@[18]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Examples/ConsoleSample.cs)
+
++++
+## Array
+
+
+
 
 +++
 ### `System` Namespace Exceptions

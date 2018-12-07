@@ -105,8 +105,8 @@
 +++
 ## URI
 * Uniform Resource Identifier
-  * string that identifies a particular resource
-  * predefined set of syntax rules
+  * String that identifies a particular resource
+  * Predefined set of syntax rules
 
 <div class="center" >
 <img src="/Lectures/Lecture03/Assets/img/UriSyntax.png" />
@@ -174,6 +174,8 @@ Console.WriteLine("New line");
 
 Console.Write("Prints on ");
 Console.Write("Same line");
+
+Console.ReadLine();
 ```
 
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/ConsoleSample.cs&lang=C#&title=Console Sample
@@ -187,8 +189,78 @@ Console.Write("Same line");
 
 +++
 ## Array
+* `class Array`
+* Methods for creating, manipulating, searching, and sorting array
+* Base class for all arrays in the *common language runtime*
+* Is not part of the `System.Collections`
+  * It is still considered a collection because it is based on the `IList` interface
 
+```C#
+// Creates and initializes a new three-dimensional Array of type Int32.
+Array myArr = Array.CreateInstance( typeof(Int32), 2, 3, 4 );
+for ( int i = myArr.GetLowerBound(0); i <= myArr.GetUpperBound(0); i++ )
+  for ( int j = myArr.GetLowerBound(1); j <= myArr.GetUpperBound(1); j++ )
+    for ( int k = myArr.GetLowerBound(2); k <= myArr.GetUpperBound(2); k++ )
+      myArr.SetValue( (i*100)+(j*10)+k, i, j, k );
+```
 
++++?code=/Lectures/Lecture03/Assets/sln/Tests/ArrayTest.cs&lang=C#&title=Uri Sample
+@[9-25]
+@[11,19]
+@[21]
+@[22]
+@[24]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/ArrayTest.cs)
+
++++
+## BitConverter
+* `class Array`
+* **Converts:**
+  * *Base data types* to an *array of bytes**
+    * `GetBytes(Boolean)`, `GetBytes(Int32)` `GetBytes(Char)`...
+  * *Array of bytes* to *base data types**
+    * `ToBoolean(Byte[], Int32)`, `ToInt32(Byte[], Int32)`, `ToChar(Byte[], Int32)`...
+
+```C#
+bool sample = true;
+byte[] sampleByteArray = BitConverter.ToString(BitConverter.GetBytes(sample);
+Console.WriteLine(BitConverter.ToString(sampleByteArray)); //01
+```
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/BitConverterTest.cs&lang=C#&title=Uri Sample
+@[9-16]
+@[11]
+@[12]
+@[13]
+@[15]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/BitConverterTest.cs)
+
++++
+## Convert
+* `class Convert`
+* Converts a base data type to another base data type
+
+```C#
+try {
+  int intNumber = System.Convert.ToInt32(fooNumber);
+}
+catch (System.OverflowException) {
+  System.Console.WriteLine(
+    "Overflow in double to int conversion.");
+}
+```
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/BitConverterTest.cs&lang=C#&title=Uri Sample
+@[9-16]
+@[11]
+@[12]
+@[13]
+@[15]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/BitConverterTest.cs)
+
++++
+## Another important classes
+* Buffer
 
 
 +++

@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using System;
+using Xunit;
 
 namespace Tests
 {
@@ -8,10 +9,10 @@ namespace Tests
         public void Test()
         {
             double doubleNumber = 23.15;
-            int intNumber = System.Convert.ToInt32(doubleNumber);
-            bool boolNumber = System.Convert.ToBoolean(doubleNumber);
-            string stringNumber = System.Convert.ToString(doubleNumber);
-            char charNumber = System.Convert.ToChar(stringNumber[0]);
+            int intNumber = Convert.ToInt32(doubleNumber);
+            bool boolNumber = Convert.ToBoolean(doubleNumber);
+            string stringNumber = Convert.ToString(doubleNumber);
+            char charNumber = Convert.ToChar(stringNumber[0]);
 
             Assert.Equal(23, intNumber);
             Assert.Equal(true, boolNumber);

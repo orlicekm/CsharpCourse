@@ -204,16 +204,16 @@ for ( int i = myArr.GetLowerBound(0); i <= myArr.GetUpperBound(0); i++ )
       myArr.SetValue( (i*100)+(j*10)+k, i, j, k );
 ```
 
-+++?code=/Lectures/Lecture03/Assets/sln/Tests/ArrayTest.cs&lang=C#&title=Uri Sample
++++?code=/Lectures/Lecture03/Assets/sln/Tests/ArrayTest.cs&lang=C#&title=Array Sample
 @[9-25]
-@[11,19]
+@[11-19]
 @[21]
 @[22]
 @[24]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/ArrayTest.cs)
 
 +++
-## BitConverter
+## Bit Converter
 * `class Array`
 * **Converts:**
   * *Base data types* to an *array of bytes**
@@ -227,7 +227,7 @@ byte[] sampleByteArray = BitConverter.ToString(BitConverter.GetBytes(sample);
 Console.WriteLine(BitConverter.ToString(sampleByteArray)); //01
 ```
 
-+++?code=/Lectures/Lecture03/Assets/sln/Tests/BitConverterTest.cs&lang=C#&title=Uri Sample
++++?code=/Lectures/Lecture03/Assets/sln/Tests/BitConverterTest.cs&lang=C#&title=Bit Converter Sample
 @[9-16]
 @[11]
 @[12]
@@ -250,13 +250,56 @@ catch (System.OverflowException) {
 }
 ```
 
-+++?code=/Lectures/Lecture03/Assets/sln/Tests/BitConverterTest.cs&lang=C#&title=Uri Sample
-@[9-16]
-@[11]
-@[12]
-@[13]
-@[15]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/BitConverterTest.cs)
++++?code=/Lectures/Lecture03/Assets/sln/Tests/ConvertTest.cs&lang=C#&title=Convert Sample
+@[9-21]
+@[12-17]
+@[13-18]
+@[14-19]
+@[15-20]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/Convert.cs)
+
++++
+## Delegate
+
+
++++ 
+## Enum
+
++++
+## GC
+
++++
+## Math
+
++++
+## Nullable
+
++++
+## Object
+
++++
+## Random
+
++++
+## SerializableAttribute
+
++++
+## String
+
++++
+## Tuples
+
++++
+## Type
+
++++
+## ValueType
+
++++
+## Version
+
+...
+STRUCTS
 
 +++
 ## Another important classes

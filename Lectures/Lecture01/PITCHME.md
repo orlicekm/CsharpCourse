@@ -1,4 +1,4 @@
-﻿# Introduction to the C# language and .NET Platform
+﻿# Introduction to C#, Visual studio and .NET
 ## Language basics, syntax, instalation and introduction to Visual Studio
 <div class="right">
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
@@ -6,7 +6,19 @@
 
 ---
 ## Syllabus of lectures:  
-* to do
+1. Introduction to C#, Visual studio and .NET
+2. Object-oriented programming and advanced constructs in C#
+3. .NET Standard and Language Integrated Query
+4. Entity framework and repository design pattern
+5. Application testing and continous integration in C#
+6. Design patterns in C#
+7. Clean code in C#
+8. Model–view–viewmodel(MVVM) design pattern
+9. Windows Presentation Foundation(WPF)
+10. WPF used with MVVM, data binding
+11. Asynchronous and parallel programming in C#
+12. Performance analyzing and memory managment in C#
+13. Multiplatform development, .NET Core, application containerization
 
 +++
 ## Syllabus of laboratories  

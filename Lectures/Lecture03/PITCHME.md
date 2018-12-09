@@ -1,4 +1,4 @@
-﻿# .NET Standard, LINQ
+﻿# .NET Standard and Language Integrated Query
 ## .NET Standard libraries, collections, MSSQL, XML
 <div class="right">
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
@@ -259,11 +259,12 @@ catch (System.OverflowException) {
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/Convert.cs)
 
 +++
-## Delegate
-
-
-+++ 
-## Enum
+* `Delegate class` - represents a delegate
+  * Data structure that refers:
+    * To a static method
+    * To a class instance and an instance method of that class
+* `Enum class` - base class for enumerations
+* `Array class` - 
 
 +++
 ## GC

@@ -1,5 +1,5 @@
 # Lecture 02
-## Introduction to object-oriented programming and advanced programming constructs
+## Object-oriented programming and advanced constructs in C#
 * [Slides](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture02)  
 * [Markdown](/Lectures/Lecture02/PITCHME.md)
 * Agenda:

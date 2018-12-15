@@ -21,7 +21,7 @@
 13. Multiplatform development, .NET Core, application containerization
 
 +++
-## Syllabus of laboratories  
+## Syllabus of laboratories:  
 1. Work with Visual studio
 2. Model creation using Entity framework
 3. Clean code

@@ -22,7 +22,11 @@
 
 +++
 ## Syllabus of laboratories  
-* to do
+1. Work with Visual studio
+2. Model creation using Entity framework
+3. Clean code
+4. View Model creation, WPF basics
+5. WPF View binding to View Model
 
 ---
 <h2>Literature to study</h2>

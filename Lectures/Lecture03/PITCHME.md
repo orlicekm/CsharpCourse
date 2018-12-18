@@ -1,4 +1,4 @@
-﻿# .NET Standard and Language Integrated Query
+﻿# .NET Standard and Language Integrated Query(LINQ)
 ## .NET Standard libraries, collections, MSSQL, XML
 <div class="right">
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]

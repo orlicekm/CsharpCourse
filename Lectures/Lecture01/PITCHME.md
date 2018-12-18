@@ -13,7 +13,7 @@
 5. Application testing and continous integration in C#
 6. Design patterns in C#
 7. Clean code in C#
-8. Model–view–viewmodel(MVVM) design pattern
+8. Model–View–ViewModel(MVVM) design pattern
 9. Windows Presentation Foundation(WPF)
 10. WPF used with MVVM, data binding
 11. Asynchronous and parallel programming in C#

@@ -55,6 +55,16 @@
 </br>ISBN 9781617290893
 </div>
 
++++
+<h2>Recommended literature</h2>
+<div class="left">
+<img src="/Lectures/Lecture01/Assets/img/Refactoring.jpg" />
+</br>ISBN 9780134757599
+</div>
+<div class="right">
+<img src="/Lectures/Lecture01/Assets/img/Depth.png" />
+</br>ISBN  9781617294532
+</div>
 
 ---
 <div class="center" >

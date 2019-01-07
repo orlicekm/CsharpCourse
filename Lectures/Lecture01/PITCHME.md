@@ -62,7 +62,7 @@
 </br>ISBN 9780134757599
 </div>
 <div class="right">
-<img src="/Lectures/Lecture01/Assets/img/Depth.png" />
+<img src="/Lectures/Lecture01/Assets/img/Depth.jpg" />
 </br>ISBN  9781617294532
 </div>
 

@@ -165,7 +165,7 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 ---
 ## Why To Choose .NET?
 * Productivity
-* Amost every platform
+* Almost every platform
 * Performance
 * Security
 * Large ecosystem
@@ -183,7 +183,7 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 * Multi-language support
 
 +++
-### Amost every platform
+### Almost every platform
 * iOS
 * Android
 * Windows

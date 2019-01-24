@@ -19,9 +19,8 @@
 
 ---
 ## Zdroje kurzu
-* Rozdelenie
-  * Oficiálne a neoficiálne
-  * Kurzy a knihy
+* Oficiálne a neoficiálne
+* Kurzy a knihy
 
 +++
 ### Kurzy vs knihy
@@ -31,7 +30,7 @@
     * Videá
     * Súbory na stiahnutie
     * Prezentácie
-  * 
+  * Vzor - Course Programming in C# 20483C
 * Knihy
   * Využité ako zdroje
 
@@ -43,8 +42,9 @@
     * GitPitch
   * Praktická - cvičenia
     * 2x C# solution
+    * Visual Studio
 * Dostupnosť
-  * online - GitHub
+  * Online - GitHub
 
 +++
 ### Harmonogram kurzu

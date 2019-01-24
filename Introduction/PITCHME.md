@@ -23,7 +23,7 @@
 * Kurzy a knihy
 
 +++
-### Kurzy vs knihy
+### Kurzy vs. knihy
 * Kurzy
   * Väčšina online
   * Forma materiálov

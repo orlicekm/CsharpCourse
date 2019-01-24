@@ -48,7 +48,7 @@
 
 +++
 ### Harmonogram kurzu
-<img src="/Introduction/Assets/img/harmonogram.png" />
+![Harmonogram](/Introduction/Assets/img/harmonogram.png)
 
 ---
 ## Záver

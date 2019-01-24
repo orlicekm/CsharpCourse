@@ -5,8 +5,55 @@
 </div>
 
 ---
-* co mam za zadanie
-* zhrnutie zdrovoj a ako oni robia tie kurzy
-* casovy harmonogram 
-* forma materialov
-* zaver + neosnova
+## Zadanie kurzu
+* Téma
+  * Jazyk C#
+* Zistiť požiadavky
+  * Vhodná forma materiálov a ich zastúpenie
+* Vytvoriť 
+  * Osnovu
+  * Anotácie
+  * Materiály
+  * Časový harmonogram
+  * ⋮
+
+---
+## Zdroje kurzu
+* Rozdelenie
+  * Oficiálne a neoficiálne
+  * Kurzy a knihy
+
++++
+### Kurzy vs knihy
+* Kurzy
+  * Väčšina online
+  * Forma materiálov
+    * Videá
+    * Súbory na stiahnutie
+    * Prezentácie
+  * 
+* Knihy
+  * Využité ako zdroje
+
+---
+### Forma kurzu
+* Rozdelenie
+  * Teoretická - prednášky
+    * Markdown 
+    * GitPitch
+  * Praktická - cvičenia
+    * 2x C# solution
+* Dostupnosť
+  * online - GitHub
+
++++
+### Harmonogram kurzu
+<img src="/Introduction/Assets/img/harmonogram.png" />
+
+---
+## Záver
+* Open source
+* Anglický jazyk
+* 13 prednášok
+* 5 cvičení
+* 40 hodín

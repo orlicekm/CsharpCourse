@@ -35,7 +35,7 @@
   * Využité ako zdroje
 
 ---
-### Forma kurzu
+## Forma kurzu
 * Rozdelenie
   * Teoretická - prednášky
     * Markdown 
@@ -47,7 +47,7 @@
   * Online - GitHub
 
 +++
-### Harmonogram kurzu
+## Harmonogram kurzu
 ![Harmonogram](/Introduction/Assets/img/harmonogram.png)
 
 ---

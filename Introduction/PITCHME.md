@@ -5,10 +5,8 @@
 </div>
 
 ---
-
-co do prezentace
--co mam za zadanie
--zhrnutie zdrovoj a ako oni robia tie kurzy
--casovy harmonogram 
--forma materialov
--zaver + neosnova
+* co mam za zadanie
+* zhrnutie zdrovoj a ako oni robia tie kurzy
+* casovy harmonogram 
+* forma materialov
+* zaver + neosnova

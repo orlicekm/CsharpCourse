@@ -46,9 +46,7 @@
 * Dostupnosť
   * Online - GitHub
 
-+++
-### Harmonogram kurzu
-![Harmonogram](/Introduction/Assets/img/harmonogram.png)
++++?image=/Introduction/Assets/img/harmonogram.png
 
 ---
 ## Záver

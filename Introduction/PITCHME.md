@@ -30,7 +30,7 @@
     * Videá
     * Súbory na stiahnutie
     * Prezentácie
-  * Vzor - Course Programming in C# 20483C
+  * Inšpirácia - Course Programming in C# 20483C
 * Knihy
   * Využité ako zdroje
 

@@ -6,21 +6,21 @@
 </div>
 
 ---
-# **Semester project assigment**
-  1. **Find out**
-     * Requirements
-     * Suitable form and reprezentation of materials
-  2. **Create**
-     * Syllabus
-     * Annotation
-     * Required prerequisites
-+++
-# **Bachelor thesis assigment**
-  3. **Create materials**
-  4. **Discuss**
-     * Logical structure
-     * Used technologies
-     * Use of created materials
+# **Assigment**
+*  **Semester project**
+     1. **Find out**
+       * Requirements
+       * Suitable form and reprezentation of materials
+     2. **Create**
+       * Syllabus
+       * Annotation
+       * Required prerequisites
+*  **Bachelor thesis assigment**
+     3. **Create materials**
+     4. **Discuss**
+       * Logical structure
+       * Used technologies
+       * Use of created materials
 
 ---
 # Theme

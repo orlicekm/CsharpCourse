@@ -7,8 +7,8 @@
 ---
 # Assigment
 ## **Semester project**
-@size[2em](
-  1. **Find out**
+@size[2em](1. **Find out**)
+
      * Requirements
      * Suitable form and reprezentation of materials
   2. **Create**

@@ -8,7 +8,7 @@
 ---
 # **Assigment**
 
-@snap[west]
+@snap[west graphql-details]
 ## **Semester project**
 1. **Find out**
   * Requirements
@@ -19,7 +19,7 @@
   * Required prerequisites
 @snapend
 
-@snap[east]
+@snap[east graphql-details]
 ##  **Bachelor thesis**
 3. **Create materials**
 4. **Discuss**

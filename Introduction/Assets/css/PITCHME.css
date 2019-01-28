@@ -122,3 +122,10 @@ span.aside {
     font-style: italic;
     font-family: Courier New;
 }
+
+.graphql-details {
+    width: 50%;
+    color: gray;
+    font-size: 0.7em !important;
+    line-height: 1.5em !important;
+}

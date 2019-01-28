@@ -10,22 +10,22 @@
 
 @snap[west]
 ## **Semester project**
-     1. **Find out**
-       * Requirements
-       * Suitable form and reprezentation of materials
-     2. **Create**
-       * Syllabus
-       * Annotation
-       * Required prerequisites
+1. **Find out**
+  * Requirements
+  * Suitable form and reprezentation of materials
+2. **Create**
+  * Syllabus
+  * Annotation
+  * Required prerequisites
 @snapend
 
 @snap[east]
 ##  **Bachelor thesis**
-     3. **Create materials**
-     4. **Discuss**
-       * Logical structure
-       * Used technologies
-       * Use of created materials
+3. **Create materials**
+4. **Discuss**
+  * Logical structure
+  * Used technologies
+  * Use of created materials
 @snapend
 
 ---

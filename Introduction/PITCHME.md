@@ -24,50 +24,59 @@
   * Use of created materials
 
 ---
-# Sources
-* Related to C# programming language(course theme)
-* Courses
+# **Sources**
+* Related to **C#** programming language(course theme)
+* **Courses**
   * Mostly online
   * Material forms
-    * Videos
-    * Presentations
-    * Downloadable resoursces
-    * Articles 
-* Books
+    * *Videos*
+    * *Presentations*
+    * *Downloadable resoursces*
+    * *Articles*
+* **Books**
   * Themes thoroughly analyzed
   * Mostly used like references
 
 ---
-
-  * Inšpirácia - Course Programming in C# 20483C
-
-
-
----
-# Motivation
-* Open source - MIT lisence
+# **Motivation**
+* **Inspiration**
+  * Course Programming in C# 20483C from *Microsoft*
+* **Open source** - *MIT* lisence
   * Free to use
   * Free to change
-* Online - GitHub
-
+* **Distribution**
+  * Online - *GitHub**
+* **Presentation type**
+  * Offline by presenter
 
 ---
-# Logical structure
-* Teoretická - prednášky
-    * Markdown 
-    * GitPitch
-* Praktická - cvičenia
-    * 2x C# solution
-    * Visual Studio
+# Prerequisites
+* For **experienced developers**
+* At least half a year of experiences in one of *C-family* programming languages
+* Experiences in *C#* are not required
+* Basic work with *OS Windows* on user level
+
+---
+# **Materials form**
+* **Teoretical - lectures**
+    * *Markdown file*
+    * *GitPitch*
+* **Practical - laboratories**
+    * *C# solutions**
+      * Before - commented parts that requires implementation
+      * After - model solution for control
+    * *Visual Studio*
 
 +++
-Markdown, giptich
+Markdown
+
+Gitpich
 ...
 
 
 
 +++
-# **Syllabus of lectures** 
+## **Syllabus of lectures** 
 1. Introduction to C#, Visual studio and .NET
 2. Object-oriented programming and advanced constructs in C#
 3. .NET Standard and Language Integrated Query(LINQ)
@@ -83,7 +92,7 @@ Markdown, giptich
 13. Multiplatform development, .NET Core, application containerization
 
 +++
-# **Syllabus of laboratories**
+## **Syllabus of laboratories**
 1. Work with Visual studio
 2. Model creation using Entity framework
 3. Clean code
@@ -98,3 +107,5 @@ Markdown, giptich
 * 13 lectures
 * 5 laboratories
 * 40 hours
+* Online distribution
+* Presented offile

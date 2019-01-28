@@ -6,6 +6,7 @@
 
 ---
 # Assigment
+
 ## **Semester project**
   1. **Find out**
      * Requirements
@@ -14,6 +15,7 @@
      * Syllabus
      * Annotation
      * Required prerequisites
+
 ## **Bachelor thesis**
   3. **Create materials**
   4. **Discuss**
@@ -57,10 +59,6 @@
   * Online - GitHub
 
 +++
-## Harmonogram kurzu
-![Harmonogram](/Introduction/Assets/img/harmonogram.png)
-
-+++
 ## Syllabus of lectures:  
 1. Introduction to C#, Visual studio and .NET
 2. Object-oriented programming and advanced constructs in C#
@@ -76,6 +74,7 @@
 12. Performance analyzing and memory managment in C#
 13. Multiplatform development, .NET Core, application containerization
 
++++
 ## Syllabus of laboratories:  
 1. Work with Visual studio
 2. Model creation using Entity framework

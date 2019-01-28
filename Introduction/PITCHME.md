@@ -80,7 +80,7 @@
   * Connected to *Git* repository
     * Push to update
   
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/HelloWorld.cs&lang=C#&title=Hello World Sample
++++?code=/Lectures/Lecture01/Assets/sln/Tests/HelloWorld.cs&lang=C#&title=**Hello World Sample**
 @[1]
 @[3-4, 15]
 @[5-6, 14]

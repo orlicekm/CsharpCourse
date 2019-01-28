@@ -12,4 +12,3 @@ published : true
 remote-control: true
 mathjax : TeX-MML-AM_HTMLorMML-full
 footnote : "C# course - Michal Orlicek <xorlic00@stud.fit.vutbr.cz>"
-layout : top-left

@@ -6,11 +6,7 @@
 </div>
 
 ---
-@snap[north]
-# **Assigment**
-@snapend
-
-## **Semester project**
+# **Semester project assigment**
 1. **Find out**
   * Requirements
   * Suitable form and reprezentation of materials
@@ -19,7 +15,8 @@
   * Annotation
   * Required prerequisites
 
-##  **Bachelor thesis**
++++
+#  **Bachelor thesis assigment**
 3. **Create materials**
 4. **Discuss**
   * Logical structure
@@ -30,7 +27,7 @@
 # Theme
 * **C# programming language**
 
-## Zdroje kurzu
+# Zdroje kurzu
 * Kurzy
   * Väčšina online
   * Forma materiálov
@@ -50,7 +47,7 @@
 
 
 ---
-## Logical structure
+# Logical structure
 * Teoretická - prednášky
     * Markdown 
     * GitPitch
@@ -65,7 +62,7 @@ Markdown, giptich
 
 
 +++
-## Syllabus of lectures:  
+# **Syllabus of lectures** 
 1. Introduction to C#, Visual studio and .NET
 2. Object-oriented programming and advanced constructs in C#
 3. .NET Standard and Language Integrated Query(LINQ)
@@ -81,7 +78,7 @@ Markdown, giptich
 13. Multiplatform development, .NET Core, application containerization
 
 +++
-## Syllabus of laboratories:  
+# **Syllabus of laboratories**
 1. Work with Visual studio
 2. Model creation using Entity framework
 3. Clean code
@@ -89,7 +86,7 @@ Markdown, giptich
 5. WPF View binding to View Model
 
 ---
-## Recapitulation
+# **Recapitulation**
 * C# programming language
 * Open source
 * in english

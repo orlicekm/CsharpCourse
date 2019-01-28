@@ -6,8 +6,8 @@
 
 ---
 # Assigment
-
 ## **Semester project**
+@size[1.2em](
   1. **Find out**
      * Requirements
      * Suitable form and reprezentation of materials
@@ -15,7 +15,8 @@
      * Syllabus
      * Annotation
      * Required prerequisites
-
+)
++++
 ## **Bachelor thesis**
   3. **Create materials**
   4. **Discuss**

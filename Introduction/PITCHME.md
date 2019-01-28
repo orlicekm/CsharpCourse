@@ -7,7 +7,9 @@
 
 ---
 # **Assigment**
-*  **Semester project**
+
+@snap[west]
+## **Semester project**
      1. **Find out**
        * Requirements
        * Suitable form and reprezentation of materials
@@ -15,12 +17,16 @@
        * Syllabus
        * Annotation
        * Required prerequisites
-*  **Bachelor thesis**
+@snapend
+
+@snap[east]
+##  **Bachelor thesis**
      3. **Create materials**
      4. **Discuss**
        * Logical structure
        * Used technologies
        * Use of created materials
+@snapend
 
 ---
 # Theme

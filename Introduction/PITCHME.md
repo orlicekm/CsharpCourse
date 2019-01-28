@@ -6,9 +6,10 @@
 </div>
 
 ---
+@snap[north]
 # **Assigment**
+@snapend
 
-@snap[west graphql-details]
 ## **Semester project**
 1. **Find out**
   * Requirements
@@ -17,16 +18,13 @@
   * Syllabus
   * Annotation
   * Required prerequisites
-@snapend
 
-@snap[east graphql-details]
 ##  **Bachelor thesis**
 3. **Create materials**
 4. **Discuss**
   * Logical structure
   * Used technologies
   * Use of created materials
-@snapend
 
 ---
 # Theme

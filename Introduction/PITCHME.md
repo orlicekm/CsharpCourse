@@ -70,7 +70,7 @@
 
 +++
 ## **Presentation**
-* **Presentation** saved as **markdown file**
+* **Presentation** is saved as **markdown file**
 * **GitPitch** converts **markdown file** into **presentation**
 * **GitPitch** benefits
   * Online

@@ -15,7 +15,7 @@
        * Syllabus
        * Annotation
        * Required prerequisites
-*  **Bachelor thesis assigment**
+*  **Bachelor thesis**
      3. **Create materials**
      4. **Discuss**
        * Logical structure

@@ -17,26 +17,31 @@
 
 +++
 #  **Bachelor thesis assigment**
-3. **Create materials**
-4. **Discuss**
+1. **Create materials**
+2. **Discuss**
   * Logical structure
   * Used technologies
   * Use of created materials
 
 ---
-# Theme
-* **C# programming language**
+# Sources
+* Related to C# programming language(course theme)
+* Courses
+  * Mostly online
+  * Material forms
+    * Videos
+    * Presentations
+    * Downloadable resoursces
+    * Articles 
+* Books
+  * Themes thoroughly analyzed
+  * Mostly used like references
 
-# Zdroje kurzu
-* Kurzy
-  * Väčšina online
-  * Forma materiálov
-    * Videá
-    * Súbory na stiahnutie
-    * Prezentácie
+---
+
   * Inšpirácia - Course Programming in C# 20483C
-* Knihy
-  * Využité ako zdroje
+
+
 
 ---
 # Motivation

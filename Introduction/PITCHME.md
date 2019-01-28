@@ -5,7 +5,8 @@
 </div>
 
 ---
-# Assigment - **Semester project**
+# Assigment
+## **Semester project**
   1. **Find out**
      * Requirements
      * Suitable form and reprezentation of materials
@@ -15,7 +16,8 @@
      * Required prerequisites
 
 +++
-# Assigment - **Bachelor thesis**
+# Assigment 
+## **Bachelor thesis**
   3. **Create materials**
   4. **Discuss**
      * Logical structure

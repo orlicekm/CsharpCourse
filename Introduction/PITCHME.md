@@ -1,10 +1,10 @@
-﻿<div class="center">
-<h1>Technological IT Course for Internal Education</h1>
-<h2>Semester project - presentation</h2>
+﻿@snap[midpoint]
+# Technological IT Course for Internal Education
+## Semester project - presentation
 <div class="right">
 <font size="2">[ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]</font>
 </div>
-</div>
+@snapend
 
 ---
 # **Semester project assigment**

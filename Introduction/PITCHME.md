@@ -50,7 +50,7 @@
   * Offline by presenter
 
 ---
-# Prerequisites
+# **Prerequisites**
 * For **experienced developers**
 * At least half a year of experiences in one of *C-family* programming languages
 * Experiences in *C#* are not required
@@ -62,9 +62,9 @@
     * *Markdown file*
     * *GitPitch*
 * **Practical - laboratories**
-    * *C# solutions**
-      * Before - commented parts that requires implementation
-      * After - model solution for control
+    * *C# solutions*
+      * **Before** - commented parts that requires implementation
+      * **After** - model solution for control
     * *Visual Studio*
 
 +++
@@ -72,8 +72,6 @@ Markdown
 
 Gitpich
 ...
-
-
 
 +++
 ## **Syllabus of lectures** 

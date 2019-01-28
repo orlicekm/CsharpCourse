@@ -5,8 +5,7 @@
 </div>
 
 ---
-# Assigment
-## **Semester project**
+# Assigment - **Semester project**
   1. **Find out**
      * Requirements
      * Suitable form and reprezentation of materials
@@ -16,7 +15,7 @@
      * Required prerequisites
 
 +++
-## **Bachelor thesis**
+# Assigment - **Bachelor thesis**
   3. **Create materials**
   4. **Discuss**
      * Logical structure
@@ -27,14 +26,6 @@
 # Theme
 * **C# programming language**
 
----
-# Motivation
-* Open source - MIT lisence
-
-
-
-
----
 ## Zdroje kurzu
 * Kurzy
   * Väčšina online
@@ -47,16 +38,27 @@
   * Využité ako zdroje
 
 ---
-## Forma kurzu
-* Rozdelenie
-  * Teoretická - prednášky
+# Motivation
+* Open source - MIT lisence
+  * Free to use
+  * Free to change
+* Online - GitHub
+
+
+---
+## Logical structure
+* Teoretická - prednášky
     * Markdown 
     * GitPitch
-  * Praktická - cvičenia
+* Praktická - cvičenia
     * 2x C# solution
     * Visual Studio
-* Dostupnosť
-  * Online - GitHub
+
++++
+Markdown, giptich
+...
+
+
 
 +++
 ## Syllabus of lectures:  
@@ -83,9 +85,10 @@
 5. WPF View binding to View Model
 
 ---
-## Záver
+## Recapitulation
+* C# programming language
 * Open source
-* English language
-* 13 prednášok
-* 5 cvičení
-* 40 hodín
+* in english
+* 13 lectures
+* 5 laboratories
+* 40 hours

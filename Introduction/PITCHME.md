@@ -1,12 +1,11 @@
 ﻿# Technological IT Course for Internal Education 
 ## Semester project - presentation
 <div class="right">
-[ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
+<font size="-1">[ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]</font>
 </div>
 
 ---
-# Assigment
-## **Semester project**
+# **Semester project assigment**
   1. **Find out**
      * Requirements
      * Suitable form and reprezentation of materials
@@ -16,8 +15,7 @@
      * Required prerequisites
 
 +++
-# Assigment 
-## **Bachelor thesis**
+# **Bachelor thesis assigment**
   3. **Create materials**
   4. **Discuss**
      * Logical structure

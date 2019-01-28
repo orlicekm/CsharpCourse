@@ -14,7 +14,6 @@
      * Syllabus
      * Annotation
      * Required prerequisites
-
 +++
 # **Bachelor thesis assigment**
   3. **Create materials**

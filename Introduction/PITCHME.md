@@ -59,6 +59,7 @@
 ---
 # **Materials form**
 * **Teoretical - lectures**
+    * *Presentations*
     * *Markdown file*
     * *GitPitch*
 * **Practical - laboratories**
@@ -68,10 +69,26 @@
     * *Visual Studio*
 
 +++
-Markdown
-
-Gitpich
-...
+## **Presentation**
+* **Presentation** saved as **markdown file**
+* **GitPitch** converts **markdown file** into **presentation**
+* **GitPitch** benefits
+  * Online
+  * Easy to use
+  * Created for developers
+    * Designed for code presenting
+  * Connected to *Git* repository
+    * Push to update
+  
++++?code=/Lectures/Lecture01/Assets/sln/Tests/HelloWorld.cs&lang=C#&title=Hello World Sample
+@[1]
+@[3-4, 15]
+@[5-6, 14]
+@[7-8, 13]
+@[9]
+@[11]
+@[12]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/HelloWorld.cs)
 
 +++
 ## **Syllabus of lectures** 

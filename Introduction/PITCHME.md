@@ -123,4 +123,4 @@
 * 5 laboratories
 * 40 hours
 * Online distribution
-* Presented offile
+* Presented offline

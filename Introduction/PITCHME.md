@@ -18,6 +18,8 @@
 +++
 #  **Bachelor thesis assignment**
 1. **Create materials**
+   * Theoretical
+   * Practical
 2. **Discuss**
   * Logical structure
   * Used technologies

@@ -41,21 +41,20 @@
 
 ---
 # **Motivation**
-* **Inspiration**
-  * Course Programming in C# 20483C by *Microsoft*
 * **Open source** - *MIT* lisence
   * Free to use
   * Free to change
 * **Distribution**
   * Online - *GitHub*
+* **Inspiration**
+  * Course Programming in C# 20483C by *Microsoft*
 * **Presentation type**
   * Offline by presenter
   * 40 hours in 5 days
 
 ---
 # **Prerequisites**
-* For **experienced developers**
-* At least half a year of experience in one of *C-family* programming languages
+* At least half a year of experience in one of programming languages based on *C*
 * Experience in *C#* is not required
 * Basic work with *OS Windows* on user level
 
@@ -63,9 +62,9 @@
 # **Materials form**
 * **Theoretical - lectures**
     * *Presentations*
-    * *Markdown file*
+    * *Markdown transcripts*
     * *GitPitch*
-* **Practical - laboratories**
+* **Practical - exercises**
     * *C# solutions*
       * **Before** - commented parts that require implementation
       * **After** - model solution for control
@@ -74,9 +73,9 @@
 +++
 ## **Presentation**
 * **Presentation** is saved as **markdown file**
-* **GitPitch** converts **markdown file** into **presentation**
+* **GitPitch** converts **markdown** into **presentation**
 * **GitPitch** benefits
-  * Online
+  * Online/Offline
   * Easy to use
   * Created for developers
     * Designed for code presenting
@@ -120,10 +119,11 @@
 ---
 # **Recapitulation**
 * C# programming language
-* Open source
-* in english
-* 13 lectures
-* 5 laboratories
-* 40 hours
+  * Open source
+  * in english
+* Structure
+  * 13 lectures
+  * 5 laboratories
+  * 40 hours
 * Online distribution
 * Presented offline

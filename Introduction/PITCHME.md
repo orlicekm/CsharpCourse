@@ -6,25 +6,25 @@
 </div>
 
 ---
-# **Semester project assigment**
+# **Semester project assignment**
 1. **Find out**
   * Requirements
-  * Suitable form and reprezentation of materials
+  * Suitable form and representation of materials
 2. **Create**
   * Syllabus
   * Annotation
   * Required prerequisites
 
 +++
-#  **Bachelor thesis assigment**
+#  **Bachelor thesis assignment**
 1. **Create materials**
 2. **Discuss**
   * Logical structure
   * Used technologies
-  * Use of created materials
+  * The use of created materials
 
 ---
-# **Sources**
+# **Resources**
 * Related to **C#** programming language(course theme)
 * **Courses**
   * Mostly online
@@ -35,12 +35,12 @@
     * *Articles*
 * **Books**
   * Themes thoroughly analyzed
-  * Mostly used like references
+  * Mostly used as references
 
 ---
 # **Motivation**
 * **Inspiration**
-  * Course Programming in C# 20483C from *Microsoft*
+  * Course Programming in C# 20483C by *Microsoft*
 * **Open source** - *MIT* lisence
   * Free to use
   * Free to change
@@ -52,19 +52,19 @@
 ---
 # **Prerequisites**
 * For **experienced developers**
-* At least half a year of experiences in one of *C-family* programming languages
-* Experiences in *C#* are not required
+* At least half a year of experience in one of *C-family* programming languages
+* Experience in *C#* is not required
 * Basic work with *OS Windows* on user level
 
 ---
 # **Materials form**
-* **Teoretical - lectures**
+* **Theoretical - lectures**
     * *Presentations*
     * *Markdown file*
     * *GitPitch*
 * **Practical - laboratories**
     * *C# solutions*
-      * **Before** - commented parts that requires implementation
+      * **Before** - commented parts that require implementation
       * **After** - model solution for control
     * *Visual Studio*
 

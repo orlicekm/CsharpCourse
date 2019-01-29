@@ -45,7 +45,7 @@
   * Free to use
   * Free to change
 * **Distribution**
-  * Online - *GitHub**
+  * Online - *GitHub*
 * **Presentation type**
   * Offline by presenter
 

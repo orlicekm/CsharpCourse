@@ -1,4 +1,7 @@
 # C# course
+## Introduction
+* [Slides](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Introduction)  
+* [Markdown](/Introduction/PITCHME.md)
 
 ## Lectures
 * [Lecture01](/Lectures/Lecture01)  - Introduction to C#, Visual studio and .NET

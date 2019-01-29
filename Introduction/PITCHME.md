@@ -120,7 +120,7 @@
 # **Recapitulation**
 * C# programming language
   * Open source
-  * in english
+  * In english
 * Structure
   * 13 lectures
   * 5 laboratories

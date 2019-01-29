@@ -48,6 +48,7 @@
   * Online - *GitHub*
 * **Presentation type**
   * Offline by presenter
+  * 40 hours in 5 days
 
 ---
 # **Prerequisites**

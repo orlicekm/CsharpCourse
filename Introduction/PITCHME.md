@@ -1,6 +1,6 @@
 ﻿
 # Technological IT Course for Internal Education
-## **Semester project - presentation**
+## **Term project - presentation**
 <div class="right">
 <font size="5">[ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]</font>
 </div>

@@ -109,7 +109,7 @@
 13. Multiplatform development, .NET Core, application containerization
 
 +++
-## **Syllabus of laboratories**
+## **Syllabus of exercises**
 1. Work with Visual studio
 2. Model creation using Entity framework
 3. Clean code
@@ -123,7 +123,7 @@
   * In english
 * Structure
   * 13 lectures
-  * 5 laboratories
+  * 5 exercises
   * 40 hours
 * Online distribution
 * Presented offline

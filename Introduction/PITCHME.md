@@ -6,7 +6,7 @@
 </div>
 
 ---
-# **Semester project assignment**
+# **Term project assignment**
 1. **Find out**
   * Requirements
   * Suitable form and representation of materials
@@ -72,7 +72,7 @@
 
 +++
 ## **Presentation**
-* **Presentation** is saved as **markdown file**
+* **Presentation** is saved as **markdown**
 * **GitPitch** converts **markdown** into **presentation**
 * **GitPitch** benefits
   * Online/Offline

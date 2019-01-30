@@ -54,8 +54,8 @@
 
 ---
 # **Prerequisites**
-* At least half a year of experience in one of programming languages based on *C*
 * Experience in *C#* is not required
+* At least half a year of experience in one of programming languages based on *C*
 * Basic work with *OS Windows* on user level
 
 ---

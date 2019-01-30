@@ -1,12 +1,12 @@
 ﻿
 # Technological IT Course for Internal Education
-## **Term project - presentation**
+## **Term thesis - presentation**
 <div class="right">
 <font size="5">[ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]</font>
 </div>
 
 ---
-# **Term project assignment**
+# **Term thesis assignment**
 1. **Find out**
   * Requirements
   * Suitable form and representation of materials

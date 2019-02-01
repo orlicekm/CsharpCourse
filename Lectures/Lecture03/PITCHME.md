@@ -15,7 +15,7 @@
 +++
 ### .NET Standard enables
 * Uniform **set of APIs** for all .NET implementations to implement, independent of workload
-* Produce **portable libraries** that are *usable across .NET implementations*, using this same set of APIs
+* Produce **portable libraries** that are *usable across .NET implementations*, using same set of APIs
 * **Reduces conditional compilation** of *shared source* due to .NET APIs
 
 +++
@@ -158,7 +158,7 @@ WebRequest webRequest = WebRequest.Create(uri);
 @[9-15]
 @[11,12]
 @[14]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/UriTest.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/UriTest.cs)
 
 +++
 ## Console
@@ -185,7 +185,7 @@ Console.ReadLine();
 @[13]
 @[15-16]
 @[18]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Examples/ConsoleSample.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/ConsoleSample.cs)
 
 +++
 ## Array
@@ -210,7 +210,7 @@ for ( int i = myArr.GetLowerBound(0); i <= myArr.GetUpperBound(0); i++ )
 @[21]
 @[22]
 @[24]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/ArrayTest.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/ArrayTest.cs)
 
 +++
 ## Bit Converter
@@ -233,7 +233,7 @@ Console.WriteLine(BitConverter.ToString(sampleByteArray)); //01
 @[12]
 @[13]
 @[15]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/BitConverterTest.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/BitConverterTest.cs)
 
 +++
 ## Convert
@@ -252,11 +252,11 @@ catch (System.OverflowException) {
 
 +++?code=/Lectures/Lecture03/Assets/sln/Tests/ConvertTest.cs&lang=C#&title=Convert Sample
 @[9-21]
-@[12-17]
-@[13-18]
-@[14-19]
-@[15-20]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture02/Assets/sln/Tests/Convert.cs)
+@[12,17]
+@[13,18]
+@[14,19]
+@[15,20]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/Convert.cs)
 
 +++
 * `Delegate class` - represents a delegate

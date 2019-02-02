@@ -172,9 +172,9 @@ catch (System.OverflowException) {
 ## Bit Converter
 * `class BitConverter` 
 * **Converts:**
-  * *Base data types* to an *array of bytes**
+  * *Base data types* to an *array of bytes*
     * `GetBytes(Boolean)`, `GetBytes(Int32)` `GetBytes(Char)`...
-  * *Array of bytes* to *base data types**
+  * *Array of bytes* to *base data types*
     * `ToBoolean(Byte[], Int32)`, `ToInt32(Byte[], Int32)`, `ToChar(Byte[], Int32)`...
 
 ```C#
@@ -334,7 +334,7 @@ for (var i = 1; i <= 10; i++)
 
 +++
 ## Version
-`class Version`
+* `class Version`
 * Represents the version number of 
   * Assembly
   * Operating system
@@ -355,14 +355,14 @@ Console.WriteLine("CLR Version {0}", version.ToString());
 
 +++
 ## Another important classes
-* Buffer
-* Environment 
-Lazy<T> Class
-StringComparer
+* `class Buffer` - Manipulates arrays of primitive types
+* `class Environment` - Information about the current environment and platform
+* `class Lazy<T>` - Support for lazy initializatio
+* `class StringComparer` - Represents a string comparison operation
 * `class Attribute` - Represents the base class for custom attributes
 * `class SerializableAttribute` - Indicates that a class can be serialized
 * `class Nullable` - supports a value type that can be assigned null e.g. `int?`
-* WeakReference
+* `class WeakReference` - references an object while still allowing that object to be reclaimed by GC
 
 +++
 ### `System` Namespace Exceptions

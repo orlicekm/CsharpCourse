@@ -112,6 +112,20 @@
 * `class Tuple` - provides methods for creating tuple objects
 
 +++
+## Sctruct types
+* `struct Boolean`
+* `struct Byte`, `struct SByte`
+* `struct Char`
+* `struct DateTime`
+* `struct Decimal`, `struct Double`
+* `struct Guid`
+* `struct Int16`, `struct Int32`, `struct Int64`, `struct IntPtr`
+* `struct UInt16`, `struct UInt32`, `struct UInt64`, `struct UIntPtr`
+* `struct Nullable<T>`
+* `struct void`
+
+
++++
 ## Type
 * `class Type`
 * Represents type declarations
@@ -369,36 +383,6 @@ Console.WriteLine("CLR Version {0}", version.ToString());
 * 50+ basic exceptions
 * `Exception` - base class for all exceptions
 * `SystemException` - base class for system exceptions
-
-
-+++
-  * `AggregateException` - errors that occur during application execution
-  * `ApplicationException` - base class for application-defined exceptions
-  * `SystemException` - base class for system exceptions
-    * `AccessViolationException` - when there is an attempt to read or write protected memory 
-    * `AppDomainUnloadedException` - when an attempt is made to access an unloaded application domain
-    * `ArgumentException` - thrown when one of the arguments provided to a method is not valid
-    * `ArgumentNullException` - thrown when a `null` reference is passed to a method that does not accept it
-    * `ArgumentOutOfRangeException` - thrown when the value of an argument is outside the allowable range
-    * `ArithmeticException` - thrown for errors in an arithmetic, casting, or conversion operation
-    * `ArrayTypeMismatchException` - thrown when an attempt is made to store an element of the wrong type within an array
-    * `BadImageFormatException` - thrown when the file image of a dynamic link library (DLL) or an executable program is invalid
-    * `CannotUnloadAppDomainException` - thrown when an attempt to unload an application domain fails
-
-+++
-## Sctruct types
-Boolean
-Byte
-Char
-DateTime
-Decimal
-Double
-Guid
-Int16, Int32, Int64, IntPtr
-Nullable<T>
-SByte
-UInt16, UInt342 UInt64, UIntPtr
-Void
 
 +++
 ## Delegates

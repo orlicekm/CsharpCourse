@@ -123,6 +123,6 @@ span.aside {
     font-family: Courier New;
 }
 
-slides {
+.reveal .slides {
     width: 10px;
 }

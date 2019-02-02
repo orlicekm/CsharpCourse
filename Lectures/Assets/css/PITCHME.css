@@ -122,3 +122,7 @@ span.aside {
     font-style: italic;
     font-family: Courier New;
 }
+
+.slides {
+    width: 100%;
+}

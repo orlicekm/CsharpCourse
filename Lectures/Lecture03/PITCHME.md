@@ -103,14 +103,13 @@
   * Processing exceptions
 
 +++
-## TODO
+## Data types
+* `class Object` - ultimate base class of all classes in the .NET
+* `class String` - represents a String
+* `class Array` -  represents an Array
 * `class Delegate` - represents a delegate
 * `class Enum` - base class for enumerations
-* `class Array` -  represents an Array
-* `class String` - represents a String
-* `class Object` - represents 
-* `class Tuple`
-
+* `class Tuple` - provides methods for creating tuple objects
 
 +++
 ## Type

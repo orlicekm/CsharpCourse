@@ -123,6 +123,6 @@ span.aside {
     font-family: Courier New;
 }
 
-.slides {
-    width: 100%;
+.slides style{
+    width: auto;
 }

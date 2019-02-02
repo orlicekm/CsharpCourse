@@ -291,7 +291,7 @@ Console.ReadLine();
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/ConsoleSample.cs)
 
 +++
-## GC
+## Garbage Collector
 * `class GC`
 * Controls garbage collector
   * Service that automatically reclaims unused memory
@@ -399,7 +399,7 @@ delegate void Action<in T1,in T2>(T1 arg1, T2 arg2); //has two parameters
 ```C#
 delegate TResult Func<out TResult>(); //has no parameters
 delegate TResult Func<in T,out TResult>(T arg); //has one parameter
-delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two parameters
+delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two params
 ⋮
 ```
 

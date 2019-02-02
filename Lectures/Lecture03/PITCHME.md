@@ -92,7 +92,7 @@
 
 ---
 ## `System` Namespace
-* `using System;`
+* `using System`
 * [Documentation](https://docs.microsoft.com/sk-sk/dotnet/api/system?view=netstandard-2.0)
 * Fundamental classes and base classes
 * Define:
@@ -425,8 +425,48 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
   * Method that converts an object from one type to another type
 
 ---
-System Collections
+## `System.Collections` Namespace
+* `using System.Collections`
+* [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.collections?view=netstandard-2.0)
+* Contains interfaces and classes that define various collections
+* Define:
+  * Lists
+  * Queues
+  * Bit arrays
+  * Hash tables
+  * Dictionaries
 
++++
+## ArrayList 
+* `class Random`
+* Using an array whose size is dynamically increased as required
+* Implements the `IList` interface
+  * `interface IList`
+  * Non-generic collection of objects that can be individually accessed by index
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/ArrayListSample.cs&lang=C#&title=ArrayList Sample
+@[8-25]
+@[11-14]
+@[17-19]
+@[21-24]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/ArrayListSample.cs)
+
++++
+## Stack
+* `class Stack`
+* Simple last-in-first-out (LIFO) non-generic collection of objects
+
+
+---
+## `System.Collections.Generic` Namespace
+* `using System.Collections.Generic`
+* [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic?view=netstandard-2.0)
+* Contains interfaces and classes that define generic collections
+* Allow users to create strongly typed collections
+  * Provide better type safety and performance
+
+---
+## `System.IO` Namespace
 
 ---
 ## References:

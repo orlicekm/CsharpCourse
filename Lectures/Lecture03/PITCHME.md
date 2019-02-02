@@ -103,6 +103,95 @@
   * Processing exceptions
 
 +++
+## TODO
+* `class Delegate` - represents a delegate
+* `class Enum` - base class for enumerations
+* `class Array` -  represents an Array
+* `class String` - represents a String
+* `class Object` - represents 
+* `class Tuple`
+
+
++++
+## Type
+* `class Type`
+* Represents type declarations
+  * class types
+  * interface types
+  * array types
+  * value types
+  * enumeration types
+  * type parameters
+  * generic type definitions
+
+```C#
+Type type = typeof(String);
+
+MethodInfo substringMethod = type.GetMethod("Substring", new Type[] { typeof(int), typeof(int) });
+
+Object result = substringMethod.Invoke("Hello, World!", new Object[] { 7, 5 });
+Console.WriteLine("{0} returned \"{1}\".", substringMethod, result);
+```
+
++++
+## ValueType
+* `class ValueType`
+* Provides the base class for value types
+
+```C#
+public static bool IsFloat(ValueType value) 
+{
+    return (value is float | value is double | value is Decimal);
+}
+```
+
++++
+## Convert
+* `class Convert`
+* Converts a base data type to another base data type
+
+```C#
+try {
+  int intNumber = System.Convert.ToInt32(fooNumber);
+}
+catch (System.OverflowException) {
+  System.Console.WriteLine(
+    "Overflow in double to int conversion.");
+}
+```
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/ConvertTest.cs&lang=C#&title=Convert Sample
+@[9-21]
+@[12,17]
+@[13,18]
+@[14,19]
+@[15,20]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/Convert.cs)
+
++++
+## Bit Converter
+* `class BitConverter` 
+* **Converts:**
+  * *Base data types* to an *array of bytes**
+    * `GetBytes(Boolean)`, `GetBytes(Int32)` `GetBytes(Char)`...
+  * *Array of bytes* to *base data types**
+    * `ToBoolean(Byte[], Int32)`, `ToInt32(Byte[], Int32)`, `ToChar(Byte[], Int32)`...
+
+```C#
+bool sample = true;
+byte[] sampleByteArray = BitConverter.ToString(BitConverter.GetBytes(sample);
+Console.WriteLine(BitConverter.ToString(sampleByteArray)); //01
+```
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/BitConverterTest.cs&lang=C#&title=Bit Converter Sample
+@[9-16]
+@[11]
+@[12]
+@[13]
+@[15]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/BitConverterTest.cs)
+
++++
 ## URI
 * Uniform Resource Identifier
   * String that identifies a particular resource
@@ -188,124 +277,92 @@ Console.ReadLine();
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/ConsoleSample.cs)
 
 +++
-## Array
-* `class Array`
-* Methods for creating, manipulating, searching, and sorting array
-* Base class for all arrays in the *common language runtime*
-* Is not part of the `System.Collections`
-  * It is still considered a collection because it is based on the `IList` interface
-
-```C#
-// Creates and initializes a new three-dimensional Array of type Int32.
-Array myArr = Array.CreateInstance( typeof(Int32), 2, 3, 4 );
-for ( int i = myArr.GetLowerBound(0); i <= myArr.GetUpperBound(0); i++ )
-  for ( int j = myArr.GetLowerBound(1); j <= myArr.GetUpperBound(1); j++ )
-    for ( int k = myArr.GetLowerBound(2); k <= myArr.GetUpperBound(2); k++ )
-      myArr.SetValue( (i*100)+(j*10)+k, i, j, k );
-```
-
-+++?code=/Lectures/Lecture03/Assets/sln/Tests/ArrayTest.cs&lang=C#&title=Array Sample
-@[9-25]
-@[11-19]
-@[21]
-@[22]
-@[24]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/ArrayTest.cs)
-
-+++
-## Bit Converter
-* `class Array`
-* **Converts:**
-  * *Base data types* to an *array of bytes**
-    * `GetBytes(Boolean)`, `GetBytes(Int32)` `GetBytes(Char)`...
-  * *Array of bytes* to *base data types**
-    * `ToBoolean(Byte[], Int32)`, `ToInt32(Byte[], Int32)`, `ToChar(Byte[], Int32)`...
-
-```C#
-bool sample = true;
-byte[] sampleByteArray = BitConverter.ToString(BitConverter.GetBytes(sample);
-Console.WriteLine(BitConverter.ToString(sampleByteArray)); //01
-```
-
-+++?code=/Lectures/Lecture03/Assets/sln/Tests/BitConverterTest.cs&lang=C#&title=Bit Converter Sample
-@[9-16]
-@[11]
-@[12]
-@[13]
-@[15]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/BitConverterTest.cs)
-
-+++
-## Convert
-* `class Convert`
-* Converts a base data type to another base data type
-
-```C#
-try {
-  int intNumber = System.Convert.ToInt32(fooNumber);
-}
-catch (System.OverflowException) {
-  System.Console.WriteLine(
-    "Overflow in double to int conversion.");
-}
-```
-
-+++?code=/Lectures/Lecture03/Assets/sln/Tests/ConvertTest.cs&lang=C#&title=Convert Sample
-@[9-21]
-@[12,17]
-@[13,18]
-@[14,19]
-@[15,20]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/Convert.cs)
-
-+++
-* `Delegate class` - represents a delegate
-  * Data structure that refers:
-    * To a static method
-    * To a class instance and an instance method of that class
-* `Enum class` - base class for enumerations
-* `Array class` - 
-
-+++
 ## GC
+* `class GC`
+* Controls garbage collector
+  * Service that automatically reclaims unused memory
+
+```C#
+void MakeSomeGarbage()
+{
+    for(int i = 0; i < 1000; i++)
+    {
+        var o = new Object();
+    }
+}
+
+MakeSomeGarbage();
+GC.Collect();
+```
 
 +++
 ## Math
+* `class Math`
+* Provides constants and static methods for
+  * Trigonometric mathematical functions
+  * Logarithmic mathematical functions
+  * Other common mathematical functions
 
-+++
-## Nullable
-
-+++
-## Object
+```C#
+double circleRadius = 4.2;
+double circlePerimeter = ((2 * Math.PI) * circleRadius);
+double circleArea = Math.PI * (Math.Pow(circleRadius, 2));
+```
 
 +++
 ## Random
+* `class Random`
+* Represents a pseudo-random number generator
+* Device that produces a sequence of numbers that meet certain statistical requirements for randomness
 
-+++
-## SerializableAttribute
-
-+++
-## String
-
-+++
-## Tuples
-
-+++
-## Type
-
-+++
-## ValueType
+```C#
+Random random = new Random();
+for (var i = 1; i <= 10; i++)
+    Console.WriteLine("{0,15:N0}", random.Next());
+// The example output
+//         1,733,189,596
+//           566,518,090
+//         1,166,108,546
+//         1,931,426,514
+//         1,341,108,291
+//         1,012,698,049
+//           890,578,409
+//         1,377,589,722
+//         2,108,384,181
+//         1,532,939,448
+```
 
 +++
 ## Version
+`class Version`
+* Represents the version number of 
+  * Assembly
+  * Operating system
+  * Common language runtime
 
-...
-STRUCTS
+```C#
+// Get the operating system version.
+OperatingSystem operatingSystem = Environment.OSVersion;
+Version version = operatingSystem.Version;
+Console.WriteLine("Operating System: {0} ({1})", operatingSystem.VersionString, version.ToString());
+```
+
+```C#
+// Get the common language runtime version.
+Version version = Environment.Version;
+Console.WriteLine("CLR Version {0}", version.ToString());
+```
 
 +++
 ## Another important classes
 * Buffer
-
+* Environment 
+Lazy<T> Class
+StringComparer
+* `class Attribute` - Represents the base class for custom attributes
+* `class SerializableAttribute` - Indicates that a class can be serialized
+* `class Nullable` - supports a value type that can be assigned null e.g. `int?`
+* WeakReference
 
 +++
 ### `System` Namespace Exceptions
@@ -314,8 +371,7 @@ STRUCTS
 * `SystemException` - base class for system exceptions
 
 
-
-++++
++++
   * `AggregateException` - errors that occur during application execution
   * `ApplicationException` - base class for application-defined exceptions
   * `SystemException` - base class for system exceptions
@@ -330,13 +386,32 @@ STRUCTS
     * `CannotUnloadAppDomainException` - thrown when an attempt to unload an application domain fails
 
 +++
-### System Namespace classes
-| Class |  Description |
-|---------|--------|
-| AppDomain | Application domain (isolated environment where applications execute) |
-| ApplicationException |  base class for application-defined exceptions |
-| SystemException | serves as the base class for system exceptions namespace |
+## Sctruct types
+Boolean
+Byte
+Char
+DateTime
+Decimal
+Double
+Guid
+Int16, Int32, Int64, IntPtr
+Nullable<T>
+SByte
+UInt16, UInt342 UInt64, UIntPtr
+Void
 
++++
+## Delegates
+Action
+Func<TResult>
+Comparison<T>
+AsyncCallback
+EventHandler
+EventHandler<TEventArgs>
+
+
+---
+System Collections
 
 
 ---

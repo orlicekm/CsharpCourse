@@ -404,8 +404,8 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 ```
 
 +++
-## **Event handlers**
-* * Methods that will handle an *event*
+## Event handlers
+* Methods that will handle an *event*
   * `delegate void EventHandler(object sender, EventArgs e)`
     * Event that has **no data**
   * `delegate void EventHandler<TEventArgs>(object sender, TEventArgs e)`
@@ -417,9 +417,12 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 
 +++
 ## Another important delegates
-* `delegate int Comparison<in T>(T x, T y)` - method that compares two objects of the same type
-* `delegate void AsyncCallback(IAsyncResult ar)` - method to be called when a corresponding asynchronous operation completes
-* `delegate TOutput Converter<in TInput,out TOutput>(TInput input)` - method that converts an object from one type to another type
+* `delegate int Comparison<in T>(T x, T y)` 
+  * Method that compares two objects of the same type
+* `delegate void AsyncCallback(IAsyncResult ar)` 
+  * Method to be called when a corresponding asynchronous operation completes
+* `delegate TOutput Converter<in TInput,out TOutput>(TInput input)` 
+  * Method that converts an object from one type to another type
 
 ---
 System Collections

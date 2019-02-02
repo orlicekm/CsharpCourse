@@ -126,10 +126,11 @@
 ```C#
 Type type = typeof(String);
 
-MethodInfo substringMethod = type.GetMethod("Substring", new Type[] { typeof(int), typeof(int) });
+MethodInfo methodInfo = 
+type.GetMethod("Substring", new Type[] { typeof(int), typeof(int) });
 
-Object result = substringMethod.Invoke("Hello, World!", new Object[] { 7, 5 });
-Console.WriteLine("{0} returned \"{1}\".", substringMethod, result);
+Object result = methodInfo.Invoke("Hello, World!", new Object[] { 7, 5 });
+Console.WriteLine("{0} returned \"{1}\".", methodInfo, result);
 ```
 
 +++

@@ -369,30 +369,57 @@ Console.WriteLine("CLR Version {0}", version.ToString());
 
 +++
 ## Another important classes
-* `class Buffer` - Manipulates arrays of primitive types
-* `class Environment` - Information about the current environment and platform
-* `class Lazy<T>` - Support for lazy initializatio
-* `class StringComparer` - Represents a string comparison operation
-* `class Attribute` - Represents the base class for custom attributes
-* `class SerializableAttribute` - Indicates that a class can be serialized
+* `class Buffer` - manipulates arrays of primitive types
+* `class Environment` - information about the current environment and platform
+* `class Lazy<T>` - support for lazy initializatio
+* `class StringComparer` - represents a string comparison operation
+* `class Attribute` - represents the base class for custom attributes
+* `class SerializableAttribute` - indicates that a class can be serialized
 * `class Nullable` - supports a value type that can be assigned null e.g. `int?`
 * `class WeakReference` - references an object while still allowing that object to be reclaimed by GC
 
 +++
-### `System` Namespace Exceptions
-* 50+ basic exceptions
-* `Exception` - base class for all exceptions
-* `SystemException` - base class for system exceptions
+## `System` Namespace Exceptions
+* **50+ basic exceptions**
+  * `class Exception` - base class for all exceptions
+  * `class SystemException` - base class for system exceptions
+  * ⋮
 
 +++
-## Delegates
-Action
-Func<TResult>
-Comparison<T>
-AsyncCallback
-EventHandler
-EventHandler<TEventArgs>
+## Action and Func delegates
+* **Action** -  method that does not return a value
+```C#
+delegate void Action(); //has no parameters
+delegate void Action<in T>(T obj); //has one parameter
+delegate void Action<in T1,in T2>(T1 arg1, T2 arg2); //has two parameters
+⋮
+```
 
+* **Func** - method that has no parameters and returns a value of the type specified by the TResult parameter
+```C#
+delegate TResult Func<out TResult>(); //has no parameters
+delegate TResult Func<in T,out TResult>(T arg); //has one parameter
+delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two parameters
+⋮
+```
+
++++
+## **Event handlers**
+* * Methods that will handle an *event*
+  * `delegate void EventHandler(object sender, EventArgs e)`
+    * Event that has **no data**
+  * `delegate void EventHandler<TEventArgs>(object sender, TEventArgs e)`
+    * Event that **provides data**
+  * `delegate void ConsoleCancelEventHandler(object sender, ConsoleCancelEventArgs e)`
+  * `delegate System.Reflection.Assembly ResolveEventHandler(object sender, ResolveEventArgs args)`
+  * `delegate void UnhandledExceptionEventHandler(object sender, UnhandledExceptionEventArgs e)`
+  * ⋮
+
++++
+## Another important delegates
+* `delegate int Comparison<in T>(T x, T y)` - method that compares two objects of the same type
+* `delegate void AsyncCallback(IAsyncResult ar)` - method to be called when a corresponding asynchronous operation completes
+* `delegate TOutput Converter<in TInput,out TOutput>(TInput input)` - method that converts an object from one type to another type
 
 ---
 System Collections

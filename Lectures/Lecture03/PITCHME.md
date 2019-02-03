@@ -590,15 +590,15 @@ sortedList.Add("First", "Hello");
 * Variable size 
 * First-in, first-out collection
 * Collection of instances of the **same specified type**
-* **Type Parameters** 
-  * `TKey` - the type of the keys in the dictionary
-  * `TValue` - the type of the values in the dictionary
 * `class Dictionary<TKey,TValue>.KeyCollection`
   * Collection of keys in dictionary
 * `class Dictionary<TKey,TValue>.ValueCollection`
   * Collection of values in dictionary
 * `class SortedDictionary<TKey,TValue>`
   * Dictionary that is sorted on the key
+* **Type Parameters** 
+  * `TKey` - the type of the keys in the dictionary
+  * `TValue` - the type of the values in the dictionary
 
 +++?code=/Lectures/Lecture03/Assets/sln/Tests/GenericDictionaryTest.cs&lang=C#&title=Generic Dictionary Sample
 @[9-20]
@@ -639,6 +639,50 @@ sortedList.Add("First", "Hello");
 
 ---
 ## `System.IO` Namespace
+* `using System.IO`
+* [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.io?view=netstandard-2.0)
+* Types that provide **file and directory support**
+* Types that allow **reading** and **writing to files**
+  * Data streams
+
++++
+## File and directory support
+* Class **Path**
+* Classes that provides static methods
+  * **Directory**
+  * **File**
+* Classes that provides properties and instance methods
+  * **FileSystemInfo** (`abstract` base class)
+    * **DirecoryInfo**
+    * **FileInfo**
+
+
++++
+## Path
+  * `class Path`
+  * *Operations* on `string` instances that contain file or directory path information
+  * Performed in a cross-platform manner
+
+```C#
+string path1 = @"c:\temp\MyTest.txt";
+string path2 = @"c:\temp\MyTest";
+string path3 = @"temp";
+
+if (Path.HasExtension(path1)) 
+{
+    Console.WriteLine("{0} has an extension.", path1);
+}
+
+if (!Path.HasExtension(path2)) 
+{
+    Console.WriteLine("{0} has no extension.", path2);
+}
+
+Console.WriteLine($"The full path of {path3} is {Path.GetFullPath(path3)}.");
+Console.WriteLine($"{Path.GetTempPath()} is the location for temporary files.");
+Console.WriteLine($"{Path.GetTempFileName()} is a file available for use.");
+```
+
 
 ---
 linq

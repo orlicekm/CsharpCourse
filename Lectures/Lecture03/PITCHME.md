@@ -523,10 +523,10 @@ sortedList.Add("First", "Hello");
 
 +++
 ## Base classes
-* `abstract` **base classes**
-* `class CollectionBase` - for a strongly typed collection
-* `class DictionaryBase` - for a strongly typed collection of key/value pairs
-* `class ReadOnlyCollectionBase` - for a strongly typed non-generic read-only collection
+* collection `abstract` **base classes**:
+  * `class CollectionBase` - for a strongly typed collection
+  * `class DictionaryBase` - for a strongly typed collection of key/value pairs
+  * `class ReadOnlyCollectionBase` - for a strongly typed non-generic read-only collection
 
 ---
 ## `System.Collections.Generic` Namespace

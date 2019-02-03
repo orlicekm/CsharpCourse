@@ -5,7 +5,7 @@ namespace Examples
 {
     public class FileInfoSample
     {
-        static void Main()
+        public static void Main()
         {
             var info = new FileInfo("C:\\file.txt");
 

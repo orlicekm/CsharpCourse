@@ -858,7 +858,6 @@ Console.WriteLine(c5);
 * Contains types that retrieve information about *assemblies*, *modules*, *members*, *parameters*, and other entities in managed code by examining their metadata
 * Manipulate instances of loaded types
 
-+++
 +++?code=/Lectures/Lecture03/Assets/sln/Tests/ReflectionTest.cs&lang=C#&title=ReflectionTest Sample
 @[8-14]
 @[16-39]
@@ -872,7 +871,70 @@ Console.WriteLine(c5);
 
 
 ---
-System.Text Namespace
+## `System.Text` Namespace
+* `using System.Text`
+* [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.text?view=netstandard-2.0)
+* Classes that represent ASCII and Unicode character encodings
+  * Abstract base classes for converting blocks of characters to and from blocks of bytes
+* Helper class that manipulates and formats `String` objects without creating intermediate instances of `String`
+
++++
+## Encoding
+* `class Encoding`
+* `abstract`
+* process of **transforming a set of Unicode characters into a sequence of bytes**
+* Provides the following implementations:
+  * `class ASCIIEncoding`
+  * `class UTF7Encoding`
+  * `class UTF8Encoding`
+  * `class UnicodeEncoding`
+  * `class UTF32Encoding`
+* **Decoder**
+  * `class Decoder`
+  * `abstract`
+  * Converts a sequence of encoded bytes into a set of characters
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/EncodingSampleSample.cs&lang=C#&title=EncodingSample Sample
+@[10]
+@[12-14]
+@[16-17]
+@[19-20]
+@[22-25]
+@[27-29, 31-33]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/EncodingSampleSample.cs)
+
++++
+## StringBuilder
+* `class StringBuilder`
+* **String-like object** whose value is a **mutable** sequence of characters
+  * Maintains a *buffer* to accommodate expansions to the string
+  * New data is appended to the *buffer* if room is available; otherwise, a new, larger *buffer* is allocated
+
++++
+### String vs. StringBuilder
+* *Each operation that appears to modify a `String` object actually creates a new string*
+* **`String` is better when**
+  * **Number of changes** that your app will make to a string **is small**
+  * App is performing a **fixed number of concatenation operations**
+    * Compiler might combine them into single one
+  * App performs **extensive search operations** while building string
+    * `IndexOf`, `StartWith`
+* **`StringBuilder` is better when**
+  * App makes an **unknown number of changes** to a string at design time
+    * E.g. loop to concatenate a random number of strings that contain user input
+  * When you expect your app to make a **significant number of changes** to a string
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/StringBuilderTest.cs&lang=C#&title=StringBuilder Sample
+@[9-28]
+@[11-13]
+@[15-16]
+@[18-19]
+@[21-22]
+@[24-25]
+@[27]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/StringBuilderTest.cs)
+
+---
 System.Text.RegularExpressions Namespace
 
 ---

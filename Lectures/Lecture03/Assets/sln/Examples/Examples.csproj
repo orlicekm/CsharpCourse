@@ -45,6 +45,7 @@
     <Compile Include="ConsoleSample.cs" />
     <Compile Include="DirectoryInfoSample.cs" />
     <Compile Include="DirectorySample.cs" />
+    <Compile Include="EncodingSample.cs" />
     <Compile Include="FileInfoSample.cs" />
     <Compile Include="FileSample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

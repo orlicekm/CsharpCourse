@@ -61,7 +61,7 @@
     <Compile Include="ConvertTest.cs" />
     <Compile Include="GenericDictionaryTest.cs" />
     <Compile Include="GenericListTest.cs" />
-    <Compile Include="GenericQueueList.cs" />
+    <Compile Include="GenericQueueTest.cs" />
     <Compile Include="GenericStackTest.cs" />
     <Compile Include="HashSetTest.cs" />
     <Compile Include="HashtableTest.cs" />

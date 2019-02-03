@@ -3,7 +3,7 @@ using Xunit;
 
 namespace Tests
 {
-    public class GenericQueueList
+    public class GenericQueueTest
     {
         [Fact]
         public void Test()

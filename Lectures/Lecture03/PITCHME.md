@@ -655,9 +655,9 @@ sortedList.Add("First", "Hello");
   * **FileSystemInfo** (`abstract` base class)
     * **DirecoryInfo**
     * **FileInfo**
-* Static methods perform security checks on all methods
-* For one action is static variant better than instance one
-* For reuse is better instance one, because the security check will not always be necessary
+* *Static methods* perform *security checks on all methods*
+* For **one action** is **static variant** better than instance one
+* For **reuse** is better **instance one**, because the security check will not always be necessary
 
 +++
 ## Path

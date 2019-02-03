@@ -454,7 +454,7 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 +++
 ## Stack
 * `class Stack`
-* Simple last-in-first-out (LIFO) non-generic collection of objects
+* Simple last-in-first-out non-generic collection of objects
 * Implements the `ICollection` interface
   * `interface ICollection`
   * Defines *size*, *enumerators*, and *synchronization* methods for all nongeneric collections
@@ -536,8 +536,123 @@ sortedList.Add("First", "Hello");
 * Allow users to create strongly typed collections
   * Provide better type safety and performance
 
++++
+## Generic List
+* `class List<T>`
+* **Strongly typed** list of objects that can be accessed by index
+* Provides methods to
+  * Search
+  * Sort
+  * Manipulate 
+* **Type Parameter** `T`
+  * The type of elements in the list
+* `class SortedList<TKey,TValue>`
+  * Key/value pairs that are sorted by key based on the associated `IComparer<T>` implementation
+  * `class IComparer<T>`
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/GenericListTest.cs&lang=C#&title=Generic List Sample
+@[9-18]
+@[21-27]
+@[30-36]
+@[39-44]
+@[47-54]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/GenericListTest.cs)
+
++++
+## Generic Stack
+* `class Stack<T>`
+* Variable size 
+* Last-in-first-out collection 
+  * Instances of the **same specified type**
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/GenericStackTest.cs&lang=C#&title=Generic Stack Sample
+@[9-19]
+@[11-16]
+@[18]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/GenericStackTest.cs)
+
++++
+## Generic Queue
+* `class Queue<T>`
+* Variable size 
+* First-in, first-out collection
+* Collection of instances of the **same specified type**
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/GenericQueueTest.cs&lang=C#&title=Generic Queue Sample
+@[9-19]
+@[11-16]
+@[18]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/GenericQueueTest.cs)
+
++++
+## Generic Dictionary
+* `class Dictionary<TKey,TValue>`
+* Variable size 
+* First-in, first-out collection
+* Collection of instances of the **same specified type**
+* **Type Parameters** 
+  * `TKey` - the type of the keys in the dictionary
+  * `TValue` - the type of the values in the dictionary
+* `class Dictionary<TKey,TValue>.KeyCollection`
+  * Collection of keys in dictionary
+* `class Dictionary<TKey,TValue>.ValueCollection`
+  * Collection of values in dictionary
+* `class SortedDictionary<TKey,TValue>`
+  * Dictionary that is sorted on the key
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/GenericDictionaryTest.cs&lang=C#&title=Generic Dictionary Sample
+@[9-20]
+@[11-16]
+@[18-19]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/GenericDictionaryTest.cs)
+
++++ 
+## HashSet
+* `class HashSet<T>` 
+* Set of values
+* Contains no duplicate elements
+* Elements are in no particular order
+* Provides high-performance set operations
+* `class SortedSet<T>`
+  * Hashset that is maintained in sorted order
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/HashSetTest.cs&lang=C#&title=HashSet Sample
+@[9-18]
+@[11-13]
+@[15-17]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/HashSetTest.cs)
+
++++
+## Generic Interfaces
+|  Interface | Description |
+|:-:|:- |
+| `ICollection<T>` | Defines methods for generic collections |
+| `IDictionary<TKey,TValue>` | Define methods for generic dictionaries |
+| `IList<T>` | Define methods for generic lists |
+| `ISet<T>` | Define methods for generic sets |
+| `IReadOnlyCollection<T>` | Define methods for generic read-only collections |
+| `IReadOnlyDictionary<TKey,TValue>` | Define methods for generic read-only dictionaries |
+| `IReadOnlyList<T>` | Define methods for generic read-only lists |
+| `IComparer<T>` | Defines a method that a type implements to compare two objects |
+| `IEnumerable<T>` | Exposes the enumerator, which supports a simple iteration over a collection of a specified type |
+
+
 ---
 ## `System.IO` Namespace
+
+---
+linq
+numeric
+reflection
+System.Text Namespace
+System.Text.RegularExpressions Namespace
+xml
+xpath
+
+---
+another namespaces
+
+
 
 ---
 ## References:

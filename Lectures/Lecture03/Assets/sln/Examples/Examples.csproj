@@ -43,9 +43,15 @@
   <ItemGroup>
     <Compile Include="ArrayListSample.cs" />
     <Compile Include="ConsoleSample.cs" />
+    <Compile Include="DirectoryInfoSample.cs" />
+    <Compile Include="DirectorySample.cs" />
+    <Compile Include="FileInfoSample.cs" />
+    <Compile Include="FileSample.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueueSample.cs" />
     <Compile Include="StackSample.cs" />
+    <Compile Include="StreamReaderSample.cs" />
+    <Compile Include="StreamWriterSample.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

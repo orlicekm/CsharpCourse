@@ -646,20 +646,6 @@ sortedList.Add("First", "Hello");
   * Data streams
 
 +++
-## File and directory support
-* Class **Path**
-* Classes that provides static methods
-  * **Directory**
-  * **File**
-* Classes that provides properties and instance methods
-  * **FileSystemInfo** (`abstract` base class)
-    * **DirecoryInfo**
-    * **FileInfo**
-* *Static methods* perform *security checks on all methods*
-* For **one action** is **static variant** better than instance one
-* For **reuse** is better **instance one**, because the security check will not always be necessary
-
-+++
 ## Path
   * `class Path`
   * *Operations* on `string` instances that contain file or directory path information
@@ -686,21 +672,137 @@ Console.WriteLine($"{Path.GetTempFileName()} is a file available for use.");
 ```
 
 +++
+## Static vs Instance
+* Classes that provides static methods
+  * **Directory**
+  * **File**
+* Classes that provides properties and instance methods
+  * **FileSystemInfo** (`abstract` base class)
+    * **DirecoryInfo**
+    * **FileInfo**
+* *Static methods* perform *security checks on all methods*
+* For **one action** is **static variant** better than instance one
+* For **reuse** is better **instance one**, because the security check will not always be necessary
+
++++
 ## Directory and File
 * `class Directory` and `class File`
 * `static` methods
 * **Directory**
-  * creating, moving, and enumerating through directories and subdirectories
-  * typical operations such as copying, moving, renaming, creating, and deleting directories.
-  * To create a directory, use one of the CreateDirectory methods.
-  * To delete a directory, use one of the Delete methods.
-  * To get or set the current directory for an app, use the GetCurrentDirectory or SetCurrentDirectory method.
-  * To manipulate DateTime information related to the creation, access, and writing of a directory, use methods such as SetLastAccessTime and SetCreationTime.
+  * *Creating*, *moving*, *deleting*, *renaming*, *copying* directories
+  * *Enumerating* through subdirectories and subfiles
 * **File**
+  * *Creating*, *moving*, *deleting*, *renaming* *copying* files
+  * *Opening* and *appending* to a file
+  * Creation of `FileStream` objects
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/DirectorySample.cs&lang=C#&title=Directory Sample
+@[8-21]
+@[10-11]
+@[13-20]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/DirectorySample.cs)
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/FileSample.cs&lang=C#&title=File Sample
+@[8-16]
+@[10]
+@[12-13]
+@[15]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/FileSample.cs)
 
 +++
 ## DirecoryInfo and FileInfo
+* `class DirectoryInfo` and `class FileInfo`
+* Properties and instance methods
+* **DirectoryInfo**
+  * *Creating*, *moving*, *deleting*, *renaming*, *copying* directories
+  * *Enumerating* through subdirectories and subfiles
+* **File**
+  * *Creating*, *moving*, *deleting*, *renaming* *copying* files
+  * *Opening* and *appending* to a file
+  * Creation of `FileStream` objects
 
++++?code=/Lectures/Lecture03/Assets/sln/Examples/DirectoryInfoSample.cs&lang=C#&title=DirectoryInfo Sample
+@[8-34]
+@[10-11]
+@[12-13,29-33]
+@[14-20]
+@[22-24]
+@[26-28]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/DirectoryInfoSample.cs)
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/FileInfoSample.cs&lang=C#&title=FileInfo Sample
+@[8-20]
+@[10]
+@[12-13]
+@[15-16]
+@[18-19]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/FileInfoSample.cs)
+
++++
+## Data Streams
+* `Stream Class` 
+* Abstract base class of all streams
+* **Abstraction of a sequence of bytes**, such as
+    * *File**
+    * *Input/output device**
+    * *Inter-process communication pipe**
+    * *TCP/IP socket**
+    * ⋮
+* **Fundamental operations**
+  * *Reading* - ransfer of data from a stream into a data structure,
+  * *Writing* - transfer of data from a data structure into a stream.
+  * *Seeking*(optional) - querying and modifying the current position within a stream
+
++++
+## File Stream
+* `class FileStream`
+* Stream for a file
+* **Synchronous** and **asynchronous**
+* **Read** and **write** operations
+
+```C#
+using (FileStream fileStream = File.OpenRead(@"c:\test.txt"))
+{
+    byte[] b = new byte[1024];
+    UTF8Encoding encoding = new UTF8Encoding(true);
+    while (fileStream.Read(b,0,b.Length) > 0)
+    {
+        Console.WriteLine(encoding.GetString(b));
+    }
+}
+```
+
++++
+## Stream Writer and Stream Reader
+* `class StreamWriter` and `class StreamReader`
+* Reads characters from a byte stream
+* Writes characters to a stream
+* In a **particular encoding**
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/StreamWriterSample.cs&lang=C#&title=StreamWriter Sample
+@[8-30]
+@[10-11, 23-29]
+@[12-15, 22]
+@[16-21]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/StreamWriterSample.cs)
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/StreamReaderSample.cs&lang=C#&title=StreamReader Sample
+@[8-31]
+@[10-11, 24-30]
+@[12-15, 23]
+@[16-22]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/StreamReaderSample.cs)
+
++++
+## Another readers and writers
+|  Class | Description |
+|:-:|:- |
+| `StringReader` | Reads from a string |
+| `StringWriter` | Writes to a string(stored in `StringBuilder`) |
+| `TextReader` | Reads a sequential series of characters(`abstract`) |
+| `TextWriter` | Writes a sequential series of characters(`abstract`) |
+| `BinaryReader` | Reads primitive data types as binary values in a specific encoding |
+| `BinaryWriter` | Writes primitive types in binary to a stream and supports writing strings in a specific encoding |
 
 ---
 linq
@@ -710,6 +812,8 @@ System.Text Namespace
 System.Text.RegularExpressions Namespace
 xml
 xpath
+
+(system.net?)
 
 ---
 another namespaces

@@ -894,14 +894,14 @@ Console.WriteLine(c5);
   * `abstract`
   * Converts a sequence of encoded bytes into a set of characters
 
-+++?code=/Lectures/Lecture03/Assets/sln/Examples/EncodingSampleSample.cs&lang=C#&title=EncodingSample Sample
++++?code=/Lectures/Lecture03/Assets/sln/Examples/EncodingSample.cs&lang=C#&title=EncodingSample Sample
 @[10]
 @[12-14]
 @[16-17]
 @[19-20]
 @[22-25]
 @[27-29, 31-33]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/EncodingSampleSample.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/EncodingSample.cs)
 
 +++
 ## StringBuilder
@@ -918,7 +918,7 @@ Console.WriteLine(c5);
   * App is performing a **fixed number of concatenation operations**
     * Compiler might combine them into single one
   * App performs **extensive search operations** while building string
-    * `IndexOf`, `StartWith`
+    * E.g. `IndexOf`, `StartWith`
 * **`StringBuilder` is better when**
   * App makes an **unknown number of changes** to a string at design time
     * E.g. loop to concatenate a random number of strings that contain user input

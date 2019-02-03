@@ -805,8 +805,55 @@ using (FileStream fileStream = File.OpenRead(@"c:\test.txt"))
 | `BinaryWriter` | Writes primitive types in binary to a stream and supports writing strings in a specific encoding |
 
 ---
+## `System.Numerics` Namespace
+* `using System.Numerics`
+* [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.numerics?view=netstandard-2.0)
+* Numeric types that complement the numeric primitives
+
++++ 
+## BigInteger
+* `struct BigInteger`
+* Nonprimitive integral type that supports arbitrarily large integers
+* Has no lower or upper bound
+* Can contain the value of any integer
+
+```C#
+BigInteger number = BigInteger.Pow(UInt64.MaxValue, 3);
+Console.WriteLine(number);
+// The example displays the following output:
+// 6277101735386680762814942322444851025767571854389858533375
+```
+
++++
+## Complex
+* `struct Complex`
+* Represents a complex number
+
+```C#
+Complex complex1 = new Complex(12, 6);
+Complex complex2 = 3.14;
+Complex complex3 = (Complex) 12.3m;
+Complex complex4 = Complex.Pow(Complex.One, -1);
+Complex complex5 = Complex.One + Complex.One;
+
+Console.WriteLine(c1);
+Console.WriteLine(c2);
+Console.WriteLine(c3);
+Console.WriteLine(c4);
+Console.WriteLine(c5);
+
+// The example displays the following output:
+// (12, 6)
+// (3.14, 0)
+// (12.3, 0)
+// (1, 0)
+// (2, 0)
+```
+
+---
+
+---
 linq
-numeric
 reflection
 System.Text Namespace
 System.Text.RegularExpressions Namespace

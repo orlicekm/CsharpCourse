@@ -18,7 +18,7 @@ namespace Examples
             Console.WriteLine($"    Count:    {arrayList.Count}");
             Console.WriteLine($"    Capacity: {arrayList.Capacity}");
 
-            Console.Write( "    Values:" );
+            Console.Write("    Values:");
             foreach (var obj in arrayList)
                 Console.Write($"   {obj}");
             Console.WriteLine();

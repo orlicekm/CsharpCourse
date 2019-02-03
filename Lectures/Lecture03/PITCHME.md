@@ -438,11 +438,11 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 
 +++
 ## ArrayList 
-* `class Random`
+* `class ArrayList`
 * Using an array whose size is dynamically increased as required
 * Implements the `IList` interface
   * `interface IList`
-  * Non-generic collection of objects that can be individually accessed by index
+  * Defines non-generic collection of objects that can be individually accessed by index
 
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/ArrayListSample.cs&lang=C#&title=ArrayList Sample
 @[8-25]
@@ -455,7 +455,78 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 ## Stack
 * `class Stack`
 * Simple last-in-first-out (LIFO) non-generic collection of objects
+* Implements the `ICollection` interface
+  * `interface ICollection`
+  * Defines *size*, *enumerators*, and *synchronization* methods for all nongeneric collections
+* Implements the `IEnumerable` interface
+  * `interface IEnumerable`
+  * Exposes an *enumerator*, which supports a simple iteration over a non-generic collection
 
++++?code=/Lectures/Lecture03/Assets/sln/Examples/StackSample.cs&lang=C#&title=Stack Sample
+@[8-24]
+@[11-14]
+@[17-18]
+@[20-23]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/StackSample.cs)
+
++++
+## Queue
+* `class Queue`
+* First-in, first-out collection of objects
+* Implements the `ICollection` interface
+* Implements the `IEnumerable` interface
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/QueueSample.cs&lang=C#&title=Queue Sample
+@[8-24]
+@[11-14]
+@[17-18]
+@[20-23]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/QueueSample.cs)
+
++++
+## Hashtable
+* `class Hashtable`
+* Collection of key/value pairs that are organized based on the hash code of the key
+* Implements the `IDictionary` interface
+  * `interface IDictionary`
+  * Nongeneric collection of key/value pairs
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/HashtableTest.cs&lang=C#&title=Hashtable Sample
+@[10-24]
+@[13, 17-21]
+@[22]
+@[23]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/HashtableTest.cs)
+
++++
+## Another Collections 
+* `class BitArray`
+  * Compact array of bit values, which are represented as Booleans
+* `class SortedList`
+  * Collection of key/value pairs that are sorted by the keys 
+
+```C#
+bool[] boolArray = new bool[5] { true, false, true, true, false };
+BitArray bitArray = new BitArray( boolArray );
+
+foreach ( var bit in bitArray ) {
+    Console.Write(bit);
+}
+```
+
+```C#
+SortedList sortedList = new SortedList();
+sortedList.Add("Third", "!");
+sortedList.Add("Second", "World");
+sortedList.Add("First", "Hello");
+```
+
++++
+## Base classes
+* `abstract` **base classes**
+* `class CollectionBase` - for a strongly typed collection
+* `class DictionaryBase` - for a strongly typed collection of key/value pairs
+* `class ReadOnlyCollectionBase` - for a strongly typed non-generic read-only collection
 
 ---
 ## `System.Collections.Generic` Namespace

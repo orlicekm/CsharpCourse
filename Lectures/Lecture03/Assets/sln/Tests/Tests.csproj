@@ -59,6 +59,7 @@
     <Compile Include="ArrayTest.cs" />
     <Compile Include="BitConverterTest.cs" />
     <Compile Include="ConvertTest.cs" />
+    <Compile Include="ReflectionTest.cs" />
     <Compile Include="GenericDictionaryTest.cs" />
     <Compile Include="GenericListTest.cs" />
     <Compile Include="GenericQueueTest.cs" />

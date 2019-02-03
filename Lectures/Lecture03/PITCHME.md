@@ -820,6 +820,7 @@ using (FileStream fileStream = File.OpenRead(@"c:\test.txt"))
 ```C#
 BigInteger number = BigInteger.Pow(UInt64.MaxValue, 3);
 Console.WriteLine(number);
+
 // The example displays the following output:
 // 6277101735386680762814942322444851025767571854389858533375
 ```
@@ -851,12 +852,31 @@ Console.WriteLine(c5);
 ```
 
 ---
+## `System.Reflection` Namespace
+* `using System.Reflection`
+* [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.reflection?view=netstandard-2.0)
+* Contains types that retrieve information about *assemblies*, *modules*, *members*, *parameters*, and other entities in managed code by examining their metadata
+* Manipulate instances of loaded types
+
++++
++++?code=/Lectures/Lecture03/Assets/sln/Tests/ReflectionTest.cs&lang=C#&title=ReflectionTest Sample
+@[8-14]
+@[16-39]
+@[19-25]
+@[21]
+@[23-24]
+@[28-38]
+@[30-32]
+@[34-37]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/ReflectionTest.cs)
+
+
+---
+System.Text Namespace
+System.Text.RegularExpressions Namespace
 
 ---
 linq
-reflection
-System.Text Namespace
-System.Text.RegularExpressions Namespace
 xml
 xpath
 

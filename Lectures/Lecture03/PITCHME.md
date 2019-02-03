@@ -655,7 +655,9 @@ sortedList.Add("First", "Hello");
   * **FileSystemInfo** (`abstract` base class)
     * **DirecoryInfo**
     * **FileInfo**
-
+* Static methods perform security checks on all methods
+* For one action is static variant better than instance one
+* For reuse is better instance one, because the security check will not always be necessary
 
 +++
 ## Path
@@ -670,18 +672,34 @@ string path3 = @"temp";
 
 if (Path.HasExtension(path1)) 
 {
-    Console.WriteLine("{0} has an extension.", path1);
+    Console.WriteLine("{path1} has an extension.");
 }
 
 if (!Path.HasExtension(path2)) 
 {
-    Console.WriteLine("{0} has no extension.", path2);
+    Console.WriteLine("{path2} has no extension.");
 }
 
 Console.WriteLine($"The full path of {path3} is {Path.GetFullPath(path3)}.");
 Console.WriteLine($"{Path.GetTempPath()} is the location for temporary files.");
 Console.WriteLine($"{Path.GetTempFileName()} is a file available for use.");
 ```
+
++++
+## Directory and File
+* `class Directory` and `class File`
+* `static` methods
+* **Directory**
+  * creating, moving, and enumerating through directories and subdirectories
+  * typical operations such as copying, moving, renaming, creating, and deleting directories.
+  * To create a directory, use one of the CreateDirectory methods.
+  * To delete a directory, use one of the Delete methods.
+  * To get or set the current directory for an app, use the GetCurrentDirectory or SetCurrentDirectory method.
+  * To manipulate DateTime information related to the creation, access, and writing of a directory, use methods such as SetLastAccessTime and SetCreationTime.
+* **File**
+
++++
+## DirecoryInfo and FileInfo
 
 
 ---

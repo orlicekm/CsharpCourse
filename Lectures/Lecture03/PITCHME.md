@@ -935,17 +935,46 @@ Console.WriteLine(c5);
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/StringBuilderTest.cs)
 
 ---
-System.Text.RegularExpressions Namespace
+## `System.Text.RegularExpressions` Namespace
+* `using System.Text.RegularExpressions`
+* [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.text.regularexpressions?view=netstandard-2.0)
+* [Online regex tester](http://regexstorm.net/tester)
+* Provide access to the .NET Framework regular expression engine
+* **Regex Class**
+  * `class Regex`
+  * Represents an immutable regular expression
+
++++
+## Regex example
+* **For example`\b(?<word>\w+)\s+(\k<word>)\b`**
+  * Regular expression to check for repeated occurrences of words in a string
+  * Can be interpreted as:
+ 
+| Pattern | Description |
+|:-:|:- |
+| `\b` | Start the match at a word boundary |
+| `(?<word>\w+)` | Match one or more word characters up to a word boundary. Name this captured group `word` |
+| `\s+` | Match one or more white-space characters |
+| `(\k<word>)` | Match the captured group that is named `word` |
+| `\b` | Match a word boundary |
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/RegexTest.cs&lang=C#&title=Regex Sample
+@[10-27]
+@[12-14]
+@[16-17]
+@[19-20]
+@[22-26]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/RegexTest.cs)
+
 
 ---
 linq
 xml
 xpath
 
-(system.net?)
-
 ---
 another namespaces
+(system.net?)
 
 
 
@@ -956,7 +985,8 @@ another namespaces
 [Microsoft documentation github](https://github.com/MicrosoftDocs)
 [.NET Standard web](http://immo.landwerth.net)
 [.NET Standard github](https://github.com/dotnet/standard)
-[ Wikipedia](https://en.wikipedia.org)
+[Regex Storm](http://regexstorm.net/tester)
+[Wikipedia](https://en.wikipedia.org)
 
 +++
 ## Refences to used images:

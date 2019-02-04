@@ -15,7 +15,7 @@ namespace Tests
             char charNumber = Convert.ToChar(stringNumber[0]);
 
             Assert.Equal(23, intNumber);
-            Assert.Equal(true, boolNumber);
+            Assert.True(boolNumber);
             Assert.Equal("23.15", stringNumber);
             Assert.Equal('2', charNumber);
         }

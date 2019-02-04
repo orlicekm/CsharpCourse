@@ -945,7 +945,7 @@ Console.WriteLine(c5);
   * Represents an immutable regular expression
 
 +++
-## Regex example
+## Regex Sample
 * **For example`\b(?<word>\w+)\s+(\k<word>)\b`**
   * Regular expression to check for repeated occurrences of words in a string
   * Can be interpreted as:
@@ -966,9 +966,46 @@ Console.WriteLine(c5);
 @[22-26]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/RegexTest.cs)
 
-
 ---
-linq
+## `System.Linq` Namespace
+* `using System.Linq`
+* [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.linq?view=netstandard-2.0)
+* Classes and interfaces that support queries that use **Language-Integrated Query** (LINQ)
+* The `Enumerable` class contains LINQ standard query operators that operate on objects that implement `IEnumerable<T>`
+* The `Queryable` class contains LINQ standard query operators that operate on objects that implement `IQueryable<T>`
+
++++
+## Language integrated query
+* **Type safety**
+* **Lazy Evaluation**
+* **Syntaxes**
+  * **Fluent** - using extension methods
+  * **Query** - using keywords
+
++++
+### Fluent syntax
+* Fluent interface
+  * Extension methods
+  * Created by implementing `IEnumerable` interface
+
+```C#
+string[] names = { "Tom", "Dick", "Harry", "Mary", "Jay" }; 
+IEnumerable<string> query = names 
+  .Where(n => n.Contains("a")) 
+  .OrderBy(n => n.Length) 
+  .Select(n => n.ToUpper()); 
+
+foreach (string name in query) Console.WriteLine(name);
+```
+
+![LinqFluentSyntax](/Lectures/Lecture03/Assets/img/LinqFluentSyntax.png)
+
++++
+linqpad?
+
+IW5 prednaska, ICS zadanie, dotaz na sql, xml etc..
+
+----
 xml
 xpath
 

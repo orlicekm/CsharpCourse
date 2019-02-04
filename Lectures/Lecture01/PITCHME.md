@@ -365,7 +365,7 @@ Applications provide better response times and require less compute power. </br>
 * E.g., 
   ```C#
   42
-  'Hello World'
+  "Hello World"
   3.14159
   ```
 

@@ -31,8 +31,8 @@ namespace Tests
         {
             var numbers = new List<int> {2, 3, 5, 7};
 
-            Assert.True(numbers.Contains(2));
-            Assert.False(numbers.Contains(8));
+            Assert.Contains(2, numbers);
+            Assert.DoesNotContain(8, numbers);
         }
 
         [Fact]

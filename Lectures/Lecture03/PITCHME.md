@@ -1004,6 +1004,7 @@ foreach (string name in query) Console.WriteLine(name);
 
 +++
 ### Query syntax
+@snap[west]
 * Using keywords
 
 ```C#
@@ -1015,8 +1016,9 @@ IEnumerable<string> query =
     orderby n.Length // Sort elements
     select n.ToUpper(); // Translate each element (project)
 ```
+@snapend
 
-@snap[west]
+@snap[east]
 ![LinqFluentSyntax](/Lectures/Lecture03/Assets/img/LinqQuerySyntax.png)
 @snapend
 

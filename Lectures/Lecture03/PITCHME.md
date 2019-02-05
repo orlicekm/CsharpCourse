@@ -1054,7 +1054,13 @@ var query = from m in musos
 
 +++
 ### LINQ Operators
+* Can be split by **input and output** into three categories
 
+|  IN |  | OUT |
+| -:|:-:|:- |
+| sequence in | -> | sequence out |
+| sequence in | -> | single element or scalar value out |
+| nothing in | -> | sequence out |
 
 
 

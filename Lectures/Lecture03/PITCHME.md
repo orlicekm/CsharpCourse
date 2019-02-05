@@ -1062,6 +1062,59 @@ var query = from m in musos
 | sequence in | -> | single element or scalar value out |
 | nothing in | -> | sequence out |
 
++++
+### LINQ Filtering Operators
+Filtering is an operation to restrict the result set such that it has only selected elements satisfying a particular condition.
+
+| Operator | Description |
+|:-:|:- |
+| Where | Filter values based on a predicate function |
+| OfType | Filter values based on their ability to be as a specified type |
+
++++
+### LINQ Join Operators
+
+| Operator | Description |
+|:-:|:- |
+|  |  |
+|  |  |
+
++++
+### LINQ Projection Operations
+
++++
+### LINQ Sorting Operators
+
++++
+### LINQ Grouping Operators
+
++++
+### LINQ Conversions
+
++++
+### LINQ Concatenation
+
++++
+### LINQ Aggregation
+
++++
+### LINQ Quantifier Operations
+
++++
+### LINQ Partition Operators
+
++++
+### LINQ Generation Operations
+
++++
+### LINQ Set Operations
+
++++
+### LINQ Equality
+
++++
+### LINQ Element Operators
+
 
 
 +++
@@ -1080,14 +1133,16 @@ another namespaces
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
-[Microsoft documentation](https://docs.microsoft.com)
-[Microsoft documentation github](https://github.com/MicrosoftDocs)
-[.NET Standard web](http://immo.landwerth.net)
-[.NET Standard github](https://github.com/dotnet/standard)
-[Regex Storm](http://regexstorm.net/tester)
+[Microsoft documentation](https://docs.microsoft.com)  
+[Microsoft documentation github](https://github.com/MicrosoftDocs)  
+[.NET Standard web](http://immo.landwerth.net)  
+[.NET Standard github](https://github.com/dotnet/standard)  
+[Tutorials Point](https://www.tutorialspoint.com)  
+[Regex Storm](http://regexstorm.net/tester)  
 [Wikipedia](https://en.wikipedia.org)
 
 +++
 ## Refences to used images:
-[.NET Standard version table](http://immo.landwerth.net/netstandard-versions/)
-[Introduction to .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)
+[.NET Standard version table](http://immo.landwerth.net/netstandard-versions/)  
+[Introduction to .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)  
+[Stanford University](https://www.stanford.edu/)

@@ -999,12 +999,7 @@ foreach (string name in query) Console.WriteLine(name);
 @snapend
 
 +++
-@snap[south]
 ### Query syntax diagram
-@snapend
-@snap[midpoint]
-![LinqFluentSyntax](/Lectures/Lecture03/Assets/img/LinqQuerySyntax.png)
-@snapend
 
 ```C#
 string[] names = { "Tom", "Dick", "Harry", "Mary", "Jay" }; 
@@ -1015,6 +1010,15 @@ IEnumerable<string> query =
     orderby n.Length // Sort elements
     select n.ToUpper(); // Translate each element (project)
 ```
+
++++
+@snap[North]
+### Query syntax diagram
+@snapend
+@snap[midpoint]
+![LinqFluentSyntax](/Lectures/Lecture03/Assets/img/LinqQuerySyntax.png)
+@snapend
+
 +++
 IW5 prednaska, ICS zadanie, dotaz na sql, xml etc..
 

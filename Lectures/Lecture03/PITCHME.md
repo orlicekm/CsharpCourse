@@ -1017,8 +1017,12 @@ IEnumerable<string> query =
 ```
 
 +++
+@snap[north]
 ### Query syntax diagram
+@snapend
+@snap[midpoint]
 ![LinqFluentSyntax](/Lectures/Lecture03/Assets/img/LinqQuerySyntax.png)
+@snapend
 
 +++
 IW5 prednaska, ICS zadanie, dotaz na sql, xml etc..

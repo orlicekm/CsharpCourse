@@ -1058,9 +1058,9 @@ var query = from m in musos
 
 |  IN |  | OUT |
 | -:|:-:|:- |
-| sequence in | -> | sequence out |
-| sequence in | -> | single element or scalar value out |
-| nothing in | -> | sequence out |
+| Sequence in | -> | Sequence out |
+| Sequence in | -> | Single element or scalar value out |
+| Nothing in | -> | Sequence out |
 
 +++
 ### LINQ Filtering Operators
@@ -1068,8 +1068,8 @@ Filtering is an operation to restrict the result set such that it has only selec
 
 | Operator | Description |
 |:-:|:- |
-| Where | Filter values based on a predicate function |
-| OfType | Filter values based on their ability to be as a specified type |
+| `Where` | Filter values based on a predicate function |
+| `OfType` | Filter values based on their ability to be as a specified type |
 
 +++
 ### LINQ Join Operators
@@ -1077,8 +1077,8 @@ Joining refers to an operation in which data sources with difficult to follow re
 
 | Operator | Description |
 |:-:|:- |
-| Join | The operator join two sequences on basis of matching keys |
-| GroupJoin | Join two sequences and group the matching elements |
+| `Join` | The operator join two sequences on basis of matching keys |
+| `GroupJoin` | Join two sequences and group the matching elements |
 
 +++
 ### LINQ Projection Operations
@@ -1086,8 +1086,8 @@ Projection is an operation in which an object is transformed into an altogether 
 
 | Operator | Description |
 |:-:|:- |
-| Select | The operator projects values on basis of a transform function |
-| SelectMany | The operator project the sequences of values which are based on a transform function as well as flattens them into a single sequence |
+| `Select` | The operator projects values on basis of a transform function |
+| `SelectMany` | The operator project the sequences of values which are based on a transform function as well as flattens them into a single sequence |
 
 +++
 ### LINQ Sorting Operators
@@ -1095,11 +1095,11 @@ A sorting operation allows ordering the elements of a sequence on basis of a sin
 
 | Operator | Description |
 |:-:|:- |
-| OrderBy | The operator sort values in an ascending order |
-| OrderByDescending | The operator sort values in a descending order |
-| ThenBy | Executes a secondary sorting in an ascending order |
-| ThenByDescending | Executes a secondary sorting in a descending order |
-| Reverse | Performs a reversal of the order of the elements in a collection |
+| `OrderBy` | The operator sort values in an ascending order |
+| `OrderByDescending` | The operator sort values in a descending order |
+| `ThenBy` | Executes a secondary sorting in an ascending order |
+| `ThenByDescending` | Executes a secondary sorting in a descending order |
+| `Reverse` | Performs a reversal of the order of the elements in a collection |
 
 +++
 ### LINQ Grouping Operators
@@ -1107,8 +1107,8 @@ The operators put data into some groups based on a common shared attribute.
 
 | Operator | Description |
 |:-:|:- |
-| GroupBy | Organize a sequence of items in groups and return them as an `IEnumerable` collection of type `IGrouping<key, element>` |
-| ToLookup | Execute a grouping operation in which a sequence of key pairs are returned |
+| `GroupBy` | Organize a sequence of items in groups and return them as an `IEnumerable` collection of type `IGrouping<key, element>` |
+| `ToLookup` | Execute a grouping operation in which a sequence of key pairs are returned |
 
 +++
 ### LINQ Conversions
@@ -1116,14 +1116,14 @@ The operators change the type of input objects and are used in a diverse range o
 
 | Operator | Description |
 |:-:|:- |
-| AsEnumerable | Returns the input typed as `IEnumerable<T>` |
-| AsQueryable | A (generic) `IEnumerable` is converted to a (generic) `IQueryable` |
-| Cast | Performs casting of elements of a collection to a specified type |
-| OfType | Filters values on basis of their, depending on their capability to be cast to a particular type |
-| ToArray | Forces query execution and does conversion of a collection to an array |
-| ToDictionary | On basis of a key selector function set elements into a `Dictionary<TKey, TValue>` and forces execution of a LINQ query |
-| ToList | Forces execution of a query by converting a collection to a `List<T>` |
-| ToLookup | Forces execution of a query and put elements into a `Lookup<TKey, TElement>` on basis of a key selector function |
+| `AsEnumerable` | Returns the input typed as `IEnumerable<T>` |
+| `AsQueryable` | A (generic) `IEnumerable` is converted to a (generic) `IQueryable` |
+| `Cast` | Performs casting of elements of a collection to a specified type |
+| `OfType` | Filters values on basis of their, depending on their capability to be cast to a particular type |
+| `ToArray` | Forces query execution and does conversion of a collection to an array |
+| `ToDictionary` | On basis of a key selector function set elements into a `Dictionary<TKey, TValue>` and forces execution of a LINQ query |
+| `ToList` | Forces execution of a query by converting a collection to a `List<T>` |
+| `ToLookup` | Forces execution of a query and put elements into a `Lookup<TKey, TElement>` on basis of a key selector function |
 
 +++
 ### LINQ Concatenation
@@ -1131,7 +1131,7 @@ Performs concatenation of two sequences and is quite similar to the Union operat
 
 | Operator | Description |
 |:-:|:- |
-| Concat | Two sequences are concatenated for the formation of a single one sequence. |
+| `Concat` | Two sequences are concatenated for the formation of a single one sequence. |
 
 +++
 ### LINQ Aggregation
@@ -1139,13 +1139,13 @@ Performs any type of desired aggregation and allows creating custom aggregations
 
 | Operator | Description |
 |:-:|:- |
-| Aggregate | Operates on the values of a collection to perform custom aggregation operation	 |
-| Average | Average value of a collection of values is calculated	 |
-| Count | Counts the elements satisfying a predicate function within collection	 |
-| LongCount | Counts the elements satisfying a predicate function within a huge collection	 |
-| Max | Find out the maximum value within a collection	 |
-| Min | Find out the minimum value existing within a collection	 |
-| Sum | Find out the sum of a values within a collection	 |
+| `Aggregate` | Operates on the values of a collection to perform custom aggregation operation	 |
+| `Average` | Average value of a collection of values is calculated	 |
+| `Count` | Counts the elements satisfying a predicate function within collection	 |
+| `LongCount` | Counts the elements satisfying a predicate function within a huge collection	 |
+| `Max` | Find out the maximum value within a collection	 |
+| `Min` | Find out the minimum value existing within a collection	 |
+| `Sum` | Find out the sum of a values within a collection	 |
 
 +++
 ### LINQ Quantifier Operations
@@ -1153,9 +1153,9 @@ These operators return a Boolean value when some or all elements within a sequen
 
 | Operator | Description |
 |:-:|:- |
-| All | Returns `True` if all elements of a sequence satisfy a predicate condition  |
-| Any | Determines by searching a sequence that whether any element of the same satisfy a specified condition |
-| Contains | Returns `True` if finds that a specific element is there in a sequence if the sequence doe not contains that specific element , `false` is returned |
+| `All` | Returns `True` if all elements of a sequence satisfy a predicate condition  |
+| `Any` | Determines by searching a sequence that whether any element of the same satisfy a specified condition |
+| `Contains` | Returns `True` if finds that a specific element is there in a sequence if the sequence doe not contains that specific element , `false` is returned |
 
 +++
 ### LINQ Partition Operators
@@ -1163,10 +1163,10 @@ Divide an input sequence into two separate sections without rearranging the elem
 
 | Operator | Description |
 |:-:|:- |
-| Skip | Skips some specified number of elements within a sequence and returns the remaining ones |
-| SkipWhile | Same as that of Skip with the only exception that number of elements to skip are specified by a condition |
-| Take | Take a specified number of elements from a sequence and skip the remaining ones |
-| TakeWhile | Same as that of Take except the fact that number of elements to take are specified by a condition |
+| `Skip` | Skips some specified number of elements within a sequence and returns the remaining ones |
+| `SkipWhile` | Same as that of Skip with the only exception that number of elements to skip are specified by a condition |
+| `Take` | Take a specified number of elements from a sequence and skip the remaining ones |
+| `TakeWhile` | Same as that of Take except the fact that number of elements to take are specified by a condition |
 
 +++
 ### LINQ Generation Operations
@@ -1174,10 +1174,10 @@ A new sequence of values is created by generational operators.
 
 | Operator | Description |
 |:-:|:- |
-| DefaultIfEmpty | When applied to an empty sequence, generate a default element within a sequence |
-| Empty | Returns an empty sequence of values and is the most simplest generational operator |
-| Range | Generates a collection having a sequence of integers or numbers |
-| Repeat | Generates a sequence containing repeated values of a specific length |
+| `DefaultIfEmpty` | When applied to an empty sequence, generate a default element within a sequence |
+| `Empty` | Returns an empty sequence of values and is the most simplest generational operator |
+| `Range` | Generates a collection having a sequence of integers or numbers |
+| `Repeat` | Generates a sequence containing repeated values of a specific length |
 
 +++
 ### LINQ Set Operations
@@ -1185,10 +1185,10 @@ There are four operators for the set operations, each yielding a result based on
 
 | Operator | Description |
 |:-:|:- |
-| Distinct | Results a list of unique values from a collection by filtering duplicate data if any |
-| Except | Compares the values of two collections and return the ones from one collection who are not in the other collection |
-| Intersect | Returns the set of values found t be identical in two separate collections |
-| Union | Combines content of two different collections into a single list that too without any duplicate content |
+| `Distinct` | Results a list of unique values from a collection by filtering duplicate data if any |
+| `Except` | Compares the values of two collections and return the ones from one collection who are not in the other collection |
+| `Intersect` | Returns the set of values found t be identical in two separate collections |
+| `Union` | Combines content of two different collections into a single list that too without any duplicate content |
 
 +++
 ### LINQ Equality
@@ -1196,7 +1196,7 @@ Compares two sentences (enumerable) and determine are they an exact match or not
 
 | Operator | Description |
 |:-:|:- |
-| SequenceEqual | Results a Boolean value if two sequences are found to be identical to each other |
+| `SequenceEqual` | Results a Boolean value if two sequences are found to be identical to each other |
 
 +++
 ### LINQ Element Operators
@@ -1204,15 +1204,15 @@ Except the `DefaultIfEmpty`, all the rest eight standard query element operators
 
 | Operator | Description |
 |:-:|:- |
-| ElementAt | Returns an element present within a specific index in a collection |
-| ElementAtOrDefault | Same as `ElementAt` except of the fact that it also returns a default value in case the specific index is out of range |
-| First | Retrieves the first element within a collection or the first element satisfying a specific condition |
-| FirstOrDefault | Same as `First` except the fact that it also returns a default value in case there is no existence of such elements |
-| Last | Retrieves the last element present in a collection or the last element satisfying a specific condition |
-| LastOrDefault | Same as `Last` except the fact that it also returns a default value in case there is no existence of any such element |
-| Single | Returns the lone element of a collection or the lone element that satisfy a certain condition |
-| SingleOrDefault | Same as `Single` except that it also returns a default value if there is no existence of any such lone element |
-| DefaultIfEmpty | Returns a default value if the collection or list is empty or null |
+| `ElementAt` | Returns an element present within a specific index in a collection |
+| `ElementAtOrDefault` | Same as `ElementAt` except of the fact that it also returns a default value in case the specific index is out of range |
+| `First` | Retrieves the first element within a collection or the first element satisfying a specific condition |
+| `FirstOrDefault` | Same as `First` except the fact that it also returns a default value in case there is no existence of such elements |
+| `Last` | Retrieves the last element present in a collection or the last element satisfying a specific condition |
+| `LastOrDefault` | Same as `Last` except the fact that it also returns a default value in case there is no existence of any such element |
+| `Single` | Returns the lone element of a collection or the lone element that satisfy a certain condition |
+| `SingleOrDefault` | Same as `Single` except that it also returns a default value if there is no existence of any such lone element |
+| `DefaultIfEmpty` | Returns a default value if the collection or list is empty or null |
 
 
 

@@ -998,7 +998,9 @@ IEnumerable<string> query = names
 foreach (string name in query) Console.WriteLine(name);
 ```
 
+@snap[south]
 ![LinqFluentSyntax](/Lectures/Lecture03/Assets/img/LinqFluentSyntax.png)
+@snapend
 
 +++
 linqpad?

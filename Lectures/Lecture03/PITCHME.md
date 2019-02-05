@@ -998,7 +998,7 @@ IEnumerable<string> query = names
 foreach (string name in query) Console.WriteLine(name);
 ```
 
-![LinqFluentSyntax](/Lectures/Lecture03/Assets/img/Picture1.emf)
+![LinqFluentSyntax](/Lectures/Lecture03/Assets/img/LinqFluentSyntax.png)
 
 +++
 linqpad?

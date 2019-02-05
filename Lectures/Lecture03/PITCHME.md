@@ -1003,8 +1003,24 @@ foreach (string name in query) Console.WriteLine(name);
 @snapend
 
 +++
-linqpad?
+### Query syntax
+* Using keywords
 
+```C#
+string[] names = { "Tom", "Dick", "Harry", "Mary", "Jay" }; 
+
+IEnumerable<string> query =
+    from n in names
+    where n.Contains("a") // Filter elements
+    orderby n.Length // Sort elements
+    select n.ToUpper(); // Translate each element (project)
+```
+
+@snap[west]
+![LinqFluentSyntax](/Lectures/Lecture03/Assets/img/LinqQuerySyntax.png)
+@snapend
+
++++
 IW5 prednaska, ICS zadanie, dotaz na sql, xml etc..
 
 ----

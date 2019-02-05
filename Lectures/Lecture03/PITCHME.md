@@ -1222,7 +1222,8 @@ Except the `DefaultIfEmpty`, all the rest eight standard query element operators
 | `SingleOrDefault` | Same as `Single` except that it also returns a default value if there is no existence of any such lone element |
 | `DefaultIfEmpty` | Returns a default value if the collection or list is empty or null |
 
-
++++
+### How LINQ works?
 
 +++
 IW5 prednaska, ICS zadanie, dotaz na sql, xml etc..

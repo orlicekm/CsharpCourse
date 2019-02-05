@@ -1200,6 +1200,7 @@ Compares two sentences (enumerable) and determine are they an exact match or not
 
 +++
 ### LINQ Element Operators
+#### Part 1
 Except the `DefaultIfEmpty`, all the rest eight standard query element operators return a single element from a collection.
 
 | Operator | Description |
@@ -1208,6 +1209,12 @@ Except the `DefaultIfEmpty`, all the rest eight standard query element operators
 | `ElementAtOrDefault` | Same as `ElementAt` except of the fact that it also returns a default value in case the specific index is out of range |
 | `First` | Retrieves the first element within a collection or the first element satisfying a specific condition |
 | `FirstOrDefault` | Same as `First` except the fact that it also returns a default value in case there is no existence of such elements |
+
+### LINQ Element Operators
+#### Part 2
+
+| Operator | Description |
+|:-:|:- |
 | `Last` | Retrieves the last element present in a collection or the last element satisfying a specific condition |
 | `LastOrDefault` | Same as `Last` except the fact that it also returns a default value in case there is no existence of any such element |
 | `Single` | Returns the lone element of a collection or the lone element that satisfy a certain condition |

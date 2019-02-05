@@ -1012,11 +1012,11 @@ IEnumerable<string> query =
 ```
 
 +++
-@snap[North]
+@snap[north]
 ### Query syntax diagram
 @snapend
 
-@snap[South]
+@snap[south]
 ![LinqFluentSyntax](/Lectures/Lecture03/Assets/img/LinqQuerySyntax.png)
 @snapend
 

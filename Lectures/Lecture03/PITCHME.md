@@ -1021,6 +1021,44 @@ IEnumerable<string> query =
 @snapend
 
 +++
+### Fluent vs Query syntax
+* Each has its own benefits
+* Can be combinated
+* Some operators exists only in **Fluent syntax**
+* **Query syntax** is better
+  * When `let` is used to create new variable in query
+  * When using `SelectMany`, `Join`, `GroupJoin` with inner variable
+* **Fluent syntax** is better
+  * When using just one operator
+
++++
+### Subqueries
+* It is able to use LING query inside LINQ query
+
+```C#
+var musos = { "David Gilmour", "Roger Waters", "Rick Wright",
+	"Nick Mason" };
+```
+
+Fluent syntax
+```
+IEnumerable<string> query = musos.OrderBy(m => m.Split().Last());
+```
+
+Query syntax
+```
+var query = from m in musos
+    orderby m.Split().Last()
+    select m;
+```
+
++++
+### LINQ Operators
+
+
+
+
++++
 IW5 prednaska, ICS zadanie, dotaz na sql, xml etc..
 
 ----

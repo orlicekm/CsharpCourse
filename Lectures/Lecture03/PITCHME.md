@@ -1210,6 +1210,7 @@ Except the `DefaultIfEmpty`, all the rest eight standard query element operators
 | `First` | Retrieves the first element within a collection or the first element satisfying a specific condition |
 | `FirstOrDefault` | Same as `First` except the fact that it also returns a default value in case there is no existence of such elements |
 
++++
 ### LINQ Element Operators
 #### Part 2
 

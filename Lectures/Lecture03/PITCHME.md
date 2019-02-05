@@ -1242,13 +1242,93 @@ public static IEnumerable<TSource> Where<TSource>(
 }
 ```
 
++++
+## LINQ to SQL
+* ORM - Object Relational Mapper
+* LINQ query to SQL query
+
++++ 
+## LINQ SQL sample
+```C#
+// using System.Data.Common;
+Northwnd db = new Northwnd(@"c:\northwnd.mdf");
+
+var q =
+    from cust in db.Customers
+    where cust.City == "London"
+    select cust;
+
+Console.WriteLine("Customers from London:");
+foreach (var z in q)
+{
+    Console.WriteLine("\t {0}",z.ContactName);
+}
+
+DbCommand dc = db.GetCommand(q);
+Console.WriteLine("\nCommand Text: \n{0}",dc.CommandText);
+Console.WriteLine("\nCommand Type: {0}",dc.CommandType);
+Console.WriteLine("\nConnection: {0}",dc.Connection);
+```
+
++++
+## LINQ SQL sample output
+```SQL
+Customers from London:  
+    Thomas Hardy  
+    Victoria Ashworth  
+    Elizabeth Brown  
+    Ann Devon  
+    Simon Crowther  
+    Marie Bertrand  
+    Hari Kumar  
+    Dominique Perrier  
+
+Command Text:  
+SELECT [t0].[CustomerID], [t0].[CompanyName], [t0].[ContactName], [t0].[ContactT  
+itle], [t0].[Address], [t0].[City], [t0].[Region], [t0].[PostalCode], [t0].[Coun  
+try], [t0].[Phone], [t0].[Fax]  
+FROM [dbo].[Customers] AS [t0]  
+WHERE [t0].[City] = @p0  
+  
+Command Type: Text  
+  
+Connection: System.Data.SqlClient.SqlConnection  
+```
+
++++
+## LINQ to...
+* LINQ to **Entity framework** - next lecture
+* LINQ to Paralel LINQ (PLINQ)
+* LINQ to NHibernate
+* LINQ to Sharepoint
+* LINQ to ActiveDirectory
+* LINQ to JSON
+* LINQ to SNMP
+* LINQ to Wikipedia
+* LINQ to Twitter
+* LINQ to FQL (Facebook Query Language)
+
+---
+## eXtensible Markup Language (XML)
+* Readable for both humans and machines
+* Stricter version of HTML
+* Storing and transporting data
 
 
 +++
-IW5 prednaska, ICS zadanie, dotaz na sql, xml etc..
+## `System.Xml` Namespace
+* `using System.Xml`
+* [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.xml?view=netstandard-2.0)
+* Provides standards-based support for processing XML
 
-----
-xml
++++
+## 
+
+
++++
+xml.linq
+
++++
 xpath
 
 ---

@@ -1223,7 +1223,26 @@ Except the `DefaultIfEmpty`, all the rest eight standard query element operators
 | `DefaultIfEmpty` | Returns a default value if the collection or list is empty or null |
 
 +++
-### How LINQ works?
+### How implement LINQ?
+* [TUTORIAL - Create your own LINQ implementation](http://codeblog.jonskeet.uk/category/edulinq/)
+* E.g. `Where`:
+
+```C#
+public static IEnumerable<TSource> Where<TSource>( 
+	this IEnumerable<TSource> source, Func<TSource, bool> predicate) 
+{ 
+    // Check of input parameters ... 
+    foreach (TSource item in source) 
+    { 
+        if (predicate(item)) 
+        { 
+            yield return item; 
+        }
+    }
+}
+```
+
+
 
 +++
 IW5 prednaska, ICS zadanie, dotaz na sql, xml etc..

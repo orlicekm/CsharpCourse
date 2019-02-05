@@ -1247,8 +1247,6 @@ public static IEnumerable<TSource> Where<TSource>(
 * ORM - Object Relational Mapper
 * LINQ query to SQL query
 
-+++ 
-## LINQ SQL sample
 ```C#
 // using System.Data.Common;
 Northwnd db = new Northwnd(@"c:\northwnd.mdf");
@@ -1271,7 +1269,7 @@ Console.WriteLine("\nConnection: {0}",dc.Connection);
 ```
 
 +++
-## LINQ SQL sample output
+### Output
 ```SQL
 Customers from London:  
     Thomas Hardy  

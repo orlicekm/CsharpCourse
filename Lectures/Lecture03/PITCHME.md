@@ -869,6 +869,41 @@ Console.WriteLine(c5);
 @[34-37]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/ReflectionTest.cs)
 
+## Dynamic type
+* **Escapes type checking at compile time**
+* It resolves type at run time
+* Dynamic type can be defined using the `dynamic` keyword
+* Methods can have dynamic type parameters
+
+```C#
+dynamic x = "c#";
+x++;
+x.FakeMethod();
+```
+ 
++++?code=/Lectures/Lecture03/Assets/sln/Examples/DynamicParameter.cs&lang=C#&title=Dynamic Parameter Sample
+@[5-27]
+@[7-10]
+@[12-19]
+@[21-26]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/DynamicParameter.cs)
+
++++
+## Reflection vs. Dynamic
+* both used when we want operate on an object during runtime
+* *dynamic* uses *reflection* internally
+
+|  | Reflection | Dynamic |
+|:- |:-:|:-:|
+|Inspect (meta-data) | Yes | No |
+|Invoke public members | Yes | Yes |
+|Invoke private members | Yes | No |
+|Caching | No | Yes |
+|Static class | Yes | No |
+
+![ReflectionVSDynamic](/Lectures/Lecture03/Assets/img/ReflectionVSDynamic.jpg)
+
+
 
 ---
 ## `System.Text` Namespace

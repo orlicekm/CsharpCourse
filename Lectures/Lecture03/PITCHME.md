@@ -869,6 +869,7 @@ Console.WriteLine(c5);
 @[34-37]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/ReflectionTest.cs)
 
++++
 ## Dynamic type
 * **Escapes type checking at compile time**
 * It resolves type at run time

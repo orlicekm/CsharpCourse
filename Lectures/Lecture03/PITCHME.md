@@ -1346,6 +1346,7 @@ Connection: System.Data.SqlClient.SqlConnection
 
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/XmlReaderSample.cs&lang=C#&title=Reading XML with the XmlReader class
 @[8-20]
+@[10]
 @[11-12, 18]
 @[13-14, 17]
 @[15-16]

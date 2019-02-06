@@ -1192,7 +1192,7 @@ There are four operators for the set operations, each yielding a result based on
 
 +++
 ### LINQ Equality
-Compares two sentences (enumerable) and determine are they an exact match or not.
+Compares two sentences (enumerable) and determines if they are an exact match or not.
 
 | Operator | Description |
 |:-:|:- |
@@ -1264,7 +1264,7 @@ foreach (var z in q)
 
 DbCommand dc = db.GetCommand(q);
 Console.WriteLine("\nCommand Text: \n{0}",dc.CommandText);
-Console.WriteLine("\nCommand Type: {0}",dc.CommandType);
+Console.WriteLine("\nCommand Type: {0}",dc.CommandType);Combines content of two different collections into a single list without any duplicate content.
 Console.WriteLine("\nConnection: {0}",dc.Connection);
 ```
 

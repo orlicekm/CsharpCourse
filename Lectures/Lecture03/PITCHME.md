@@ -902,6 +902,7 @@ x.FakeMethod();
 |Caching | No | Yes |
 |Static class | Yes | No |
 
+
 ![ReflectionVSDynamic](/Lectures/Lecture03/Assets/img/ReflectionVSDynamic.jpg)
 
 

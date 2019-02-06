@@ -1312,27 +1312,105 @@ Connection: System.Data.SqlClient.SqlConnection
 * Stricter version of HTML
 * Storing and transporting data
 
+```XML
+<gesmes:Envelope>
+
+<Cube>
+    <Cube time="2019-02-05">
+    <Cube currency="USD" rate="1.1423"/>
+    <Cube currency="JPY" rate="125.59"/>
+    <Cube currency="BGN" rate="1.9558"/>
+    <Cube currency="CZK" rate="25.697"/>
+    <Cube currency="DKK" rate="7.4650"/>
+    <Cube currency="GBP" rate="0.87803"/>
+```
 
 +++
-## `System.Xml` Namespace
-* `using System.Xml`
-* [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.xml?view=netstandard-2.0)
-* Provides standards-based support for processing XML
+## XML namespaces
+* `System.Xml` Namespace
+  * `using System.Xml`
+  * [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.xml?view=netstandard-2.0)
+  * Provides standards-based support for processing XML
+* `System.Xml.Linq` Namespace
+  * `using System.Xml.Linq`
+  * [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.xml.linq?view=netstandard-2.0)
+  * Classes for LINQ to XML
+* `System.Xml.XPath` Namespace
+  * `using System.Xml.XPath`
+  * [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.xml.xpath?view=netstandard-2.0)
+  * Define a cursor model for navigating and editing XML
+* `System.Xml.Resolvers` Namespace
+* `System.Xml.Schema` Namespace
+* `System.Xml.Serialization` Namespace
+* `System.Xml.Xsl` Namespace
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/XmlReaderSample.cs&lang=C#&title=Reading XML with the XmlReader class
+@[8-20]
+@[11-12, 18]
+@[13-14, 17]
+@[15-16]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/XmlReaderSample.cs)
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/XmlDocumentReadSample.cs&lang=C#&title=Reading XML with the XmlDocument class
+@[8-15]
+@[10]
+@[11]
+@[12-13]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/XmlDocumentReadSample.cs)
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/XmlWriterSample.cs&lang=C#&title=Writing XML with the XmlWriter class
+@[7-25]
+@[9]
+@[11-12]
+@[14-17]
+@[19-21]
+@[23-24]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/XmlWriterSample.cs)
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/XmlDocumentWriteSample.cs&lang=C#&title=Writing XML with the XmlDocument class
+@[8-15]
+@[10]
+@[11]
+@[12-13]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/XmlDocumentWriteSample.cs)
 
 +++
-## 
+## Reading XML with the XPath input
+```XML
+<bookstore>  
+    <book genre="autobiography" publicationdate="1981-03-22" ISBN="1-861003-11-0">  
+        <title>The Autobiography of Benjamin Franklin</title>  
+        <author>  
+            <first-name>Benjamin</first-name>  
+            <last-name>Franklin</last-name>  
+        </author>  
+        <price>8.99</price>  
+    </book>  
+    <book genre="novel" publicationdate="1967-11-17" ISBN="0-201-63361-2">  
+        <title>The Confidence Man</title>  
+        <author>  
+            <first-name>Herman</first-name>  
+            <last-name>Melville</last-name>  
+        </author>  
+        <price>11.99</price>  
+    </book>  
+    <book genre="philosophy" publicationdate="1991-02-15" ISBN="1-861001-57-6">  
+        <title>The Gorgias</title>  
+        <author>  
+            <name>Plato</name>  
+        </author>  
+        <price>9.99</price>  
+    </book>  
+</bookstore>  
+```
 
-
-+++
-xml.linq
-
-+++
-xpath
-
----
-another namespaces
-(system.net?)
-
++++?code=/Lectures/Lecture03/Assets/sln/Examples/XPathSample.cs&lang=C#&title=Reading XML with the XPathSample
+@[8-23]
+@[10-11]
+@[13-15]
+@[17]
+@[19-20]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/XPathSample.cs)
 
 
 ---

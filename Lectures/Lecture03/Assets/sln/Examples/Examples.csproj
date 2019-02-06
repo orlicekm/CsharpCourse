@@ -53,6 +53,11 @@
     <Compile Include="StackSample.cs" />
     <Compile Include="StreamReaderSample.cs" />
     <Compile Include="StreamWriterSample.cs" />
+    <Compile Include="XmlDocumentReadSample.cs" />
+    <Compile Include="XmlDocumentWriteSample.cs" />
+    <Compile Include="XmlReaderSample.cs" />
+    <Compile Include="XmlWriterSample.cs" />
+    <Compile Include="XPathSample.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

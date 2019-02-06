@@ -1010,13 +1010,9 @@ IEnumerable<string> query =
 ```
 
 +++
-@snap[north]
 ### Query syntax diagram
-@snapend
 
-@snap[south]
 ![LinqFluentSyntax](/Lectures/Lecture03/Assets/img/LinqQuerySyntax.png)
-@snapend
 
 +++
 ### Fluent vs Query syntax

@@ -8,7 +8,7 @@
 ## .NET Standard
 * Formal specification of .NET APIs 
 * Intended to be available on all .NET implementations
-* Establishing greater uniformity in the .NET ecosystem
+* Establishes greater uniformity in the .NET ecosystem
 * [.NET Standard github](https://github.com/dotnet/standard)
 * [Introduction to .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)
 
@@ -47,8 +47,8 @@
 * Higher versions **incorporate** all APIs from previous versions
 * Once shipped, versions are frozen
 * Specific .NET platform to .NET Standard
-  * .NET Standard version depends on which version of .NET Standard the platform is implementing
-* .NET Standard version choise
+  * .NET Standard version depends on which version of .NET Standard platform is implementing
+* .NET Standard version choice
   * The higher the version, the more APIs are available to you
   * The lower the version, the more platforms you can run on
 
@@ -63,7 +63,7 @@
 +++
 ### Why .NET Standard 2.0 instead of 1.7?
 * More than doubled the API surface
-  * Added a compat shim that allows referencing existing binaries
+  * Added a compat shim that allows referencing of existing binaries
     * Even if they weren't built against *.NET Standard*
 
 +++
@@ -85,7 +85,7 @@
 * [.NET Standard API](https://docs.microsoft.com/sk-sk/dotnet/api/?view=netstandard-2.0)
 * API(Application programming interface):
   * Set of namespaces(classes, structs, interfaces, enums, delegates)
-  * Allow the creation of applications which access the features or data of an:
+  * Allows the creation of applications which access the features or data of an:
     * Operating system
     * Application
     * Other service..
@@ -95,7 +95,7 @@
 * `using System`
 * [Documentation](https://docs.microsoft.com/sk-sk/dotnet/api/system?view=netstandard-2.0)
 * Fundamental classes and base classes
-* Define:
+* Defines:
   * Commonly-used value and reference data types
   * Events and event handlers
   * Interfaces
@@ -371,7 +371,7 @@ Console.WriteLine("CLR Version {0}", version.ToString());
 ## Another important classes
 * `class Buffer` - manipulates arrays of primitive types
 * `class Environment` - information about the current environment and platform
-* `class Lazy<T>` - support for lazy initializatio
+* `class Lazy<T>` - support for lazy initialization
 * `class StringComparer` - represents a string comparison operation
 * `class Attribute` - represents the base class for custom attributes
 * `class SerializableAttribute` - indicates that a class can be serialized
@@ -486,7 +486,7 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 +++
 ## Hashtable
 * `class Hashtable`
-* Collection of key/value pairs that are organized based on the hash code of the key
+* Collection of key/value pairs that are organized by the hash code of the key
 * Implements the `IDictionary` interface
   * `interface IDictionary`
   * Nongeneric collection of key/value pairs
@@ -749,7 +749,7 @@ Console.WriteLine($"{Path.GetTempFileName()} is a file available for use.");
     * *TCP/IP socket**
     * ⋮
 * **Fundamental operations**
-  * *Reading* - ransfer of data from a stream into a data structure,
+  * *Reading* - transfer of data from a stream into a data structure,
   * *Writing* - transfer of data from a data structure into a stream.
   * *Seeking*(optional) - querying and modifying the current position within a stream
 
@@ -1064,7 +1064,7 @@ var query = from m in musos
 
 +++
 ### LINQ Filtering Operators
-Filtering is an operation to restrict the result set such that it has only selected elements satisfying a particular condition.
+Filtering is an operation to restrict the result set to the point where it shows only selected elements satisfying a particular condition.
 
 | Operator | Description |
 |:-:|:- |
@@ -1073,7 +1073,7 @@ Filtering is an operation to restrict the result set such that it has only selec
 
 +++
 ### LINQ Join Operators
-Joining refers to an operation in which data sources with difficult to follow relationships with each other in a direct way are targeted.
+Joining refers to an operation which directly targets data sources with difficult to follow relationships with each other in a direct way are targeted.
 
 | Operator | Description |
 |:-:|:- |
@@ -1187,8 +1187,8 @@ There are four operators for the set operations, each yielding a result based on
 |:-:|:- |
 | `Distinct` | Results a list of unique values from a collection by filtering duplicate data if any |
 | `Except` | Compares the values of two collections and return the ones from one collection who are not in the other collection |
-| `Intersect` | Returns the set of values found t be identical in two separate collections |
-| `Union` | Combines content of two different collections into a single list that too without any duplicate content |
+| `Intersect` | Returns the set of values found to be identical in two separate collections |
+| `Union` | Combines content of two different collections into a single list without any duplicate content |
 
 +++
 ### LINQ Equality

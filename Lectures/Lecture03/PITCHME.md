@@ -1369,10 +1369,12 @@ Connection: System.Data.SqlClient.SqlConnection
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/XmlWriterSample.cs)
 
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/XmlDocumentWriteSample.cs&lang=C#&title=Writing XML with the XmlDocument class
-@[8-15]
+@[8-29]
 @[10]
-@[11]
-@[12-13]
+@[11-12]
+@[14-19]
+@[21-26]
+@[28]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/XmlDocumentWriteSample.cs)
 
 +++

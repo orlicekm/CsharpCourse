@@ -1047,7 +1047,7 @@ IEnumerable<string> query =
 +++
 ### Query syntax diagram
 
-@img[span-60](/Lectures/Lecture03/Assets/img/LinqQuerySyntax.png)
+@img[span-50](/Lectures/Lecture03/Assets/img/LinqQuerySyntax.png)
 
 +++
 ### Fluent vs Query syntax

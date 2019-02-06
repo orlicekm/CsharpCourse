@@ -905,8 +905,6 @@ x.FakeMethod();
 
 ![ReflectionVSDynamic](/Lectures/Lecture03/Assets/img/ReflectionVSDynamic.jpg)
 
-
-
 ---
 ## `System.Text` Namespace
 * `using System.Text`
@@ -1049,7 +1047,7 @@ IEnumerable<string> query =
 +++
 ### Query syntax diagram
 
-![LinqFluentSyntax](/Lectures/Lecture03/Assets/img/LinqQuerySyntax.png)
+@img[span-60](/Lectures/Lecture03/Assets/img/LinqQuerySyntax.png)
 
 +++
 ### Fluent vs Query syntax

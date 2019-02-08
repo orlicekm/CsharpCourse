@@ -1,10 +1,20 @@
-﻿# Title
-## Subtitle
+﻿# Entity framework and repository design pattern
+## Connection between application and database
 <div class="right">
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
 </div>
 
 ---
+Framework
+
+Database
+
+
+4. Propojení aplikace s databází pro zajištění persistence pomocí ORM rozšíření Entity Framework
+ s návrhovými vzory UnitOfWork a Repository.
+
+6. Návrhový vzor Model-View-ViewModel (MVVM) a architektura desktopových aplikací. 
+Mapování databázových entit na modelové třídy. Konflikt???
 
 ---
 ## References:

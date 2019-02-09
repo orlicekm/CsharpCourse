@@ -39,7 +39,7 @@
   * *Column* - contains one of several types of data
   * *Row* - **data** in a table is listed in rows (like rows of data in a spreadsheet)
 
-@snap[east]
+@snap[east snap+30]
 ![](/Lectures/Lecture04/Assets/img/database.jpg)
 @snapend
 
@@ -73,7 +73,9 @@ TODO DIAGRAM
 
 +++ 
 ## Object-relational mapping
-
+* programming technique for converting data between incompatible type systems using object-oriented programming languages
+* creates, in effect, a "virtual object database"
+* can be used from within the programming language
 ---
 ## Entity Framework
 * Object-relational mapping framework
@@ -100,8 +102,9 @@ Mapování databázových entit na modelové třídy. Konflikt???
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
+[EntityFrameworkTutorial.net](http://www.entityframeworktutorial.net/)
 [Microsoft documentation](https://docs.microsoft.com)  
-[Computer Hope](https://www.computerhope.com)
+[Computer Hope](https://www.computerhope.com)  
 [Wikipedia](https://en.wikipedia.org)
 
 +++

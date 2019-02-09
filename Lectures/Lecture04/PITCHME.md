@@ -7,12 +7,28 @@
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
 </div>
 
-
 @snapend
 
-
 ---
-Framework
+## Definitions
+* Software framework
+
+@snap[south-east span+40]
+![MagnifyingGlass](\Lectures\Assets\img\MagnifyingGlass.png)
+@snapend
+
++++
+## Software framework
+
+* **Abstraction** providing **generic functionality**
+* Can be selectively changed by additional user-written code
+  * Providing application-specific software
+* **Universal, reusable software environment**
+  * Provides particular functionality as part of a larger software platform
+    * To facilitate development of software applications
+
++++
+
 
 Database
 
@@ -26,6 +42,8 @@ Mapování databázových entit na modelové třídy. Konflikt???
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
+[Wikipedia](https://en.wikipedia.org)
+
 
 +++
 ## Refences to used images:

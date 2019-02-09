@@ -7,6 +7,7 @@
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
 </div>
 
+
 @snapend
 
 

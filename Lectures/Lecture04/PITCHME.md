@@ -1,16 +1,14 @@
-﻿# Entity framework and repository design pattern
+﻿<div class="center">
 
-@snap[midpoint]
-
+# Entity framework and repository design pattern
 ## Connection between application and database
 
-@snapend
+</div>
 
-@snap[south-east span-30]
 
+<div class="right">
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
-
-@snapend
+</div>
 
 ---
 Framework

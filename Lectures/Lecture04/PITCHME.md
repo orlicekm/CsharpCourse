@@ -12,19 +12,8 @@
 ---
 ## Definitions
 * Software framework 
-* SQL Database
+* Database
 * Persistence
-
-@snap[south-east span+40]
-![MagnifyingGlass](/Lectures/Assets/img/MagnifyingGlass.png)
-@snapend
-
-+++
-## TODO
-* Entity Framework
-* MS SQL Database
-  * MSSQLLocalDB
-* Object-relational mapping
 
 @snap[south-east span+40]
 ![MagnifyingGlass](/Lectures/Assets/img/MagnifyingGlass.png)
@@ -41,10 +30,30 @@
     * To facilitate development of software applications
 
 +++
+## Database
+TODO
+* Organized collection of data
+* Stored and accessed electronically (from computer)
 
+@snap[east]
+![MagnifyingGlass](/Lectures/Lecture04/Assets/img/database.jpg)
+@snapend
 
-Database
++++
+## Persistence
 
+---
+## TODO
+* MS SQL Database
+  * MSSQLLocalDB
+* Entity Framework
+* Object-relational mapping
+
+@snap[south-east span+40]
+![MagnifyingGlass](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
 
 4. Propojení aplikace s databází pro zajištění persistence pomocí ORM rozšíření Entity Framework
  s návrhovými vzory UnitOfWork a Repository.
@@ -60,3 +69,4 @@ Mapování databázových entit na modelové třídy. Konflikt???
 
 +++
 ## Refences to used images:
+[Computer Hope](https://www.computerhope.com)

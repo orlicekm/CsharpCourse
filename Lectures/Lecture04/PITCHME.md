@@ -39,7 +39,7 @@
   * *Column* - contains one of several types of data
   * *Row* - **data** in a table is listed in rows (like rows of data in a spreadsheet)
 
-@snap[east snap+100]
+@snap[east snap-100]
 ![](/Lectures/Lecture04/Assets/img/database.jpg)
 @snapend
 

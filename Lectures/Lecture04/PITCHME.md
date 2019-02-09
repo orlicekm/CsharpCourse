@@ -1,9 +1,6 @@
-﻿<div class="center">
-
-# Entity framework and repository design pattern
+﻿# Entity framework and repository design pattern
 ## Connection between application and database
 
-</div>
 
 
 <div class="right">

@@ -11,7 +11,7 @@
 
 ---
 ## Definitions
-* Software framework
+* Software framework 
 
 @snap[south-east span+40]
 ![MagnifyingGlass](/Lectures/Assets/img/MagnifyingGlass.png)

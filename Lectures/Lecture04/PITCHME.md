@@ -16,12 +16,11 @@
 * Persistence
 
 @snap[south-east span+40]
-![MagnifyingGlass](/Lectures/Assets/img/MagnifyingGlass.png)
+![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
 
 +++
 ## Software framework
-
 * **Abstraction** providing **generic functionality**
 * Can be selectively changed by additional user-written code
   * Providing application-specific software
@@ -31,21 +30,30 @@
 
 +++
 ## Database
-TODO
-* Organized collection of data
-* Stored and accessed electronically (from computer)
+* Large quantity of indexed digital information
+* Can be **searched**, **referenced**, **compared**, **changed** or otherwise manipulated
+* **Optimal speed** and **minimal processing expense**
+* **Components**
+  * *Schema* - collection of one or more tables
+  * *Table* - contains multiple columns (similar to columns in a spreadsheet)
+  * *Column* - contains one of several types of data
+  * *Row* - **data** in a table is listed in rows (like rows of data in a spreadsheet)
 
 @snap[east]
-![MagnifyingGlass](/Lectures/Lecture04/Assets/img/database.jpg)
+![](/Lectures/Lecture04/Assets/img/database.jpg)
 @snapend
 
 +++
+TODO DIAGRAM
+
++++
 ## Persistence
+* *The continuance of an effect after its cause is removed*
+* *Data survives* after the process with which it was created has ended
 
 ---
 ## TODO
-* MS SQL Database
-  * MSSQLLocalDB
+* Microsoft SQL Local Database (MSSQLLocalDB)
 * Entity Framework
 * Object-relational mapping
 
@@ -55,6 +63,34 @@ TODO
 
 +++
 
+## Microsoft SQL LocalDB
+* Feature of *SQL Server Express*
+* Targeted to developers
+* Minimal set of files necessary to start the SQL Server Database Engine
+* Initiate a connection using a special *connection string*
+* When connecting, the necessary SQL Server infrastructure is automatically created and started
+* Enabling the application to use the database without complex configuration tasks
+
++++ 
+## Object-relational mapping
+
+---
+## Entity Framework
+* Object-relational mapping framework
+* By Microsoft
+* To automate all database related activities for your application
+
+
+
+
+
+
+
+
+
+
+
++++
 4. Propojení aplikace s databází pro zajištění persistence pomocí ORM rozšíření Entity Framework
  s návrhovými vzory UnitOfWork a Repository.
 
@@ -64,8 +100,9 @@ Mapování databázových entit na modelové třídy. Konflikt???
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
+[Microsoft documentation](https://docs.microsoft.com)  
+[Computer Hope](https://www.computerhope.com)
 [Wikipedia](https://en.wikipedia.org)
-
 
 +++
 ## Refences to used images:

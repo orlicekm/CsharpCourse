@@ -14,7 +14,7 @@
 * Software framework
 
 @snap[south-east span+40]
-![MagnifyingGlass](\Lectures\Assets\img\MagnifyingGlass.png)
+![MagnifyingGlass](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
 
 +++

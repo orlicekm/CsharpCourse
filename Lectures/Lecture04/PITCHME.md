@@ -2,7 +2,9 @@
 
 @snap[midpoint span-100]
 ## Connection between application and database
+@snapend
 
+@snap[midpoint span-200]
 <div class="right">
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
 </div>

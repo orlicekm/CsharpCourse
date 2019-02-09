@@ -1,6 +1,8 @@
 ﻿# Entity framework and repository design pattern
-## Connection between application and database
 
+@snap[midpoint span-100]
+## Connection between application and database
+@snapend
 
 
 <div class="right">

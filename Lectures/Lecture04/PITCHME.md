@@ -2,12 +2,13 @@
 
 @snap[midpoint span-100]
 ## Connection between application and database
-@snapend
-
 
 <div class="right">
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
 </div>
+
+@snapend
+
 
 ---
 Framework

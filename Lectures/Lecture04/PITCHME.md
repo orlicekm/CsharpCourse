@@ -12,9 +12,22 @@
 ---
 ## Definitions
 * Software framework 
+* SQL Database
+* Persistence
 
 @snap[south-east span+40]
-![MagnifyingGlass](/Lectures/Assets/img/MagnifyingGlass2.png)
+![MagnifyingGlass](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+## TODO
+* Entity Framework
+* MS SQL Database
+  * MSSQLLocalDB
+* Object-relational mapping
+
+@snap[south-east span+40]
+![MagnifyingGlass](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
 
 +++

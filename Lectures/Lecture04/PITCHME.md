@@ -39,9 +39,6 @@
   * *Column* - contains one of several types of data
   * *Row* - **data** in a table is listed in rows (like rows of data in a spreadsheet)
 
-@snap[east snap-100]
-![](/Lectures/Lecture04/Assets/img/database.jpg)
-@snapend
 
 +++
 TODO DIAGRAM
@@ -58,7 +55,7 @@ TODO DIAGRAM
 * Object-relational mapping
 
 @snap[south-east span+40]
-![MagnifyingGlass](/Lectures/Assets/img/MagnifyingGlass.png)
+![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
 
 +++
@@ -73,9 +70,12 @@ TODO DIAGRAM
 
 +++ 
 ## Object-relational mapping
-* programming technique for converting data between incompatible type systems using object-oriented programming languages
-* creates, in effect, a "virtual object database"
-* can be used from within the programming language
+* *Programming technique*
+  * For converting data between incompatible type systems using object-oriented programming languages
+* Creates *"virtual object database"*
+* Can be used from within the programming language
+
+
 ---
 ## Entity Framework
 * Object-relational mapping framework
@@ -85,6 +85,13 @@ TODO DIAGRAM
 
 
 
+
+
+
++++
+@snap[east snap-100]
+![](/Lectures/Lecture04/Assets/img/database.jpg)
+@snapend
 
 
 

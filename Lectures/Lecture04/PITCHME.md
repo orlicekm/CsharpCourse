@@ -191,14 +191,19 @@ entity
     * OR `PM> Install-Package Microsoft.EntityFrameworkCore.SqlServer`
 
 +++
+### Install DB Provider Image 1/5
 ![](/Lectures/Lecture04/Assets/img/install-efcore-1.png)
 +++
+### Install DB Provider Image 2/5
 ![](/Lectures/Lecture04/Assets/img/install-efcore-2.png)
 +++
+### Install DB Provider Image 3/5
 ![](/Lectures/Lecture04/Assets/img/install-efcore-3.png)
 +++
+### Install DB Provider Image 4/5
 ![](/Lectures/Lecture04/Assets/img/install-efcore-4.png)
 +++
+### Install DB Provider Image 5/5
 ![](/Lectures/Lecture04/Assets/img/install-efcore-5.png)
 
 +++

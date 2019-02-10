@@ -108,12 +108,10 @@ TODO DIAGRAM
 +++ 
 ### Entity Framework Versions
 * Currently, there are two latest versions of Entity Framework
-* **EF 6** 
-  * Released in 2013 
+* **EF 6** released in 2013 
   * .NET 4.0 & .NET 4.5
   * Visual Studio 2012
-* **EF Core 2.0** was 
-  * Released in August 2017
+* **EF Core 2.0** released in August 2017
   * .NET Core 2.0
   * Visual Studio 2017
   ![](/Lectures/Lecture04/Assets/img/EFversions.png)

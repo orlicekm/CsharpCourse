@@ -181,7 +181,6 @@ entity
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
 
-
 +++
 ### Install DB Provider
 * Install *NuGet package* for the provider of the database we want to access

@@ -116,7 +116,7 @@ TODO DIAGRAM
   * Released in August 2017
   * .NET Core 2.0
   * Visual Studio 2017
-![](/Lectures/Lecture04/Assets/img/EFversions.png)
+  ![](/Lectures/Lecture04/Assets/img/EFversions.png)
 
 +++
    
@@ -151,4 +151,5 @@ Mapování databázových entit na modelové třídy. Konflikt???
 
 +++
 ## Refences to used images:
+[EntityFrameworkTutorial.net](http://www.entityframeworktutorial.net/)
 [Computer Hope](https://www.computerhope.com)

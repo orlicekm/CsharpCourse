@@ -207,9 +207,17 @@ entity
 ![](/Lectures/Lecture04/Assets/img/install-efcore-5.png)
 
 +++
-### Install DB Provider
+### Install Tools
+* To execute EF Core commands
+* Make it easier to perform several EF Core-related tasks in your project at design time
+  * E.g. migrations, scaffolding etc.
+* Available as NuGet packages
+  * For **Package Manager Console** (PMC) as `Microsoft.EntityFrameworkCore.Tools`
+  * For **Command Line Interface** (CLI) as `Microsoft.EntityFrameworkCore.Tools.DotNet`
 
-
++++
+### Install Tools Image
+![](/Lectures/Lecture04/Assets/img/install-efcore-6.png)
 
 
 ---
@@ -230,5 +238,5 @@ Mapování databázových entit na modelové třídy. Konflikt???
 
 +++
 ## Refences to used images:
-[EntityFrameworkTutorial.net](http://www.entityframeworktutorial.net/)
+[EntityFrameworkTutorial.net](http://www.entityframeworktutorial.net/)  
 [Computer Hope](https://www.computerhope.com)

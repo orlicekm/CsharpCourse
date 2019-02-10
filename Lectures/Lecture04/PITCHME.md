@@ -101,12 +101,6 @@
 * Enables to work with data using objects without focusing on the underlying database
 * [Tutorial](http://www.entityframeworktutorial.net)
 
-+++
-### Definitions part 2 TODO
-model
-entity
-...
-
 +++ 
 ### Entity Framework Main Features
 * **Cross-platform** - EF Core is a cross-platform framework (Windows, Linux, Mac)
@@ -218,13 +212,74 @@ entity
 ### Install Tools Image
 ![](/Lectures/Lecture04/Assets/img/install-efcore-6.png)
 
+---
+## Basic concepts
+* Data Access Layer
+* Entity
+* DbContext
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+### Data Access Layer (DAL)
+* **Definition**
+  * *Layer of a computer program which provides simplified access to data stored in persistent storage*
+* DAL might **return a reference to an object complete with its attributes**
+* Created higher level of abstraction
+
+![](/Lectures/Assets/img/ef-in-app-architecture.png)
+
++++
+### Entity
+* `class` in the domain of your application
+* Included as a `DbSet<TEntity>` type property in the derived context class
+
+```C#
+public class Student
+{
+    public int StudentID { get; set; }
+    public string StudentName { get; set; }
+    public DateTime? DateOfBirth { get; set; }
+    public byte[]  Photo { get; set; }
+    public decimal Height { get; set; }
+    public float Weight { get; set; }
+}
+```
+
++++
+### DbContext
+* Integral part of Entity Framework
+* Instance represents a session with the database
+* Can be used to query and save instances of your entities to a database
+* Is a combination of the **Unit Of Work** and **Repository** patterns
+* Allows us to perform following tasks:
+  1. Manage database connection
+  2. Configure model & relationship
+  3. Querying database
+  4. Saving data to the database
+  5. Configure change tracking
+  6. Caching
+  7. Transaction management
+
++++
+### DbContext Creation
+* Class that derives from `DbContext` (known as context class)
+* Typically includes `DbSet<TEntity>` properties for each entity in the model
+
+
+---
+## Entity Relationships
+
+
 
 ---
 4. Propojení aplikace s databází pro zajištění persistence pomocí ORM rozšíření Entity Framework
  s návrhovými vzory UnitOfWork a Repository.
 
 6. Návrhový vzor Model-View-ViewModel (MVVM) a architektura desktopových aplikací. 
-Mapování databázových entit na modelové třídy. Konflikt???
+Mapování databázových entit na modelové třídy.
 
 ---
 ## References:

@@ -7,10 +7,7 @@
 @snapend
 
 @snap[south-east span-30]
-<div class="right">
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
-</div>
-
 @snapend
 
 ---

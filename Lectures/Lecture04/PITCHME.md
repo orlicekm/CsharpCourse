@@ -97,9 +97,9 @@ TODO DIAGRAM
 * **Modelling** - creates an Entity Data Model (EDM) based on Plain Old CLR Object (POCO) entities with get/set properties of different data types (used when querying or saving entity data)
 * **Querying** - allows to use LINQ queries
 * **Change Tracking** - keeps track of changes occurred to instances of your entities 
-* **Saving** - executes `INSERT`, `UPDATE`, and `DELETE` commands to the database based on the changes occurred to your entities 
+* **Saving** - executes commands to the database based on the changes occurred to your entities 
 * **Concurrency** - uses Optimistic Concurrency by default to protect overwriting changes made by another user since data was fetched from the database
-* **Transactions** - automatic customizable transaction management while querying or saving data
+* **Transactions** - automatic customizable transaction management
 * **Caching** - includes first level of caching out of the box (repeated querying will return data from the cache)
 * **Built-in Conventions** - follows conventions over the configuration programming pattern, and includes a set of default rules which automatically configure the EF model
 * **Configurations** - allows us to configure the EF model by using data annotation attributes or Fluent API to override default conventions

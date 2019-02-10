@@ -190,11 +190,11 @@ entity
     * Tools -> NuGet Package Manager -> Manage NuGet Packages For Solution
     * OR `PM> Install-Package Microsoft.EntityFrameworkCore.SqlServer`
 
-+++?/Lectures/Lecture04/Assets/img/install-efcore-1.png
-+++?/Lectures/Lecture04/Assets/img/install-efcore-2.png
-+++?/Lectures/Lecture04/Assets/img/install-efcore-3.png
-+++?/Lectures/Lecture04/Assets/img/install-efcore-4.png
-+++?/Lectures/Lecture04/Assets/img/install-efcore-5.png
++++ ![](/Lectures/Lecture04/Assets/img/install-efcore-1.png)
++++ ![](/Lectures/Lecture04/Assets/img/install-efcore-2.png)
++++ ![](/Lectures/Lecture04/Assets/img/install-efcore-3.png)
++++ ![](/Lectures/Lecture04/Assets/img/install-efcore-4.png)
++++ ![](/Lectures/Lecture04/Assets/img/install-efcore-5.png)
 
 +++
 ### Install DB Provider

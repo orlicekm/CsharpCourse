@@ -71,19 +71,31 @@ TODO DIAGRAM
 +++ 
 ## Object-relational mapping
 * *Programming technique*
-  * For converting data between incompatible type systems using object-oriented programming languages
+  * Converting data between incompatible type systems 
+  * Using object-oriented programming languages
 * Creates *"virtual object database"*
 * Can be used from within the programming language
+
+@snap[east snap-100]
+![](/Lectures/Lecture04/Assets/img/ORM.jpg)
+@snapend
 
 
 ---
 ## Entity Framework
-* Object-relational mapping framework
+* **Official definition:** *“Entity Framework is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects. It eliminates the need for most of the data-access code that developers usually need to write.”*
+* **Object-relational mapping framework**
 * By Microsoft
 * To automate all database related activities for your application
+* Higher level of abstraction when dealing with data
+* Enables to work with data using objects without focusing on the underlying database
+* [Tutorial](http://www.entityframeworktutorial.net)
 
++++ 
+### Entity Framework Features
+* Cross-platform
 
-
++++
 
 
 

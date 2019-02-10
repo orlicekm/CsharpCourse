@@ -171,7 +171,7 @@ entity
 | SQL Compact | [EntityFrameworkCore.SqlServerCompact40](https://www.nuget.org/packages/EntityFrameworkCore.SqlServerCompact40) |
 | In-memory | [Microsoft.EntityFrameworkCore.InMemory](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.InMemory) |
 
-+++
+---
 ### Installation
 * Install *NuGet* packages to use EF Core
   * **EF Core DB provider**
@@ -183,19 +183,26 @@ entity
 
 
 +++
-### Install Core DB Provider
+### Install DB Provider
 * Install *NuGet package* for the provider of the database we want to access
 * To access **MS SQL Server database**
   * We need to install `Microsoft.EntityFrameworkCore.SqlServer`
     * Tools -> NuGet Package Manager -> Manage NuGet Packages For Solution
     * OR `PM> Install-Package Microsoft.EntityFrameworkCore.SqlServer`
 
-![](/Lectures/Lecture04/Assets/img/install-efcore-1.png)
-![](/Lectures/Lecture04/Assets/img/install-efcore-2.png)
-
-
++++?/Lectures/Lecture04/Assets/img/install-efcore-1.png
++++?/Lectures/Lecture04/Assets/img/install-efcore-2.png
++++?/Lectures/Lecture04/Assets/img/install-efcore-3.png
++++?/Lectures/Lecture04/Assets/img/install-efcore-4.png
++++?/Lectures/Lecture04/Assets/img/install-efcore-5.png
 
 +++
+### Install DB Provider
+
+
+
+
+---
 4. Propojení aplikace s databází pro zajištění persistence pomocí ORM rozšíření Entity Framework
  s návrhovými vzory UnitOfWork a Repository.
 

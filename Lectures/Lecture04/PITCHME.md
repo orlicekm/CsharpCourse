@@ -1,8 +1,12 @@
-﻿# Entity framework and repository design pattern
+﻿@snap[north span-100]
+# Entity framework and repository design pattern
+@snapend
 
 @snap[midpoint span-100]
 ## Connection between application and database
+@snapend
 
+@snap[south-east span-30]
 <div class="right">
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
 </div>
@@ -13,7 +17,10 @@
 ## Definitions
 * Software framework 
 * Database
-* Persistence
+  * Microsoft SQL Local Database (MSSQLLocalDB)
+  * Persistence
+* Object-relational mapping
+* Entity Framework
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
@@ -39,27 +46,10 @@
   * *Column* - contains one of several types of data
   * *Row* - **data** in a table is listed in rows (like rows of data in a spreadsheet)
 
-
 +++
 TODO DIAGRAM
 
 +++
-## Persistence
-* *The continuance of an effect after its cause is removed*
-* *Data survives* after the process with which it was created has ended
-
----
-## TODO
-* Microsoft SQL Local Database (MSSQLLocalDB)
-* Entity Framework
-* Object-relational mapping
-
-@snap[south-east span+40]
-![](/Lectures/Assets/img/MagnifyingGlass.png)
-@snapend
-
-+++
-
 ## Microsoft SQL LocalDB
 * Feature of *SQL Server Express*
 * Targeted to developers
@@ -67,6 +57,11 @@ TODO DIAGRAM
 * Initiate a connection using a special *connection string*
 * When connecting, the necessary SQL Server infrastructure is automatically created and started
 * Enabling the application to use the database without complex configuration tasks
+
++++
+## Persistence
+* *The continuance of an effect after its cause is removed*
+* *Data survives* after the process with which it was created has ended
 
 +++ 
 ## Object-relational mapping
@@ -80,7 +75,6 @@ TODO DIAGRAM
 ![](/Lectures/Lecture04/Assets/img/ORM.jpg)
 @snapend
 
-
 ---
 ## Entity Framework (EF)
 * **Official definition:** *“Entity Framework is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects. It eliminates the need for most of the data-access code that developers usually need to write.”*
@@ -90,6 +84,11 @@ TODO DIAGRAM
 * Higher level of abstraction when dealing with data
 * Enables to work with data using objects without focusing on the underlying database
 * [Tutorial](http://www.entityframeworktutorial.net)
+
+### Definitions part 2 TODO
+model
+entity
+...
 
 +++ 
 ### Entity Framework Main Features
@@ -118,9 +117,18 @@ TODO DIAGRAM
 ![](/Lectures/Lecture04/Assets/img/EFversions.png)
 
 +++
-   
+### Entity Framework Approaches
+* **Entity Framework Database First**
+  * Creating Entity Data Model from your existing database
+* **Entity Framework Code First**
+  * **Used in this course**
+  * Create the database based on your domain classes and configuration
+  * Coding in C# or VB.NET and then EF will create the database from code
 
+![](/Lectures/Lecture04/Assets/img/EFCodeFirst.png)
 
++++
+###
 
 +++
 @snap[east snap-100]

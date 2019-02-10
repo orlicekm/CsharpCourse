@@ -138,14 +138,15 @@ entity
 ### Entity Framework Core
 * [GitHub](https://github.com/aspnet/EntityFrameworkCore)
 * [Documentation](https://docs.microsoft.com/sk-sk/ef/core/)
-* Intended to be used with .NET Core applications
-* Can also be used with standard .NET 4.5+ framework based applications
+* Is not a part of *.NET Core* or *Standard**
+* Intended to be used with *.NET Core* applications
+* Can also be used with standard *.NET 4.5+ framework* based applications
 * Supported application types:
 
 ![](/Lectures/Lecture04/Assets/img/EFCoreSupport.png)
 
 +++
-### Entity Framework Approaches
+### Approaches
 * **Entity Framework Database First**
   * Creating Entity Data Model from your existing database
 * **Entity Framework Code First**
@@ -155,19 +156,42 @@ entity
 
 ![](/Lectures/Lecture04/Assets/img/EFApproaches.png)
 
+
++++
+### Data Providers
+* Provider model to access many different databases
+* NuGet packages which you need to install
+
+| Database | NuGet Package |
+|:-:|:- |
+| SQL Server | [Microsoft.EntityFrameworkCore.SqlServer](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer) |
+| MySQL | [MySql.Data.EntityFrameworkCore](https://www.nuget.org/packages/MySql.Data.EntityFrameworkCore) |
+| PostgreSQL | [Npgsql.EntityFrameworkCore.PostgreSQL](https://www.nuget.org/packages/Npgsql.EntityFrameworkCore.PostgreSQL) |
+| SQLite | [Microsoft.EntityFrameworkCore.SQLite](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SQLite) |
+| SQL Compact | [EntityFrameworkCore.SqlServerCompact40](https://www.nuget.org/packages/EntityFrameworkCore.SqlServerCompact40) |
+| In-memory | [Microsoft.EntityFrameworkCore.InMemory](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.InMemory) |
+
 +++
 ### Installation
+* Install *NuGet* packages to use EF Core
+  * **EF Core DB provider**
+  * **EF Core tools**
 
-
-
-+++
-@snap[east snap-100]
-![](/Lectures/Lecture04/Assets/img/database.jpg)
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
 
 
++++
+### Install Core DB Provider
+* Install *NuGet package* for the provider of the database we want to access
+* To access **MS SQL Server database**
+  * We need to install `Microsoft.EntityFrameworkCore.SqlServer`
+    * Tools -> NuGet Package Manager -> Manage NuGet Packages For Solution
+    * OR `PM> Install-Package Microsoft.EntityFrameworkCore.SqlServer`
 
-
+![](/Lectures/Lecture04/Assets/img/install-efcore-1.png)
+![](/Lectures/Lecture04/Assets/img/install-efcore-2.png)
 
 
 

@@ -16,6 +16,7 @@
 * Database
   * Microsoft SQL Local Database (MSSQLLocalDB)
   * Persistence
+* ADO.NET
 * Object-relational mapping
 * Entity Framework
 
@@ -44,9 +45,6 @@
   * *Row* - **data** in a table is listed in rows (like rows of data in a spreadsheet)
 
 +++
-TODO DIAGRAM
-
-+++
 ## Microsoft SQL LocalDB
 * Feature of *SQL Server Express*
 * Targeted to developers
@@ -59,6 +57,26 @@ TODO DIAGRAM
 ## Persistence
 * *The continuance of an effect after its cause is removed*
 * *Data survives* after the process with which it was created has ended
+
++++
+## ADO.NET
+* Used before Entity Framework
+* Set of classes that expose data access services
+  * SqlClient (`System.Data.SqlClient`)
+  * OleDb (`System.Data.OleDb`)
+  * Odbc (`System.Data.Odbc`)
+  * ⋮
+
++++?code=/Lectures/Lecture04/Assets/sln/Examples/SqkClientExample.cs&lang=C#&title=ADO.NET SqlClient Sample
+@[10-53]
+@[10-12]
+@[14-18]
+@[20-21]
+@[23-27,53]
+@[28-30]
+@[32-50]
+@[10-53]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/HelloWorld.cs)
 
 +++ 
 ## Object-relational mapping
@@ -77,11 +95,13 @@ TODO DIAGRAM
 * **Official definition:** *“Entity Framework is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects. It eliminates the need for most of the data-access code that developers usually need to write.”*
 * **Object-relational mapping framework**
 * By Microsoft
+* Enhancement to ADO.NET
 * To automate all database related activities for your application
 * Higher level of abstraction when dealing with data
 * Enables to work with data using objects without focusing on the underlying database
 * [Tutorial](http://www.entityframeworktutorial.net)
 
++++
 ### Definitions part 2 TODO
 model
 entity
@@ -110,6 +130,7 @@ entity
 * **EF Core 2.0** released in August 2017
   * .NET Core 2.0
   * Visual Studio 2017
+  * *Used in this course*
 
 ![](/Lectures/Lecture04/Assets/img/EFversions.png)
 
@@ -118,7 +139,7 @@ entity
 * **Entity Framework Database First**
   * Creating Entity Data Model from your existing database
 * **Entity Framework Code First**
-  * **Used in this course**
+  * *Used in this course*
   * Create the database based on your domain classes and configuration
   * Coding in C# or VB.NET and then EF will create the database from code
 

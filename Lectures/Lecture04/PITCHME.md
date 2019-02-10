@@ -114,7 +114,7 @@ TODO DIAGRAM
 * **EF Core 2.0** released in August 2017
   * .NET Core 2.0
   * Visual Studio 2017
-  ![](/Lectures/Lecture04/Assets/img/EFversions.png)
+![](/Lectures/Lecture04/Assets/img/EFversions.png)
 
 +++
    

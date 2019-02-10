@@ -135,6 +135,16 @@ entity
 ![](/Lectures/Lecture04/Assets/img/EFversions.png)
 
 +++
+### Entity Framework Core
+* [GitHub](https://github.com/aspnet/EntityFrameworkCore)
+* [Documentation](https://docs.microsoft.com/sk-sk/ef/core/)
+* Intended to be used with .NET Core applications
+* Can also be used with standard .NET 4.5+ framework based applications
+* Supported application types:
+
+![](/Lectures/Lecture04/Assets/img/EFCoreSupport.png)
+
++++
 ### Entity Framework Approaches
 * **Entity Framework Database First**
   * Creating Entity Data Model from your existing database
@@ -143,10 +153,12 @@ entity
   * Create the database based on your domain classes and configuration
   * Coding in C# or VB.NET and then EF will create the database from code
 
-![](/Lectures/Lecture04/Assets/img/EFCodeFirst.png)
+![](/Lectures/Lecture04/Assets/img/EFApproaches.png)
 
 +++
-###
+### Installation
+
+
 
 +++
 @snap[east snap-100]
@@ -169,8 +181,9 @@ Mapování databázových entit na modelové třídy. Konflikt???
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
-[EntityFrameworkTutorial.net](http://www.entityframeworktutorial.net/)
+[EntityFrameworkTutorial.net](http://www.entityframeworktutorial.net/)  
 [Microsoft documentation](https://docs.microsoft.com)  
+[Entity Framework GitHub](https://github.com/aspnet/EntityFrameworkCore)  
 [Computer Hope](https://www.computerhope.com)  
 [Wikipedia](https://en.wikipedia.org)
 

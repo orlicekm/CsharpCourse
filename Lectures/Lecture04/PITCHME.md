@@ -67,7 +67,7 @@
   * Odbc (`System.Data.Odbc`)
   * ⋮
 
-+++?code=/Lectures/Lecture04/Assets/sln/Examples/SqkClientExample.cs&lang=C#&title=ADO.NET SqlClient Sample
++++?code=/Lectures/Lecture04/Assets/sln/Examples/SqlClientExample.cs&lang=C#&title=ADO.NET SqlClient Sample
 @[10-53]
 @[10-12]
 @[14-18]
@@ -76,7 +76,7 @@
 @[28-30]
 @[32-50]
 @[10-53]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/HelloWorld.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Examples/SqlClientExample.cs)
 
 +++ 
 ## Object-relational mapping

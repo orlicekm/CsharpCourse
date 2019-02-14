@@ -1084,6 +1084,14 @@ var query = from m in musos
     select m;
 ```
 
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqMaterialization.cs&lang=C#&title=Linq Materialization Sample
+@[10-20]
+@[12]
+@[14-15]
+@[17]
+@[19]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqMaterialization.cs)
+
 +++
 ### LINQ Operators
 * Can be split by **input and output** into three categories

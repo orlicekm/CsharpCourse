@@ -867,6 +867,9 @@ Console.WriteLine(c5);
 @[28-38]
 @[30-32]
 @[34-37]
+@[41-48]
+@[43-45]
+@[47]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/ReflectionTest.cs)
 
 +++

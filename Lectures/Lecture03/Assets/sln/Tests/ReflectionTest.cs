@@ -8,7 +8,7 @@ namespace Tests
     public class Person
     {
         public int Id { get; set; }
-        public string FirstName { get; set; }
+        public string FirstName { private get; set; }
         public string LastName { get; set; }
         public string Address { get; set; }
     }
@@ -35,6 +35,16 @@ namespace Tests
             Assert.Contains("Id", propertyNames);
             Assert.Contains("FirstName", propertyNames);
             Assert.DoesNotContain("RandomString", propertyNames);
+        }
+
+        [Fact]
+        public void Test3()
+        {
+            var person = new Person {FirstName = "Mike"};
+            var property = typeof(Person).GetProperty("FirstName");
+            var value = property?.GetValue(person, null);
+
+            Assert.Equal("Mike", value);
         }
     }
 }

@@ -19,18 +19,18 @@
 * **Reduces conditional compilation** of *shared source* due to .NET APIs
 
 +++
-#### .NET Today
+#### .NET Yesterday
 
 <div class="center" >
-<img src="/Lectures/Lecture03/Assets/img/NetToday.png" />
+<img src="/Lectures/Lecture03/Assets/img/NetYesterday.png" />
 </br>
 </div>
 
 +++
-#### .NET Tomorrow
+#### .NET Today
 
 <div class="center" >
-<img src="/Lectures/Lecture03/Assets/img/NetTomorrow.png" />
+<img src="/Lectures/Lecture03/Assets/img/NetToday.png" />
 </br>
 </div>
 

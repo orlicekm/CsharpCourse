@@ -815,7 +815,7 @@ using (FileStream fileStream = File.OpenRead(@"c:\test.txt"))
   * `class NamedPipeClientStream` - Client side of a named pipe stream
   * `class AnonymousPipeServerStream` - Server side of an anonymous pipe stream
   * `class AnonymousPipeClientStream` - Client side of an anonymous pipe stream
-  * 
+
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/PipeServerSample.cs&lang=C#&title=PipeServer Sample
 @[9-38]
 @[11-12]
@@ -826,7 +826,7 @@ using (FileStream fileStream = File.OpenRead(@"c:\test.txt"))
 @[9-38]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/PipeServerSample.cs)
 
-+++?code=/Lectures/Lecture03/Assets/sln/Examples/StreamWriterSample.cs&lang=C#&title=PipeClient Sample
++++?code=/Lectures/Lecture03/Assets/sln/Examples/PipeClientSample.cs&lang=C#&title=PipeClient Sample
 @[9-34]
 @[11-12]
 @[15-17]
@@ -834,8 +834,6 @@ using (FileStream fileStream = File.OpenRead(@"c:\test.txt"))
 @[22-30]
 @[9-34]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/PipeClientSample.cs)
-
-
 
 ---
 ## `System.Numerics` Namespace

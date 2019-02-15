@@ -811,10 +811,10 @@ using (FileStream fileStream = File.OpenRead(@"c:\test.txt"))
 * Types that provide a means for interprocess communication through anonymous and/or named pipes
 * **Synchronous** and **asynchronous read** and **write** operations
 * `class PipeStream` - base class for Pipes
-  * `class NamedPipeServerStream` - Server side of a named pipe stream
-  * `class NamedPipeClientStream` - Client side of a named pipe stream
-  * `class AnonymousPipeServerStream` - Server side of an anonymous pipe stream
-  * `class AnonymousPipeClientStream` - Client side of an anonymous pipe stream
+  * `class NamedPipeServerStream` - server side of a named pipe stream
+  * `class NamedPipeClientStream` - client side of a named pipe stream
+  * `class AnonymousPipeServerStream` - server side of an anonymous pipe stream
+  * `class AnonymousPipeClientStream` - client side of an anonymous pipe stream
 
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/PipeServerSample.cs&lang=C#&title=PipeServer Sample
 @[9-38]
@@ -1700,6 +1700,19 @@ Connection: System.Data.SqlClient.SqlConnection
 * `System.Xml.Schema` Namespace
 * `System.Xml.Serialization` Namespace
 * `System.Xml.Xsl` Namespace
+
+
+## XmlDocument vs XmlReader/Writer
+* `class XmlDocument`
+ *  Represents an **XML document**
+ *  Used to **load**, **validate**, **edit**, **add**, and **position** XML in a document
+ *  Loads the **whole XML document into memory** to process
+* `class XmlReader` and `class XmlWriter`
+  * **Stream based**
+  * **Fast, non-cached, forward-only**
+  * Reader provides **access** to XML data
+  * Writer provides way to **generate streams or files** that contain XML data
+
 
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/XmlReaderSample.cs&lang=C#&title=Reading XML with the XmlReader class
 @[8-20]

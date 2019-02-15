@@ -31,18 +31,12 @@
 +++
 #### .NET Yesterday
 
-<div class="center" >
-<img src="/Lectures/Lecture03/Assets/img/NetYesterday.png" />
-</br>
-</div>
+![](/Lectures/Lecture03/Assets/img/NetYesterday.png)
 
 +++
 #### .NET Today
 
-<div class="center" >
-<img src="/Lectures/Lecture03/Assets/img/NetToday.png" />
-</br>
-</div>
+![](/Lectures/Lecture03/Assets/img/NetToday.png)
 
 +++
 ### .NET Standard vs .NET Core

@@ -1,8 +1,14 @@
-﻿# .NET Standard and Language Integrated Query(LINQ)
+﻿@snap[north span-100]
+# .NET Standard and Language Integrated Query(LINQ)
+@snapend
+
+@snap[midpoint span-100]
 ## .NET Standard libraries, collections, MSSQL, XML
-<div class="right">
+@snapend
+
+@snap[south-east span-30]
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
-</div>
+@snapend
 
 ---
 ## .NET Standard
@@ -180,6 +186,7 @@ catch (System.OverflowException) {
 @[13,18]
 @[14,19]
 @[15,20]
+@[9-21]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/Convert.cs)
 
 +++
@@ -203,6 +210,7 @@ Console.WriteLine(BitConverter.ToString(sampleByteArray)); //01
 @[12]
 @[13]
 @[15]
+@[9-16]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/BitConverterTest.cs)
 
 +++
@@ -261,6 +269,7 @@ WebRequest webRequest = WebRequest.Create(uri);
 @[9-15]
 @[11,12]
 @[14]
+@[9-15]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/UriTest.cs)
 
 +++
@@ -288,6 +297,7 @@ Console.ReadLine();
 @[13]
 @[15-16]
 @[18]
+@[7-20]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/ConsoleSample.cs)
 
 +++
@@ -449,6 +459,7 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 @[11-14]
 @[17-19]
 @[21-24]
+@[8-25]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/ArrayListSample.cs)
 
 +++
@@ -467,6 +478,7 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 @[11-14]
 @[17-18]
 @[20-23]
+@[8-24]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/StackSample.cs)
 
 +++
@@ -481,6 +493,7 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 @[11-14]
 @[17-18]
 @[20-23]
+@[8-24]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/QueueSample.cs)
 
 +++
@@ -496,6 +509,7 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 @[13, 17-21]
 @[22]
 @[23]
+@[10-24]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/HashtableTest.cs)
 
 +++
@@ -569,6 +583,7 @@ sortedList.Add("First", "Hello");
 @[9-19]
 @[11-16]
 @[18]
+@[9-19]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/GenericStackTest.cs)
 
 +++
@@ -582,6 +597,7 @@ sortedList.Add("First", "Hello");
 @[9-19]
 @[11-16]
 @[18]
+@[9-19]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/GenericQueueTest.cs)
 
 +++
@@ -604,6 +620,7 @@ sortedList.Add("First", "Hello");
 @[9-20]
 @[11-16]
 @[18-19]
+@[9-20]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/GenericDictionaryTest.cs)
 
 +++ 
@@ -620,6 +637,7 @@ sortedList.Add("First", "Hello");
 @[9-18]
 @[11-13]
 @[15-17]
+@[9-18]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/HashSetTest.cs)
 
 +++
@@ -700,6 +718,7 @@ Console.WriteLine($"{Path.GetTempFileName()} is a file available for use.");
 @[8-21]
 @[10-11]
 @[13-20]
+@[8-21]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/DirectorySample.cs)
 
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/FileSample.cs&lang=C#&title=File Sample
@@ -707,6 +726,7 @@ Console.WriteLine($"{Path.GetTempFileName()} is a file available for use.");
 @[10]
 @[12-13]
 @[15]
+@[8-16]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/FileSample.cs)
 
 +++
@@ -728,6 +748,7 @@ Console.WriteLine($"{Path.GetTempFileName()} is a file available for use.");
 @[14-20]
 @[22-24]
 @[26-28]
+@[8-34]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/DirectoryInfoSample.cs)
 
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/FileInfoSample.cs&lang=C#&title=FileInfo Sample
@@ -736,6 +757,7 @@ Console.WriteLine($"{Path.GetTempFileName()} is a file available for use.");
 @[12-13]
 @[15-16]
 @[18-19]
+@[8-20]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/FileInfoSample.cs)
 
 +++
@@ -784,6 +806,7 @@ using (FileStream fileStream = File.OpenRead(@"c:\test.txt"))
 @[10-11, 23-29]
 @[12-15, 22]
 @[16-21]
+@[8-30]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/StreamWriterSample.cs)
 
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/StreamReaderSample.cs&lang=C#&title=StreamReader Sample
@@ -791,6 +814,7 @@ using (FileStream fileStream = File.OpenRead(@"c:\test.txt"))
 @[10-11, 24-30]
 @[12-15, 23]
 @[16-22]
+@[8-31]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/StreamReaderSample.cs)
 
 +++
@@ -889,18 +913,20 @@ Console.WriteLine(c5);
 * Contains types that retrieve information about *assemblies*, *modules*, *members*, *parameters*, and other entities in managed code by examining their metadata
 * Manipulate instances of loaded types
 
-+++?code=/Lectures/Lecture03/Assets/sln/Tests/ReflectionTest.cs&lang=C#&title=ReflectionTest Sample
++++?code=/Lectures/Lecture03/Assets/sln/Tests/ReflectionTest.cs&lang=C#&title=Reflection Sample
 @[8-14]
-@[16-39]
 @[19-25]
 @[21]
 @[23-24]
+@[19-25]
 @[28-38]
 @[30-32]
 @[34-37]
+@[28-38]
 @[41-48]
 @[43-45]
 @[47]
+@[41-48]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/ReflectionTest.cs)
 
 +++
@@ -921,6 +947,7 @@ x.FakeMethod();
 @[7-10]
 @[12-19]
 @[21-26]
+@[5-27]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/DynamicParameter.cs)
 
 +++
@@ -1001,6 +1028,7 @@ x.FakeMethod();
 @[21-22]
 @[24-25]
 @[27]
+@[9-28]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/StringBuilderTest.cs)
 
 ---
@@ -1033,6 +1061,7 @@ x.FakeMethod();
 @[16-17]
 @[19-20]
 @[22-26]
+@[10-27]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/RegexTest.cs)
 
 ---
@@ -1121,6 +1150,7 @@ var query = from m in musos
 @[14-15]
 @[17]
 @[19]
+@[10-20]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqMaterialization.cs)
 
 +++
@@ -1720,6 +1750,7 @@ Connection: System.Data.SqlClient.SqlConnection
 @[11-12, 18]
 @[13-14, 17]
 @[15-16]
+@[8-20]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/XmlReaderSample.cs)
 
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/XmlDocumentReadSample.cs&lang=C#&title=Reading XML with the XmlDocument class
@@ -1727,6 +1758,7 @@ Connection: System.Data.SqlClient.SqlConnection
 @[10]
 @[11]
 @[12-13]
+@[8-15]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/XmlDocumentReadSample.cs)
 
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/XmlWriterSample.cs&lang=C#&title=Writing XML with the XmlWriter class
@@ -1736,6 +1768,7 @@ Connection: System.Data.SqlClient.SqlConnection
 @[14-17]
 @[19-21]
 @[23-24]
+@[7-25]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/XmlWriterSample.cs)
 
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/XmlDocumentWriteSample.cs&lang=C#&title=Writing XML with the XmlDocument class
@@ -1745,6 +1778,7 @@ Connection: System.Data.SqlClient.SqlConnection
 @[14-19]
 @[21-26]
 @[28]
+@[8-29]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/XmlDocumentWriteSample.cs)
 
 +++
@@ -1783,6 +1817,7 @@ Connection: System.Data.SqlClient.SqlConnection
 @[13-15]
 @[17]
 @[19-20]
+@[8-23]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/XPathSample.cs)
 
 

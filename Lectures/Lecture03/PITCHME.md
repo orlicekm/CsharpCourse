@@ -463,7 +463,6 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 +++
 genericke, negenericke + ich rozdiely
 
-+++
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
@@ -472,6 +471,7 @@ genericke, negenericke + ich rozdiely
 ### Iterfaces Hierarchy
 ![](/Lectures/Lecture03/Assets/img/CollectionHierarchy.png)
 
++++
 ## `System.Collections` Namespace
 * `using System.Collections`
 * [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.collections?view=netstandard-2.0)

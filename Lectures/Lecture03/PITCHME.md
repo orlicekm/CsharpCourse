@@ -18,6 +18,10 @@
 * [.NET Standard github](https://github.com/dotnet/standard)
 * [Introduction to .NET Standard](https://blogs.msdn.microsoft.com/dotnet/2016/09/26/introducing-net-standard/)
 
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
 +++
 ### .NET Standard enables
 * Uniform **set of APIs** for all .NET implementations to implement, independent of workload
@@ -51,9 +55,9 @@
 +++
 ### .NET Standard versions
 * Higher versions **incorporate** all APIs from previous versions
-* Once shipped, versions are frozen
+* Once shipped, **versions are frozen**
 * Specific .NET platform to .NET Standard
-  * .NET Standard version depends on which version of .NET Standard platform is implementing
+  * .NET Standard *version depends on which version of .NET Standard platform is implementing*
 * .NET Standard version choice
   * The higher the version, the more APIs are available to you
   * The lower the version, the more platforms you can run on
@@ -68,8 +72,8 @@
 
 +++
 ### Why .NET Standard 2.0 instead of 1.7?
-* More than doubled the API surface
-  * Added a compat shim that allows referencing of existing binaries
+* More than **doubled the API surface**
+  * Added a compat shim that allows **referencing of existing binaries**
     * Even if they weren't built against *.NET Standard*
 
 +++
@@ -89,8 +93,8 @@
 +++
 ### .NET API
 * [.NET Standard API](https://docs.microsoft.com/sk-sk/dotnet/api/?view=netstandard-2.0)
-* API(Application programming interface):
-  * Set of namespaces(classes, structs, interfaces, enums, delegates)
+* **API**(Application programming interface):
+  * **Set of namespaces**(*classes*, *structs*, *interfaces*, *enums*, *delegates*)
   * Allows the creation of applications which access the features or data of an:
     * Operating system
     * Application
@@ -100,13 +104,17 @@
 ## `System` Namespace
 * `using System`
 * [Documentation](https://docs.microsoft.com/sk-sk/dotnet/api/system?view=netstandard-2.0)
-* Fundamental classes and base classes
-* Defines:
-  * Commonly-used value and reference data types
-  * Events and event handlers
-  * Interfaces
-  * Attributes
-  * Processing exceptions
+* **Fundamental classes and base classes**
+* **Defines:**
+  * *Commonly-used value and reference data types**
+  * *Events and event handlers**
+  * *Interfaces**
+  * *Attributes**
+  * *Processing exceptions*
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 +++
 ## Data types
@@ -134,14 +142,14 @@
 +++
 ## Type
 * `class Type`
-* Represents type declarations
-  * class types
-  * interface types
-  * array types
-  * value types
-  * enumeration types
-  * type parameters
-  * generic type definitions
+* Represents **type declarations**
+  * *class* types
+  * *interface* types
+  * *array* types
+  * *value* types
+  * *enumeration* types
+  * *type* parameters
+  * *generic type* definitions
 
 ```C#
 Type type = typeof(String);
@@ -156,7 +164,7 @@ Console.WriteLine("{0} returned \"{1}\".", methodInfo, result);
 +++
 ## ValueType
 * `class ValueType`
-* Provides the base class for value types
+* Provides the **base class for value types**
 
 ```C#
 public static bool IsFloat(ValueType value) 
@@ -168,7 +176,7 @@ public static bool IsFloat(ValueType value)
 +++
 ## Convert
 * `class Convert`
-* Converts a base data type to another base data type
+* Converts a **base data type to another base data type**
 
 ```C#
 try {
@@ -215,8 +223,8 @@ Console.WriteLine(BitConverter.ToString(sampleByteArray)); //01
 
 +++
 ## URI
-* Uniform Resource Identifier
-  * String that identifies a particular resource
+* **Uniform Resource Identifier**
+  * String that **identifies a particular resource**
   * Predefined set of syntax rules
 
 <div class="center" >
@@ -274,7 +282,7 @@ WebRequest webRequest = WebRequest.Create(uri);
 
 +++
 ## Console
-* `class Console` - standard input, output, and error streams for console applications
+* `class Console` - **standard input, output, and error streams** for console applications
 * Struct:
   * `ConsoleKeyInfo`
 * Enums:
@@ -303,8 +311,8 @@ Console.ReadLine();
 +++
 ## Garbage Collector
 * `class GC`
-* Controls garbage collector
-  * Service that automatically reclaims unused memory
+* **Controls garbage collector**
+  * Service that **automatically reclaims unused memory**
 
 ```C#
 void MakeSomeGarbage()
@@ -323,9 +331,9 @@ GC.Collect();
 ## Math
 * `class Math`
 * Provides constants and static methods for
-  * Trigonometric mathematical functions
-  * Logarithmic mathematical functions
-  * Other common mathematical functions
+  * Trigonometric *mathematical functions*
+  * Logarithmic *mathematical functions*
+  * Other common *mathematical functions*
 
 ```C#
 double circleRadius = 4.2;
@@ -336,7 +344,7 @@ double circleArea = Math.PI * (Math.Pow(circleRadius, 2));
 +++
 ## Random
 * `class Random`
-* Represents a pseudo-random number generator
+* Represents a **pseudo-random number generator**
 * Device that produces a sequence of numbers that meet certain statistical requirements for randomness
 
 ```C#
@@ -359,10 +367,10 @@ for (var i = 1; i <= 10; i++)
 +++
 ## Version
 * `class Version`
-* Represents the version number of 
-  * Assembly
-  * Operating system
-  * Common language runtime
+* Represents the **version number** of 
+  * *Assembly*
+  * *Operating system*
+  * *Common language runtime*
 
 ```C#
 // Get the operating system version.
@@ -397,7 +405,7 @@ Console.WriteLine("CLR Version {0}", version.ToString());
 
 +++
 ## Action and Func delegates
-* **Action** -  method that does not return a value
+* **Action** -  method that **does not return a value**
 ```C#
 delegate void Action(); //has no parameters
 delegate void Action<in T>(T obj); //has one parameter
@@ -405,7 +413,7 @@ delegate void Action<in T1,in T2>(T1 arg1, T2 arg2); //has two parameters
 ⋮
 ```
 
-* **Func** - method that has no parameters and returns a value of the type specified by the TResult parameter
+* **Func** - method that **returns a value** of the type specified by the TResult parameter
 ```C#
 delegate TResult Func<out TResult>(); //has no parameters
 delegate TResult Func<in T,out TResult>(T arg); //has one parameter
@@ -428,31 +436,35 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 +++
 ## Another important delegates
 * `delegate int Comparison<in T>(T x, T y)` 
-  * Method that compares two objects of the same type
+  * Method that **compares** two objects of the same type
 * `delegate void AsyncCallback(IAsyncResult ar)` 
-  * Method to be called when a corresponding asynchronous operation completes
+  * Method to be called when a corresponding **asynchronous operation completes**
 * `delegate TOutput Converter<in TInput,out TOutput>(TInput input)` 
-  * Method that converts an object from one type to another type
+  * Method that **converts** an object from one type to another type
 
 ---
 ## `System.Collections` Namespace
 * `using System.Collections`
 * [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.collections?view=netstandard-2.0)
 * Contains interfaces and classes that define various collections
-* Define:
-  * Lists
-  * Queues
-  * Bit arrays
-  * Hash tables
-  * Dictionaries
+* **Define**:
+  * *Lists*
+  * *Queues*
+  * *Bit arrays*
+  * *Hash tables*
+  * *Dictionaries*
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 +++
 ## ArrayList 
 * `class ArrayList`
-* Using an array whose size is dynamically increased as required
+* Using an array whose **size is dynamically increased** as required
 * Implements the `IList` interface
   * `interface IList`
-  * Defines non-generic collection of objects that can be individually accessed by index
+  * Defines **non-generic collection** of objects that can be individually accessed by index
 
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/ArrayListSample.cs&lang=C#&title=ArrayList Sample
 @[8-25]
@@ -465,7 +477,7 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 +++
 ## Stack
 * `class Stack`
-* Simple last-in-first-out non-generic collection of objects
+* Simple **last-in-first-out non-generic collection** of objects
 * Implements the `ICollection` interface
   * `interface ICollection`
   * Defines *size*, *enumerators*, and *synchronization* methods for all nongeneric collections
@@ -484,7 +496,7 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 +++
 ## Queue
 * `class Queue`
-* First-in, first-out collection of objects
+* **First-in, first-out collection** of objects
 * Implements the `ICollection` interface
 * Implements the `IEnumerable` interface
 
@@ -499,7 +511,7 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 +++
 ## Hashtable
 * `class Hashtable`
-* Collection of key/value pairs that are organized by the hash code of the key
+* **Collection of key/value pairs** that are organized by the hash code of the key
 * Implements the `IDictionary` interface
   * `interface IDictionary`
   * Nongeneric collection of key/value pairs
@@ -515,9 +527,9 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 +++
 ## Another Collections 
 * `class BitArray`
-  * Compact array of bit values, which are represented as Booleans
+  * Compact **array of bit values**, which are represented as Booleans
 * `class SortedList`
-  * Collection of key/value pairs that are sorted by the keys 
+  * **Collection of key/value pairs** that are **sorted** by the keys 
 
 ```C#
 bool[] boolArray = new bool[5] { true, false, true, true, false };
@@ -546,9 +558,13 @@ sortedList.Add("First", "Hello");
 ## `System.Collections.Generic` Namespace
 * `using System.Collections.Generic`
 * [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic?view=netstandard-2.0)
-* Contains interfaces and classes that define generic collections
-* Allow users to create strongly typed collections
-  * Provide better type safety and performance
+* Contains **interfaces and classes** that define **generic collections**
+* Allow users to create **strongly typed** collections
+  * Provide *better type safety and performance*
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 +++
 ## Generic List
@@ -576,7 +592,7 @@ sortedList.Add("First", "Hello");
 ## Generic Stack
 * `class Stack<T>`
 * Variable size 
-* Last-in-first-out collection 
+* **Last-in-first-out** collection 
   * Instances of the **same specified type**
 
 +++?code=/Lectures/Lecture03/Assets/sln/Tests/GenericStackTest.cs&lang=C#&title=Generic Stack Sample
@@ -590,7 +606,7 @@ sortedList.Add("First", "Hello");
 ## Generic Queue
 * `class Queue<T>`
 * Variable size 
-* First-in, first-out collection
+* **First-in, first-out** collection
 * Collection of instances of the **same specified type**
 
 +++?code=/Lectures/Lecture03/Assets/sln/Tests/GenericQueueTest.cs&lang=C#&title=Generic Queue Sample
@@ -604,7 +620,7 @@ sortedList.Add("First", "Hello");
 ## Generic Dictionary
 * `class Dictionary<TKey,TValue>`
 * Variable size 
-* First-in, first-out collection
+* **First-in, first-out** collection
 * Collection of instances of the **same specified type**
 * `class Dictionary<TKey,TValue>.KeyCollection`
   * Collection of keys in dictionary
@@ -626,10 +642,10 @@ sortedList.Add("First", "Hello");
 +++ 
 ## HashSet
 * `class HashSet<T>` 
-* Set of values
-* Contains no duplicate elements
-* Elements are in no particular order
-* Provides high-performance set operations
+* **Set** of values
+* Contains **no duplicate** elements
+* Elements are in **no particular order**
+* Provides *high-performance set operations*
 * `class SortedSet<T>`
   * Hashset that is maintained in sorted order
 
@@ -662,6 +678,10 @@ sortedList.Add("First", "Hello");
 * Types that provide **file and directory support**
 * Types that allow **reading** and **writing to files**
   * Data streams
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 +++
 ## Path
@@ -863,13 +883,17 @@ using (FileStream fileStream = File.OpenRead(@"c:\test.txt"))
 ## `System.Numerics` Namespace
 * `using System.Numerics`
 * [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.numerics?view=netstandard-2.0)
-* Numeric types that complement the numeric primitives
+* **Numeric types** that complement the numeric primitives
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 +++ 
 ## BigInteger
 * `struct BigInteger`
-* Nonprimitive integral type that supports arbitrarily large integers
-* Has no lower or upper bound
+* Nonprimitive integral type that supports **arbitrarily large integers**
+* Has *no lower or upper bound
 * Can contain the value of any integer
 
 ```C#
@@ -883,7 +907,7 @@ Console.WriteLine(number);
 +++
 ## Complex
 * `struct Complex`
-* Represents a complex number
+* Represents a **complex number**
 
 ```C#
 Complex complex1 = new Complex(12, 6);
@@ -910,8 +934,12 @@ Console.WriteLine(c5);
 ## `System.Reflection` Namespace
 * `using System.Reflection`
 * [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.reflection?view=netstandard-2.0)
-* Contains types that retrieve information about *assemblies*, *modules*, *members*, *parameters*, and other entities in managed code by examining their metadata
-* Manipulate instances of loaded types
+* Contains types that **retrieve information** about *assemblies*, *modules*, *members*, *parameters*, and other entities in managed code by examining their metadata
+* **Manipulate instances of loaded types**
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 +++?code=/Lectures/Lecture03/Assets/sln/Tests/ReflectionTest.cs&lang=C#&title=Reflection Sample
 @[8-14]
@@ -932,7 +960,7 @@ Console.WriteLine(c5);
 +++
 ## Dynamic type
 * **Escapes type checking at compile time**
-* It resolves type at run time
+* It **resolves type at run time**
 * Dynamic type can be defined using the `dynamic` keyword
 * Methods can have dynamic type parameters
 
@@ -952,7 +980,7 @@ x.FakeMethod();
 
 +++
 ## Reflection vs. Dynamic
-* both used when we want operate on an object during runtime
+* Both used when we want **operate on an object during runtime**
 * *dynamic* uses *reflection* internally
 
 |  | Reflection | Dynamic |
@@ -970,16 +998,20 @@ x.FakeMethod();
 ## `System.Text` Namespace
 * `using System.Text`
 * [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.text?view=netstandard-2.0)
-* Classes that represent ASCII and Unicode character encodings
-  * Abstract base classes for converting blocks of characters to and from blocks of bytes
+* Classes that **represent** ASCII and Unicode character **encodings**
+  * Abstract base classes for *converting blocks of characters to and from blocks of bytes*
 * Helper class that manipulates and formats `String` objects without creating intermediate instances of `String`
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 +++
 ## Encoding
 * `class Encoding`
 * `abstract`
 * process of **transforming a set of Unicode characters into a sequence of bytes**
-* Provides the following implementations:
+* **Provides the following implementations:**
   * `class ASCIIEncoding`
   * `class UTF7Encoding`
   * `class UTF8Encoding`
@@ -988,7 +1020,7 @@ x.FakeMethod();
 * **Decoder**
   * `class Decoder`
   * `abstract`
-  * Converts a sequence of encoded bytes into a set of characters
+  * Converts a *sequence of encoded bytes into a set of characters*
 
 +++?code=/Lectures/Lecture03/Assets/sln/Examples/EncodingSample.cs&lang=C#&title=EncodingSample Sample
 @[10]
@@ -1041,6 +1073,10 @@ x.FakeMethod();
   * `class Regex`
   * Represents an immutable regular expression
 
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
 +++
 ## Regex Sample
 * **For example`\b(?<word>\w+)\s+(\k<word>)\b`**
@@ -1071,6 +1107,10 @@ x.FakeMethod();
 * Classes and interfaces that support queries that use **Language-Integrated Query** (LINQ)
 * The `Enumerable` class contains LINQ standard query operators that operate on objects that implement `IEnumerable<T>`
 * The `Queryable` class contains LINQ standard query operators that operate on objects that implement `IQueryable<T>`
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 +++
 ## Language integrated query
@@ -1631,8 +1671,8 @@ public static IEnumerable<TSource> Where<TSource>(
 
 +++
 ## LINQ to SQL
-* ORM - Object Relational Mapper
-* LINQ query to SQL query
+* *ORM* - Object Relational Mapper
+* *LINQ* query to *SQL* query
 
 ```C#
 // using System.Data.Common;
@@ -1696,8 +1736,8 @@ Connection: System.Data.SqlClient.SqlConnection
 ---
 ## eXtensible Markup Language (XML)
 * Readable for both humans and machines
-* Stricter version of HTML
-* Storing and transporting data
+* Stricter version of *HTML*
+* **Storing and transporting data**
 
 ```XML
 <gesmes:Envelope>
@@ -1730,6 +1770,10 @@ Connection: System.Data.SqlClient.SqlConnection
 * `System.Xml.Schema` Namespace
 * `System.Xml.Serialization` Namespace
 * `System.Xml.Xsl` Namespace
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 +++
 ## XmlDocument vs XmlReader/Writer

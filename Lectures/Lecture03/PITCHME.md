@@ -468,11 +468,11 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 
 |  Non-generic variant | Generic variant |
 |:- |:- |
-| `List<T>` | `ArrayList` |
-| `SortedList<TKey,TValue>` | `SortedList` |
-| `Dictionary<TKey,TValue>` | `Hashtable` |
-| `Queue<T>` | `Queue` |
-| `Stack<T>` | `Stack` |
+| `ArrayList` | `List<T>` |
+| `SortedList` | `SortedList<TKey,TValue>` |
+| `Hashtable` | `Dictionary<TKey,TValue>` |
+| `Queue` | `Queue<T>` |
+| `Stack` | `Stack<T>` |
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)

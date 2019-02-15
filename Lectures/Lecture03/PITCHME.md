@@ -65,10 +65,7 @@
 +++
 #### .NET Standard Version Table
 
-<div class="center" >
-<img src="/Lectures/Lecture03/Assets/img/NetStandardVersionTable.png" />
-</br>
-</div>
+![](/Lectures/Lecture03/Assets/img/NetStandardVersionTable.png)
 
 +++
 ### Why .NET Standard 2.0 instead of 1.7?

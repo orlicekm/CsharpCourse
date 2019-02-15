@@ -1764,7 +1764,7 @@ Connection: System.Data.SqlClient.SqlConnection
 </bookstore>  
 ```
 
-+++?code=/Lectures/Lecture03/Assets/sln/Examples/XPathSample.cs&lang=C#&title=Reading XML with the XPathSample
++++?code=/Lectures/Lecture03/Assets/sln/Examples/XPathSample.cs&lang=C#&title=Reading XML with the XPath Sample
 @[8-23]
 @[10-11]
 @[13-15]
@@ -1772,6 +1772,35 @@ Connection: System.Data.SqlClient.SqlConnection
 @[19-20]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/XPathSample.cs)
 
+
++++
+## XML Serialization
+* `System.Xml.Serialization` Namespace
+* Classes that are used to serialize objects into XML and back
+* E.g:
+
+```XML
+<StepList>
+  <Step>
+    <Name>Name1</Name>
+    <Desc>Desc1</Desc>
+  </Step>
+  <Step>
+    <Name>Name2</Name>
+    <Desc>Desc2</Desc>
+  </Step>
+</StepList>
+```
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/XmlSerialization.cs&lang=C#&title=Xml Serialization Sample
+@[7-12]
+@[14-20]
+@[24-42]
+@[26-35]
+@[37]
+@[38-41]
+@[24-42]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/XmlSerialization.cs)
 
 ---
 ## References:

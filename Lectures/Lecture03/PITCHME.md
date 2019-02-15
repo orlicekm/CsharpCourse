@@ -804,6 +804,39 @@ using (FileStream fileStream = File.OpenRead(@"c:\test.txt"))
 | `BinaryReader` | Reads primitive data types as binary values in a specific encoding |
 | `BinaryWriter` | Writes primitive types in binary to a stream and supports writing strings in a specific encoding |
 
++++
+## `System.IO.Pipes` Namespace
+* `using System.IO.Pipes`
+* [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.io.pipes?view=netstandard-2.0)
+* Types that provide a means for interprocess communication through anonymous and/or named pipes
+* **Synchronous** and **asynchronous read** and **write** operations
+* `class PipeStream` - base class for Pipes
+  * `class NamedPipeServerStream` - Server side of a named pipe stream
+  * `class NamedPipeClientStream` - Client side of a named pipe stream
+  * `class AnonymousPipeServerStream` - Server side of an anonymous pipe stream
+  * `class AnonymousPipeClientStream` - Client side of an anonymous pipe stream
+  * 
++++?code=/Lectures/Lecture03/Assets/sln/Examples/PipeServerSample.cs&lang=C#&title=PipeServer Sample
+@[9-38]
+@[11-12]
+@[14]
+@[16-18]
+@[20]
+@[23-29]
+@[9-38]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/PipeServerSample.cs)
+
++++?code=/Lectures/Lecture03/Assets/sln/Examples/StreamWriterSample.cs&lang=C#&title=PipeClient Sample
+@[9-34]
+@[11-12]
+@[15-17]
+@[19-21]
+@[22-30]
+@[9-34]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Examples/PipeClientSample.cs)
+
+
+
 ---
 ## `System.Numerics` Namespace
 * `using System.Numerics`

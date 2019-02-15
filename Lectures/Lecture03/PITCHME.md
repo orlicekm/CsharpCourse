@@ -461,7 +461,18 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 @snapend
 
 +++
-genericke, negenericke + ich rozdiely
+## Generic vs non-generic collections
+* **Recommended to use generic collecions**
+  * Type safety
+  * Better performance (no need to box the elements)
+
+|  Non-generic variant | Generic variant |
+|:- |:- |
+| `List<T>` | `ArrayList` |
+| `SortedList<TKey,TValue>` | `SortedList` |
+| `Dictionary<TKey,TValue>` | `Hashtable` |
+| `Queue<T>` | `Queue` |
+| `Stack<T>` | `Stack` |
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)

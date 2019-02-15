@@ -106,10 +106,10 @@
 * [Documentation](https://docs.microsoft.com/sk-sk/dotnet/api/system?view=netstandard-2.0)
 * **Fundamental classes and base classes**
 * **Defines:**
-  * *Commonly-used value and reference data types**
-  * *Events and event handlers**
-  * *Interfaces**
-  * *Attributes**
+  * *Commonly-used value and reference data types*
+  * *Events and event handlers*
+  * *Interfaces*
+  * *Attributes*
   * *Processing exceptions*
 
 @snap[south-east span+40]
@@ -785,10 +785,10 @@ Console.WriteLine($"{Path.GetTempFileName()} is a file available for use.");
 * `Stream Class` 
 * Abstract base class of all streams
 * **Abstraction of a sequence of bytes**, such as
-    * *File**
-    * *Input/output device**
-    * *Inter-process communication pipe**
-    * *TCP/IP socket**
+    * *File*
+    * *Input/output device*
+    * *Inter-process communication pipe*
+    * *TCP/IP socket*
     * ⋮
 * **Fundamental operations**
   * *Reading* - transfer of data from a stream into a data structure,
@@ -893,7 +893,7 @@ using (FileStream fileStream = File.OpenRead(@"c:\test.txt"))
 ## BigInteger
 * `struct BigInteger`
 * Nonprimitive integral type that supports **arbitrarily large integers**
-* Has *no lower or upper bound
+* Has *no lower or upper bound*
 * Can contain the value of any integer
 
 ```C#
@@ -1868,7 +1868,7 @@ Connection: System.Data.SqlClient.SqlConnection
 +++
 ## XML Serialization
 * `System.Xml.Serialization` Namespace
-* Classes that are used to serialize objects into XML and back
+* Classes that are **used to serialize objects into XML and back**
 * E.g:
 
 ```XML

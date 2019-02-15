@@ -443,6 +443,34 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
   * Method that **converts** an object from one type to another type
 
 ---
+## Collections
+* **List**
+  * Stores values in list
+  * Grows automatically
+* **Dictioniary**
+  * Stores key and value pairs
+* **Stack**
+  * Stores the values in Last In First Out style 
+* **Queue**
+  * Stores the values in First In First Out style
+* **Set**
+  * Non-duplicate elements
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+genericke, negenericke + ich rozdiely
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+### Iterfaces Hierarchy
+![](/Lectures/Lecture03/Assets/img/CollectionHierarchy.png)
+
 ## `System.Collections` Namespace
 * `using System.Collections`
 * [Documentation](https://docs.microsoft.com/en-us/dotnet/api/system.collections?view=netstandard-2.0)

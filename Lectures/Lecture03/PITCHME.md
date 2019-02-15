@@ -227,10 +227,7 @@ Console.WriteLine(BitConverter.ToString(sampleByteArray)); //01
   * String that **identifies a particular resource**
   * Predefined set of syntax rules
 
-<div class="center" >
-<img src="/Lectures/Lecture03/Assets/img/UriSyntax.png" />
-</br>
-</div>
+![](/Lectures/Lecture03/Assets/img/UriSyntax.png)
 
 +++
 ### URI examples
@@ -463,8 +460,8 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 +++
 ## Generic vs non-generic collections
 * **Recommended to use generic collecions**
-  * Type safety
-  * Better performance (no need to box the elements)
+  * **Type safety**
+  * **Better performance** (no need to box the elements)
 
 |  Non-generic variant | Generic variant |
 |:- |:- |

@@ -446,15 +446,15 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 ## Collections
 * **List**
   * Stores values in list
-  * Grows automatically
+  * *Grows automatically*
 * **Dictioniary**
-  * Stores key and value pairs
+  * Stores *key and value* pairs
 * **Stack**
-  * Stores the values in Last In First Out style 
+  * Stores the values in *Last In First Out* style 
 * **Queue**
-  * Stores the values in First In First Out style
+  * Stores the values in *First In First Out* style
 * **Set**
-  * Non-duplicate elements
+  * *Non-duplicate* elements
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
@@ -463,6 +463,7 @@ delegate TResult Func<in T1,in T2,out TResult>(T1 arg1, T2 arg2); //has two para
 +++
 genericke, negenericke + ich rozdiely
 
++++
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend

@@ -4,7 +4,7 @@ using Xunit;
 
 namespace Tests
 {
-    public class LinqMaterialization
+    public class LinqMaterializationTest
     {
         [Fact]
         public void Test()

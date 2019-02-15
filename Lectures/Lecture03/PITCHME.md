@@ -1084,7 +1084,7 @@ var query = from m in musos
     select m;
 ```
 
-+++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqMaterialization.cs&lang=C#&title=Linq Materialization Sample
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqMaterialization.cs&lang=C#&title=LINQ Materialization Sample
 @[10-20]
 @[12]
 @[14-15]
@@ -1111,6 +1111,17 @@ Filtering is an operation to restrict the result set to the point where it shows
 | `Where` | Filter values based on a predicate function |
 | `OfType` | Filter values based on their ability to be as a specified type |
 
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqFilteringOperatorsTest.cs&lang=C#&title=LINQ Filtering Operators Sample
+@[10-16]
+@[12-13]
+@[15]
+@[10-16]
+@[19-25]
+@[21-22]
+@[24]
+@[19-25]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqFilteringOperatorsTest.cs)
+
 +++
 ### LINQ Join Operators
 Joining refers to an operation which directly targets data sources with difficult to follow relationships with each other in a direct way are targeted.
@@ -1120,14 +1131,46 @@ Joining refers to an operation which directly targets data sources with difficul
 | `Join` | The operator join two sequences on basis of matching keys |
 | `GroupJoin` | Join two sequences and group the matching elements |
 
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqJoinOperatorsTest.cs&lang=C#&title=LINQ Join Operators Sample
+@[11-34]
+@[13-18]
+@[20-25]
+@[27-30]
+@[32-33]
+@[11-34]
+@[36-40]
+@[42-46]
+@[49-69]
+@[51-52]
+@[54-57]
+@[59-60]
+@[62-63]
+@[65-68]
+@[49-69]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqJoinOperatorsTest.cs)
+
 +++
-### LINQ Projection Operations
+### LINQ Projection Operators
 Projection is an operation in which an object is transformed into an altogether new form with only specific properties.
 
 | Operator | Description |
 |:-:|:- |
 | `Select` | The operator projects values on basis of a transform function |
 | `SelectMany` | The operator project the sequences of values which are based on a transform function as well as flattens them into a single sequence |
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqProjectionOperatorsTest.cs&lang=C#&title=LINQ Projection Operators Sample
+@[10-23]
+@[12]
+@[14]
+@[16-18]
+@[20-22]
+@[10-23]
+@[26-44]
+@[28-29]
+@[31-35]
+@[37-43]
+@[26-44]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqProjectionOperatorsTest.cs)
 
 +++
 ### LINQ Sorting Operators
@@ -1141,6 +1184,26 @@ A sorting operation allows ordering the elements of a sequence on basis of a sin
 | `ThenByDescending` | Executes a secondary sorting in a descending order |
 | `Reverse` | Performs a reversal of the order of the elements in a collection |
 
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqSortingOperatorsTest.cs&lang=C#&title=LINQ Sorting Operators Sample
+@[9-16]
+@[11-12]
+@[14-15]
+@[9-16]
+@[19-26]
+@[21-22]
+@[24-25]
+@[19-26]
+@[29-36]
+@[31-32]
+@[34-35]
+@[29-36]
+@[39-49]
+@[41-42]
+@[44-45]
+@[47-48]
+@[39-49]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqSortingOperatorsTest.cs)
+
 +++
 ### LINQ Grouping Operators
 The operators put data into some groups based on a common shared attribute.
@@ -1150,8 +1213,22 @@ The operators put data into some groups based on a common shared attribute.
 | `GroupBy` | Organize a sequence of items in groups and return them as an `IEnumerable` collection of type `IGrouping<key, element>` |
 | `ToLookup` | Execute a grouping operation in which a sequence of key pairs are returned |
 
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqGroupingOperatorsTest.cs&lang=C#&title=LINQ Grouping Operators Sample
+@[9-29]
+@[11]
+@[13]
+@[15-16,28]
+@[17-18,27]
+@[19-26]
+@[9-29]
+@[32-43]
+@[34]
+@[36]
+@[38-42]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqGroupingOperatorsTest.cs)
+
 +++
-### LINQ Conversions
+### LINQ Conversions Operators
 The operators change the type of input objects and are used in a diverse range of applications.
 
 | Operator | Description |
@@ -1163,39 +1240,137 @@ The operators change the type of input objects and are used in a diverse range o
 | `ToArray` | Forces query execution and does conversion of a collection to an array |
 | `ToDictionary` | On basis of a key selector function set elements into a `Dictionary<TKey, TValue>` and forces execution of a LINQ query |
 | `ToList` | Forces execution of a query by converting a collection to a `List<T>` |
-| `ToLookup` | Forces execution of a query and put elements into a `Lookup<TKey, TElement>` on basis of a key selector function |
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqConversionsOperatorsTest.cs&lang=C#&title=LINQ Conversions Operators Sample
+@[13-20]
+@[15]
+@[17]
+@[19]
+@[13-20]
+@[23-30]
+@[25]
+@[27]
+@[29]
+@[23-30]
+@[33-41]
+@[35]
+@[37]
+@[39-40]
+@[33-41]
+@[44-51]
+@[46]
+@[48]
+@[50]
+@[44-51]
+@[54-61]
+@[56]
+@[58]
+@[60]
+@[54-61]
+@[64-77]
+@[66-71]
+@[73]
+@[75-76]
+@[64-77]
+@[80-87]
+@[82]
+@[84]
+@[86]
+@[80-87]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqConversionsOperatorsTest.cs)
 
 +++
-### LINQ Concatenation
+### LINQ Concatenation Operators
 Performs concatenation of two sequences and is quite similar to the Union operator in terms of its operation except of the fact that this does not remove duplicates.
 
 | Operator | Description |
 |:-:|:- |
 | `Concat` | Two sequences are concatenated for the formation of a single one sequence. |
 
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqConcatenationOperatorTest.cs&lang=C#&title=LINQ Concatenation Operator Sample
+@[9-19]
+@[11-12]
+@[14]
+@[16-18]
+@[9-19]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqConcatenationOperatorTest.cs)
+
 +++
-### LINQ Aggregation
+### LINQ Aggregation Operators
 Performs any type of desired aggregation and allows creating custom aggregations in LINQ.
 
 | Operator | Description |
 |:-:|:- |
-| `Aggregate` | Operates on the values of a collection to perform custom aggregation operation	 |
+| `Aggregate` | Operates on the values of a collection to perform custom aggregation operation |
 | `Average` | Average value of a collection of values is calculated	 |
-| `Count` | Counts the elements satisfying a predicate function within collection	 |
-| `LongCount` | Counts the elements satisfying a predicate function within a huge collection	 |
-| `Max` | Find out the maximum value within a collection	 |
-| `Min` | Find out the minimum value existing within a collection	 |
-| `Sum` | Find out the sum of a values within a collection	 |
+| `Count` | Counts the elements satisfying a predicate function within collection |
+| `LongCount` | Counts the elements satisfying a predicate function within a huge collection |
+| `Max` | Find out the maximum value within a collection |
+| `Min` | Find out the minimum value existing within a collection |
+| `Sum` | Find out the sum of a values within a collection |
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqAggregationOperatorsTest.cs&lang=C#&title=LINQ Aggregation Operators Sample
+@[10-17]
+@[12]
+@[14]
+@[16]
+@[10-17]
+@[20-27]
+@[22]
+@[24]
+@[26]
+@[20-27]
+@[30-37]
+@[32]
+@[34]
+@[36]
+@[30-37]
+@[40-48]
+@[42-43]
+@[45]
+@[47]
+@[40-48]
+@[51-58]
+@[53]
+@[55]
+@[57]
+@[51-58]
+@[61-68]
+@[63]
+@[65]
+@[67]
+@[61-68]
+@[71-78]
+@[73]
+@[75]
+@[77]
+@[71-78]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqAggregationOperatorsTest.cs)
 
 +++
-### LINQ Quantifier Operations
+### LINQ Quantifier Operators
 These operators return a Boolean value when some or all elements within a sequence satisfy a specific condition.
 
 | Operator | Description |
 |:-:|:- |
-| `All` | Returns `True` if all elements of a sequence satisfy a predicate condition  |
+| `All` | Returns `True` if all elements of a sequence satisfy a predicate condition |
 | `Any` | Determines by searching a sequence that whether any element of the same satisfy a specified condition |
 | `Contains` | Returns `True` if finds that a specific element is there in a sequence if the sequence doe not contains that specific element , `false` is returned |
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqQuantifierOperationsTest.cs&lang=C#&title=LINQ Quantifier Operators Sample
+@[9-14]
+@[11]
+@[13]
+@[9-14]
+@[17-22]
+@[19]
+@[21]
+@[17-22]
+@[25-30]
+@[27]
+@[29]
+@[25-30]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqQuantifierOperationsTest.cs)
 
 +++
 ### LINQ Partition Operators
@@ -1208,8 +1383,32 @@ Divide an input sequence into two separate sections without rearranging the elem
 | `Take` | Take a specified number of elements from a sequence and skip the remaining ones |
 | `TakeWhile` | Same as that of Take except the fact that number of elements to take are specified by a condition |
 
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqPartitionOperatorsTest.cs&lang=C#&title=LINQ Partition Operators Sample
+@[9-19]
+@[11]
+@[13]
+@[15-18]
+@[9-19]
+@[22-32]
+@[24]
+@[26]
+@[28-31]
+@[22-32]
+@[35-45]
+@[37]
+@[39]
+@[41-44]
+@[35-45]
+@[48-58]
+@[50]
+@[52]
+@[54-57]
+@[48-58]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqPartitionOperatorsTest.cs)
+
 +++
-### LINQ Generation Operations
+### LINQ Generation Operators
 A new sequence of values is created by generational operators.
 
 | Operator | Description |
@@ -1219,8 +1418,28 @@ A new sequence of values is created by generational operators.
 | `Range` | Generates a collection having a sequence of integers or numbers |
 | `Repeat` | Generates a sequence containing repeated values of a specific length |
 
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqGenerationOperationsTest.cs&lang=C#&title=LINQ Generation Operators Sample
+@[9-18]
+@[11-13]
+@[15-17]
+@[9-18]
+@[21-26]
+@[23]
+@[25]
+@[21-26]
+@[29-37]
+@[31]
+@[33-36]
+@[29-37]
+@[40-51]
+@[42-43]
+@[45]
+@[47-50]
+@[40-51]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqGenerationOperationsTest.cs)
+
 +++
-### LINQ Set Operations
+### LINQ Set Operators
 There are four operators for the set operations, each yielding a result based on different criteria.
 
 | Operator | Description |
@@ -1230,6 +1449,29 @@ There are four operators for the set operations, each yielding a result based on
 | `Intersect` | Returns the set of values found to be identical in two separate collections |
 | `Union` | Combines content of two different collections into a single list without any duplicate content |
 
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqSetOperationsTest.cs&lang=C#&title=LINQ Set Operators Sample
+@[9-16]
+@[11]
+@[13]
+@[15]
+@[9-16]
+@[19-29]
+@[21-22]
+@[24]
+@[26-28]
+@[19-29]
+@[32-41]
+@[34-35]
+@[37]
+@[39-40]
+@[32-41]
+@[44-52]
+@[46-47]
+@[49]
+@[51]
+@[44-52]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqSetOperationsTest.cs)
+
 +++
 ### LINQ Equality
 Compares two sentences (enumerable) and determines if they are an exact match or not.
@@ -1238,10 +1480,18 @@ Compares two sentences (enumerable) and determines if they are an exact match or
 |:-:|:- |
 | `SequenceEqual` | Results a Boolean value if two sequences are found to be identical to each other |
 
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqEqualityOperatorsTest.cs&lang=C#&title=LINQ Equality Operator Sample
+@[10-26]
+@[12-15]
+@[17-20]
+@[22-25]
+@[10-26]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqEqualityOperatorsTest.cs)
+
 +++
 ### LINQ Element Operators
 #### Part 1
-Except the `DefaultIfEmpty`, all the rest eight standard query element operators return a single element from a collection.
+All standard query element operators return a single element from a collection.
 
 | Operator | Description |
 |:-:|:- |
@@ -1260,7 +1510,43 @@ Except the `DefaultIfEmpty`, all the rest eight standard query element operators
 | `LastOrDefault` | Same as `Last` except the fact that it also returns a default value in case there is no existence of any such element |
 | `Single` | Returns the lone element of a collection or the lone element that satisfy a certain condition |
 | `SingleOrDefault` | Same as `Single` except that it also returns a default value if there is no existence of any such lone element |
-| `DefaultIfEmpty` | Returns a default value if the collection or list is empty or null |
+
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqElementOperatorsTest.cs&lang=C#&title=LINQ Element Operators Sample
+@[10-17]
+@[12]
+@[14]
+@[16]
+@[10-17]
+@[20-29]
+@[22]
+@[24-25]
+@[27-28]
+@[20-29]
+@[32-37]
+@[34]
+@[36]
+@[32-37]
+@[40-47]
+@[42-43]
+@[45-46]
+@[40-47]
+@[50-55]
+@[52]
+@[54]
+@[50-55]
+@[58-65]
+@[60-61]
+@[63-64]
+@[58-65]
+@[68-77]
+@[70-72]
+@[74-76]
+@[68-77]
+@[80-89]
+@[82-84]
+@[86-88]
+@[80-89]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqElementOperatorsTest.cs)
 
 +++
 ### How implement LINQ?

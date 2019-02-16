@@ -37,24 +37,24 @@
 ---
 ## Literature to study
 
-@snap[west]
-![](/Lectures/Lecture01/Assets/img/CsharpinNutshell.jpg)
-ISBN 9781491987650
-@snapend
+<img src="/Lectures/Lecture01/Assets/img/CsharpinNutshell.jpg" />
+</br>ISBN 9781491987650
 
 +++
 ## Recommended literature
-@snap[west]
-![](/Lectures/Lecture01/Assets/img/PrincipesPatternsPracticesinCsharp.png)
-ISBN 9780131857254
-@snapend
-@snap[east]
-![](/Lectures/Lecture01/Assets/img/CleanCode.png)
-ISBN 9780132350884
-@snapend
+
+<div class="left">
+<img src="/Lectures/Lecture01/Assets/img/PrincipesPatternsPracticesinCsharp.png" />
+</br>ISBN 9780131857254
+</div>
+<div class="right">
+<img src="/Lectures/Lecture01/Assets/img/CleanCode.png" />
+</br>ISBN 9780132350884
+</div>
 
 +++
 ## Recommended literature
+
 <div class="left">
 <img src="/Lectures/Lecture01/Assets/img/DesignPatterns.png" />
 </br>ISBN 9780201633610
@@ -66,6 +66,7 @@ ISBN 9780132350884
 
 +++
 ## Recommended literature
+
 <div class="left">
 <img src="/Lectures/Lecture01/Assets/img/Refactoring.jpg" />
 </br>ISBN 9780134757599
@@ -75,9 +76,10 @@ ISBN 9780132350884
 </br>ISBN  9781617294532
 </div>
 
++++
+
 @snap[midpoint span-100]
 
-+++
 ## Introduction to Visual Studio
 
 @snapend

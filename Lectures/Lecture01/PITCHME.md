@@ -1,8 +1,14 @@
-﻿# Introduction to C#, Visual studio and .NET
+﻿@snap[north span-100]
+# Introduction to C#, Visual studio and .NET
+@snapend
+
+@snap[midpoint span-100]
 ## Language basics, syntax, instalation and introduction to Visual Studio
-<div class="right">
+@snapend
+
+@snap[south-east span-30]
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
-</div>
+@snapend
 
 ---
 ## Syllabus of lectures:  
@@ -66,31 +72,35 @@
 </br>ISBN  9781617294532
 </div>
 
+@snap[midpoint span-100]
+
+## Introduction to Visual Studio
+
+@snapend
+
 ---
-<div class="center" >
-<img src="/Lectures/Lecture01/Assets/img/VisualStudioLogo.png" />
-</br>
-</div>
+@snap[north]
+![](/Lectures/Lecture_01/Assets/img/VisualStudioLogo.png)
+@snapend
 
 * Integrated development environment (IDE)
 * Feature-rich program that can be used for many aspects of software development:
-    * editor
-    * debugger
-    * builder 
-    * completion tools
-    * graphical designers
-    * etc..
+  * editor
+  * debugger
+  * builder 
+  * completion tools
+  * graphical designers
+  * etc..
 * [Free download](https://visualstudio.microsoft.com/vs/")
 * [Installation guide](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2017)
 
 +++
-<div class="center">
-<img src="/Lectures/Lecture01/Assets/img/VisualStudioIde.jpg" />
-</div>
-
+@snap[midpoint span-100]
+![](/Lectures/Lecture_01/Assets/img/VisualStudioIde.jpg)
+@snapend
 
 +++
-## Comparation of Visual Studio versions
+## Comparison of Visual Studio versions
 |  Supported Features                | Community |  Professional | Enterprise |
 | ---------------------------------- | --------- | ------------- | ---------- |
 | Supported Usage scenarios          | ⚫⚫⚫◯  | ⚫⚫⚫⚫     | ⚫⚫⚫⚫   |
@@ -111,59 +121,147 @@
 * ⋮
 
 ---
-## Recommended extensions and tools
-* Resharper
-* Azure DevOps
-* Code metrices
-* Mnemonic templates
-* LinqPad
-* DotPeek
-* Markdown Editor
-* Entity Framework 6 Power tools
-* GitFlow
+## Recommended extensions, services, and tools
+
+* Extensions:
+  * Resharper
+  * Code metrices
+  * Markdown Editor
+  * Entity Framework 6 Power tools
+  * GitFlow
+  * Mnemonic templates
+* Tools & Services: 
+  * LinqPad
+  * DotPeek
+  * Azure DevOps
+
+@snap[east span-60]
+![](/Lectures/Lecture_01/Assets/img/VSExtensions.PNG)
+@snapend
 
 +++
-### [Resharper](https://www.jetbrains.com/resharper/)  
-Extends Visual Studio with code inspections. For most inspections provides quick-fixes to improve code in one way or another. Helps safely organize code and move it around the solution. For more details see [features](https://www.jetbrains.com/resharper/features/).
+### [Resharper](https://www.jetbrains.com/resharper/)
+
+@snap[west span-40]
+
+Extends Visual Studio with code inspections. For most inspections provides quick-fixes to improve code in one way or another. Helps safely organize code and move it around the solution. 
+
+For more details see [features](https://www.jetbrains.com/resharper/features/).
+
+@snapend
+
+@snap[east span-50]
+![](/Lectures/Lecture_01/Assets/img/reshaper_refactor_this.png)
+@snapend
 
 +++
-### [Azure DevOps](https://visualstudio.microsoft.com/team-services/)  
+### [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)  
 * Before Visual Studio Team Services. 
-* Cloud-hosted private Git repos
+* Cloud-hosted private Git repositories
 * Agile planning
-* Build managment
+* Build management
 * Test Plans
 
-+++
-### [Code metrices](https://marketplace.visualstudio.com/items?itemName=vkacmar.RoslynCodeMetrices)  
-Visual Studio extension that helps to monitor the code complexity. As you type, the method complexity "health" is updated, and the complexity is shown near the method.
+@snap[east span-50]
+![Azure-DevOps](/Lectures/Lecture_01/Assets/img/Azure-DevOps2.png)
+@snapend
+
 
 +++
-### [Mnemonic templates](https://github.com/JetBrains/mnemonics)  
+### [Code Metrices](https://marketplace.visualstudio.com/items?itemName=Elisha.CodeMetrices)
+@snap[west span-50]
+Visual Studio extension that helps to monitor the code complexity. 
+As you type, the method complexity "health" is updated, and the complexity is shown near the method.
+@snapend
+
+@snap[east span-50]
+![Azure-DevOps](/Lectures/Lecture_01/Assets/img/code_metrices.jpg)
+@snapend
+
++++
+### [Mnemonic templates](https://github.com/JetBrains/mnemonics)
+@snap[west span-50]
+
 Templates for ReSharper that let you quickly generate code and data structures by typing in names.
 
-+++
-### [LinqPad](http://www.linqpad.net/)  
-Program that is not just for LINQ queries, but any C# expression, statement block or program. Put an end to those hundreds of Visual Studio Console projects cluttering your source folder and join the revolution of LINQPad scripters and incremental developers.
+@snapend
+
+@snap[east span-50]
+![](/Lectures/Lecture_01/Assets/img/resharperLiveTemplates_thumb.gif)
+@snapend
 
 +++
-### [DotPeek](https://www.jetbrains.com/decompiler/)  
-Tool based on ReSharper's bundled decompiler. It can reliably decompile any .NET assembly into equivalent C# or IL code.
+### [LinqPad](http://www.linqpad.net/)
+@snap[west span-40]
+
+LinqPad is not just for LINQ queries, but any C# expression, statement block or program. 
+Put an end to those hundreds of Visual Studio Console projects cluttering your source folder and join the revolution of LINQPad scripters and incremental developers.
+
+@snapend
+
+@snap[east span-60]
+![](/Lectures/Lecture_01/Assets/img/linqpad-sql.gif)
+@snapend
 
 +++
-### [Markdown Editor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)  
-A full featured Markdown editor with live preview and syntax highlighting. Supports GitHub flavored Markdown.
+### [DotPeek](https://www.jetbrains.com/decompiler/)
+@snap[west span-40]
+
+Tool based on ReSharper's bundled decompiler. 
+It can reliably decompile any .NET assembly into equivalent C# or IL code.
+
+@snapend
+
+@snap[east span-60]
+![](/Lectures/Lecture_01/Assets/img/dotpeek.gif)
+@snapend
 
 +++
-### [Entity Framework 6 Power Tools](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EntityFramework6PowerToolsCommunityEdition)  
+### [Markdown Editor](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.MarkdownEditor)
+@snap[west span-40]
+
+A full-featured Markdown editor with live preview and syntax highlighting. 
+Supports GitHub flavored Markdown.
+
+@snapend
+
+@snap[east span-60]
+![](/Lectures/Lecture_01/Assets/img/markdown-editor.gif)
+@snapend
+
+
+
++++
+### [Entity Framework 6 Power Tools](https://marketplace.visualstudio.com/items?itemName=ErikEJ.EntityFramework6PowerToolsCommunityEdition)
+@snap[west span-40]
+
 Useful design-time utilities for EF 6, accessible through the Visual Studio Solution Explorer context menu when right-clicking on a file containing a derived DbContext class.
 
+@snapend
+
+@snap[east span-60]
+![](/Lectures/Lecture_01/Assets/img/ef-powertool.PNG)
+@snapend
+
+
 +++
-### [GitFlow](https://marketplace.visualstudio.com/items?itemName=vs-publisher-57624.GitFlowforVisualStudio2017)  
-Team Explorer extension integrates GitFlow into your development workflow. It lets you easily create and finish feature, release and hotfix branches right from Team Explorer.  For more deails about git recommends [Pro Git book](https://git-scm.com/book/en/v2).
+### [GitFlow](https://marketplace.visualstudio.com/items?itemName=vs-publisher-57624.GitFlowforVisualStudio2017)
+@snap[west span-50]
+
+Team Explorer extension integrates GitFlow into your development workflow. It lets you easily create and finish feature, release and hotfix branches right from Team Explorer.  For more details about git recommends [Pro Git book](https://git-scm.com/book/en/v2).
+
+@snapend
+
+@snap[east span-40]
+![](/Lectures/Lecture_01/Assets/img/gitflow.png)
+@snapend
 
 ---
 ## Why To Choose .NET?
+@snap[north-east span-10]
+![](/Lectures/Lecture_01/Assets/img/Overview_small.png)
+@snapend
+
 * Productivity
 * Almost every platform
 * Performance
@@ -171,16 +269,24 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 * Large ecosystem
 * Open source
 
+@snap[east span-50]
+![](/Lectures/Lecture_01/Assets/img/why-developers-choose-dot-net.png)
+@snapend
+
 +++
 ### Productivity
-* To develop high quality applications faster
+* To develop *high quality applications faster*
 * Modern language constructs
-  *  Generics
-  *  Language Integrated Query (LINQ)
-  *  Asynchronous programming
-* Extensive class libraries
+  *  *Generics*
+  *  Language Integrated Query (*LINQ*)
+  *  *Asynchronous programming*
+* Extensive class libraries - NuGet
 * Common APIs
-* Multi-language support
+* *Multi-language* support
+
+@snap[east span-50]
+![](/Lectures/Lecture_01/Assets/img/dotneta.png)
+@snapend
 
 +++
 ### Almost every platform
@@ -189,136 +295,168 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 * Windows
 * Windows server
 * Linux
-* Microservises on cloud
+* Micro-services on cloud
+
+@snap[east span-50]
+![](/Lectures/Lecture_01/Assets/img/netcore3.jpg)
+@snapend
 
 +++
 ### Performance
-<div class="center">
-Applications provide better response times and require less compute power. </br>
-<img src="/Lectures/Lecture01/Assets/img/Performance.png" />
-</brComparation of web application frameworks with tasks like JSON serialization, database access, and server side template rendering.
-</br>
-<a href="https://www.techempower.com/benchmarks/#section=data-r16&hw=ph&test=plaintext">Data source</a>
-</div>
+* Applications provide better response times and require less computing power. 
+* Comparison of web application frameworks with tasks like 
+  * JSON serialization, 
+  * database access, 
+  * and server side template rendering.
+
+@snap[south-east span-50]
+![](/Lectures/Lecture_01/Assets/img/Performance.png)
+[Source](https://www.techempower.com/benchmarks/#section=data-r16&hw=ph&test=plaintext)
+@snapend
 
 +++
 ### Security
-* Immediate security benefits via its managed runtime
-* Prevent critical issues like bad pointer manipulation
-* Quick releases when threats are discovered
+* Immediate **security** benefits via its *managed runtime*
+* Prevents *critical issues* like **buffer overflow**
+* Patches are released with runtime
 
 +++
 ### Large ecosystem
 * Libraries from the [NuGet package manager](https://www.nuget.org/)
 * Visual studio [marketplace](https://marketplace.visualstudio.com/)
 * [Extensive partners network](https://vspartner.com/Directory)
-* Community, MVPs, support organization...
+* Community support, MVPs, ...
 
 +++
 ### Open source
 * [**.NET Foundation**](https://dotnetfoundation.org/)
-* Independent, Innovative, Commencially-friendly
+* Independent, Innovative, Commercially-friendly
 * Google, JetBrains, Red Hat, Samsung, Unity...
 
 ---
 # .NET Platform
+@snap[north-east span-10]
+![](/Lectures/Lecture_01/Assets/img/Overview_small.png)
+@snapend
+
 * Language interoperability
 * Architecture
 * Common Language Runtime
 * Benefits
 * Garbage collector
 * In The Nutshell
-* Application models
+* The .NET family of frameworks
+
+@snap[south-east]
+[Source](https://blogs.msdn.microsoft.com/cesardelatorre/2016/06/27/net-core-1-0-net-framework-xamarin-the-whatand-when-to-use-it/)
+@snapend
+
+@snap[east span-70]
+![](/Lectures/Lecture_01/Assets/img/Overview.png)
+@snapend
 
 +++
-<h2>Language interoperability</h2>
+## Language interoperability
+@snap[south-east span-70]
+![](/Lectures/Lecture_01/Assets/img/Common_Language_Infrastructure.png)
+@snapend
 
-<div class="center-right">
-<img src="/Lectures/Lecture01/Assets/img/Common_Language_Infrastructure.png" />
-</div>
 
 +++
 ## Architecture
-<div class="center">
-<img src="/Lectures/Lecture01/Assets/img/dot_net_architecture.png" />
-</div>
+@snap[midpoint span-100]
+![](/Lectures/Lecture_01/Assets/img/dot_net_architecture.png)
+@snapend
 
 +++
 ## CLR - Common Language Runtime
-* The virtual machine component of Microsoft's .NET framework 
+* The virtual machine component of .NET 
 * Manages the execution
 * Just-in-time compilation
 * Similar to Java Virtual Machine
 
-<div class="center">
-<img src="/Lectures/Lecture01/Assets/img/dot_net_clr.png" />
-</div>
+@snap[east span-50]
+![](/Lectures/Lecture_01/Assets/img/dot_net_clr.png)
+@snapend
 
 +++
-## Benefits
-* Performance improvements
-* Easy use of components developed in other languages
-* Extensible types provided by a class library
-* Inheritance, interfaces, and overloading for OOP
-* Free threading
-* Structured exception handling
-* Custom attributes
-* Garbage collection
-* Delegates instead of function pointers
+## CLR - Benefits
+* Performance improvements - *JIT*
+* Easy use of *components developed in other languages*
+* Extensible *types defined in BCL*
+* *Inheritance, interfaces, and overloading* for OOP
+* [Free threading](https://stackoverflow.com/questions/3892259/difference-between-free-threaded-and-thread-safe) (MTA Apartment)
+* Structured *exception handling*
+* Custom *attributes*
+* **Garbage collection**
+* *Delegates* instead of function pointers
 
 +++
 ### Garbage collector
-* Automated memory management without need of programmer intervention
-* Based on reachability from GC roots
-* 3 generations
-<div class="center">
-<img src="/Lectures/Lecture01/Assets/img/gc_generations.png" />
-</div>
+* **Automated memory management** without need of programmer intervention
+* Uses reachability from GC roots to identify *alive* objects
+* *Three generations*
+
+![](/Lectures/Lecture_01/Assets/img/gc_generations.png)
+
 
 +++
-## In The Nutshell
-<div class="center">
-<img src="/Lectures/Lecture01/Assets/img/Csh_in_nutshell_framework.png" />
-</div>
+## C# - In The Nutshell
+@snap[midpoint span-90]
+![](/Lectures/Lecture_01/Assets/img/Csh_in_nutshell_framework.png)
+@snapend
 
 +++
 ## Standard Libraries
-|  Library               | Namespaces | 
-|------------------------| ---------- |
-| Base Class Library     | System, System.Collections, System.Collections.Generic, System.Diagnostics, System.IO, System.Text, System.Threading... |
-| Runtime Infrastructure Library  | System, System.Reflection, System.Runtime.CompilerServices, System.Runtime.InteropServices... |
-| Network Library | System, System.Net, System.Net.Sockets...  |
-| Reflection Library | System.Globalization, System.Reflection...  | 
-| XML Library  | System.Xml  |
-| ⋮        | ⋮  |
+|  Library                            | Namespaces                                                                                                                | 
+|-------------------------------------| ------------------------------------------------------------------------------------------------------------------------- |
+| **Base Class Library**              | *System, System.Collections, System.Collections.Generic, System.Diagnostics, System.IO, System.Text, System.Threading...* |
+| **Runtime Infrastructure Library**  | *System, System.Reflection, System.Runtime.CompilerServices, System.Runtime.InteropServices...*                           |
+| **Network Library**                 | *System, System.Net, System.Net.Sockets...*                                                                               |
+| **Reflection Library**              | *System.Globalization, System.Reflection...*                                                                              | 
+| **XML Library**                     | *System.Xml*                                                                                                              |
+| ⋮                                   | ⋮                                                                                                                          |
 
 +++
-## Application models
-<div class="center">
-<img src="/Lectures/Lecture01/Assets/img/dot_net_libraries.png" />
-</div>
+## The .NET family of frameworks
+@snap[midpoint span-90]
+![](/Lectures/Lecture_01/Assets/img/dot_net_libraries.png)
+@snapend
 
 ---
-# C# Basics
+# C# 101
+@snap[north-east span-10]
+![](/Lectures/Lecture_01/Assets/img/Overview_small.png)
+@snapend
+
 * Identifiers
 * Keywords
 * Literals
 * Delimiters
 * Operators
 * Comments
-* Data types
+* Datatypes
 * Value Types
+
+@snap[east span-40]
+![](/Lectures/Lecture_01/Assets/img/keep-calm-and-focus-on-the-basics.png)
+@snapend
 
 +++
 ## C# is
-* Multi-paradigm programming language
-* Strong typing
-* Object oriented (class-based)
-* Imperative, declarative
-* Functional, generic
-* Based on c++
+* **multi-paradigm**;
+* **strong typed**;
+* **object oriented** (class-based);
+* imperative, declarative;
+* functional, generic;
+* based on c++;
+* programming language.
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/HelloWorld.cs&lang=C#&title=Hello World Sample
+@snap[east span-40]
+![](/Lectures/Lecture_01/Assets/img/csh.png)
+@snapend
+
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/HelloWorld.cs&lang=C#&title=Hello World Sample
 @[1]
 @[3-4, 15]
 @[5-6, 14]
@@ -326,67 +464,72 @@ Applications provide better response times and require less compute power. </br>
 @[9]
 @[11]
 @[12]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/HelloWorld.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/HelloWorld.cs)
 
 +++
 ## Identifiers
-* Name given to entities such as variables, methods, classes, etc.
-* Tokens which uniquely identify an element
+* Name given to entities such as *variables*, *methods*, *classes*, etc.
+* Tokens which uniquely identifies elements
 * `value` is a identifier:  
   ```C#
   int value;
   ```
-* Reserved keywords can not be used unless prefix `@` is added  
+* **Reserved keywords** can not be used unless prefix `@` is added  
   ```C#
   int @class;
   ```
 +++
 ## Keywords
-* Reserved words that have special meaning
+* **Reserved** words that have *special meaning*
 * Meaning can not be changed
-* Can not be directly used as identifies
+* **Can not be directly** used as *identifies*
 * `long` is a keyword:
   ```C#
   long count;
   ```
-* e.g. `int, bool, if, for, class, false, public, break`
+* E.g. ```int, bool, if, for, class, false, public, break```
 * [List of all Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
 
 +++
 ## Contextual Keywords
-* Specific meaning in a limited program context
-* Can be used as identifiers outside that context
-* e.g. `var, awayt, async, where, set`
+* **Specific meaning** in a limited program *context*
+* **Can be used** as *identifiers outside the context*
+* E.g. ```var, await, async, where, set```
 * [List of all Contextual Keywords](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/)
 
 +++
 ## Literals
-* Data inserted in code
-* E.g., 
-  ```C#
-  42
-  "Hello World"
-  3.14159
-  ```
+* Data inserted in a code
+
+```C#
+var hitchhikerConstant = 42;
+var helloWorld = 'Hello World';
+var pi = 3.14159;
+```
 
 +++
 ## Delimiters
-* Characters used for code structuralization
-* Curly braces `{, }`
-  * Creates code blocks
-  * Used to *impart a scope*
+* Characters used to structure the code
+* Curly braces `{`, `}`
+  * Creates **code blocks**
+  * Used to **impart a scope**
 * Semicolon `;`
-  * Delimits statements
-  * Statement can be written in multiple lines.
-  ```C#
-  Console.WriteLine
+  * **Delimits statements**
+  * Statement *can be written on multiple lines*.
+
+```C#
+Console.WriteLine
     (1 + 2 + 3 + 4 + 5);
-  ```
+```
 
 +++
 ## Operators
-  * Used to combine multiple expressions
+  * Used to **combine multiple expressions**
   * E.g., `. () * + -`
+
+```C#
+var sum = 1 + 5 * (6 / 2);
+```
 
 +++
 ## Comments
@@ -394,13 +537,12 @@ Applications provide better response times and require less compute power. </br>
   ```C#
   // line comment
   ```
-* Block
+* Block -  **Do not use block comments!!!**
   ```C#
   /* Comment can be split
   into multiple lines */
   ```
-  * **Do not use block comments!!!**
-* Documenting 
+* Documentation 
   ```C#
   /// <summary>
   /// Documents class, method...
@@ -408,16 +550,16 @@ Applications provide better response times and require less compute power. </br>
   ```
 
 ---
-## Data types
-* tells the compiler or interpreter how the programmer intends to use the data
+## Datatypes
+* Instruct the compiler or interpreter how the programmer intends to use the data
 * **Value type**
-  * Directly contains data
-  * Each variable have their own copy of the data
-  * It is not possible for operations on variable to affects another
+  * Variable directly **contains data**
+  * **Have to be** assigned before accessing
+  * Two variables, each have their copy of the data; *an operation on one variable* **DO NOT** *affect the other*.
 * **Reference types** (objects)
-  * Store references to their data
-  * Multible variables can reference the same object
-  * It is possible for operations on variable to affect another
+  * Variable **stores reference** to the data
+  * **DO NOT have to be** assigned before accessing
+  * IF two variables reference the same object; *operation on one variable* **DO** *affect the object referenced by the other variable*.
 * [Documentation](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/types-and-variables)
 
 +++
@@ -437,6 +579,38 @@ Applications provide better response times and require less compute power. </br>
   * Extensions of all other value types with a `null` value
 
 +++
+### Signed Integral
+| Type   |    Size | Range                                                              |
+| ------ | ------- | ------------------------------------------------------------------ |
+| `sbyte`|  8 bits | range from -128 - 127                                              |
+| `short`| 16 bits | range from -32,768 - 32,767                                        |
+| `int`  | 32 bits | range from -2,147,483,648 - 2,147,483,647                          |
+| `long` | 64 bits | range from –9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 |
+
++++
+### Unsigned integral
+|  Type   |    Size | Range                                      |
+| ------- | ------- | ------------------------------------------ |
+| `byte`  |  8 bits | range from 0 - 255                         |
+| `ushort`| 16 bits | range from 0 - 65,535                      |
+| `uint`  | 32 bits | range from 0 - 4,294,967,295               |
+| `ulong` | 64 bits | range from 0 - 18,446,744,073,709,551,615  |
+
++++
+### Floating point
+|   Type   |    Size | Range                                                               |
+| -------- | ------- | ------------------------------------------------------------------- |
+| `float`  | 32 bits | range from $$1.5 × 10^{−45} - 3.4 × 10^{38}$$  7-digit precision    |
+| `double` | 64 bits | range from $$5.0 × 10^{−324} - 1.7 × 10^{308}$$  15-digit precision |
+
++++
+### Decimal
+|    Type   |    Size  | Range                                                                                         |
+| --------- | -------- | --------------------------------------------------------------------------------------------- |
+| `decimal` | 128 bits | range is at least $$–7.9 × 10^{−28} - 7.9 × 10^{28}$$ with at least 28-digit precision range |
+
+
++++
 ### Literals notation
 * Classical
   * E.g., `127`, `42`, etc...
@@ -454,7 +628,7 @@ Using specific character as a suffix
 
 ```C#
  Console.WriteLine(1f.GetType());  // Float   (float)
- Console.WriteLine(1d.GetType());  // Double  (doulbe)
+ Console.WriteLine(1d.GetType());  // Double  (double)
  Console.WriteLine(1m.GetType());  // decimal (decimal)
  Console.WriteLine(1u.GetType());  // UInt32  (uint)
  Console.WriteLine(1L.GetType());  // Int64   (long)
@@ -489,12 +663,12 @@ Using specific character as a suffix
 ### Byte, sbyte, short, ushort types
 * 8 and 16 bits types do not have arithmetical operations
   * E.g., `byte, sbyte, short, ushort`
-  * Compiler does implicit cast to large type `int, uint`
+  * Compiler does implicitly cast to a large type `int, uint`
   ```C#
   short x = 1, y = 1;
   short z = x + y;    // Compile-time error
   ```
-  * Solution is to do explicit cast
+  * Solution is to do an explicit cast
   ```C#
   short x = 1, y = 1;
   short z = (short)(x + y); // OK
@@ -517,14 +691,14 @@ Using specific character as a suffix
 
 +++
 ### Truncation and precision loss
-* `float` and `double` are stored in binary form
+* `float` and `double` are stored in *binary form*
   * which means only multiples of 2 are stored precisely
 ```C#
 float f1 = 0.09f * 100f;
 float f2 = 0.09f * 99.999999f;
 Assert.False(f1>f2);
 ```
-* `decimal` is stored in decimal form, but it has still a limitted precision
+* `decimal` is stored in decimal form, but it has still a limited precision
   ```C#
   decimal m = 1M  /  6M;                          // 0.1666666666666666666666666667M
   double  d = 1.0 / 6.0;                          // 0.16666666666666666
@@ -547,16 +721,21 @@ Assert.False(f1>f2);
  
 +++
 ## Nullable value types
-* Do not have to be assigned before they can be used
-* For each non-nullable value type `T` there is a corresponding nullable value type `T`?
-  * Which can hold an **additional value**, `null`
-* E. g., `int?` can hold
-  * Any 32-bit integer
-  * `null`
+* **Do not have to be assigned** *before they can be accessed*
+* For each non-nullable value type `T` there is a corresponding nullable value type `T?`
+  * With the same value range as `T` + **additional value** - `null`
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/NullableType.cs&lang=C#&title=Nullable Type Sample
+```C#
+int  ten = 10;
+int? one = 1;
+int? canBeNull = null;
+int  @null = null;      // Compile-time error
+
+```
+
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/NullableType.cs&lang=C#&title=Nullable Type Sample
 @[10-11, 13-14]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/NullableType.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/NullableType.cs)
 
 
 +++
@@ -572,11 +751,11 @@ Assert.False(f1>f2);
   * Equality `==`, `!=`
   * Conditional operators `&&`, `||`
   ```C#
-  public bool UseUmbrela(bool rainy, bool sunny, bool windy) {
+  public bool UseUmbrella(bool rainy, bool sunny, bool windy) {
     return !windy && (rainy || sunny);
   }
   ```
-* Often used for *Lazy evaluation* 
+* Often used for the *Lazy evaluation* 
 
 +++
 ## Character type
@@ -598,45 +777,87 @@ Assert.False(f1>f2);
   * Single- and multi-dimensional, e.g., `int[]` and `int[,]`
 * **Delegate types**
   * User-defined types of the form `delegate int D(...)`
-* Supports generics, whereby they can be parameterized with other types
+* **Generics**,
+  * Parameterized with other types `MyGenericType<T>`
 
 +++
 ### Class
-* **data structure** that contains:
-  * Data members (*fields*)
-  * Function members (*methods*, *properties* and others). 
+* **Data structure** that contains:
+  * Data members - *fields*
+  * Function members - *methods*, *properties*, *events*, *indexers*, *user-defined operators*, *instance constructors*, *static constructors*, *destructors*
 * Supports
-  * Single inheritance 
+  * **Single, transitive, inheritance** 
   * Polymorphism 
-* Can extend and specialize base classes
+* Extends and specializes base class/es
+
+```C#
+class @Class{}
+
+class Dog
+{
+  string _name;
+}
+```
 
 +++
 ### Struct
 * Similar to a class type
-* **Unlike classes**, *structs* are value types and do not typically require heap allocation
-* Struct types do not support
-  * User-specified inheritance
-  * Struct types implicitly inherit from type `object`
+* Unlike classes, *structs* are **value types** and do not typically require heap allocation
+* Struct types **do not** support
+  * User-specified *inheritance*
+  * Struct types implicitly inherit from type `ValueType` that inherits `Object`
+
+```C#
+struct Cat
+{
+  string _name;
+}
+```
 
 +++
 ### Interface
-* **Contract** as a named set of public function members
-* A *class* or *struct* that implements an interface must provide implementations of the interface’s function members
-* An interface may inherit from multiple base interfaces, and a class or struct may implement multiple interfaces
+* Think about it as a **contract**
+* Named set of *public function members*
+* A **class** or **struct** that **implements an interface** *must provide implementations of the interface’s function members*
+* An **interface can inherit** *from multiple base interfaces*, and a **class or struct can implement** *multiple interfaces*
+
+```C#
+interface IInterface
+{
+  string FirstName { get; }
+  string LastName { get; }
+  string GetFullName();
+}
+```
+
 
 +++
 ### Delegate
-* **References to methods** with a particular parameter list and return type
-* Makes it possible to treat methods as entities that can be assigned to variables and passed as parameters
-* Are analogous to function types provided by functional languages
-  * They are also similar to the concept of function pointers found in some other languages
+* **References to methods** with a *particular parameter list* and *return type*
+* Method can be threated as an entity that can be assigned to variable and passed as a parameter
+* Analogous to **function type** provided by *functional languages*
+  * They are also similar to the **concept of function pointers** found in other languages
   * Unlike function pointers, delegates are object-oriented and **type-safe**
+
+```C#
+public delegate int PerformCalculation(int x, int y);
+
+class MyClass
+{
+  PerformCalculation PerformCalculation;
+
+  void CallDelegate()
+  {
+    PerformCalculation(1, 2);
+  }
+}
+```
 
 +++
 ### String
 * `System.String` / `string`
-* Represents sequence of characters
-* Reference data type
+* Represents *sequence of characters*
+* **Reference** data type
 * Literal is denote by double-quotes. e.g., `"string value"`
 * Verbatim string is denote by `@` prefix, e.g.,
   ```C#
@@ -647,8 +868,8 @@ Assert.False(f1>f2);
 +++
 #### String concatenation
 * `+` operator
-* Not all operands needs to be strings themselves
-* Non string operands get called `ToString()` method on them
+* Not all operands need to be strings
+* Non-string operands get called `ToString()` method on them
   ```C#
   string s = "a" + 5; // a5
   ```
@@ -659,34 +880,60 @@ Assert.False(f1>f2);
 
 +++
 ### Array
-* Represents fixed length data structure of homogeneous items
-* Stored in sequential block of memory
-* Do not have to be declared before it can be used
-* Initialization
+* Represents *fixed length data structure of homogeneous items*
+* Stored in a sequential block of memory
+* *Do not have to be declared before it can be used*
+* **Initialization**
   * Value types - default value
   * Reference types - `null`
 * Access out of array range throws `IndexOutOfRangeException`
-* Instead, array types are constructed by following a type name with square brackets
-  * `int[]` single-dimensional array of int
-  * `int[,]` two-dimensional array of int (matrix)
-  * `int[][]` is a single-dimensional array of single-dimensional array of int
+* Array types are constructed by following a type name with square brackets
+  * `int[]` *single-dimensional* array of int
+  * `int[,]` *two-dimensional* array of int (matrix)
+  * `int[][]` is a *single-dimensional array of single-dimensional* array of int
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/Array.cs&lang=C#&title=Array Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/Array.cs&lang=C#&title=Array Sample
 @[11-13]
 @[15-16]
-@[18-21, 23-26]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Array.cs)
+@[18-21]
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/Array.cs)
 
 --- 
 ### Variables
-* Name given to a storage area
-* Has a specific type, which determines:
-  * The size and layout of the memory
-  * The range of values that can be stored within that memory
-  * The set of operations that can be applied
+* Has a specific **type**, which determines:
+  * The **size** and layout of the memory
+  * The **range of values** that can be stored within that memory
+  * The **set of operations** that can be applied
 
 +++
 #### Variable types
+
+<!-- 
++-----------------------------------+-----------------------------------+
+| Type                              | Value                             |
++===================================+===================================+
+| **Non-nullable** type             | -   value of that exact type      |
++-----------------------------------+-----------------------------------+
+| **Nullable** type                 | -   null value                    |
+|                                   | -   value of that exact type      |
++-----------------------------------+-----------------------------------+
+| **Object**                        | -   *null* reference              |
+|                                   | -   reference to an *object* of   |
+|                                   |     any reference type            |
+|                                   | -   reference to a *boxed value*  |
+|                                   |     of any value type             |
++-----------------------------------+-----------------------------------+
+| **Class** type                    | -   *null* reference              |
+|                                   | -   reference to an *instance of  |
+|                                   |     that class* type              |
+|                                   | -   reference to an instance of a |
+|                                   |     class *derived* from that     |
+|                                   |     class type                    |
++-----------------------------------+-----------------------------------+
+| ⋮                                 | ⋮                                 |
++-----------------------------------+-----------------------------------+ 
+-->
+
 <table>
 <thead>
 <tr>
@@ -770,13 +1017,14 @@ Assert.False(f1>f2);
 +++  
 ### Stack vs Heap
 * **Stack**
-  * Allocated block of memory for *local variables, parameters*
+  * Allocated block of memory for *local variables, parameters, return values*
 * **Heap**
-  * Storage for *reference data types*
-  * Managed by *Garbage Collector*  
-* Local variable has to be *assigned before reading*
-* Method has to be *called with all arguments*
-* All other values are initialized automatically
+  * Storage for *reference data types, static variables*
+  * Managed by the *Garbage Collector*  
+* Therefore:
+  * **Local variable** has to be *assigned before reading*
+  * **Method** has to be *called with all arguments*
+  * **All other** values are initialized automatically
 
 +++
 ### Default values
@@ -788,77 +1036,80 @@ Assert.False(f1>f2);
 | Char      | `'\0'`         |
 | Boolean   | `false`        |
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/DefaultValue.cs&lang=C#&title=Default Value Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/DefaultValue.cs&lang=C#&title=Default Value Sample
 @[12-13]
 @[15-16]
 @[18]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/DefaultValue.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/DefaultValue.cs)
 
 ---
 ## Parameters
 * Parameters can be passed to a method as:
-  * Value
-  * Ref reference
-    * Variable **may be** modified by the called method
-  * In reference
-    * Variable **cannot** be modified by the called method
-  * Out reference
-    * Variable **must be** assigned by the called method
-    * Variable does not need to be initialized before method call
+  * **Value**
+  * **Ref** reference
+    * Variable **may** *be modified* by the called method
+  * **In** reference
+    * Variable **cannot** *be modified* by the called method
+  * **Out** reference
+    * Variable **must** *be assigned* by the called method
+    * Variable **need not** *to be initialized* before the method call
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/ValueParameter.cs&lang=C#&title=Value Parameter Sample
-@[8-19]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/ValueParameter.cs)
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/ValueParameter.cs&lang=C#&title=Value Parameter Sample
+@[9-26]
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/ValueParameter.cs)
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/RefParameter.cs&lang=C#&title=Ref Parameter Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/RefParameter.cs&lang=C#&title=Ref Parameter Sample
 @[7-17]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/RefParameter.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/RefParameter.cs)
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/InParameter.cs&lang=C#&title=In Parameter Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/InParameter.cs&lang=C#&title=In Parameter Sample
 @[7-19]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/InParameter.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/InParameter.cs)
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/OutParameter.cs&lang=C#&title=Out Parameter Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/OutParameter.cs&lang=C#&title=Out Parameter Sample
 @[7-24]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/OutParameter.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/OutParameter.cs)
 
 +++
 ### Parameter with `params[]`
-* Can be used only with the *last parameter* in a method signature
+* Can be used only as the *last parameter* in a method signature
 * Has to be declared as an array
 * Used to pass multiple variables of the same type
-  ```C#
-  void Foo(int x = 2) { … }
-  ```
-  ```C#
-  Foo();
-  ```
+  
+```C#
+int Sum(params int[] list)
+{
+  return list.Sum();
+}
+```
 
 +++
 ### Optional parameters
-* Has a default value as part of it's definition
-* If no argument is sent, the default value is used
-  ```C#
-  void Foo(int x = 2, int y = 3) { … }
-  ```
-  ```C#
-  Foo();
-  Foo(1); 
-  Foo(1, 2);
-  ```
+* Has a default value as a part of it's definition
+* If omitted, the *default value* is used
+
+```C#
+void Foo(int x = 2, int y = 3) { … }
+```
+```C#
+Foo();
+Foo(1); 
+Foo(1, 2);
+```
 
 +++
 ### Named parameters
 * Usually used with method calls on methods with *multiple optional parameters*
-* Reduce the number of method overrides
-  ```C#
-  void Foo(int x = 2, int y = 3) { … }
-  ```
-  ```C#
-  Foo(y:4, x:4);
-  Foo(y: ++a, x: --a); 
-  Foo(y: 1);
-  ```
+* Reduce the number of *method overrides*
+
+```C#
+void Foo(int x = 2, int y = 3) { … }
+```
+```C#
+Foo(y:4, x:4);
+Foo(y: ++a, x: --a); 
+Foo(y: 1);
+```
 
 ---
 ## Operators
@@ -874,22 +1125,31 @@ Assert.False(f1>f2);
 
 +++
 ## Expressions
-* Returns some value after computation
+* Usually, **returns some value** after computation
 * The simplest expression is *constant* or *variable*, e.g., `5`
 * Expression can be combined using operators
-  ```C#
-  5*4
-  ```
-  ```C#
-  (5*4)+1
-  ```
+
+```C#
+5*4
+```
+```C#
+(5*4)+1
+```
+
 * If you are not sure about priority, use '()'
 
 +++
-### Void expression
-* *Do not have a value*
+### Void expressions
+* *Do not have value*
 * Cannot be combined with other operators
 * E.g., `{}, return, etc...`
+
+```C#
+Expression<Action> tree = () => Console.WriteLine("Hello");
+Expression<Action> tree2 = () => { Console.WriteLine("Hello"); }; // Compile-time error
+```
+
+* [An expression may be classified as] "nothing". This occurs when the expression is an *invocation of a method with a return type of void*. An expression classified as nothing *is only valid in the context of a statement expression*.
 
 +++
 ### Assigning expression
@@ -923,18 +1183,18 @@ Assert.False(f1>f2);
 * `switch`
 * Conditional (ternary) operand `?:`
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/If.cs&lang=C#&title=If Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/If.cs&lang=C#&title=If Sample
 @[10-13]
 @[14-17]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/If.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/If.cs)
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/Switch.cs&lang=C#&title=Switch Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/Switch.cs&lang=C#&title=Switch Sample
 @[13-30]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Switch.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/Switch.cs)
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/TernaryOperand.cs&lang=C#&title=Ternary Operand Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/TernaryOperand.cs&lang=C#&title=Ternary Operand Sample
 @[10-12]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/TernaryOperand.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/TernaryOperand.cs)
 
 +++
 ## Statements - Cycles
@@ -944,21 +1204,21 @@ Assert.False(f1>f2);
 * `foreach`
 
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/While.cs&lang=C#&title=While Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/While.cs&lang=C#&title=While Sample
 @[10-16]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/While.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/While.cs)
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/DoWhile.cs&lang=C#&title=Do While Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/DoWhile.cs&lang=C#&title=Do While Sample
 @[10-15]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/DoWhile.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/DoWhile.cs)
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/For.cs&lang=C#&title=For Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/For.cs&lang=C#&title=For Sample
 @[10-13]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/For.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/For.cs)
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/ForEach.cs&lang=C#&title=Foreach Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/ForEach.cs&lang=C#&title=Foreach Sample
 @[10-14]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/ForEach.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/ForEach.cs)
 
 +++
 ## Statements - Jump statements
@@ -967,71 +1227,69 @@ Assert.False(f1>f2);
 * `return`
 * `throw`
 * `goto` 
-  * using leads to [Spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code)
+  * usage leads to [Spaghetti code](https://en.wikipedia.org/wiki/Spaghetti_code)
 
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/Break.cs&lang=C#&title=Break Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/Break.cs&lang=C#&title=Break Sample
 @[10-20]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Break.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/Break.cs)
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/Continue.cs&lang=C#&title=Continue Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/Continue.cs&lang=C#&title=Continue Sample
 @[10-17]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Continue.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/Continue.cs)
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/Return.cs&lang=C#&title=Return Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/Return.cs&lang=C#&title=Return Sample
 @[8-12]
 @[17-20]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Return.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/Return.cs)
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/Throw.cs&lang=C#&title=Throw Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/Throw.cs&lang=C#&title=Throw Sample
 @[8-18]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Throw.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/Throw.cs)
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/Goto.cs&lang=C#&title=Goto Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/Goto.cs&lang=C#&title=Goto Sample
 @[10-17]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Goto.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/Goto.cs)
 
 +++
-## Statements - Others
+## Statements - other
 * `using`
-  * Encapsulated usage of disposable resource
+  * Encapsulates the use of a disposable resource
 * `lock`
-  * For safe access to resource from concurrent context
-  * Simplification of Monitor synchronization primitive
+  * For *safe access* to the resource from the concurrent context
+  * Simplification of a *Monitor synchronization primitive*
 
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/Using.cs&lang=C#&title=Using Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/Using.cs&lang=C#&title=Using Sample
 @[10-13]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Using.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/Using.cs)
   
-+++?code=/Lectures/Lecture01/Assets/sln/Tests/Lock.cs&lang=C#&title=Lock Sample
++++?code=/Lectures/Lecture_01/Assets/sln/Tests/Lock.cs&lang=C#&title=Lock Sample
 @[9-19]
 @[24-30]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Tests/Lock.cs)
+[Code sample](/Lectures/Lecture_01/Assets/sln/Tests/Lock.cs)
 
 ---
 ## Namespaces
-* Groups classes and interfaces to named groups
-* Namespace `System.Security.Cryptography` contains class e.g., RSA
-* Usage of types from given namespace
+* *Groups classes and interfaces to named groups*
+* Namespace `System.Security.Cryptography` contains class, e.g., RSA
+* Usage of types from a given namespace, e.g.,
+```C#
+System.Security.Cryptography.RSA rsa = System.Security.Cryptography.RSA.Create();
+```
 
-  ```C#
-  System.Security.Cryptography.RSA rsa = System.Security.Cryptography.RSA.Create();
-  ```
 * Directive `using`
-
-  ```C#
-  using System.Security.Cryptography;
-  public class Namespaces
+```C#
+using System.Security.Cryptography;
+public class Namespaces
+{
+  public void Method()
   {
-    public void Method()
-    {
-      RSA rsa = RSA.Create(); // Don't need fully qualified name
-    }
+    RSA rsa = RSA.Create(); // Don't need fully qualified name
   }
-  ```
+}
+```
 
 +++
-
 ### Keyword `namespace`
 
 ```C#
@@ -1041,7 +1299,8 @@ namespace Outer.Middle.Inner
   class Class2 { ... }
 }
 ```
- Same as:
+
+* Same as:
 
 ```C#
 namespace Outer
@@ -1058,7 +1317,7 @@ namespace Outer
 ```
 
 +++
-### Namespaces - Rules
+### Namespaces - rules
 * Names declared in an outer scope are implicitly imported into inner one
 
 ```C#
@@ -1096,7 +1355,7 @@ namespace Outer.Middle.Inner
 
 +++
 ### Inner `using` directives
-* `using` can be used in inner namespace to limit its scope
+* `using` can be used in an inner namespace to limit its scope
   
 ```C#
 namespace N1

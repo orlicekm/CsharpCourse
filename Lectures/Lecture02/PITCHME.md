@@ -20,7 +20,7 @@
   * Data is stored in object's **member variable (field)**
   * **Methods** and **fields** together create objects
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Examples/Dog.cs&lang=C#&title=OOP Sample
++++?code=/Lectures/Lecture02/Assets/sln/Examples/Dog.cs&lang=C#&title=OOP Sample
 @[6-25]
 @[8]
 @[10-14]
@@ -29,7 +29,7 @@
 @[24]
 @[6-25]
 
-[Code sample](https://github.com/nesfit/ICS/blob/master/Lectures/Lecture_02/Assets/sln/Examples/Dog.cs)
+[Code sample](https://github.com/nesfit/ICS/blob/master/Lectures/Lecture02/Assets/sln/Examples/Dog.cs)
 
 +++
 ## Three Principles of OOP
@@ -52,10 +52,10 @@
   * A language construct that **facilitates the bundling of data with the methods** (or other functions) operating on that data
 
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Examples/Dog.cs&lang=C#&title=Encapsulation Sample
++++?code=/Lectures/Lecture02/Assets/sln/Examples/Dog.cs&lang=C#&title=Encapsulation Sample
 @[6-25]
 @[8-14]
-[Code sample](/Lectures/Lecture_02/Assets/sln/Examples/Dog.cs)
+[Code sample](/Lectures/Lecture02/Assets/sln/Examples/Dog.cs)
 
 +++
 ### Inheritance
@@ -64,24 +64,24 @@
 * Reuse code and to independently extend original software via public classes
 * An *inherited class* is called a **subclass** of its **parent class** or **superclass** or **base class**
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Examples/Animal.cs&lang=C#&title=Inheritance Sample
++++?code=/Lectures/Lecture02/Assets/sln/Examples/Animal.cs&lang=C#&title=Inheritance Sample
 @[3-6]
 @[3-4, 6]
 @[5]
-[Code sample](/Lectures/Lecture_02/Assets/sln/Examples/Animal.cs)
+[Code sample](/Lectures/Lecture02/Assets/sln/Examples/Animal.cs)
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Examples/Pet.cs&lang=C#&title=Inheritance Sample
++++?code=/Lectures/Lecture02/Assets/sln/Examples/Pet.cs&lang=C#&title=Inheritance Sample
 @[3-16]
 @[3]
 @[3-16]
-[Code sample](/Lectures/Lecture_02/Assets/sln/Examples/Pet.cs)
+[Code sample](/Lectures/Lecture02/Assets/sln/Examples/Pet.cs)
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Examples/Dog.cs&lang=C#&title=Inheritance Sample
++++?code=/Lectures/Lecture02/Assets/sln/Examples/Dog.cs&lang=C#&title=Inheritance Sample
 @[6-25]
 @[6]
 @[19-22]
 @[6-25]
-[Code sample](/Lectures/Lecture_02/Assets/sln/Examples/Dog.cs)
+[Code sample](/Lectures/Lecture02/Assets/sln/Examples/Dog.cs)
 
 +++
 #### Inheritance and Subtyping
@@ -369,11 +369,11 @@ public string Name {
   * Method *name and return type* are reduced to the *name of the enclosing type*
 * Constructors of the *base* class are accessible
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Examples/Panda.cs&lang=C#&title=Constructor Sample
++++?code=/Lectures/Lecture02/Assets/sln/Examples/Panda.cs&lang=C#&title=Constructor Sample
 @[3-10]
 @[6-7, 9]
 @[5, 8]
-[Code sample](/Lectures/Lecture_02/Assets/sln/Examples/Panda.cs)
+[Code sample](/Lectures/Lecture02/Assets/sln/Examples/Panda.cs)
 
 +++
 #### Implicit Parameterless Constructor
@@ -395,25 +395,25 @@ public string Name {
   * `this` - refers to *this* type instance 
   * `base` - refers to *base* class type instance
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Examples/WildCat.cs&lang=C#&title=Constructor Overloading Sample
++++?code=/Lectures/Lecture02/Assets/sln/Examples/WildCat.cs&lang=C#&title=Constructor Overloading Sample
 @[3-20]
 @[5]
 @[7-10]
 @[11-14]
 @[5-14]
-[Code sample](/Lectures/Lecture_02/Assets/sln/Examples/WildCat.cs)
+[Code sample](/Lectures/Lecture02/Assets/sln/Examples/WildCat.cs)
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Examples/Cat.cs&lang=C#&title=Constructor Overloading Sample
++++?code=/Lectures/Lecture02/Assets/sln/Examples/Cat.cs&lang=C#&title=Constructor Overloading Sample
 @[3-15]
 @[5]
 @[7-9]
 @[11-14]
 @[7-14]
-[Code sample](/Lectures/Lecture_02/Assets/sln/Examples/Cat.cs)
+[Code sample](/Lectures/Lecture02/Assets/sln/Examples/Cat.cs)
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Tests/Constructor.cs&lang=C#&title=Constructor Overloading Test
++++?code=/Lectures/Lecture02/Assets/sln/Tests/Constructor.cs&lang=C#&title=Constructor Overloading Test
 @[9-13]
-[Code sample](/Lectures/Lecture_02/Assets/slnTests/Constructor.cs)
+[Code sample](/Lectures/Lecture02/Assets/slnTests/Constructor.cs)
 
 +++
 ### Deconstructors
@@ -423,12 +423,12 @@ public string Name {
   * Be called **Deconstruct**
   * Have one or more out parameters
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Examples/Rectangle.cs&lang=C#&title=Deconstructor Sample
++++?code=/Lectures/Lecture02/Assets/sln/Examples/Rectangle.cs&lang=C#&title=Deconstructor Sample
 @[3-18]
 @[5]
 @[7-11]
 @[13-17]
-[Code sample](/Lectures/Lecture_02/Assets/sln/Examples/Rectangle.cs)
+[Code sample](/Lectures/Lecture02/Assets/sln/Examples/Rectangle.cs)
 
 +++
 #### Call Deconstructor
@@ -543,21 +543,21 @@ public class Stock: Asset
 * Creates a *base* class reference from a *subclass* reference
 * Only *members* provided by given *base* class can be accessed through up-casted reference
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Tests/UpCast.cs&lang=C#&title=Upcast Example
++++?code=/Lectures/Lecture02/Assets/sln/Tests/UpCast.cs&lang=C#&title=Upcast Example
 @[6-15]
 @[9-14]
 @[11]
 @[12]
 @[13]
 @[6-15]
-[Code sample](/Lectures/Lecture_02/Assets/slnTests/UpCast.cs)
+[Code sample](/Lectures/Lecture02/Assets/slnTests/UpCast.cs)
 
 +++
 #### Down-cast
 * Creates a *subclass* reference from a *base* class reference
 * It **fails**, if *base* class instance is not compatible with *inherited* one
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Tests/DownCast.cs&lang=C#&title=Downcast Example
++++?code=/Lectures/Lecture02/Assets/sln/Tests/DownCast.cs&lang=C#&title=Downcast Example
 @[7-23]
 @[10-15]
 @[12]
@@ -568,35 +568,35 @@ public class Stock: Asset
 @[20]
 @[21]
 @[18-22]
-[Code sample](/Lectures/Lecture_02/Assets/slnTests/DownCast.cs)
+[Code sample](/Lectures/Lecture02/Assets/slnTests/DownCast.cs)
 
 +++
 #### Operator `as`
 * Downcasts
 * Returns `null`, if failed
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Tests/AsOperator.cs&lang=C#&title=AS Operator Example
++++?code=/Lectures/Lecture02/Assets/sln/Tests/AsOperator.cs&lang=C#&title=AS Operator Example
 @[6-14]
 @[9-13]
 @[11]
 @[12]
 @[9-13]
-[Code sample](/Lectures/Lecture_02/Assets/slnTests/AsOperator.cs)
+[Code sample](/Lectures/Lecture02/Assets/slnTests/AsOperator.cs)
 
 +++
 #### Operator `is`
 * Tests whether a reference conversion would succeed
 * Usually before downcast
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Tests/IsOperator.cs&lang=C#&title=IS Operator Example
++++?code=/Lectures/Lecture02/Assets/sln/Tests/IsOperator.cs&lang=C#&title=IS Operator Example
 @[6-14]
 @[9-13]
 @[11]
 @[12]
 @[9-13]
-[Code sample](/Lectures/Lecture_02/Assets/slnTests/IsOperator.cs)
+[Code sample](/Lectures/Lecture02/Assets/slnTests/IsOperator.cs)
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Tests/PatternMatching.cs&lang=C#&title=IS Pattern Matching Example
++++?code=/Lectures/Lecture02/Assets/sln/Tests/PatternMatching.cs&lang=C#&title=IS Pattern Matching Example
 @[6-28]
 @[9-17]
 @[11]
@@ -608,7 +608,7 @@ public class Stock: Asset
 @[23-24, 26]
 @[25]
 @[20-27]
-[Code sample](/Lectures/Lecture_02/Assets/slnTests/PatternMatching.cs)
+[Code sample](/Lectures/Lecture02/Assets/slnTests/PatternMatching.cs)
 
 +++
 ### Sealed
@@ -947,12 +947,12 @@ static void Swap<T> (ref T a, ref T b) {
 * **Invariance** use only of the same type as initially specified.
   *  Invariant generic type parameter is neither **covariant** nor **contravariant**.
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Examples/CovarianceContravariance.cs&lang=C#&title=Covariance Contravariance Example
++++?code=/Lectures/Lecture02/Assets/sln/Examples/CovarianceContravariance.cs&lang=C#&title=Covariance Contravariance Example
 @[11]
 @[27-30]
 @[33-36]
 @[11-24]
-[Code sample](/Lectures/Lecture_02/Assets/sln/Examples/CovarianceContravariance.cs)
+[Code sample](/Lectures/Lecture02/Assets/sln/Examples/CovarianceContravariance.cs)
 
 +++
 ## Boxing/Unboxing
@@ -961,13 +961,13 @@ static void Swap<T> (ref T a, ref T b) {
 * Values of reference types are treated as objects simply by viewing the values as type object
 * Values of value types are treated as objects by performing **boxing** and **unboxing** operations
 
-+++?code=/Lectures/Lecture_02/Assets/sln/Tests/Boxing.cs&lang=C#&title=Boxing Sample
++++?code=/Lectures/Lecture02/Assets/sln/Tests/Boxing.cs&lang=C#&title=Boxing Sample
 @[8-15]
 @[10]
 @[11]
 @[12]
 @[8-15]
-[Code sample](/Lectures/Lecture_02/Assets/slnTests/Boxing.cs)
+[Code sample](/Lectures/Lecture02/Assets/slnTests/Boxing.cs)
 
 ---
 ## Exceptions

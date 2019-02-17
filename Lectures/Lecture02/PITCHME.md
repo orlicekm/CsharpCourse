@@ -396,11 +396,11 @@ public string Name {
   * `base` - refers to *base* class type instance
 
 +++?code=/Lectures/Lecture02/Assets/sln/Examples/WildCat.cs&lang=C#&title=Constructor Overloading Sample
-@[3-20]
-@[5]
-@[7-10]
-@[11-14]
-@[5-14]
+@[3-17]
+@[5-7]
+@[9-11]
+@[13-16]
+@[5-16]
 [Code sample](/Lectures/Lecture02/Assets/sln/Examples/WildCat.cs)
 
 +++?code=/Lectures/Lecture02/Assets/sln/Examples/Cat.cs&lang=C#&title=Constructor Overloading Sample

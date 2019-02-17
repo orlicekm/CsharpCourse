@@ -8,7 +8,6 @@
 
         public WildCat(string name):base(name)
         {
-            
         }
 
         public override string Cry()

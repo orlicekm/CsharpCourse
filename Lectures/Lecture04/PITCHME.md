@@ -92,7 +92,7 @@
 
 ---
 ## Entity Framework (EF)
-* **Official definition:** *“Entity Framework is an object-relational mapper (O/RM) that enables .NET developers to work with a database using .NET objects. It eliminates the need for most of the data-access code that developers usually need to write.”*
+* **Official definition:** *“Entity Framework is an object-relational mapper (ORM) that enables .NET developers to work with a database using .NET objects. It eliminates the need for most of the data-access code that developers usually need to write.”*
 * **Object-relational mapping framework**
 * By Microsoft
 * Enhancement to ADO.NET
@@ -275,11 +275,10 @@ public class Student
 
 
 ---
-4. Propojení aplikace s databází pro zajištění persistence pomocí ORM rozšíření Entity Framework
- s návrhovými vzory UnitOfWork a Repository.
+## Dupper
 
-6. Návrhový vzor Model-View-ViewModel (MVVM) a architektura desktopových aplikací. 
-Mapování databázových entit na modelové třídy.
++++
+Dupper vs Entity Framework
 
 ---
 ## References:

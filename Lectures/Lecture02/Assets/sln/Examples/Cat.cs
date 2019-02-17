@@ -1,6 +1,6 @@
-﻿namespace Example
+﻿namespace Examples
 {
-    public class Cat: UnknownCat
+    public class Cat: WildCat
     {
         public int LivesLeft { get; set; } = 9;
 

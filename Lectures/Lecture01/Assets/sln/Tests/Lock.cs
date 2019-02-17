@@ -25,7 +25,7 @@ namespace Tests
             const int attempts = 1_000_000;
             for (var i = 0; i < attempts; i++)
             {
-                Task.Run(CriticalSection).ConfigureAwait(false);
+                Task.Run(() => CriticalSection()).ConfigureAwait(false);
             }
 
             Assert.True(_increment < attempts);

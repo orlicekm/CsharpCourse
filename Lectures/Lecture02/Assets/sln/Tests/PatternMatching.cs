@@ -1,14 +1,14 @@
-﻿using Example;
+﻿using Examples;
 using Xunit;
 
-namespace Tests
+namespace Lecture02.Tests
 {
     public class PatternMatching
     {
         [Fact]
         public void WithoutPatternMatchingTest()
         {
-            var unknownCat = new UnknownCat();
+            var unknownCat = new WildCat();
             if (unknownCat is Cat)
             {
                 Assert.NotNull(unknownCat as Cat);
@@ -19,7 +19,7 @@ namespace Tests
         [Fact]
         public void PatternMatchingTest()
         {
-            var unknownCat = new UnknownCat();
+            var unknownCat = new WildCat();
             if (unknownCat is Cat cat)
             {
                 Assert.NotNull(cat);

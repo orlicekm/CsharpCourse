@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Example
+namespace Examples
 {
     /// <summary>
     ///     Invariance example

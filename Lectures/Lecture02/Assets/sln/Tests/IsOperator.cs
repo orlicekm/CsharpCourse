@@ -1,14 +1,14 @@
-﻿using Example;
+﻿using Examples;
 using Xunit;
 
-namespace Tests
+namespace Lecture02.Tests
 {
     public class IsOperator
     {
         [Fact]
         public void IsOperatorTest()
         {
-            var unknownCat = new UnknownCat();
+            var unknownCat = new WildCat();
             Assert.False(unknownCat is Cat);
         }
     }

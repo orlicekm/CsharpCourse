@@ -1,14 +1,14 @@
-﻿using Example;
+﻿using Examples;
 using Xunit;
 
-namespace Tests
+namespace Lecture02.Tests
 {
     public class AsOperator
     {
         [Fact]
         public void AsOperatorTest()
         {
-            var unknownCat = new UnknownCat();
+            var unknownCat = new WildCat();
             Assert.Null(unknownCat as Cat);
         }
     }

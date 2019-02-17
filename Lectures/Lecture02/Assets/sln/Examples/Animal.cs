@@ -1,4 +1,4 @@
-﻿namespace Example
+﻿namespace Examples
 {
     public abstract class Animal
     {

@@ -1,8 +1,8 @@
 ﻿using System;
-using Example;
+using Examples;
 using Xunit;
 
-namespace Tests
+namespace Lecture02.Tests
 {
     public class DownCast
     {

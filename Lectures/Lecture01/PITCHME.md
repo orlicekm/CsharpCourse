@@ -78,14 +78,6 @@
 </div>
 
 ---
-
-@snap[midpoint span-100]
-
-## Introduction to Visual Studio
-
-@snapend
-
-+++
 @snap[north]
 ![](/Lectures/Lecture01/Assets/img/VisualStudioLogo.png)
 @snapend
@@ -265,8 +257,8 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 
 ---
 ## Why To Choose .NET?
-@snap[north-east span-10]
-![](/Lectures/Lecture01/Assets/img/Overview_small.png)
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
 
 * Productivity
@@ -342,8 +334,8 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 
 ---
 # .NET Platform
-@snap[north-east span-10]
-![](/Lectures/Lecture01/Assets/img/Overview_small.png)
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
 
 * Language interoperability
@@ -432,8 +424,8 @@ Team Explorer extension integrates GitFlow into your development workflow. It le
 
 ---
 # C# 101
-@snap[north-east span-10]
-![](/Lectures/Lecture01/Assets/img/Overview_small.png)
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
 
 * Identifiers

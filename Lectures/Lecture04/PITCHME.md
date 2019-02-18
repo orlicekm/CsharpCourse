@@ -11,18 +11,12 @@
 @snapend
 
 ---
-## Definitions
-* Software framework 
-* Database
-  * Microsoft SQL Local Database (MSSQLLocalDB)
-  * Persistence
-* ADO.NET
-* Object-relational mapping
-* Entity Framework
-
-@snap[south-east span+40]
-![](/Lectures/Assets/img/MagnifyingGlass.png)
-@snapend
+## Basic terms
+* **Software framework**
+* **Database**
+  * **Persistence**
+  * **Database types**
+  * **Object-relational mapping**
 
 +++
 ## Software framework
@@ -35,7 +29,7 @@
 
 +++
 ## Database
-* Large quantity of indexed digital information
+* **Persistent** data storage
 * Can be **searched**, **referenced**, **compared**, **changed** or otherwise manipulated
 * **Optimal speed** and **minimal processing expense**
 * **Components**
@@ -45,7 +39,22 @@
   * *Row* - **data** in a table is listed in rows (like rows of data in a spreadsheet)
 
 +++
-## Microsoft SQL LocalDB
+ROZSIRIT DATABAZU
+
++++
+### Persistence
+* **Official definition**
+  * *The continuance of an effect after its cause is removed*
+  * *Information survives after the process with which it was created has ended*
+* **In database context**
+  * *Data is available after application or system reboot*
+
+
++++
+## Database Types
+
++++
+### Microsoft SQL LocalDB
 * Feature of *SQL Server Express*
 * Targeted to developers
 * Minimal set of files necessary to start the SQL Server Database Engine
@@ -53,10 +62,48 @@
 * When connecting, the necessary SQL Server infrastructure is automatically created and started
 * Enabling the application to use the database without complex configuration tasks
 
+
++++ 
+## Object-relational mapping
+* *Programming technique*
+  * Converting data between incompatible type systems 
+  * Using object-oriented programming languages
+* Table row to the object
+* Creates *"virtual object database"*
+* Can be used from within the programming language
+
+@snap[east snap-100]
+![](/Lectures/Lecture04/Assets/img/ORM.jpg)
+@snapend
+
 +++
-## Persistence
-* *The continuance of an effect after its cause is removed*
-* *Data survives* after the process with which it was created has ended
+### Pros of Object Relation Mapping
+* *Abstract*
+* *Portable*
+* Writing code in *one language* (ORM takes care of vendor specific code by itself)
+* *Code reduction* (most of the time)
+* *Cache management*
+  * Entities are cached in memory (reducing load on the database)
+
++++
+### Cons of Object Relation Mapping
+* *Slow*
+* *Studying*
+  * Minimize the DBMS hits
+  * Reduce bad queries which hurts performance
+* *Limitations* complex queries are needed
+  * Sometimes is faster to write raw SQL
+
+---
+## Technologies used to connect to the database
+* **ADO.NET**
+* **Entity Framework** (used in this course)
+* **Dupper**
+* **nHibernate**
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 +++
 ## ADO.NET
@@ -77,18 +124,6 @@
 @[32-50]
 @[10-53]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Examples/SqlClientExample.cs)
-
-+++ 
-## Object-relational mapping
-* *Programming technique*
-  * Converting data between incompatible type systems 
-  * Using object-oriented programming languages
-* Creates *"virtual object database"*
-* Can be used from within the programming language
-
-@snap[east snap-100]
-![](/Lectures/Lecture04/Assets/img/ORM.jpg)
-@snapend
 
 ---
 ## Entity Framework (EF)

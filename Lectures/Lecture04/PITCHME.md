@@ -59,11 +59,11 @@
 
 +++
 ### CAP
-@img[snap-70](/Lectures/Lecture04/Assets/img/CAPtheorem.png)
+@img[span-70](/Lectures/Lecture04/Assets/img/CAPtheorem.png)
 
 +++
 ### CRUD
-![](/Lectures/Lecture04/Assets/img/CRUD.jpg)
+![](/Lectures/Lecture04/Assets/img/CRUD.png)
 
 +++
 ### Database Types
@@ -78,11 +78,11 @@
 * **Structured Query Language**
 * Communicate with a database
 * Standard language for relational database managment systems
-![](/Lectures/Lecture04/Assets/img/sqlstatement.png)
+@img[span-70](/Lectures/Lecture04/Assets/img/sqlstatement.png)
 
 
-@snap[east]
-![](/Lectures/Lecture04/Assets/img/sql.gif)
+@snap[east span-100]
+@img[span-70](/Lectures/Lecture04/Assets/img/sql.gif)
 @snapend
 
 +++

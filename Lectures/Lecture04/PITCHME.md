@@ -60,7 +60,7 @@
 +++
 ### CAP
 @snap[midpoint]
-![](/Lectures/Lecture04/Assets/img/CAPtheorem.png)
+@img[span-150](/Lectures/Lecture04/Assets/img/CAPtheorem.png)
 @snapend
 
 +++

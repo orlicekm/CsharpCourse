@@ -59,7 +59,9 @@
 
 +++
 ### CAP
-@img[span-50](/Lectures/Lecture04/Assets/img/CAPtheorem.png)
+@snap[midpoint]
+@img[span-70](/Lectures/Lecture04/Assets/img/CAPtheorem.png)
+@snapend
 
 +++
 ### Database Types

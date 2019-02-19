@@ -38,6 +38,7 @@
 * **Database management system (DBMS)**
   * System specifically designed to hold databases
 
++++
 ### Database components
 * *Schema* - collection of one or more tables
 * *Table* - contains multiple columns (similar to columns in a spreadsheet)

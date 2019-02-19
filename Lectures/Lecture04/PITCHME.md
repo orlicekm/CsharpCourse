@@ -59,15 +59,11 @@
 
 +++
 ### CAP
-@snap[midpoint]
-![](/Lectures/Lecture04/Assets/img/CAPtheorem.png)
-@snapend
+@img[snap-70](/Lectures/Lecture04/Assets/img/CAPtheorem.png)
 
 +++
 ### CRUD
-@snap[midpoint]
 ![](/Lectures/Lecture04/Assets/img/CRUD.jpg)
-@snapend
 
 +++
 ### Database Types

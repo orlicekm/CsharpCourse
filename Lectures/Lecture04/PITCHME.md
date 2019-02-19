@@ -17,7 +17,7 @@
   * Database components, types
   * Persistence
   * Object-relational mapping
-  * ACID, SQL, CAP, DBMS...
+  * ACID, SQL, CAP, CRUD, DBMS...
 
 ---
 ## Software framework
@@ -64,11 +64,26 @@
 @snapend
 
 +++
+### CRUD
+@snap[midpoint]
+![](/Lectures/Lecture04/Assets/img/CRUD.jpg)
+@snapend
+
++++
 ### Database Types
-* Single-File vs Multi-File databases
+* *Relational (SQL)* vs *NoSql* databases
+* *Single-File* vs *Multi-File* databases
+* *Object Oriented* databases
+![](/Lectures/Lecture04/Assets/img/SQLvsNOSQL.jpg)
+
 
 +++
 ### SQL
+* **Structured Query Language**
+* Communicate with a database
+* Standard language for relational database managment systems
+![](/Lectures/Lecture04/Assets/img/sqlstatement.png)
+
 
 @snap[east]
 ![](/Lectures/Lecture04/Assets/img/sql.gif)
@@ -349,6 +364,8 @@ Dupper vs Entity Framework
 ## Refences to used images:
 [EntityFrameworkTutorial.net](http://www.entityframeworktutorial.net/)  
 [The Inquisitive Singh](https://inquisitivesingh.wordpress.com)  
+[INTELLIPAAT.COM](https://intellipaat.com/)  
 [Computer Hope](https://www.computerhope.com)  
+[Wikipedia SQL](https://en.wikipedia.org/wiki/SQL)  
 [ResearchGate](https://www.researchgate.net/)  
 [Data36](https://data36.com/)

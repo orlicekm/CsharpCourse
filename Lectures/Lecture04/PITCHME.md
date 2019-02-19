@@ -59,7 +59,7 @@
 
 +++
 ### CAP
-![](/Lectures/Lecture04/Assets/img/CAPtheorem.png)
+@img[span-50](/Lectures/Lecture04/Assets/img/CAPtheorem.png)
 
 +++
 ### Database Types
@@ -68,8 +68,8 @@
 +++
 ### SQL
 
-@snap[west]
-![](/Lectures/Lecture04/Assets/img/SQL.gif)
+@snap[east]
+![](/Lectures/Lecture04/Assets/img/sql.gif)
 @snapend
 
 +++

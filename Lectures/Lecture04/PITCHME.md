@@ -82,7 +82,7 @@
 
 
 @snap[east span-70]
-@img[span-40](/Lectures/Lecture04/Assets/img/sql.gif)
+@img[span-50](/Lectures/Lecture04/Assets/img/sql.gif)
 @snapend
 
 +++

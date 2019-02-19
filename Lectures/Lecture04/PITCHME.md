@@ -14,11 +14,12 @@
 ## Basic terms
 * **Software framework**
 * **Database**
-  * **Persistence**
-  * **Database types**
-  * **Object-relational mapping**
+  * Database components, types
+  * Persistence
+  * Object-relational mapping
+  * ACID, SQL, CAP, DBMS...
 
-+++
+---
 ## Software framework
 * **Abstraction** providing **generic functionality**
 * Can be selectively changed by additional user-written code
@@ -27,19 +28,21 @@
   * Provides particular functionality as part of a larger software platform
     * To facilitate development of software applications
 
-+++
+---
 ## Database
 * **Persistent** data storage
+* **Store**, **organize**, and **process information**
+  * Query, sort, transform
 * Can be **searched**, **referenced**, **compared**, **changed** or otherwise manipulated
 * **Optimal speed** and **minimal processing expense**
-* **Components**
-  * *Schema* - collection of one or more tables
-  * *Table* - contains multiple columns (similar to columns in a spreadsheet)
-  * *Column* - contains one of several types of data
-  * *Row* - **data** in a table is listed in rows (like rows of data in a spreadsheet)
+* **Database management system (DBMS)**
+  * System specifically designed to hold databases
 
-+++
-ROZSIRIT DATABAZU
+### Database components
+* *Schema* - collection of one or more tables
+* *Table* - contains multiple columns (similar to columns in a spreadsheet)
+* *Column* - contains one of several types of data
+* *Row* - **data** in a table is listed in rows (like rows of data in a spreadsheet)
 
 +++
 ### Persistence
@@ -49,9 +52,24 @@ ROZSIRIT DATABAZU
 * **In database context**
   * *Data is available after application or system reboot*
 
++++
+### ACID
+![](/Lectures/Lecture04/Assets/img/acid.jpg)
 
 +++
-## Database Types
+### CAP
+![](/Lectures/Lecture04/Assets/img/CAPtheorem.png)
+
++++
+### Database Types
+* Single-File vs Multi-File databases
+
++++
+### SQL
+
+@snap[west]
+![](/Lectures/Lecture04/Assets/img/SQL.gif)
+@snapend
 
 +++
 ### Microsoft SQL LocalDB
@@ -327,4 +345,7 @@ Dupper vs Entity Framework
 +++
 ## Refences to used images:
 [EntityFrameworkTutorial.net](http://www.entityframeworktutorial.net/)  
-[Computer Hope](https://www.computerhope.com)
+[The Inquisitive Singh](https://inquisitivesingh.wordpress.com)  
+[Computer Hope](https://www.computerhope.com)  
+[ResearchGate](https://www.researchgate.net/)  
+[Data36](https://data36.com/)

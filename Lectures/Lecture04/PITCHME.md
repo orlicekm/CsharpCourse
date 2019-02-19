@@ -81,7 +81,7 @@
 @img[span-70](/Lectures/Lecture04/Assets/img/sqlstatement.png)
 
 
-@snap[east span-45]
+@snap[east span-60]
 @img[span-40](/Lectures/Lecture04/Assets/img/sql.gif)
 @snapend
 

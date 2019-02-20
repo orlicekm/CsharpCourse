@@ -383,7 +383,7 @@ public class Student
 @snapped
 
 +++
-### Performance Benchmarking - Methodology  - Schema
+### Performance Benchmarking Methodology  - Schema
 ![](/Lectures/Lecture04/Assets/img/Benchmarking-schema.png)
 
 +++
@@ -395,7 +395,7 @@ public class Student
   * How many *players per team* you want for each test
 
 +++
-### Performance Benchmarking - Methodology  - Queries
+### Performance Benchmarking Methodology  - Queries
 * **Queries**
   * Player by ID
   * Players per Team
@@ -406,7 +406,7 @@ public class Student
       * Average them out and get a set of numbers that should show which of the ORMs is the fastest
 
 +++
-### Performance Benchmarking - Test class - Entity Framework
+### Performance Benchmarking test class - Entity Framework
 ```C#
 public class EntityFramework : ITestSignature
 {
@@ -447,9 +447,189 @@ public class EntityFramework : ITestSignature
     }
 }
 ```
-@[20]
+@[3-13]
+@[15-25]
+@[27-37]
 [Code sample](https://github.com/exceptionnotfound/ORMBenchmarksTest/blob/master/ORMBenchmarksTest/DataAccess/EntityFramework.cs)
 
++++
+### Performance Benchmarking test class - ADO.NET
+```C#
+public class ADONET : ITestSignature
+{
+    public long GetPlayerByID(int id)
+    {
+        Stopwatch watch = new Stopwatch();
+        watch.Start();
+        using(SqlConnection conn = new SqlConnection(Constants.ConnectionString))
+        {
+            conn.Open();
+            using(SqlDataAdapter adapter = new SqlDataAdapter("SELECT Id, FirstName, LastName, DateOfBirth, TeamId FROM Player WHERE Id = @ID", conn))
+            {
+                adapter.SelectCommand.Parameters.Add(new SqlParameter("@ID", id));
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+            }
+        }
+        watch.Stop();
+        return watch.ElapsedMilliseconds;
+    }
+
+    public long GetPlayersForTeam(int teamId)
+    {
+        Stopwatch watch = new Stopwatch();
+        watch.Start();
+        using(SqlConnection conn = new SqlConnection(Constants.ConnectionString))
+        {
+            conn.Open();
+            using(SqlDataAdapter adapter = new SqlDataAdapter("SELECT Id, FirstName, LastName, DateOfBirth, TeamId FROM Player WHERE TeamId = @ID", conn))
+            {
+                adapter.SelectCommand.Parameters.Add(new SqlParameter("@ID", teamId));
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+            }
+        }
+        watch.Stop();
+        return watch.ElapsedMilliseconds;
+    }
+
+    public long GetTeamsForSport(int sportId)
+    {
+        Stopwatch watch = new Stopwatch();
+        watch.Start();
+        using(SqlConnection conn = new SqlConnection(Constants.ConnectionString))
+        {
+            conn.Open();
+            using(SqlDataAdapter adapter = new SqlDataAdapter("SELECT p.Id, p.FirstName, p.LastName, p.DateOfBirth, p.TeamId, t.Id as TeamId, t.Name, t.SportId FROM Player p INNER JOIN Team t ON p.TeamId = t.Id WHERE t.SportId = @ID", conn))
+            {
+                adapter.SelectCommand.Parameters.Add(new SqlParameter("@ID", sportId));
+                DataTable table = new DataTable();
+                adapter.Fill(table);
+            }
+        }
+        watch.Stop();
+        return watch.ElapsedMilliseconds;
+    }
+}
+```
+@[3-19]
+@[21-37]
+@[39-55]
+[Code sample](https://github.com/exceptionnotfound/ORMBenchmarksTest/blob/master/ORMBenchmarksTest/DataAccess/ADONET.cs)
+
++++
+### Performance Benchmarking test class - Dapper
+```C#
+public class Dapper : ITestSignature
+{
+    public long GetPlayerByID(int id)
+    {
+        Stopwatch watch = new Stopwatch();
+        watch.Start();
+        using (SqlConnection conn = new SqlConnection(Constants.ConnectionString))
+        {
+            conn.Open();
+            var player = conn.Query<PlayerDTO>("SELECT Id, FirstName, LastName, DateOfBirth, TeamId FROM Player WHERE Id = @ID", new{ ID = id});
+        }
+        watch.Stop();
+        return watch.ElapsedMilliseconds;
+    }
+
+    public long GetPlayersForTeam(int teamId)
+    {
+        Stopwatch watch = new Stopwatch();
+        watch.Start();
+        using (SqlConnection conn = new SqlConnection(Constants.ConnectionString))
+        {
+            conn.Open();
+            var players = conn.Query<List<PlayerDTO>>("SELECT Id, FirstName, LastName, DateOfBirth, TeamId FROM Player WHERE TeamId = @ID", new { ID = teamId });
+        }
+        watch.Stop();
+        return watch.ElapsedMilliseconds;
+    }
+
+    public long GetTeamsForSport(int sportId)
+    {
+        Stopwatch watch = new Stopwatch();
+        watch.Start();
+        using (SqlConnection conn = new SqlConnection(Constants.ConnectionString))
+        {
+            conn.Open();
+            var players = conn.Query<PlayerDTO, TeamDTO, PlayerDTO>("SELECT p.Id, p.FirstName, p.LastName, p.DateOfBirth, p.TeamId, t.Id as TeamId, t.Name, t.SportId FROM Team t "
+                + "INNER JOIN Player p ON t.Id = p.TeamId WHERE t.SportId = @ID", (player, team) => { return player; }, splitOn: "TeamId", param: new { ID = sportId });
+        }
+        watch.Stop();
+        return watch.ElapsedMilliseconds;
+    }
+}
+```
+@[3-14]
+@[16-27]
+@[29-41]
+[Code sample](https://github.com/exceptionnotfound/ORMBenchmarksTest/blob/master/ORMBenchmarksTest/DataAccess/Dapper.cs)
+
++++
+### Performance Benchmarking results
+* Following results are for
+  * **10 iterations** each containg
+    * **8 sports**
+    * **30 teams** in each sport
+    * **100 players** per team
+
++++
+### Performance Benchmarking results - Entity Framework
+| RUN     | PLAYER BY ID | PLAYERS FOR TEAM | TEAMS FOR SPORT |
+|---------|--------------|------------------|-----------------|
+| 1       | 1.64ms       | 4.57ms           | 127.75ms        |
+| 2       | 0.56ms       | 3.47ms           | 112.5ms         |
+| 3       | 0.17ms       | 3.27ms           | 119.12ms        |
+| 4       | 1.01ms       | 3.27ms           | 106.75ms        |
+| 5       | 1.15ms       | 3.47ms           | 107.25ms        |
+| 6       | 1.14ms       | 3.27ms           | 117.25ms        |
+| 7       | 0.67ms       | 3.27ms           | 107.25ms        |
+| 8       | 0.55ms       | 3.27ms           | 110.62ms        |
+| 9       | 0.37ms       | 4.4ms            | 109.62ms        |
+| 10      | 0.44ms       | 3.43ms           | 116.25ms        |
+| Average | 0.77ms       | 3.57ms           | 113.45ms        |
+
+
++++
+### Performance Benchmarking results - ADO.NET
+| RUN     | PLAYER BY ID | PLAYERS FOR TEAM | TEAMS FOR SPORT |
+|---------|--------------|------------------|-----------------|
+| 1       | 0.01ms       | 1.03ms           | 10.25ms         |
+| 2       | 0ms          | 1ms              | 11ms            |
+| 3       | 0.1ms        | 1.03ms           | 9.5ms           |
+| 4       | 0ms          | 1ms              | 9.62ms          |
+| 5       | 0ms          | 1.07ms           | 7.62ms          |
+| 6       | 0.02ms       | 1ms              | 7.75ms          |
+| 7       | 0ms          | 1ms              | 7.62ms          |
+| 8       | 0ms          | 1ms              | 8.12ms          |
+| 9       | 0ms          | 1ms              | 8ms             |
+| 10      | 0ms          | 1.17ms           | 8.88ms          |
+| Average | 0.013ms      | 1.03ms           | 8.84ms          |
+
++++
+### Performance Benchmarking results - Dapper
+| RUN     | PLAYER BY ID | PLAYERS FOR TEAM | TEAMS FOR SPORT |
+|---------|--------------|------------------|-----------------|
+| 1       | 0.38ms       | 1.03ms           | 9.12ms          |
+| 2       | 0.03ms       | 1ms              | 8ms             |
+| 3       | 0.02ms       | 1ms              | 7.88ms          |
+| 4       | 0ms          | 1ms              | 8.12ms          |
+| 5       | 0ms          | 1.07ms           | 7.62ms          |
+| 6       | 0.02ms       | 1ms              | 7.75ms          |
+| 7       | 0ms          | 1ms              | 7.62ms          |
+| 8       | 0ms          | 1.02ms           | 7.62ms          |
+| 9       | 0ms          | 1ms              | 7.88ms          |
+| 10      | 0.02ms       | 1ms              | 7.75ms          |
+| Average | 0.047ms      | 1.01ms           | 7.94ms          |
+
++++
+### Performance Benchmarking analysis
+
++++
+### Performance Benchmarking conclusion
 
 ---
 ## References:

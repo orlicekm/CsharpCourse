@@ -628,7 +628,7 @@ public class Dapper : ITestSignature
 +++
 ### Performance Benchmarking analysis and conclusion
 * *Entity Framework* in *basic configuration* is 3-10 times **slower** than either *ADO.NET* or *Dapper*
-* *Dapper.NET* is faster than *Entity Framework* and slightly faster than straight *ADO.NET*
+* *Dapper.NET* is unquestionably **faster** than *Entity Framework* and slightly faster than straight *ADO.NET*
 
 ---
 ## References:

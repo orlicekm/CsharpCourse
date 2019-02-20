@@ -130,8 +130,10 @@
 ## Technologies used to connect to the database
 * **ADO.NET**
 * **Entity Framework** (used in this course)
-* **Dupper**
-* **nHibernate**
+* **Dapper**
+* **NHibernate**
+* ⋮
+* [NuGetMustHaves.com - Top ORM Packages](https://nugetmusthaves.com/Category/ORM)
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
@@ -340,19 +342,123 @@ public class Student
 ## Entity Relationships
 
 
-
 ---
-## Dupper
+## Dapper
+* Simple object mapper for .NET
+* **King of Micro ORM**
+* Virtually as fast as using a raw ADO.NET data reader
+* **Extends the IDbConnection** by providing useful extension methods to query your database
+* `PM> Install-Package Dapper`
+* [Tutorial](https://dapper-tutorial.net/]
 
 +++
-Dupper vs Entity Framework
+### How Dapper works
+* Works with **any database provider** since **there is no DB specific implementation**
+* Three step process:
+  1. *Create an `IDbConnection` object**
+  2. *Write a query to perform CRUD operations*
+  3. *Pass query as a parameter in Execute method*
+
+...
+
+---
+## NHibernate
+* Object-relational mapper
+* **Open source**
+* Uses XML files and attributes for configuration
+* Functionality is simmilar to Entity Framework
+* `PM> Install-Package NHibernate`
+* [Documentation](https://nhibernate.info/doc/index.html)
+* [GitHub](https://github.com/nhibernate/nhibernate-core)
+
+---
+## ORM Performance Benchmarking
+* Tested technologies:
+  * **Entity Framework** representing "big" ORM
+  * **Dapper** representing "micro" ORM
+  * **ADO.NET** for straight queries
+
+@snap[south-east]
+[Source](https://github.com/exceptionnotfound/ORMBenchmarksTest)
+@snapped
+
++++
+### Performance Benchmarking - Methodology  - Schema
+![](/Lectures/Lecture04/Assets/img/Benchmarking-schema.png)
+
++++
+### Performance Benchmarking - Methodology  - Sample data
+* Used algorithms to create
+* You **can select**
+  * How many *sports* you want for each test
+  * How many *teams per sport* you want for each test
+  * How many *players per team* you want for each test
+
++++
+### Performance Benchmarking - Methodology  - Queries
+* **Queries**
+  * Player by ID
+  * Players per Team
+  * Teams per Sport (including Players)
+* Run the **test against all data** in the database
+  * **Average the total time** it takes to execute the query
+    * **Multiple runs** of this over the same data
+      * Average them out and get a set of numbers that should show which of the ORMs is the fastest
+
++++
+### Performance Benchmarking - Test class - Entity Framework
+```C#
+public class EntityFramework : ITestSignature
+{
+    public long GetPlayerByID(int id)
+    {
+        Stopwatch watch = new Stopwatch();
+        watch.Start();
+        using (SportContext context = new SportContext())
+        {
+            var player = context.Players.Where(x => x.Id == id).First();
+        }
+        watch.Stop();
+        return watch.ElapsedMilliseconds;
+    }
+
+    public long GetPlayersForTeam(int teamId)
+    {
+        Stopwatch watch = new Stopwatch();
+        watch.Start();
+        using (SportContext context = new SportContext())
+        {
+            var players = context.Players.Where(x => x.TeamId == teamId).ToList();
+        }
+        watch.Stop();
+        return watch.ElapsedMilliseconds;
+    }
+
+    public long GetTeamsForSport(int sportId)
+    {
+        Stopwatch watch = new Stopwatch();
+        watch.Start();
+        using (SportContext context = new SportContext())
+        {
+            var players = context.Teams.Include(x=>x.Players).Where(x => x.SportId == sportId).ToList();
+        }
+        watch.Stop();
+        return watch.ElapsedMilliseconds;
+    }
+}
+```
+@[20]
+[Code sample](https://github.com/exceptionnotfound/ORMBenchmarksTest/blob/master/ORMBenchmarksTest/DataAccess/EntityFramework.cs)
+
 
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [EntityFrameworkTutorial.net](http://www.entityframeworktutorial.net/)  
+[Dapper-tutorial.net](https://dapper-tutorial.net/)
 [Microsoft documentation](https://docs.microsoft.com)  
 [Entity Framework GitHub](https://github.com/aspnet/EntityFrameworkCore)  
+[NuGetMustHaves.com](https://nugetmusthaves.com/)  
 [Computer Hope](https://www.computerhope.com)  
 [Wikipedia](https://en.wikipedia.org)
 
@@ -360,6 +466,7 @@ Dupper vs Entity Framework
 ## Refences to used images:
 [EntityFrameworkTutorial.net](http://www.entityframeworktutorial.net/)  
 [The Inquisitive Singh](https://inquisitivesingh.wordpress.com)  
+[Exception Not Found](https://exceptionnotfound.net/)  
 [INTELLIPAAT.COM](https://intellipaat.com/)  
 [Computer Hope](https://www.computerhope.com)  
 [Wikipedia SQL](https://en.wikipedia.org/wiki/SQL)  

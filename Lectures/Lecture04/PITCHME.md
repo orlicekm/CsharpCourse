@@ -580,50 +580,50 @@ public class Dapper : ITestSignature
 ### Performance Benchmarking results - Entity Framework
 | RUN     | PLAYER BY ID | PLAYERS FOR TEAM | TEAMS FOR SPORT |
 |---------|--------------|------------------|-----------------|
-| 1       | 1.64ms       | 4.57ms           | 127.75ms        |
-| 2       | 0.56ms       | 3.47ms           | 112.5ms         |
-| 3       | 0.17ms       | 3.27ms           | 119.12ms        |
-| 4       | 1.01ms       | 3.27ms           | 106.75ms        |
-| 5       | 1.15ms       | 3.47ms           | 107.25ms        |
-| 6       | 1.14ms       | 3.27ms           | 117.25ms        |
-| 7       | 0.67ms       | 3.27ms           | 107.25ms        |
-| 8       | 0.55ms       | 3.27ms           | 110.62ms        |
-| 9       | 0.37ms       | 4.4ms            | 109.62ms        |
-| 10      | 0.44ms       | 3.43ms           | 116.25ms        |
-| Average | 0.77ms       | 3.57ms           | 113.45ms        |
+| **1**       | 1.64ms       | 4.57ms           | 127.75ms        |
+| **2**       | 0.56ms       | 3.47ms           | 112.5ms         |
+| **3**       | 0.17ms       | 3.27ms           | 119.12ms        |
+| **4**       | 1.01ms       | 3.27ms           | 106.75ms        |
+| **5**       | 1.15ms       | 3.47ms           | 107.25ms        |
+| **6**       | 1.14ms       | 3.27ms           | 117.25ms        |
+| **7**       | 0.67ms       | 3.27ms           | 107.25ms        |
+| **8**       | 0.55ms       | 3.27ms           | 110.62ms        |
+| **9**       | 0.37ms       | 4.4ms            | 109.62ms        |
+| **10**      | 0.44ms       | 3.43ms           | 116.25ms        |
+| **Average** | **0.77ms**       | **3.57ms**           | **113.45ms**        |
 
 
 +++
 ### Performance Benchmarking results - ADO.NET
 | RUN     | PLAYER BY ID | PLAYERS FOR TEAM | TEAMS FOR SPORT |
 |---------|--------------|------------------|-----------------|
-| 1       | 0.01ms       | 1.03ms           | 10.25ms         |
-| 2       | 0ms          | 1ms              | 11ms            |
-| 3       | 0.1ms        | 1.03ms           | 9.5ms           |
-| 4       | 0ms          | 1ms              | 9.62ms          |
-| 5       | 0ms          | 1.07ms           | 7.62ms          |
-| 6       | 0.02ms       | 1ms              | 7.75ms          |
-| 7       | 0ms          | 1ms              | 7.62ms          |
-| 8       | 0ms          | 1ms              | 8.12ms          |
-| 9       | 0ms          | 1ms              | 8ms             |
-| 10      | 0ms          | 1.17ms           | 8.88ms          |
-| Average | 0.013ms      | 1.03ms           | 8.84ms          |
+| **1**       | 0.01ms       | 1.03ms           | 10.25ms         |
+| **2**       | 0ms          | 1ms              | 11ms            |
+| **3**       | 0.1ms        | 1.03ms           | 9.5ms           |
+| **4**       | 0ms          | 1ms              | 9.62ms          |
+| **5**       | 0ms          | 1.07ms           | 7.62ms          |
+| **6**       | 0.02ms       | 1ms              | 7.75ms          |
+| **7**       | 0ms          | 1ms              | 7.62ms          |
+| **8**       | 0ms          | 1ms              | 8.12ms          |
+| **9**       | 0ms          | 1ms              | 8ms             |
+| **10**      | 0ms          | 1.17ms           | 8.88ms          |
+| **Average** | **0.013ms**      | **1.03ms**           | **8.84ms**          |
 
 +++
 ### Performance Benchmarking results - Dapper
 | RUN     | PLAYER BY ID | PLAYERS FOR TEAM | TEAMS FOR SPORT |
 |---------|--------------|------------------|-----------------|
-| 1       | 0.38ms       | 1.03ms           | 9.12ms          |
-| 2       | 0.03ms       | 1ms              | 8ms             |
-| 3       | 0.02ms       | 1ms              | 7.88ms          |
-| 4       | 0ms          | 1ms              | 8.12ms          |
-| 5       | 0ms          | 1.07ms           | 7.62ms          |
-| 6       | 0.02ms       | 1ms              | 7.75ms          |
-| 7       | 0ms          | 1ms              | 7.62ms          |
-| 8       | 0ms          | 1.02ms           | 7.62ms          |
-| 9       | 0ms          | 1ms              | 7.88ms          |
-| 10      | 0.02ms       | 1ms              | 7.75ms          |
-| Average | 0.047ms      | 1.01ms           | 7.94ms          |
+| **1**       | 0.38ms       | 1.03ms           | 9.12ms          |
+| **2**       | 0.03ms       | 1ms              | 8ms             |
+| **3**       | 0.02ms       | 1ms              | 7.88ms          |
+| **4**       | 0ms          | 1ms              | 8.12ms          |
+| **5**       | 0ms          | 1.07ms           | 7.62ms          |
+| **6**       | 0.02ms       | 1ms              | 7.75ms          |
+| **7**       | 0ms          | 1ms              | 7.62ms          |
+| **8**       | 0ms          | 1.02ms           | 7.62ms          |
+| **9**       | 0ms          | 1ms              | 7.88ms          |
+| **10**      | 0.02ms       | 1ms              | 7.75ms          |
+| **Average** | **0.047ms**      | **1.01ms**           | **7.94ms**          |
 
 +++
 ### Performance Benchmarking analysis

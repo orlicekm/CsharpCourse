@@ -33,7 +33,7 @@
 * **Persistent** data storage
 * **Store**, **organize**, and **process information**
   * Query, sort, transform
-* Can be **searched**, **referenced**, **compared**, **changed** or otherwise manipulated
+* Can be **searched**, **referenced**, **compared**, **changed** or differently manipulated
 * **Optimal speed** and **minimal processing expense**
 * **Database management system (DBMS)**
   * System specifically designed to hold databases
@@ -132,7 +132,7 @@
   * Minimize the DBMS hits
   * Reduce bad queries which hurts performance
 * **Limitations** complex queries are needed
-  * Sometimes is faster to write raw SQL
+  * Sometimes it is faster to write raw SQL
 
 ---
 ## Technologies used to connect to the database
@@ -283,7 +283,7 @@
 +++
 ### Install Tools
 * To execute EF Core commands
-* Make it easier to perform several EF Core-related tasks in your project at design time
+* Makes it easier to perform several EF Core-related tasks in your project at design time
   * E.g. migrations, scaffolding etc.
 * Available as NuGet packages
   * For **Package Manager Console** (PMC) as `Microsoft.EntityFrameworkCore.Tools`
@@ -310,20 +310,24 @@
 @snapend
 
 +++
+### Example schema
+![](/Lectures/Lecture04/Assets/img/draw/Database.png)
+
++++
+### Example schema
+![](/Lectures/Lecture04/Assets/img/draw/Database-modified.png)
+
++++
 ### Entity
 * `class` in the domain of your application
 * Included as a `DbSet<TEntity>` type property in the derived context class
 * EF API **maps each entity to a table** and **each property of an entity to a column** in the database
 
 ```C#
-public class Student
+public class StudentEntity
 {
-    public int StudentID { get; set; }
-    public string StudentName { get; set; }
-    public DateTime? DateOfBirth { get; set; }
-    public byte[]  Photo { get; set; }
-    public decimal Height { get; set; }
-    public float Weight { get; set; }
+    public Guid Id { get; set; } = Guid.NewGuid();
+    public string Name { get; set; }
 }
 ```
 

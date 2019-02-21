@@ -9,7 +9,9 @@ namespace EntityFramework.DAL.Entities
         public string City { get; set; }
         public string State { get; set; }
         public string Country { get; set; }
-        
+
+
+        public Guid StudentId { get; set; }
         public StudentEntity Student { get; set; }
     }
 }

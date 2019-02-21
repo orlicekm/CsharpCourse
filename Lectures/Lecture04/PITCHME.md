@@ -98,17 +98,17 @@
 ### Microsoft SQL LocalDB
 * Feature of *SQL Server Express*
 * Targeted to developers
-* Minimal set of files necessary to start the SQL Server Database Engine
+* **Minimal set of files necessary** to start the SQL Server Database Engine
 * Initiate a connection using a special *connection string*
-* When connecting, the necessary SQL Server infrastructure is automatically created and started
-* Enabling the application to use the database without complex configuration tasks
+* When connecting, the **necessary SQL Server infrastructure is automatically created and started**
+* Enabling the application to **use the database without complex configuration** tasks
 
 +++ 
 ## Object-relational mapping
 * *Programming technique*
-  * Converting data between incompatible type systems 
+  * **Converting data between incompatible type systems**
   * Using object-oriented programming languages
-* Table row to the object
+* *Table row to the object**
 * Creates *"virtual object database"*
 * Can be used from within the programming language
 
@@ -118,20 +118,20 @@
 
 +++
 ### Pros of Object Relation Mapping
-* *Abstract*
-* *Portable*
-* Writing code in *one language* (ORM takes care of vendor specific code by itself)
-* *Code reduction* (most of the time)
-* *Cache management*
+* **Abstract**
+* **Portable**
+* Writing code in **one language** (ORM takes care of vendor specific code by itself)
+* **Code reduction** (most of the time)
+* **Cache management**
   * Entities are cached in memory (reducing load on the database)
 
 +++
 ### Cons of Object Relation Mapping
-* *Slow*
-* *Studying*
+* **Slow**
+* **Studying**
   * Minimize the DBMS hits
   * Reduce bad queries which hurts performance
-* *Limitations* complex queries are needed
+* **Limitations** complex queries are needed
   * Sometimes is faster to write raw SQL
 
 ---
@@ -149,12 +149,15 @@
 
 +++
 ## ADO.NET
-* Used before Entity Framework
-* Set of classes that expose data access services
-  * SqlClient (`System.Data.SqlClient`)
-  * OleDb (`System.Data.OleDb`)
-  * Odbc (`System.Data.Odbc`)
+* Set of classes that **expose data access services
+  * *SqlClient* (`System.Data.SqlClient`)
+  * *OleDb* (`System.Data.OleDb`)
+  * *Odbc* (`System.Data.Odbc`)
   * ⋮
+* Providing **access to relational data, XML, and application data**
+* Supports a variety of development needs
+  * Creation of front-end **database clients**
+  * Middle-tier business objects used by applications, tools, languages, or Internet browsers
 
 +++?code=/Lectures/Lecture04/Assets/sln/Examples/SqlClientExample.cs&lang=C#&title=ADO.NET SqlClient Sample
 @[10-53]
@@ -172,7 +175,7 @@
 * **Official definition:** *“Entity Framework is an object-relational mapper (ORM) that enables .NET developers to work with a database using .NET objects. It eliminates the need for most of the data-access code that developers usually need to write.”*
 * **Object-relational mapping framework**
 * By Microsoft
-* Enhancement to ADO.NET
+* Enhancement to *ADO.NET*
 * To automate all database related activities for your application
 * Higher level of abstraction when dealing with data
 * Enables to work with data using objects without focusing on the underlying database
@@ -292,8 +295,10 @@
 
 +++
 ### Install Design
-* Shared design-time components for Entity Framework Core tools
-* 
+* Shared **design-time components** for Entity Framework Core tools
+* Package mannager console cmdlets like `Add-Migration`, `dotnet ef` & `ef.exe`
+* Needed for **Migrations** or **Reverse Engineering**
+* NuGet package `Microsoft.EntityFrameworkCore.Design`
 
 ---
 ## Basic concepts

@@ -349,7 +349,7 @@ public class Student
 * Virtually as fast as using a raw ADO.NET data reader
 * **Extends the IDbConnection** by providing useful extension methods to query your database
 * `PM> Install-Package Dapper`
-* [Tutorial](https://dapper-tutorial.net/]
+* [Tutorial](https://dapper-tutorial.net)
 
 +++
 ### How Dapper works
@@ -360,6 +360,11 @@ public class Student
   3. *Pass query as a parameter in Execute method*
 
 ...
+
+
++++
+## Dapper Plus
+TODO
 
 ---
 ## NHibernate

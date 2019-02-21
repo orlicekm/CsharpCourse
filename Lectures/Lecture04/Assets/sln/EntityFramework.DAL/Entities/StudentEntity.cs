@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Sample.DAL.Entities
+namespace EntityFramework.DAL.Entities
 {
     public class StudentEntity
     {

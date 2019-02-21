@@ -1,7 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Sample.DAL.Entities;
+﻿using EntityFramework.DAL.Entities;
+using Microsoft.EntityFrameworkCore;
 
-namespace Sample.DAL
+namespace EntityFramework.DAL
 {
         public class SchoolDbContext : DbContext
         {

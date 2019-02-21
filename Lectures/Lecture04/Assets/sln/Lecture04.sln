@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{84901D16-8A2F-4E2A-8E04-7C21E988CE92}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{84901D16-8A2F-4E2A-8E04-7C21E988CE92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples", "Examples\Examples.csproj", "{7DFB8C8F-924A-4953-A5D3-C9578CECF298}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples", "Examples\Examples.csproj", "{7DFB8C8F-924A-4953-A5D3-C9578CECF298}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.DAL", "Examples.DAL\Examples.DAL.csproj", "{CBE4B73B-5FC6-4181-B8DD-74F908725E60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework.DAL", "EntityFramework.DAL\EntityFramework.DAL.csproj", "{CBE4B73B-5FC6-4181-B8DD-74F908725E60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

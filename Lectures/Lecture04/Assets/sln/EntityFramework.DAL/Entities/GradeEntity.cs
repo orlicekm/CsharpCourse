@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace Sample.DAL.Entities
+namespace EntityFramework.DAL.Entities
 {
-    public class CourseEntity
+    public class GradeEntity
     {
         public Guid Id { get; set; } = Guid.NewGuid();
         public string Name { get; set; }
-        public string Description { get; set; }
+        public string Section { get; set; }
     }
 }

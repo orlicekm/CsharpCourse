@@ -313,6 +313,7 @@
 ### Entity
 * `class` in the domain of your application
 * Included as a `DbSet<TEntity>` type property in the derived context class
+* EF API **maps each entity to a table** and **each property of an entity to a column** in the database
 
 ```C#
 public class Student

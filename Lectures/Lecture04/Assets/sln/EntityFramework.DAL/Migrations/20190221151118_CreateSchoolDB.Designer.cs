@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntityFramework.DAL.Migrations
 {
     [DbContext(typeof(SchoolDbContext))]
-    [Migration("20190221030709_CreateSchoolDB")]
+    [Migration("20190221151118_CreateSchoolDB")]
     partial class CreateSchoolDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -78,11 +78,9 @@ namespace EntityFramework.DAL.Migrations
 
                     b.Property<Guid>("CourseId");
 
-                    b.Property<Guid?>("CouseId");
-
                     b.HasKey("StudentId", "CourseId");
 
-                    b.HasIndex("CouseId");
+                    b.HasIndex("CourseId");
 
                     b.ToTable("StudentCourses");
                 });
@@ -113,9 +111,10 @@ namespace EntityFramework.DAL.Migrations
 
             modelBuilder.Entity("EntityFramework.DAL.Entities.StudentCourseEntity", b =>
                 {
-                    b.HasOne("EntityFramework.DAL.Entities.CourseEntity", "Couse")
+                    b.HasOne("EntityFramework.DAL.Entities.CourseEntity", "Course")
                         .WithMany("StudentCourses")
-                        .HasForeignKey("CouseId");
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("EntityFramework.DAL.Entities.StudentEntity", "Student")
                         .WithMany("StudentCourses")

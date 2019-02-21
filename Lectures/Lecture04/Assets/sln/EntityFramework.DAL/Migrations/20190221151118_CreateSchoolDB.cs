@@ -79,18 +79,17 @@ namespace EntityFramework.DAL.Migrations
                 columns: table => new
                 {
                     StudentId = table.Column<Guid>(nullable: false),
-                    CourseId = table.Column<Guid>(nullable: false),
-                    CouseId = table.Column<Guid>(nullable: true)
+                    CourseId = table.Column<Guid>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_StudentCourses", x => new { x.StudentId, x.CourseId });
                     table.ForeignKey(
-                        name: "FK_StudentCourses_Courses_CouseId",
-                        column: x => x.CouseId,
+                        name: "FK_StudentCourses_Courses_CourseId",
+                        column: x => x.CourseId,
                         principalTable: "Courses",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_StudentCourses_Students_StudentId",
                         column: x => x.StudentId,
@@ -106,9 +105,9 @@ namespace EntityFramework.DAL.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                name: "IX_StudentCourses_CouseId",
+                name: "IX_StudentCourses_CourseId",
                 table: "StudentCourses",
-                column: "CouseId");
+                column: "CourseId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Students_GradeId",

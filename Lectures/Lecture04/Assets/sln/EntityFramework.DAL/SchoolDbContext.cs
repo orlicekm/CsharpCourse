@@ -12,16 +12,16 @@ namespace EntityFramework.DAL
             public DbSet<StudentCourseEntity> StudentCourses { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-            {
-                optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;
-                Initial Catalog = School;
-                MultipleActiveResultSets = True;
-                Integrated Security = True; ");
-            }
+        {
+            optionsBuilder.UseSqlServer(@"Data Source=(LocalDB)\MSSQLLocalDB;
+            Initial Catalog = School;
+            MultipleActiveResultSets = True;
+            Integrated Security = True; ");
+        }
 
-            protected override void OnModelCreating(ModelBuilder modelBuilder)
-            {
-                modelBuilder.Entity<StudentCourseEntity>().HasKey(sc => new { sc.StudentId, sc.CourseId });
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<StudentCourseEntity>().HasKey(sc => new { sc.StudentId, sc.CourseId });
         }
     }
 }

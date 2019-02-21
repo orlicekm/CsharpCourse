@@ -7,6 +7,6 @@ namespace EntityFramework.DAL.Entities
         public Guid StudentId { get; set; }
         public StudentEntity Student { get; set; }
         public Guid CourseId { get; set; }
-        public CourseEntity Couse { get; set; }
+        public CourseEntity Course { get; set; }
     }
 }

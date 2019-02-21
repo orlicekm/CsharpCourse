@@ -76,11 +76,9 @@ namespace EntityFramework.DAL.Migrations
 
                     b.Property<Guid>("CourseId");
 
-                    b.Property<Guid?>("CouseId");
-
                     b.HasKey("StudentId", "CourseId");
 
-                    b.HasIndex("CouseId");
+                    b.HasIndex("CourseId");
 
                     b.ToTable("StudentCourses");
                 });
@@ -111,9 +109,10 @@ namespace EntityFramework.DAL.Migrations
 
             modelBuilder.Entity("EntityFramework.DAL.Entities.StudentCourseEntity", b =>
                 {
-                    b.HasOne("EntityFramework.DAL.Entities.CourseEntity", "Couse")
+                    b.HasOne("EntityFramework.DAL.Entities.CourseEntity", "Course")
                         .WithMany("StudentCourses")
-                        .HasForeignKey("CouseId");
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("EntityFramework.DAL.Entities.StudentEntity", "Student")
                         .WithMany("StudentCourses")

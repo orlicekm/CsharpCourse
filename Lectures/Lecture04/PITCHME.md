@@ -17,7 +17,7 @@
   * Database components, types
   * Persistence
   * Object-relational mapping
-  * ACID, SQL, CAP, CRUD, DBMS...
+  * ACID, SQL, CAP, CRUD, DAL, DBMS...
 
 ---
 ## Software framework
@@ -66,6 +66,15 @@
 ![](/Lectures/Lecture04/Assets/img/CRUD.png)
 
 +++
+### Data Access Layer (DAL)
+* **Definition**
+  * *Layer of a computer program which provides simplified access to data stored in persistent storage*
+* DAL might **return a reference to an object complete with its attributes**
+* Created higher level of abstraction
+
+![](/Lectures/Assets/img/ef-in-app-architecture.png)
+
++++
 ### Database Types
 * *Relational (SQL)* vs *NoSql* databases
 * *Single-File* vs *Multi-File* databases
@@ -93,7 +102,6 @@
 * Initiate a connection using a special *connection string*
 * When connecting, the necessary SQL Server infrastructure is automatically created and started
 * Enabling the application to use the database without complex configuration tasks
-
 
 +++ 
 ## Object-relational mapping
@@ -239,6 +247,7 @@
 * Install *NuGet* packages to use EF Core
   * **EF Core DB provider**
   * **EF Core tools**
+  * **EF Core design**
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
@@ -281,24 +290,19 @@
 ### Install Tools Image
 ![](/Lectures/Lecture04/Assets/img/install-efcore-6.png)
 
++++
+### Install Design
+* Shared design-time components for Entity Framework Core tools
+* 
+
 ---
 ## Basic concepts
-* Data Access Layer
 * Entity
 * DbContext
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
-
-+++
-### Data Access Layer (DAL)
-* **Definition**
-  * *Layer of a computer program which provides simplified access to data stored in persistent storage*
-* DAL might **return a reference to an object complete with its attributes**
-* Created higher level of abstraction
-
-![](/Lectures/Assets/img/ef-in-app-architecture.png)
 
 +++
 ### Entity

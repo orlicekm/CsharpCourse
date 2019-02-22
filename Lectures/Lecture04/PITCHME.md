@@ -315,7 +315,7 @@
 
 +++
 ### Example schema
-![](/Lectures/Lecture04/Assets/img/draw/Database-modified.png)
+@img[span-70](/Lectures/Lecture04/Assets/img/draw/Database-modified.png)
 
 +++
 ### Entity

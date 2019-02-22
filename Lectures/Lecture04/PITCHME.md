@@ -201,8 +201,8 @@
 * **EF 6** released in 2013 
   * .NET 4.0 & .NET 4.5
   * Visual Studio 2012
-* **EF Core 2.0** released in August 2017
-  * .NET Core 2.0
+* **EF Core 2.2** released in December 2018
+  * .NET Core 2.2
   * Visual Studio 2017
   * *Used in this course*
 

@@ -399,6 +399,15 @@ public class SchoolDbContext : DbContext
 * Class that derives from `DbContext` (known as context class)
 * Typically includes `DbSet<TEntity>` properties for each entity in the model
 
++++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/SchoolDbContext.cs&lang=C#&title=DbContext Sample
+@[6-25]
+@[8-12]
+@[14-20]
+@[22-25]
+@[6-25]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/SchoolDbContext.cs)
+
+
 +++
 
 ---

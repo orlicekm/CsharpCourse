@@ -304,6 +304,7 @@
 ## Basic concepts
 * Entity
 * DbContext
+TODO TODO
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
@@ -378,10 +379,6 @@ public class SchoolDbContext : DbContext
 +++ 
 ### Entity property types
 @img[span-70](/Lectures/Lecture04/Assets/img/entity-properties.png)
-
-+++
-### Entity Types
-...
 
 +++ 
 ### Entity states
@@ -478,6 +475,41 @@ TODOTODO
 | ChangeTracker | Provides access to information and operations for entity instances this context is tracking.                        |
 | Database      | Provides access to database related information and operations for this context.                                    |
 | Model         | Returns the metadata about the shape of entities, the relationships between them, and how they map to the database. |
+
+
++++
+### Perzistence Scenarios - Connected Scenario
+* Same instance of the context class (derived from DbContext) is used
+* Keeps **track of all entities** during its lifetime
+* Useful in local database or the database on the same network
+* *Pros*
+  * Performs fast
+  * Track of all entities and automatically sets an appropriate state
+* *Cons*
+  * The context stays alive, so the connection with the database stays open
+  * Utilizes more resource
+
++++
+### Perzistence Scenarios - Connected Scenario
+![](/Lectures/Lecture04/Assets/img/persistance-fg1.PNG)
+
++++
+### Perzistence Scenarios - Disconnected  Scenario
+* **Used in this course**
+* **Different instances of the context are used** to retrieve and save entities to the database
+* Instance of the dbcontext is **disposed after retrieving data** and a new instance is created to save entities to the database
+* Complex because an instance of the context does not track entities
+* Useful in web applications or applications with a remote database
+* *Pros*
+  * Utilizes less resources compared to the connected scenario
+  * No open connection with the database
+* *Cons*
+  * Need to set an appropriate state to each entity before saving
+  * Performs slower than the connected scenario
+
++++
+### Perzistence Scenarios - Disconnected  Scenario
+![](/Lectures/Lecture04/Assets/img/persistance-fg2.PNG)
 
 ---
 ## Entity Relationships

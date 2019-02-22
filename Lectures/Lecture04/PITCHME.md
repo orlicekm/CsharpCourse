@@ -304,7 +304,12 @@
 ## Basic concepts
 * Entity
 * DbContext
-TODO TODO
+* Perzistence scenarios
+* Querying data
+* Entity relationships
+* Entity configurations
+* RAW SQL query
+* Migrations
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
@@ -319,7 +324,7 @@ TODO TODO
 ![](/Lectures/Lecture04/Assets/img/draw/Database-modified.png)
 
 ---
-### Entity
+## Entity
 * `class` in the domain of your application
 * Included as a `DbSet<TEntity>` type property in the derived context class
 * EF API **maps each entity to a table** and **each property of an entity to a column** in the database
@@ -532,23 +537,40 @@ TODO TEST EXAMPLEs
 ![](/Lectures/Lecture04/Assets/img/persistance-fg2.PNG)
 
 ---
-## Querying, saving data
+## Querying Data
++++
 insert, update, delete data in disconnected scenario with examples
 
 ---
 ## Entity Relationships
 
-+++
+---
 ## Entity configurations
++++
 ### Annotation Attributes
++++
 ### Fluent API
 
 ---
 ## RAW sql query + example
 
 ---
-### Migrations with PMC
+## Migration
+* Way to **keep the database schema in sync** with the EF Core model by preserving data
+* Set of commands for
+  * NuGet Package Manager Console (PMC)
+  * Dotnet Command Line Interface (CLI)
 
+![](/Lectures/Lecture04/Assets/img/ef-core-migration.png)
+
++++
+### Migration commands
+| PMC Command                    | dotnet CLI command   | Usage                                                             |
+|--------------------------------|----------------------|-------------------------------------------------------------------|
+| add-migration <migration name> | Add <migration name> | Creates a migration by adding a migration snapshot.               |
+| Remove-migration               | Remove               | Removes the last migration snapshot.                              |
+| Update-database                | Update               | Updates the database schema based on the last migration snapshot. |
+| Script-migration               | Script               | Generates a SQL script using all the migration snapshots.         |
 
 ---
 ## Dapper

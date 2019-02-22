@@ -318,7 +318,7 @@ TODO TODO
 ### Example schema
 ![](/Lectures/Lecture04/Assets/img/draw/Database-modified.png)
 
-+++
+---
 ### Entity
 * `class` in the domain of your application
 * Included as a `DbSet<TEntity>` type property in the derived context class
@@ -398,6 +398,9 @@ public class SchoolDbContext : DbContext
 * Change from the *Unchanged* to the *Modified* is the only state that's **automatically handled by the** *DbContext*
 * Other changes must be made **explicitly using** proper **methods of **`DbContext`** or **`DbSet`
 
++++ 
+Change tracking test
+
 +++
 ### Commands building and executing
 * EF API builds and executes the **INSERT**, **UPDATE**, and **DELETE** commands based on the state of an entity when the `dbContext.SaveChanges()` is called
@@ -407,7 +410,7 @@ public class SchoolDbContext : DbContext
   * Context **does not track** entities in the **Detached** state
 ![](/Lectures/Lecture04/Assets/img/entity-states.png)
 
-+++
+---
 ### DbContext
 * Integral part of Entity Framework
 * Instance **represents a session with the database**
@@ -444,7 +447,9 @@ public class SchoolDbContext : DbContext
 | *AddRange*         | Adds a collection of new entities to `DbContext` with *Added* state and starts tracking it. This new entity data will be inserted into the database when `SaveChanges()` is called.                |
 | *AddRangeAsync*    | Asynchronous method for adding a collection of new entities which will be saved on `SaveChangesAsync()`.                                                                                       |
 
-TODOTODO
++++
+TODO TEST EXAMPLEs
+
 +++
 ### DbContext Methods
 | Method           | Usage                                                                                                                                                                                        |
@@ -456,28 +461,43 @@ TODOTODO
 | *FindAsync*        | Asynchronous method for finding an entity with the given primary key values.                                                                                                                 |
 
 +++
+TODO TEST EXAMPLEs
+
++++
 ### DbContext Methods
 | Method           | Usage                                                                                                                                                                                        |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *Remove*           | Sets Deleted state to the specified entity which will delete the data when SaveChanges() is called.                                                                                          |
-| *RemoveRange*      | Sets Deleted state to a collection of entities which will delete the data in a single DB round trip when SaveChanges() is called.                                                            |
-| *SaveChanges*      | Execute INSERT, UPDATE or DELETE command to the database for the entities with Added, Modified or Deleted state.                                                                             |
-| *SaveChangesAsync* | Asynchronous method of SaveChanges()                                                                                                                                                         |
-| *Set*              | Creates a DbSet<TEntity> that can be used to query and save instances of TEntity.                                                                                                            |
-| *Update*           | Attaches disconnected entity with Modified state and start tracking it. The data will be saved when SaveChagnes() is called.                                                                 |
-| *UpdateRange*      | Attaches a collection of disconnected entities with Modified state and start tracking it. The data will be saved when SaveChagnes() is called.                                               |
-| *OnConfiguring*    | Override this method to configure the database (and other options) to be used for this context. This method is called for each instance of the context that is created.                      |
-| *OnModelCreating*  | Override this method to further configure the model that was discovered by convention from the entity types exposed in DbSet<TEntity> properties on your derived context.                    |
-
-
-| Property      | Usage                                                                                                               |
-|---------------|---------------------------------------------------------------------------------------------------------------------|
-| ChangeTracker | Provides access to information and operations for entity instances this context is tracking.                        |
-| Database      | Provides access to database related information and operations for this context.                                    |
-| Model         | Returns the metadata about the shape of entities, the relationships between them, and how they map to the database. |
-
+| *Remove*           | Sets Deleted state to the specified entity which will delete the data when `SaveChanges()` is called.                                                                                          |
+| *RemoveRange*      | Sets Deleted state to a collection of entities which will delete the data in a single DB round trip when `SaveChanges()` is called.                                                            |
+| *SaveChanges*      | Execute *INSERT*, *UPDATE* or *DELETE* command to the database for the entities with Added, Modified or Deleted state.                                                                             |
+| *SaveChangesAsync* | Asynchronous method of `SaveChanges()`                                                                                                                                                         |
 
 +++
+TODO TEST EXAMPLEs
+
++++
+### DbContext Methods
+| *Set*              | Creates a `DbSet<TEntity>` that can be used to query and save instances of `TEntity`.                                                                                                            |
+| *Update*           | Attaches disconnected entity with Modified state and start tracking it. The data will be saved when `SaveChagnes()` is called.                                                                 |
+| *UpdateRange*      | Attaches a collection of disconnected entities with Modified state and start tracking it. The data will be saved when `SaveChagnes()` is called.                                               |
+| *OnConfiguring*    | Override this method to configure the database (and other options) to be used for this context. This method is called for each instance of the context that is created.                      |
+| *OnModelCreating*  | Override this method to further configure the model that was discovered by convention from the entity types exposed in `DbSet<TEntity>` properties on your derived context.                    |
+
++++
+TODO TEST EXAMPLEs
+
++++
+### DbContext Properties
+| Property      | Usage                                                                                                               |
+|---------------|---------------------------------------------------------------------------------------------------------------------|
+| *ChangeTracker* | Provides access to information and operations for entity instances this context is tracking.                        |
+| *Database*      | Provides access to database related information and operations for this context.                                    |
+| *Model*         | Returns the metadata about the shape of entities, the relationships between them, and how they map to the database. |
+
++++
+TODO TEST EXAMPLEs
+
+---
 ### Perzistence Scenarios - Connected Scenario
 * Same instance of the context class (derived from DbContext) is used
 * Keeps **track of all entities** during its lifetime
@@ -512,7 +532,22 @@ TODOTODO
 ![](/Lectures/Lecture04/Assets/img/persistance-fg2.PNG)
 
 ---
+## Querying, saving data
+insert, update, delete data in disconnected scenario with examples
+
+---
 ## Entity Relationships
+
++++
+## Entity configurations
+### Annotation Attributes
+### Fluent API
+
+---
+## RAW sql query + example
+
+---
+### Migrations with PMC
 
 
 ---
@@ -534,10 +569,8 @@ TODOTODO
 
 ...
 
-
 +++
-## Dapper Plus
-TODO
+TODO tests to connect to the same database as EF, explain it
 
 ---
 ## NHibernate

@@ -315,7 +315,7 @@
 
 +++
 ### Example schema
-@img[span-40](/Lectures/Lecture04/Assets/img/draw/Database-modified.png)
+![](/Lectures/Lecture04/Assets/img/draw/Database-modified.png)
 
 +++
 ### Entity
@@ -377,13 +377,13 @@ public class SchoolDbContext : DbContext
 
 +++ 
 ### Entity property types
-![](/Lectures/Lecture04/Assets/img/entity-properties.png)
+@img[span-70](/Lectures/Lecture04/Assets/img/entity-properties.png)
 
 +++
 ### DbContext
 * Integral part of Entity Framework
-* Instance represents a session with the database
-* Can be used to query and save instances of your entities to a database
+* Instance **represents a session with the database**
+* Can be **used to query and save instances of your entities to a database**
 * Is a combination of the **Unit Of Work** and **Repository** patterns
 * Allows us to perform following tasks:
   1. Manage database connection
@@ -399,6 +399,7 @@ public class SchoolDbContext : DbContext
 * Class that derives from `DbContext` (known as context class)
 * Typically includes `DbSet<TEntity>` properties for each entity in the model
 
++++
 
 ---
 ## Entity Relationships

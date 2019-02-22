@@ -379,6 +379,33 @@ public class SchoolDbContext : DbContext
 ### Entity property types
 @img[span-70](/Lectures/Lecture04/Assets/img/entity-properties.png)
 
++++ 
+### Entity states
+* EF API maintains the state of each entity during an its lifetime
+* **Each entity has a state** based on the operation performed on it via the *DbContext*
+* Represented by an enum `Microsoft.EntityFrameworkCore.EntityState` (in EF Core)
+* Enum values
+  1. *Added*
+  2. *Modified*
+  3. *Deleted*
+  4. *Unchanged*
+  5. *Detached*
+
++++
+### Change Tracking
+* *DbContext* keeps track of entity states and **maintains modifications** made to the properties of the entity
+* Change from the *Unchanged* to the *Modified* is the only state that's **automatically handled by the *DbContext***
+* Other changes must be made **explicitly using** proper **methods of `DbContext` or `DbSet`**
+
++++
+### Commands building and executing
+* EF API builds and executes the **INSERT**, **UPDATE**, and **DELETE** commands based on the state of an entity when the `dbContext.SaveChanges()` is called
+  * **INSERT** command for the entities with **Added** state
+  * **UPDATE** command for the entities with **Modified** state
+  * **DELETE** command for the entities in **Deleted** state
+  * Context **does not track** entities in the **Detached** state
+![](/Lectures/Lecture04/Assets/img/entity-states.png)
+
 +++
 ### DbContext
 * Integral part of Entity Framework
@@ -407,8 +434,46 @@ public class SchoolDbContext : DbContext
 @[6-25]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/SchoolDbContext.cs)
 
++++
+### DbContext Methods
+| Method           | Usage                                                                                                                                                                                        |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Add*              | Adds a new entity to `DbContext` with *Added* state and starts tracking it. This new entity data will be inserted into the database when `SaveChanges()` is called.                                |
+| *AddAsync*         | Asynchronous method for adding a new entity to `DbContext` with *Added* state and starts tracking it. This new entity data will be inserted into the database when `SaveChangesAsync()` is called. |
+| *AddRange*         | Adds a collection of new entities to `DbContext` with *Added* state and starts tracking it. This new entity data will be inserted into the database when `SaveChanges()` is called.                |
+| *AddRangeAsync*    | Asynchronous method for adding a collection of new entities which will be saved on `SaveChangesAsync()`.                                                                                       |
+
+TODOTODO
++++
+### DbContext Methods
+| Method           | Usage                                                                                                                                                                                        |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Attach*           | Attaches a new or existing entity to `DbContext` with *Unchanged* state and starts tracking it.                                                                                                  |
+| *AttachRange*      | Attaches a collection of new or existing entities to `DbContext` with *Unchanged* state and starts tracking it.                                                                                  |
+| *Entry*            | Gets an EntityEntry for the given entity. The entry provides access to change tracking information and operations for the entity.                                                            |
+| *Find*             | Finds an entity with the given primary key values.                                                                                                                                           |
+| *FindAsync*        | Asynchronous method for finding an entity with the given primary key values.                                                                                                                 |
 
 +++
+### DbContext Methods
+| Method           | Usage                                                                                                                                                                                        |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Remove*           | Sets Deleted state to the specified entity which will delete the data when SaveChanges() is called.                                                                                          |
+| *RemoveRange*      | Sets Deleted state to a collection of entities which will delete the data in a single DB round trip when SaveChanges() is called.                                                            |
+| *SaveChanges*      | Execute INSERT, UPDATE or DELETE command to the database for the entities with Added, Modified or Deleted state.                                                                             |
+| *SaveChangesAsync* | Asynchronous method of SaveChanges()                                                                                                                                                         |
+| *Set*              | Creates a DbSet<TEntity> that can be used to query and save instances of TEntity.                                                                                                            |
+| *Update*           | Attaches disconnected entity with Modified state and start tracking it. The data will be saved when SaveChagnes() is called.                                                                 |
+| *UpdateRange*      | Attaches a collection of disconnected entities with Modified state and start tracking it. The data will be saved when SaveChagnes() is called.                                               |
+| *OnConfiguring*    | Override this method to configure the database (and other options) to be used for this context. This method is called for each instance of the context that is created.                      |
+| *OnModelCreating*  | Override this method to further configure the model that was discovered by convention from the entity types exposed in DbSet<TEntity> properties on your derived context.                    |
+
+
+| Property      | Usage                                                                                                               |
+|---------------|---------------------------------------------------------------------------------------------------------------------|
+| ChangeTracker | Provides access to information and operations for entity instances this context is tracking.                        |
+| Database      | Provides access to database related information and operations for this context.                                    |
+| Model         | Returns the metadata about the shape of entities, the relationships between them, and how they map to the database. |
 
 ---
 ## Entity Relationships

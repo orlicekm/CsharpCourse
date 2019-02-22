@@ -561,8 +561,8 @@ string name = "Bill";
 var context = new SchoolDbContext();
 
 var students = context.Students
-                .FromSql($"Select * from Students where Name = '{name}'")
-                .ToList();
+              .FromSql($"Select * from Students where Name = '{name}'")
+              .ToList();
 ```
 
 ---

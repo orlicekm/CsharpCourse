@@ -324,12 +324,60 @@
 * EF API **maps each entity to a table** and **each property of an entity to a column** in the database
 
 ```C#
-public class StudentEntity
+public class CourseEntity
 {
     public Guid Id { get; set; } = Guid.NewGuid();
     public string Name { get; set; }
+    public string Description { get; set; }
+
+    public ICollection<StudentCourseEntity> StudentCourses { get; set; }
 }
 ```
+
++++
+### Entity in DbContext
+* Classes become entities when they are **included as** `DbSet<TEntity>` properties **in a context class**
+* Properties of type `DbSet<TEntity>` are called **entity sets**
+* `AddressEntity`, `CourseEntity`, `GradeEntity`, `StudentEntity`, `StudentCourseEntity` are **entities** (also known as entity types)
+
+```C#
+public class SchoolDbContext : DbContext
+{
+    public DbSet<AddressEntity> Addresses { get; set; }
+    public DbSet<CourseEntity> Courses { get; set; }
+    public DbSet<GradeEntity> Grades { get; set; }
+    public DbSet<StudentEntity> Students { get; set; }
+    public DbSet<StudentCourseEntity> StudentCourses { get; set; }
+}
+```
+
++++
+### Entity Properties
+* Entity can include **two types of properties**
+  * **Scalar Property**
+    * Primitive type properties
+    * Stores the actual data
+    * Maps to a **single column** in the database table
+  * **Navigation Property**
+    * **Represents a relationship** to another entity
+    * Two types
+      * *Reference Navigation Property*
+        * Includes a property of entity type
+        * Represents multiplicity of one (1)
+      * *Collection Navigation Property**
+        * Includes a property of collection type
+        * Represents multiplicity of many (*)
+
++++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/Entities/StudentEntity.cs&lang=C#&title=Entity Sample
+@[6-14]
+@[8-9]
+@[11-13]
+@[6-14]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/Entities/StudentEntity.cs)
+
++++ 
+### Entity property types
+![](/Lectures/Lecture04/Assets/img/entity-properties.png)
 
 +++
 ### DbContext

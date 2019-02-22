@@ -304,11 +304,11 @@
 ## Basic concepts
 * Entity
 * DbContext
-* Perzistence scenarios
-* Querying data
-* Entity relationships
-* Entity configurations
-* RAW SQL query
+* Perzistence Scenarios
+* Querying Data
+* Entity Relationships
+* Entity Configurations
+* RAW SQL Queries
 * Migrations
 
 @snap[south-east span+40]
@@ -407,7 +407,7 @@ public class SchoolDbContext : DbContext
 Change tracking test
 
 +++
-### Commands building and executing
+### Commands Building and Executing
 * EF API builds and executes the **INSERT**, **UPDATE**, and **DELETE** commands based on the state of an entity when the `dbContext.SaveChanges()` is called
   * **INSERT** command for the entities with **Added** state
   * **UPDATE** command for the entities with **Modified** state
@@ -552,7 +552,17 @@ insert, update, delete data in disconnected scenario with examples
 ### Fluent API
 
 ---
-## RAW sql query + example
+## RAW SQL Queries
+* `DbSet.FromSql()` method to execute raw SQL queries
+
+```C#
+string name = "Bill";
+var context = new SchoolDbContext();
+
+var students = context.Students
+                .FromSql($"Select * from Students where Name = '{name}'")
+                .ToList();
+```
 
 ---
 ## Migration

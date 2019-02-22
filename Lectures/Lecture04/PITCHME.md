@@ -553,7 +553,7 @@ insert, update, delete data in disconnected scenario with examples
 
 ---
 ## RAW SQL Queries
-* `DbSet.FromSql()` method to execute raw SQL queries
+* `DbSet.FromSql()` - method to execute raw SQL queries
 
 
 ```C#
@@ -564,6 +564,12 @@ var students = context.Students
               .FromSql($"Select * from Students where Name = '{name}'")
               .ToList();
 ```
+
++++
+### RAW SQL Limitations
+* SQL queries **must return entities of the same type** as `DbSet<T>` type. e.g. the specified query cannot return the `CourseEntity` entities if `FromSql()` is used after `Students`. Returning ad-hoc types from `FromSql()` method is in the backlog
+* The SQL query **must return all the columns** of the table. e.g. `context.Students.FromSql("Select Id, Name from Students).ToList()` will throw an exception
+* The SQL query **cannot include JOIN queries** to get related data. Use `Include` method to load related entities after `FromSql()` method.
 
 ---
 ## Migration

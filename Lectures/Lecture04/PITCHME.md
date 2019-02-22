@@ -379,6 +379,10 @@ public class SchoolDbContext : DbContext
 ### Entity property types
 @img[span-70](/Lectures/Lecture04/Assets/img/entity-properties.png)
 
++++
+### Entity Types
+...
+
 +++ 
 ### Entity states
 * EF API maintains the state of each entity during an its lifetime
@@ -394,8 +398,8 @@ public class SchoolDbContext : DbContext
 +++
 ### Change Tracking
 * *DbContext* keeps track of entity states and **maintains modifications** made to the properties of the entity
-* Change from the *Unchanged* to the *Modified* is the only state that's **automatically handled by the *DbContext***
-* Other changes must be made **explicitly using** proper **methods of `DbContext` or `DbSet`**
+* Change from the *Unchanged* to the *Modified* is the only state that's **automatically handled by the** *DbContext*
+* Other changes must be made **explicitly using** proper **methods of **`DbContext`** or **`DbSet`
 
 +++
 ### Commands building and executing

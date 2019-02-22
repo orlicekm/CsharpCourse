@@ -555,13 +555,14 @@ insert, update, delete data in disconnected scenario with examples
 ## RAW SQL Queries
 * `DbSet.FromSql()` method to execute raw SQL queries
 
+
 ```C#
 string name = "Bill";
 var context = new SchoolDbContext();
 
 var students = context.Students
-              .FromSql($"Select * from Students where Name = '{name}'")
-              .ToList();
+                .FromSql($"Select * from Students where Name = '{name}'")
+                .ToList();
 ```
 
 ---

@@ -114,7 +114,7 @@
 
 @snap[west]
 ![](/Lectures/Lecture04/Assets/img/ServerExplorerOpen.png)
-@snaped
+@snapend
 
 +++
 #### Connect to MSSQLLocalDB

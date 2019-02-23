@@ -582,7 +582,7 @@ var students = context.Students
 
 +++
 ### Migration commands
-| PMC Command                    | dotnet CLI command   | Usage                                                             |
+| PMC Command                    | CLI Command          | Usage                                                             |
 |--------------------------------|----------------------|-------------------------------------------------------------------|
 | Add-Migration <migration name> | Add <migration name> | Creates a migration by adding a migration snapshot.               |
 | Remove-Migration               | Remove               | Removes the last migration snapshot.                              |

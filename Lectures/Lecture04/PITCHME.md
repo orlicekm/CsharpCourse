@@ -118,7 +118,9 @@
 
 +++
 #### Connect to MSSQLLocalDB
+@snap[midpoint]
 ![](/Lectures/Lecture04/Assets/img/ServerExplorer.gif)
+@snapend
 
 +++ 
 ## Object-relational mapping

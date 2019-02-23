@@ -642,7 +642,6 @@ var students = context.Students
 @[32-42]
 @[44-53]
 @[55-64]
-@[66-74]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Dapper.DAL/StudentRepository.cs)
 
 +++?code=/Lectures/Lecture04/Assets/sln/Dapper.DAL.Tests/StudentRepositoryTests.cs&lang=C#&title=Simple Repository Test

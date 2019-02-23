@@ -113,12 +113,12 @@
 * *View -> Server Explorer*
 
 @snap[east]
-![](/Lectures/Lecture04/Assets/img/ServerExplorerOpen.png)
+@img[span-80](/Lectures/Lecture04/Assets/img/ServerExplorerOpen.png)
 @snapend
 
 +++
 #### Connect to MSSQLLocalDB
-@img[span-80](/Lectures/Lecture04/Assets/img/ServerExplorer.gif)
+@img[span-50](/Lectures/Lecture04/Assets/img/ServerExplorer.gif)
 
 
 +++ 

@@ -634,18 +634,24 @@ var students = context.Students
   3. *Pass query as a parameter in Execute method*
 
 +++?code=/Lectures/Lecture04/Assets/sln/Dapper.DAL/Entities/StudentEntity.cs&lang=C#&title=Student Entity Sample
-@[6-30]
-@[6-30]
+@[10-11]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Dapper.DAL/Entities/StudentEntity.cs)
 
 +++?code=/Lectures/Lecture04/Assets/sln/Dapper.DAL/StudentRepository.cs&lang=C#&title=Simple Repository Sample
-@[6-30]
-@[6-30]
+@[20-30]
+@[32-42]
+@[44-53]
+@[55-64]
+@[66-74]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Dapper.DAL/StudentRepository.cs)
 
 +++?code=/Lectures/Lecture04/Assets/sln/Dapper.DAL.Tests/StudentRepositoryTests.cs&lang=C#&title=Simple Repository Test
-@[6-30]
-@[6-30]
+@[13-28]
+@[15-19]
+@[20]
+@[22-23]
+@[25-27]
+@[13-28]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Dapper.DAL.Tests/StudentRepositoryTests.cs)
 
 ---

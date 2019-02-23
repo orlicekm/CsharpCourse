@@ -197,6 +197,7 @@
 
 +++ 
 ### Entity Framework Versions
+* [Differences](https://docs.microsoft.com/en-us/ef/efcore-and-ef6/)
 * Currently, there are two latest versions of Entity Framework
 * **EF 6** released in 2013 
   * .NET 4.0 & .NET 4.5
@@ -448,6 +449,8 @@ Change tracking test
 +++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/appconfig.json&lang=JSON&title=Application Configuration
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/appconfig.json)
 
++++
+todo dbcontext usage example
 
 +++
 ### DbContext Methods

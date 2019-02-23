@@ -112,15 +112,14 @@
   * **Explore their databases and system services**
 * *View -> Server Explorer*
 
-@snap[west]
+@snap[east]
 ![](/Lectures/Lecture04/Assets/img/ServerExplorerOpen.png)
 @snapend
 
 +++
 #### Connect to MSSQLLocalDB
-@snap[midpoint]
-![](/Lectures/Lecture04/Assets/img/ServerExplorer.gif)
-@snapend
+@img[span-80](/Lectures/Lecture04/Assets/img/ServerExplorer.gif)
+
 
 +++ 
 ## Object-relational mapping

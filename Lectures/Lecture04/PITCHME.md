@@ -436,12 +436,18 @@ Change tracking test
 * Typically includes `DbSet<TEntity>` properties for each entity in the model
 
 +++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/SchoolDbContext.cs&lang=C#&title=DbContext Sample
-@[6-25]
-@[8-12]
-@[14-20]
-@[22-25]
-@[6-25]
+@[6-30]
+@[8]
+@[10-13]
+@[15-19]
+@[21-24]
+@[26-29]
+@[6-30]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/SchoolDbContext.cs)
+
++++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/appconfig.json&lang=JSON&title=Application Configuration
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/appconfig.json)
+
 
 +++
 ### DbContext Methods

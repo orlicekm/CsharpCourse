@@ -16,6 +16,7 @@
 * **Database**
   * Database components, types
   * Persistence
+  * Visual Studio Server Explorer
   * Object-relational mapping
   * ACID, SQL, CAP, CRUD, DAL, DBMS...
 
@@ -102,6 +103,22 @@
 * Initiate a connection using a special *connection string*
 * When connecting, the **necessary SQL Server infrastructure is automatically created and started**
 * Enabling the application to **use the database without complex configuration** tasks
+
++++
+### Visual Studio Server Explorer
+* **Server management** console for *Visual Studio**
+* **Open data connections**
+* **Log on to servers**
+  * **Explore their databases and system services**
+* *View -> Server Explorer*
+
+@snap[west]
+![](/Lectures/Lecture04/Assets/img/ServerExplorerOpen.png)
+@snaped
+
++++
+#### Connect to MSSQLLocalDB
+![](/Lectures/Lecture04/Assets/img/ServerExplorer.gif)
 
 +++ 
 ## Object-relational mapping

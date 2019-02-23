@@ -545,7 +545,7 @@ insert, update, delete data in disconnected scenario with examples
 ## Entity Relationships
 
 ---
-## Entity configurations
+## Entity Configurations
 +++
 ### Annotation Attributes
 +++
@@ -584,10 +584,10 @@ var students = context.Students
 ### Migration commands
 | PMC Command                    | dotnet CLI command   | Usage                                                             |
 |--------------------------------|----------------------|-------------------------------------------------------------------|
-| add-migration <migration name> | Add <migration name> | Creates a migration by adding a migration snapshot.               |
-| Remove-migration               | Remove               | Removes the last migration snapshot.                              |
-| Update-database                | Update               | Updates the database schema based on the last migration snapshot. |
-| Script-migration               | Script               | Generates a SQL script using all the migration snapshots.         |
+| Add-Migration <migration name> | Add <migration name> | Creates a migration by adding a migration snapshot.               |
+| Remove-Migration               | Remove               | Removes the last migration snapshot.                              |
+| Update-Database                | Update               | Updates the database schema based on the last migration snapshot. |
+| Script-Migration               | Script               | Generates a SQL script using all the migration snapshots.         |
 
 ---
 ## Dapper

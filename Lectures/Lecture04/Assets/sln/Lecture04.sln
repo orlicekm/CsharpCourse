@@ -5,9 +5,13 @@ VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Examples", "Examples\Examples.csproj", "{7DFB8C8F-924A-4953-A5D3-C9578CECF298}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework.DAL.Tests", "EntityFramework.DAL.Tests\EntityFramework.DAL.Tests.csproj", "{484D21DF-BDCA-4AFF-B808-C413C13939CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework.DAL.Tests", "EntityFramework.DAL.Tests\EntityFramework.DAL.Tests.csproj", "{484D21DF-BDCA-4AFF-B808-C413C13939CE}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFramework.DAL", "EntityFramework.DAL\EntityFramework.DAL.csproj", "{A92A763B-5695-40C5-B0C1-5AAB9B652882}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.DAL", "Dapper.DAL\Dapper.DAL.csproj", "{7FB8F29E-8702-4E81-BDEC-79CC2B0DC72F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dapper.DAL.Tests", "Dapper.DAL.Tests\Dapper.DAL.Tests.csproj", "{35599E68-5656-4AC3-8BC0-5B28AE0FE111}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{A92A763B-5695-40C5-B0C1-5AAB9B652882}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A92A763B-5695-40C5-B0C1-5AAB9B652882}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A92A763B-5695-40C5-B0C1-5AAB9B652882}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB8F29E-8702-4E81-BDEC-79CC2B0DC72F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB8F29E-8702-4E81-BDEC-79CC2B0DC72F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB8F29E-8702-4E81-BDEC-79CC2B0DC72F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB8F29E-8702-4E81-BDEC-79CC2B0DC72F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35599E68-5656-4AC3-8BC0-5B28AE0FE111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35599E68-5656-4AC3-8BC0-5B28AE0FE111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35599E68-5656-4AC3-8BC0-5B28AE0FE111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35599E68-5656-4AC3-8BC0-5B28AE0FE111}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

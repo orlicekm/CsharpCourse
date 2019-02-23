@@ -633,10 +633,20 @@ var students = context.Students
   2. *Write a query to perform CRUD operations*
   3. *Pass query as a parameter in Execute method*
 
-...
++++?code=/Lectures/Lecture04/Assets/sln/Dapper.DAL/StudentEntity.cs&lang=C#&title=Student Entity Sample
+@[6-30]
+@[6-30]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Dapper.DAL/StudentEntity.cs)
 
-+++
-TODO tests to connect to the same database as EF, explain it
++++?code=/Lectures/Lecture04/Assets/sln/Dapper.DAL/StudentRepository.cs&lang=C#&title=Simple Repository Sample
+@[6-30]
+@[6-30]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Dapper.DAL/StudentRepository.cs)
+
++++?code=/Lectures/Lecture04/Assets/sln/Dapper.DAL.Tests/StudentRepositoryTests.cs&lang=C#&title=Simple Repository Test
+@[6-30]
+@[6-30]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/Dapper.DAL.Tests/StudentRepositoryTests.cs)
 
 ---
 ## NHibernate

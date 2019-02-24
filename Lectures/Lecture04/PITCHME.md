@@ -325,8 +325,8 @@
 * DbContext
 * Perzistence Scenarios
 * Conventions
-* Entity Relationships
 * Entity Configurations
+* Entity Relationships
 * RAW SQL Queries
 * Migrations
 
@@ -723,6 +723,21 @@ public class Student
 
 +++
 ### Fluent API
+* Based on a *Fluent API* design pattern ([Fluent Interface](https://en.wikipedia.org/wiki/Fluent_interface))
+* Result is formulated by [method chaining](https://en.wikipedia.org/wiki/Method_chaining)
+* **ModelBuilder class** acts as a *Fluent API*
+  * Provides **more configuration options than data annotation attributes**
+
+### Fluent API Congigures
+* **Model Configuration**
+  * Configures an EF model to database mappings
+  * Default Schema, DB functions, additional data annotation attributes and entities to be excluded from mapping
+* **Entity Configuration**
+  * Configures entity to table and relationships mapping 
+  * e.g. PrimaryKey, AlternateKey, Index, table name, one-to-one, one-to-many, many-to-many relationships...
+* **Property Configuration**
+  * Configures property to column mapping 
+  * e.g. column name, default value, nullability, Foreignkey, data type, concurrency column...
 
 ---
 ## Entity Relationships

@@ -1,28 +1,23 @@
-﻿using System.IO;
-using System.Linq;
-using Microsoft.Extensions.Configuration;
+﻿using System.Linq;
 using Xunit;
 
 namespace EntityFramework.DAL.Tests
 {
-    public class Test
+    public class Test: IClassFixture<SchoolDbContextTestsSetupFixture>
     {
+
+        public Test(SchoolDbContextTestsSetupFixture testContext)
+        {
+            _testContext = testContext;
+        }
+
+        private readonly SchoolDbContextTestsSetupFixture _testContext;
+
         [Fact]
         public void TestMethod()
         {
-            var builder = new ConfigurationBuilder()
-                .SetBasePath(Directory.GetCurrentDirectory())
-                .AddJsonFile("appconfig.json");
-
-            var configuration = builder.Build();
-            var cs = configuration.GetConnectionString("SchoolContext");
-
-
-            using (var db = new SchoolDbContext(cs))
-            {
-                var number = db.Students.Count();
+                var number = _testContext.SchoolDbContextSUT.Students.Count();
                 Assert.Equal(0, number);
-            }
         }
     }
 }

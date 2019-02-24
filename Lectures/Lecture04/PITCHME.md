@@ -404,6 +404,31 @@ public class SchoolDbContext : DbContext
 ### Entity property types
 @img[span-70](/Lectures/Lecture04/Assets/img/entity-properties.png)
 
++++
+### Entity types
+* **POCO Entities (Plain Old CLR Object)**
+  * Class that doesn't depend on any framework-specific base class
+  * **Normal .NET CLR class**
+  * "Persistence-ignorant objects"
+* **Dynamic Proxy Entities (POCO Proxy)**
+  * Runtime proxy class **which wraps POCO entity**
+  * Allow **lazy loading**
+  * By default, enabled for every entity
+  * Disable by `context.Configuration.ProxyCreationEnabled = false;` in *DbContext*
+
++++
+### POCO Proxy Requirements
+* POCO entity should meet the following requirements to become a POCO proxy:
+  1. A POCO class must be declared with **public access**
+  2. A POCO class must **not be sealed**
+  3. A POCO class must **not be abstract**
+  4. Each navigation **property** must be declared as **public, virtual**
+  5. Each collection **property** must be `ICollection<T>`
+  6. The `ProxyCreationEnabled` option must **NOT be false** in context class (default is true)
+
++++
+todo test example
+
 +++ 
 ### Entity states
 * EF API maintains the state of each entity during an its lifetime
@@ -469,6 +494,9 @@ Change tracking test
 
 +++
 todo dbcontext usage example
+
++++
+linq nematerializovanie test thow
 
 +++
 ### DbContext Methods

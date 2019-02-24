@@ -1,5 +1,7 @@
-﻿using EntityFramework.DAL.Entities;
+﻿using System.IO;
+using EntityFramework.DAL.Entities;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace EntityFramework.DAL
 {
@@ -7,9 +9,14 @@ namespace EntityFramework.DAL
     {
         private readonly string connectionString;
 
-        public SchoolDbContext(string connectionString)
+        public SchoolDbContext()
         {
-            this.connectionString = connectionString;
+            connectionString = GetConnectionString();
+        }
+
+        public SchoolDbContext(DbContextOptions<SchoolDbContext> contextOptions)
+            : base(contextOptions)
+        {
         }
 
         public DbSet<AddressEntity> Addresses { get; set; }
@@ -20,12 +27,23 @@ namespace EntityFramework.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            if (optionsBuilder.IsConfigured) return;
             optionsBuilder.UseSqlServer(connectionString);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<StudentCourseEntity>().HasKey(sc => new {sc.StudentId, sc.CourseId});
+        }
+
+        private string GetConnectionString()
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appconfig.json");
+
+            var configuration = builder.Build();
+            return configuration.GetConnectionString("SchoolContext");
         }
     }
 }

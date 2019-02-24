@@ -646,8 +646,7 @@ public class SchoolDbContext : DbContext
 | `short`        | smallint                        |
 | `long`         | bigint                          |
 | `double`       | float                           |
-| `char`, `object`         | No mapping                      |
-| `sbyte`        | No mapping (throws exception)   |
+| `char`, `sbyte`, `object`         | No mapping  |
 
 +++
 ### Foreign Key Convention

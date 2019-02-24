@@ -662,7 +662,7 @@ public class SchoolDbContext : DbContext
 
 +++
 ### Annotation Attributes
-* Namespace `System.ComponentModel.DataAnnotations`
+* Namespace `System.ComponentModel.DataAnnotations` and `System.ComponentModel.DataAnnotations`
 * Simple **attribute based configuration method**
 * .NET attributes can be** applied to domain classes and properties to configure the model**
 * Also used in *ASP.NET MVC*
@@ -692,7 +692,28 @@ public class Student
     public virtual Standard Standard { get; set; }
 }
 ```
-[List of all attributes](https://www.learnentityframeworkcore.com/configuration/data-annotation-attributes)
++++
+### `System.ComponentModel.DataAnnotations.Schema` attributes
+| Attribute         | Description                                                                      |
+|-------------------|----------------------------------------------------------------------------------|
+| `Table`             | The database table and/or schema that a class is mapped to.                      |
+| `Column`            | The database column that a property is mapped to.                                |
+| `ForeignKey`        | Specifies the property is used as a foreign key in a relationship.               |
+| `DatabaseGenerated` | Specifies how the database generates values for a property.                      |
+| `NotMapped`         | Applied to properties or classes that are to be excluded from database mapping.  |
+| `InverseProperty`   | Specifies the inverse of a navigation property                                   |
+| `ComplexType`       | Denotes that the class is a complex type. *Not currently implemented in EF Core. |
+
++++
+### `System.ComponentModel.Annotations` attributes
+| Attribute        | Description                                                             |
+|------------------|-------------------------------------------------------------------------|
+| `Key`              | Identifies one or more properties as a Key                              |
+| `Timestamp`        | Specifies the data type of the database column as rowversion            |
+| `ConcurrencyCheck` | Specifies that the property is included in concurrency checks           |
+| `Required`         | Specifies that the property's value is required                         |
+| `MaxLength`        | Sets the maximum allowed length of the property value (string or array) |
+| `StringLength`     | Sets the maximum allowed length of the property value (string or array) |
 
 +++
 ### Fluent API
@@ -1049,6 +1070,7 @@ public class Dapper : ITestSignature
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [EntityFrameworkTutorial.net](http://www.entityframeworktutorial.net/)  
+[Learn Entity Framework Core](https://www.learnentityframeworkcore.com)
 [Dapper-tutorial.net](https://dapper-tutorial.net/)
 [Microsoft documentation](https://docs.microsoft.com)  
 [Entity Framework GitHub](https://github.com/aspnet/EntityFrameworkCore)  

@@ -631,7 +631,7 @@ public class SchoolDbContext : DbContext
     * `<Reference Navigation Property Name>Id`
     * `<Reference Navigation Property Name><Principal Primary Key Property Name>`
 
----
++++
 ### C# to SQL Mapping
 | C# Data Type | SQL Data Type |
 |--------------|---------------------------------|
@@ -646,9 +646,8 @@ public class SchoolDbContext : DbContext
 | `short`        | smallint                        |
 | `long`         | bigint                          |
 | `double`       | float                           |
-| `char`         | No mapping                      |
+| `char`, `object`         | No mapping                      |
 | `sbyte`        | No mapping (throws exception)   |
-| `object`       | No mapping                      |
 
 +++
 ### Foreign Key Convention

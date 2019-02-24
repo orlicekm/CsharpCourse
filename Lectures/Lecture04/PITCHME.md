@@ -491,14 +491,39 @@ public class SchoolDbContext : DbContext
 * Class that derives from `DbContext` (known as context class)
 * Typically includes `DbSet<TEntity>` properties for each entity in the model
 
+```C#
+public class SchoolDbContext : DbContext
+{
+    public SchoolDbContext()
+    {
+    }
+    
+    public DbSet<AddressEntity> Addresses { get; set; }
+    public DbSet<CourseEntity> Courses { get; set; }
+    public DbSet<GradeEntity> Grades { get; set; }
+    public DbSet<StudentEntity> Students { get; set; }
+    public DbSet<StudentCourseEntity> StudentCourses { get; set; }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+    }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+    }
+} 
+
+```
+
 +++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/SchoolDbContext.cs&lang=C#&title=DbContext Sample
-@[6-30]
-@[8]
-@[10-13]
-@[15-19]
-@[21-24]
-@[26-29]
-@[6-30]
+@[10-11]
+@[13-15]
+@[17-21]
+@[23-26]
+@[28-32]
+@[34-39]
+@[41-45]
+@[46-54]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/SchoolDbContext.cs)
 
 +++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/appconfig.json&lang=JSON&title=Application Configuration

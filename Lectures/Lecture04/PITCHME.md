@@ -654,9 +654,45 @@ public class SchoolDbContext : DbContext
 
 ---
 ## Entity Configurations
+* To **customize the entity to table mapping**
+* When **do not want to follow default conventions**
+* 2 ways
+  * By using *Data Annotation Attributes*
+  * By using *Fluent API*
 
 +++
 ### Annotation Attributes
+* Namespace `System.ComponentModel.DataAnnotations`
+* Simple **attribute based configuration method**
+* .NET attributes can be** applied to domain classes and properties to configure the model**
+* Also used in *ASP.NET MVC*
+
++++
+### Annotation Attributes Example
+```C#
+[Table("StudentInfo")]
+public class Student
+{
+    public Student() { }
+        
+    [Key]
+    public Guid ID { get; set; }
+
+    [Column("Name", TypeName="ntext")]
+    [MaxLength(20)]
+    public string StudentName { get; set; }
+
+    [NotMapped]
+    public int? Age { get; set; }
+        
+        
+    public int StdId { get; set; }
+
+    [ForeignKey("StdId")]
+    public virtual Standard Standard { get; set; }
+}
+```
+[List of all attributes](https://www.learnentityframeworkcore.com/configuration/data-annotation-attributes)
 
 +++
 ### Fluent API

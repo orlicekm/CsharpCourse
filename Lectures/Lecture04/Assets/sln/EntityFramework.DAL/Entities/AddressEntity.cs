@@ -12,6 +12,6 @@ namespace EntityFramework.DAL.Entities
 
 
         public Guid StudentId { get; set; }
-        public StudentEntity Student { get; set; }
+        public virtual StudentEntity Student { get; set; }
     }
 }

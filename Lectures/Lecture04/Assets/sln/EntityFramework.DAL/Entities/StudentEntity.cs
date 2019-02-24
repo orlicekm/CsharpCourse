@@ -8,8 +8,8 @@ namespace EntityFramework.DAL.Entities
         public Guid Id { get; set; } = Guid.NewGuid();
         public string Name { get; set; }
 
-        public AddressEntity Address { get; set; }
-        public GradeEntity Grade { get; set; }
-        public ICollection<StudentCourseEntity> StudentCourses { get; set; }
+        public virtual AddressEntity Address { get; set; }
+        public virtual GradeEntity Grade { get; set; }
+        public virtual ICollection<StudentCourseEntity> StudentCourses { get; set; }
     }
 }

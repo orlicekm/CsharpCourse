@@ -9,6 +9,6 @@ namespace EntityFramework.DAL.Entities
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public ICollection<StudentCourseEntity> StudentCourses { get; set; }
+        public virtual ICollection<StudentCourseEntity> StudentCourses { get; set; }
     }
 }

@@ -7,10 +7,16 @@ namespace EntityFramework.DAL
 {
     public class SchoolDbContext : DbContext
     {
+        private readonly bool useLazyLoadingProxies;
         private readonly string connectionString;
 
-        public SchoolDbContext()
+        public SchoolDbContext(): this(true)
         {
+        }
+
+        public SchoolDbContext(bool useLazyLoadingProxies = true)
+        {
+            this.useLazyLoadingProxies = useLazyLoadingProxies;
             connectionString = GetConnectionString();
         }
 
@@ -27,6 +33,7 @@ namespace EntityFramework.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
+            optionsBuilder.UseLazyLoadingProxies(useLazyLoadingProxies);
             if (optionsBuilder.IsConfigured) return;
             optionsBuilder.UseSqlServer(connectionString);
         }

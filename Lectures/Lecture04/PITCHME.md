@@ -728,6 +728,7 @@ public class Student
 * **ModelBuilder class** acts as a *Fluent API*
   * Provides **more configuration options than data annotation attributes**
 
++++
 ### Fluent API Congigures
 * **Model Configuration**
   * Configures an EF model to database mappings

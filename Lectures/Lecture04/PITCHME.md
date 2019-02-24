@@ -692,6 +692,12 @@ public class Student
     public virtual Standard Standard { get; set; }
 }
 ```
+@[1-2]
+@[6-7]
+@[9-11]
+@[13-14]
+@[19-20]
+
 +++
 ### `System.ComponentModel.DataAnnotations.Schema` attributes
 | Attribute         | Description                                                                      |

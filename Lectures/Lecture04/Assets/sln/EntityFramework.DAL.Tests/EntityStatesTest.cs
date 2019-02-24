@@ -48,7 +48,7 @@ namespace EntityFramework.DAL.Tests
         [Fact]
         public void DeletedStateTest()
         {
-            var entityEntry = schoolDbContextSUT.Students.Add(studentEntity);
+            schoolDbContextSUT.Students.Add(studentEntity);
             schoolDbContextSUT.SaveChanges();
             schoolDbContextSUT.Remove(studentEntity);
             Assert.Equal(EntityState.Deleted, schoolDbContextSUT.Entry(studentEntity).State);

@@ -529,7 +529,7 @@ public class SchoolDbContext : DbContext
 +++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/appconfig.json&lang=JSON&title=Application Configuration
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/appconfig.json)
 
-+++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL.Tests/LinqLazyEvaluation.cs&lang=C#&title=Entity States Sample
++++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL.Tests/LinqLazyEvaluationTest.cs&lang=C#&title=Entity States Sample
 @[12-16]
 @[19-38]
 @[21]
@@ -537,7 +537,7 @@ public class SchoolDbContext : DbContext
 @[30-31]
 @[33-37]
 @[19-38]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL.Tests/LinqLazyEvaluation.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL.Tests/LinqLazyEvaluationTest.cs)
 
 
 +++

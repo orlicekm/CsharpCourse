@@ -696,7 +696,7 @@ public class Student
 @[6-7]
 @[9-11]
 @[13-14]
-@[19-20]
+@[17,19-20]
 
 +++
 ### `System.ComponentModel.DataAnnotations.Schema` attributes

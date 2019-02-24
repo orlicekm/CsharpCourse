@@ -426,15 +426,13 @@ public class SchoolDbContext : DbContext
   5. Each collection **property** must be `ICollection<T>`
   6. The `ProxyCreationEnabled` option must **NOT be false** in context class (default is true)
 
-+++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL.Tests/EntitiesTypesTest.cs&lang=C#&title=Entity Types Sample
++++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL.Tests/EntityTypesTest.cs&lang=C#&title=Entity Types Sample
 @[12-32]
 @[34-43]
 @[46-60]
 @[63-78]
 @[81-100]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL.Tests/EntitiesTypesTest.cs)
-
-
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL.Tests/EntityTypesTest.cs)
 
 +++ 
 ### Entity states

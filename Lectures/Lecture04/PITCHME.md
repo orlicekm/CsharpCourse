@@ -668,7 +668,7 @@ public class SchoolDbContext : DbContext
 * Also used in *ASP.NET MVC*
 
 +++
-### Annotation Attributes Example
+### Annotation Attributes Sample
 ```C#
 [Table("StudentInfo")]
 public class Student
@@ -727,6 +727,7 @@ public class Student
 * Result is formulated by [method chaining](https://en.wikipedia.org/wiki/Method_chaining)
 * **ModelBuilder class** acts as a *Fluent API*
   * Provides **more configuration options than data annotation attributes**
+* **Higher precedence than data annotation attributes**
 
 +++
 ### Fluent API Congigures
@@ -739,6 +740,34 @@ public class Student
 * **Property Configuration**
   * Configures property to column mapping 
   * e.g. column name, default value, nullability, Foreignkey, data type, concurrency column...
+
++++
+### Fluent API Sample
+```C#
+public class SchoolDbContext: DbContext 
+{
+    public DbSet<StudentEntity> Students { get; set; }
+        
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        //Write Fluent API configurations here
+
+        //Property Configurations
+        modelBuilder.Entity<StudentEntity>()
+                .Property(s => s.StudentId)
+                .HasColumnName("Id")
+                .HasDefaultValue(0)
+                .IsRequired();
+    }
+}
+```
+@[5-14]
+@[9]
+@[10]
+@[11]
+@[12]
+@[13]
+@[5-14]
 
 ---
 ## Entity Relationships

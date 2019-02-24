@@ -452,8 +452,15 @@ public class SchoolDbContext : DbContext
 * Change from the *Unchanged* to the *Modified* is the only state that's **automatically handled by the** *DbContext*
 * Other changes must be made **explicitly using** proper **methods of **`DbContext`** or **`DbSet`
 
-+++ 
-Change tracking test
++++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL.Tests/EntityStatesTest.cs&lang=C#&title=Entity States Sample
+@[18-22]
+@[25-29]
+@[32-37]
+@[40-46]
+@[49-55]
+@[58-61]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL.Tests/EntityStatesTest.cs)
+
 
 +++
 ### Commands Building and Executing

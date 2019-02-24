@@ -324,7 +324,7 @@
 * Entity
 * DbContext
 * Perzistence Scenarios
-* Querying Data
+* Conventions
 * Entity Relationships
 * Entity Configurations
 * RAW SQL Queries
@@ -539,7 +539,6 @@ public class SchoolDbContext : DbContext
 @[19-38]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL.Tests/LinqLazyEvaluationTest.cs)
 
-
 +++
 ### DbContext Methods
 | Method           | Usage                                                                                                                                                                                        |
@@ -548,9 +547,6 @@ public class SchoolDbContext : DbContext
 | *AddAsync*         | Asynchronous method for adding a new entity to `DbContext` with *Added* state and starts tracking it. This new entity data will be inserted into the database when `SaveChangesAsync()` is called. |
 | *AddRange*         | Adds a collection of new entities to `DbContext` with *Added* state and starts tracking it. This new entity data will be inserted into the database when `SaveChanges()` is called.                |
 | *AddRangeAsync*    | Asynchronous method for adding a collection of new entities which will be saved on `SaveChangesAsync()`.                                                                                       |
-
-+++
-TODO TEST EXAMPLEs
 
 +++
 ### DbContext Methods
@@ -563,9 +559,6 @@ TODO TEST EXAMPLEs
 | *FindAsync*        | Asynchronous method for finding an entity with the given primary key values.                                                                                                                 |
 
 +++
-TODO TEST EXAMPLEs
-
-+++
 ### DbContext Methods
 | Method           | Usage                                                                                                                                                                                        |
 |------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -573,9 +566,6 @@ TODO TEST EXAMPLEs
 | *RemoveRange*      | Sets Deleted state to a collection of entities which will delete the data in a single DB round trip when `SaveChanges()` is called.                                                            |
 | *SaveChanges*      | Execute *INSERT*, *UPDATE* or *DELETE* command to the database for the entities with Added, Modified or Deleted state.                                                                             |
 | *SaveChangesAsync* | Asynchronous method of `SaveChanges()`                                                                                                                                                         |
-
-+++
-TODO TEST EXAMPLEs
 
 +++
 ### DbContext Methods
@@ -588,18 +578,12 @@ TODO TEST EXAMPLEs
 | *OnModelCreating*  | Override this method to further configure the model that was discovered by convention from the entity types exposed in `DbSet<TEntity>` properties on your derived context.                    |
 
 +++
-TODO TEST EXAMPLEs
-
-+++
 ### DbContext Properties
 | Property      | Usage                                                                                                               |
 |---------------|---------------------------------------------------------------------------------------------------------------------|
 | *ChangeTracker* | Provides access to information and operations for entity instances this context is tracking.                        |
 | *Database*      | Provides access to database related information and operations for this context.                                    |
 | *Model*         | Returns the metadata about the shape of entities, the relationships between them, and how they map to the database. |
-
-+++
-TODO TEST EXAMPLEs
 
 ---
 ### Perzistence Scenarios - Connected Scenario
@@ -636,19 +620,52 @@ TODO TEST EXAMPLEs
 ![](/Lectures/Lecture04/Assets/img/persistance-fg2.PNG)
 
 ---
-## Querying Data
+## Conventions
+* **Default rules** to builds a model based on your domain 
+  * **Tables** for all `DbSet<TEntity>` properties in a context class 
+  * **Columns** for all the scalar properties of an entity class
+  * **Not null** collumn by default
+  * **Nullable** collumn by nullable primitive types properties
+  * **Primary key** for property named `Id` or `<Entity Class Name>Id` (case insensitive)
+  * **Foreign Key** for reference navigation property named
+    * `<Reference Navigation Property Name>Id`
+    * `<Reference Navigation Property Name><Principal Primary Key Property Name>`
+
+---
+### C# to SQL Mapping
+| C# Data Type | SQL Data Type |
+|--------------|---------------------------------|
+| `int`          | int                             |
+| `string`       | nvarchar(Max)                   |
+| `decimal`      | decimal(18,2)                   |
+| `float`        | real                            |
+| `byte[]`       | varbinary(Max)                  |
+| `datetime`     | datetime                        |
+| `bool`         | bit                             |
+| `byte`         | tinyint                         |
+| `short`        | smallint                        |
+| `long`         | bigint                          |
+| `double`       | float                           |
+| `char`         | No mapping                      |
+| `sbyte`        | No mapping (throws exception)   |
+| `object`       | No mapping                      |
+
 +++
-insert, update, delete data in disconnected scenario with examples
+### Foreign Key Convention
+![](/Lectures/Lecture04/Assets/img/foreignkey-conv.png)
+
+---
+## Entity Configurations
+
++++
+### Annotation Attributes
+
++++
+### Fluent API
 
 ---
 ## Entity Relationships
 
----
-## Entity Configurations
-+++
-### Annotation Attributes
-+++
-### Fluent API
 
 ---
 ## RAW SQL Queries

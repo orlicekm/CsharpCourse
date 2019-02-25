@@ -91,7 +91,7 @@
 * If too much functionality is in one class 
     *It can be difficult to understand, how modification will affect other dependent modules
 
-![](/Lectures/Assets/img/SingleReponsibilityPrincipe.jpg)
+![](/Lectures/Lecture07/Assets/img/SingleReponsibilityPrincipe.jpg)
 
 +++ 
 ### **S**ingle responsibility principle - Minimizing

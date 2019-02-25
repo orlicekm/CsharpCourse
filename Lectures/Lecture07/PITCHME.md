@@ -66,11 +66,11 @@
 
 +++
 ## SOLID
-* **S**ingle responsibility principle
-* **O**pen–closed principle
-* **L**iskov substitution principle
-* **I**nterface segregation principle
-* **D**ependency inversion principle
+* #### **S**ingle responsibility principle
+* #### **O**pen–closed principle
+* #### **L**iskov substitution principle
+* #### **I**nterface segregation principle
+* #### **D**ependency inversion principle
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)

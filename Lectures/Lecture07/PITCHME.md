@@ -82,7 +82,19 @@
 
 +++
 ### **S**ingle responsibility principle
+* **Class have one responsibility**
+* **Never be more than one reason for a class to change**
+* Issue:
+  * Class won't be conceptually cohesive
+  * Many reasons to change
+* It is important to **minimize amount of times you need to change a class**
+* If too much functionality is in one class 
+    *It can be difficult to understand, how modification will affect other dependent modules
 
+![](/Lectures/Assets/img/SingleReponsibilityPrincipe.jpg)
+
++++ 
+### **S**ingle responsibility principle - Minimizing
 +++
 ### **O**pen–closed principle
 
@@ -111,7 +123,8 @@ Resharper
 ## References:
 [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)  
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
-[clean-code-dotnet](https://github.com/thangchung/clean-code-dotnet)
+[Toptal - developers](https://www.toptal.com/developers)
+[Clean-code-dotnet](https://github.com/thangchung/clean-code-dotnet)
 [Cvuorinen.net](https://cvuorinen.net/)  
 [DZone.com](https://dzone.com/)
 

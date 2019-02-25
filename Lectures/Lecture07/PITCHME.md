@@ -84,7 +84,7 @@
 ### **S**ingle responsibility principle
 * **Class have one responsibility**
 
-@img[span-70](/Lectures/Lecture07/Assets/img/SingleReponsibilityPrincipe.jpg)
+@img[span-50](/Lectures/Lecture07/Assets/img/SingleReponsibilityPrincipe.jpg)
 
 +++ 
 ### **S**OLID - Minimize modification problems
@@ -94,7 +94,7 @@
   * **Many reasons to change**
 * It is important to **minimize amount of times you need to change a class**
 * If too much functionality is in one class 
-  *It can be **difficult to understand**, how modification will affect other dependent modules
+  * It can be **difficult to understand**, how modification will affect other dependent modules
 
 
 +++ 

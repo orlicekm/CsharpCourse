@@ -89,7 +89,7 @@
   * builder 
   * completion tools
   * graphical designers
-  * etc..
+  * ⋮
 * [Free download](https://visualstudio.microsoft.com/vs/")
 * [Installation guide](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2017)
 

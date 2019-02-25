@@ -13,12 +13,14 @@
 
 ---
 ## Clean Code
-* Code that is **easy to understand and easy to change**
+* Code that is 
+  * *Easy to understand*
+  * *Easy to change*
 * **Subjective**
 * [Clean Code Book](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 
 @snap[east]
-@img[span-70](/Lectures/Lecture07/Assets/img/clean-code.jpg)
+@img[span-60](/Lectures/Lecture07/Assets/img/clean-code.jpg)
 @snapend
 
 +++

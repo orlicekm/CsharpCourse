@@ -824,7 +824,57 @@ public class SchoolDbContext: DbContext
 
 ---
 ## Entity Relationships
+* One-to-One
+* One-to-Many
+* Many-to-Many
 
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+### One-to-One Relationships
+* Default conventions
+  * Reference **navigation property at both sides**
+* Fluent Api
+  * Only useful when if foreign key **property does not follow the convention**
+
+```C#
+// AddressOfStudentId does not follow the convention
+modelBuilder.Entity<StudentEntity>()
+    .HasOne<AddressEntity>(s => s.Address)
+    .WithOne(ad => ad.Student)
+    .HasForeignKey<StudentAddress>(ad => ad.AddressOfStudentId);
+```
+
++++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/Entities/StudentEntity.cs&lang=C#&title=Student Entity
+@[11]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/Entities/StudentEntity.cs)
+
++++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/Entities/AddressEntity.cs&lang=C#&title=Address Entity
+@[14-15]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/Entities/AddressEntity.cs)
+
++++
+### One-to-Many Relationships
+* Default conventions
+* Fluent Api
+
++++
+### Cascade Delete using Fluent API
+* Automatically deletes the child row when the related parent row is deleted
+
+```C#
+modelBuilder.Entity<Grade>()
+    .HasMany<Student>(g => g.Students)
+    .WithOne(s => s.Grade)
+    .HasForeignKey(s => s.CurrentGradeId)
+    .OnDelete(DeleteBehavior.Cascade);
+```
+
++++
+### Many-to-Many Relationships
+* Fluent Api
 
 ---
 ## RAW SQL Queries

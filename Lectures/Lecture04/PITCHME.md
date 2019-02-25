@@ -861,6 +861,50 @@ modelBuilder.Entity<StudentEntity>()
 * Fluent Api
 
 +++
+### Default Convertions
+```C#
+public class Student
+{
+    public Grade Grade { get; set; }
+}
+
+public class Grade{}
+```
+
+```C#
+public class Student{}
+
+public class Grade
+{
+    public ICollection<Student> Students { get; set; } 
+}
+```
+
+```C#
+public class Student
+{
+    public Grade Grade { get; set; }
+}
+
+public class Grade
+{
+    public ICollection<Student> Students { get; set; }
+}
+```
+
+```C#
+public class Student
+{
+    public int GradeId { get; set; }
+    public Grade Grade { get; set; }
+}
+public class Grade
+{
+    public ICollection<Student> Students { get; set; }
+}
+```
+
++++
 ### Cascade Delete using Fluent API
 * Automatically deletes the child row when the related parent row is deleted
 

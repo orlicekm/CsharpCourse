@@ -84,7 +84,7 @@
 ### **S**ingle responsibility principle
 * **Class have one responsibility**
 
-![](/Lectures/Lecture07/Assets/img/SingleReponsibilityPrincipe.jpg)
+@img[span-70](/Lectures/Lecture07/Assets/img/SingleReponsibilityPrincipe.jpg)
 
 +++ 
 ### **S**OLID - Minimize modification problems

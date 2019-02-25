@@ -874,7 +874,7 @@ public class Student
 public class Grade{}
 ```
 
-* *2**
+* *2*
 
 ```C#
 public class Student{}
@@ -934,7 +934,12 @@ modelBuilder.Entity<Grade>()
     .HasForeignKey(s => s.CurrentGradeId)
     .OnDelete(DeleteBehavior.Cascade);
 ```
-
+@[1]
+@[2]
+@[3]
+@[4]
+@[5]
+@[1-5]
 
 +++
 ### Many-to-Many Relationships

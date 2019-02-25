@@ -863,8 +863,8 @@ modelBuilder.Entity<StudentEntity>()
 
 +++
 ### Default Convertions
-
 * *1*
+
 ```C#
 public class Student
 {
@@ -873,7 +873,9 @@ public class Student
 
 public class Grade{}
 ```
+
 * *2**
+
 ```C#
 public class Student{}
 
@@ -886,6 +888,7 @@ public class Grade
 +++
 ### Default Convertions
 * *3*
+
 ```C#
 public class Student
 {
@@ -899,6 +902,7 @@ public class Grade
 ```
 
 * *4*
+
 ```C#
 public class Student
 {

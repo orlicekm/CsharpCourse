@@ -83,16 +83,15 @@
 +++
 ### **S**ingle responsibility principle
 * **Class have one responsibility**
-* **Never be more than one reason for a class to change**
-* Issue:
-  * Class won't be conceptually cohesive
-  * Many reasons to change
 
 ![](/Lectures/Lecture07/Assets/img/SingleReponsibilityPrincipe.jpg)
 
 +++ 
-### **S**ingle responsibility principle - Minimizing
-
+### **S**OLID - Minimize modification problems
+* **Never be more than one reason for a class to change**
+* Issue:
+  * Class won't be conceptually cohesive
+  * Many reasons to change
 * It is important to **minimize amount of times you need to change a class**
 * If too much functionality is in one class 
     *It can be difficult to understand, how modification will affect other dependent modules

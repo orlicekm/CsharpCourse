@@ -861,6 +861,18 @@ modelBuilder.Entity<StudentEntity>()
   * There are more options
 * Fluent Api
 
+```C#
+modelBuilder.Entity<Student>()
+    .HasOne<Grade>(s => s.Grade)
+    .WithMany(g => g.Students)
+    .HasForeignKey(s => s.CurrentGradeId);
+```
+@[1]
+@[2]
+@[3]
+@[4]
+@[1-4]
+
 +++
 ### Default Convertions
 * *1*
@@ -945,6 +957,8 @@ modelBuilder.Entity<Grade>()
 ### Many-to-Many Relationships
 * There is no default convertion
 * Fluent Api
+
++++
 
 ---
 ## RAW SQL Queries

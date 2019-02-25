@@ -793,7 +793,7 @@ public class SchoolDbContext: DbContext
 | `ToTable()`         | Configures the database table that the entity maps to.                                                                                                                |
 
 +++
-### Property Configuration
+### Property Configuration part 1
 | Fluent API Methods | Usage |
 |-|-|
 | `HasColumnName()`               | Configures the corresponding column name in the database for the property.                                           |
@@ -805,13 +805,18 @@ public class SchoolDbContext: DbContext
 | `HasMaxLength()`                | Configures the maximum length of data that can be stored in a property.                                              |
 
 +++
-### Property Configuration
+### Property Configuration part 2
 | Fluent API Methods | Usage |
 |-|-|
 | `IsConcurrencyToken()`          | Configures the property to be used as an optimistic concurrency token.                                               |
 | `IsRequired()`                  | Configures whether the valid value of the property is required or whether null is a valid value.                     |
 | `IsRowVersion()`                | Configures the property to be used in optimistic concurrency detection.                                              |
 | `IsUnicode()`                   | Configures the string property which can contain unicode characters or not.                                          |
+
++++
+### Property Configuration part 3
+| Fluent API Methods | Usage |
+|-|-|
 | `ValueGeneratedNever()`         | Configures a property which cannot have a generated value when an entity is saved.                                   |
 | `ValueGeneratedOnAdd()`         | Configures that the property has a generated value when saving a new entity.                                         |
 | `ValueGeneratedOnAddOrUpdate()` | Configures that the property has a generated value when saving new or existing entity.                               |

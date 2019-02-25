@@ -110,7 +110,7 @@ class UserSettings
 
     public void ChangeSettings(Settings settings)
     {
-        if (verifyCredentials())
+        if (VerifyCredentials())
         {
             // ...
         }
@@ -122,16 +122,23 @@ class UserSettings
     }
 }
 ```
+@[3]
+@[4-7]
+@[9-16]
+@[18-21]
+@[3-21]
 
+
++++
 ### **S**OLID - Good Sample
 ```C#
 class UserAuth
 {
-    private User User;
+    private User user;
 
     public UserAuth(User user)
     {
-        User = user;
+        this.user = user;
     }
 
     public bool VerifyCredentials()
@@ -142,24 +149,35 @@ class UserAuth
 
 class UserSettings
 {
-    private User User;
-    private UserAuth Auth;
+    private User user;
+    private UserAuth auth;
 
     public UserSettings(User user)
     {
-        User = user;
-        Auth = new UserAuth(user);
+        this.user = user;
+        auth = new UserAuth(user);
     }
 
     public void ChangeSettings(Settings settings)
     {
-        if (Auth.VerifyCredentials())
+        if (auth.VerifyCredentials())
         {
             // ...
         }
     }
 }
 ```
+@[1-16]
+@[3]
+@[5-8]
+@[10-13]
+@[1-16]
+@[18-37]
+@[20-21]
+@[23-28]
+@[30-36]
+@[18-37]
+
 
 +++
 ### **O**pen–closed principle

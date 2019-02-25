@@ -112,3 +112,4 @@ Resharper
 
 +++
 ## Refences to used images:
+[Amazon.com](https://www.amazon.com/)

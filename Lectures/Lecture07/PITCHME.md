@@ -96,9 +96,71 @@
 * If too much functionality is in one class 
   * It can be **difficult to understand**, how modification will affect other dependent modules
 
++++
+### **S**OLID - Bad Sample
+```C#
+class UserSettings
+{
+    private User User;
 
-+++ 
-### **S**ingle responsibility principle - Minimizing
+    public UserSettings(User user)
+    {
+        User = user;
+    }
+
+    public void ChangeSettings(Settings settings)
+    {
+        if (verifyCredentials())
+        {
+            // ...
+        }
+    }
+
+    private bool VerifyCredentials()
+    {
+        // ...
+    }
+}
+```
+
+### **S**OLID - Good Sample
+```C#
+class UserAuth
+{
+    private User User;
+
+    public UserAuth(User user)
+    {
+        User = user;
+    }
+
+    public bool VerifyCredentials()
+    {
+        // ...
+    }
+}
+
+class UserSettings
+{
+    private User User;
+    private UserAuth Auth;
+
+    public UserSettings(User user)
+    {
+        User = user;
+        Auth = new UserAuth(user);
+    }
+
+    public void ChangeSettings(Settings settings)
+    {
+        if (Auth.VerifyCredentials())
+        {
+            // ...
+        }
+    }
+}
+```
+
 +++
 ### **O**pen–closed principle
 

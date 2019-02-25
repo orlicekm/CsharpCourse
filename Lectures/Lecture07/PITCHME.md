@@ -3,7 +3,7 @@
 @snapend
 
 @snap[midpoint span-100]
-## S.O.L.I.D, Refactorization
+## SOLID, Refactorization
 @snapend
 
 @snap[south-east span-30]
@@ -13,7 +13,7 @@
 
 ---
 ## Clean Code
-* Code that is 
+* Code that
   * *Easy to understand*
   * *Easy to change*
 * **Subjective**
@@ -31,7 +31,7 @@
 * *Any fool can write code that a computer can understand. Good programmers write code that humans can understand.* — Martin Fowler
 
 +++
-### Clean code is
+### Clean Code
 * **Easily accessible to others**
   * Straightforward
   * Clear intent
@@ -49,10 +49,51 @@
 * ⋮
 
 ---
-## S.O.L.I.D
+## Clean code blabla
 
 ---
-## Clean code blabla
+## SOLID
+* Mnemonic acronym for five design principles
+* To make software designs more 
+  * Understandable
+  * Flexible
+  * Maintainable
+* Subset of principles promoted by *Robert C. Martin*
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+## SOLID
+* **S**ingle responsibility principle
+* **O**pen–closed principle
+* **L**iskov substitution principle
+* **I**nterface segregation principle
+* **D**ependency inversion principle
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+### **S**ingle responsibility principle
+
++++
+### **O**pen–closed principle
+
++++
+### **L**iskov substitution principle
+
++++
+### **I**nterface segregation principle
+
++++
+### **D**ependency inversion principle
+
+
++++
+KISS, GRASP?
 
 ---
 ## Refactorization

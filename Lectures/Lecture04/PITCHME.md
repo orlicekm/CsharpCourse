@@ -20,6 +20,10 @@
   * Object-relational mapping
   * ACID, SQL, CAP, CRUD, DAL, DBMS...
 
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
 ---
 ## Software framework
 * **Abstraction** providing **generic functionality**

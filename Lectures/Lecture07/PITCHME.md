@@ -87,11 +87,16 @@
 * Issue:
   * Class won't be conceptually cohesive
   * Many reasons to change
+
+![](/Lectures/Lecture07/Assets/img/SingleReponsibilityPrincipe.jpg)
+
++++ 
+### **S**ingle responsibility principle - Minimizing
+
 * It is important to **minimize amount of times you need to change a class**
 * If too much functionality is in one class 
     *It can be difficult to understand, how modification will affect other dependent modules
 
-![](/Lectures/Lecture07/Assets/img/SingleReponsibilityPrincipe.jpg)
 
 +++ 
 ### **S**ingle responsibility principle - Minimizing

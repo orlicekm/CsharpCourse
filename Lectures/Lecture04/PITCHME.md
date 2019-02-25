@@ -955,10 +955,28 @@ modelBuilder.Entity<Grade>()
 
 +++
 ### Many-to-Many Relationships
-* There is no default convertion
+* In the database is **represented by a joining table** which includes the foreign keys of both tables
+* There are no default conventions
 * Fluent Api
 
+```C#
+modelBuilder.Entity<StudentCourse>()
+    .HasKey(sc => new { sc.StudentId, sc.CourseId });
+```
+
 +++
+
++++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/Entities/StudentEntity.cs&lang=C#&title=Student Entity
+@[13]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/Entities/StudentEntity.cs)
+
++++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/Entities/CourseEntity.cs&lang=C#&title=Course Entity
+@[12]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/Entities/CourseEntity.cs)
+
++++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/Entities/StudentCourseEntity.cs&lang=C#&title=Joining Entity
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/Entities/StudentCourseEntity.cs)
+
 
 ---
 ## RAW SQL Queries

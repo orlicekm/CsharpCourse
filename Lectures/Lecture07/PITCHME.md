@@ -18,7 +18,7 @@
 * [Clean Code Book](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 
 @snap[east]
-![](/Lectures/Lecture07/Assets/img/clean-code.jpg)
+@img[span-70](/Lectures/Lecture07/Assets/img/clean-code.jpg)
 @snapend
 
 +++

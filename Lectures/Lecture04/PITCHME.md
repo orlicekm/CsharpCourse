@@ -858,10 +858,13 @@ modelBuilder.Entity<StudentEntity>()
 +++
 ### One-to-Many Relationships
 * Default conventions
+  * There are more options
 * Fluent Api
 
 +++
 ### Default Convertions
+
+* *1*
 ```C#
 public class Student
 {
@@ -870,7 +873,7 @@ public class Student
 
 public class Grade{}
 ```
-
+* *2**
 ```C#
 public class Student{}
 
@@ -880,6 +883,9 @@ public class Grade
 }
 ```
 
++++
+### Default Convertions
+* *3*
 ```C#
 public class Student
 {
@@ -892,6 +898,7 @@ public class Grade
 }
 ```
 
+* *4*
 ```C#
 public class Student
 {
@@ -903,6 +910,14 @@ public class Grade
     public ICollection<Student> Students { get; set; }
 }
 ```
+
++++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/Entities/StudentEntity.cs&lang=C#&title=Student Entity
+@[12]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/Entities/StudentEntity.cs)
+
++++?code=/Lectures/Lecture04/Assets/sln/EntityFramework.DAL/Entities/GradeEntity.cs&lang=C#&title=Grade Entity
+@[12]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture01/Assets/sln/EntityFramework.DAL/Entities/GradeEntity.cs)
 
 +++
 ### Cascade Delete using Fluent API
@@ -916,8 +931,10 @@ modelBuilder.Entity<Grade>()
     .OnDelete(DeleteBehavior.Cascade);
 ```
 
+
 +++
 ### Many-to-Many Relationships
+* There is no default convertion
 * Fluent Api
 
 ---

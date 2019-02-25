@@ -10,7 +10,6 @@
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
 @snapend
 
-
 ---
 ## Clean Code
 * Code that
@@ -18,6 +17,7 @@
   * *Easy to change*
 * **Subjective**
 * [Clean Code Book](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
+* [Clean Code .NET](https://github.com/thangchung/clean-code-dotnet)
 
 @snap[east]
 @img[span-60](/Lectures/Lecture07/Assets/img/clean-code.jpg)
@@ -47,6 +47,10 @@
 * **Is good at what it does**
 * **Is easy to test**
 * ⋮
+
++++
+### Clean Code Measurement
+![](/Lectures/Lecture07/Assets/img/clean-code-measurement.jpg)
 
 ---
 ## Clean code blabla
@@ -107,9 +111,11 @@ Resharper
 ## References:
 [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)  
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
+[clean-code-dotnet](https://github.com/thangchung/clean-code-dotnet)
 [Cvuorinen.net](https://cvuorinen.net/)  
 [DZone.com](https://dzone.com/)
 
 +++
 ## Refences to used images:
+[clean-code-dotnet](https://github.com/thangchung/clean-code-dotnet)
 [Amazon.com](https://www.amazon.com/)

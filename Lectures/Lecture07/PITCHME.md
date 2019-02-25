@@ -1,10 +1,18 @@
-﻿# Title
-## Subtitle
-<div class="right">
+﻿@snap[north span-100]
+# Clean code in C#
+@snapend
+
+@snap[midpoint span-100]
+S.O.L.I.D, Refactorization
+@snapend
+
+@snap[south-east span-30]
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
-</div>
+@snapend
+
 
 ---
+## S.O.L.I.D
 
 ---
 ## References:

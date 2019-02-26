@@ -502,6 +502,7 @@ public class Robot : IEmployee
 +++
 ### SOL**I**D - Good Sample
 * Not every worker is an employee, but every employee is an worker
+
 ```C#
 public interface IWorkable
 {

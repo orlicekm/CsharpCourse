@@ -549,12 +549,94 @@ public class Robot : IWorkable
 
 +++
 ### **D**ependency Inversion Principle
+* High-level modules should not depend on low-level modules
+  * Both should depend on abstractions
+* Abstractions should not depend upon details
+  * Details should depend on abstractions
+
+@img[span-40](/Lectures/Lecture07/Assets/img/DependencyInversionPrinciple.jpg)
 
 +++
 ### SOL**I**D - Bad Sample
+```
+public abstract class EmployeeBase
+{
+    public void Work()
+    {
+        // ....working
+    }
+}
+
+public class Robot : EmployeeBase
+{
+    public void Work()
+    {
+        //.... working much more
+    }
+}
+
+public class Manager
+{
+    private readonly Employee _employee;
+
+    public Manager(Employee employee)
+    {
+        _employee = employee;
+    }
+
+    public void Manage()
+    {
+        _employee.Work();
+    }
+}
+```
+@[1-7]
+@[9-15]
+@[17-30]
 
 +++
 ### SOL**I**D - Good Sample
+```
+public interface IEmployee
+{
+    void Work();
+}
+
+public class Human : IEmployee
+{
+    public void Work()
+    {
+        // ....working
+    }
+}
+
+public class Robot : IEmployee
+{
+    public void Work()
+    {
+        //.... working much more
+    }
+}
+
+public class Manager
+{
+    private readonly IEmployee _employee;
+
+    public Manager(IEmployee employee)
+    {
+        _employee = employee;
+    }
+
+    public void Manage()
+    {
+        _employee.Work();
+    }
+}
+```
+@[1-4]
+@[6-12]
+@[14-20]
+@[22-35]
 
 +++
 KISS, GRASP, DRY

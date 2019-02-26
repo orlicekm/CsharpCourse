@@ -455,6 +455,95 @@ RenderLargeRectangles(shapes);
 
 +++
 ### **I**nterface segregation principle
+* **Clients should not be forced to depend upon interfaces that they do not use**
+* It's better to create more simplier interfaces than fat one
+
+@img[span-40](/Lectures/Lecture07/Assets/img/ISP.jpg)
+
++++
+### SOL**I**D - Bad Sample
+```C#
+public interface IEmployee
+{
+    void Work();
+    void Eat();
+}
+
+public class Human : IEmployee
+{
+    public void Work()
+    {
+        // ....working
+    }
+
+    public void Eat()
+    {
+        // ...... eating in lunch break
+    }
+}
+
+public class Robot : IEmployee
+{
+    public void Work()
+    {
+        //.... working much more
+    }
+
+    public void Eat()
+    {
+        //.... robot can't eat, but it must implement this method
+    }
+}
+```
+@[1-5]
+@[7-18]
+@[20-31]
+
++++
+### SOL**I**D - Good Sample
+* Not every worker is an employee, but every employee is an worker
+```C#
+public interface IWorkable
+{
+    void Work();
+}
+
+public interface IFeedable
+{
+    void Eat();
+}
+
+public interface IEmployee : IFeedable, IWorkable
+{
+}
+
+public class Human : IEmployee
+{
+    public void Work()
+    {
+        // ....working
+    }
+
+    public void Eat()
+    {
+        //.... eating in lunch break
+    }
+}
+
+// robot can only work
+public class Robot : IWorkable
+{
+    public void Work()
+    {
+        // ....working
+    }
+}
+```
+@[1-4]
+@[6-9]
+@[11-13]
+@[15-26]
+@[28-35]
 
 +++
 ### **D**ependency inversion principle

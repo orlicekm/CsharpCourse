@@ -449,8 +449,9 @@ RenderLargeRectangles(shapes);
 ```
 @[1-12]
 @[14-30]
-@[23-44]
-@[46-63]
+@[33-45]
+@[47-64]
+@[66-67]
 
 +++
 ### **I**nterface segregation principle

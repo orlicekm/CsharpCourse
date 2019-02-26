@@ -179,7 +179,7 @@ class UserSettings
 @[14-34]
 
 +++
-### **O**pen–closed principle
+### **O**pen–closed principlea
 
 +++
 ### **L**iskov substitution principle

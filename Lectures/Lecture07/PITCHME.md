@@ -56,6 +56,18 @@
 ---
 ## Clean code blabla
 
+
+---
+## Mnemonic Acronyms
+* SOLID
+* DRY
+* KISS
+* GRASP
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
 ---
 ## SOLID
 * Mnemonic acronym for five design principles
@@ -639,7 +651,10 @@ public class Manager
 @[22-35]
 
 +++
-KISS, GRASP, DRY
+## Don’t repeat yourself (DRY)
+
++++
+KISS, GRASP
 
 ---
 ## Refactorization

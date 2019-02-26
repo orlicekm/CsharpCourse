@@ -306,7 +306,7 @@ class HttpRequester
 ### **L**iskov substitution principle*
 * Official definition: *If `S` is a subtype of `T`, then objects of type `T` may be replaced with objects of type `S` without altering any of the desirable properties of that program.*
 
-@img[span-55](/Lectures/Lecture07/Assets/img/LiskovSubstitutionPrinciple.jpg)
+@img[span-50](/Lectures/Lecture07/Assets/img/LiskovSubstitutionPrinciple.jpg)
 
 +++
 ### SO**L**ID - Bad Sample

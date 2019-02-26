@@ -24,6 +24,7 @@
 @snapend
 
 +++
+### Clean Code Citations
 * *Clean code is code that has been taken care of. Someone has taken the time to keep it simple and orderly. They have paid appropriate attention to details. They have cared.* — Robert C. Martin 
 * *If you want your code to be easy to write, make it easy to read.* — Robert C. Martin
 * *Clean code always looks like it was written by someone who cares. There is nothing obvious you can do to make it better.* — Michael Feathers

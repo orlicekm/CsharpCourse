@@ -372,8 +372,8 @@ RenderLargeRectangles(rectangles);
 ```
 @[1-25]
 @[27-38]
-@[40-53]
-@[55-56]
+@[40-52]
+@[54-56]
 
 +++
 ### SO**L**ID - Good Sample

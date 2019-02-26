@@ -180,6 +180,127 @@ class UserSettings
 
 +++
 ### **O**pen–closed principle
+* Software entities *(classes, modules, methods...)*
+  * **Open for extension**
+  * **Closed for modification**
+* Allow user to add **new functionalities without changing existing code**
+
++++
+### S**O**LID - Bad Sample
+```
+abstract class AdapterBase
+{
+    protected string Name;
+
+    public string GetName()
+    {
+        return Name;
+    }
+}
+
+class AjaxAdapter : AdapterBase
+{
+    public AjaxAdapter()
+    {
+        Name = "ajaxAdapter";
+    }
+}
+
+class NodeAdapter : AdapterBase
+{
+    public NodeAdapter()
+    {
+        Name = "nodeAdapter";
+    }
+}
+
+class HttpRequester : AdapterBase
+{
+    private readonly AdapterBase adapter;
+
+    public HttpRequester(AdapterBase adapter)
+    {
+        this.adapter = adapter;
+    }
+
+    public void Fetch(string url)
+    {
+        var adapterName = adapter.GetName();
+
+        if (adapterName == "ajaxAdapter")
+        {
+            return MakeAjaxCall(url);
+        }
+        else if (adapterName == "httpNodeAdapter")
+        {
+            return MakeHttpCall(url);
+        }
+    }
+
+    private bool MakeAjaxCall(string url)
+    {
+        // request and return promise
+    }
+
+    private bool MakeHttpCall(string url)
+    {
+        // request and return promise
+    }
+}
+```
+@[1-9]
+@[11-17]
+@[19-25]
+@[27-28]
+@[29]
+@[31-34]
+@[36-48]
+@[50-53]
+@[55-58]
+
++++
+### S**O**LID - Good Sample
+```C#
+interface IAdapter
+{
+    bool Request(string url);
+}
+
+class AjaxAdapter : IAdapter
+{
+    public bool Request(string url)
+    {
+        // request and return promise
+    }
+}
+
+class NodeAdapter : IAdapter
+{
+    public bool Request(string url)
+    {
+        // request and return promise
+    }
+}
+
+class HttpRequester
+{
+    private readonly IAdapter adapter;
+
+    public HttpRequester(IAdapter adapter)
+    {
+        this.adapter = adapter;
+    }
+
+    public bool Fetch(string url)
+    {
+        return adapter.Request(url);
+    }
+}
+```
+@[1-4]
+@[6-12]
+@[14-20]
+@[22-35]
 
 +++
 ### **L**iskov substitution principle

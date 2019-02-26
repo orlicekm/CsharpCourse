@@ -201,7 +201,7 @@ class UserSettings
 
 +++
 ### S**O**LID - Bad Sample
-```
+```C#
 abstract class AdapterBase
 {
     protected string Name;
@@ -571,7 +571,7 @@ public class Robot : IWorkable
 
 +++
 ### SOL**I**D - Bad Sample
-```
+```C#
 public abstract class EmployeeBase
 {
     public void Work()
@@ -609,7 +609,7 @@ public class Manager
 
 +++
 ### SOL**I**D - Good Sample
-```
+```C#
 public interface IEmployee
 {
     void Work();
@@ -742,6 +742,8 @@ public List<EmployeeData> ShowList(Employee employees)
 +++
 ### DRY - Very Good Sample
 * Compact version of the code
+
+
 ```C#
 public List<EmployeeData> ShowList(Employee employees)
 {

@@ -826,6 +826,67 @@ public class SchoolDbContext: DbContext
 | `ValueGeneratedOnAddOrUpdate()` | Configures that the property has a generated value when saving new or existing entity.                               |
 | `ValueGeneratedOnUpdate()`      | Configures that a property has a generated value when saving an existing entity.                                     |
 
+
+---
+### DbContext Usage
+* Insert Data
+* Update Data
+* Delete Data
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+## Insert Data
+```C#
+var person = new Person
+{
+    FirstName = "Joe",
+    LastName = "Doe"
+};
+
+using (var dbContext = CreateDbContext())
+{
+    dbContext.People.Add(person);
+    dbContext.SaveChanges();
+}
+```
+@[1-10]
+@[6-10]
+
++++
+## Update Data
+
+```C#
+person.LastName = "Smith";
+
+using (var dbContext = CreateDbContext())
+{
+    dbContext.People.Update(person);
+    dbContext.SaveChanges();
+}
+```
+@[1-6]
+@[3-6]
+
++++
+## Delete Data
+```C#
+var person = new Person
+{
+    Id = 1
+};
+
+using (var dbContext = CreateDbContext())
+{
+    dbContext.People.Remove(person);
+    dbContext.SaveChanges();
+}
+```
+@[1-9]
+@[5-9]
+
 ---
 ## Entity Relationships
 * One-to-One

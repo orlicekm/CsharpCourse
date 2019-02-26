@@ -81,7 +81,7 @@
 @snapend
 
 +++
-### **S**ingle responsibility principle
+### **S**ingle Responsibility Principle
 * **Class have one responsibility**
 
 @img[span-45](/Lectures/Lecture07/Assets/img/SingleReponsibilityPrincipe.jpg)
@@ -179,7 +179,7 @@ class UserSettings
 @[14-34]
 
 +++
-### **O**pen–closed principle
+### **O**pen–closed Principle
 * Software entities *(classes, modules, methods...)*
   * **Open for extension**
   * **Closed for modification**
@@ -303,7 +303,7 @@ class HttpRequester
 @[22-35]
 
 +++
-### **L**iskov substitution principle*
+### **L**iskov Substitution Principle*
 * Official definition: *If `S` is a subtype of `T`, then objects of type `T` may be replaced with objects of type `S` without altering any of the desirable properties of that program.*
 
 @img[span-50](/Lectures/Lecture07/Assets/img/LiskovSubstitutionPrinciple.jpg)
@@ -454,7 +454,7 @@ RenderLargeRectangles(shapes);
 @[66-67]
 
 +++
-### **I**nterface segregation principle
+### **I**nterface Segregation Principle
 * **Clients should not be forced to depend upon interfaces that they do not use**
 * It's better to create more simplier interfaces than fat one
 
@@ -547,8 +547,13 @@ public class Robot : IWorkable
 @[28-35]
 
 +++
-### **D**ependency inversion principle
+### **D**ependency Inversion Principle
 
++++
+### SOL**I**D - Bad Sample
+
++++
+### SOL**I**D - Good Sample
 
 +++
 KISS, GRASP, DRY
@@ -565,12 +570,14 @@ Resharper
 ## References:
 [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)  
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
-[Toptal - developers](https://www.toptal.com/developers)
-[Clean-code-dotnet](https://github.com/thangchung/clean-code-dotnet)
+[Toptal - developers](https://www.toptal.com/developers)  
+[Clean-code-dotnet](https://github.com/thangchung/clean-code-dotnet)  
 [Cvuorinen.net](https://cvuorinen.net/)  
-[DZone.com](https://dzone.com/)
+[Wikipedia](https://www.wikipedia.org/)  
+[DZone.com](https://dzone.com/)  
 
 +++
 ## Refences to used images:
-[clean-code-dotnet](https://github.com/thangchung/clean-code-dotnet)
-[Amazon.com](https://www.amazon.com/)
+[clean-code-dotnet](https://github.com/thangchung/clean-code-dotnet)  
+[Amazon.com](https://www.amazon.com/)  
+[Wikipedia](https://www.wikipedia.org/)

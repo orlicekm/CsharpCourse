@@ -651,14 +651,16 @@ public class Manager
 @[14-20]
 @[22-35]
 
-+++
+---
 ## Don’t repeat yourself (DRY) principe
-* Also know as *Single Source of Truth (SSOT)* principe
 * **Avoid duplicate code**
 * Benefit
   * **Change code in one place**
   * **See the change in all instances**
 * **Create abstractions** to remove duplicates
+* Also know as *Single Source of Truth (SSOT)* principe
+* *Open/Closed Principle* only works when DRY is followed
+* *Single Responsibility Principle* relies on DRY
 
 +++
 ### DRY - Bad Sample
@@ -762,8 +764,21 @@ public List<EmployeeData> ShowList(Employee employees)
 @[5-9]
 @[1-11]
 
+---
+## Keep it Simple, Stupid
+* **Avoid complexity** as much as you can
+* **Implement new feature** as **simple** as you can
+* Many variants
+  * Keep it short and simple
+  * Keep it simple and straightforward
+  * Keep it simple sir
+  * ⋮
+* Noted by the U.S. Navy in 1960
+
+@img[span-60](/Lectures/Lecture07/Assets/img/KISS-Principle.jpg)
+
 +++
-KISS, GRASP
+GRASP, YAGNI?
 
 ---
 ## Refactorization
@@ -782,6 +797,7 @@ Resharper
 [Cvuorinen.net](https://cvuorinen.net/)  
 [Wikipedia](https://www.wikipedia.org/)  
 [DZone.com](https://dzone.com/)  
+[DevIQ](https://deviq.com/)
 
 +++
 ## Refences to used images:

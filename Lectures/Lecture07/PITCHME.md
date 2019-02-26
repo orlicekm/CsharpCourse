@@ -658,7 +658,7 @@ public class Manager
 * Benefit
   * **Change code in one place**
   * **See the change in all instances**
-* **Create abstractions* to remove duplicates
+* **Create abstractions** to remove duplicates
 
 +++
 ### DRY - Bad Sample
@@ -713,6 +713,7 @@ public List<ManagerData> ShowManagerList(Manager managers)
 
 +++
 ### DRY - Good Sample
+
 ```
 public List<EmployeeData> ShowList(Employee employees)
 {
@@ -732,7 +733,6 @@ public List<EmployeeData> ShowList(Employee employees)
     }
 }
 ```
-@[1-17]
 @[3-4,16]
 @[5-7]
 @[8-13]

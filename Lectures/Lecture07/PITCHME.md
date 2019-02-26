@@ -303,7 +303,154 @@ class HttpRequester
 @[22-35]
 
 +++
-### **L**iskov substitution principle
+### **L**iskov substitution principle*
+* Official definition: *If `S` is a subtype of `T`, then objects of type `T` may be replaced with objects of type `S` without altering any of the desirable properties of that program.*
+
+@img[span-45](/Lectures/Lecture07/Assets/img/SingleReponsibilityPrincipe.jpg)
+
++++
+### SO**L**ID - Bad Sample
+* Mathematically, a square is a rectangle
+* iI you model it using the "is-a" relationship via inheritance, you get into trouble
+
+```C#
+class Rectangle
+{
+    protected double width = 0;
+    protected double height = 0;
+
+    public Drawable Render(double area)
+    {
+        // ...
+    }
+
+    public void SetWidth(double width)
+    {
+        this.width = width;
+    }
+
+    public void SetHeight(double height)
+    {
+        this.height = height;
+    }
+
+    public double GetArea()
+    {
+        return width * height;
+    }
+}
+
+class Square : Rectangle
+{
+    public double SetWidth(double width)
+    {
+        base.width = base.height = width;
+    }
+
+    public double SetHeight(double height)
+    {
+        base.width = base.height = height;
+    }
+}
+
+Drawable RenderLargeRectangles(Rectangle[] rectangles)
+{
+    foreach (rectangle in rectangles)
+    {
+        rectangle.SetWidth(4);
+        rectangle.SetHeight(5);
+
+        // Will return 25 for Square. Should be 20.
+        var area = rectangle.GetArea();
+
+        rectangle.Render(area);
+    }
+}
+
+var rectangles = new[] { new Rectangle(), new Rectangle(), new Square() };
+RenderLargeRectangles(rectangles);
+```
+@[1-25]
+@[27-38]
+@[40-53]
+@[55-56]
+
++++
+### SO**L**ID - Good Sample
+
+```C#
+abstract class ShapeBase
+{
+    protected double width = 0;
+    protected double height = 0;
+
+    abstract public double GetArea();
+
+    public Drawable Render(double area)
+    {
+        // ...
+    }
+}
+
+class Rectangle : ShapeBase
+{
+    public void SetWidth(double width)
+    {
+        base.width = width;
+    }
+
+    public void SetHeight(double height)
+    {
+        base.height = height;
+    }
+
+    public double GetArea()
+    {
+        return Width * Height;
+    }
+}
+
+class Square : ShapeBase
+{
+    private double length = 0;
+
+    public double SetLength(double length)
+    {
+        length = length;
+    }
+
+    public double GetArea()
+    {
+        return Math.Pow(Length, 2);
+    }
+}
+
+Drawable RenderLargeRectangles(Rectangle[] rectangles)
+{
+    foreach (rectangle in rectangles)
+    {
+        if (rectangle is Square)
+        {
+            rectangle.SetLength(5);
+        }
+        else if (rectangle is Rectangle)
+        {
+            rectangle.SetWidth(4);
+            rectangle.SetHeight(5);
+        }
+
+        var area = rectangle.GetArea();
+        rectangle.Render(area);
+    }
+}
+
+var shapes = new[] { new Rectangle(), new Rectangle(), new Square() };
+RenderLargeRectangles(shapes);
+```
+@[1-12]
+@[14-30]
+@[23-44]
+@[46-63]
 
 +++
 ### **I**nterface segregation principle

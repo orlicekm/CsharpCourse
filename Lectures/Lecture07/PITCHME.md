@@ -775,7 +775,7 @@ public List<EmployeeData> ShowList(Employee employees)
   * ⋮
 * Noted by the U.S. Navy in 1960
 
-@img[span-60](/Lectures/Lecture07/Assets/img/KISS-Principle.jpg)
+@img[span-55](/Lectures/Lecture07/Assets/img/KISS-Principle.jpg)
 
 +++
 GRASP, YAGNI?

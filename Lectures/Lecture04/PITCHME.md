@@ -852,8 +852,8 @@ using (var dbContext = CreateDbContext())
     dbContext.SaveChanges();
 }
 ```
-@[1-10]
-@[6-10]
+@[1-5]
+@[7-11]
 
 +++
 ## Update Data
@@ -867,8 +867,8 @@ using (var dbContext = CreateDbContext())
     dbContext.SaveChanges();
 }
 ```
-@[1-6]
-@[3-6]
+@[1]
+@[3-7]
 
 +++
 ## Delete Data
@@ -884,8 +884,8 @@ using (var dbContext = CreateDbContext())
     dbContext.SaveChanges();
 }
 ```
-@[1-9]
-@[5-9]
+@[1-4]
+@[6-10]
 
 ---
 ## Entity Relationships

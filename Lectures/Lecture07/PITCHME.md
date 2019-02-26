@@ -63,6 +63,7 @@
 * DRY
 * KISS
 * GRASP
+* ⋮
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
@@ -651,7 +652,113 @@ public class Manager
 @[22-35]
 
 +++
-## Don’t repeat yourself (DRY)
+## Don’t repeat yourself (DRY) principe
+* Also know as *Single Source of Truth (SSOT)* principe
+* **Avoid duplicate code**
+* Benefit
+  * **Change code in one place**
+  * **See the change in all instances**
+* **Create abstractions* to remove duplicates
+
++++
+### DRY - Bad Sample
+```C#
+public List<EmployeeData> ShowDeveloperList(Developers developers)
+{
+    foreach (var developers in developer)
+    {
+        var expectedSalary = developer.CalculateExpectedSalary();
+        var experience = developer.GetExperience();
+        var githubLink = developer.GetGithubLink();
+        var data = new[] {
+            expectedSalary,
+            experience,
+            githubLink
+        };
+
+        Render(data);
+    }
+}
+
+public List<ManagerData> ShowManagerList(Manager managers)
+{
+    foreach (var manager in managers)
+    {
+        var expectedSalary = manager.CalculateExpectedSalary();
+        var experience = manager.GetExperience();
+        var githubLink = manager.GetGithubLink();
+        var data =
+        new[] {
+            expectedSalary,
+            experience,
+            githubLink
+        };
+
+        Render(data);
+    }
+}
+```
+@[1-16]
+@[3-4,15]
+@[5-7]
+@[8-12]
+@[14]
+@[1-16]
+@[18-34]
+@[20-21,33]
+@[22-24]
+@[25-30]
+@[32]
+@[18-34]
+
++++
+### DRY - Good Sample
+```
+public List<EmployeeData> ShowList(Employee employees)
+{
+    foreach (var employee in employees)
+    {
+        var expectedSalary = employees.CalculateExpectedSalary();
+        var experience = employees.GetExperience();
+        var githubLink = employees.GetGithubLink();
+        var data =
+        new[] {
+            expectedSalary,
+            experience,
+            githubLink
+        };
+
+        render(data);
+    }
+}
+```
+@[1-17]
+@[3-4,16]
+@[5-7]
+@[8-13]
+@[15]
+@[1-17]
+
++++
+### DRY - Very Good Sample
+* Compact version of the code
+```C#
+public List<EmployeeData> ShowList(Employee employees)
+{
+    foreach (var employee in employees)
+    {
+        render(new[] {
+            employee.CalculateExpectedSalary(),
+            employee.GetExperience(),
+            employee.GetGithubLink()
+        });
+    }
+}
+```
+@[1-11]
+@[3-4,10]
+@[5-9]
+@[1-11]
 
 +++
 KISS, GRASP

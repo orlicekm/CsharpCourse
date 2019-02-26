@@ -84,11 +84,11 @@
 
 * Integrated development environment (IDE)
 * Feature-rich program that can be used for many aspects of software development:
-  * editor
-  * debugger
-  * builder 
-  * completion tools
-  * graphical designers
+  * Editor
+  * Debugger
+  * Builder 
+  * Completion tools
+  * Graphical designers
   * ⋮
 * [Free download](https://visualstudio.microsoft.com/vs/")
 * [Installation guide](https://docs.microsoft.com/en-us/visualstudio/install/install-visual-studio?view=vs-2017)

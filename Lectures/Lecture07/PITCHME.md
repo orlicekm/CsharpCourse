@@ -238,7 +238,7 @@ public double CalculateSalary(int workingDays, int workingHours)
 * **Dont use synonyms**
   * Choose one of them and be consistent
 * **Variable ends with noun** e.g. `Car car;`
-  * Bool starts with "Is", "Was", "Has"... e.g. `bool isTestPage;`
+  * Bool starts with *Is*, *Was*, *Has*... e.g. `bool isTestPage;`
 * **Method starts with verb**
   * Says what it return `public List<Cell> GetFlaggedCells()`
   * What it does `public void ChangeCarCount(int carCount)`

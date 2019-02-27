@@ -68,7 +68,7 @@
 @snapend
 
 +++
-### Avoid Using Bad Name
+### Avoid Using Bad Names
 * Good name **allows the code to be used by many developers**
 * The name should **reflect what it does** and give context
 * **Bad**
@@ -83,7 +83,7 @@ int daySinceModification;
 ```
 
 +++
-### Avoid Disinformation Name
+### Avoid Disinformation Names
 * **Avoid** naming with **disinformation name**
 * **Name variable to reflect what we want to do** with it
 * **Bad**
@@ -98,6 +98,130 @@ var listOfEmployee = employeeService.GetEmployeeListFromDb().ToList();
 ```
 
 +++
+### Avoid Hungarian Notations
+* Hungarian Notation **restates the type which is already present in the declaration**
+* This is **pointless** since modern IDEs will identify the type
+* **Bad**
+
+```C#
+int iCounter;
+string strFullName;
+DateTime dModifiedDate;
+```
+* **Good**
+
+```C#
+int counter;
+string fullName;
+DateTime modifiedDate;
+```
+
++++ 
+### Avoid Hungarian Notations in Parameters
+* Should also not be used in paramaters
+* **Bad**
+
+```C#
+public bool IsShopOpen(string pDay, int pAmount)
+{
+    // some logic
+}
+```
+* **Good**
+
+```C#
+public bool IsShopOpen(string day, int amount)
+{
+    // some logic
+}
+```
+
++++
+### Use Consistent Capitalization
+* **Capitalization tells you a lot** about your variables, methods...
+* **Subjective**, so team can choose whatever they want
+* No matter what you all choose, just **be consistent**
+
++++
+### Use Consistent Capitalization - Bad Sample
+```C#
+const int DAYS_IN_WEEK = 7;
+const int daysInMonth = 30;
+
+var songs = new List<string> { 'Back In Black', 'Stairway to Heaven', 'Hey Jude' };
+var Artists = new List<string> { 'ACDC', 'Led Zeppelin', 'The Beatles' };
+
+bool EraseDatabase() {}
+bool Restore_database() {}
+
+class animal {}
+class Alpaca {}
+```
+
++++
+### Use Consistent Capitalization - Good Sample
+```C#
+const int DaysInWeek = 7;
+const int DaysInMonth = 30;
+
+var songs = new List<string> { 'Back In Black', 'Stairway to Heaven', 'Hey Jude' };
+var artists = new List<string> { 'ACDC', 'Led Zeppelin', 'The Beatles' };
+
+bool EraseDatabase() {}
+bool RestoreDatabase() {}
+
+class Animal {}
+class Alpaca {}
+```
+
++++
+### Use Pronounceable Names
+* Easier to investigate meaning and functions
+* Easier to remember
+* **Bad**
+
+```C#
+public class Employee
+{
+    public Datetime sWorkDate { get; set; } // what the heck is this
+    public Datetime modTime { get; set; } // same here
+}
+```
+* **Good**
+
+```C#
+public class Employee
+{
+    public Datetime StartWorkingDate { get; set; }
+    public Datetime ModificationTime { get; set; }
+}
+```
+
++++
+### Use Camelcase notation
+* Each word in the middle of the phrase begins with a capital letter
+* [Wikipedia](https://en.wikipedia.org/wiki/Camel_case)
+* **Bad**
+```C#
+var employeephone;
+
+public double CalculateSalary(int workingdays, int workinghours)
+{
+    // some logic
+}
+```
+* **Good**
+```C#
+var employeePhone;
+
+public double CalculateSalary(int workingDays, int workingHours)
+{
+    // some logic
+}
+```
+@snap[east span-40]
+![](/Lectures/Assets/img/CamelCase.png)
+@snapend
 
 ---
 ## Mnemonic Acronyms

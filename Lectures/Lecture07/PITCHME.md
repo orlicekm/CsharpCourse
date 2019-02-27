@@ -61,7 +61,7 @@
 * Use consistent capitalization
 * Use pronounceable names
 * Use Camelcase notation
-* Use domain name
+* Other naming related advices
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
@@ -202,7 +202,7 @@ public class Employee
 ```
 
 +++
-### Use Camelcase notation
+### Use Camelcase Notations
 * Each word in the **middle of the phrase begins with a capital letter**
 * [Wikipedia](https://en.wikipedia.org/wiki/Camel_case)
 * **Bad**
@@ -229,6 +229,20 @@ public double CalculateSalary(int workingDays, int workingHours)
 @snap[north-east]
 @img[span-80](/Lectures/Lecture07/Assets/img/CamelCase.png)
 @snapend
+
++++
+### Other Naming Related Advices
+* Code is writen by developer for developer
+  * **Dont explain fundamentals** what everyone knows
+* **One concept, one word**
+* **Dont use synonyms**
+  * Choose one of them and be consistent
+* **Variable ends with noun** e.g. `Car car;`
+  * Bool starts with "Is", "Was", "Has"... e.g. `bool isTestPage;`
+* **Method starts with verb**
+  * Says what it return `public List<Cell> GetFlaggedCells()`
+  * What it does `public void ChangeCarCount(int carCount)`
+
 
 ---
 ## Mnemonic Acronyms

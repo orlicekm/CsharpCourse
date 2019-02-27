@@ -652,7 +652,7 @@ public class Manager
 @[22-35]
 
 ---
-## Don’t repeat yourself (DRY) principe
+## Don’t Repeat Yourself (DRY) Principe
 * **Avoid duplicate code**
 * Benefit
   * **Change code in one place**
@@ -765,7 +765,7 @@ public List<EmployeeData> ShowList(Employee employees)
 @[1-11]
 
 ---
-## Keep it Simple, Stupid
+## Keep it Simple, Stupid (KISS) Principle
 * **Avoid complexity** as much as you can
 * **Implement new feature** as **simple** as you can
 * Many variants
@@ -777,8 +777,30 @@ public List<EmployeeData> ShowList(Employee employees)
 
 @img[span-55](/Lectures/Lecture07/Assets/img/KISS-Principle.jpg)
 
+---
+## General Responsibility Assignment Software Patterns (GRASP)  Principle
+* To make for **clear delineation of responsibilities**
+* Assigns **types of roles** to classes and objects 
+  * *Controller*
+  * *Information Expert
+  * *Creator*
+  * *High Cohesion*
+  * *Low Coupling*
+  * *Polymorphism*
+  * *Protected Classes*
+  * ⋮
+
 +++
-GRASP, YAGNI?
+## Other Principles
+* **You aren't gonna need it** (YAGNI)
+  * Not add functionality until deemed necessary
+* **Worse is better**
+  * Quality does not necessarily increase with functionality
+* **Overengineering**
+  * Product beeing unnecessarily complex or inefficient
+* **If it ain't broke, don't fix it**
+* ⋮
+
 
 ---
 ## Refactorization

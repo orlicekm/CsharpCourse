@@ -54,8 +54,46 @@
 ![](/Lectures/Lecture07/Assets/img/clean-code-measurement.jpg)
 
 ---
-## Clean code blabla
+## Clean code Naming
+* Avoid using bad names
+* Avoid disinformation name
+* Avoid Hungarian notation
+* Use consistent capitalization
+* Use pronounceable names
+* Use Camelcase notation
+* Use domain name
 
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+### Avoid Using Bad Name
+* Good name **allows the code to be used by many developers**
+* The name should **reflect what it does** and give context
+* **Bad**
+```C#
+int d;
+```
+* **Good**
+```C#
+int daySinceModification;
+```
+
++++
+### Avoid Disinformation Name
+* **Avoid** naming with **disinformation name**
+* **Name variable to reflect what we want to do** with it
+* **Bad**
+```C#
+var dataFromDb = db.GetFromService().ToList();
+```
+* **Good**
+```C#
+var listOfEmployee = employeeService.GetEmployeeListFromDb().ToList();
+```
+
++++
 
 ---
 ## Mnemonic Acronyms
@@ -800,7 +838,6 @@ public List<EmployeeData> ShowList(Employee employees)
   * Product beeing unnecessarily complex or inefficient
 * **If it ain't broke, don't fix it**
 * ⋮
-
 
 ---
 ## Refactorization

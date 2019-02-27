@@ -46,7 +46,7 @@
 +++
 ### Database components
 * *Schema* - collection of one or more tables
-* *Table* - contains multiple columns (similar to columns in a spreadsheet)
+* *Table* - contains multiple columns (similar to the columns in a spreadsheet)
 * *Column* - contains one of several types of data
 * *Row* - **data** in a table is listed in rows (like rows of data in a spreadsheet)
 

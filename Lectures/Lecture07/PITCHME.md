@@ -243,6 +243,19 @@ public double CalculateSalary(int workingDays, int workingHours)
   * Says what it return `public List<Cell> GetFlaggedCells()`
   * What it does `public void ChangeCarCount(int carCount)`
 
+---
+## Clean Code Variables
+* Avoid nesting too deeply and return early
+* Avoid mental mapping
+* Avoid magic string
+* Don't add unneeded context
+* Use meaningful and pronounceable variable names
+* Use the same vocabulary for the same type of variable
+* Use searchable names
+* Use explanatory variables
+* Use default arguments instead of short circuiting or conditionals
+
++++
 
 ---
 ## Mnemonic Acronyms

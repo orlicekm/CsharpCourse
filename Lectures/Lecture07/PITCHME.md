@@ -152,7 +152,7 @@ public bool IsShopOpen(string day, int amount)
 const int DAYS_IN_WEEK = 7;
 const int daysInMonth = 30;
 
-var songs = new List<string> { 'Back In Black', 'Stairway to Heaven', 'Hey Jude' };
+var songs = new List<string> { 'Back In Black', 'Stairway to Heaven' };
 var Artists = new List<string> { 'ACDC', 'Led Zeppelin', 'The Beatles' };
 
 bool EraseDatabase() {}
@@ -168,7 +168,7 @@ class Alpaca {}
 const int DaysInWeek = 7;
 const int DaysInMonth = 30;
 
-var songs = new List<string> { 'Back In Black', 'Stairway to Heaven', 'Hey Jude' };
+var songs = new List<string> { 'Back In Black', 'Stairway to Heaven' };
 var artists = new List<string> { 'ACDC', 'Led Zeppelin', 'The Beatles' };
 
 bool EraseDatabase() {}

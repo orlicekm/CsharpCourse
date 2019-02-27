@@ -140,7 +140,7 @@ public bool IsShopOpen(string day, int amount)
 ### Use Consistent Capitalization
 * **Capitalization tells you a lot** about your variables, methods...
 * **Subjective**, so team can choose whatever they want
-* No matter what you all choose, just **be consistent**
+* No matter what you choose, just **be consistent**
 
 +++
 ### Use Consistent Capitalization - Bad Sample
@@ -202,6 +202,7 @@ public class Employee
 * Each word in the middle of the phrase begins with a capital letter
 * [Wikipedia](https://en.wikipedia.org/wiki/Camel_case)
 * **Bad**
+
 ```C#
 var employeephone;
 
@@ -211,6 +212,7 @@ public double CalculateSalary(int workingdays, int workinghours)
 }
 ```
 * **Good**
+
 ```C#
 var employeePhone;
 
@@ -219,8 +221,9 @@ public double CalculateSalary(int workingDays, int workingHours)
     // some logic
 }
 ```
+
 @snap[east span-40]
-![](/Lectures/Assets/img/CamelCase.png)
+![](/Lectures/Lecture07/Assets/img/CamelCase.png)
 @snapend
 
 ---

@@ -246,8 +246,7 @@ public double CalculateSalary(int workingDays, int workingHours)
 ---
 ## Clean Code Variables
 * Avoid nesting too deeply and return early
-* Avoid mental mapping
-* Avoid magic string
+* Avoid magic strings, numbers...
 * Don't add unneeded context
 * Use meaningful and pronounceable variable names
 * Use the same vocabulary for the same type of variable
@@ -325,6 +324,32 @@ public long Fibonacci(int index)
 @[8-11]
 @[13-16]
 @[1-19]
+
++++
+## Avoid magic strings, numbers...
+* It is a value
+  * Specified directly within application code
+  * Have an impact on the application’s behavior
+* Frequently will end up being duplicated within the system
+* Common source of bugs
+  * Problem with updating them
+* **Bad**
+
+```C#
+if (userRole == "Admin")
+{
+    // logic in here
+}
+```
+* **Good**
+
+```C#
+const string ADMIN_ROLE = "Admin"
+if (userRole == ADMIN_ROLE)
+{
+    // logic in here
+}
+```
 
 ---
 ## Mnemonic Acronyms

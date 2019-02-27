@@ -153,7 +153,7 @@ const int DAYS_IN_WEEK = 7;
 const int daysInMonth = 30;
 
 var songs = new List<string> { 'Back In Black', 'Stairway to Heaven' };
-var Artists = new List<string> { 'ACDC', 'Led Zeppelin', 'The Beatles' };
+var Artists = new List<string> { 'ACDC', 'Led Zeppelin' };
 
 bool EraseDatabase() {}
 bool Restore_database() {}
@@ -169,7 +169,7 @@ const int DaysInWeek = 7;
 const int DaysInMonth = 30;
 
 var songs = new List<string> { 'Back In Black', 'Stairway to Heaven' };
-var artists = new List<string> { 'ACDC', 'Led Zeppelin', 'The Beatles' };
+var artists = new List<string> { 'ACDC', 'Led Zeppelin' };
 
 bool EraseDatabase() {}
 bool RestoreDatabase() {}

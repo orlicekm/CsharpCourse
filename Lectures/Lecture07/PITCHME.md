@@ -142,6 +142,10 @@ public bool IsShopOpen(string day, int amount)
 * **Subjective**, so team can choose whatever they want
 * No matter what you choose, just **be consistent**
 
+@snap[east]
+![](/Lectures/Lecture07/Assets/img/Capitalization.jpg)
+@snapend
+
 +++
 ### Use Consistent Capitalization - Bad Sample
 ```C#
@@ -199,7 +203,7 @@ public class Employee
 
 +++
 ### Use Camelcase notation
-* Each word in the middle of the phrase begins with a capital letter
+* Each word in the **middle of the phrase begins with a capital letter**
 * [Wikipedia](https://en.wikipedia.org/wiki/Camel_case)
 * **Bad**
 

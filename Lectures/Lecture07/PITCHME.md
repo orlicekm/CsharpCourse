@@ -256,6 +256,74 @@ public double CalculateSalary(int workingDays, int workingHours)
 * Use default arguments instead of short circuiting or conditionals
 
 +++
+### Avoid nesting too deeply and return early
+* Too many `if else` statements make the **code hard to follow**
+* **Exlicit is better than implicit**
+* Use [Code Metrices](https://marketplace.visualstudio.com/items?itemName=Elisha.CodeMetrices) extension to monitor code complexity
+
++++
+### Avoid nesting too deeply and return early - Bad Sample
+```C#
+public long Fibonacci(int index)
+{
+    if (index < 50)
+    {
+        if (index != 0)
+        {
+            if (index != 1)
+            {
+                return Fibonacci(index - 1) + Fibonacci(index - 2);
+            }
+            else
+            {
+                return 1;
+            }
+        }
+        else
+        {
+            return 0;
+        }
+    }
+    else
+    {
+        throw new System.ArgumentOutOfRangeException();
+    }
+}
+```
+@[1-2,25]
+@[3-4,20-24]
+@[5-6,15-19]
+@[7-14]
+@[1-25]
+
++++
+### Avoid nesting too deeply and return early - Good Sample
+```C#
+public long Fibonacci(int index)
+{
+    if (index == 0)
+    {
+        return 0;
+    }
+
+    if (index == 1)
+    {
+        return 1;
+    }
+
+    if (index > 50)
+    {
+        throw new System.ArgumentOutOfRangeException();
+    }
+
+    return Fibonacci(index - 1) + Fibonacci(index - 2);
+}
+```
+@[1-2,18-19]
+@[3-6]
+@[8-11]
+@[13-16]
+@[1-19]
 
 ---
 ## Mnemonic Acronyms

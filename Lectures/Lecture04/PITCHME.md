@@ -90,7 +90,7 @@
 +++
 ### SQL
 * **Structured Query Language**
-* Communicate with a database
+* Communicates with a database
 * Standard language for relational database managment systems
 @img[span-70](/Lectures/Lecture04/Assets/img/sqlstatement.png)
 
@@ -102,7 +102,7 @@
 +++
 ### Microsoft SQL LocalDB
 * Feature of *SQL Server Express*
-* Targeted to developers
+* Designed for developers
 * **Minimal set of files necessary** to start the SQL Server Database Engine
 * Initiate a connection using a special *connection string*
 * When connecting, the **necessary SQL Server infrastructure is automatically created and started**

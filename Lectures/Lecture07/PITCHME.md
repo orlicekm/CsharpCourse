@@ -72,10 +72,12 @@
 * Good name **allows the code to be used by many developers**
 * The name should **reflect what it does** and give context
 * **Bad**
+
 ```C#
 int d;
 ```
 * **Good**
+
 ```C#
 int daySinceModification;
 ```
@@ -85,10 +87,12 @@ int daySinceModification;
 * **Avoid** naming with **disinformation name**
 * **Name variable to reflect what we want to do** with it
 * **Bad**
+
 ```C#
 var dataFromDb = db.GetFromService().ToList();
 ```
 * **Good**
+
 ```C#
 var listOfEmployee = employeeService.GetEmployeeListFromDb().ToList();
 ```

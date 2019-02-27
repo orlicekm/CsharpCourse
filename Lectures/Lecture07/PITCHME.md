@@ -765,7 +765,7 @@ public List<EmployeeData> ShowList(Employee employees)
 @[1-11]
 
 ---
-## Keep it Simple, Stupid (KISS) Principle
+## Keep it Simple, Stupid (KISS)
 * **Avoid complexity** as much as you can
 * **Implement new feature** as **simple** as you can
 * Many variants
@@ -782,7 +782,7 @@ public List<EmployeeData> ShowList(Employee employees)
 * To make for **clear delineation of responsibilities**
 * Assigns **types of roles** to classes and objects 
   * *Controller*
-  * *Information Expert
+  * *Information Expert*
   * *Creator*
   * *High Cohesion*
   * *Low Coupling*
@@ -792,7 +792,7 @@ public List<EmployeeData> ShowList(Employee employees)
 
 +++
 ## Other Principles
-* **You aren't gonna need it** (YAGNI)
+* **You aren't gonna need it**
   * Not add functionality until deemed necessary
 * **Worse is better**
   * Quality does not necessarily increase with functionality

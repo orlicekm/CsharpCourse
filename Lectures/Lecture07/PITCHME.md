@@ -223,7 +223,7 @@ public double CalculateSalary(int workingDays, int workingHours)
 ```
 
 @snap[north-east]
-@img[span-60](/Lectures/Lecture07/Assets/img/CamelCase.png)
+@img[span-80](/Lectures/Lecture07/Assets/img/CamelCase.png)
 @snapend
 
 ---

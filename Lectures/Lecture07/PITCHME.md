@@ -328,11 +328,10 @@ public long Fibonacci(int index)
 +++
 ## Avoid magic strings, numbers...
 * It is a value
-  * Specified directly within application code
-  * Have an impact on the application’s behavior
-* Frequently will end up being duplicated within the system
-* Common source of bugs
-  * Problem with updating them
+  * **Specified directly within application code**
+  * **Have an impact** on the application’s behavior
+* Frequently will **end up being duplicated** within the system
+* Common source of bugs *(problem to update them)*
 * **Bad**
 
 ```C#

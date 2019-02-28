@@ -352,7 +352,7 @@ if (userRole == ADMIN_ROLE)
 +++
 ### Don't add unneeded context
 * If *class*, *object*, *assembly*... name tells you something
-  * **Don't repeat that** in your *variable*, *property*, *method*... name
+  * **Don't repeat** that in your *variable*, *property*, *method*... name
 * **Bad**
 
 ```C#

@@ -319,7 +319,7 @@
 +++
 ### Install Design
 * Shared **design-time components** for Entity Framework Core tools
-* Package mannager console cmdlets like `Add-Migration`, `dotnet ef` & `ef.exe`
+* Package manager console cmdlets like `Add-Migration`, `dotnet ef` & `ef.exe`
 * Needed for **Migrations** or **Reverse Engineering**
 * NuGet package `Microsoft.EntityFrameworkCore.Design`
 
@@ -327,7 +327,7 @@
 ## Basic concepts
 * Entity
 * DbContext
-* Perzistence Scenarios
+* Peszistence Scenarios
 * Conventions
 * Entity Configurations
 * Entity Relationships
@@ -590,7 +590,7 @@ public class SchoolDbContext : DbContext
 | *Model*         | Returns the metadata about the shape of entities, the relationships between them, and how they map to the database. |
 
 ---
-### Perzistence Scenarios - Connected Scenario
+### Persistence Scenarios - Connected Scenario
 * Same instance of the context class (derived from DbContext) is used
 * Keeps **track of all entities** during its lifetime
 * Useful in local database or the database on the same network
@@ -602,11 +602,11 @@ public class SchoolDbContext : DbContext
   * Utilizes more resource
 
 +++
-### Perzistence Scenarios - Connected Scenario
+### Persistence Scenarios - Connected Scenario
 ![](/Lectures/Lecture04/Assets/img/persistance-fg1.PNG)
 
 +++
-### Perzistence Scenarios - Disconnected  Scenario
+### Persistence Scenarios - Disconnected  Scenario
 * **Used in this course**
 * **Different instances of the context are used** to retrieve and save entities to the database
 * Instance of the dbcontext is **disposed after retrieving data** and a new instance is created to save entities to the database
@@ -620,7 +620,7 @@ public class SchoolDbContext : DbContext
   * Performs slower than the connected scenario
 
 +++
-### Perzistence Scenarios - Disconnected  Scenario
+### Persistence Scenarios - Disconnected  Scenario
 ![](/Lectures/Lecture04/Assets/img/persistance-fg2.PNG)
 
 ---

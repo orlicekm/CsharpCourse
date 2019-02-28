@@ -436,6 +436,27 @@ if(cityGroup.Success == true && zipCodeGroup.Success == true)
 }
 ```
 
++++
+### Use default arguments instead of short circuiting or conditionals
+* **Bad**
+
+```C#
+public void CreateMicrobrewery(string name = null)
+{
+    var breweryName = !string.IsNullOrEmpty(name) ? name : "Hipster Brew Co.";
+    // ...
+}
+```
+* **Good**
+
+```C#
+public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
+{
+    // ...
+}
+```
+
+
 ---
 ## Mnemonic Acronyms
 * SOLID

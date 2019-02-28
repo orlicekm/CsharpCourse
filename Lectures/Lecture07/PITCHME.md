@@ -456,6 +456,9 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 }
 ```
 
+---
+## Methods
+
 
 ---
 ## Mnemonic Acronyms

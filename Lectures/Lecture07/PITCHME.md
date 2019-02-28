@@ -421,11 +421,12 @@ if (matches[0].Success == true && matches[1].Success == true)
 }
 ```
 * **Good**
-* Decrease dependence on regex by naming subpatterns
+  * Decrease dependence on regex by naming subpatterns
 
 ```C#
 const string Address = "One Infinite Loop, Cupertino 95014";
-var cityZipCodeWithGroupRegex = @"/^[^,\]+[,\\s]+(?<city>.+?)\s*(?<zipCode>\d{5})?$/";
+var cityZipCodeWithGroupRegex = 
+  @"/^[^,\]+[,\\s]+(?<city>.+?)\s*(?<zipCode>\d{5})?$/";
 var matchesWithGroup = Regex.Match(Address, cityZipCodeWithGroupRegex);
 var cityGroup = matchesWithGroup.Groups["city"];
 var zipCodeGroup = matchesWithGroup.Groups["zipCode"];

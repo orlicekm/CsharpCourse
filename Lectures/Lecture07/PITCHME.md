@@ -380,9 +380,7 @@ public class Car
 
 ```C#
 var data = new { Name = "John", Age = 42, PersonAccess = 4};
-
-// What the heck is 4 for?
-if (data.PersonAccess == 4)
+if (data.PersonAccess == 4) // What the heck is 4 for?
 {
     // do edit ...
 }
@@ -397,14 +395,12 @@ public enum PersonAccess : int
     ACCESS_UPDATE = 4,
     ACCESS_DELETE = 8
 }
-
 var person = new Person
 {
     Name = "John",
     Age = 42,
     PersonAccess= PersonAccess.ACCESS_CREATE
 };
-
 if (person.PersonAccess == PersonAccess.ACCESS_UPDATE)
 {
     // do edit ...

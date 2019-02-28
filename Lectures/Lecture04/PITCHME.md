@@ -706,10 +706,10 @@ public class Student
 ### `System.ComponentModel.DataAnnotations.Schema` attributes
 | Attribute         | Description                                                                      |
 |-------------------|----------------------------------------------------------------------------------|
-| `Table`             | The database table and/or schema that a class is mapped to.                      |
-| `Column`            | The database column that a property is mapped to.                                |
-| `ForeignKey`        | Specifies the property is used as a foreign key in a relationship.               |
-| `DatabaseGenerated` | Specifies how the database generates values for a property.                      |
+| `Table`             | The database table and/or schema that a class is mapped to                      |
+| `Column`            | The database column that a property is mapped to                                |
+| `ForeignKey`        | Specifies the property what is used as a foreign key in a relationship               |
+| `DatabaseGenerated` | Specifies how the database generates values for a property                      |
 | `NotMapped`         | Applied to properties or classes that are to be excluded from database mapping.  |
 | `InverseProperty`   | Specifies the inverse of a navigation property                                   |
 | `ComplexType`       | Denotes that the class is a complex type. *Not currently implemented in EF Core. |
@@ -719,7 +719,7 @@ public class Student
 | Attribute        | Description                                                             |
 |------------------|-------------------------------------------------------------------------|
 | `Key`              | Identifies one or more properties as a Key                              |
-| `Timestamp`        | Specifies the data type of the database column as rowversion            |
+| `Timestamp`        | Specifies the data type of the database column as `rowversion`            |
 | `ConcurrencyCheck` | Specifies that the property is included in concurrency checks           |
 | `Required`         | Specifies that the property's value is required                         |
 | `MaxLength`        | Sets the maximum allowed length of the property value (string or array) |
@@ -902,7 +902,7 @@ using (var dbContext = CreateDbContext())
 * Default conventions
   * Reference **navigation property at both sides**
 * Fluent Api
-  * Only useful when if foreign key **property does not follow the convention**
+  * Only useful when foreign key **property does not follow the convention**
 
 ```C#
 // AddressOfStudentId does not follow the convention
@@ -1020,7 +1020,7 @@ modelBuilder.Entity<Grade>()
 
 +++
 ### Many-to-Many Relationships
-* In the database is **represented by a joining table** which includes the foreign keys of both tables
+* In the database they are **represented by a joining table** which includes the foreign keys of both tables
 * There are no default conventions
 * Fluent Api
 

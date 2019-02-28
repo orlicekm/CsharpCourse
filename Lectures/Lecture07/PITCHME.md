@@ -248,7 +248,6 @@ public double CalculateSalary(int workingDays, int workingHours)
 * Avoid nesting too deeply and return early
 * Avoid magic strings, numbers...
 * Don't add unneeded context
-* Use meaningful and pronounceable variable names
 * Use the same vocabulary for the same type of variable
 * Use searchable names
 * Use explanatory variables
@@ -326,7 +325,7 @@ public long Fibonacci(int index)
 @[1-19]
 
 +++
-## Avoid magic strings, numbers...
+### Avoid magic strings, numbers...
 * It is a value
   * **Specified directly within application code**
   * **Have an impact** on the application’s behavior
@@ -349,6 +348,34 @@ if (userRole == ADMIN_ROLE)
     // logic in here
 }
 ```
+
++++
+### Don't add unneeded context
+* If *class*, *object*, *assembly*... name tells you something
+  * **Don't repeat that** in your *variable*, *property*, *method*... name
+* **Bad**
+
+```C#
+public class Car
+{
+    public string CarMake { get; set; }
+    public string CarModel { get; set; }
+    public string CarColor { get; set; }
+}
+```
+* **Good**
+
+```C#
+public class Car
+{
+    public string Make { get; set; }
+    public string Model { get; set; }
+    public string Color { get; set; }
+}
+```
+
++++
+### Use searchable names
 
 ---
 ## Mnemonic Acronyms

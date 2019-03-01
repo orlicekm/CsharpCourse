@@ -922,7 +922,7 @@ review.PerfReview();
 @[45-46]
 
 +++
-### Encapsulate conditionals
+### Encapsulate Conditionals
 * **Bad**
 
 ```C#
@@ -938,6 +938,40 @@ if (article.IsPublished())
 {
     // ...
 }
+```
+
++++
+### Remove dead code
+* No reason to keep it in codebase
+* If it's not being called, get rid of it
+* It will still be safe in version history
+* **Bad**
+
+```C#
+public void OldRequestModule(string url)
+{
+    // ...
+}
+
+public void NewRequestModule(string url)
+{
+    // ...
+}
+```
+* **Good**
+
+```C#
+var request = NewRequestModule(requestUrl);
+InventoryTracker("apples", request, "www.inventory-awesome.io");
+Good:
+
+public void RequestModule(string url)
+{
+    // ...
+}
+
+var request = RequestModule(requestUrl);
+InventoryTracker("apples", request, "www.inventory-awesome.io");
 ```
 
 ---

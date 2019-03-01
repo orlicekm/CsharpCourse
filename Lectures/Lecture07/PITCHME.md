@@ -657,6 +657,9 @@ public Path TravelToTexas(object vehicle)
 ### Avoid flags in parameters
 * Indicates that the method has more than one responsibility
 * Split into two methods
+
++++
+### Avoid flags in parameters - Sample
 * **Bad**
 
 ```C#
@@ -685,6 +688,8 @@ public void CreateTempFile(string name)
     Touch("./temp/"  + name);
 }
 ```
+
++++
 
 ---
 ## Mnemonic Acronyms

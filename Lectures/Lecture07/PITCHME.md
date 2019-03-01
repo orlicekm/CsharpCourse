@@ -253,6 +253,10 @@ public double CalculateSalary(int workingDays, int workingHours)
 * Use explanatory variables
 * Use default arguments instead of short circuiting or conditionals
 
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
 +++
 ### Avoid nesting too deeply and return early
 * Too many `if else` statements make the **code hard to follow**
@@ -457,16 +461,19 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 ```
 
 ---
-## Methods
+## Clean code - Methods
 * Avoid side effects
 * Avoid type-checking
 * Avoid flags in parameters
-* Don't use a Singleton pattern
 * Limit the amounts of parameters
 * Method should do one thing
 * Method callers and callees should be close
 * Encapsulate conditionals
 * Remove dead code
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 +++
 ### Avoid Side Effects
@@ -686,16 +693,6 @@ public void CreateTempFile(string name)
 ```
 @[1-11]
 @[12-20]
-
-+++
-### Avoid Use a Singleton Pattern
-* Singleton is an [Anti-pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
-  * Generally **used as a global instance**
-    * Hide the dependencies of your application in your code
-  * Violate the single responsibility principle
-    * **Control it's own creation and lifecycle**
-  * Cause code to be tightly coupled
-  * Carry state around for the lifetime of the application
 
 +++
 ### Limit the Amounts of Parameters
@@ -942,9 +939,9 @@ if (article.IsPublished())
 
 +++
 ### Remove dead code
-* No reason to keep it in codebase
+* No **reason to keep** it in codebase
 * If it's not being called, get rid of it
-* It will still be safe in version history
+* **It will still be safe in version history**
 * **Bad**
 
 ```C#
@@ -969,6 +966,68 @@ public void RequestModule(string url)
 var request = RequestModule(requestUrl);
 InventoryTracker("apples", request, "www.inventory-awesome.io");
 ```
+
+---
+## Objects, Classes and Data Structures
+* Small blocks of code 
+* Avoid Usage of a Singleton Pattern
+* Use getters and setters
+* Make objects have private/protected members
+* Use private/protected members when possible
+* Use method chaining
+* Prefer composition over inheritance
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+### Small Blocks of Code 
+* **Method** should be less than **10 lines**
+* **Class** should be less than **100 lines**
+* One level of abstraction
+* One responsibility
+
++++
+### Avoid Usage of a Singleton Pattern
+* Singleton is an [Anti-pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
+  * Generally **used as a global instance**
+    * Hide the dependencies of your application in your code
+  * Violate the single responsibility principle
+    * **Control it's own creation and lifecycle**
+  * Cause code to be tightly coupled
+  * Carry state around for the lifetime of the application
+
++++
+### Use Getters and Setters
+TODO
+
++++
+### Use Private/protected Members when Possible
+TODO
+
++++ 
+### Use Method Chaining
+
++++
+### Prefer composition over inheritance
+
+---
+## Testing
+??? nemam ho dat az do prednasky o testovani?
+
+---
+## Error Handling
+
+
+---
+## Formatting
+* .editorconfig file
+* Resharper
+
+---
+## Comments
+....
 
 ---
 ## Mnemonic Acronyms
@@ -1716,11 +1775,8 @@ public List<EmployeeData> ShowList(Employee employees)
 
 ---
 ## Refactorization
-Resharper
+Resharper....
 
-
-+++
-(spagetovy kod niekde?)
 
 ---
 ## References:

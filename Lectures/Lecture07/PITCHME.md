@@ -603,9 +603,7 @@ class Cessna : IAirplane
 @[28-36]
 
 +++
-### Avoid type-checking
-* **Bad**
-
+### Avoid type-checking - Bad Sample
 ```C#
 public Path TravelToTexas(object vehicle)
 {
@@ -619,8 +617,13 @@ public Path TravelToTexas(object vehicle)
     }
 }
 ```
-* **Good**
+@[1-2,11]
+@[3-6]
+@[7-10]
+@[1-11]
 
++++
+### Avoid type-checking - Good Sample
 ```C#
 public Path TravelToTexas(Traveler vehicle)
 {

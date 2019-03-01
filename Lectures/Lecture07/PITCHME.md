@@ -1040,11 +1040,8 @@ TODO
 
 +++
 ### Do Not Use `throw exeption` in Catch Block
-* If you need to re-throw, **use just 'throw'**
+* If you need to re-throw, **use just `throw`**
 * Save the stack trace
-
-+++
-### Do Not Use `throw exeption` in Catch Block - Sample
 * **Bad**
 
 ```C#
@@ -1058,6 +1055,9 @@ catch (Exception ex)
     throw ex;
 }
 ```
+
++++
+### Do Not Use `throw exeption` in Catch Block - Sample
 * **Good**
 
 ```C#

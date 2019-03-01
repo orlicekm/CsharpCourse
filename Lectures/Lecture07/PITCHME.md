@@ -1284,6 +1284,85 @@ public int Combine(int a,int b)
 }
 ```
 
++++
+### Only Comment Things That Have Business Logic Complexity
+* Comments are an apology
+* Comments are not a requirement
+* Good code mostly documents itself
+
++++
+### Only Comment Things That Have Business Logic Complexity
+* **Bad Sample**
+
+```C#
+public int HashIt(string data)
+{
+    // The hash
+    var hash = 0;
+
+    // Length of string
+    var length = data.length;
+
+    // Loop through every character in data
+    for (var i = 0; i < length; i++)
+    {
+        // Get character code.
+        const char = data.charCodeAt(i);
+        // Make the hash
+        hash = ((hash << 5) - hash) + char;
+        // Convert to 32-bit integer
+        hash &= hash;
+    }
+}
+```
+
++++
+### Only Comment Things That Have Business Logic Complexity
+* **Better but Still Bad Sample**
+
+```C#
+public int HashIt(string data)
+{
+    var hash = 0;
+    var length = data.length;
+    for (var i = 0; i < length; i++)
+    {
+        const char = data.charCodeAt(i);
+        hash = ((hash << 5) - hash) + char;
+        
+        // Convert to 32-bit integer
+        hash &= hash;
+    }
+}
+```
+
++++
+### Only Comment Things That Have Business Logic Complexity
+* **Good**
+
+```C#
+public int Hash(string data)
+{
+    var hash = 0;
+    var length = data.length;
+
+    for (var i = 0; i < length; i++)
+    {
+        var character = data[i];
+        // use of djb2 hash algorithm as it has a good compromise
+        // between speed and low collision with a very simple implementation
+        hash = ((hash << 5) - hash) + character;
+
+        hash = ConvertTo32BitInt(hash);
+    }
+    return hash;
+}
+
+private int ConvertTo32BitInt(int value)
+{
+    return value & value;
+}
+```
 
 ---
 ## Mnemonic Acronyms

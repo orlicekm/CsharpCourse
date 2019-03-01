@@ -482,6 +482,25 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
   * One and only
 
 +++
+### Avoid Side Effects - Bad Sample 
+```C#
+public string SplitIntoFirstAndLastName(string name)
+{
+    return name.Split(" ");
+}
+
+var name = 'Ryan McDermott';
+var newName = SplitIntoFirstAndLastName(name);
+
+Console.PrintLine(name); // 'Ryan McDermott';
+Console.PrintLine(newName); // ['Ryan', 'McDermott'];
+```
+@[1-4]
+@[6-7]
+@[9-10]
+@[1-10]
+
++++
 ### Avoid Side Effects - Good Sample
 ```C#
 // Global variable referenced by following function.
@@ -538,25 +557,6 @@ class Airplane
 @[11-12]
 @[13-14]
 @[1-17]
-
-+++
-### Avoid Side Effects - Bad Sample 
-```C#
-public string SplitIntoFirstAndLastName(string name)
-{
-    return name.Split(" ");
-}
-
-var name = 'Ryan McDermott';
-var newName = SplitIntoFirstAndLastName(name);
-
-Console.PrintLine(name); // 'Ryan McDermott';
-Console.PrintLine(newName); // ['Ryan', 'McDermott'];
-```
-@[1-4]
-@[6-7]
-@[9-10]
-@[1-10]
 
 +++
 ### Avoid Conditionals - Good Sample

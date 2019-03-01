@@ -464,9 +464,7 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 * Don't use a Singleton pattern
 * Limit the amounts of parameters
 * Method should do one thing
-* Function names should say what they do
-* Functions should only be one level of abstraction
-* Function callers and callees should be close
+* Method callers and callees should be close
 * Encapsulate conditionals
 * Remove dead code
 
@@ -753,8 +751,8 @@ public void CreateMenu(MenuConfig config)
 * More than one thing
   * Harder to compose, test, and reason about
 * One thing
-  * Refactored easier
-  * Code will read much cleaner, more understable
+  * **Refactored easier**
+  * Code will read much **cleaner, more understable**
 
 +++
 ### Method Should Do One Thing - Good Sample
@@ -793,6 +791,135 @@ public List<Client> ActiveClients(string[] clients)
 @[1-5]
 @[7-10]
 @[1-10]
+
++++
+### Method Callers and Callees Should be Close
+* If a function calls another
+  * **Keep those functions vertically close** in the source file
+* Ideally **keep the caller right above the callee**
+* We tend to **read code from top-to-bottom**
+  * Make your code read that way
+
++++ 
+### Method Callers and Callees Should be Close - Bad Sample
+```C#
+class PerformanceReview 
+{
+    private readonly Employee _employee;
+
+    public PerformanceReview(Employee employee) 
+    {
+        _employee = employee;
+    }
+
+    private IEnumerable<PeersData> LookupPeers() 
+    {
+        return db.lookup(_employee, 'peers');
+    }
+
+    private ManagerData LookupManager() 
+    {
+        return db.lookup(_employee, 'manager');
+    }
+
+    private IEnumerable<PeerReviews> GetPeerReviews() 
+    {
+        var peers = LookupPeers();
+        // ...
+    }
+
+    public PerfReviewData PerfReview() 
+    {
+        GetPeerReviews();
+        GetManagerReview();
+        GetSelfReview();
+    }
+
+    public ManagerData GetManagerReview() 
+    {
+        var manager = LookupManager();
+    }
+
+    public EmployeeData GetSelfReview() 
+    {
+        // ...
+    }
+}
+
+var  review = new PerformanceReview(employee);
+review.PerfReview();
+```
+@[1-2]
+@[3]
+@[5-8]
+@[10-13]
+@[15-18]
+@[20-24]
+@[26-31]
+@[33-36]
+@[38-41]
+@[44-45]
+
++++ 
+### Method Callers and Callees Should be Close - Good Sample
+```C#
+class PerformanceReview 
+{
+    private readonly Employee _employee;
+
+    public PerformanceReview(Employee employee) 
+    {
+        _employee = employee;
+    }
+
+    public PerfReviewData PerfReview() 
+    {
+        GetPeerReviews();
+        GetManagerReview();
+        GetSelfReview();
+    }
+
+    private IEnumerable<PeerReviews> GetPeerReviews() 
+    {
+        var peers = LookupPeers();
+        // ...
+    }
+
+    private IEnumerable<PeersData> LookupPeers() 
+    {
+        return db.lookup(_employee, 'peers');
+    }
+
+    private ManagerData GetManagerReview() 
+    {
+        var manager = LookupManager();
+        return manager;
+    }
+
+    private ManagerData LookupManager() 
+    {
+        return db.lookup(_employee, 'manager');
+    }
+
+    private EmployeeData GetSelfReview() 
+    {
+        // ...
+    }
+}
+
+var review = new PerformanceReview(employee);
+review.PerfReview();
+```
+@[1-2]
+@[3]
+@[5-8]
+@[10-15]
+@[17-21]
+@[23-26]
+@[28-32]
+@[34-37]
+@[39-42]
+@[45-46]
 
 ---
 ## Mnemonic Acronyms

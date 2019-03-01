@@ -460,8 +460,7 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 ## Methods
 * Avoid Side Effects
 * Avoid negative conditionals
-* Avoid type-checking (part 1)
-* Avoid type-checking (part 2)
+* Avoid type-checking
 * Avoid flags in method parameters
 * Don't write to global functions
 * Don't use a Singleton pattern
@@ -602,6 +601,49 @@ class Cessna : IAirplane
 @[8-16]
 @[18-26]
 @[28-36]
+
++++
+### Avoid type-checking
+* **Bad**
+
+```C#
+public Path TravelToTexas(object vehicle)
+{
+    if (vehicle.GetType() == typeof(Bicycle))
+    {
+        (vehicle as Bicycle).PeddleTo(new Location("texas"));
+    }
+    else if (vehicle.GetType() == typeof(Car))
+    {
+        (vehicle as Car).DriveTo(new Location("texas"));
+    }
+}
+```
+* **Good**
+
+```C#
+public Path TravelToTexas(Traveler vehicle)
+{
+    vehicle.TravelTo(new Location("texas"));
+}
+```
+
+* or
+
+```C#
+// pattern matching
+public Path TravelToTexas(object vehicle)
+{
+    if (vehicle is Bicycle bicycle)
+    {
+        bicycle.PeddleTo(new Location("texas"));
+    }
+    else if (vehicle is Car car)
+    {
+        car.DriveTo(new Location("texas"));
+    }
+}
+```
 
 ---
 ## Mnemonic Acronyms

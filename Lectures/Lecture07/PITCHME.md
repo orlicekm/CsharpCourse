@@ -961,10 +961,6 @@ public void NewRequestModule(string url)
 * **Good**
 
 ```C#
-var request = NewRequestModule(requestUrl);
-InventoryTracker("apples", request, "www.inventory-awesome.io");
-Good:
-
 public void RequestModule(string url)
 {
     // ...

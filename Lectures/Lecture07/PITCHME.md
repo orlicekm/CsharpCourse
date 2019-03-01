@@ -1104,6 +1104,51 @@ catch (Exception error)
 }
 ```
 
++++
+### Use Multiple Catch Block Instead of Conditions
+* If you need to take action according to type of the exception
+  * **Use multiple catch block** for exception handling
+* **Bad**
+```C#
+try
+{
+    // Do something..
+}
+catch (Exception ex)
+{
+
+    if (ex is TaskCanceledException)
+    {
+        // Take action for TaskCanceledException
+    }
+    else if (ex is TaskSchedulerException)
+    {
+        // Take action for TaskSchedulerException
+    }
+}
+```
+
++++
+### Use Multiple Catch Block Instead of Conditions - Good Sample
+
+```C#
+try
+{
+    // Do something..
+}
+catch (TaskCanceledException ex)
+{
+    // Take action for TaskCanceledException
+}
+catch (TaskSchedulerException ex)
+{
+    // Take action for TaskSchedulerException
+}
+```
+
++++
+### Keep exception stack trace when rethrowing exceptions
+
 ---
 ## Clean Code - Formatting
 * `.editorconfig` file

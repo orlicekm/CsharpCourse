@@ -458,7 +458,150 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 
 ---
 ## Methods
+* Avoid Side Effects
+* Avoid negative conditionals
+* Avoid type-checking (part 1)
+* Avoid type-checking (part 2)
+* Avoid flags in method parameters
+* Don't write to global functions
+* Don't use a Singleton pattern
+* Function arguments (2 or fewer ideally)
+* Functions should do one thing
+* Function names should say what they do
+* Functions should only be one level of abstraction
+* Function callers and callees should be close
+* Encapsulate conditionals
+* Remove dead code
 
++++
+### Avoid Side Effects
+* **Side effect**
+  * If it does **anything other than take a value in and return another value** or values
+  * E.g. writing to file, modifying some global variable...
+* **Intead of side effects create service** that does it
+  * One and only
+
++++
+### Avoid Side Effects - Good Sample
+```C#
+// Global variable referenced by following function.
+// If we had another function that used this name, now it'd be an array and it could break it.
+var name = 'Ryan McDermott';
+
+public string SplitIntoFirstAndLastName()
+{
+   return name.Split(" ");
+}
+
+SplitIntoFirstAndLastName();
+
+Console.PrintLine(name); // ['Ryan', 'McDermott'];
+```
+@[1-3]
+@[5-8]
+@[10]
+@[12]
+@[1-12]
+
++++
+### Avoid Conditionals
+* **Use polymorphism**
+* Why?
+  * Method, class... should only do one thing
+  * if statements does more than one thing
+
++++
+### Avoid Conditionals - Bad Sample
+```
+class Airplane
+{
+    // ...
+
+    public double GetCruisingAltitude()
+    {
+        switch (type)
+        {
+            case '777':
+                return GetMaxAltitude() - GetPassengerCount();
+            case 'Air Force One':
+                return GetMaxAltitude();
+            case 'Cessna':
+                return GetMaxAltitude() - GetFuelExpenditure();
+        }
+    }
+}
+```
+@[1-2,17]
+@[3-6,16]
+@[7-8,15]
+@[9-10]
+@[11-12]
+@[13-14]
+@[1-17]
+
++++
+### Avoid Side Effects - Bad Sample 
+```C#
+public string SplitIntoFirstAndLastName(string name)
+{
+    return name.Split(" ");
+}
+
+var name = 'Ryan McDermott';
+var newName = SplitIntoFirstAndLastName(name);
+
+Console.PrintLine(name); // 'Ryan McDermott';
+Console.PrintLine(newName); // ['Ryan', 'McDermott'];
+```
+@[1-4]
+@[6-7]
+@[9-10]
+@[1-10]
+
++++
+### Avoid Conditionals - Good Sample
+```C#
+interface IAirplane
+{
+    // ...
+
+    public double GetCruisingAltitude();
+}
+
+class Boeing777 : IAirplane
+{
+    // ...
+
+    public double GetCruisingAltitude()
+    {
+        return GetMaxAltitude() - GetPassengerCount();
+    }
+}
+
+class AirForceOne : IAirplane
+{
+    // ...
+
+    public double GetCruisingAltitude()
+    {
+        return GetMaxAltitude();
+    }
+}
+
+class Cessna : IAirplane
+{
+    // ...
+
+    public double GetCruisingAltitude()
+    {
+        return GetMaxAltitude() - GetFuelExpenditure();
+    }
+}
+```
+@[1-6]
+@[8-16]
+@[18-26]
+@[28-36]
 
 ---
 ## Mnemonic Acronyms

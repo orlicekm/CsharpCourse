@@ -461,7 +461,7 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 * Avoid Side Effects
 * Avoid negative conditionals
 * Avoid type-checking
-* Avoid flags in method parameters
+* Avoid flags in parameters
 * Don't write to global functions
 * Don't use a Singleton pattern
 * Function arguments (2 or fewer ideally)
@@ -652,6 +652,38 @@ public Path TravelToTexas(object vehicle)
 @[8-11]
 @[12-15]
 @[1-16]
+
++++
+### Avoid flags in parameters
+* Indicates that the method has more than one responsibility
+* Split into two methods
+* **Bad**
+
+```C#
+public void CreateFile(string name, bool temp = false)
+{
+    if (temp)
+    {
+        Touch("./temp/" + name);
+    }
+    else
+    {
+        Touch(name);
+    }
+}
+
+* **Good**
+```C#
+public void CreateFile(string name)
+{
+    Touch(name);
+}
+
+public void CreateTempFile(string name)
+{
+    Touch("./temp/"  + name);
+}
+```
 
 ---
 ## Mnemonic Acronyms

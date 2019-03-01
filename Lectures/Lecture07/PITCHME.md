@@ -968,7 +968,7 @@ InventoryTracker("apples", request, "www.inventory-awesome.io");
 ```
 
 ---
-## Objects, Classes and Data Structures
+## Clean Code - Objects, Classes and Data Structures
 * Small blocks of code 
 * Avoid Usage of a Singleton Pattern
 * Use getters and setters
@@ -1008,26 +1008,91 @@ TODO
 
 +++ 
 ### Use Method Chaining
+TODO
 
 +++
 ### Prefer composition over inheritance
+TODO
 
 ---
 ## Testing
-??? nemam ho dat az do prednasky o testovani?
+??? nemam dat zasady pisania testov az do prednasky o testovani?
 
 ---
-## Error Handling
+## Clean Code - Error Handling
+* Thrown errors are a good thing
+* Means that the runtime has successfully identified
+  * That something in your program has gone wrong
+  * Stopping function execution on the current stack
+  * Killing the process
+  * Notifying you with a stack trace
 
++++
+### Clean Code - Error Handling
+* Do not use `throw exeption` in catch block
+* Do not ignore caught errors
+* Use multiple catch block instead of conditions
+* Keep exception stack trace when rethrowing exceptions
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+### Do Not Use `throw exeption` in Catch Block
+* If you need to re-throw, **use just 'throw'**
+* Save the stack trace
+* **Bad**
+
+```C#
+try
+{
+    // Do something..
+}
+catch (Exception ex)
+{
+    // Any action something like roll-back or logging etc.
+    throw ex;
+}
+```
+* **Good**
+
+```C#
+try
+{
+    // Do something..
+}
+catch (Exception ex)
+{
+    // Any action something like roll-back or logging etc.
+    throw;
+}
+```
 
 ---
-## Formatting
-* .editorconfig file
-* Resharper
+## Clean Code - Formatting
+* `.editorconfig` file
+* Resharper formatting
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+### .editorconfig file\
+TODO
+
++++
+### Resharper formatting
+TODO
 
 ---
 ## Comments
-....
+TODO
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 ---
 ## Mnemonic Acronyms

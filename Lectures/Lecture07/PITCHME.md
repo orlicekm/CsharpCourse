@@ -1241,6 +1241,22 @@ void Actions()
 };
 ```
 
++++
+### Do Not Leave Commented Out Code in Your Codebase
+* Old code exists in version control history
+* **Bad**
+
+```C#
+doStuff();
+// doOtherStuff();
+// doSomeMoreStuff();
+// doSoMuchStuff();
+```
+* **Good**
+
+```C#
+doStuff();
+```
 
 ---
 ## Mnemonic Acronyms

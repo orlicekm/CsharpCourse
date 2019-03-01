@@ -1032,7 +1032,6 @@ TODO
 * Do not use `throw exeption` in catch block
 * Do not ignore caught errors
 * Use multiple catch block instead of conditions
-* Keep exception stack trace when rethrowing exceptions
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
@@ -1041,7 +1040,7 @@ TODO
 +++
 ### Do Not Use `throw exeption` in Catch Block
 * If you need to re-throw, **use just `throw`**
-* Save the stack trace
+* **Save the stack trace**
 * **Bad**
 
 ```C#
@@ -1049,10 +1048,10 @@ try
 {
     // Do something..
 }
-catch (Exception ex)
+catch (Exception exception)
 {
     // Any action something like roll-back or logging etc.
-    throw ex;
+    throw exception;
 }
 ```
 
@@ -1064,7 +1063,7 @@ try
 {
     // Do something..
 }
-catch (Exception ex)
+catch (Exception exception)
 {
     // Any action something like roll-back or logging etc.
     throw;
@@ -1081,7 +1080,7 @@ try
 {
     FunctionThatMightThrow();
 }
-catch (Exception ex)
+catch (Exception exception)
 {
     // silent exception
 }
@@ -1095,12 +1094,12 @@ try
 {
     FunctionThatMightThrow();
 }
-catch (Exception error)
+catch (Exception exception)
 {
-    NotifyUserOfError(error);
+    NotifyUserOfError(exception);
 
     // Another option
-    ReportErrorToService(error);
+    ReportErrorToService(exception);
 }
 ```
 
@@ -1115,14 +1114,14 @@ try
 {
     // Do something..
 }
-catch (Exception ex)
+catch (Exception exception)
 {
 
-    if (ex is TaskCanceledException)
+    if (exception is TaskCanceledException)
     {
         // Take action for TaskCanceledException
     }
-    else if (ex is TaskSchedulerException)
+    else if (exception is TaskSchedulerException)
     {
         // Take action for TaskSchedulerException
     }
@@ -1137,18 +1136,15 @@ try
 {
     // Do something..
 }
-catch (TaskCanceledException ex)
+catch (TaskCanceledException exception)
 {
     // Take action for TaskCanceledException
 }
-catch (TaskSchedulerException ex)
+catch (TaskSchedulerException exception)
 {
     // Take action for TaskSchedulerException
 }
 ```
-
-+++
-### Keep exception stack trace when rethrowing exceptions
 
 ---
 ## Clean Code - Formatting
@@ -1168,12 +1164,87 @@ TODO
 TODO
 
 ---
-## Comments
-TODO
+## Clean Code -  Comments
+* *Every time you write a comment, you should grimace and feel the failure of your ability of expression.* ― Robert C. Martin, The Robert C. Martin Clean Code Collection
+* **Use commends when**
+  * *Explaining strange or test code*
+    * Include the source in the documentation
+  * *TODO comments*
+    * Only in feature branch, not in master
+  * *To highlight essential code*
+* Otherwise do not use commends
+
++++
+## Clean Code -  Comments
+* Avoid positional markers
+* Don not leave commented out code in your codebase
+* Don not have journal comments
+* Only comment things that have business logic complexity
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
+
++++
+### Avoid Positional Markers
+* Just add noise
+* **Bad**
+
+```C#
+////////////////////////////////////////////////////////////////////////////////
+// Scope Model Instantiation
+////////////////////////////////////////////////////////////////////////////////
+var model = new[]
+{
+    menu: 'foo',
+    nav: 'bar'
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Action setup
+////////////////////////////////////////////////////////////////////////////////
+void Actions()
+{
+    // ...
+};
+```
+
++++
+### Avoid Positional Markers - Sample
+* **Bad**
+```C#
+#region Scope Model Instantiation
+
+var model = {
+    menu: 'foo',
+    nav: 'bar'
+};
+
+#endregion
+
+#region Action setup
+
+void Actions() {
+    // ...
+};
+
+#endregion
+```
+* **Good**
+
+```C#
+var model = new[]
+{
+    menu: 'foo',
+    nav: 'bar'
+};
+
+void Actions()
+{
+    // ...
+};
+```
+
 
 ---
 ## Mnemonic Acronyms

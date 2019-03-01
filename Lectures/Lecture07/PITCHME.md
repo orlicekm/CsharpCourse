@@ -458,11 +458,11 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 
 ---
 ## Methods
-* Avoid Side Effects
+* Avoid side effects
 * Avoid type-checking
 * Avoid flags in parameters
 * Don't use a Singleton pattern
-* Limit the Amounts of Parameters
+* Limit the amounts of parameters
 * Functions should do one thing
 * Function names should say what they do
 * Functions should only be one level of abstraction
@@ -712,7 +712,8 @@ public void CreateTempFile(string name)
 * **Bad**
 
 ```C#
-public void CreateMenu(string title, string body, string buttonText, bool cancellable)
+public void CreateMenu(string title, string body, 
+               string buttonText, bool cancellable)
 {
     // ...
 }

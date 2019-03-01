@@ -1220,7 +1220,6 @@ var model = {
     nav: 'bar'
 };
 #endregion
-
 #region Action setup
 void Actions() {
     // ...

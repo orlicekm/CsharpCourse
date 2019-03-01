@@ -459,12 +459,10 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 ---
 ## Methods
 * Avoid Side Effects
-* Avoid negative conditionals
 * Avoid type-checking
 * Avoid flags in parameters
-* Don't write to global functions
 * Don't use a Singleton pattern
-* Function arguments (2 or fewer ideally)
+* Limit the Amounts of Parameters
 * Functions should do one thing
 * Function names should say what they do
 * Functions should only be one level of abstraction
@@ -603,7 +601,7 @@ class Cessna : IAirplane
 @[28-36]
 
 +++
-### Avoid type-checking - Bad Sample
+### Avoid Type-checking - Bad Sample
 ```C#
 public Path TravelToTexas(object vehicle)
 {
@@ -623,7 +621,7 @@ public Path TravelToTexas(object vehicle)
 @[1-11]
 
 +++
-### Avoid type-checking - Good Sample
+### Avoid Type-checking - Good Sample
 ```C#
 public Path TravelToTexas(Traveler vehicle)
 {
@@ -654,12 +652,12 @@ public Path TravelToTexas(object vehicle)
 @[1-16]
 
 +++
-### Avoid flags in parameters
+### Avoid Flags in Parameters
 * Indicates that the method has more than one responsibility
 * Split into two methods
 
 +++
-### Avoid flags in parameters - Sample
+### Avoid Flags in Parameters - Sample
 * **Bad**
 
 ```C#
@@ -692,6 +690,60 @@ public void CreateTempFile(string name)
 @[12-20]
 
 +++
+### Avoid Use a Singleton Pattern
+* Singleton is an [Anti-pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
+  * Generally **used as a global instance**
+    * Hide the dependencies of your application in your code
+  * Violate the single responsibility principle
+    * **Control it's own creation and lifecycle**
+  * Cause code to be tightly coupled
+  * Carry state around for the lifetime of the application
+
++++
+### Limit the Amounts of Parameters
+* **Makes testing easier**
+* More than three leads to a combinatorial explosion
+  * Have to test tons of different cases with each separate argument
+* Number of arguments
+  * **Zero** arguments is the **ideal case**
+  * **One or two** arguments is **ok**
+  * **Three or more*** should be **avoided**
+* Use tuples or create object to compress arguments into one
+* **Bad**
+
+```C#
+public void CreateMenu(string title, string body, string buttonText, bool cancellable)
+{
+    // ...
+}
+```
+
++++
+### Limit the Amounts of Parameters - Good Sample
+```C#
+pubic class MenuConfig
+{
+    public string Title { get; set; }
+    public string Body { get; set; }
+    public string ButtonText { get; set; }
+    public bool Cancellable { get; set; }
+}
+
+var config = new MenuConfig();
+config.Title = "Foo";
+config.Body = "Bar";
+config.ButtonText = "Baz";
+config.Cancellable = true;
+
+public void CreateMenu(MenuConfig config)
+{
+    // ...
+}
+```
+@[1-7]
+@[9-13]
+@[15-18]
+@[1-18]
 
 ---
 ## Mnemonic Acronyms

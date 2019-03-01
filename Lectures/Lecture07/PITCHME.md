@@ -1258,6 +1258,33 @@ doStuff();
 doStuff();
 ```
 
++++
+### Don Not Have Journal Comments
+* Use version control
+* **Bad**
+
+```C#
+/**
+ * 2018-12-20: Removed monads, didn't understand them (RM)
+ * 2017-10-01: Improved using special monads (JP)
+ * 2016-02-03: Removed type-checking (LI)
+ * 2015-03-14: Added combine with type-checking (JR)
+ */
+public int Combine(int a,int b)
+{
+    return a + b;
+}
+```
+* **Good**
+
+```C#
+public int Combine(int a,int b)
+{
+    return a + b;
+}
+```
+
+
 ---
 ## Mnemonic Acronyms
 * SOLID

@@ -1109,6 +1109,7 @@ catch (Exception error)
 * If you need to take action according to type of the exception
   * **Use multiple catch block** for exception handling
 * **Bad**
+
 ```C#
 try
 {

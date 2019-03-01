@@ -921,6 +921,25 @@ review.PerfReview();
 @[39-42]
 @[45-46]
 
++++
+### Encapsulate conditionals
+* **Bad**
+
+```C#
+if (article.state == "published")
+{
+    // ...
+}
+```
+* **Good**
+
+```C#
+if (article.IsPublished())
+{
+    // ...
+}
+```
+
 ---
 ## Mnemonic Acronyms
 * SOLID

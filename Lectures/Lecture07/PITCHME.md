@@ -463,7 +463,7 @@ public void CreateMicrobrewery(string breweryName = "Hipster Brew Co.")
 * Avoid flags in parameters
 * Don't use a Singleton pattern
 * Limit the amounts of parameters
-* Functions should do one thing
+* Method should do one thing
 * Function names should say what they do
 * Functions should only be one level of abstraction
 * Function callers and callees should be close
@@ -745,6 +745,54 @@ public void CreateMenu(MenuConfig config)
 @[9-13]
 @[15-18]
 @[1-18]
+
++++
+### Method Should Do One Thing
+* Method, class, interface... should do one thing
+  * **Most important rule in software engineering**
+* More than one thing
+  * Harder to compose, test, and reason about
+* One thing
+  * Refactored easier
+  * Code will read much cleaner, more understable
+
++++
+### Method Should Do One Thing - Good Sample
+```C#
+public void SendEmailToListOfClients(string[] clients)
+{
+    foreach (var client in clients)
+    {
+        var clientRecord = db.Find(client);
+        if (clientRecord.IsActive())
+        {
+            Email(client);
+        }
+    }
+}
+```
+@[1-2, 11]
+@[3-4, 10]
+@[5-9]
+@[1-11]
+
++++
+### Method Should Do One Thing - Bad Sample
+```C#
+public void SendEmailToListOfClients(string[] clients)
+{
+    var activeClients = ActiveClients(clients);
+    // Do some logic
+}
+
+public List<Client> ActiveClients(string[] clients)
+{
+    return db.Find(clients).Where(s => s.Status == "Active");
+}
+```
+@[1-5]
+@[7-10]
+@[1-10]
 
 ---
 ## Mnemonic Acronyms

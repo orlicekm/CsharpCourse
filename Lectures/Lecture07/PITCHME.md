@@ -1057,7 +1057,7 @@ catch (Exception ex)
 ```
 
 +++
-### Do Not Use `throw exeption` in Catch Block - Sample
+### Do Not Use `throw exeption` in Catch Block - Good Sample
 * **Good**
 
 ```C#
@@ -1069,6 +1069,37 @@ catch (Exception ex)
 {
     // Any action something like roll-back or logging etc.
     throw;
+}
+```
+
++++
+### Do Not Ignore Caught Errors
+* Doing nothing **does not give you the ability to ever fix or react**
+* **Bad**
+
+```C#
+try
+{
+    FunctionThatMightThrow();
+}
+catch (Exception ex)
+{
+    // silent exception
+}
+```
+* **Good**
+
+```C#
+try
+{
+    FunctionThatMightThrow();
+}
+catch (Exception error)
+{
+    NotifyUserOfError(error);
+
+    // Another option
+    ReportErrorToService(error);
 }
 ```
 

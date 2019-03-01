@@ -1215,20 +1215,16 @@ void Actions()
 
 ```C#
 #region Scope Model Instantiation
-
 var model = {
     menu: 'foo',
     nav: 'bar'
 };
-
 #endregion
 
 #region Action setup
-
 void Actions() {
     // ...
 };
-
 #endregion
 ```
 * **Good**

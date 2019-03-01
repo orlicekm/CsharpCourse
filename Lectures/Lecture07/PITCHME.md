@@ -647,6 +647,10 @@ public Path TravelToTexas(object vehicle)
     }
 }
 ```
+@[1-3,12]
+@[4-7]
+@[8-11]
+@[1-12]
 
 ---
 ## Mnemonic Acronyms

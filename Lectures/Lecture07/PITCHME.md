@@ -1058,7 +1058,6 @@ catch (Exception ex)
 
 +++
 ### Do Not Use `throw exeption` in Catch Block - Good Sample
-* **Good**
 
 ```C#
 try
@@ -1087,7 +1086,9 @@ catch (Exception ex)
     // silent exception
 }
 ```
-* **Good**
+
++++
+### Do Not Ignore Caught Errors - Good Sample
 
 ```C#
 try

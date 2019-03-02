@@ -1026,8 +1026,8 @@ public int MyProperty { get; set; }
 ### Use Private/Protected Members when Possible
 * **Reduce Public** as much as possible
 * *Public* should be only member, which is intended to work with them outside
-* *Private* should be every specific member, what does not have to exist in inherited instance
-* *Protected* shoud be every member, what should be also used in inherited instance
+* *Private* should be every specific member, which does not have to exist in inherited instance
+* *Protected* shoud be every member, which should be also used in inherited instance
 
 ```C#
 // Usually you do not want to give another classes the way,
@@ -1055,11 +1055,18 @@ public static List<T> FluentClear<T>(this List<T> list)
 ```
 
 +++
-### Prefer composition over inheritance
-prefer composition over inheritance where you can
-
+### Prefer Composition over Inheritance
+* **Prefer composition over inheritance** where you can
+* **Inheritance should be used when**
+  * Inheritance represents an *is-a* relationship and not a *has-a* relationship
+    * E. g. Human -> Animal vs. User -> UserDetails
+  * Code from the base classes can be reused
+    * E. g. humans can move like all animals
+  * To make global changes to derived classes by changing a base class
+    * E. g. change the caloric expenditure of all animals when they move
+         
 +++
-### Prefer composition over inheritance - Bad Sample
+### Prefer Composition over Inheritance - Bad Sample
 ```C#
 class Employee
 {
@@ -1094,7 +1101,7 @@ class EmployeeTaxData extends Employee
 @[15-28]
 
 +++
-### Prefer composition over inheritance - Good Sample
+### Prefer Composition over Inheritance - Good Sample
 ```C#
 class EmployeeTaxData
 {

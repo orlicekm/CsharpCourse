@@ -1031,8 +1031,8 @@ public int MyProperty { get; set; }
 * Protected shoud be every member, what should be also used in inherited instance
 
 ```C#
-// Usually you do not want to give another classes the way, how to update your ID
-// Only class itself can update it's own ID
+// Usually you do not want to give another classes the way,
+// how to update your ID. Only class itself can update it's own ID.
 protected GUID Id { get; private set; }
 ```
 

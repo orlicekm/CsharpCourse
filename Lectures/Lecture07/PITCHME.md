@@ -1000,7 +1000,26 @@ InventoryTracker("apples", request, "www.inventory-awesome.io");
 
 +++
 ### Use Getters and Setters
-TODO
+* Use properties instead of variables with getter, setter methods
+* **Bad**
+```C#
+private int myProperty;
+
+public int GetMyProperty()
+{
+    return myProperty;
+}
+
+public void SetMyProperty(int value)
+{
+    myProperty = value;
+}
+```
+* **Good**
+
+```C#
+public int MyProperty { get; set; }
+```
 
 +++
 ### Use Private/protected Members when Possible
@@ -1013,10 +1032,6 @@ TODO
 +++
 ### Prefer composition over inheritance
 TODO
-
----
-## Testing
-??? nemam dat zasady pisania testov az do prednasky o testovani?
 
 ---
 ## Clean Code - Error Handling

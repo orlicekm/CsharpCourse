@@ -997,6 +997,7 @@ InventoryTracker("apples", request, "www.inventory-awesome.io");
     * **Control it's own creation and lifecycle**
   * Cause code to be tightly coupled
   * Carry state around for the lifetime of the application
+* **Avoid `static` keyword** for the same reasons as Singleton
 
 +++
 ### Use Getters and Setters
@@ -1023,8 +1024,17 @@ public int MyProperty { get; set; }
 ```
 
 +++
-### Use Private/protected Members when Possible
-TODO
+### Use Private/Protected Members when Possible
+* Reduce Public as much as possible
+* Public should be only member, which is intended to work with them outside
+* Private should be every specific member, what does not have to exist in inherited instance
+* Protected shoud be every member, what should be also used in inherited instance
+
+```C#
+// Usually you do not want to give another classes the way, how to update your ID
+// Only class itself can update it's own ID
+protected GUID Id { get; private set; }
+```
 
 +++ 
 ### Use Method Chaining

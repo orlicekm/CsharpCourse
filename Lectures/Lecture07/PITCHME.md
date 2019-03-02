@@ -1002,6 +1002,7 @@ InventoryTracker("apples", request, "www.inventory-awesome.io");
 ### Use Getters and Setters
 * Use properties instead of variables with getter, setter methods
 * **Bad**
+
 ```C#
 private int myProperty;
 

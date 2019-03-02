@@ -970,11 +970,10 @@ InventoryTracker("apples", request, "www.inventory-awesome.io");
 ---
 ## Clean Code - Objects, Classes and Data Structures
 * Small blocks of code 
-* Avoid Usage of a Singleton Pattern
+* Avoid usage of a Singleton pattern
 * Use getters and setters
-* Make objects have private/protected members
 * Use private/protected members when possible
-* Use method chaining
+* Use extension methods
 * Prefer composition over inheritance
 
 @snap[south-east span+40]
@@ -1025,10 +1024,10 @@ public int MyProperty { get; set; }
 
 +++
 ### Use Private/Protected Members when Possible
-* Reduce Public as much as possible
-* Public should be only member, which is intended to work with them outside
-* Private should be every specific member, what does not have to exist in inherited instance
-* Protected shoud be every member, what should be also used in inherited instance
+* **Reduce Public** as much as possible
+* *Public* should be only member, which is intended to work with them outside
+* *Private* should be every specific member, what does not have to exist in inherited instance
+* *Protected* shoud be every member, what should be also used in inherited instance
 
 ```C#
 // Usually you do not want to give another classes the way,
@@ -1037,8 +1036,23 @@ protected GUID Id { get; private set; }
 ```
 
 +++ 
-### Use Method Chaining
-TODO
+### Use Extension Methods
+* Useful and commonly used in many libraries
+* Allows **code to be expressive and less verbose**
+
+```C#
+public static List<T> FluentAdd<T>(this List<T> list, T item)
+{
+    list.Add(item);
+    return list;
+}
+
+public static List<T> FluentClear<T>(this List<T> list)
+{
+    list.Clear();
+    return list;
+}
+```
 
 +++
 ### Prefer composition over inheritance

@@ -1056,7 +1056,82 @@ public static List<T> FluentClear<T>(this List<T> list)
 
 +++
 ### Prefer composition over inheritance
-TODO
+prefer composition over inheritance where you can
+
++++
+### Prefer composition over inheritance - Bad Sample
+```C#
+class Employee
+{
+    private string Name { get; set; }
+    private string Email { get; set; }
+
+    public Employee(string name, string email)
+    {
+        Name = name;
+        Email = email;
+    }
+
+    // ...
+}
+
+// Bad because Employees "have" tax data.
+// EmployeeTaxData is not a type of Employee
+class EmployeeTaxData extends Employee
+{
+    private string Name { get; }
+    private string Email { get; }
+
+    public EmployeeTaxData(string name, string email, string ssn, string salary)
+    {
+         // ...
+    }
+
+    // ...
+}
+```
+@[1-13]
+@[15-28]
+
++++
+### Prefer composition over inheritance - Good Sample
+```C#
+class EmployeeTaxData
+{
+    public string Ssn { get; }
+    public string Salary { get; }
+
+    public EmployeeTaxData(string ssn, string salary)
+    {
+        Ssn = ssn;
+        Salary = salary;
+    }
+
+    // ...
+}
+
+class Employee
+{
+    public string Name { get; }
+    public string Email { get; }
+    public EmployeeTaxData TaxData { get; }
+
+    public Employee(string name, string email)
+    {
+        Name = name;
+        Email = email;
+    }
+
+    public void SetTax(string ssn, double salary)
+    {
+        TaxData = new EmployeeTaxData(ssn, salary);
+    }
+
+    // ...
+}
+```
+@[1-13]
+@[15-33]
 
 ---
 ## Clean Code - Error Handling

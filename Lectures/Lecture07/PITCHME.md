@@ -991,7 +991,7 @@ InventoryTracker("apples", request, "www.inventory-awesome.io");
 ### Avoid Usage of a Singleton Pattern
 * Singleton is an [Anti-pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
   * Generally **used as a global instance**
-    * Hide the dependencies of your application in your code
+    * Hide the dependencies of application in code
   * Violate the single responsibility principle
     * **Control it's own creation and lifecycle**
   * Cause code to be tightly coupled

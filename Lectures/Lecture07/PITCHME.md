@@ -1284,7 +1284,7 @@ catch (TaskSchedulerException exception)
 * Either the project or solution
 * [Documentation](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options?view=vs-2017)
 
-+++?code=/Lectures/Lecture07/Assets/sln/Lecture07/.editorconfig&title=Editorconfig File Sample
++++?code=/Lectures/Lecture07/Assets/sln/Lecture07/.editorconfing&title=Editorconfing File Sample
 @[1]
 @[3-9]
 @[11-21]

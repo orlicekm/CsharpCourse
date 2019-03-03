@@ -1296,7 +1296,9 @@ catch (TaskSchedulerException exception)
 ### Resharper Formatting
 * In VS 2017 go to ReSharper -> Options -> Code Inspection and Code Editing
 * [Official site](https://www.jetbrains.com/resharper/)
-@img[span-50](/Lectures/Lecture07/Assets/img/ResharperFormatting.gif)
+
+
+@img[span-60](/Lectures/Lecture07/Assets/img/ResharperFormatting.gif)
 
 ---
 ## Clean Code -  Comments

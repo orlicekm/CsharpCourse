@@ -1278,7 +1278,7 @@ catch (TaskSchedulerException exception)
 @snapend
 
 +++
-### .editorconfig file
+### .editorconfig File
 * To enforce consistent coding styles for everyone 
 * Precedence over global Visual Studio text editor settings
 * Either the project or solution
@@ -1293,8 +1293,10 @@ catch (TaskSchedulerException exception)
 [Code sample](/Lectures/Lecture07/Assets/sln/Lecture07/.editorconfig)
 
 +++
-### Resharper formatting
-TODO
+### Resharper Formatting
+* In VS 2017 go to ReSharper -> Options -> Code Inspection and Code Editing
+* [Official site](https://www.jetbrains.com/resharper/)
+![](/Lectures/Lecture07/Assets/img/ResharperFormatting.gif)
 
 ---
 ## Clean Code -  Comments

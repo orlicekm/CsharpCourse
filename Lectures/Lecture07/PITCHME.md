@@ -1278,8 +1278,19 @@ catch (TaskSchedulerException exception)
 @snapend
 
 +++
-### .editorconfig file\
-TODO
+### .editorconfig file
+* To enforce consistent coding styles for everyone 
+* Precedence over global Visual Studio text editor settings
+* Either the project or solution
+* [Documentation](https://docs.microsoft.com/en-us/visualstudio/ide/create-portable-custom-editor-options?view=vs-2017)
+
++++?code=/Lectures/Lecture07/Assets/sln/Lecture07/.editorconfig&title=Editorconfig File Sample
+@[1]
+@[3-9]
+@[11-21]
+@[23-32]
+@[34-43]
+[Code sample](/Lectures/Lecture07/Assets/sln/Lecture07/.editorconfig)
 
 +++
 ### Resharper formatting
@@ -2234,6 +2245,8 @@ public List<EmployeeData> ShowList(Employee employees)
 ## Refactorization
 Resharper....
 
+---
+## Legacy Code Refactorization
 
 ---
 ## References:

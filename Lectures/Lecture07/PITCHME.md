@@ -2248,7 +2248,7 @@ public List<EmployeeData> ShowList(Employee employees)
 ---
 ## Refactorization
 
-
++++
 ### Resharper Refactoriazation
 * 60+ refactorings 
 * 450+ context actions
@@ -2259,9 +2259,11 @@ public List<EmployeeData> ShowList(Employee employees)
 * Decrease complexity
 * Simply use alternative syntax
 
++++
+### Resharper Refactoriazation
+@img[span-60](/Lectures/Lecture07/Assets/img/refactor.png)
 @snap[east]
 @img[span-60](/Lectures/Lecture07/Assets/img/refactoring.png)
-@img[span-60](/Lectures/Lecture07/Assets/img/refactor.png)
 @snapend
 
 ---

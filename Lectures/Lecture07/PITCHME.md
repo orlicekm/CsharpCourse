@@ -2261,6 +2261,7 @@ public List<EmployeeData> ShowList(Employee employees)
 
 @snap[east]
 @img[span-60](/Lectures/Lecture07/Assets/img/refactoring.png)
+@img[span-60](/Lectures/Lecture07/Assets/img/refactor.png)
 @snapend
 
 ---

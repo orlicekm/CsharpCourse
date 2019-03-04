@@ -2268,7 +2268,7 @@ public List<EmployeeData> ShowList(Employee employees)
 
 +++
 ### Resharper Refactoriazation
-@img[](/Lectures/Lecture07/Assets/img/RefactoringClass.gif)
+@img[](/Lectures/Lecture07/Assets/img/RefactoringR.gif)
 @snap[east]
 @img[](/Lectures/Lecture07/Assets/img/RefactoringMethod.gif)
 @snapend
@@ -2280,9 +2280,11 @@ public List<EmployeeData> ShowList(Employee employees)
 ## References:
 [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)  
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
+[JetBrains .Net Blog](https://blog.jetbrains.com/dotnet/)  
 [Toptal - developers](https://www.toptal.com/developers)  
 [Clean-code-dotnet](https://github.com/thangchung/clean-code-dotnet)  
 [Cvuorinen.net](https://cvuorinen.net/)  
+[Resharper](https://www.jetbrains.com/resharper/)  
 [Wikipedia](https://www.wikipedia.org/)  
 [DZone.com](https://dzone.com/)  
 [DevIQ](https://deviq.com/)
@@ -2290,5 +2292,8 @@ public List<EmployeeData> ShowList(Employee employees)
 +++
 ## Refences to used images:
 [clean-code-dotnet](https://github.com/thangchung/clean-code-dotnet)  
+[JetBrains .Net Blog](https://blog.jetbrains.com/dotnet/)  
+[Enterprise Craftsmanship](https://enterprisecraftsmanship.com/)  
+[Resharper](https://www.jetbrains.com/resharper/)  
 [Amazon.com](https://www.amazon.com/)  
 [Wikipedia](https://www.wikipedia.org/)

@@ -2246,7 +2246,25 @@ public List<EmployeeData> ShowList(Employee employees)
 * ⋮
 
 ---
+## Legacy Code Refactorization
+1. **Write tests against existing code**
+2. **Heavy refactoring**
+   * *Class level refactorization*
+   * Create each class, interface other file you think you will need
+   * Move components across files
+   * Use tests to check if code is still working
+   * E.g. extract classes, interfaces...
+3. **Tiny refactoring**
+   * *Method level refactoriation*
+   * File by file
+   * Refactor methods, properies, other components
+   * Use tests to check if code is still working
+   * E.g. extract methods, introduce variables...
+4. **Clean up code, apply code style**
+
++++
 ### Resharper Refactoriazation
+* [Official site](https://www.jetbrains.com/resharper/)
 * 60+ refactorings 
 * 450+ context actions
 * **Safely organize code**
@@ -2271,23 +2289,6 @@ public List<EmployeeData> ShowList(Employee employees)
 @snap[east]
 @img[](/Lectures/Lecture07/Assets/img/RefactoringMethod.gif)
 @snapend
-
----
-## Legacy Code Refactorization
-1. **Write tests against existing code**
-2. **Heavy refactoring**
-   * *Class level refactorization*
-   * Create each class, interface other file you think you will need
-   * Move components across files
-   * Use tests to check if code is still working
-   * E.g. extract classes, interfaces...
-3. **Tiny refactoring**
-   * *Method level refactoriation*
-   * File by file
-   * Refactor methods, properies, other components
-   * Use tests to check if code is still working
-   * E.g. extract methods, introduce variables...
-4. **Clean up code, apply code style**
 
 ---
 ## References:

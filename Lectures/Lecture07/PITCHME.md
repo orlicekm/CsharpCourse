@@ -2266,6 +2266,13 @@ public List<EmployeeData> ShowList(Employee employees)
 @img[](/Lectures/Lecture07/Assets/img/refactoring.png)
 @snapend
 
++++
+### Resharper Refactoriazation
+@img[](/Lectures/Lecture07/Assets/img/RefactoringClass.gif)
+@snap[east]
+@img[](/Lectures/Lecture07/Assets/img/RefactoringMethod.gif)
+@snapend
+
 ---
 ## Legacy Code Refactorization Example
 

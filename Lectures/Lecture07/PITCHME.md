@@ -2246,9 +2246,6 @@ public List<EmployeeData> ShowList(Employee employees)
 * ⋮
 
 ---
-## Refactorization
-
-+++
 ### Resharper Refactoriazation
 * 60+ refactorings 
 * 450+ context actions
@@ -2276,7 +2273,21 @@ public List<EmployeeData> ShowList(Employee employees)
 @snapend
 
 ---
-## Legacy Code Refactorization Example
+## Legacy Code Refactorization
+1. **Write tests against existing code**
+2. **Heavy refactoring**
+   * *Class level refactorization*
+   * Create each class, interface other file you think you will need
+   * Move components across files
+   * Use tests to check if code is still working
+   * E.g. extract classes, interfaces...
+3. **Tiny refactoring**
+   * *Method level refactoriation*
+   * File by file
+   * Refactor methods, properies, other components
+   * Use tests to check if code is still working
+   * E.g. extract methods, introduce variables...
+4. **Clean up code, apply code style**
 
 ---
 ## References:

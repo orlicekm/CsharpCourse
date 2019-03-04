@@ -2268,7 +2268,9 @@ public List<EmployeeData> ShowList(Employee employees)
 
 +++
 ### Resharper Refactoriazation
-@img[](/Lectures/Lecture07/Assets/img/RefactoringR.gif)
+@snap[west]
+@img[span-60](/Lectures/Lecture07/Assets/img/RefactoringR.gif)
+@snapend
 @snap[east]
 @img[](/Lectures/Lecture07/Assets/img/RefactoringMethod.gif)
 @snapend

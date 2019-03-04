@@ -2247,10 +2247,24 @@ public List<EmployeeData> ShowList(Employee employees)
 
 ---
 ## Refactorization
-Resharper....
+
+
+### Resharper Refactoriazation
+* 60+ refactorings 
+* 450+ context actions
+* **Safely organize code**
+* **Move code around the solution**
+* Distribute responsibility
+* Decouple
+* Decrease complexity
+* Simply use alternative syntax
+
+@snap[east]
+@img[span-60](/Lectures/Lecture07/Assets/img/refactoring.png)
+@snapend
 
 ---
-## Legacy Code Refactorization
+## Legacy Code Refactorization Example
 
 ---
 ## References:

@@ -1,10 +1,17 @@
-﻿# Title
-## Subtitle
+﻿# Model–View–ViewModel design pattern
+## Desktop applications architecture, MVVM, Mapper
 <div class="right">
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
 </div>
 
 ---
+## Desktop applications architecture
+
+---
+### MVVM
+
+---
+### Mapper
 
 ---
 ## References:

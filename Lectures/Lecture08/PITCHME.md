@@ -17,13 +17,13 @@
 ---
 ### Model–View–ViewModel
 * **Software architectural pattern**
-* Shortcut **MVVM**
-* Model
-* ViewModel
-* View
+* **MVVM**
+  * **Model**
+  * **ViewModel**
+  * **View**
 
 @snap[east]
-![](/Lectures/Lecture08/Assets/img/mvvm.png)
+@img[span-80](/Lectures/Lecture08/Assets/img/mvvm.png)
 @snapend
 
 @snap[south-east span+40]

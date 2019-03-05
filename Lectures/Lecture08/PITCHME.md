@@ -1,8 +1,14 @@
-﻿# Model–View–ViewModel design pattern
+﻿@snap[north span-100]
+# Model–View–ViewModel design pattern
+@snapend
+
+@snap[midpoint span-100]
 ## Desktop applications architecture, MVVM, Mapper
-<div class="right">
+@snapend
+
+@snap[south-east span-30]
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
-</div>
+@snapend
 
 ---
 ## Desktop applications architecture

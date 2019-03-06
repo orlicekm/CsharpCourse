@@ -47,20 +47,32 @@
 
 +++
 ## Model
-* Represents the actual data and information
-* Holds the information, but not behaviors or services that manipulate the information
-  * Business logic is encapsulated in other classes that act on the model
+* Represents the **actual data and information**
+* **Holds the information, but not behaviors or services** that manipulate the information
+  * **Business logic is encapsulated** in other classes that act on the model
   * Not always true
     * E. g. some models may contain validation
 
 +++
 ## View
+* **Presentation of the data**
+* Only thing the end user really interacts with
+* Contains *behaviors*, *events* and *data-bindings*
+  * Mapped to *properties*, *method calls*, and *commands*
+* It is **not responsible for maintaining its state**
+  * It will synchronize this with the *ViewModel*
+* In *XAML* (in this course)
+
 
 +++
 ## ViewModel
 
 ---
 ### Mapper
+
+automapper
+repozitar
+unit of work
 
 ---
 ## References:

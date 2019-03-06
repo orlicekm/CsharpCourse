@@ -13,6 +13,13 @@
 ---
 ## Desktop Applications Architecture
 * TODO
+co sem?
+
+* Historical patterns?
+  * MVC
+  * MVP
+  * Presentation Model
+
 
 ---
 ### Model–View–ViewModel
@@ -51,7 +58,7 @@
 * **Holds the information, but not behaviors or services** that manipulate the information
   * **Business logic is encapsulated** in other classes that act on the model
   * Not always true
-    * E. g. some models may contain validation
+    * E. g. some *Models* may contain validation
 
 +++
 ## View
@@ -65,7 +72,13 @@
 
 
 +++
-## ViewModel
+## ViewModel 
+* **Presentation Separation**
+  * *View* separate from the *Model*
+  * 
+
++++
+frameworks
 
 ---
 ### Mapper

@@ -2275,11 +2275,12 @@ public List<EmployeeData> ShowList(Employee employees)
 * Simply use alternative syntax
 
 +++
-### Resharper Refactoriazation
-@img[span-70](/Lectures/Lecture07/Assets/img/refactor.png)
-@snap[east]
-@img[](/Lectures/Lecture07/Assets/img/refactoring.png)
-@snapend
+### Resharper Refactoriazation Sampple 1/2
+![](/Lectures/Lecture07/Assets/img/refactor.png)
+
++++
+### Resharper Refactoriazation Sampple 2/2
+![](/Lectures/Lecture07/Assets/img/refactoring.png)
 
 +++
 ### Resharper Refactoriazation

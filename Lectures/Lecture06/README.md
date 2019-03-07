@@ -1,4 +1,4 @@
 # Lecture 06
-## Subtitle
+## Design patterns in C#
 * [Slides](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Lectures/Lecture06)  
 * [Markdown](/Lectures/Lecture06/PITCHME.md)

@@ -2373,13 +2373,13 @@ public List<EmployeeData> ShowList(Employee employees)
 +++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/ValuableCustomerDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 5 7/10
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/ValuableCustomerDiscountCalculator.cs)
 
-+++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/MostValuableCustomerDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 8 4/10
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/MostValuableCustomerDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 5 8/10
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/MostValuableCustomerDiscountCalculator.cs)
 
-+++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/LoyaltyDiscountCalculator/ILoyaltyDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 9 4/10
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/LoyaltyDiscountCalculator/ILoyaltyDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 5 9/10
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/LoyaltyDiscountCalculator/ILoyaltyDiscountCalculator.cs)
 
-+++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/LoyaltyDiscountCalculator/DefaultLoyaltyDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 10 4/10
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/LoyaltyDiscountCalculator/DefaultLoyaltyDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 5 10/10
 @[5-14]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/LoyaltyDiscountCalculator/DefaultLoyaltyDiscountCalculator.cs)
 

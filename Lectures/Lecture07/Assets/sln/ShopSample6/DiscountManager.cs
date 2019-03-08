@@ -1,4 +1,5 @@
 ﻿using ShopSample6.AccountDiscountCalculatorFactory;
+using ShopSample6.LoyaltyDiscountCalculator;
 
 namespace ShopSample6
 {

@@ -1,4 +1,4 @@
-﻿namespace ShopSample6
+﻿namespace ShopSample6.LoyaltyDiscountCalculator
 {
     public interface ILoyaltyDiscountCalculator
     {

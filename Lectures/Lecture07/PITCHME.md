@@ -529,7 +529,7 @@ Console.PrintLine(name); // ['Ryan', 'McDermott'];
 * **Use polymorphism**
 * Why?
   * Method, class... should only do one thing
-  * if statements does more than one thing
+  * If statements does more than one thing
 
 +++
 ### Avoid Conditionals - Bad Sample
@@ -2288,6 +2288,100 @@ public List<EmployeeData> ShowList(Employee employees)
 +++
 ### Resharper Refactoriazation Sample 3/3
 ![](/Lectures/Lecture07/Assets/img/RefactoringMethod.gif)
+
++++
+### Legacy Code Refactoring Sample
+* Real world feature
+  * **DiscountManager** class 
+    * Responsible for *calculating a discount for the customer* while he is buying some product
+* **Extremely simplified**
+  * Do not describe every possible problem
+  * Do not care about error handling, logging etc.
+  * This refactoring is **overkill** for simple example like that
+    * It's created only for demonstration, so it **can be applied on large projects**
+
++++?code=/Lectures/Lecture07/Assets/sln/ClassLibrary1/Class1.cs&lang=C#&title=Legacy Code Refactoring Phase 0
+@[7-28]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ClassLibrary1/Class1.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ClassLibrary2.Tests/Class1Tests.cs&lang=C#&title=Legacy Code Refactoring Phase 1
+@[7]
+@[10-19]
+@[22-33]
+@[37-46]
+@[49-58]
+@[61-73]
+@[77-89]
+@[92-101]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ClassLibrary2.Tests/Class1Tests.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample3/AccountStatus.cs&lang=C#&title=Legacy Code Refactoring Phase 2 1/2
+@[3-9]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample3/AccountStatus.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample3/DiscountManager.cs&lang=C#&title=Legacy Code Refactoring Phase 2 2/2
+@[5-27]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample3/DiscountManager.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample4/DiscountConstants.cs&lang=C#&title=Legacy Code Refactoring Phase 3 1/2
+@[3-9]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample4/DiscountConstants.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample4/DiscountManager.cs&lang=C#&title=Legacy Code Refactoring Phase 3 2/2
+@[7]
+@[9-33]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample4/DiscountManager.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample5/DiscountPriceExtensions.cs&lang=C#&title=Legacy Code Refactoring Phase 4 1/2
+@[5-8]
+@[10-18]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample5/DiscountPriceExtensions.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample5/DiscountManager.cs&lang=C#&title=Legacy Code Refactoring Phase 4 2/2
+@[8-31]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample5/DiscountManager.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/DiscountManager.cs&lang=C#&title=Legacy Code Refactoring Phase 5 1/10
+@[7-23]
+@[7-8]
+@[10-15]
+@[17-23]
+@[7-23]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/DiscountManager.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculatorFactory/IAccountDiscountCalculatorFactory.cs&lang=C#&title=Legacy Code Refactoring Phase 5 2/10
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculatorFactory/IAccountDiscountCalculatorFactory.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculatorFactory/IAccountDiscountCalculatorFactory.cs&lang=C#&title=Legacy Code Refactoring Phase 5 3/10
+@[6-31]
+@[8-9]
+@[10]
+@[11-27]
+@[29]
+@[6-31]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculatorFactory/IAccountDiscountCalculatorFactory.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/IAccountDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 5 4/10
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/IAccountDiscountCalculator.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/NotRegisteredDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 5/10
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/NotRegisteredDiscountCalculator.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/SimpleCustomerDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 5 6/10
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/SimpleCustomerDiscountCalculator.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/ValuableCustomerDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 5 7/10
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/ValuableCustomerDiscountCalculator.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/MostValuableCustomerDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 8 4/10
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/MostValuableCustomerDiscountCalculator.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/LoyaltyDiscountCalculator/ILoyaltyDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 9 4/10
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/LoyaltyDiscountCalculator/ILoyaltyDiscountCalculator.cs)
+
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/LoyaltyDiscountCalculator/DefaultLoyaltyDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 10 4/10
+@[5-14]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/LoyaltyDiscountCalculator/DefaultLoyaltyDiscountCalculator.cs)
 
 ---
 ## References:

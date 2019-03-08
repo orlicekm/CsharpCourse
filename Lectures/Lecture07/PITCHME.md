@@ -2352,14 +2352,14 @@ public List<EmployeeData> ShowList(Employee employees)
 +++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculatorFactory/IAccountDiscountCalculatorFactory.cs&lang=C#&title=Legacy Code Refactoring Phase 5 2/10
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculatorFactory/IAccountDiscountCalculatorFactory.cs)
 
-+++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculatorFactory/IAccountDiscountCalculatorFactory.cs&lang=C#&title=Legacy Code Refactoring Phase 5 3/10
++++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculatorFactory/DefaultAccountDiscountCalculatorFactory.cs&lang=C#&title=Legacy Code Refactoring Phase 5 3/10
 @[6-31]
 @[8-9]
 @[10]
 @[11-27]
 @[29]
 @[6-31]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculatorFactory/IAccountDiscountCalculatorFactory.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculatorFactory/DefaultAccountDiscountCalculatorFactory.cs)
 
 +++?code=/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/IAccountDiscountCalculator.cs&lang=C#&title=Legacy Code Refactoring Phase 5 4/10
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture07/Assets/sln/ShopSample6/AccountDiscountCalculator/IAccountDiscountCalculator.cs)

@@ -30,7 +30,7 @@ co sem?
   * View
 
 @snap[east]
-@img[span-80](/Lectures/Lecture08/Assets/img/mvvm.png)
+@img[span-80](/Lectures/Lecture09/Assets/img/mvvm.png)
 @snapend
 
 @snap[south-east span+40]

@@ -12,7 +12,7 @@
 
 ---
 ## Clean Code
-* Code that
+* Code that is
   * *Easy to understand*
   * *Easy to change*
 * **Subjective**
@@ -56,7 +56,7 @@
 ---
 ## Clean code Naming
 * Avoid using bad names
-* Avoid disinformation name
+* Avoid disinformative name
 * Avoid Hungarian notation
 * Use consistent capitalization
 * Use pronounceable names
@@ -83,7 +83,7 @@ int daySinceModification;
 ```
 
 +++
-### Avoid Disinformation Names
+### Avoid Disinformative Names
 * **Avoid** naming with **disinformation name**
 * **Name variable to reflect what we want to do** with it
 * **Bad**
@@ -233,14 +233,14 @@ public double CalculateSalary(int workingDays, int workingHours)
 +++
 ### Other Naming Related Advices
 * Code is writen by developer for developer
-  * **Dont explain fundamentals** what everyone knows
+  * **Do not explain fundamentals** that everyone knows
 * **One concept, one word**
 * **Dont use synonyms**
   * Choose one of them and be consistent
 * **Variable ends with noun** e.g. `Car car;`
   * Bool starts with *Is*, *Was*, *Has*... e.g. `bool isTestPage;`
 * **Method starts with verb**
-  * Says what it return `public List<Cell> GetFlaggedCells()`
+  * Says what it returns `public List<Cell> GetFlaggedCells()`
   * What it does `public void ChangeCarCount(int carCount)`
 
 ---
@@ -260,7 +260,7 @@ public double CalculateSalary(int workingDays, int workingHours)
 +++
 ### Avoid nesting too deeply and return early
 * Too many `if else` statements make the **code hard to follow**
-* **Exlicit is better than implicit**
+* **Explicit is better than implicit**
 * Use [Code Metrices](https://marketplace.visualstudio.com/items?itemName=Elisha.CodeMetrices) extension to monitor code complexity
 
 +++
@@ -332,7 +332,7 @@ public long Fibonacci(int index)
 ### Avoid magic strings, numbers...
 * It is a value
   * **Specified directly within application code**
-  * **Have an impact** on the application’s behavior
+  * **Has an impact** on the application’s behavior
 * Frequently will **end up being duplicated** within the system
 * Common source of bugs *(problem to update them)*
 * **Bad**
@@ -529,7 +529,7 @@ Console.PrintLine(name); // ['Ryan', 'McDermott'];
 * **Use polymorphism**
 * Why?
   * Method, class... should only do one thing
-  * If statements does more than one thing
+  * If statements do more than one thing
 
 +++
 ### Avoid Conditionals - Bad Sample
@@ -700,7 +700,7 @@ public void CreateTempFile(string name)
 * More than three leads to a combinatorial explosion
   * Have to test tons of different cases with each separate argument
 * Number of arguments
-  * **Zero** arguments is the **ideal case**
+  * **Zero** argument is the **ideal case**
   * **One or two** arguments is **ok**
   * **Three or more*** should be **avoided**
 * Use tuples or create object to compress arguments into one
@@ -749,7 +749,7 @@ public void CreateMenu(MenuConfig config)
   * Harder to compose, test, and reason about
 * One thing
   * **Refactored easier**
-  * Code will read much **cleaner, more understable**
+  * Code will be much **cleaner and more understable**
 
 +++
 ### Method Should Do One Thing - Good Sample
@@ -795,7 +795,7 @@ public List<Client> ActiveClients(string[] clients)
   * **Keep those functions vertically close** in the source file
 * Ideally **keep the caller right above the callee**
 * We tend to **read code from top-to-bottom**
-  * Make your code read that way
+  * Make your code to be read that way
 
 +++ 
 ### Method Callers and Callees Should be Close - Bad Sample
@@ -991,11 +991,11 @@ InventoryTracker("apples", request, "www.inventory-awesome.io");
 ### Avoid Usage of a Singleton Pattern
 * Singleton is an [Anti-pattern](https://en.wikipedia.org/wiki/Singleton_pattern)
   * Generally **used as a global instance**
-    * Hide the dependencies of application in code
-  * Violate the single responsibility principle
-    * **Control it's own creation and lifecycle**
-  * Cause code to be tightly coupled
-  * Carry state around for the lifetime of the application
+    * Hides the dependencies of application in code
+  * Violates the single responsibility principle
+    * **Controls it's own creation and lifecycle**
+  * Causes code to be tightly coupled
+  * Carries state around for the lifetime of the application
 * **Avoid `static` keyword** for the same reasons as Singleton
 
 +++
@@ -1056,7 +1056,7 @@ public static List<T> FluentClear<T>(this List<T> list)
 
 +++
 ### Prefer Composition over Inheritance
-* **Prefer composition over inheritance** where you can
+* **Prefer composition over inheritance** wherever it is possible
 * **Inheritance should be used when**
   * Inheritance represents an *is-a* relationship and not a *has-a* relationship
     * E. g. Human -> Animal vs. User -> UserDetails
@@ -1142,7 +1142,7 @@ class Employee
 
 ---
 ## Clean Code - Error Handling
-* Thrown errors are a good thing
+* Thrown errors are good thing
 * Means that the runtime has successfully identified
   * That something in your program has gone wrong
   * Stopping function execution on the current stack
@@ -1151,7 +1151,7 @@ class Employee
 
 +++
 ### Clean Code - Error Handling
-* Do not use `throw exeption` in catch block
+* Do not use `throw exception` in catch block
 * Do not ignore caught errors
 * Use multiple catch block instead of conditions
 
@@ -1303,13 +1303,13 @@ catch (TaskSchedulerException exception)
 ---
 ## Clean Code -  Comments
 * *Every time you write a comment, you should grimace and feel the failure of your ability of expression.* ― Robert C. Martin, The Robert C. Martin Clean Code Collection
-* **Use commends when**
+* **Use comments when**
   * *Explaining strange or test code*
     * Include the source in the documentation
   * *TODO comments*
     * Only in feature branch, not in master
   * *To highlight essential code*
-* Otherwise do not use commends
+* Otherwise do not use comments
 
 +++
 ## Clean Code -  Comments
@@ -1641,7 +1641,7 @@ class UserSettings
 * Software entities *(classes, modules, methods...)*
   * **Open for extension**
   * **Closed for modification**
-* Allow user to add **new functionalities without changing existing code**
+* Allows user to add **new functionalities without changing existing code**
 
 +++
 ### S**O**LID - Bad Sample
@@ -2096,13 +2096,13 @@ public class Manager
 @[22-35]
 
 ---
-## Don’t Repeat Yourself (DRY) Principe
+## Don’t Repeat Yourself (DRY) Principle
 * **Avoid duplicate code**
 * Benefit
   * **Change code in one place**
   * **See the change in all instances**
 * **Create abstractions** to remove duplicates
-* Also know as *Single Source of Truth (SSOT)* principe
+* Also know as *Single Source of Truth (SSOT)* principle
 * *Open/Closed Principle* only works when DRY is followed
 * *Single Responsibility Principle* relies on DRY
 
@@ -2257,7 +2257,7 @@ public List<EmployeeData> ShowList(Employee employees)
 3. **Tiny refactoring**
    * *Method level refactoriation*
    * File by file
-   * Refactor methods, properies, other components
+   * Refactor methods, properties, other components
    * Use tests to check if code is still working
    * E.g. extract methods, introduce variables...
 4. **Clean up code, apply code style**
@@ -2295,8 +2295,8 @@ public List<EmployeeData> ShowList(Employee employees)
   * **DiscountManager** class 
     * Responsible for *calculating a discount for the customer* while he is buying some product
 * **Extremely simplified**
-  * Do not describe every possible problem
-  * Do not care about error handling, logging etc.
+  * Does not describe every possible problem
+  * Does not care about error handling, logging etc.
   * This refactoring is **overkill** for simple example like that
     * It's created only for demonstration, so it **can be applied on large projects**
 

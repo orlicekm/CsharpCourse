@@ -2,7 +2,7 @@
 
 namespace School.BL.Models.Base
 {
-    public class ModelBase: IModel
+    public class ModelBase : IModel
     {
         public Guid Id { get; set; }
     }

@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Facades\" />
+    <ProjectReference Include="..\School.DAL\School.DAL.csproj" />
   </ItemGroup>
 
 </Project>

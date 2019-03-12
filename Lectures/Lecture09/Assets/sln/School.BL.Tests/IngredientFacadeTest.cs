@@ -1,6 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
-using School.BL.Mappers;
+﻿using School.BL.Mappers;
 using School.BL.Models;
 using School.DAL;
 using School.DAL.Entities;
@@ -18,7 +16,8 @@ namespace School.BL.Tests
                 Name = "Fero"
             };
             var unit = new UnitOfWork(new SchoolDbContext());
-            var facade = new CrudFacade<StudentEntity, StudentModel>(unit, new RepositoryBase<StudentEntity>(unit), new StudentMapper());
+            var facade = new CrudFacade<StudentEntity, StudentModel>(unit, new RepositoryBase<StudentEntity>(unit),
+                new StudentMapper());
 
             facade.Save(model);
         }

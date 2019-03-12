@@ -1,5 +1,4 @@
-﻿using System;
-using School.BL.Mappers.Base;
+﻿using School.BL.Mappers.Base;
 using School.BL.Models;
 using School.DAL.Entities;
 
@@ -9,12 +8,28 @@ namespace School.BL.Mappers
     {
         public override AddressEntity Map(AddressModel model)
         {
-            throw new NotImplementedException();
+            if (model == null) return null;
+            return new AddressEntity
+            {
+                Id = model.Id,
+                City = model.City,
+                State = model.State,
+                Country = model.Country,
+                Student = new StudentMapper().Map(model.Student)
+            };
         }
 
         public override AddressModel Map(AddressEntity entity)
         {
-            throw new NotImplementedException();
+            if (entity == null) return null;
+            return new AddressModel
+            {
+                Id = entity.Id,
+                City = entity.City,
+                State = entity.State,
+                Country = entity.Country,
+                Student = new StudentMapper().Map(entity.Student)
+            };
         }
     }
 }

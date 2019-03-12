@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace School.DAL.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class Initialization : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -69,7 +69,7 @@ namespace School.DAL.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                "StudentCourses",
+                "StudentCourseEntity",
                 table => new
                 {
                     StudentId = table.Column<Guid>(nullable: false),
@@ -77,15 +77,15 @@ namespace School.DAL.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_StudentCourses", x => new {x.StudentId, x.CourseId});
+                    table.PrimaryKey("PK_StudentCourseEntity", x => new {x.StudentId, x.CourseId});
                     table.ForeignKey(
-                        "FK_StudentCourses_Courses_CourseId",
+                        "FK_StudentCourseEntity_Courses_CourseId",
                         x => x.CourseId,
                         "Courses",
                         "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        "FK_StudentCourses_Students_StudentId",
+                        "FK_StudentCourseEntity_Students_StudentId",
                         x => x.StudentId,
                         "Students",
                         "Id",
@@ -99,8 +99,8 @@ namespace School.DAL.Migrations
                 unique: true);
 
             migrationBuilder.CreateIndex(
-                "IX_StudentCourses_CourseId",
-                "StudentCourses",
+                "IX_StudentCourseEntity_CourseId",
+                "StudentCourseEntity",
                 "CourseId");
 
             migrationBuilder.CreateIndex(
@@ -115,7 +115,7 @@ namespace School.DAL.Migrations
                 "Addresses");
 
             migrationBuilder.DropTable(
-                "StudentCourses");
+                "StudentCourseEntity");
 
             migrationBuilder.DropTable(
                 "Courses");

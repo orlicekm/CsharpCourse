@@ -29,7 +29,6 @@ namespace School.DAL
         public DbSet<CourseEntity> Courses { get; set; }
         public DbSet<GradeEntity> Grades { get; set; }
         public DbSet<StudentEntity> Students { get; set; }
-        public DbSet<StudentCourseEntity> StudentCourses { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

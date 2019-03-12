@@ -10,8 +10,8 @@ using School.DAL;
 namespace School.DAL.Migrations
 {
     [DbContext(typeof(SchoolDbContext))]
-    [Migration("20190309165024_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20190312011530_Initialization")]
+    partial class Initialization
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -82,7 +82,7 @@ namespace School.DAL.Migrations
 
                     b.HasIndex("CourseId");
 
-                    b.ToTable("StudentCourses");
+                    b.ToTable("StudentCourseEntity");
                 });
 
             modelBuilder.Entity("School.DAL.Entities.StudentEntity", b =>

@@ -79,7 +79,7 @@ namespace School.DAL.Migrations
 
                 b.HasIndex("CourseId");
 
-                b.ToTable("StudentCourses");
+                b.ToTable("StudentCourseEntity");
             });
 
             modelBuilder.Entity("School.DAL.Entities.StudentEntity", b =>

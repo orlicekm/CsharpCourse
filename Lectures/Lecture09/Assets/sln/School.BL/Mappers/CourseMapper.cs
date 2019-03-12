@@ -23,8 +23,9 @@ namespace School.BL.Mappers
                 }).ToList()
             };
 
-            foreach (var studentCourseEntity in courseEntity.StudentCourses)
-                studentCourseEntity.Course = courseEntity;
+            if (courseEntity.StudentCourses != null)
+                foreach (var studentCourseEntity in courseEntity.StudentCourses)
+                    studentCourseEntity.Course = courseEntity;
 
             return courseEntity;
         }

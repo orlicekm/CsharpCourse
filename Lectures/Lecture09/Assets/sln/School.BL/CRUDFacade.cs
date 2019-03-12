@@ -12,11 +12,11 @@ namespace School.BL
         where TEntity : EntityBase, new()
         where TModel : ModelBase, new()
     {
-        private readonly MapperBase<TEntity, TModel> mapper;
+        private readonly IMapper<TEntity, TModel> mapper;
         private readonly RepositoryBase<TEntity> repository;
         private readonly UnitOfWork unitOfWork;
 
-        public CrudFacade(UnitOfWork unitOfWork, RepositoryBase<TEntity> repository, MapperBase<TEntity, TModel> mapper)
+        public CrudFacade(UnitOfWork unitOfWork, RepositoryBase<TEntity> repository, IMapper<TEntity, TModel> mapper)
         {
             this.mapper = mapper;
             this.repository = repository;

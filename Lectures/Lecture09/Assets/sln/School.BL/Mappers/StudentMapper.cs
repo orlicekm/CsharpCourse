@@ -24,8 +24,9 @@ namespace School.BL.Mappers
                 }).ToList()
             };
 
-            foreach (var studentCourseEntity in studentEntity.StudentCourses)
-                studentCourseEntity.Student = studentEntity;
+            if(studentEntity.StudentCourses != null)
+                foreach (var studentCourseEntity in studentEntity.StudentCourses)
+                    studentCourseEntity.Student = studentEntity;
 
             return studentEntity;
         }
@@ -39,7 +40,7 @@ namespace School.BL.Mappers
                 Name = entity.Name,
                 Grade = new GradeMapper().Map(entity.Grade),
                 Address = new AddressMapper().Map(entity.Address),
-                Courses = new CourseMapper().Map(entity.StudentCourses.Select(sc => sc.Course).ToList())
+                Courses = new CourseMapper().Map(entity.StudentCourses?.Select(sc => sc.Course).ToList())
             };
         }
     }

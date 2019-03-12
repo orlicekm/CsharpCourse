@@ -15,12 +15,12 @@ namespace School.BL.Mappers.Base
 
         public ICollection<TEntity> Map(ICollection<TModel> models)
         {
-            return models.Select(Map).ToList();
+            return models?.Select(Map).ToList();
         }
 
         public ICollection<TModel> Map(ICollection<TEntity> entities)
         {
-            return entities.Select(Map).ToList();
+            return entities?.Select(Map).ToList();
         }
     }
 }

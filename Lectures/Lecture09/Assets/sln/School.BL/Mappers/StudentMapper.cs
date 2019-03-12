@@ -24,7 +24,7 @@ namespace School.BL.Mappers
                 }).ToList()
             };
 
-            if(studentEntity.StudentCourses != null)
+            if (studentEntity.StudentCourses != null)
                 foreach (var studentCourseEntity in studentEntity.StudentCourses)
                     studentCourseEntity.Student = studentEntity;
 

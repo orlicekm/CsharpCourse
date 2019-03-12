@@ -5,11 +5,11 @@ namespace School.BL.Tests
 {
     public class CourseFacadeTests : IClassFixture<CourseFacadeTestsSetupFixture>
     {
+        private readonly CourseFacadeTestsSetupFixture testContext;
+
         public CourseFacadeTests(CourseFacadeTestsSetupFixture testContext)
         {
             this.testContext = testContext;
         }
-
-        private readonly CourseFacadeTestsSetupFixture testContext;
     }
 }

@@ -1,5 +1,4 @@
-﻿using System;
-using School.BL.Models.EqualityComparers;
+﻿using School.BL.Models.EqualityComparers;
 using School.BL.Tests.SetupFixtures;
 using Xunit;
 
@@ -17,17 +16,17 @@ namespace School.BL.Tests
 
 
         [Fact]
-        public void InsertStudent()
+        public void InsertStudentTest()
         {
             //Arrange
             var studentModel = testContext.CrudFacadeSUT.InitializeNew();
             studentModel.Name = "Elias Yochanan";
 
             //Act
-            var savedDetailDto = testContext.CrudFacadeSUT.Save(studentModel);
+            var savedStudentModel = testContext.CrudFacadeSUT.Save(studentModel);
 
             //Assert
-            Assert.Equal(studentModel, savedDetailDto, new StudentModelEqualityComparer());
+            Assert.Equal(studentModel, savedStudentModel, new StudentModelEqualityComparer());
         }
     }
 }

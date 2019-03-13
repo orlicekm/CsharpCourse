@@ -40,6 +40,21 @@
 * How are these objects going to be saved to database?
   * **UnitOfWork** design pattern
 
++++?code=/Lectures/Lecture08/Assets/sln/School.DAL/RepositoryBase.cs&lang=C#&title=Repository Sample
+@[8-10]
+@[11-16]
+@[18-21]
+@[23-28]
+@[30-33]
+@[35-38]
+@[40-43]
+@[45-48]
+@[50-53]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.DAL/RepositoryBase.cs)
+
+
+
+
 ---
 ## UnitOfWork
 * Maintains a list of objects affected by a business transaction

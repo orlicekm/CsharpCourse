@@ -17,7 +17,7 @@ namespace School.DAL.Tests
         private readonly SchoolDbContextTestsSetupFixture testContext;
 
         [Fact]
-        public void AddGradeTest()
+        public void InsertGradeTest()
         {
             //Arrange
             var gradeEntity = new GradeEntity
@@ -40,7 +40,7 @@ namespace School.DAL.Tests
         }
 
         [Fact]
-        public void AddGradeWithStudentsTest()
+        public void InsertGradeWithStudentsTest()
         {
             var studentEntity = new StudentEntity {Name = "Nogah Jael"};
             //Arrange
@@ -73,7 +73,7 @@ namespace School.DAL.Tests
         }
 
         [Fact]
-        public void AddStudentTest()
+        public void InsertStudentTest()
         {
             //Arrange
             var studentEntity = new StudentEntity

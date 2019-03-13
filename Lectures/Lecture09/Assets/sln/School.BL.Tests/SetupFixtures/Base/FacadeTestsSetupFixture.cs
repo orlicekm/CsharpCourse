@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using School.BL.Mappers.Base;
 using School.BL.Models.Base;
 using School.DAL;
@@ -12,16 +11,17 @@ namespace School.BL.Tests
         where TModel : ModelBase, new()
     {
         private readonly UnitOfWork unitOfWork;
+
         public FacadeTestsSetupFixture(IMapper<TEntity, TModel> mapper)
         {
             var schoolDbContext = CreateSchoolDbContext();
             unitOfWork = new UnitOfWork(schoolDbContext);
             var repository = new RepositoryBase<TEntity>(unitOfWork);
             CrudFacadeSUT = new CrudFacade<TEntity, TModel>(unitOfWork, repository, mapper);
-
         }
 
         public CrudFacade<TEntity, TModel> CrudFacadeSUT { get; set; }
+
         public SchoolDbContext CreateSchoolDbContext()
         {
             return new SchoolDbContext(CreateDbContextOptions());
@@ -38,6 +38,5 @@ namespace School.BL.Tests
         {
             unitOfWork?.DbContext?.Dispose();
         }
-
     }
 }

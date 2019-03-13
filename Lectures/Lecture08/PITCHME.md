@@ -78,6 +78,27 @@ recreating  repository -> minimizes duplicate query logic
 @[31-34]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.DAL.Tests/RepositoryTestsSetupFixture.cs)
 
++++?code=/Lectures/Lecture08/Assets/sln/School.DAL.Tests/RepositoryStudentTests.cs&lang=C#&title=Repository Student Tests
+@[8-9]
+@[8-13]
+@[15]
+@[18-34]
+@[20-22]
+@[24-26]
+@[28-33]
+@[18-34]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.DAL.Tests/RepositoryStudentTests.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.DAL.Tests/RepositoryGradeTests.cs&lang=C#&title=Repository Grade Tests
+@[8-9]
+@[8-13]
+@[15]
+@[18-35]
+@[20-23]
+@[25-27]
+@[29-34]
+@[18-35]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.DAL.Tests/RepositoryGradeTests.cs)
 
 
 ---

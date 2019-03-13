@@ -53,8 +53,6 @@
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.DAL/RepositoryBase.cs)
 
 
-
-
 ---
 ## UnitOfWork
 * Maintains a list of objects affected by a business transaction
@@ -71,6 +69,17 @@ DbContect -> unit of work
 recreating  repository -> minimizes duplicate query logic
 
 
++++?code=/Lectures/Lecture08/Assets/sln/School.DAL.Tests/RepositoryTestsSetupFixture.cs&lang=C#&title=Repository Tests Setup Fixture Sample
+@[6-7]
+@[8-13]
+@[15-17]
+@[19-22]
+@[24-29]
+@[31-34]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.DAL.Tests/RepositoryTestsSetupFixture.cs)
+
+
+
 ---
 ## Facade
 
@@ -83,6 +92,8 @@ recreating  repository -> minimizes duplicate query logic
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
+[Programming with Mosh](https://programmingwithmosh.com/)  
 
 +++
 ## Refences to used images:
+[Programming with Mosh](https://programmingwithmosh.com/)  

@@ -52,22 +52,12 @@
 @[50-53]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.DAL/RepositoryBase.cs)
 
-
 ---
 ## UnitOfWork
 * Maintains a list of objects affected by a business transaction
 * Coordinates the writing out of changes
 
----
-UnitOf work and Repository are already implemented in entity framework
-there is no need to recreate them
-this would lead to unnecessary complexity
-
-Dbset -> repository
-DbContect -> unit of work
-
-recreating  repository -> minimizes duplicate query logic
-
+![](/Lectures/Lecture08/Assets/img/UnitOfWork.jpg)
 
 +++?code=/Lectures/Lecture08/Assets/sln/School.DAL.Tests/RepositoryTestsSetupFixture.cs&lang=C#&title=Repository Tests Setup Fixture Sample
 @[6-7]
@@ -102,6 +92,41 @@ recreating  repository -> minimizes duplicate query logic
 
 
 ---
+### Entity Framework as UnitOfWork and Repository
+* *UnitOfWork* and *Repository* are **already implemented** in *Entity Framework*
+* **Do not bring the architectural benefits** from these patterns
+
+![](/Lectures/Lecture08/Assets/img/EntityFramework.jpg)
+
++++
+### Entity Framework Problems
+* *Repository*
+  * **Minimizes duplicate** query logic
+* *Entity Framework*
+  * `DbSet` returns `IQueriable`
+  * Does not help with minimizing duplicate:
+
+```C#
+var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).OrderByDescending(c => c.Sales).Take(10);
+```
+
+* Can be solved with extension methods
+  * Treats the symptoms, not the problem
+  * Still retutn IQueryable
+* Solution
+  * Repository with method `GetTopSellingCourses`
+
+
++++
+### Entity Framework Problems
+* *Repository and UnitOfWork*
+  * **Decouples** application from persistence frameworks
+  * Only **repository method have to be changed** when switching to different ORM
+* *Entity Framework*
+  * Application is **tightly coupled** to Entity Framework
+  * Aplication **code have to be directly upgraded** when switching to different ORM
+
+---
 ## Facade
 
 ---
@@ -117,4 +142,5 @@ recreating  repository -> minimizes duplicate query logic
 
 +++
 ## Refences to used images:
+[Microsoft Documentation](https://docs.microsoft.com/en-us/)  
 [Programming with Mosh](https://programmingwithmosh.com/)  

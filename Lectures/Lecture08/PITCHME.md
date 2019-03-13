@@ -14,6 +14,8 @@
 ## Repository
 * Mediates **between the domain and data mapping layers**
 * Acting like an **in-memory collection** of domain objects 
+
+
 ![](/Lectures/Lecture08/Assets/img/repository.jpg)
 
 +++

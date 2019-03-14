@@ -49,7 +49,6 @@ namespace School.BL
             return mapper.Map(repository.InitializeNew());
         }
 
-
         public TModel Save(TModel model)
         {
             var entity = mapper.Map(model);

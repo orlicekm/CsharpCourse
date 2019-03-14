@@ -4,7 +4,7 @@ using School.BL.Models.Base;
 using School.DAL;
 using School.DAL.Entities.Base;
 
-namespace School.BL.Tests
+namespace School.BL.Tests.SetupFixtures.Base
 {
     public class FacadeTestsSetupFixture<TEntity, TModel>
         where TEntity : EntityBase, new()

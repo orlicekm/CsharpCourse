@@ -185,8 +185,59 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 @[11-16]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/FacadeTests.cs)
 
-+++
-TODO
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/CRUDFacade.cs&lang=C#&title=School Facade Sample
+@[11-13]
+@[15-17]
+@[19-24]
+@[26-29]
+@[31-35]
+@[36-40]
+@[42-45]
+@[47-50]
+@[52-62]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/CRUDFacade.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL.Tests/SetupFixtures/Base/FacadeTestsSetupFixture.cs&lang=C#&title=School Facade Tests Sample 1/5
+@[9-11]
+@[13]
+@[15-21]
+@[23]
+@[25-28]
+@[30-35]
+@[37-40]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL.Tests/SetupFixtures/Base/FacadeTestsSetupFixture.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL.Tests/SetupFixtures/StudentFacadeTestsSetupFixture.cs&lang=C#&title=School Facade Tests Sample 2/5
+@[10-12]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL.Tests/SetupFixtures/StudentFacadeTestsSetupFixture.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL.Tests/SetupFixtures/GradeFacadeTestsSetupFixture.cs&lang=C#&title=School Facade Tests Sample 3/5
+@[10-12]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL.Tests/SetupFixtures/GradeFacadeTestsSetupFixture.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL.Tests/StudentFacadeTests.cs&lang=C#&title=School Facade Tests Sample 4/5
+@[7-8]
+@[10-13]
+@[15]
+@[19-30]
+@[21-23]
+@[25-26]
+@[28-29]
+@[19-30]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL.Tests/StudentFacadeTests.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL.Tests/GradeFacadeTests.cs&lang=C#&title=School Facade Tests Sample 5/5
+@[7]
+@[9-12]
+@[14]
+@[17-29]
+@[19-22]
+@[24-25]
+@[27-28]
+@[17-29]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL.Tests/GradeFacadeTests.cs)
+
+
 
 ---
 ## References:

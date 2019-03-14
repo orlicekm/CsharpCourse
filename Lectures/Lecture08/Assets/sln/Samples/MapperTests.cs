@@ -5,7 +5,7 @@ using Xunit;
 
 namespace Samples
 {
-    public class MapperTest
+    public class MapperTests
     {
         private readonly CustomerMapper customerMapperSUT = new CustomerMapper();
 

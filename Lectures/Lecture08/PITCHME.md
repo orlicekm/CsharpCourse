@@ -163,7 +163,7 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 @[19-29]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/Mapper/CustomerMapper.cs)
 
-+++?code=/Lectures/Lecture08/Assets/sln/Samples/MapperTest.cs&lang=C#&title=Mapper Sample 5/5
++++?code=/Lectures/Lecture08/Assets/sln/Samples/MapperTests.cs&lang=C#&title=Mapper Sample 5/5
 @[8-9]
 @[10]
 @[13-27]
@@ -261,7 +261,30 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 
 ---
 ### Auto Mapper
-* TODO
+* Automatic **object-object mapping**
+  * **Same properties**
+  * From *one object* of *one type*
+  * To *another object* of *another type*
+* E.g. entity `Customer` object to the `CustomerDTO`
+
++++
+![](/Lectures/Lecture08/Assets/img/AutoMapper.png)
+* `PM> Install-Package AutoMapper`
+* [Github](https://github.com/AutoMapper/AutoMapper)
+* [Web](http://automapper.org/)
+* [Docs](https://automapper.readthedocs.io/en/latest/index.html)
+
++++?code=/Lectures/Lecture08/Assets/sln/Samples/MapperTests.cs&lang=C#&title=Mapper Sample 5/5
+@[12-32]
+@[14-20]
+@[22-23, 26]
+@[24-25]
+@[28]
+@[29]
+@[31]
+@[12-32]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/MapperTest.cs)
+
 
 ---
 ## Facade
@@ -372,10 +395,14 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [Programming with Mosh](https://programmingwithmosh.com/)  
 [Data & Object Factory](https://www.dofactory.com/)  
-[Code Project](https://www.codeproject.com/)
+[Code Project](https://www.codeproject.com/)  
+[Auto Mapper Github](https://github.com/AutoMapper/AutoMapper)  
+[Auto Mapper Web](http://automapper.org/)  
+[Auto Mapper Docs](https://automapper.readthedocs.io/en/latest/index.html)  
 
 +++
 ## Refences to used images:
 [Microsoft Documentation](https://docs.microsoft.com/en-us/)  
 [Programming with Mosh](https://programmingwithmosh.com/)  
 [Data & Object Factory](https://www.dofactory.com/)  
+[Auto Mapper Github](https://github.com/AutoMapper/AutoMapper)  

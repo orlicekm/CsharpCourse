@@ -126,8 +126,6 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
   * Application is **tightly coupled** to Entity Framework
   * Aplication **code have to be directly upgraded** when switching to different ORM
 
----
-## Facade
 
 ---
 ## Mapper
@@ -136,11 +134,68 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 ### Auto Mapper
 
 ---
+## Facade
+* **Provides a unified interface** to a set of interfaces in a subsystem
+* **Higher-level interface** that makes the subsystem easier to use
+
+![](/Lectures/Lecture08/Assets/img/Facade.gif)
+
++++
+### Facade Participants
+* **Facade** - (E.g. *MortgageApplication*)
+  * Knows which subsystem classes are responsible for a request
+  * **Delegates client requests** to appropriate subsystem objects
+* **Subsystem classes**  (E.g. *Bank*, *Credit*, *Loan*)
+  * **Implement subsystem functionality**
+  * Handle work assigned by the Facade object
+  * Have no knowledge of the facade and keep no reference to it
+
++++?code=/Lectures/Lecture08/Assets/sln/Samples/Facade/Customer.cs&lang=C#&title=Facade Sample 1/6
+@[5-8]
+@[10]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/Facade/Customer.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/Samples/Facade/Bank.cs&lang=C#&title=Facade Sample 2/6
+@[5-8]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/Facade/Bank.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/Samples/Facade/Credit.cs&lang=C#&title=Facade Sample 3/6
+@[5-8]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/Facade/Credit.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/Samples/Facade/Loan.cs&lang=C#&title=Facade Sample 4/6
+@[5-8]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/Facade/Loan.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/Samples/Facade/MortgageFacade.cs&lang=C#&title=Facade Sample 5/6
+@[5-7]
+@[9-20]
+@[11]
+@[13-17]
+@[19]
+@[9-20]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/Facade/MortgageFacade.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/Samples/FacadeTests.cs&lang=C#&title=Facade Sample 6/6
+@[8]
+@[11-16]
+@[13]
+@[14]
+@[15]
+@[11-16]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/FacadeTests.cs)
+
++++
+TODO
+
+---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [Programming with Mosh](https://programmingwithmosh.com/)  
+[Data & Object Factory](https://www.dofactory.com/)  
 
 +++
 ## Refences to used images:
 [Microsoft Documentation](https://docs.microsoft.com/en-us/)  
 [Programming with Mosh](https://programmingwithmosh.com/)  
+[Data & Object Factory](https://www.dofactory.com/)  

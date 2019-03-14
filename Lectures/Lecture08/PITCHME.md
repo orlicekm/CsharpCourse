@@ -129,6 +129,53 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 
 ---
 ## Mapper
+* **Object-object**
+* **Mapping**
+  * **Same properties**
+  * From *one object* of *one type*
+  * To *another object* of *another type**
+* E.g. entity `Customer` object to the `CustomerDTO`
+
++++?code=/Lectures/Lecture08/Assets/sln/Samples/Mapper/CustomerEntity.cs&lang=C#&title=Mapper Sample 1/5
+@[5-11]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/Mapper/CustomerEntity.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/Samples/Mapper/CustomerDTO.cs&lang=C#&title=Mapper Sample 2/5
+@[5-11]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/Mapper/CustomerDTO.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/Samples/Mapper/EqualityComparers/CustomerEntityEqualityComparer.cs&lang=C#&title=Mapper Sample 3/5
+@[5]
+@[7-15]
+@[17-27]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/Mapper/EqualityComparers/CustomerEntityEqualityComparer.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/Samples/Mapper/CustomerMapper.cs&lang=C#&title=Mapper Sample 4/5
+@[7-17]
+@[9]
+@[10-11, 16]
+@[12-15]
+@[7-17]
+@[19-29]
+@[21]
+@[22-23, 28]
+@[24-27]
+@[19-29]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/Mapper/CustomerMapper.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/Samples/MapperTest.cs&lang=C#&title=Mapper Sample 5/5
+@[8-9]
+@[10]
+@[13-27]
+@[15-21]
+@[23]
+@[24]
+@[26]
+@[13-27]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/MapperTest.cs)
+
++++
+school mapping ot model, shor intro to mvvm
 
 ---
 ### Auto Mapper
@@ -194,7 +241,7 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 @[36-40]
 @[42-45]
 @[47-50]
-@[52-62]
+@[52-63]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/CRUDFacade.cs)
 
 +++?code=/Lectures/Lecture08/Assets/sln/School.BL.Tests/SetupFixtures/Base/FacadeTestsSetupFixture.cs&lang=C#&title=School Facade Tests Sample 1/5
@@ -237,13 +284,12 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 @[17-29]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL.Tests/GradeFacadeTests.cs)
 
-
-
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [Programming with Mosh](https://programmingwithmosh.com/)  
 [Data & Object Factory](https://www.dofactory.com/)  
+[Code Project](https://www.codeproject.com/)
 
 +++
 ## Refences to used images:

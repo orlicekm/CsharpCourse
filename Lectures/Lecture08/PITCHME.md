@@ -133,7 +133,7 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 * **Mapping**
   * **Same properties**
   * From *one object* of *one type*
-  * To *another object* of *another type**
+  * To *another object* of *another type*
 * E.g. entity `Customer` object to the `CustomerDTO`
 
 +++?code=/Lectures/Lecture08/Assets/sln/Samples/Mapper/CustomerEntity.cs&lang=C#&title=Mapper Sample 1/5
@@ -175,7 +175,90 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/MapperTest.cs)
 
 +++
-school mapping ot model, shor intro to mvvm
+#### Mapper School Sample
+* Mapping *Entity Framework entities* to *models*
+* **Model**
+  * Part of *Model-View-ViewModel(MVVM)* design pattern
+  * Represents the **actual data and information**
+  * More info in next lecture
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/Base/IMapper.cs&lang=C#&title=School Mapping Sample 1/10
+@[7-9]
+@[11-12]
+@[14-15]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/Base/IMapper.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/Base/MapperBase.cs&lang=C#&title=School Mapping Sample 2/10
+@[8-10]
+@[12, 14]
+@[16-19]
+@[21-24]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/Base/MapperBase.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/StudentModel.cs&lang=C#&title=School Mapping Sample 3/10
+@[6-13]
+@[8]
+@[10-12]
+@[6-13]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Models/StudentModel.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/StudentMapper.cs&lang=C#&title=School Mapping Sample 4/10
+@[8-9]
+@[10-11]
+@[12]
+@[13-14, 25]
+@[15-18]
+@[19-20, 24]
+@[21-23]
+@[27-29]
+@[31]
+@[34-35]
+@[36]
+@[37-38, 44]
+@[39-43]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/StudentMapper.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/AddressModel.cs&lang=C#&title=School Mapping Sample 5/10
+@[5-13]
+@[7-10]
+@[12]
+@[5-13]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Models/AddressModel.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/AddressMapper.cs&lang=C#&title=School Mapping Sample 6/10
+@[7-8]
+@[9-20]
+@[22-33]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/AddressMapper.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/GradeModel.cs&lang=C#&title=School Mapping Sample 7/10
+@[6-12]
+@[8-9]
+@[11]
+@[6-12]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Models/GradeModel.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/GradeMapper.cs&lang=C#&title=School Mapping Sample 8/10
+@[7-8]
+@[9-19]
+@[21-31]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/GradeMapper.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/CourseModel.cs&lang=C#&title=School Mapping Sample 9/10
+@[6-12]
+@[8-9]
+@[11]
+@[6-12]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Models/CourseModel.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/CourseMapper.cs&lang=C#&title=School Mapping Sample 10/10
+@[8-9]
+@[10-11]
+@[12-24]
+@[26-28,30]
+@[33-43]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/GradeMapper.cs)
+
 
 ---
 ### Auto Mapper

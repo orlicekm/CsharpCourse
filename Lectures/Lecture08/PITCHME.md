@@ -259,9 +259,9 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 @[33-43]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/GradeMapper.cs)
 
-
 ---
 ### Auto Mapper
+* TODO
 
 ---
 ## Facade

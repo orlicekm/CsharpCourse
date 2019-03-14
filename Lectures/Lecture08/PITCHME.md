@@ -260,19 +260,32 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/GradeMapper.cs)
 
 ---
-### Auto Mapper
-* Automatic **object-object mapping**
-  * **Same properties**
-  * From *one object* of *one type*
-  * To *another object* of *another type*
-* E.g. entity `Customer` object to the `CustomerDTO`
-
-+++
 ![](/Lectures/Lecture08/Assets/img/AutoMapper.png)
 * `PM> Install-Package AutoMapper`
 * [Github](https://github.com/AutoMapper/AutoMapper)
 * [Web](http://automapper.org/)
 * [Docs](https://automapper.readthedocs.io/en/latest/index.html)
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+### Auto Mapper
+* Automatic **object-object mapping**
+  * **Same properties**
+  * From *one object* of *one type*
+  * To *another object* of *another type*
+* Interesting **conventions to take the dirty work out**
+* Almost zero configuration is needed 
+
++++
+### Why AutoMapper
+* Mapping code is boring
+* Testing mapping code is even more boring
+* *Provides:*
+  * **Simple configuration of types**
+  * **Simple testing of mappings**
 
 +++?code=/Lectures/Lecture08/Assets/sln/Samples/AutoMapperTests.cs&lang=C#&title=Auto Mapper Sample
 @[12-32]

@@ -172,7 +172,7 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 @[24]
 @[26]
 @[13-27]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/MapperTest.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/MapperTests.cs)
 
 +++
 #### Mapper School Sample
@@ -274,7 +274,7 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 * [Web](http://automapper.org/)
 * [Docs](https://automapper.readthedocs.io/en/latest/index.html)
 
-+++?code=/Lectures/Lecture08/Assets/sln/Samples/MapperTests.cs&lang=C#&title=Mapper Sample 5/5
++++?code=/Lectures/Lecture08/Assets/sln/Samples/AutoMapperTests.cs&lang=C#&title=Auto Mapper Sample
 @[12-32]
 @[14-20]
 @[22-23, 26]
@@ -283,8 +283,7 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 @[29]
 @[31]
 @[12-32]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/MapperTest.cs)
-
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/AutoMapperTests.cs)
 
 ---
 ## Facade

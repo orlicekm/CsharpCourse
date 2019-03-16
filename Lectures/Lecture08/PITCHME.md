@@ -20,7 +20,7 @@
 
 +++
 ### Repository Benefits
-* **Minimizes duplicate** query logic
+* **Minimizes duplicit** query logic
 * **Decouples** application from persistence frameworks
 * Promotes **testability**
 
@@ -35,7 +35,7 @@
 +++
 ### Repository vs UnitOfWork
 * **Repository** design pattern
-  * Should **not have sematict of database**
+  * Should **not have sematic of database**
   * E.g. *Update*, *Save*, *Delete*... 
 * How are these objects going to be saved to database?
   * **UnitOfWork** design pattern
@@ -101,30 +101,30 @@
 +++
 ### Entity Framework Problems
 * *Repository*
-  * **Minimizes duplicate** query logic
+  * **Minimizes duplicit** query logic
 * *Entity Framework*
   * `DbSet` returns `IQueriable`
-  * Does not help with minimizing duplicate:
+  * Does not help with minimizing the duplicate:
 
 ```C#
 var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).OrderByDescending(c => c.Sales).Take(10);
 ```
 
-* Can be solved with extension methods
+* Can be solved with **extension methods**
   * Treats the symptoms, not the problem
-  * Still retutn IQueryable
-* Solution
-  * Repository with method `GetTopSellingCourses`
+  * Still returns `IQueryable`
+* **Solution**
+  * **Repository** with method `GetTopSellingCourses`
 
 
 +++
 ### Entity Framework Problems
 * *Repository and UnitOfWork*
   * **Decouples** application from persistence frameworks
-  * Only **repository method have to be changed** when switching to different ORM
+  * Only **repository methods have to be changed** when switching to different ORM
 * *Entity Framework*
   * Application is **tightly coupled** to Entity Framework
-  * Aplication **code have to be directly upgraded** when switching to different ORM
+  * Aplication **code has to be directly upgraded** when switching to different ORM
 
 
 ---
@@ -282,7 +282,7 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 +++
 ### Why AutoMapper
 * Mapping code is boring
-* Testing mapping code is even more boring
+* Testing the mapping code is even more boring
 * *Provides:*
   * **Simple configuration of types**
   * **Simple testing of mappings**
@@ -300,7 +300,7 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 
 ---
 ## Facade
-* **Provides a unified interface** to a set of interfaces in a subsystem
+* **Provides a unified interface** to the set of interfaces in a subsystem
 * **Higher-level interface** that makes the subsystem easier to use
 
 ![](/Lectures/Lecture08/Assets/img/Facade.gif)

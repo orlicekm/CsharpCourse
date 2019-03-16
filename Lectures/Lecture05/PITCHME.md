@@ -86,7 +86,8 @@ Given when then
 ---
 ## Testing tips
 
-
+---
+## Tests clean code
 
 
 ---

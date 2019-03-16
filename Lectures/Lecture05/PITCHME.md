@@ -19,10 +19,14 @@ Smoke, Unit, Integration, UI and Acceptance testing
 
 +++
 ## Testing Frameworks
-* MS Test
+* MSTest
 * Nunit
 * xUnit
 * ⋮
+
+@snap[east]
+![](/Lectures/Lecture05/Assets/img/FrameworkProjects.png)
+@snapend
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)

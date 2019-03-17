@@ -368,10 +368,10 @@ public class DatabaseTestClass2
 
 ---
 ## Running Tests in Parallel -  xUnit
-* From version 2
-* Test collections decides witch tests can run against each other in parallel
-* By default, each test class is a unique test collection
-* Tests within the same test class will not run in parallel against each other
+* From *xUnit.net version 2*
+* **Test collections decides witch tests can run against each other in parallel**
+* By default, **each test class is a unique test collection**
+* **Tests within the same test class will not run in parallel** against each other
 * If multiple test classes should not be run in parallel against one another, then place them into the same test collection
 
 
@@ -379,6 +379,7 @@ public class DatabaseTestClass2
 #### Running Tests in Parallel Sample 1/3 
 ```C#
 \\ Total time approximately 8 seconds
+
 public class TestClass1
 {
     [Fact]
@@ -399,6 +400,7 @@ public class TestClass1
 #### Running Tests in Parallel Sample 2/3 
 ```C#
 \\ Total time approximately 5 seconds
+
 public class TestClass1
 {
     [Fact]
@@ -422,6 +424,7 @@ public class TestClass2
 #### Running Tests in Parallel Sample 3/3 
 ```C#
 \\ Total time approximately 8 seconds
+
 [Collection("Our Test Collection #1")]
 public class TestClass1
 {

@@ -38,28 +38,33 @@ Smoke, Unit, Integration, UI and Acceptance testing
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Sample/Calculator.cs)
 
 +++?code=/Lectures/Lecture05/Assets/sln/MSTest.Tests/CalculatorTests.cs&lang=C#&title=MSTest Sample
-@[6-8, 21]
-@[9-11, 20]
-@[12-13]
-@[15-16]
+@[6-8, 24]
+@[9]
+@[11-13, 23]
+@[14-16]
 @[18-19]
+@[21-22]
+@[11-23]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/MSTest.Tests/CalculatorTests.cs)
 
-
 +++?code=/Lectures/Lecture05/Assets/sln/NUnit.Tests/CalculatorTests.cs&lang=C#&title=NUnit Sample
-@[6-7, 20]
-@[8-10, 19]
-@[11-12]
-@[14-15]
+@[6-7, 23]
+@[8]
+@[10-12, 22]
+@[13-15]
 @[17-18]
+@[20-21]
+@[10-22]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/NUnit.Tests/CalculatorTests.cs)
 
 +++?code=/Lectures/Lecture05/Assets/sln/xUnit.Tests/CalculatorTests.cs&lang=C#&title=xUnit Sample
-@[6-7, 20]
-@[8-10, 19]
-@[11-12]
-@[14-15]
+@[6-7, 23]
+@[8]
+@[10-12, 22]
+@[13-15]
 @[17-18]
+@[20-21]
+@[10-22]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/xUnit.Tests/CalculatorTests.cs)
 
 +++
@@ -103,9 +108,8 @@ Smoke, Unit, Integration, UI and Acceptance testing
 ![](/Lectures/Lecture05/Assets/img/TestExplorer.gif)
 
 +++
-### *Resharper - Unit Test Explorer
+### Resharper - Unit Test Explorer
 ![](/Lectures/Lecture05/Assets/img/ResharperUnitTest.gif)
-
 
 ---
 ## Tests Sequence
@@ -115,10 +119,25 @@ Smoke, Unit, Integration, UI and Acceptance testing
   3. *Test* - Executed test code
   4. *TestTearDown* - Executed after every test
   5. *ClassTearDown* - Executed one time after last test
-* **Other frameworks**
-  * **Same logic**
+* **Other testing frameworks have similar logic**
 
----
++++
+### AAA Pattern - Test Code Sequence
+* **Arrange, Act, Assert**
+  * Common way of writing unit tests
+* **Arrange section**
+  * Initializes objects that are passed to the method under test
+* **Act section**
+  * Invokes the method under test with the arranged parameters
+* **Assert section**
+  * Verifies that the action of the method under test behaves as expected
+
++++ sample...
+
++++
+given when then
+
++++
 ## Assert
 
 ---
@@ -129,6 +148,8 @@ Smoke, Unit, Integration, UI and Acceptance testing
 
 ---
 ## Tests clean code
+
+??? xunit theory?
 
 
 ---

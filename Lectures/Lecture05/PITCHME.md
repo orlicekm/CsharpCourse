@@ -80,12 +80,12 @@ Smoke, Unit, Integration, UI and Acceptance testing
 
 ---
 ## Test Runners
-* Tools that can run testing frameworks
+* Tools that can **run testing frameworks**
 * Addtional functions:
-  * Filtering and searching tests
+  * *Filtering* and *searching* tests
+  * *Showing history* of test runs
+  * Integrates *code coverage analyzation*
   * Defining test sets
-  * Showing history of test runs
-  * Integrates code coverage analyzation
 
 +++
 ### Test Runnes - Ways

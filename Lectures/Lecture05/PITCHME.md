@@ -88,18 +88,15 @@ Smoke, Unit, Integration, UI and Acceptance testing
   * Defining test sets
 
 +++
-### Test Runnes - Ways
-* From console
-* From IDE
-* Mosted used in Visual Studio:
-  * Test Explorer (native)
-  * Resharper (paid plugin)
-
----
-### Tests Sctructure
-* Test Classes
-* The AAA pattern
-  * Arrange - Act - Assert
+### Ways to Run
+1. From **console**
+   * Requires `xunit.runner.console` NuGet package
+2. From **IDE**
+  * Mosted used in *Visual Studio*
+    * *Test Explorer* (native)
+      * `Test -> Windows -> Test Explorer`
+    * *Resharper - Unit Test Explorer* (paid plugin)
+      * `ReSharper -> Windows -> Unit Tests`
 
 +++
 Given when then

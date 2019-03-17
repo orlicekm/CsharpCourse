@@ -194,16 +194,34 @@ sample 2
   * Once all the tests have finished, it will clean up the fixture object by calling `Dispose`
 
 +++
-### Steps to Use Class Fixtures:
+### Steps to Use Class Fixtures
 * **Create the fixture class** and put the startup code in the fixture class constructor
-* If the fixture class needs to perform cleanup, **implement IDisposable on the fixture class**, and put the cleanup code in the Dispose() method
+* If the fixture class needs to perform cleanup, **implement** `IDisposable` **on the fixture class**, and put the cleanup code in the `Dispose()` method
 * **Inherit interface** `IClassFixture<>` in the test class
 * **If the test class needs access to the fixture instance, add it as a constructor argument**, and it will be provided automatically
 
 +++
 sample 1
 
++++
+### Collection Fixtures
+* Creates a single test context and **share it among tests in several test classes**
+* **Cleans is up after all the tests in the test classes have finished**
+* Share a fixture object **among multiple test classes**
+* **Example:**
+  * *Database* - initialize a database with a set of test data, and then leave that test data in place for use by multiple test classes
 
++++ 
+### Steps to Use Collection Fixtures
+* **Create the fixture clas**s, and put the startup code in the fixture class constructor
+* If the fixture class needs to perform cleanup, **implement** `IDisposable` **on the fixture class**, and put the cleanup code in the `Dispose()` method
+* **Create the collection definition class**, decorating it with the `[CollectionDefinition]` attribute, giving it a unique name that will identify the test collection
+* **Inherit interface** `ICollectionFixture<>` in the collection definition class
+* **Add the** `[Collection]` **attribute to all the test classes** that will be part of the collection, using the unique name you provided to the test collection definition class's `[CollectionDefinition]` attribute
+* **If the test classes need access to the fixture instance, add it as a constructor argument**, and it will be provided automatically
+
++++
+sample 1
 
 ---
 ## Test types

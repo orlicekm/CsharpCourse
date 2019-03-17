@@ -124,12 +124,13 @@ Smoke, Unit, Integration, UI and Acceptance testing
 +++
 ### AAA Pattern - Test Code Sequence
 * **Arrange, Act, Assert**
-  * Common way of writing unit tests
-* **Arrange section**
+  * The pattern for arranging and formatting code
+* **Arrange** all necessary preconditions and inputs
   * Initializes objects that are passed to the method under test
-* **Act section**
-  * Invokes the method under test with the arranged parameters
-* **Assert section**
+* **Act** on the object or method under test
+  * Invokes the method or object under test with the arranged parameters
+* **Assert** that the expected results have occurred
+  * Included in every framework
   * Verifies that the action of the method under test behaves as expected
 
 +++?code=/Lectures/Lecture05/Assets/sln/xUnit.Tests/CalculatorTests.cs&lang=C#&title=AAA Sample
@@ -140,15 +141,67 @@ Smoke, Unit, Integration, UI and Acceptance testing
 @[13-21]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/xUnit.Tests/CalculatorTests.cs)
 
++++
+### AAA Pattern Benefits
+* Clearly **separates** what is being tested from the setup and verification steps
+* Clarifies and **focuses** attention on a historically successful and generally **necessary set of test steps**
+* Makes some **test smells more obvious**
+  * Assertions intermixed with *Act* code
+  * Test methods that try to test too many different things at once
 
 +++
-given when then
+### Given-When-Then - Test Code Sequence
+* **Formula** 
+* Template intended to guide the writing of acceptance tests
+  * *Given* some context
+  * *When* some action is carried out
+  * *Then* a particular set of observable consequences should obtain
+* **Sample**
+  * Given my bank account is in credit, and I made no withdrawals recently,
+  * When I attempt to withdraw an amount less than my card's limit,
+  * Then the withdrawal should complete without errors or warnings
+
+---
+## xUnit - Shared Content between Tests
+* It is common for unit test classes to **share setup and cleanup code**
+  * Called *test context*
+* **Several methods for sharing** this setup and cleanup code
+  1. Constructor and Dispose
+  2. Class Fixtures
+  3. Collection Fixtures
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 +++
-xunit dedenie kokotiny picoviny
+### Constructor and Dispose
+* Shared setup and cleanup code **without sharing object instances**
+* Cleanes test context for every test
+* xUnit.net **creates a new instance of the test class for every test that is run**
 
 +++
-## Assert
+sample 1
+
++++
+sample 2
+
++++
+### Class Fixtures
+* Creates a single test context and share it among all the tests in the class
+* Cleans it up after all the tests in the class have finished
+* Fixture instance will be created before any of the tests have run
+  * Once all the tests have finished, it will clean up the fixture object by calling `Dispose`
+
++++
+### Steps to use class fixtures:
+  * Create the fixture class, and put the startup code in the fixture class constructor
+  * If the fixture class needs to perform cleanup, implement IDisposable on the fixture class, and put the cleanup code in the Dispose() method
+  * Add IClassFixture<> to the test class
+  * If the test class needs access to the fixture instance, add it as a constructor argument, and it will be provided automatically
+
++++
+sample 1
 
 ---
 ## Test types
@@ -166,8 +219,12 @@ xunit dedenie kokotiny picoviny
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [The Art of Unit Testing](https://www.amazon.de/Art-Unit-Testing-Roy-Osherove/dp/1617290890)  
+[Microsoft Docs](https://docs.microsoft.com/en-us/)  
+[Agile Alliance](https://www.agilealliance.org/)  
+[WikiWikiWeb](http://wiki.c2.com/)  
 [xUnit.net](https://xunit.github.io/)  
 [DZone](https://dzone.com/)
 
 +++
 ## Refences to used images:
+[xUnit.net](https://xunit.github.io/)

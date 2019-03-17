@@ -99,7 +99,13 @@ Smoke, Unit, Integration, UI and Acceptance testing
       * `ReSharper -> Windows -> Unit Tests`
 
 +++
-Given when then
+### Test Explorer
+![](/Lectures/Lecture05/Assets/img/TestExplorer.gif)
+
++++
+### *Resharper - Unit Test Explorer
+![](/Lectures/Lecture05/Assets/img/ResharperUnitTest.gif)
+
 
 ---
 ## Tests Sequence

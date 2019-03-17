@@ -72,8 +72,9 @@ Smoke, Unit, Integration, UI and Acceptance testing
 * Part of the *.NET Foundation*
 * [GitHub](https://github.com/xunit/xunit)
 * [Web](https://xunit.github.io/)
-* 
-@snap[east]
+
+
+@snap[east-north]
 ![](/Lectures/Lecture05/Assets/img/xunit.png)
 @snapend
 

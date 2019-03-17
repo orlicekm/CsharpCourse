@@ -180,11 +180,54 @@ Smoke, Unit, Integration, UI and Acceptance testing
 * Cleanes test context for every test
 * xUnit.net **creates a new instance of the test class for every test that is run**
 
-+++
-sample 1
++++?code=/Lectures/Lecture05/Assets/sln/xUnit.Tests/StackTests.cs&lang=C#&title=Constructor and Dispose Sample
+@[7-8]
+@[9-12]
+@[19]
+@[14-17]
+@[21-29]
+@[31-37]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/xUnit.Tests/StackTests.cs)
 
 +++
-sample 2
+#### Test Class as Context Sample
+```C#
+public class StackTests
+{
+    public class EmptyStack
+    {
+        private readonly Stack<int> stackSUT;
+
+        public EmptyStack()
+        {
+            stackSUT = new Stack<int>();
+        }
+
+        // ... tests for an empty stack ...
+    }
+
+    public class SingleItemStack
+    {
+        private readonly Stack<int> stackSUT;
+
+        public SingleItemStack()
+        {
+            stackSUT = new Stack<int>();
+            stackSUT.Push(42);
+        }
+
+        // ... tests for a single-item stack ...
+    }
+}
+```
+@[1-2]
+@[3-13]
+@[3-4, 13]
+@[5]
+@[7-10]
+@[12]
+@[3-13]
+@[15-26]
 
 +++
 ### Class Fixtures
@@ -201,7 +244,49 @@ sample 2
 * **If the test class needs access to the fixture instance, add it as a constructor argument**, and it will be provided automatically
 
 +++
-sample 1
+#### Class Fixtures 1/2
+```C#
+public class DatabaseFixture : IDisposable
+{
+    public DatabaseFixture()
+    {
+        Db = new SqlConnection("MyConnectionString");
+
+        // ... initialize data in the test database ...
+    }
+
+    public void Dispose()
+    {
+        // ... clean up test data from the database ...
+    }
+
+    public SqlConnection Db { get; private set; }
+}
+```
+@[1-2, 16]
+@[3-8]
+@[10-13]
+@[15]
+
++++
+#### Class Fixtures 2/2
+```C#
+public class MyDatabaseTests : IClassFixture<DatabaseFixture>
+{
+    DatabaseFixture fixture;
+
+    public MyDatabaseTests(DatabaseFixture fixture)
+    {
+        this.fixture = fixture;
+    }
+
+    // ... write tests, using fixture.Db to get access to the SQL Server ...
+}
+```
+@[1-2, 11]
+@[3]
+@[5-8]
+@[10]
 
 +++
 ### Collection Fixtures
@@ -220,8 +305,69 @@ sample 1
 * **Add the** `[Collection]` **attribute to all the test classes** that will be part of the collection, using the unique name you provided to the test collection definition class's `[CollectionDefinition]` attribute
 * **If the test classes need access to the fixture instance, add it as a constructor argument**, and it will be provided automatically
 
+
 +++
-sample 1
+#### Collection Fixtures Sample 1/3
+```C#
+public class DatabaseFixture : IDisposable
+{
+    public DatabaseFixture()
+    {
+        Db = new SqlConnection("MyConnectionString");
+
+        // ... initialize data in the test database ...
+    }
+
+    public void Dispose()
+    {
+        // ... clean up test data from the database ...
+    }
+
+    public SqlConnection Db { get; private set; }
+}
+```
+@[1-2, 16]
+@[3-8]
+@[10-13]
+@[15]
+
++++
+#### Collection Fixtures Sample 2/3
+```C#
+[CollectionDefinition("Database collection")]
+public class DatabaseCollection : ICollectionFixture<DatabaseFixture>
+{
+    // This class has no code, and is never created. Its purpose is simply
+    // to be the place to apply [CollectionDefinition] and all the
+    // ICollectionFixture<> interfaces.
+}
+```
+
++++
+#### Collection Fixtures Sample 3/3
+```C#
+[Collection("Database collection")]
+public class DatabaseTestClass1
+{
+    DatabaseFixture fixture;
+
+    public DatabaseTestClass1(DatabaseFixture fixture)
+    {
+        this.fixture = fixture;
+    }
+}
+```
+
+```C#
+[Collection("Database collection")]
+public class DatabaseTestClass2
+{
+    // ...
+}
+```
+
+---
+Parraler tests..
 
 ---
 ## Test types

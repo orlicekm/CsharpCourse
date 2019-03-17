@@ -19,30 +19,59 @@ Smoke, Unit, Integration, UI and Acceptance testing
 
 +++
 ## Testing Frameworks
-* MSTest
-* Nunit
-* xUnit
+* **MSTest**
+  * Integrated in Visual Studio
+* **NUnit**
+  * Most used
+* **xUnit**
+  * Successor of Nunit
 * ⋮
 
-@snap[east]
++++
+### .NET Core Testing Projects
+
 ![](/Lectures/Lecture05/Assets/img/FrameworkProjects.png)
-@snapend
 
-@snap[south-east span+40]
-![](/Lectures/Assets/img/MagnifyingGlass.png)
-@snapend
 
-+++
-### MS Test
-* Integrated in Visual Studio
++++?code=/Lectures/Lecture05/Assets/sln/Sample/Calculator.cs&lang=C#&title=Code Sample
+@[3-9]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Sample/Calculator.cs)
 
-+++
-### Nunit
-* Most used
++++?code=/Lectures/Lecture05/Assets/sln/MSTest.Tests/CalculatorTests.cs&lang=C#&title=MSTest Sample
+@[6-8, 21]
+@[9-11, 20]
+@[12-13]
+@[15-16]
+@[18-19]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/MSTest.Tests/CalculatorTests.cs)
+
+
++++?code=/Lectures/Lecture05/Assets/sln/NUnit.Tests/CalculatorTests.cs&lang=C#&title=NUnit Sample
+@[6-7, 20]
+@[8-10, 19]
+@[11-12]
+@[14-15]
+@[17-18]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/NUnit.Tests/CalculatorTests.cs)
+
++++?code=/Lectures/Lecture05/Assets/sln/xUnit.Tests/CalculatorTests.cs&lang=C#&title=xUnit Sample
+@[6-7, 20]
+@[8-10, 19]
+@[11-12]
+@[14-15]
+@[17-18]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/xUnit.Tests/CalculatorTests.cs)
 
 +++
 ### xUnit
-* Successor of Nunit
+* **Used in this course**
+* *Free*, *Open source*, *Community-focused*
+* Testing *C#*, *F#*, *VB.NET* and other .NET languages
+* Written by the original inventor of *NUnit*
+* Works with *ReSharper*, *CodeRush*, *TestDriven.NET* and *Xamarin*
+* Part of the *.NET Foundation*
+* [GitHub](https://github.com/xunit/xunit)
+* [Web](https://xunit.github.io/)
 
 ---
 ## Test Runners
@@ -98,7 +127,8 @@ Given when then
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [The Art of Unit Testing](https://www.amazon.de/Art-Unit-Testing-Roy-Osherove/dp/1617290890)  
-
+[xUnit.net](https://xunit.github.io/)  
+[DZone](https://dzone.com/)
 
 +++
 ## Refences to used images:

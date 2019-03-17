@@ -74,7 +74,7 @@ Smoke, Unit, Integration, UI and Acceptance testing
 * [Web](https://xunit.github.io/)
 
 
-@snap[east-north]
+@snap[north-east]
 ![](/Lectures/Lecture05/Assets/img/xunit.png)
 @snapend
 

@@ -188,20 +188,22 @@ sample 2
 
 +++
 ### Class Fixtures
-* Creates a single test context and share it among all the tests in the class
-* Cleans it up after all the tests in the class have finished
+* Creates a single test context and **share it among all the tests in the class**
+* **Cleans it up after all the tests in the class have finished**
 * Fixture instance will be created before any of the tests have run
   * Once all the tests have finished, it will clean up the fixture object by calling `Dispose`
 
 +++
-### Steps to use class fixtures:
-  * Create the fixture class, and put the startup code in the fixture class constructor
-  * If the fixture class needs to perform cleanup, implement IDisposable on the fixture class, and put the cleanup code in the Dispose() method
-  * Add IClassFixture<> to the test class
-  * If the test class needs access to the fixture instance, add it as a constructor argument, and it will be provided automatically
+### Steps to Use Class Fixtures:
+* **Create the fixture class** and put the startup code in the fixture class constructor
+* If the fixture class needs to perform cleanup, **implement IDisposable on the fixture class**, and put the cleanup code in the Dispose() method
+* **Inherit interface** `IClassFixture<>` in the test class
+* **If the test class needs access to the fixture instance, add it as a constructor argument**, and it will be provided automatically
 
 +++
 sample 1
+
+
 
 ---
 ## Test types

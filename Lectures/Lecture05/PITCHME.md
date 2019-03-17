@@ -132,10 +132,20 @@ Smoke, Unit, Integration, UI and Acceptance testing
 * **Assert section**
   * Verifies that the action of the method under test behaves as expected
 
-+++ sample...
++++?code=/Lectures/Lecture05/Assets/sln/xUnit.Tests/CalculatorTests.cs&lang=C#&title=AAA Sample
+@[10-12, 22]
+@[13-15]
+@[17-18]
+@[20-21]
+@[13-21]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/xUnit.Tests/CalculatorTests.cs)
+
 
 +++
 given when then
+
++++
+xunit dedenie kokotiny picoviny
 
 +++
 ## Assert

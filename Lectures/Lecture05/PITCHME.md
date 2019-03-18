@@ -447,7 +447,27 @@ public class TestClass2
 ```
 
 ---
-theory...
+### Theories vs. Facts
+* xUnit support **two different major types of tests**
+* Why are tests named facts?
+  * **Facts** 
+    * Tests which are **always true**
+    * They test **invariant conditions**
+  * **Theories**
+    * Tests which are only **true for a particular set of data**
+
++++?code=/Lectures/Lecture05/Assets/sln/Sample/NumberValidator.cs&lang=C#&title=Theory Sample 1/2
+@[3-4, 9]
+@[5-8]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Sample/NumberValidator.cs)
+
++++?code=/Lectures/Lecture05/Assets/sln/xUnit.Tests/NumberValidatorTests.cs&lang=C#&title=Theory Sample 2/2
+@[6-7, 18]
+@[8]
+@[10-15, 17]
+@[16]
+@[10-17]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/xUnit.Tests/NumberValidatorTests.cs)
 
 ---
 ## Test types

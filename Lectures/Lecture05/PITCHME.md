@@ -495,7 +495,7 @@ public class TestClass2
   * Tests can vary a lot in **complexity**
   * Quality of automated tests **depends on how well scripts have been written**
 
-@snap[north-east]
+@snap[north-east span+40]
 ![](/Lectures/Lecture05/Assets/img/ManualvsAutomated.png)
 @snapend
 

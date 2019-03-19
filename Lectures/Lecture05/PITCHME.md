@@ -619,10 +619,12 @@ public class TestClass2
 * Usually **represented as the number** of *items actually tested, the items found in your code, and a coverage percentage* (items tested / items found)
 
 ---
-## Testing tips
+## Testing Tips
+
 
 ---
-## Tests clean code
+## Tests Clean Code
+
 
 ---
 ## CI in DevOps

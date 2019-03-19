@@ -471,8 +471,36 @@ public class TestClass2
 
 ---
 ## Test types
+* **Several ways** how to split tests
+  * *Manual* vs. *Automated*
+  * *Functional* vs. *Non-functional*
+  * *Automation testing*
+  * *Agile testing*
+  * ⋮
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+### Manual vs. Automated testing
+* Manual
+  * In person
+  * By clicking through the application
+  * Very expensive as it requires someone to set up an environment
+  * It can be prone to human error
+* Automated
+  * By a machine
+  * Executes a test script that has been written in advance
+  * Tests can vary a lot in complexity
+  * Quality of automated tests depends on how well scripts have been written
+
+@snap[east]
+![](/Lectures/Lecture05/Assets/img/ManualvsAutomated.png)
+@snapend
 
 
+---
 Code coverage?
 
 ---
@@ -496,4 +524,5 @@ Code coverage?
 
 +++
 ## Refences to used images:
-[xUnit.net](https://xunit.github.io/)
+[xUnit.net](https://xunit.github.io/)  
+[CodeProject](https://www.codeproject.com/)

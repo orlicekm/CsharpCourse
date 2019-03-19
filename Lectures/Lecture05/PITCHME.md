@@ -496,6 +496,7 @@ public class TestClass2
   * Quality of automated tests **depends on how well scripts have been written**
 
 +++
+### Manual vs. Automated testing performance
 ![](/Lectures/Lecture05/Assets/img/ManualvsAutomated.png)
 
 +++

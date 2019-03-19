@@ -484,16 +484,16 @@ public class TestClass2
 
 +++
 ### Manual vs. Automated testing
-* Manual
-  * In person
-  * By clicking through the application
-  * Very expensive as it requires someone to set up an environment
-  * It can be prone to human error
-* Automated
-  * By a machine
-  * Executes a test script that has been written in advance
-  * Tests can vary a lot in complexity
-  * Quality of automated tests depends on how well scripts have been written
+* **Manual**
+  * **In person**
+  * **By clicking** through the application
+  * Very **expensive** as it requires someone to set up an environment
+  * It can be prone to **human error**
+* **Automated**
+  * **By a machine**
+  * Executes a **test script** that has been written in advance
+  * Tests can vary a lot in **complexity**
+  * Quality of automated tests **depends on how well scripts have been written**
 
 @snap[north-east]
 ![](/Lectures/Lecture05/Assets/img/ManualvsAutomated.png)

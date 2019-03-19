@@ -603,7 +603,7 @@ public class TestClass2
 * **Code coverage tools**
   * Use one or more criteria to determine how your code was exercised or not
   * During the execution of your test suite
-* Visual studio contains by default *Code Metrics Window*
+* Visual studio contains *Code Metrics Window*
   * `View->Other Windows->Code Metrics Results`
 
 +++
@@ -616,7 +616,7 @@ public class TestClass2
   * **Line coverage:** how many of lines of source code have been tested
   * ⋮
 * Metrics are **related, but distinct**
-* Usually **represented as the number** of *items actually tested*, *the items found in your code*, and *a coverage percentage* (items tested / items found)
+* Usually **represented as the number** of *items actually tested, the items found in your code, and a coverage percentage* (items tested / items found)
 
 ---
 ## Testing tips

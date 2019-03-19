@@ -535,6 +535,66 @@ public class TestClass2
 @snapend
 
 +++
+### Unit Testing
+* **Very low level**
+* Testing individual 
+  * *Methods* and *functions* of the classes
+  * *Components* or *modules* used by your software
+* Typically **done by the programmer**
+* Generaly quite **cheap to automate**
+* Can be **run very quickly**
+  * Can be run by a continuous integration server
+* Requires a detailed knowledge of the internal program design and code
+* Requires developing test driver modules or test harnesses
+
++++
+### Smoke Testing
+* Right **after a new build** is made
+* Typically **done by the testing team**
+* **Check basic functionality** of the application
+* Meant to be **quick to execute**
+* **Ensures**
+  * That **no major issue exists**
+  * That **the build is stable**
+  * That no show stopper defect exists
+    * Which will prevent the testing team to test the application in detail
+* Detailed level of testing is carried out further
+* If testers find that the major critical functionality is broken down at the initial stage itself
+  * Then testing team can reject the build and inform accordingly to the development team
+
++++
+### Integration Testing
+* Verify that **different modules or services** used by your application **works well together**
+* Modules are typically 
+  * *Code modules*
+  * *Individual applications*
+  * *Client and server applications* on a network
+  * ⋮
+* **More expensive** to run as they require multiple parts of the application to be up and running
+* Especially **relevant to client/server and distributed systems**
+
++++
+### User Interface (UI) Testing
+* To **validate the UI as per the business requirement**
+* **Validates**
+  * The *size of the buttons* and *input field* present on the screen
+  * *Alignment* of all text, tables and content in the tables
+  * The *menu* of the application
+    * After selecting different menu and menu items
+  * That the *page* does not *fluctuate* and the *alignment remains same* after hovering the mouse on the menu or sub-menu
+  * Other UI functionalities...
+
++++
+### Acceptance Testing
+* Also called **User Acceptance Testing (UAT)**
+* **Formal tests**
+* **Performed by the client**
+* Verifies **if a system satisfies its business requirements**
+* **Requires the entire application** to be up and running
+* Focuses on replicating user behaviors
+  * Can go further and measure the performance of the system
+* Client accepts the software only when all the features and functionalities work as expected
+* **Last phase** of the testing, after which the software goes into production
 
 ---
 Code coverage?
@@ -552,6 +612,9 @@ Code coverage?
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [The Art of Unit Testing](https://www.amazon.de/Art-Unit-Testing-Roy-Osherove/dp/1617290890)  
+[Agile Principles, Patterns, and Practices in C#](https://www.amazon.com/Agile-Principles-Patterns-Practices-C/dp/0131857258)  
+[Atlassian - Continuous delivery](https://www.atlassian.com/continuous-delivery)  
+[Software Testing Help](https://www.softwaretestinghelp.com/)  
 [Microsoft Docs](https://docs.microsoft.com/en-us/)  
 [Agile Alliance](https://www.agilealliance.org/)  
 [WikiWikiWeb](http://wiki.c2.com/)  

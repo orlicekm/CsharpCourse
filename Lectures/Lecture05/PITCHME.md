@@ -511,6 +511,8 @@ public class TestClass2
 * Beta/Acceptance testing
 * Performance Testing
 * Load testing
+
+@snap[east]
 * Stress testing
 * Volume testing
 * Security testing
@@ -522,6 +524,7 @@ public class TestClass2
 * Compliance testing
 * Localization testing
 * ⋮
+@snapend
 
 ---
 Code coverage?

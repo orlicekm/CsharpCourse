@@ -500,31 +500,41 @@ public class TestClass2
 ![](/Lectures/Lecture05/Assets/img/ManualvsAutomated.png)
 
 +++
-### Testing types
-* Unit testing
-* Integration testing
-* System testing
-* Sanity testing
-* Smoke testing
-* Interface testing
-* Regression testing
-* Beta/Acceptance testing
-* Performance Testing
-* Load testing
-
-@snap[east]
-* Stress testing
-* Volume testing
-* Security testing
-* Compatibility testing
-* Install testing
-* Recovery testing
-* Reliability testing
-* Usability testing
-* Compliance testing
-* Localization testing
+### Functional Testing Types
+* **Unit** testing
+* **Integration** testing
+* **System** testing
+* **Sanity** testing
+* **Smoke** testing
+* **Interface** testing
+* **Regression** testing
+* **Beta/Acceptance** testing
 * ⋮
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
+
++++
+### Non-functional Testing Types
+
+* **Stress** testing
+* **Volume** testing
+* **Security** testing
+* **Compatibility** testing
+* **Install** testing
+* **Recovery** testing
+* **Reliability** testing
+* **Usability** testing
+* **Compliance** testing
+* **Localization** testing
+* ⋮
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
 
 ---
 Code coverage?

@@ -3,7 +3,7 @@
 @snapend
 
 @snap[midpoint span-100]
-Smoke, Unit, Integration, UI and Acceptance testing
+xUnit and Software Testing Types
 @snapend
 
 @snap[south-east span-30]
@@ -471,6 +471,9 @@ public class TestClass2
 
 ---
 ## Test types
+
+
+Code coverage?
 
 ---
 ## Testing tips

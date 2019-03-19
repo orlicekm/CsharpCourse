@@ -591,13 +591,32 @@ public class TestClass2
 * **Performed by the client**
 * Verifies **if a system satisfies its business requirements**
 * **Requires the entire application** to be up and running
-* Focuses on replicating user behaviors
+* Focuses on **replicating user behaviors**
   * Can go further and measure the performance of the system
 * Client accepts the software only when all the features and functionalities work as expected
 * **Last phase** of the testing, after which the software goes into production
 
 ---
-Code coverage?
+## Code Coverage
+* **Metric** that can **help understand how much of your source is tested**
+* Can **help assess the quality of test suite**
+* **Code coverage tools**
+  * Use one or more criteria to determine how your code was exercised or not
+  * During the execution of your test suite
+* Visual studio contains by default *Code Metrics Window*
+  * `View->Other Windows->Code Metrics Results`
+
++++
+### Common Metrics
+* **Metrics:**
+  * **Function coverage:** how many of the functions defined have been called
+  * **Statement coverage:** how many of the statements in the program have been executed
+  * **Branches coverage:** how many of the branches of the control structures (if statements for instance) have been executed
+  * **Condition coverage:** how many of the boolean sub-expressions have been tested for a true and a false value
+  * **Line coverage:** how many of lines of source code have been tested
+  * ⋮
+* Metrics are **related, but distinct**
+* Usually **represented as the number** of *items actually tested*, *the items found in your code*, and *a coverage percentage* (items tested / items found)
 
 ---
 ## Testing tips

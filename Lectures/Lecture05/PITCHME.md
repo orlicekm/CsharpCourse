@@ -501,6 +501,27 @@ public class TestClass2
 
 +++
 ### Testing types
+* Unit testing
+* Integration testing
+* System testing
+* Sanity testing
+* Smoke testing
+* Interface testing
+* Regression testing
+* Beta/Acceptance testing
+* Performance Testing
+* Load testing
+* Stress testing
+* Volume testing
+* Security testing
+* Compatibility testing
+* Install testing
+* Recovery testing
+* Reliability testing
+* Usability testing
+* Compliance testing
+* Localization testing
+* ⋮
 
 ---
 Code coverage?

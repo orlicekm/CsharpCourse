@@ -208,9 +208,9 @@
 * Typically, role of *Designer* and *Developer* overlaps
 
 +++
-### UI *declarative* vs. *imperative* notations
-* WPF supports both *declarative* and *imperative* UI element instantiations
-* There is *no difference* between both approaches
+### *Declarative* vs. *imperative* UI
+* **Supports both** *declarative* and *imperative* UI element instantiations
+* **No difference** between both approaches
 * Instantiation of UI element from *Code-behind* goes against WPF principle of *loose code coupling*
   * This approach was used in *Windows Forms*
 
@@ -243,11 +243,42 @@ MainWindow.xaml.cs:
 TODO blend
 
 ---
-technologies based on wpf
+### Technologies Using WPF
+* Silverlight
+* Universal Windows Platform(UWP)
+* Xamarin
+* ⋮
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+## Silverlight
+* **Silverlight** is a cross-platform, cross-browser plug-in
+  * Technology is based on WPF
+  * Rich Internet Application (RIA) platform
+  * Support "rich-media" functionality like *video, vector graphic, animations*
+* **Silverlight** and WPF shares the same XAML presentation layer
+  * Both technologies are very similar
+    * **Silverlight is limited in some aspects**
+    * Contains only a subset of WPF
+* **Deprecated** end of support is scheduled to **5th of October 2021**  
+  * *IE7-8* - support was removed between 2014-2016 (depending on the OS)
+  * *IE9-11* - support will last until late 2021
+  * *Microsoft Edge* - no Silverlight plugin available
+  * *Google Chrome* - no longer supported since September 2015
+  * *Firefox* - no longer supported since March 2017
+* Statistic from February 2018 shows that *fewer than 0.1% sites used Silverlight*
+
+@snap[east]
+![](/Lectures/Lecture10/Assets/img/SilverlightLogo.png)
+@snapend
 
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
+[Wikipedia](https://en.wikipedia.org/)
 
 +++
 ## Refences to used images:

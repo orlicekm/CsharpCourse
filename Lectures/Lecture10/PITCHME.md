@@ -123,7 +123,7 @@
 [Code sample](/Lectures/Lecture10/Assets/sln/HelloWpf/MainWindow.xaml.cs)
 
 +++
-#### Hello WPF Explanation
+### Hello WPF Explanation
 * Declarations
   * *Window/UserControl/…* - inheritance
   * `x:Class` - class containing *Code-behind*
@@ -147,10 +147,10 @@
 * **Element** – *UI Element*, complex property, class initialization
 
 +++
-### Propertie elements
+### Property elements
 * Not all *properties* has to contain `string` only
 * **Properties can contain instances of other objects**
-* XAML defines syntactical notation for *complex property* definition called **propertie elements**
+* XAML defines syntactical notation for *complex property* definition called **property elements**
 * Form *TypeName.PropertyName* contained inside *TypeName* element
 
 ```XML
@@ -196,23 +196,41 @@ System.Object
 +++
 ### Canvas
 * `Canvas`
-  * Positioning of content according to **absolute x- and y-coordinates**
-  * Properties `Canvas.Top, Canvas.Left, Canvas.Top, Canvas.Bottom`
+* Positioning of content according to **absolute x- and y-coordinates**
+* Properties like `Canvas.Top, Canvas.Left, Canvas.Top, Canvas.Bottom`
 
 ![](/Lectures/Lecture10/Assets/img/canvas.png)
 
 +++
+### Grid
 * `Grid`
-  * Table like layout
-  * Properties `Grid.Row, Grid.Column, Grid.RowSpan, Grid.ColumnSpan`
-* `StackPanel`
-  * Components beside one-another
-  * *Vertical* or *Horizontal* rendering
-  *  * Properties `StackPanel.Orientation`
+* Merges 
+  * Absolute positioning
+  * **Tabular data control**
+* Properties like `Grid.Row, Grid.Column, Grid.RowSpan, Grid.ColumnSpan`
+
+![](/Lectures/Lecture10/Assets/img/Grid.png)
+
++++
+### StackPanel and DockPanel
+* `StackPanel`, `DockPanel`
+* **Components beside one-another**
+* *Vertical* or *Horizontal* rendering
+* Properties like `StackPanel.Orientation`, `DockPanel.Dock`
+* Difference
+  * DockPanel on the top
+  * StackPanel on the bottom
+
+![](/Lectures/Lecture10/Assets/img/StackVsDockPanel.png)
+
++++
+### WrapPanel
 * `WrapPanel`
-  * Components beside one-another and if there is no space, another row is created, or vice-versa
-  * *Concentration game (Pexeso)* like a design
-  * Properties `WrapPanel.Orientation`
+* Components beside one-another and if there is no space, another row is created, or vice-versa
+* *Concentration game (Pexeso)* like a design
+* Properties `WrapPanel.Orientation`
+
+![](/Lectures/Lecture10/Assets/img/wrappanel.png)
 
 +++
 ### Content Controls
@@ -484,7 +502,7 @@ private bool CanExecute() {
 better relay commmand
 
 ---
-messenger and other patterns??
+messenger and other patterns v MVVM? - spytat sa
 
 ---
 ### WPF – Styles

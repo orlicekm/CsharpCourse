@@ -263,17 +263,20 @@ TODO blend
   * Both technologies are very similar
     * **Silverlight is limited in some aspects**
     * Contains only a subset of WPF
-* **Deprecated** end of support is scheduled to **5th of October 2021**  
+
+@snap[north]
+![](/Lectures/Lecture10/Assets/img/SilverlightLogo.png)
+@snapend
+
++++
+### Siverlight - Deprecated
+* **Deprecated** - end of overall support is scheduled to **5th of October 2021**  
   * *IE7-8* - support was removed between 2014-2016 (depending on the OS)
   * *IE9-11* - support will last until late 2021
   * *Microsoft Edge* - no Silverlight plugin available
   * *Google Chrome* - no longer supported since September 2015
   * *Firefox* - no longer supported since March 2017
 * Statistic from February 2018 shows that *fewer than 0.1% sites used Silverlight*
-
-@snap[north]
-![](/Lectures/Lecture10/Assets/img/SilverlightLogo.png)
-@snapend
 
 ---
 ## References:

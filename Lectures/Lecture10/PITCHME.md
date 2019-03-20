@@ -297,6 +297,20 @@ TODO blend
 ### UWP Device Family
 ![](/Lectures/Lecture10/Assets/img/uwp_device_family.png)
 
++++
+## Xamarin
+* **Multi-platform development**
+* Started for *mobile devices* to unify development for *all device families*
+* Nowadays tries to *target all* mobiles, desktop, web...
+![](/Lectures/Lecture10/Assets/img/uwp_device_family.png)
+
++++
+### Xamarin Sample
+
+![](/Lectures/Lecture10/Assets/img/uwp_device_family.png)
+
+---
+
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
@@ -304,3 +318,4 @@ TODO blend
 
 +++
 ## Refences to used images:
+[Wikipedia](https://en.wikipedia.org/)

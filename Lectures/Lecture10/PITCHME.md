@@ -464,7 +464,7 @@ Username: <Run FontWeight="Bold" Text="{Binding UserName}"/>
 ### Data-binding types
 * Against current `DataContext`
   * `{Binding}`
-    * Aktuální DataContext
+    * Actual DataContext
   * `{Binding Name}`
     * Binds property `Name` on current `DataContext`
   * `{Binding Name.Length}`
@@ -472,8 +472,164 @@ Username: <Run FontWeight="Bold" Text="{Binding UserName}"/>
 * Against *named element*
   * property `x:Name`
   * `{Binding Path=Text, ElementName=TextBox1}`
-    * property `Text` on object `TextBox1`
+    * Property `Text` on object `TextBox1`
 
++++
+### Data-binding direction
+* Defined by property `Mode`
+  * `OneTime`
+    * Only once when a component is initialized
+  * `OneWay`
+    * Only in one direction, from *source* to *target*
+  * `TwoWay`
+    * In both directions from *source* to *target* and from *target* to *source*
+  * `OneWayToSource`
+    * Only in one direction, from *target* to *source*
+  * `Default`
+    * Default value, usually:
+      * User defined has `TwoWay`
+      * Other has `OneWay`
+* *Source* 
+  * Property that we bind to
+* *Target*
+  * Component, that defines `{Binding}`
+
++++
+### Data-binding how it works?
+* `OneWay` and `TwoWay` 
+  * React to changes in the source
+  * *Source* needs to notify that *something* has changes
+    * `class` containing the *source* need to implement `INotifyPropertyChanged`
+    * When *something* changes, `PropertyChanged` event needs to `Invoke()`
+
++++
+TODO binding sample
+
++++
+#### Collections
+* Property is a Collection
+  * Items are represented by a collection of inner elements
+  * `System.Object`
+    * `System.Collections.*`
+  * Implements interface `IEnumerable`
+  * *Source* (collection) needs to notify that collection has changed
+    * Implementing `INotifyCollectionChanged`
+
+```C#
+public class MainViewModel {
+   public ObservableCollection<MenuItem> MenuItems { get; } = new ObservableCollection<MenuItem>();
+}
+```
+
++++
+### ItemsControl - To Visualize Collections
+* `ComboBox`
+* `ListBox`
+* `TabControl`
+* `TreeView`
+* ⋮
+* `System.Windows.Controls.Control`
+* `System.Windows.Controls.ItemsControl`
+
++++
+### ItemsControl - To Visualize Collections
+* Property `Items`
+  * General objects, rendered inside ItemControl
+* Property `ItemsSource`
+  * Uses `IEnumerable` as a source of rendered items
+* Template `ItemTemplate`
+  * Defines *look* and *content* of items
+    * *DataContext* is set to the *current item*
+
+```XML
+<ListBox ItemsSource="{Binding MenuItems}">
+   <ListBox.ItemTemplate>  <DataTemplate>
+         <StackPanel>
+            <TextBlock Text="{Binding Title}" />
+            <TextBlock Text="{Binding SubTitle}" />
+         </StackPanel>
+      </DataTemplate> </ListBox.ItemTemplate>
+</ListBox>
+```
+
++++
+### ItemsControl - Collection Change
+*  How to re-render collection?
+*  Property `ItemsSource`
+  * Assignment of a different object
+    * Content is cleared, now data is generated
+  * Change of item in a `ItemsSource` collection
+    * Only with objects implementing interface `INotifyPropertyChanged`
+  * Adding or Removing items in a collection
+    * Collection must implement interface `INotifyCollectionChanged`
+
++++
+### ItemsControl - ListBox
+* Property `SelectedItem`
+  * Object that is *bindable*
+* Property `SelectedValuePath`
+  * Defines path to a property that is binded by `SelectedValue`
+  * E.g., `Object.Property1.Property2`
+* Property `SelectedValue`
+  * Value of property defined by `SelectedValuePath`
+
+```XML
+<ListBox 
+    ItemsSource="{Binding MenuItems}" 
+    SelectedItem="{Binding SelectedItem}" 
+    SelectedValue="{Binding SelectedTitle}" 
+    SelectedValuePath SelectedValuePath="@Title" 
+/>
+```
+
++++
+### INotifyCollectionChanged
+* Implemented by `ObservableCollection<T>`
+  * Implements interface `INotifyCollectionChanged`
+* User defined collection 
+  * To implement interface `INotifyCollectionChanged`  
+* Existing collections
+  * To create a wrapper implementing `INotifyCollectionChanged`
+
+---
+### Commands
+* Implements interface `ICommand`
+  * `public interface ICommand`
+* Methods
+  * `Execute(Object)`
+    * Defines the method to be called when the command is executed
+  * `CanExecute(Object)`
+    * Defines the method that checks if the command can be executed 
+* Event
+  * `CanExecuteChanged`
+    * Event that is called when condition used in `CanExecute(Object)` changes
+    * `CanExecute(Object)` is reevaluated, and if changed, the command can be executed
+
++++
+### Commands - RelayCommand
+* RelayCommand – [](https://msdn.microsoft.com/en-us/magazine/dn237302.aspx?f=255&MSPPError=-2147217396), Telerik
+
+* MyViewModel.cs:
+
+```C#
+private RelayCommand _myCommand;
+public RelayCommand MyCommand => _myCommand ?? 
+   (_myCommand = new RelayCommand(Execute,CanExecute);
+private void Execute() {
+      //...
+}
+private bool CanExecute() {
+   return 1 == 1;
+}
+```
+
++++
+better relay commmand
+
++++
+messenger?
+
++++
 
 ---
 ## References:

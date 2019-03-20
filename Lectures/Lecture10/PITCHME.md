@@ -181,7 +181,7 @@
 * XAML defines syntactical notation for *complex property* definition called **propertie elements**
 * Form *TypeName.PropertyName* contained inside *TypeName* element
 
-```XML
+```XAML
 <Grid>
    <Grid.ColumnDefinitions>
       <ColumnDefinition Width="1*"/>

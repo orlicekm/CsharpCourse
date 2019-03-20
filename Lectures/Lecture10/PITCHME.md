@@ -302,12 +302,12 @@ TODO blend
 * **Multi-platform development**
 * Started for *mobile devices* to unify development for *all device families*
 * Nowadays tries to *target all* mobiles, desktop, web...
-![](/Lectures/Lecture10/Assets/img/uwp_device_family.png)
+![](/Lectures/Lecture10/Assets/img/Xamarin_TraditionalvsForms.png)
 
 +++
 ### Xamarin Sample
 
-![](/Lectures/Lecture10/Assets/img/uwp_device_family.png)
+![](/Lectures/Lecture10/Assets/img/Xamarin_allhanselman.png)
 
 ---
 

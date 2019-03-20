@@ -32,10 +32,15 @@
  * Benefits
    * Low CPU utilization -> low power consumption
    * Quality "rich-media UI"
- * *Vector graphics* enables: *zooming, resolution changes, rotations...* without any quality loss
+ * *Vector graphics* enables *zooming, resolution changes, rotations* etc. without any quality loss
  * WPF implements
-   * *float point system* of logical pixels
+   * *Float point system* of logical pixels
    * *32-bit ARGB* color spectrum
+
++++
+### Vector vs. Raster Graphics
+
+![](/Lectures/Lecture10/Assets/img/vector_vs_raster.jpg)
 
 +++
 ### Rendering
@@ -645,10 +650,12 @@ TODO blend
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
+[vector-conversions.com](https://vector-conversions.com)  
 [Wikipedia](https://en.wikipedia.org/)  
 
 +++
 ## Refences to used images:
 [fiverr - I Will Develop Wpf And Xaml Programs](https://www.fiverr.com/moustafashaban/develop-wpf-and-xaml-programs)  
 [David Pritchard website](http://davidpritchard.org/)  
+[vector-conversions.com](https://vector-conversions.com)  
 [Wikipedia](https://en.wikipedia.org/)  

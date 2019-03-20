@@ -34,7 +34,7 @@
    * *32-bit ARGB* color spectrum
 
 +++
-#### WPF Rendering
+### WPF Rendering
 * Works on the lowest layer with **shapes** not **pixels** 
 * *Shapes* are represented by *vectors* and can be *easily manipulated*
 * Developer defines a shape and lets WPF render it in the most optimal way
@@ -43,7 +43,7 @@
 * *Shapes* are used inside *panels* and multiplicity of other WPF component contents
 
 +++
-#### WPF Text Model
+### WPF Text Model
 * Supports a wide range of *typographic* and *text rendering* functions
 * *International fonts* and *composite fonts*
 * WPF rendering engines use *ClearType* technologies
@@ -69,7 +69,7 @@
   * Combination of *video* and *animations* creates dynamic content
   * *Animations* can be synchronized with media
 
-+++
+---
 ### WPF – Styles
 * **Style** is a *set of properties* applied to the *content*
   * Defines *changes in rendering*
@@ -90,7 +90,7 @@
   * `HierarchicalDataTemplate` - object look inside panels with hierarchical structure
     * E.g. `TreeView`
 
-+++
+---
 ### WPF - Commands
 * `Command` is an abstract and *loosely-coupled* version of `event`
 * E.g., *Copy, Cut, Paste, Save, etc...*
@@ -99,7 +99,7 @@
 * Commands have *action, source, target and binding*
 
 +++
-#### Why to use WPF Commands?
+### Commands Benefits
 * Wide range of *predefined commands*
 * Provide **automated support for user input actions**
 * Most of the components have **built-in support** for them
@@ -131,7 +131,7 @@
 +++
 ![](/Lectures/Lecture10/Assets/img/HelloWPF.png)
 
-+++?code=/Lectures/Lecture10/Assets/sln/HelloWPF/MainWindow.xaml&lang=XML&title=Hello WPF XAML
++++?code=/Lectures/Lecture10/Assets/sln/HelloWpf/MainWindow.xaml&lang=XML&title=Hello WPF XAML
 @[1,13]
 @[2]
 @[3-7]
@@ -139,15 +139,15 @@
 @[9]
 @[10,12]
 @[11]
-[Code sample](/Lectures/Lecture10/Assets/sln/HelloWPF/MainWindow.xaml)
+[Code sample](/Lectures/Lecture10/Assets/sln/HelloWpf/MainWindow.xaml)
 
-+++?code=/Lectures/Lecture10/Assets/sln/HelloWPF/MainWindow.xaml.cs&lang=C#&title=Hello WPF XAML Code Behind
++++?code=/Lectures/Lecture10/Assets/sln/HelloWpf/MainWindow.xaml.cs&lang=C#&title=Hello WPF XAML Code Behind
 @[8-14]
 @[8]
 @[10-13]
 @[12]
 @[8-14]
-[Code sample](/Lectures/Lecture10/Assets/sln/HelloWPF/MainWindow.xaml.cs)
+[Code sample](/Lectures/Lecture10/Assets/sln/HelloWpf/MainWindow.xaml.cs)
 
 ---
 ## References:

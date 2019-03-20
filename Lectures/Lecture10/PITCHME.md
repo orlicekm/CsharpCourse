@@ -129,7 +129,7 @@
 * These objects are called *user interface elements* or *UI elements*
 
 +++
-##### Hello WPF Sample
+#### Hello WPF Sample
 ![](/Lectures/Lecture10/Assets/img/HelloWPF.png)
 
 +++?code=/Lectures/Lecture10/Assets/sln/HelloWpf/MainWindow.xaml&lang=XML&title=Hello WPF XAML

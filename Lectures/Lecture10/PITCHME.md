@@ -143,7 +143,7 @@
   * Same effect as calling *parameterless constructor*
 * Setting of *Attribute* on the element 
   * Same as *assigment to a property* of the same name.  
-* **Atribut** – simple property
+* **Attribute** – simple property
 * **Element** – *UI Element*, complex property, class initialization
 
 +++
@@ -163,7 +163,7 @@
 ```
 
 ---
-### Class hierarchy
+## Class hierarchy
 * `System.Object`
 * `System.Windows.DependencyObject`
   * Support dependency properties
@@ -175,13 +175,13 @@
   * Base class for definitions of *UI Elements*
 
 +++
-### Panels - layout definition
+## Panels
 * Only components that can have multiple descendants
 * Used to create **layout** 
 * Common practice in WPF
   * Vector graphics
   * UI adaptation to available space
-  * "flexible layout"
+  * "Flexible layout"
 
 ```
 System.Object
@@ -194,10 +194,14 @@ System.Object
 ```
 
 +++
-### Layouts
+### Canvas
 * `Canvas`
-  * Absolute positioning in pixels
-  * Properties `Canvas.Top, Canvas.Left`
+  * Positioning of content according to **absolute x- and y-coordinates**
+  * Properties `Canvas.Top, Canvas.Left, Canvas.Top, Canvas.Bottom`
+
+![](/Lectures/Lecture10/Assets/img/canvas.png)
+
++++
 * `Grid`
   * Table like layout
   * Properties `Grid.Row, Grid.Column, Grid.RowSpan, Grid.ColumnSpan`
@@ -650,12 +654,14 @@ TODO blend
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
-[vector-conversions.com](https://vector-conversions.com)  
+[Microsoft .NET Documentation](https://docs.microsoft.com/en-us/dotnet/)  
+[Vector-conversions.com](https://vector-conversions.com)  
 [Wikipedia](https://en.wikipedia.org/)  
 
 +++
 ## Refences to used images:
-[fiverr - I Will Develop Wpf And Xaml Programs](https://www.fiverr.com/moustafashaban/develop-wpf-and-xaml-programs)  
+[Fiverr - I Will Develop Wpf And Xaml Programs](https://www.fiverr.com/moustafashaban/develop-wpf-and-xaml-programs)  
+[Microsoft .NET Documentation](https://docs.microsoft.com/en-us/dotnet/)  
 [David Pritchard website](http://davidpritchard.org/)  
-[vector-conversions.com](https://vector-conversions.com)  
+[Vector-conversions.com](https://vector-conversions.com)  
 [Wikipedia](https://en.wikipedia.org/)  

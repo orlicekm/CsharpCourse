@@ -285,9 +285,9 @@ TODO blend
 * First introduced in **Windows 10**
   * UWP apps do not run on earlier Windows versions
 * Multiple ways how to use it
-  * XAML UI and a C#, VB, or C++ backend 
-  * DirectX UI and a C++ backend 
-  * JavaScript and HTML 
+  * *XAML* UI and a *C#, VB, or C++* backend 
+  * *DirectX* UI and a *C++* backend 
+  * *JavaScript* and *HTML* 
 
 +++
 ### UWP Device Family

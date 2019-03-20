@@ -258,7 +258,8 @@ TODO blend
 * **Silverlight** is a cross-platform, cross-browser plug-in
   * Technology is based on WPF
   * Rich Internet Application (RIA) platform
-  * Support "rich-media" functionality like *video, vector graphic, animations*
+  * Support "rich-media" functionality
+  * E.g. *video, vector graphic, animations*
 * **Silverlight** and WPF shares the same XAML presentation layer
   * Both technologies are very similar
     * **Silverlight is limited in some aspects**

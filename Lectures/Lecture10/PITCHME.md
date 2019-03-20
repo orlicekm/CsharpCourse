@@ -288,11 +288,11 @@ TODO blend
   * XAML UI and a C#, VB, or C++ backend 
   * DirectX UI and a C++ backend 
   * JavaScript and HTML 
-  
-![](/Lectures/Lecture10/Assets/img/uwp.png)
 
 +++
 ### UWP Device Family
+
+![](/Lectures/Lecture10/Assets/img/uwp.png)
 
 ![](/Lectures/Lecture10/Assets/img/uwp_device_family.png)
 

@@ -310,6 +310,147 @@ TODO blend
 ![](/Lectures/Lecture10/Assets/img/Xamarin_allhanselman.png)
 
 ---
+## WPF Practically
+TODO
+
+
+### Class hierarchy
+* `System.Object`
+* `System.Windows.DependencyObject`
+  * Support dependency properties
+* `System.Windows.UIElement`
+  * Rendering methods
+* `System.Windows.FrameworkElement`
+  * Support for data-binding, styles, etc...
+* `System.Windows.Controls.Control`
+  * Base class for definitions of *UI Elements*
+
++++
+### Panels - layout definition
+* Only components that can have multiple descendants
+* Used to create **layout** 
+* Common practice in WPF
+  * Vector graphics
+  * UI adaptation to available space
+  * "flexible layout"
+
+```
+System.Object
+  System.Windows.Threading.DispatcherObject
+    System.Windows.DependencyObject
+      System.Windows.Media.Visual
+        System.Windows.UIElement
+          System.Windows.FrameworkElement
+            System.Windows.Controls.Panel
+```
+
++++
+### Layouts
+* `Canvas`
+  * Absolute positioning in pixels
+  * Properties `Canvas.Top, Canvas.Left`
+* `Grid`
+  * Table like layout
+  * Properties `Grid.Row, Grid.Column, Grid.RowSpan, Grid.ColumnSpan`
+* `StackPanel`
+  * Components beside one-another
+  * *Vertical* or *Horizontal* rendering
+  *  * Properties `StackPanel.Orientation`
+* `WrapPanel`
+  * Components beside one-another and if there is no space, another row is created, or vice-versa
+  * *Concentration game (Pexeso)* like a design
+  * Properties `WrapPanel.Orientation`
+
++++
+### Content Controls
+* *Only one descendant*
+* `Border` 
+  * Border and background around some content
+* `Button`
+* `Label`
+* `CheckBox, RadioButton`
+* `ScrollViewer`
+  * In case that content is longer or wider than space defined in parent
+  * Creates *scrolling bar*
+
+```
+System.Object
+  System.Windows.Threading.DispatcherObject
+    System.Windows.DependencyObject
+      System.Windows.Media.Visual
+        System.Windows.UIElement
+          System.Windows.FrameworkElement
+            System.Windows.Controls.Control
+              System.Windows.Controls.ContentControl
+```
+
++++
+### Positioning properties
+* `Width, MinWidth, MaxWidth`
+* `HorizontalAlignment, VerticalAlignment`
+  * Alignment related to parrent element
+* `HorizontalContentAlignment, VerticalContentAlignment`
+  * Alignment of inner content
+* `Margin, Padding`
+  * Outer and inner borders
+
+```
+System.Object
+  System.Windows.Threading.DispatcherObject
+    System.Windows.DependencyObject
+      System.Windows.Media.Visual
+        System.Windows.UIElement
+          System.Windows.FrameworkElement
+```
+
++++
+### Text formating
+* Element `TextBlock`
+  * Property `TextWrapping`
+  * Inner elements:
+    * Element `Run`
+      * Attributes `FontWeight, FontSize, Foreground…`
+    * `LineBreak, Span, Hyperlink, Bold, Italic, Underline`
+
+```XML
+<TextBlock>
+Sample text with <Bold>bold</Bold>, <Italic>italic</Italic> 
+and <Underline>underlined</Underline> words.
+Username: <Run FontWeight="Bold" Text="{Binding UserName}"/>
+</TextBlock>
+```
+
++++
+### Other components
+* `Calendar`
+
+![](/Lectures/Lecture10/Assets/img/calendar.gif)
+
+* `DatePicker`
+
+![](/Lectures/Lecture10/Assets/img/datepicker.jpeg)
+
++++
+
+* `Image` 
+
+* `ProgressBar`
+
+![](/Lectures/Lecture10/Assets/img/progressbar_simple.png)
+
+* `TextBox`
+
+![](/Lectures/Lecture10/Assets/img/textbox.jpeg)
+
+---
+### DataContex
+* Property of `FrameworkElement`
+* References parent's `Datacontext` if not set on an element.
+* Perfect for *data-binding*
+* Type `object`, thus can be set to anything
+
+![](/Lectures/Lecture10/Assets/img/DataContext.png)
+
 
 ---
 ## References:

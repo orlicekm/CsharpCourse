@@ -279,6 +279,23 @@ TODO blend
   * *Firefox* - no longer supported since March 2017
 * Statistic from February 2018 shows that **fewer than 0.1% sites used Silverlight**
 
++++
+## Universal Windows Platform
+* **Open source API** created by Microsoft
+* First introduced in **Windows 10**
+  * UWP apps do not run on earlier Windows versions
+* Multiple ways how to use it
+  * XAML UI and a C#, VB, or C++ backend 
+  * DirectX UI and a C++ backend 
+  * JavaScript and HTML 
+  
+![](/Lectures/Lecture10/Assets/img/uwp.png)
+
++++
+### UWP Device Family
+
+![](/Lectures/Lecture10/Assets/img/uwp_device_family.png)
+
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  

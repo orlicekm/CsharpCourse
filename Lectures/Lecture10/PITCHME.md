@@ -21,7 +21,7 @@
 * Hardware acceleration
 
 @snap[east]
-![](/Lectures/Lecture10/Assets/img/WPFlogo.png)
+![](/Lectures/Lecture10/Assets/img/WPFlogo.jpg)
 @snapend
 
 +++

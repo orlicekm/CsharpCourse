@@ -293,7 +293,6 @@ TODO blend
 ### UWP Device Family
 
 ![](/Lectures/Lecture10/Assets/img/uwp.png)
-
 ![](/Lectures/Lecture10/Assets/img/uwp_device_family.png)
 
 ---

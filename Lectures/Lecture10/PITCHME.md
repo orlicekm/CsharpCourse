@@ -271,7 +271,7 @@ TODO blend
   * *Firefox* - no longer supported since March 2017
 * Statistic from February 2018 shows that *fewer than 0.1% sites used Silverlight*
 
-@snap[east]
+@snap[north]
 ![](/Lectures/Lecture10/Assets/img/SilverlightLogo.png)
 @snapend
 

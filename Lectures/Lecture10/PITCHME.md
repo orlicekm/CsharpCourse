@@ -3,7 +3,7 @@
 @snapend
 
 @snap[midpoint span-100]
-## Component Creating, Application Styling
+## Component Creating, Application Styling, Binding
 @snapend
 
 @snap[south-east span-30]
@@ -190,6 +190,60 @@
 </Grid>
 ```
 
+---
+## Declarative UI - WPF principle
+* Designer, UI developer
+  * Uses **Blend for Visual Studio** former **Expression Blend**
+  * Edits only *XAML files*
+
+![](/Lectures/Lecture10/Assets/img/blend.png)
+
++++
+* Developer
+  * Uses **Visual Studio**
+  * Works with *Code-behind*
+
+![](/Lectures/Lecture10/Assets/img/vs.jpg)
+
+* Typically, role of *Designer* and *Developer* overlaps
+
++++
+### UI *declarative* vs. *imperative* notations
+* WPF supports both *declarative* and *imperative* UI element instantiations
+* There is *no difference* between both approaches
+* Instantiation of UI element from *Code-behind* goes against WPF principle of *loose code coupling*
+  * This approach was used in *Windows Forms*
+
+MainWindows.xaml:
+
+```XML
+   <Button Content="Click ME!" />
+```
+
+MainWindow.xaml.cs:
+
+```C#
+   var button = new Button();
+   button.Content = "Click ME!";
+```
+
++++
+### Declarative UI - WPF principle
+* What happens when *XAML is no used in WPF*?
+  * Idea of **separation of concerns** is lost
+  * *Designer* and *Developer* can not *coop* on the *same file*
+    * Otherwise they create conflicts in source control
+* What happens when *XAML is used in WPF*?
+  * Object is created in declarative manner
+  * *Parameter-less constructor* is called
+  * All *magic* happens in `InitializeComponent()` method call
+  * All *magic* happens in `InitializeComponent()` method call
+
+---
+TODO blend
+
+---
+technologies based on wpf
 
 ---
 ## References:

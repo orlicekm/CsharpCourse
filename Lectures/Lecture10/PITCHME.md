@@ -20,8 +20,12 @@
 * Based on technologies like *HTML, CSS, Flash*
 * Hardware acceleration
 
+@snap[east]
+![](/Lectures/Lecture10/Assets/img/WPFlogo.png)
+@snapend
+
 +++
-### WPF Vector Graphics
+### Vector Graphics
 * All application writen with WPF are **Direct3D enabled**
  * **Vector based** engine ensures performance
  * *Rendering* is accelerated by *graphics card*
@@ -34,7 +38,7 @@
    * *32-bit ARGB* color spectrum
 
 +++
-### WPF Rendering
+### Rendering
 * Works on the lowest layer with **shapes** not **pixels** 
 * *Shapes* are represented by *vectors* and can be *easily manipulated*
 * Developer defines a shape and lets WPF render it in the most optimal way
@@ -43,15 +47,14 @@
 * *Shapes* are used inside *panels* and multiplicity of other WPF component contents
 
 +++
-### WPF Text Model
+### Text Model
 * Supports a wide range of *typographic* and *text rendering* functions
 * *International fonts* and *composite fonts*
 * WPF rendering engines use *ClearType* technologies
   * Fonts are *pre-rendered* and *stored in video memory*
 
-
 +++
-### WPF Animations
+### Animations
 * Supports timed animation
   * **Timers** are *initialized and managed by WPF*
   * Changes are coordinated by **Storyboard**
@@ -61,53 +64,13 @@
 * Animations are *defined by XAML* declarations
 
 +++
-### WPF Audio & Video
+### Audio & Video
 * Supports incorporation of *audio* and *video* into UI
 * *Audio support* utilizes a thin layer based on *Win32* and *WMP* functions
 * *Video support* uses native formats *WMV, MPEG* and subset of *AVI*
 * Interaction between *video* and *animations*
   * Combination of *video* and *animations* creates dynamic content
   * *Animations* can be synchronized with media
-
----
-### WPF – Styles
-* **Style** is a *set of properties* applied to the *content*
-  * Defines *changes in rendering*
-  * Concept is the same as with *CSS*
-  * E.g. change *button's text's font*
-* Used for **visual state standardization** to set the same set of properties for particular items
-* WPF styles contain specific properties for UI creation
-  * E.g. *begin a set of visual effects* as a *reaction to a user action*
-
-+++
-### WPF - Templates
-* Enables **complex changes to UI** state of any WPF items
-* **Available templates**
-  * `ControlTemplate` – UI style sharing across multiple controls 
-  * `ItemsPanelTemplate` – panel look, 
-    * E.g. `ListBox`
-  * `DataTemplate` – item look inside a panel
-  * `HierarchicalDataTemplate` - object look inside panels with hierarchical structure
-    * E.g. `TreeView`
-
----
-### WPF - Commands
-* `Command` is an abstract and *loosely-coupled* version of `event`
-* E.g., *Copy, Cut, Paste, Save, etc...*
-* Reduces the necessary code amount
-* Enables UI changes without a need to change *back-end* logic
-* Commands have *action, source, target and binding*
-
-+++
-### Commands Benefits
-* Wide range of *predefined commands*
-* Provide **automated support for user input actions**
-* Most of the components have **built-in support** for them
-  * E.g. `button` has property `Command`
-* *Clean Code* without *Code-behind*
-* **Command design pattern**
-  * Launches *action*
-  * *Checks* if the action is permited to launch
 
 ---
 ## XAML
@@ -118,6 +81,10 @@
 * Form of *serialization of object hierarchy*
 * *.NET namespaces* are represented by *XML namespaces*
 * Typicaly closely connected with *Code-behind* class
+
+@snap[east]
+![](/Lectures/Lecture10/Assets/img/XAMLlogo.png)
+@snapend
 
 +++
 ### XAML - Basics
@@ -191,129 +158,6 @@
 ```
 
 ---
-## Declarative UI - WPF principle
-* Designer, UI developer
-  * Uses **Blend for Visual Studio** former **Expression Blend**
-  * Edits only *XAML files*
-
-![](/Lectures/Lecture10/Assets/img/blend.png)
-
-+++
-* Developer
-  * Uses **Visual Studio**
-  * Works with *Code-behind*
-
-![](/Lectures/Lecture10/Assets/img/vs.jpg)
-
-* Typically, role of *Designer* and *Developer* overlaps
-
-+++
-### *Declarative* vs. *imperative* UI
-* **Supports both** *declarative* and *imperative* UI element instantiations
-* **No difference** between both approaches
-* Instantiation of UI element from *Code-behind* goes against WPF principle of *loose code coupling*
-  * This approach was used in *Windows Forms*
-
-MainWindows.xaml:
-
-```XML
-   <Button Content="Click ME!" />
-```
-
-MainWindow.xaml.cs:
-
-```C#
-   var button = new Button();
-   button.Content = "Click ME!";
-```
-
-+++
-### Declarative UI - WPF principle
-* What happens when *XAML is no used in WPF*?
-  * Idea of **separation of concerns** is lost
-  * *Designer* and *Developer* can not *coop* on the *same file*
-    * Otherwise they create conflicts in source control
-* What happens when *XAML is used in WPF*?
-  * Object is created in declarative manner
-  * *Parameter-less constructor* is called
-  * All *magic* happens in `InitializeComponent()` method call
-  * All *magic* happens in `InitializeComponent()` method call
-
----
-TODO blend
-
----
-### Technologies Using WPF
-* Silverlight
-* Universal Windows Platform(UWP)
-* Xamarin
-* ⋮
-
-@snap[south-east span+40]
-![](/Lectures/Assets/img/MagnifyingGlass.png)
-@snapend
-
-+++
-## Silverlight
-* **Silverlight** is a cross-platform, cross-browser plug-in
-  * Technology is based on WPF
-  * Rich Internet Application (RIA) platform
-  * Support "rich-media" functionality
-  * E.g. *video, vector graphic, animations*
-* **Silverlight** and WPF shares the same XAML presentation layer
-  * Both technologies are very similar
-    * **Silverlight is limited in some aspects**
-    * Contains only a subset of WPF
-
-@snap[east]
-![](/Lectures/Lecture10/Assets/img/SilverlightLogo.png)
-@snapend
-
-+++
-### Siverlight - Deprecated
-* End of overall support is scheduled to **5th of October 2021**  
-  * *IE7-8* - support was removed between 2014-2016 (depending on the OS)
-  * *IE9-11* - support will last until late 2021
-  * *Microsoft Edge* - no Silverlight plugin available
-  * *Google Chrome* - no longer supported since September 2015
-  * *Firefox* - no longer supported since March 2017
-* Statistic from February 2018 shows that **fewer than 0.1% sites used Silverlight**
-
-+++
-## Universal Windows Platform
-* **Open source API** created by Microsoft
-* First introduced in **Windows 10**
-  * UWP apps do not run on earlier Windows versions
-* Multiple ways how to use it
-  * *XAML* UI and a *C#, VB, or C++* backend 
-  * *DirectX* UI and a *C++* backend 
-  * *JavaScript* and *HTML* 
-
-+++
-## Universal Windows Platform
-![](/Lectures/Lecture10/Assets/img/uwp.png)
-
-+++
-### UWP Device Family
-![](/Lectures/Lecture10/Assets/img/uwp_device_family.png)
-
-+++
-## Xamarin
-* **Multi-platform development**
-* Started for *mobile devices* to unify development for *all device families*
-* Nowadays tries to *target all* mobiles, desktop, web...
-![](/Lectures/Lecture10/Assets/img/Xamarin_TraditionalvsForms.png)
-
-+++
-### Xamarin Sample
-
-![](/Lectures/Lecture10/Assets/img/Xamarin_allhanselman.png)
-
----
-## WPF Practically
-TODO
-
-+++
 ### Class hierarchy
 * `System.Object`
 * `System.Windows.DependencyObject`
@@ -452,6 +296,7 @@ Username: <Run FontWeight="Bold" Text="{Binding UserName}"/>
 ![](/Lectures/Lecture10/Assets/img/DataContext.png)
 
 +++
+### Binding Markup
 
 ![](/Lectures/Lecture10/Assets/img/BindingMarkup.png)
 
@@ -522,7 +367,7 @@ public class MainViewModel {
 ```
 
 +++
-### ItemsControl - To Visualize Collections
+### ItemsControls To Visualize Collections
 * `ComboBox`
 * `ListBox`
 * `TabControl`
@@ -591,6 +436,9 @@ public class MainViewModel {
 * Existing collections
   * To create a wrapper implementing `INotifyCollectionChanged`
 
++++
+TODO collection binding sample
+
 ---
 ### Commands
 * Implements interface `ICommand`
@@ -626,16 +474,181 @@ private bool CanExecute() {
 +++
 better relay commmand
 
-+++
-messenger?
+---
+messenger and other patterns??
+
+---
+### WPF – Styles
+* **Style** is a *set of properties* applied to the *content*
+  * Defines *changes in rendering*
+  * Concept is the same as with *CSS*
+  * E.g. change *button's text's font*
+* Used for **visual state standardization** to set the same set of properties for particular items
+* WPF styles contain specific properties for UI creation
+  * E.g. *begin a set of visual effects* as a *reaction to a user action*
 
 +++
+todo sample + creating custom style
+
++++
+### WPF - Templates
+* Enables **complex changes to UI** state of any WPF items
+* **Available templates**
+  * `ControlTemplate` – UI style sharing across multiple controls 
+  * `ItemsPanelTemplate` – panel look, 
+    * E.g. `ListBox`
+  * `DataTemplate` – item look inside a panel
+  * `HierarchicalDataTemplate` - object look inside panels with hierarchical structure
+    * E.g. `TreeView`
+
++++
+todo sample + material design
+
+---
+### WPF - Commands
+* `Command` is an abstract and *loosely-coupled* version of `event`
+* E.g., *Copy, Cut, Paste, Save, etc...*
+* Reduces the necessary code amount
+* Enables UI changes without a need to change *back-end* logic
+* Commands have *action, source, target and binding*
+
++++
+### Commands Benefits
+* Wide range of *predefined commands*
+* Provide **automated support for user input actions**
+* Most of the components have **built-in support** for them
+  * E.g. `button` has property `Command`
+* *Clean Code* without *Code-behind*
+* **Command design pattern**
+  * Launches *action*
+  * *Checks* if the action is permited to launch
+
+---
+## Declarative UI - WPF principle
+* Designer, UI developer
+  * Uses **Blend for Visual Studio** former **Expression Blend**
+  * Edits only *XAML files*
+
+![](/Lectures/Lecture10/Assets/img/blend.png)
+
++++
+* Developer
+  * Uses **Visual Studio**
+  * Works with *Code-behind*
+
+![](/Lectures/Lecture10/Assets/img/vs.jpg)
+
+* Typically, role of *Designer* and *Developer* overlaps
+
++++
+### *Declarative* vs. *imperative* UI
+* **Supports both** *declarative* and *imperative* UI element instantiations
+* **No difference** between both approaches
+* Instantiation of UI element from *Code-behind* goes against WPF principle of *loose code coupling*
+  * This approach was used in *Windows Forms*
+
+MainWindows.xaml:
+
+```XML
+   <Button Content="Click ME!" />
+```
+
+MainWindow.xaml.cs:
+
+```C#
+   var button = new Button();
+   button.Content = "Click ME!";
+```
+
++++
+### Declarative UI - WPF principle
+* What happens when *XAML is no used in WPF*?
+  * Idea of **separation of concerns** is lost
+  * *Designer* and *Developer* can not *coop* on the *same file*
+    * Otherwise they create conflicts in source control
+* What happens when *XAML is used in WPF*?
+  * Object is created in declarative manner
+  * *Parameter-less constructor* is called
+  * All *magic* happens in `InitializeComponent()` method call
+  * All *magic* happens in `InitializeComponent()` method call
+
+---
+TODO blend
+
+---
+### Technologies Using WPF
+* Silverlight
+* Universal Windows Platform(UWP)
+* Xamarin
+* ⋮
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+## Silverlight
+* **Silverlight** is a cross-platform, cross-browser plug-in
+  * Technology is based on WPF
+  * Rich Internet Application (RIA) platform
+  * Support "rich-media" functionality
+  * E.g. *video, vector graphic, animations*
+* **Silverlight** and WPF shares the same XAML presentation layer
+  * Both technologies are very similar
+    * **Silverlight is limited in some aspects**
+    * Contains only a subset of WPF
+
+@snap[east]
+![](/Lectures/Lecture10/Assets/img/SilverlightLogo.png)
+@snapend
+
++++
+### Siverlight - Deprecated
+* End of overall support is scheduled to **5th of October 2021**  
+  * *IE7-8* - support was removed between 2014-2016 (depending on the OS)
+  * *IE9-11* - support will last until late 2021
+  * *Microsoft Edge* - no Silverlight plugin available
+  * *Google Chrome* - no longer supported since September 2015
+  * *Firefox* - no longer supported since March 2017
+* Statistic from February 2018 shows that **fewer than 0.1% sites used Silverlight**
+
++++
+## Universal Windows Platform
+* **Open source API** created by Microsoft
+* First introduced in **Windows 10**
+  * UWP apps do not run on earlier Windows versions
+* Multiple ways how to use it
+  * *XAML* UI and a *C#, VB, or C++* backend 
+  * *DirectX* UI and a *C++* backend 
+  * *JavaScript* and *HTML* 
+
++++
+## Universal Windows Platform
+![](/Lectures/Lecture10/Assets/img/uwp.png)
+
++++
+### UWP Device Family
+![](/Lectures/Lecture10/Assets/img/uwp_device_family.png)
+
++++
+## Xamarin
+* **Multi-platform development**
+* Started for *mobile devices* to unify development for *all device families*
+* Nowadays tries to *target all* mobiles, desktop, web...
+![](/Lectures/Lecture10/Assets/img/Xamarin_TraditionalvsForms.png)
+
++++
+### Xamarin Sample
+
+![](/Lectures/Lecture10/Assets/img/Xamarin_allhanselman.png)
 
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
-[Wikipedia](https://en.wikipedia.org/)
+[Wikipedia](https://en.wikipedia.org/)  
 
 +++
 ## Refences to used images:
-[Wikipedia](https://en.wikipedia.org/)
+[fiverr - I Will Develop Wpf And Xaml Programs](https://www.fiverr.com/moustafashaban/develop-wpf-and-xaml-programs)  
+[David Pritchard website](http://davidpritchard.org/)  
+[Wikipedia](https://en.wikipedia.org/)  

@@ -456,9 +456,23 @@ Username: <Run FontWeight="Bold" Text="{Binding UserName}"/>
 ![](/Lectures/Lecture10/Assets/img/BindingMarkup.png)
 
 +++
-
+### DataContex Sample
 ![](/Lectures/Lecture10/Assets/img/DataContext_example.png)
 
+
++++
+### Data-binding types
+* Against current `DataContext`
+  * `{Binding}`
+    * Aktuální DataContext
+  * `{Binding Name}`
+    * Binds property `Name` on current `DataContext`
+  * `{Binding Name.Length}`
+    * Binds property `Name.Length` on current `DataContext`
+* Against *named element*
+  * property `x:Name`
+  * `{Binding Path=Text, ElementName=TextBox1}`
+    * property `Text` on object `TextBox1`
 
 
 ---

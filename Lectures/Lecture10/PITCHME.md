@@ -264,7 +264,7 @@ TODO blend
     * **Silverlight is limited in some aspects**
     * Contains only a subset of WPF
 
-@snap[north]
+@snap[east]
 ![](/Lectures/Lecture10/Assets/img/SilverlightLogo.png)
 @snapend
 

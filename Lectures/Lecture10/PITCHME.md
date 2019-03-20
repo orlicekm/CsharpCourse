@@ -290,9 +290,11 @@ TODO blend
   * *JavaScript* and *HTML* 
 
 +++
-### UWP Device Family
-
+## Universal Windows Platform
 ![](/Lectures/Lecture10/Assets/img/uwp.png)
+
++++
+### UWP Device Family
 ![](/Lectures/Lecture10/Assets/img/uwp_device_family.png)
 
 ---

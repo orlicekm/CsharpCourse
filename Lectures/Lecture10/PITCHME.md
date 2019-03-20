@@ -313,7 +313,7 @@ TODO blend
 ## WPF Practically
 TODO
 
-
++++
 ### Class hierarchy
 * `System.Object`
 * `System.Windows.DependencyObject`
@@ -450,6 +450,15 @@ Username: <Run FontWeight="Bold" Text="{Binding UserName}"/>
 * Type `object`, thus can be set to anything
 
 ![](/Lectures/Lecture10/Assets/img/DataContext.png)
+
++++
+
+![](/Lectures/Lecture10/Assets/img/BindingMarkup.png)
+
++++
+
+![](/Lectures/Lecture10/Assets/img/DataContext_example.png)
+
 
 
 ---

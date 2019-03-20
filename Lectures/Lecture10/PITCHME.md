@@ -150,6 +150,47 @@
 @[8-14]
 [Code sample](/Lectures/Lecture10/Assets/sln/HelloWpf/MainWindow.xaml.cs)
 
++++
+#### Hello WPF Explanation
+* Declarations
+  * *Window/UserControl/…* - inheritance
+  * `x:Class` - class containing *Code-behind*
+  * `xmlns:x` - mandatory namespace for XAML
+  * `xmlns:d` - optional *design time* functionality
+  * `mc:Ignorable` - ingnoration of namespaces in *runtime*
+  * `xmlns` - namespace with build-in components in WPF
+* *Root element* `Windows` declares a partial class
+* `Width, Height, Title` are *properties*
+* *Element* `Button` declares item button
+
++++
+### Elements & Attributes - Object properties 
+* *UI Elements* have common subset of *properties* and *functions*
+  * E.g., `Width, Height, Cursor, Tag` properties
+* Declaration of XML *element* in XAML
+  * Same effect as calling *parameterless constructor*
+* Setting of *Attribute* on the element 
+  * Same as *assigment to a property* of the same name.  
+* **Atribut** – simple property
+* **Element** – *UI Element*, complex property, class initialization
+
++++
+### Propertie elements
+* Not all *properties* has to contain `string` only
+* **Properties can contain instances of other objects**
+* XAML defines syntactical notation for *complex property* definition called **propertie elements**
+* Form *TypeName.PropertyName* contained inside *TypeName* element
+
+```XML
+<Grid>
+   <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="1*"/>
+      <ColumnDefinition Width="2*"/>
+   </Grid.ColumnDefinitions>
+</Grid>
+```
+
+
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  

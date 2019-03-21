@@ -179,7 +179,7 @@
 * Panels
 * Content Controls
 * ⋮
-* [List of all controls]https://docs.microsoft.com/en-us/dotnet/framework/wpf/controls/control-library
+* [List of all controls](https://docs.microsoft.com/en-us/dotnet/framework/wpf/controls/control-library)
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)

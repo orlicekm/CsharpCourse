@@ -174,6 +174,17 @@
 * `System.Windows.Controls.Control`
   * Base class for definitions of *UI Elements*
 
+---
+## Controls
+* Panels
+* Content Controls
+* ⋮
+* [List of all controls]https://docs.microsoft.com/en-us/dotnet/framework/wpf/controls/control-library
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
 +++
 ## Panels
 * Only components that can have multiple descendants
@@ -243,6 +254,7 @@ System.Object
 * `ScrollViewer`
   * In case that content is longer or wider than space defined in parent
   * Creates *scrolling bar*
+* and others...
 
 ```
 System.Object
@@ -256,7 +268,7 @@ System.Object
 ```
 
 +++
-### Positioning properties
+### Positioning Properties
 * `Width, MinWidth, MaxWidth`
 * `HorizontalAlignment, VerticalAlignment`
   * Alignment related to parrent element
@@ -275,7 +287,7 @@ System.Object
 ```
 
 +++
-### Text formating
+### Text Formating
 * Element `TextBlock`
   * Property `TextWrapping`
   * Inner elements:
@@ -292,7 +304,7 @@ Username: <Run FontWeight="Bold" Text="{Binding UserName}"/>
 ```
 
 +++
-### Other components
+### Other Interesting Components
 * `Calendar`
 
 ![](/Lectures/Lecture10/Assets/img/calendar.gif)
@@ -312,6 +324,8 @@ Username: <Run FontWeight="Bold" Text="{Binding UserName}"/>
 * `TextBox`
 
 ![](/Lectures/Lecture10/Assets/img/textbox.jpeg)
+
+and others...
 
 ---
 ### DataContex

@@ -513,10 +513,16 @@ private bool CanExecute() {
 ```
 
 +++
-better relay commmand
+todo better relay commmand
 
 ---
-messenger and other patterns v MVVM? - spytat sa
+todo messenger
+converters
+classic command + relay command
+view model locator
+viewfactory
+
+what from this to WPF and what to MVVM???
 
 ---
 ### WPF – Styles
@@ -612,10 +618,13 @@ MainWindow.xaml.cs:
   * Object is created in declarative manner
   * *Parameter-less constructor* is called
   * All *magic* happens in `InitializeComponent()` method call
-  * All *magic* happens in `InitializeComponent()` method call
 
 ---
-TODO blend
+## Blend for Visual Studio
+* Helps design XAML-based Windows and Web applications
+* Same basic XAML design experience as Visual Studio
+  * Adds visual designers for advanced tasks such as animations and behaviors
+* [Blend Tour](https://docs.microsoft.com/en-us/visualstudio/designers/creating-a-ui-by-using-blend-for-visual-studio?view=vs-2017)
 
 ---
 ### Technologies Using WPF
@@ -626,6 +635,10 @@ TODO blend
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
+@snap[east]
+![](/Lectures/Lecture10/Assets/img/blend.png)
 @snapend
 
 +++

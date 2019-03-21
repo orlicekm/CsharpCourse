@@ -583,6 +583,9 @@ todo sample + material design
 * Icon pack
 * PM> `Install-Package MaterialDesignThemes`
 
+@snap[north-east]
+![](/Lectures/Lecture10/Assets/img/MaterialDesign.png)
+@snapend
 
 ---
 ## Declarative UI - WPF principle

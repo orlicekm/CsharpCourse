@@ -624,7 +624,7 @@ MainWindow.xaml.cs:
 * Helps **design XAML-based Windows and Web applications**
 * Same basic XAML design experience as Visual Studio
   * Adds visual designers for **advanced tasks such as animations and behaviors**
-* [Blend More Info](https://docs.microsoft.com/en-us/visualstudio/designers/creating-a-ui-by-using-blend-for-visual-studio?view=vs-2017)
+* [Blend More Informations](https://docs.microsoft.com/en-us/visualstudio/designers/creating-a-ui-by-using-blend-for-visual-studio?view=vs-2017)
 
 @snap[north-east]
 ![](/Lectures/Lecture10/Assets/img/BlendLogo.png)

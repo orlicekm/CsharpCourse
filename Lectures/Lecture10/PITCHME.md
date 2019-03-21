@@ -638,7 +638,7 @@ MainWindow.xaml.cs:
 @snapend
 
 @snap[east]
-![](/Lectures/Lecture10/Assets/img/blend.png)
+![](/Lectures/Lecture10/Assets/img/BlendLogo.png)
 @snapend
 
 +++

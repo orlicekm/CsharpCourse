@@ -245,7 +245,7 @@ System.Object
 
 +++
 ### Content Controls
-* *Only one descendant*
+* **Only one descendant**
 * `Border` 
   * Border and background around some content
 * `Button`
@@ -529,6 +529,7 @@ messenger and other patterns v MVVM? - spytat sa
   * E.g. *begin a set of visual effects* as a *reaction to a user action*
 
 +++
+https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives?view=netframework-4.7.2 to custom components
 todo sample + creating custom style
 
 +++

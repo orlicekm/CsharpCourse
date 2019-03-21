@@ -481,7 +481,15 @@ public class MainViewModel {
 TODO collection binding sample
 
 ---
-### Commands
+## Commands
+* `Command` is an abstract and *loosely-coupled* version of `event`
+* E.g., *Copy, Cut, Paste, Save, etc...*
+* Reduces the necessary code amount
+* Enables UI changes without a need to change *back-end* logic
+* Commands have *action, source, target and binding*
+
++++
+### Command Class
 * Implements interface `ICommand`
   * `public interface ICommand`
 * Methods
@@ -493,6 +501,20 @@ TODO collection binding sample
   * `CanExecuteChanged`
     * Event that is called when condition used in `CanExecute(Object)` changes
     * `CanExecute(Object)` is reevaluated, and if changed, the command can be executed
+
++++
+todo sample
+
++++
+### Commands Benefits
+* Wide range of *predefined commands*
+* Provide **automated support for user input actions**
+* Most of the components have **built-in support** for them
+  * E.g. `button` has property `Command`
+* *Clean Code* without *Code-behind*
+* **Command design pattern**
+  * Launches *action*
+  * *Checks* if the action is permited to launch
 
 +++
 ### Commands - RelayCommand
@@ -525,7 +547,7 @@ viewfactory
 what from this to WPF and what to MVVM???
 
 ---
-### WPF – Styles
+### Styles
 * **Style** is a *set of properties* applied to the *content*
   * Defines *changes in rendering*
   * Concept is the same as with *CSS*
@@ -539,7 +561,7 @@ https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives?v
 todo sample + creating custom style
 
 +++
-### WPF - Templates
+### Templates
 * Enables **complex changes to UI** state of any WPF items
 * **Available templates**
   * `ControlTemplate` – UI style sharing across multiple controls 
@@ -552,24 +574,15 @@ todo sample + creating custom style
 +++
 todo sample + material design
 
----
-### WPF - Commands
-* `Command` is an abstract and *loosely-coupled* version of `event`
-* E.g., *Copy, Cut, Paste, Save, etc...*
-* Reduces the necessary code amount
-* Enables UI changes without a need to change *back-end* logic
-* Commands have *action, source, target and binding*
 
-+++
-### Commands Benefits
-* Wide range of *predefined commands*
-* Provide **automated support for user input actions**
-* Most of the components have **built-in support** for them
-  * E.g. `button` has property `Command`
-* *Clean Code* without *Code-behind*
-* **Command design pattern**
-  * Launches *action*
-  * *Checks* if the action is permited to launch
+---
+### Material Design In XAML Toolkit
+* Material Design styles for all major WPF Framework controls
+* Additional controls to support the theme, including Multi Action Button, Cards, Dialogs, Clock
+* Easy configuration of palette
+* Icon pack
+* PM> `Install-Package MaterialDesignThemes`
+
 
 ---
 ## Declarative UI - WPF principle
@@ -643,9 +656,9 @@ MainWindow.xaml.cs:
 
 +++
 ## Silverlight
+  * Rich Internet Application (RIA) platform
 * **Silverlight** is a cross-platform, cross-browser plug-in
   * Technology is based on WPF
-  * Rich Internet Application (RIA) platform
   * Support "rich-media" functionality
   * E.g. *video, vector graphic, animations*
 * **Silverlight** and WPF shares the same XAML presentation layer
@@ -702,6 +715,8 @@ MainWindow.xaml.cs:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [Microsoft .NET Documentation](https://docs.microsoft.com/en-us/dotnet/)  
 [Vector-conversions.com](https://vector-conversions.com)  
+[Material Design In XAML](http://materialdesigninxaml.net/)  
+[Material Design In XAML - GitHub](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit)  
 [Wikipedia](https://en.wikipedia.org/)  
 
 +++

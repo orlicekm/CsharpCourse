@@ -1,5 +1,5 @@
 ﻿@snap[north span-100]
-# Windows Presentation Foundation (WPF)
+# Windows Presentation Foundation
 @snapend
 
 @snap[midpoint span-100]
@@ -577,15 +577,20 @@ todo sample + material design
 
 ---
 ### Material Design In XAML Toolkit
-* Material Design styles for all major WPF Framework controls
-* Additional controls to support the theme, including Multi Action Button, Cards, Dialogs, Clock
-* Easy configuration of palette
-* Icon pack
+* Material Design styles **for all major WPF Framework controls**
+* Additional controls to support the theme
+  * E.g. *Multi Action Buttons*, *Cards*, *Dialogs*, *Clock*
+* **Easy configuration** of palette
+* **Icon pack**
 * PM> `Install-Package MaterialDesignThemes`
+* [WPF Material Design Demo](https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit/tree/master/MainDemo.Wpf)
 
 @snap[north-east]
 ![](/Lectures/Lecture10/Assets/img/MaterialDesign.png)
 @snapend
+
++++
+todo images + comparation
 
 ---
 ## Declarative UI - WPF principle

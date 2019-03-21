@@ -626,7 +626,7 @@ MainWindow.xaml.cs:
   * Adds visual designers for advanced tasks such as animations and behaviors
 * [Blend Tour](https://docs.microsoft.com/en-us/visualstudio/designers/creating-a-ui-by-using-blend-for-visual-studio?view=vs-2017)
 
-@snap[east]
+@snap[north-east]
 ![](/Lectures/Lecture10/Assets/img/BlendLogo.png)
 @snapend
 
@@ -653,7 +653,7 @@ MainWindow.xaml.cs:
     * **Silverlight is limited in some aspects**
     * Contains only a subset of WPF
 
-@snap[north-east]
+@snap[east]
 ![](/Lectures/Lecture10/Assets/img/SilverlightLogo.png)
 @snapend
 

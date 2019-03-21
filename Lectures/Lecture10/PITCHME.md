@@ -626,6 +626,10 @@ MainWindow.xaml.cs:
   * Adds visual designers for advanced tasks such as animations and behaviors
 * [Blend Tour](https://docs.microsoft.com/en-us/visualstudio/designers/creating-a-ui-by-using-blend-for-visual-studio?view=vs-2017)
 
+@snap[east]
+![](/Lectures/Lecture10/Assets/img/BlendLogo.png)
+@snapend
+
 ---
 ### Technologies Using WPF
 * Silverlight
@@ -635,10 +639,6 @@ MainWindow.xaml.cs:
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
-@snapend
-
-@snap[east]
-![](/Lectures/Lecture10/Assets/img/BlendLogo.png)
 @snapend
 
 +++

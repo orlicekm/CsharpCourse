@@ -633,7 +633,7 @@ MainWindow.xaml.cs:
 ---
 ### Technologies Using WPF
 * Silverlight
-* Universal Windows Platform(UWP)
+* Universal Windows Platform (UWP)
 * Xamarin
 * ⋮
 

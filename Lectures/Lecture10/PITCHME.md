@@ -574,7 +574,7 @@ primitive controls + component creatoin
 
 
 ---
-### Material Design In XAML Toolkit
+## Material Design In XAML Toolkit
 * Material Design styles **for all major WPF Framework controls**
 * Additional controls to support the theme
   * E.g. *Multi Action Buttons*, *Cards*, *Dialogs*, *Clock*
@@ -588,7 +588,17 @@ primitive controls + component creatoin
 @snapend
 
 +++
-guide
+### Material Design Change
+
+@snap[west]
+![](/Lectures/Lecture10/Assets/img/WithoutMaterial.png)
+@snapend
+
+@snap[east]
+![](/Lectures/Lecture10/Assets/img/WithMaterial.png)
+@snapend
+
++++
 todo images + comparation
 
 ---

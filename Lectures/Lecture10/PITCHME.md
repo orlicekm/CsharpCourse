@@ -523,7 +523,28 @@ public class MainViewModel {
     * `CanExecute(Object)` is reevaluated, and if changed, the command can be executed
 
 +++
-todo sample
+todo commandparameter
+
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml&lang=XML&title=Command Class Sample 1/3
+@[30-31]
+@[37-38]
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml)
+
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs&lang=C#&title=Command Class Sample 2/3
+@[7-8]
+@[12-13, 15, 19]
+@[42]
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs)
+
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Commands/SendRightTextCommand.cs&lang=C#&title=Command Class Sample 3/3
+@[7-8]
+@[9]
+@[11-14]
+@[16-19]
+@[21-24]
+@[23]
+@[26-30]
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Commands/SendRightTextCommand.cs)
 
 +++
 ### Commands Benefits
@@ -629,7 +650,7 @@ primitive controls + component creatoin
     <Application.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Dark.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />

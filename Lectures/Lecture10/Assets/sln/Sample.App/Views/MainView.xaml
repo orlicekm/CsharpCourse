@@ -3,13 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
-        xmlns:ei="http://schemas.microsoft.com/expression/2010/interactions"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:viewModels="clr-namespace:Sample.App.ViewModels"
         DataContext="{Binding MainViewModel, Source={StaticResource ViewModelLocator}}"
         d:DataContext="{d:DesignInstance viewModels:MainViewModel, IsDesignTimeCreatable=False}"
         mc:Ignorable="d"
-        Title="MainView" Height="250" Width="400">
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MainView" Height="300" Width="400">
     
 
     <Grid>
@@ -29,6 +31,6 @@
 
         <Label Grid.Row="0" Grid.Column="1" Margin="10" Content="{Binding RightText, UpdateSourceTrigger=PropertyChanged}"/>
         <TextBox Name="RightTextBox" Grid.Row="1" Grid.Column="1" Margin="10"/>
-        <Button Grid.Row="2" Grid.Column="1" Margin="10" Content="Send" Command="{Binding WriteRightTextCommand}" CommandParameter="{Binding ElementName=RightTextBox, Path=Text}"/>
+        <Button Grid.Row="2" Grid.Column="1" Margin="10" Content="Send" Command="{Binding WriteRightTextCommand}" CommandParameter="{Binding ElementName=RightTextBox, Path=Text}" IsEnabled="{Binding ElementName=RightTextBox, Path=Text, Converter={StaticResource NullOrEmptyToIsEnabledConverter}}"/>
     </Grid>
 </Window>

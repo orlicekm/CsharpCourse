@@ -574,7 +574,7 @@ private bool CanExecute() {
 }
 ```
 
-+++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Commands/RelayCommand.cs&lang=C#&title=Relay Command Sample 2/3
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Commands/RelayCommand.cs&lang=C#&title=Relay Command Sample 1/3
 @[6-7]
 @[8-9]
 @[11-15]

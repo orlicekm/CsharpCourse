@@ -621,7 +621,7 @@ primitive controls + component creatoin
 
 +++ 
 ### Material Design Quick Start 2/3
-* Edit MainWindow.xaml to following:
+* Edit *MainWindow.xaml* to following:
 
 ```XML
 <Window . . .

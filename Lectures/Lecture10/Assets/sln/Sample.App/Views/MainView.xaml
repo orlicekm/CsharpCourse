@@ -11,7 +11,7 @@
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
-        Title="MainView" Height="300" Width="400">
+        Title="MainView" Height="320" Width="500">
 
 
     <Grid>
@@ -20,22 +20,35 @@
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="2*" />
-            <RowDefinition Height="*" />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Margin="10" Content="{Binding LeftText, UpdateSourceTrigger=PropertyChanged}" />
-        <TextBox Name="LeftTextBox" Grid.Row="1" Margin="10" />
-        <Button Grid.Row="2" Margin="10" Content="Send" Command="{Binding WriteLeftTextCommand}"
-                CommandParameter="{Binding ElementName=LeftTextBox, Path=Text}"
-                IsEnabled="{Binding ElementName=LeftTextBox, Path=Text, Converter={StaticResource NullOrEmptyToIsEnabledConverter}}" />
+        <Label Grid.Row="0" Grid.Column="0" Margin="10"
+               Content="{Binding LeftText, UpdateSourceTrigger=PropertyChanged}" />
+        <TextBox Name="LeftTextBox" Grid.Row="1" Grid.Column="0" Margin="10" />
+        <StackPanel Grid.Row="2" Grid.Column="0" Margin="5">
+            <Button Margin="5" Content="Send (Enabled By Converter)"
+                    Command="{Binding WriteLeftWithoutCanExecuteCommand}"
+                    CommandParameter="{Binding ElementName=LeftTextBox, Path=Text}"
+                    IsEnabled="{Binding ElementName=LeftTextBox, Path=Text, Converter={StaticResource NullOrEmptyToIsEnabledConverter}}" />
+            <Button Margin="5" Content="Send (Enabled By CanExecute)"
+                    Command="{Binding WriteLeftWithCanExecuteCommand}"
+                    CommandParameter="{Binding ElementName=LeftTextBox, Path=Text}" />
+        </StackPanel>
 
         <Label Grid.Row="0" Grid.Column="1" Margin="10"
                Content="{Binding RightText, UpdateSourceTrigger=PropertyChanged}" />
         <TextBox Name="RightTextBox" Grid.Row="1" Grid.Column="1" Margin="10" />
-        <Button Grid.Row="2" Grid.Column="1" Margin="10" Content="Send" Command="{Binding WriteRightTextCommand}"
-                CommandParameter="{Binding ElementName=RightTextBox, Path=Text}"
-                IsEnabled="{Binding ElementName=RightTextBox, Path=Text, Converter={StaticResource NullOrEmptyToIsEnabledConverter}}" />
+        <StackPanel Grid.Row="2" Grid.Column="1" Margin="5">
+            <Button Margin="5" Content="Send (Enabled By Converter)"
+                    Command="{Binding WriteRightWithoutCanExecuteCommand}"
+                    CommandParameter="{Binding ElementName=RightTextBox, Path=Text}"
+                    IsEnabled="{Binding ElementName=RightTextBox, Path=Text, Converter={StaticResource NullOrEmptyToIsEnabledConverter}}" />
+            <Button Margin="5" Content="Send (Enabled By CanExecute)"
+                    Command="{Binding WriteRightWithCanExecuteCommand}"
+                    CommandParameter="{Binding ElementName=RightTextBox, Path=Text}" />
+        </StackPanel>
     </Grid>
 </Window>

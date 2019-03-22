@@ -29,11 +29,10 @@ namespace Sample.App.Commands
             executeAction?.Invoke(parameter);
         }
 
-        public event EventHandler CanExecuteChanged;
-
-        public void RaiseCanExecuteChanged()
+        public event EventHandler CanExecuteChanged
         {
-            CanExecuteChanged?.Invoke(this, EventArgs.Empty);
+            add => CommandManager.RequerySuggested += value;
+            remove => CommandManager.RequerySuggested -= value;
         }
     }
 }

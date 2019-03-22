@@ -11,8 +11,10 @@ namespace Sample.App.ViewModels
 
         public MainViewModel()
         {
-            WriteLeftTextCommand = new RelayCommand(WriteLeftText);
-            WriteRightTextCommand = new SendRightTextCommand(this);
+            WriteLeftWithCanExecuteCommand = new RelayCommand(WriteLeftText, CanWriteLeftText);
+            WriteLeftWithoutCanExecuteCommand = new RelayCommand(WriteLeftText);
+            WriteRightWithCanExecuteCommand = new WriteRightWithCanExecuteCommand(this);
+            WriteRightWithoutCanExecuteCommand = new WriteRightWithoutCanExecuteCommand(this);
 
             LeftText = "Relay Command Sample";
             RightText = "Command Class Sample";
@@ -38,12 +40,19 @@ namespace Sample.App.ViewModels
             }
         }
 
-        public ICommand WriteLeftTextCommand { get; set; }
-        public ICommand WriteRightTextCommand { get; set; }
+        public ICommand WriteLeftWithCanExecuteCommand { get; set; }
+        public ICommand WriteLeftWithoutCanExecuteCommand { get; set; }
+        public ICommand WriteRightWithCanExecuteCommand { get; set; }
+        public ICommand WriteRightWithoutCanExecuteCommand { get; set; }
 
-        private void WriteLeftText(object obj)
+        private void WriteLeftText(object parameter)
         {
-            LeftText = obj as string;
+            LeftText = parameter as string;
+        }
+
+        private bool CanWriteLeftText(object parameter)
+        {
+            return !string.IsNullOrEmpty(parameter as string);
         }
     }
 }

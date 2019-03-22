@@ -4,11 +4,11 @@ using Sample.App.ViewModels;
 
 namespace Sample.App.Commands
 {
-    public class SendRightTextCommand : ICommand
+    public class WriteRightWithoutCanExecuteCommand : ICommand
     {
         private readonly MainViewModel mainViewModel;
 
-        public SendRightTextCommand(MainViewModel mainViewModel)
+        public WriteRightWithoutCanExecuteCommand(MainViewModel mainViewModel)
         {
             this.mainViewModel = mainViewModel;
         }

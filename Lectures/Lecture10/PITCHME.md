@@ -392,7 +392,7 @@ and others...
 TODO binding sample
 
 +++
-#### Collections
+### Collections
 * Property is a Collection
   * Items are represented by a collection of inner elements
   * `System.Object`

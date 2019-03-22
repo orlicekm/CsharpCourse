@@ -388,11 +388,11 @@ and others...
     * `class` containing the *source* need to implement `INotifyPropertyChanged`
     * When *something* changes, `PropertyChanged` event needs to `Invoke()`
 
-+++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainWindow.xaml.cs&lang=XML&title=Binding Sample 1/3
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml&lang=XML&title=Binding Sample 1/3
 @[7-8]
 @[28]
 @[34-35]
-[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainWindow.xaml.cs)
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml)
 
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/Base/ViewModelBase.cs&lang=C#&title=Binding Sample 2/3
 @[6-14]

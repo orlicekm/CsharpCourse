@@ -388,13 +388,31 @@ and others...
     * `class` containing the *source* need to implement `INotifyPropertyChanged`
     * When *something* changes, `PropertyChanged` event needs to `Invoke()`
 
-+++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainWindow.xaml.cs&lang=C#&title=Binding Sample 1/3
-@[8-14]
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainWindow.xaml.cs&lang=XML&title=Binding Sample 1/3
+@[7-8]
+@[28]
+@[34-35]
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainWindow.xaml.cs)
+
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/Base/ViewModelBase.cs&lang=C#&title=Binding Sample 2/3
+@[6-14]
 @[8]
-@[10-13]
+@[10-11, 13]
 @[12]
-@[8-14]
-[Code sample](/Lectures/Lecture10/Assets/sln/HelloWpf/MainWindow.xaml.cs)
+@[6-14]
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/Base/ViewModelBase.cs)
+
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs&lang=C#&title=Binding Sample 2/3
+@[7-8]
+@[9-10]
+@[12-13, 17-19]
+@[21-29]
+@[23]
+@[24-26, 28]
+@[27]
+@[21-29]
+@[31-39]
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs)
 
 +++
 ### Collections

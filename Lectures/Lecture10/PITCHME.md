@@ -405,13 +405,14 @@ and others...
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs&lang=C#&title=Binding Sample 2/3
 @[7-8]
 @[9-10]
-@[12-13, 17-19]
-@[21-29]
-@[23]
-@[24-26, 28]
-@[27]
-@[21-29]
-@[31-39]
+@[12-13, 19-21]
+@[23-31]
+@[25]
+@[26-27, 30]
+@[28]
+@[29]
+@[23-31]
+@[33-41]
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs)
 
 +++

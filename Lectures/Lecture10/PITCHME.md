@@ -526,7 +526,6 @@ public class MainViewModel {
 todo commandparameter
 
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml&lang=XML&title=Command Class Sample 1/3
-@[30-31]
 @[37-38]
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml)
 
@@ -559,7 +558,7 @@ todo commandparameter
 
 +++
 ### Commands - RelayCommand
-* RelayCommand – [](https://msdn.microsoft.com/en-us/magazine/dn237302.aspx?f=255&MSPPError=-2147217396), Telerik
+* RelayCommand – [MVVM - Commands, RelayCommands and EventToCommand](https://msdn.microsoft.com/en-us/magazine/dn237302.aspx?f=255&MSPPError=-2147217396), Telerik
 
 * MyViewModel.cs:
 
@@ -575,8 +574,30 @@ private bool CanExecute() {
 }
 ```
 
-+++
-todo better relay commmand
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Commands/RelayCommand.cs&lang=C#&title=Relay Command Sample 2/3
+@[6-7]
+@[8-9]
+@[11-15]
+@[17]
+@[18-20]
+@[22-26]
+@[27-30]
+@[32]
+@[34-37]
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Commands/RelayCommand.cs)
+
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml&lang=XML&title=Relay Command Sample 2/3
+@[30-31]
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml)
+
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs&lang=C#&title=Relay Command Sample 3/3
+@[7-8]
+@[12-14, 19]
+@[41]
+@[44-47]
+@[46]
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs)
+
 
 ---
 ## todo

@@ -599,7 +599,53 @@ primitive controls + component creatoin
 @snapend
 
 +++
-todo images + comparation
+### Material Design Quick Start 1/3
+1. Start new WPF project
+2. Install MaterialDesignThemes nuget: `Install-Package MaterialDesignThemes`
+3. Edit *App.xaml* to following:
+
+```XML
+<Application . . . >
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
+```
+
++++ 
+### Material Design Quick Start 2/3
+4. Edit MainWindow.xaml to following:
+
+```XML
+<Window . . .
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid>
+        <materialDesign:Card Padding="32" Margin="16">
+            <TextBlock Style="{DynamicResource MaterialDesignTitleTextBlock}">My First Material Design App</TextBlock>
+        </materialDesign:Card>
+    </Grid>
+</Window> 
+```
+
++++
+### Material Design Quick Start 3/3
+5. Run the app
+
+![](/Lectures/Lecture10/Assets/img/materialquickstart.png)
 
 ---
 ## Declarative UI - WPF principle
@@ -740,6 +786,7 @@ MainWindow.xaml.cs:
 ## Refences to used images:
 [Fiverr - I Will Develop Wpf And Xaml Programs](https://www.fiverr.com/moustafashaban/develop-wpf-and-xaml-programs)  
 [Microsoft .NET Documentation](https://docs.microsoft.com/en-us/dotnet/)  
+[Material Design In XAML](http://materialdesigninxaml.net/)  
 [David Pritchard website](http://davidpritchard.org/)  
 [Vector-conversions.com](https://vector-conversions.com)  
 [Wikipedia](https://en.wikipedia.org/)  

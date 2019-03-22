@@ -457,7 +457,8 @@ public class MainViewModel {
             <TextBlock Text="{Binding Title}" />
             <TextBlock Text="{Binding SubTitle}" />
          </StackPanel>
-      </DataTemplate> </ListBox.ItemTemplate>
+      </DataTemplate> 
+   </ListBox.ItemTemplate>
 </ListBox>
 ```
 
@@ -834,6 +835,10 @@ MainWindow.xaml.cs:
 ### Xamarin Sample
 
 ![](/Lectures/Lecture10/Assets/img/Xamarin_allhanselman.png)
+
+---
+## WPF Demo
+![](/Lectures/Lecture10/Assets/img/demo.png)
 
 ---
 ## References:

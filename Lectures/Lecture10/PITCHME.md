@@ -502,6 +502,9 @@ public class MainViewModel {
 * Existing collections
   * To create a wrapper implementing `INotifyCollectionChanged`
 
++++
+## todo collection sample
+
 ---
 ## Commands
 * `Command` is an abstract and *loosely-coupled* version of `event`
@@ -525,7 +528,7 @@ public class MainViewModel {
     * `CanExecute(Object)` is reevaluated, and if changed, the command can be executed
 
 +++
-todo commandparameter
+todo commandparameter, todo edit bottom with canexecute canexecute
 
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml&lang=XML&title=Command Class Sample 1/3
 @[37-38]
@@ -605,10 +608,7 @@ private bool CanExecute() {
 ## todo
 * view model locator
 * converters
-
-* MVVM lecture?
-  * messenger
-  * viewfactory
+* viewfactory
 
 ---
 ### Styles

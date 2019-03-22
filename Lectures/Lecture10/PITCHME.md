@@ -390,8 +390,8 @@ and others...
 
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml&lang=XML&title=Binding Sample 1/3
 @[7-8]
-@[28]
-@[34-35]
+@[28-29]
+@[41-42]
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml)
 
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/Base/ViewModelBase.cs&lang=C#&title=Binding Sample 2/3

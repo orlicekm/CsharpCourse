@@ -600,9 +600,9 @@ primitive controls + component creatoin
 
 +++
 ### Material Design Quick Start 1/3
-1. Start new WPF project
-2. Install MaterialDesignThemes nuget: `Install-Package MaterialDesignThemes`
-3. Edit *App.xaml* to following:
+* Start new WPF project
+* Install MaterialDesignThemes nuget: `Install-Package MaterialDesignThemes`
+* Edit *App.xaml* to following:
 
 ```XML
 <Application . . . >
@@ -621,7 +621,7 @@ primitive controls + component creatoin
 
 +++ 
 ### Material Design Quick Start 2/3
-4. Edit MainWindow.xaml to following:
+* Edit MainWindow.xaml to following:
 
 ```XML
 <Window . . .
@@ -643,7 +643,7 @@ primitive controls + component creatoin
 
 +++
 ### Material Design Quick Start 3/3
-5. Run the app
+* Run the app
 
 ![](/Lectures/Lecture10/Assets/img/materialquickstart.png)
 

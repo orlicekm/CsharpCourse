@@ -12,7 +12,7 @@
         Background="{DynamicResource MaterialDesignPaper}"
         FontFamily="{DynamicResource MaterialDesignFont}"
         Title="MainView" Height="300" Width="400">
-    
+
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -25,12 +25,17 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <Label Grid.Row="0" Margin="10" Content="{Binding LeftText, UpdateSourceTrigger=PropertyChanged}"/>
+        <Label Grid.Row="0" Margin="10" Content="{Binding LeftText, UpdateSourceTrigger=PropertyChanged}" />
         <TextBox Name="LeftTextBox" Grid.Row="1" Margin="10" />
-        <Button Grid.Row="2" Margin="10" Content="Send" Command="{Binding WriteLeftTextCommand}" CommandParameter="{Binding ElementName=LeftTextBox, Path=Text}" IsEnabled="{Binding ElementName=LeftTextBox, Path=Text, Converter={StaticResource NullOrEmptyToIsEnabledConverter}}"/>
+        <Button Grid.Row="2" Margin="10" Content="Send" Command="{Binding WriteLeftTextCommand}"
+                CommandParameter="{Binding ElementName=LeftTextBox, Path=Text}"
+                IsEnabled="{Binding ElementName=LeftTextBox, Path=Text, Converter={StaticResource NullOrEmptyToIsEnabledConverter}}" />
 
-        <Label Grid.Row="0" Grid.Column="1" Margin="10" Content="{Binding RightText, UpdateSourceTrigger=PropertyChanged}"/>
-        <TextBox Name="RightTextBox" Grid.Row="1" Grid.Column="1" Margin="10"/>
-        <Button Grid.Row="2" Grid.Column="1" Margin="10" Content="Send" Command="{Binding WriteRightTextCommand}" CommandParameter="{Binding ElementName=RightTextBox, Path=Text}" IsEnabled="{Binding ElementName=RightTextBox, Path=Text, Converter={StaticResource NullOrEmptyToIsEnabledConverter}}"/>
+        <Label Grid.Row="0" Grid.Column="1" Margin="10"
+               Content="{Binding RightText, UpdateSourceTrigger=PropertyChanged}" />
+        <TextBox Name="RightTextBox" Grid.Row="1" Grid.Column="1" Margin="10" />
+        <Button Grid.Row="2" Grid.Column="1" Margin="10" Content="Send" Command="{Binding WriteRightTextCommand}"
+                CommandParameter="{Binding ElementName=RightTextBox, Path=Text}"
+                IsEnabled="{Binding ElementName=RightTextBox, Path=Text, Converter={StaticResource NullOrEmptyToIsEnabledConverter}}" />
     </Grid>
 </Window>

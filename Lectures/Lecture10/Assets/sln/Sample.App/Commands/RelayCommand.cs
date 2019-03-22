@@ -5,8 +5,8 @@ namespace Sample.App.Commands
 {
     public class RelayCommand : ICommand
     {
-        private readonly Action<object> executeAction;
         private readonly Func<object, bool> canExecuteAction;
+        private readonly Action<object> executeAction;
 
         public RelayCommand(Action<object> executeAction, Func<object, bool> canExecuteAction = null)
         {
@@ -17,7 +17,6 @@ namespace Sample.App.Commands
         public RelayCommand(Action executeAction, Func<bool> canExecuteAction = null)
             : this(p => executeAction(), p => canExecuteAction?.Invoke() ?? true)
         {
-
         }
 
         public bool CanExecute(object parameter)
@@ -30,11 +29,11 @@ namespace Sample.App.Commands
             executeAction?.Invoke(parameter);
         }
 
+        public event EventHandler CanExecuteChanged;
+
         public void RaiseCanExecuteChanged()
         {
             CanExecuteChanged?.Invoke(this, EventArgs.Empty);
         }
-
-        public event EventHandler CanExecuteChanged;
     }
 }

@@ -11,16 +11,11 @@ namespace Sample.App.ViewModels
 
         public MainViewModel()
         {
-            WriteLeftTextCommand = new RelayCommand( WriteLeftText);
+            WriteLeftTextCommand = new RelayCommand(WriteLeftText);
             WriteRightTextCommand = new SendRightTextCommand(this);
 
             LeftText = "Relay Command Sample";
             RightText = "Command Class Sample";
-        }
-
-        private void WriteLeftText(object obj)
-        {
-            LeftText = obj as string;
         }
 
         public string LeftText
@@ -45,5 +40,10 @@ namespace Sample.App.ViewModels
 
         public ICommand WriteLeftTextCommand { get; set; }
         public ICommand WriteRightTextCommand { get; set; }
+
+        private void WriteLeftText(object obj)
+        {
+            LeftText = obj as string;
+        }
     }
 }

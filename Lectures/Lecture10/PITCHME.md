@@ -388,8 +388,13 @@ and others...
     * `class` containing the *source* need to implement `INotifyPropertyChanged`
     * When *something* changes, `PropertyChanged` event needs to `Invoke()`
 
-+++
-TODO binding sample
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainWindow.xaml.cs&lang=C#&title=Binding Sample 1/3
+@[8-14]
+@[8]
+@[10-13]
+@[12]
+@[8-14]
+[Code sample](/Lectures/Lecture10/Assets/sln/HelloWpf/MainWindow.xaml.cs)
 
 +++
 ### Collections
@@ -477,9 +482,6 @@ public class MainViewModel {
 * Existing collections
   * To create a wrapper implementing `INotifyCollectionChanged`
 
-+++
-TODO collection binding sample
-
 ---
 ## Commands
 * `Command` is an abstract and *loosely-coupled* version of `event`
@@ -523,9 +525,9 @@ todo sample
 * MyViewModel.cs:
 
 ```C#
-private RelayCommand _myCommand;
-public RelayCommand MyCommand => _myCommand ?? 
-   (_myCommand = new RelayCommand(Execute,CanExecute);
+private RelayCommand myCommand;
+public RelayCommand MyCommand => myCommand ?? 
+   (myCommand = new RelayCommand(Execute,CanExecute);
 private void Execute() {
       //...
 }
@@ -538,13 +540,13 @@ private bool CanExecute() {
 todo better relay commmand
 
 ---
-todo messenger
-converters
-classic command + relay command
-view model locator
-viewfactory
+## todo
+* view model locator
+* converters
 
-what from this to WPF and what to MVVM???
+* MVVM lecture?
+  * messenger
+  * viewfactory
 
 ---
 ### Styles

@@ -4,7 +4,7 @@ using Sample.App.ViewModels;
 
 namespace Sample.App.Commands
 {
-    public class SendRightTextCommand: ICommand
+    public class SendRightTextCommand : ICommand
     {
         private readonly MainViewModel mainViewModel;
 
@@ -28,5 +28,5 @@ namespace Sample.App.Commands
             add => CommandManager.RequerySuggested += value;
             remove => CommandManager.RequerySuggested -= value;
         }
-}
+    }
 }

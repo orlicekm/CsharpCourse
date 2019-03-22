@@ -26,7 +26,7 @@
 
 +++
 ### Vector Graphics
-* All application writen with WPF are **Direct3D enabled**
+* All applications writen with WPF are **Direct3D enabled**
  * **Vector based** engine ensures performance
  * *Rendering* is accelerated by *graphics card*
  * Benefits
@@ -85,7 +85,7 @@
 * Declares *behavior* and *interaction* of UI componets
 * Form of *serialization of object hierarchy*
 * *.NET namespaces* are represented by *XML namespaces*
-* Typicaly closely connected with *Code-behind* class
+* Typically closely connected with *Code-behind* class
 
 @snap[east]
 ![](/Lectures/Lecture10/Assets/img/XAMLlogo.png)
@@ -94,7 +94,7 @@
 +++
 ### XAML - Basics
 * **XAML** is based on **XML**
-* *Declaration* and *initiation* of *.NET objects*
+* *Declaration* and *initiliazation* of *.NET objects*
 * Used **to separate *UI* from *Code-behind***
   * *Backend* from *frontend*
 * Contains element hierarchy representing visual objects
@@ -129,7 +129,7 @@
   * `x:Class` - class containing *Code-behind*
   * `xmlns:x` - mandatory namespace for XAML
   * `xmlns:d` - optional *design time* functionality
-  * `mc:Ignorable` - ingnoration of namespaces in *runtime*
+  * `mc:Ignorable` - ignoration of namespaces in *runtime*
   * `xmlns` - namespace with build-in components in WPF
 * *Root element* `Windows` declares a partial class
 * `Width, Height, Title` are *properties*
@@ -271,7 +271,7 @@ System.Object
 ### Positioning Properties
 * `Width, MinWidth, MaxWidth`
 * `HorizontalAlignment, VerticalAlignment`
-  * Alignment related to parrent element
+  * Alignment related to parent element
 * `HorizontalContentAlignment, VerticalContentAlignment`
   * Alignment of inner content
 * `Margin, Padding`
@@ -328,9 +328,9 @@ Username: <Run FontWeight="Bold" Text="{Binding UserName}"/>
 and others...
 
 ---
-### DataContex
+### DataContext
 * Property of `FrameworkElement`
-* References parent's `Datacontext` if not set on an element.
+* References parent's `DataContext` if not set on an element.
 * Perfect for *data-binding*
 * Type `object`, thus can be set to anything
 
@@ -557,10 +557,6 @@ what from this to WPF and what to MVVM???
   * E.g. *begin a set of visual effects* as a *reaction to a user action*
 
 +++
-https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives?view=netframework-4.7.2 to custom components
-todo sample + creating custom style
-
-+++
 ### Templates
 * Enables **complex changes to UI** state of any WPF items
 * **Available templates**
@@ -572,7 +568,9 @@ todo sample + creating custom style
     * E.g. `TreeView`
 
 +++
-todo sample + material design
+todo
+https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives?view=netframework-4.7.2 to custom components
+primitive controls + component creatoin
 
 
 ---
@@ -590,6 +588,7 @@ todo sample + material design
 @snapend
 
 +++
+guide
 todo images + comparation
 
 ---
@@ -681,12 +680,12 @@ MainWindow.xaml.cs:
 +++
 ### Siverlight - Deprecated
 * End of overall support is scheduled to **5th of October 2021**  
-  * *IE7-8* - support was removed between 2014-2016 (depending on the OS)
+  * *IE7-8* - support had been removed between 2014-2016 (depending on the OS)
   * *IE9-11* - support will last until late 2021
   * *Microsoft Edge* - no Silverlight plugin available
   * *Google Chrome* - no longer supported since September 2015
   * *Firefox* - no longer supported since March 2017
-* Statistic from February 2018 shows that **fewer than 0.1% sites used Silverlight**
+* Statistics from February 2018 show that **fewer than 0.1% sites used Silverlight**
 
 +++
 ## Universal Windows Platform

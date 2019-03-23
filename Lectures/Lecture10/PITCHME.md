@@ -502,8 +502,22 @@ public class MainViewModel {
 * Existing collections
   * To create a wrapper implementing `INotifyCollectionChanged`
 
++++?code=/Lectures/Lecture10/Assets/sln/CollectionBinding/MainViewModel.cs&lang=C#&title=Binding Collection Sample 1/3
+@[5-22]
+@[7-19]
+@[9-18]
+@[21]
+@[5-22]
+[Code sample](/Lectures/Lecture10/Assets/sln/CollectionBinding/MainViewModel.cs)
+
++++?code=/Lectures/Lecture10/Assets/sln/CollectionBinding/MainWindow.xaml&lang=C#&title=Binding Collection Sample 2/3
+@[9]
+[Code sample](/Lectures/Lecture10/Assets/sln/CollectionBinding/MainWindow.xaml)
+
 +++
-## todo collection sample
+#### Binding Collection Sample 3/3
+
+![](/Lectures/Lecture10/Assets/img/CollectionBinding.png)
 
 ---
 ## Commands

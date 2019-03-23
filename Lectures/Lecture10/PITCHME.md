@@ -632,10 +632,18 @@ private bool CanExecute() {
     * E.g. `TreeView`
 
 +++
-todo
-https://docs.microsoft.com/en-us/dotnet/api/system.windows.controls.primitives?view=netframework-4.7.2 to custom components
-primitive controls + component creatoin
+### Custom Control Creation
+* *Class* which offers its own functionality
+  * Style and template defined in *generic.xaml**
+* `System.Windows.Controls.Primitives` Namespace
+  * Contains **base classes and controls**
+  * Intended to be used as part of other more complex controls
 
+![](/Lectures/Lecture10/Assets/img/CustomControl.jpeg)
+
++++?code=/Lectures/Lecture10/Assets/sln/CustomControl/MainWindow.xaml&lang=XML&title=Custom Control Sample
+@[11-12]
+[Code sample](/Lectures/Lecture10/Assets/sln/CustomControl/MainWindow.xaml)
 
 ---
 ## Material Design In XAML Toolkit

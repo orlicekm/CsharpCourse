@@ -663,8 +663,22 @@ private bool CanExecute() {
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Converters/NullOrEmptyToIsEnabledConverter.cs)
 
 ---
-## todo
-* viewfactory
+## Views Opening
+* Open **view inside another view**
+```XML
+<Window ...
+    xmlns:views="clr-namespace:ViewsNamespace"
+    ... >
+    <views:AnotherView />
+</Window>
+```
+
+* Open **view in new window**
+  * Creating a new window is a job for the *ViewModel*
+    * It is not part of ViewModel responsibilities to know, what View should be created
+    * See [Demonstration project](/Lectures/Lecture10/Assets/sln/OpeningWindow)
+  * Recommends to use MVVM framework
+    * Solves problems with wraping all this up
 
 ---
 ### Styles

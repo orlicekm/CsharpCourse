@@ -579,9 +579,9 @@ public void Execute(object parameter)
 @[21-24]
 @[23]
 @[26-30]
-[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Commands/WriteRightWithCanExecuteCommand.cs)
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Commands/WriteRightWithoutCanExecuteCommand.cs)
 
-+++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Commands/WriteRightWithoutCanExecuteCommand.cs&lang=C#&title=Command Class Sample 4/4
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Commands/WriteRightWithCanExecuteCommand.cs&lang=C#&title=Command Class Sample 4/4
 @[7-8]
 @[16-19]
 @[18]

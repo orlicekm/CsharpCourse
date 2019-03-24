@@ -625,8 +625,7 @@ private bool CanExecute() {
 @[18-20]
 @[22-26]
 @[27-30]
-@[32]
-@[34-37]
+@[32-36]
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Commands/RelayCommand.cs)
 
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml&lang=XML&title=Relay Command Sample 2/3
@@ -635,11 +634,11 @@ private bool CanExecute() {
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml)
 
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs&lang=C#&title=Relay Command Sample 3/3
-@[7-8](1)
-@[12-15, 21](2)
-@[41](3)
-@[48-51](4)
-@[53-56](5)
+@[7-8]
+@[12-15, 21]
+@[41]
+@[48-51]
+@[53-56]
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs)
 
 ---

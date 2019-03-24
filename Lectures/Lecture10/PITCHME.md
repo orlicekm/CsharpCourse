@@ -676,7 +676,7 @@ private bool CanExecute() {
 * Open **view in new window**
   * Creating a new window is a job for the *ViewModel*
     * It is not part of ViewModel responsibilities to know, what View should be created
-    * See [Demonstration project](/Lectures/Lecture10/Assets/sln/OpeningWindow)
+    * See [Demonstration project](/Lectures/Lecture10/Assets/sln/OpeningWindow/WindowService.cs)
   * Recommends to use MVVM framework
     * Solves problems with wraping all this up
 

@@ -30,7 +30,7 @@ namespace OpeningWindow.ViewModel
 
         private void OpenWindow()
         {
-            windowService.ShowWindow<NewViewBase>();
+            windowService.ShowWindow<NewViewBaseBase>();
         }
     }
 }

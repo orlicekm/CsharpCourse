@@ -1,6 +1,6 @@
 ﻿namespace OpeningWindow.Views
 {
-    public interface IView
+    public interface IViewBase
     {
         void Show();
     }

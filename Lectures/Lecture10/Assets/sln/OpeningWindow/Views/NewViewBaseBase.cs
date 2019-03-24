@@ -1,6 +1,6 @@
 ﻿namespace OpeningWindow.Views
 {
-    public class NewViewBase : IView
+    public class NewViewBaseBase : IViewBase
     {
         public void Show()
         {

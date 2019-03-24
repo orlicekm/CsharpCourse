@@ -61,11 +61,11 @@
     <Compile Include="ViewModel\Base\ViewModelBase.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\NewViewModel.cs" />
-    <Compile Include="Views\IView.cs" />
+    <Compile Include="Views\IViewBase.cs" />
     <Compile Include="Views\NewView.xaml.cs">
       <DependentUpon>NewView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\NewViewBase.cs" />
+    <Compile Include="Views\NewViewBaseBase.cs" />
     <Compile Include="WindowService.cs" />
     <Page Include="Views\MainView.xaml">
       <Generator>MSBuild:Compile</Generator>

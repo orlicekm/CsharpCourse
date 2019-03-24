@@ -4,6 +4,6 @@ namespace OpeningWindow
 {
     public interface IWindowService
     {
-        void ShowWindow<T>() where T : class, IView, new();
+        void ShowWindow<T>() where T : class, IViewBase, new();
     }
 }

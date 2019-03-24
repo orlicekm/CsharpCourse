@@ -579,14 +579,14 @@ public void Execute(object parameter)
 @[21-24]
 @[23]
 @[26-30]
-[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Commands/WriteRightWithoutCanExecuteCommand.cs)
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Commands/WriteRightWithCanExecuteCommand.cs)
 
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Commands/WriteRightWithoutCanExecuteCommand.cs&lang=C#&title=Command Class Sample 4/4
 @[7-8]
 @[16-19]
 @[18]
 @[16-19]
-[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Commands/WriteRightWithoutCanExecuteCommand.cs)
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Commands/WriteRightWithCanExecuteCommand.cs)
 
 +++
 ### Commands Benefits
@@ -637,6 +637,25 @@ private bool CanExecute() {
 @[7-8]
 @[12-15, 21]
 @[43-44]
+@[48-51]
+@[53-56]
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs)
+
+---
+## Value Conversion
+* `IValueConverter`
+* **Use a value of one type and then present it differently**
+  * Used with data bindings
+* E.g. *NullToVisibility*
+
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml&lang=XML&title=Value Conversion Sample 1/2
+@[32-35]
+@[35]
+@[45-48]
+@[48]
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml)
+
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs&lang=C#&title=Value Conversion Sample 1/2
 @[48-51]
 @[53-56]
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs)

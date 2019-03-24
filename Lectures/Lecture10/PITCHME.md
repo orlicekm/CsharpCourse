@@ -664,7 +664,6 @@ private bool CanExecute() {
 
 ---
 ## todo
-* converters
 * viewfactory
 
 ---

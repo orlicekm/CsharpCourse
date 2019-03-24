@@ -636,7 +636,7 @@ private bool CanExecute() {
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs&lang=C#&title=Relay Command Sample 3/3
 @[7-8]
 @[12-15, 21]
-@[41]
+@[43-44]
 @[48-51]
 @[53-56]
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs)

@@ -560,19 +560,18 @@ public void Execute(object parameter)
 @[1-2]
 @[3-6]
 
- todo edit bottom with canexecute canexecute
-
-+++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml&lang=XML&title=Command Class Sample 1/3
-@[37-38]
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml&lang=XML&title=Command Class Sample 1/4
+@[45-48]
+@[49-51]
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml)
 
-+++?code=/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs&lang=C#&title=Command Class Sample 2/3
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs&lang=C#&title=Command Class Sample 2/4
 @[7-8]
-@[12-13, 15, 19]
-@[42]
+@[12-13, 16-17, 21]
+@[45-46]
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs)
 
-+++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Commands/SendRightTextCommand.cs&lang=C#&title=Command Class Sample 3/3
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Commands/WriteRightWithoutCanExecuteCommand.cs&lang=C#&title=Command Class Sample 3/4
 @[7-8]
 @[9]
 @[11-14]
@@ -580,7 +579,14 @@ public void Execute(object parameter)
 @[21-24]
 @[23]
 @[26-30]
-[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Commands/SendRightTextCommand.cs)
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Commands/WriteRightWithoutCanExecuteCommand.cs)
+
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Commands/WriteRightWithoutCanExecuteCommand.cs&lang=C#&title=Command Class Sample 4/4
+@[7-8]
+@[16-19]
+@[18]
+@[16-19]
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Commands/WriteRightWithoutCanExecuteCommand.cs)
 
 +++
 ### Commands Benefits
@@ -624,17 +630,17 @@ private bool CanExecute() {
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Commands/RelayCommand.cs)
 
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml&lang=XML&title=Relay Command Sample 2/3
-@[30-31]
+@[32-35]
+@[36-38]
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml)
 
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs&lang=C#&title=Relay Command Sample 3/3
 @[7-8]
-@[12-14, 19]
+@[12-15, 21]
 @[41]
-@[44-47]
-@[46]
+@[48-51]
+@[53-56]
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs)
-
 
 ---
 ## todo

@@ -655,10 +655,12 @@ private bool CanExecute() {
 @[48]
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml)
 
-+++?code=/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs&lang=C#&title=Value Conversion Sample 1/2
-@[48-51]
-@[53-56]
-[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs)
++++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Converters/NullOrEmptyToIsEnabledConverter.cs&lang=C#&title=Value Conversion Sample 2/2
+@[7-18]
+@[9-12]
+@[14-17]
+@[7-18]
+[Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/Converters/NullOrEmptyToIsEnabledConverter.cs)
 
 ---
 ## todo

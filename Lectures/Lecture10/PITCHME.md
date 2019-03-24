@@ -542,7 +542,25 @@ public class MainViewModel {
     * `CanExecute(Object)` is reevaluated, and if changed, the command can be executed
 
 +++
-todo commandparameter, todo edit bottom with canexecute canexecute
+### Command Parameter
+* Specify a command parameter using the `CommandParameter` property
+* **Data** in this property **will be passed to the code** that runs when the command executes
+
+```XML
+<Button Content="Send" Command="{Binding MyCommand}"
+     CommandParameter="{Binding ElementName=TextBox, Path=Text}" />
+```
+
+```C#
+public void Execute(object parameter)
+{
+    var textFromTextBox = parameter as string;
+}
+```
+@[1-2]
+@[3-6]
+
+ todo edit bottom with canexecute canexecute
 
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml&lang=XML&title=Command Class Sample 1/3
 @[37-38]
@@ -620,7 +638,6 @@ private bool CanExecute() {
 
 ---
 ## todo
-* view model locator
 * converters
 * viewfactory
 

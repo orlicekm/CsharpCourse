@@ -17,7 +17,8 @@ namespace School.BL
         private readonly RepositoryBase<TEntity> repository;
         private readonly UnitOfWork unitOfWork;
 
-        public CrudFacade(UnitOfWork unitOfWork, RepositoryBase<TEntity> repository, IMapper<TEntity, TListModel, TDetailModel> mapper)
+        public CrudFacade(UnitOfWork unitOfWork, RepositoryBase<TEntity> repository,
+            IMapper<TEntity, TListModel, TDetailModel> mapper)
         {
             this.mapper = mapper;
             this.repository = repository;

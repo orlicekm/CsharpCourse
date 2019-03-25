@@ -40,7 +40,7 @@ namespace School.BL.Mappers
                 Id = entity.Id,
                 City = entity.City,
                 State = entity.State,
-                Country = entity.Country,
+                Country = entity.Country
             };
         }
 
@@ -53,7 +53,7 @@ namespace School.BL.Mappers
                 City = entity.City,
                 State = entity.State,
                 Country = entity.Country,
-                StudentDetail = new StudentMapper().MapDetailModel(entity.Student)
+                StudentDetail = new StudentMapper().MapListModel(entity.Student)
             };
         }
     }

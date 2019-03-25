@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using School.BL.Models.Base;
+using School.BL.Models.ListModels;
 
 namespace School.BL.Models.DetailModels
 {
@@ -7,8 +8,8 @@ namespace School.BL.Models.DetailModels
     {
         public string Name { get; set; }
 
-        public AddressDetailModel Address { get; set; }
-        public GradeDetailModel Grade { get; set; }
-        public ICollection<CourseDetailModel> Courses { get; set; }
+        public AddressListModel Address { get; set; }
+        public GradeListModel Grade { get; set; }
+        public ICollection<CourseListModel> Courses { get; set; }
     }
 }

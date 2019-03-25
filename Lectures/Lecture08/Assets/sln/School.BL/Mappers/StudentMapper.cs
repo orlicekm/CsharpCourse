@@ -59,9 +59,9 @@ namespace School.BL.Mappers
             {
                 Id = entity.Id,
                 Name = entity.Name,
-                Grade = new GradeMapper().MapDetailModel(entity.Grade),
-                Address = new AddressMapper().MapDetailModel(entity.Address),
-                Courses = new CourseMapper().MapDetailModels(entity.StudentCourses?.Select(sc => sc.Course).ToList())
+                Grade = new GradeMapper().MapListModel(entity.Grade),
+                Address = new AddressMapper().MapListModel(entity.Address),
+                Courses = new CourseMapper().MapListModels(entity.StudentCourses?.Select(sc => sc.Course).ToList())
             };
         }
     }

@@ -1,4 +1,5 @@
 ﻿using School.BL.Models.Base;
+using School.BL.Models.ListModels;
 
 namespace School.BL.Models.DetailModels
 {
@@ -9,6 +10,6 @@ namespace School.BL.Models.DetailModels
         public string State { get; set; }
         public string Country { get; set; }
 
-        public StudentDetailModel StudentDetail { get; set; }
+        public StudentListModel StudentDetail { get; set; }
     }
 }

@@ -47,7 +47,7 @@ namespace School.BL.Mappers
                 Id = entity.Id,
                 Name = entity.Name,
                 Section = entity.Section,
-                Students = new StudentMapper().MapDetailModels(entity.Students)
+                Students = new StudentMapper().MapListModels(entity.Students)
             };
         }
     }

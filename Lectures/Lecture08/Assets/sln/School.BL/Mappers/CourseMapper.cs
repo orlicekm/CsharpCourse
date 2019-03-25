@@ -14,7 +14,7 @@ namespace School.BL.Mappers
             return new CourseEntity
             {
                 Id = model.Id,
-                Name = model.Name,
+                Name = model.Name
             };
         }
 
@@ -59,7 +59,7 @@ namespace School.BL.Mappers
                 Id = entity.Id,
                 Name = entity.Name,
                 Description = entity.Description,
-                Students = new StudentMapper().MapDetailModels(entity.StudentCourses?.Select(sc => sc.Student).ToList())
+                Students = new StudentMapper().MapListModels(entity.StudentCourses?.Select(sc => sc.Student).ToList())
             };
         }
     }

@@ -11,14 +11,14 @@ namespace School.BL.Tests.SetupFixtures.Base
         where TListModel : ModelBase, new()
         where TDetailModel : ModelBase, new()
     {
-        private readonly UnitOfWork unitOfWork;
+        public UnitOfWork UnitOfWork { get; }
 
         public FacadeTestsSetupFixture(IMapper<TEntity, TListModel, TDetailModel> mapper)
         {
             var schoolDbContext = CreateSchoolDbContext();
-            unitOfWork = new UnitOfWork(schoolDbContext);
-            var repository = new RepositoryBase<TEntity>(unitOfWork);
-            CrudFacadeSUT = new CrudFacade<TEntity, TListModel, TDetailModel>(unitOfWork, repository, mapper);
+            UnitOfWork = new UnitOfWork(schoolDbContext);
+            var repository = new RepositoryBase<TEntity>(UnitOfWork);
+            CrudFacadeSUT = new CrudFacade<TEntity, TListModel, TDetailModel>(UnitOfWork, repository, mapper);
         }
 
         public CrudFacade<TEntity, TListModel, TDetailModel> CrudFacadeSUT { get; set; }
@@ -37,7 +37,7 @@ namespace School.BL.Tests.SetupFixtures.Base
 
         public void Dispose()
         {
-            unitOfWork?.DbContext?.Dispose();
+            UnitOfWork?.DbContext?.Dispose();
         }
     }
 }

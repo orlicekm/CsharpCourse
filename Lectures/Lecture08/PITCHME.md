@@ -285,17 +285,17 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 
 +++
 ### How to Use AutoMapper
-1. Create sourse and destination types
+1. **Create sourse and destination** types
   * AutoMapper works best as long as the names of the members match up to the source type’s members
     * Source member called `FirstName` will automatically be mapped to a destination member with the name `FirstName`
   * Automapper by default ignores null reference exceptions when mapping your source to your target
-2. Create a map for the two types
-3. Perform mapping
+2. **Create a map for the two types**
+3. **Perform mapping**
 
 +++
 ### Create a map for the two types
-* On the left is source type
-* On the right is destination type
+* On the *left* is *source type*
+* On the *right* is *destination type*
 
 ```
 Mapper.Initialize(cfg => cfg.CreateMap<Order, OrderDto>());

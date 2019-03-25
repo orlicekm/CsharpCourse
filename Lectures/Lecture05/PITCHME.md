@@ -161,6 +161,12 @@
   * When I attempt to withdraw an amount less than my card's limit,
   * Then the withdrawal should complete without errors or warnings
 
++++
+### Single Concept per Test
+* Tests are laser focused 
+* Not testing miscellaenous
+ * Non-related things
+
 ---
 ## xUnit - Shared Content between Tests
 * It is common for unit test classes to **share setup and cleanup code**
@@ -619,11 +625,11 @@ public class TestClass2
 * Usually **represented as the number** of *items actually tested, the items found in your code, and a coverage percentage* (items tested / items found)
 
 ---
-## Testing Tips
-
-
----
-## Tests Clean Code
+## Testing Attributes Tips
+* `InternalsVisibleTo` for testing internal
+* `Ignore` for not working tests
+* `Deployment` to publish file into testing director
+* ⋮
 
 
 ---
@@ -635,6 +641,7 @@ public class TestClass2
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [The Art of Unit Testing](https://www.amazon.de/Art-Unit-Testing-Roy-Osherove/dp/1617290890)  
 [Agile Principles, Patterns, and Practices in C#](https://www.amazon.com/Agile-Principles-Patterns-Practices-C/dp/0131857258)  
+[CodingBlocks.NET - How to Write Amazing Unit Tests](https://www.codingblocks.net/podcast/how-to-write-amazing-unit-tests/)  
 [Atlassian - Continuous delivery](https://www.atlassian.com/continuous-delivery)  
 [Software Testing Help](https://www.softwaretestinghelp.com/)  
 [Microsoft Docs](https://docs.microsoft.com/en-us/)  

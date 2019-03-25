@@ -15,24 +15,9 @@ namespace School.BL.Mappers.Base
         public abstract TListModel MapListModel(TEntity entity);
         public abstract TDetailModel MapDetailModel(TEntity entity);
 
-        public ICollection<TEntity> MapEntities(ICollection<TListModel> models)
-        {
-            return models?.Select(MapEntity).ToList();
-        }
-
-        public ICollection<TEntity> MapEntities(ICollection<TDetailModel> models)
-        {
-            return models?.Select(MapEntity).ToList();
-        }
-
-        public ICollection<TListModel> MapListModels(ICollection<TEntity> entities)
-        {
-            return entities?.Select(MapListModel).ToList();
-        }
-
-        public ICollection<TDetailModel> MapDetailModels(ICollection<TEntity> entities)
-        {
-            return entities?.Select(MapDetailModel).ToList();
-        }
+        public ICollection<TEntity> MapEntities(ICollection<TListModel> models) => models?.Select(MapEntity).ToList();
+        public ICollection<TEntity> MapEntities(ICollection<TDetailModel> models) => models?.Select(MapEntity).ToList();
+        public ICollection<TListModel> MapListModels(ICollection<TEntity> entities) => entities?.Select(MapListModel).ToList();
+        public ICollection<TDetailModel> MapDetailModels(ICollection<TEntity> entities) => entities?.Select(MapDetailModel).ToList();
     }
 }

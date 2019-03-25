@@ -183,24 +183,29 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
   * More info in next lecture
 
 +++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/Base/IMapper.cs&lang=C#&title=School Mapping Sample 1/10
-@[7-9]
-@[11-12]
-@[14-15]
+@[7-10]
+@[12-15]
+@[17-20]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/Base/IMapper.cs)
 
 +++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/Base/MapperBase.cs&lang=C#&title=School Mapping Sample 2/10
-@[8-10]
-@[12, 14]
-@[16-19]
-@[21-24]
+@[8-11]
+@[13-16]
+@[18-21]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/Base/MapperBase.cs)
 
-+++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/StudentModel.cs&lang=C#&title=School Mapping Sample 3/10
-@[6-13]
-@[8]
-@[10-12]
-@[6-13]
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/DetailModels/StudentDetailModel.cs&lang=C#&title=School Mapping Sample 3/10
+@[7-14]
+@[9]
+@[11-13]
+@[7-14]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Models/StudentModel.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/ListModels/StudentListModel.cs&lang=C#&title=School Mapping Sample 4/10
+@[5-8]
+@[7]
+@[5-8]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Models/ListModels/StudentListModel.cs)
 
 +++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/StudentMapper.cs&lang=C#&title=School Mapping Sample 4/10
 @[8-9]

@@ -283,6 +283,7 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
   * **Simple configuration of types**
   * **Simple testing of mappings**
 
++++
 ### How to Use AutoMapper
 * Create sourse and destination types
 * AutoMapper works best as long as the names of the members match up to the source type’s members

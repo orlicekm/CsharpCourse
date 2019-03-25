@@ -199,7 +199,7 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 @[9]
 @[11-13]
 @[7-14]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Models/StudentModel.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Models/DetailModels/StudentDetailModel.cs)
 
 +++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/ListModels/StudentListModel.cs&lang=C#&title=School Mapping Sample 4/10
 @[5-8]
@@ -222,46 +222,37 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 @[55-66]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/StudentMapper.cs)
 
-+++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/AddressModel.cs&lang=C#&title=School Mapping Sample 5/10
-@[5-13]
-@[7-10]
-@[12]
-@[5-13]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Models/AddressModel.cs)
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/DetailModels/AddressDetailModel.cs&lang=C#&title=School Mapping Sample 6/10
+@[6-14]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/DetailModels/AddressDetailModel.cs)
 
-+++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/AddressMapper.cs&lang=C#&title=School Mapping Sample 6/10
-@[7-8]
-@[9-20]
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/ListModels/AddressListModel.cs&lang=C#&title=School Mapping Sample 7/10
+@[5-11]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Models/ListModels/AddressListModel.cs)
+
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/AddressMapper.cs&lang=C#&title=School Mapping Sample 8/10
+@[8-9]
+@[10-20]
 @[22-33]
+@[35-45]
+@[47-58]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/AddressMapper.cs)
 
-+++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/GradeModel.cs&lang=C#&title=School Mapping Sample 7/10
-@[6-12]
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/GradeMapper.cs&lang=C#&title=School Mapping Sample 9/10
 @[8-9]
-@[11]
-@[6-12]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Models/GradeModel.cs)
-
-+++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/GradeMapper.cs&lang=C#&title=School Mapping Sample 8/10
-@[7-8]
-@[9-19]
-@[21-31]
+@[10-18]
+@[20-30]
+@[32-40]
+@[42-52]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/GradeMapper.cs)
-
-+++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/CourseModel.cs&lang=C#&title=School Mapping Sample 9/10
-@[6-12]
-@[8-9]
-@[11]
-@[6-12]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Models/CourseModel.cs)
 
 +++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/CourseMapper.cs&lang=C#&title=School Mapping Sample 10/10
-@[8-9]
-@[10-11]
-@[12-24]
-@[26-28,30]
-@[33-43]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/GradeMapper.cs)
+@[9-10]
+@[21-22]
+@[23-41]
+@[44-52]
+@[54-64]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/CourseMapper.cs)
 
 ---
 ![](/Lectures/Lecture08/Assets/img/AutoMapper.png)

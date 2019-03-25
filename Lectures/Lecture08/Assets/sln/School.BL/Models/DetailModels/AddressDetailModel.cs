@@ -1,14 +1,14 @@
 ﻿using School.BL.Models.Base;
 
-namespace School.BL.Models
+namespace School.BL.Models.DetailModels
 {
-    public class AddressModel : ModelBase
+    public class AddressDetailModel : ModelBase
     {
         public string Street { get; set; }
         public string City { get; set; }
         public string State { get; set; }
         public string Country { get; set; }
 
-        public StudentModel Student { get; set; }
+        public StudentDetailModel StudentDetail { get; set; }
     }
 }

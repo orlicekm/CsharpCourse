@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 
-namespace School.BL.Models.EqualityComparers
+namespace School.BL.Models.DetailModels.EqualityComparers
 {
-    public class AddressModelEqualityComparer : IEqualityComparer<AddressModel>
+    public class AddressDetailModelEqualityComparer : IEqualityComparer<AddressDetailModel>
     {
-        public bool Equals(AddressModel x, AddressModel y)
+        public bool Equals(AddressDetailModel x, AddressDetailModel y)
         {
             if (ReferenceEquals(x, y)) return true;
             if (ReferenceEquals(x, null)) return false;
@@ -14,7 +14,7 @@ namespace School.BL.Models.EqualityComparers
                    string.Equals(x.State, y.State) && string.Equals(x.Country, y.Country);
         }
 
-        public int GetHashCode(AddressModel obj)
+        public int GetHashCode(AddressDetailModel obj)
         {
             unchecked
             {

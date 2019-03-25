@@ -1,10 +1,10 @@
 ﻿using System.Collections.Generic;
 
-namespace School.BL.Models.EqualityComparers
+namespace School.BL.Models.DetailModels.EqualityComparers
 {
-    public class NameDescriptionEqualityComparer : IEqualityComparer<CourseModel>
+    public class CourseDetailModelEqualityComparer : IEqualityComparer<CourseDetailModel>
     {
-        public bool Equals(CourseModel x, CourseModel y)
+        public bool Equals(CourseDetailModel x, CourseDetailModel y)
         {
             if (ReferenceEquals(x, y)) return true;
             if (ReferenceEquals(x, null)) return false;
@@ -13,7 +13,7 @@ namespace School.BL.Models.EqualityComparers
             return string.Equals(x.Name, y.Name) && string.Equals(x.Description, y.Description);
         }
 
-        public int GetHashCode(CourseModel obj)
+        public int GetHashCode(CourseDetailModel obj)
         {
             unchecked
             {

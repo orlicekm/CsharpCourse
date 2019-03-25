@@ -5,22 +5,34 @@ using School.DAL.Entities.Base;
 
 namespace School.BL.Mappers.Base
 {
-    public abstract class MapperBase<TEntity, TModel> : IMapper<TEntity, TModel>
+    public abstract class MapperBase<TEntity, TListModel, TDetailModel> : IMapper<TEntity, TListModel, TDetailModel>
         where TEntity : EntityBase, new()
-        where TModel : ModelBase, new()
+        where TListModel : ModelBase, new()
+        where TDetailModel : ModelBase, new()
     {
-        public abstract TEntity Map(TModel model);
+        public abstract TEntity MapEntity(TListModel model);
+        public abstract TEntity MapEntity(TDetailModel model);
+        public abstract TListModel MapListModel(TEntity entity);
+        public abstract TDetailModel MapDetailModel(TEntity entity);
 
-        public abstract TModel Map(TEntity entity);
-
-        public ICollection<TEntity> Map(ICollection<TModel> models)
+        public ICollection<TEntity> MapEntities(ICollection<TListModel> models)
         {
-            return models?.Select(Map).ToList();
+            return models?.Select(MapEntity).ToList();
         }
 
-        public ICollection<TModel> Map(ICollection<TEntity> entities)
+        public ICollection<TEntity> MapEntities(ICollection<TDetailModel> models)
         {
-            return entities?.Select(Map).ToList();
+            return models?.Select(MapEntity).ToList();
+        }
+
+        public ICollection<TListModel> MapListModels(ICollection<TEntity> entities)
+        {
+            return entities?.Select(MapListModel).ToList();
+        }
+
+        public ICollection<TDetailModel> MapDetailModels(ICollection<TEntity> entities)
+        {
+            return entities?.Select(MapDetailModel).ToList();
         }
     }
 }

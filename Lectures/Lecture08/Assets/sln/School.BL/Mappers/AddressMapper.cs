@@ -1,12 +1,25 @@
 ﻿using School.BL.Mappers.Base;
-using School.BL.Models;
+using School.BL.Models.DetailModels;
+using School.BL.Models.ListModels;
 using School.DAL.Entities;
 
 namespace School.BL.Mappers
 {
-    public class AddressMapper : MapperBase<AddressEntity, AddressModel>
+    public class AddressMapper : MapperBase<AddressEntity, AddressListModel, AddressDetailModel>
     {
-        public override AddressEntity Map(AddressModel model)
+        public override AddressEntity MapEntity(AddressListModel model)
+        {
+            if (model == null) return null;
+            return new AddressEntity
+            {
+                Id = model.Id,
+                City = model.City,
+                State = model.State,
+                Country = model.Country
+            };
+        }
+
+        public override AddressEntity MapEntity(AddressDetailModel model)
         {
             if (model == null) return null;
             return new AddressEntity
@@ -15,20 +28,32 @@ namespace School.BL.Mappers
                 City = model.City,
                 State = model.State,
                 Country = model.Country,
-                Student = new StudentMapper().Map(model.Student)
+                Student = new StudentMapper().MapEntity(model.StudentDetail)
             };
         }
 
-        public override AddressModel Map(AddressEntity entity)
+        public override AddressListModel MapListModel(AddressEntity entity)
         {
             if (entity == null) return null;
-            return new AddressModel
+            return new AddressListModel
             {
                 Id = entity.Id,
                 City = entity.City,
                 State = entity.State,
                 Country = entity.Country,
-                Student = new StudentMapper().Map(entity.Student)
+            };
+        }
+
+        public override AddressDetailModel MapDetailModel(AddressEntity entity)
+        {
+            if (entity == null) return null;
+            return new AddressDetailModel
+            {
+                Id = entity.Id,
+                City = entity.City,
+                State = entity.State,
+                Country = entity.Country,
+                StudentDetail = new StudentMapper().MapDetailModel(entity.Student)
             };
         }
     }

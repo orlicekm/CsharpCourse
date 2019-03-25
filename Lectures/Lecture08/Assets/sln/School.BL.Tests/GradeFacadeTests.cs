@@ -1,4 +1,4 @@
-﻿using School.BL.Models.EqualityComparers;
+﻿using School.BL.Models.DetailModels.EqualityComparers;
 using School.BL.Tests.SetupFixtures;
 using Xunit;
 
@@ -25,7 +25,7 @@ namespace School.BL.Tests
             var savedGradeModel = testContext.CrudFacadeSUT.Save(gradeModel);
 
             //Assert
-            Assert.Equal(gradeModel, savedGradeModel, new GradeModelEqualityComparer());
+            Assert.Equal(gradeModel, savedGradeModel, new GradeDetailModelEqualityComparer());
         }
     }
 }

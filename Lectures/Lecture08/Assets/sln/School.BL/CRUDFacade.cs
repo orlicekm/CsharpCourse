@@ -8,29 +8,35 @@ using School.DAL.Entities.Base;
 
 namespace School.BL
 {
-    public class CrudFacade<TEntity, TModel>
+    public class CrudFacade<TEntity, TListModel, TDetailModel>
         where TEntity : EntityBase, new()
-        where TModel : ModelBase, new()
+        where TListModel : ModelBase, new()
+        where TDetailModel : ModelBase, new()
     {
-        private readonly IMapper<TEntity, TModel> mapper;
+        private readonly IMapper<TEntity, TListModel, TDetailModel> mapper;
         private readonly RepositoryBase<TEntity> repository;
         private readonly UnitOfWork unitOfWork;
 
-        public CrudFacade(UnitOfWork unitOfWork, RepositoryBase<TEntity> repository, IMapper<TEntity, TModel> mapper)
+        public CrudFacade(UnitOfWork unitOfWork, RepositoryBase<TEntity> repository, IMapper<TEntity, TListModel, TDetailModel> mapper)
         {
             this.mapper = mapper;
             this.repository = repository;
             this.unitOfWork = unitOfWork;
         }
 
-        public IEnumerable<TModel> GetAll()
+        public IEnumerable<TDetailModel> GetAllDetail()
         {
-            return repository.GetAll().Select(mapper.Map).ToArray();
+            return mapper.MapDetailModels(repository.GetAll().ToList());
         }
 
-        public TModel GetById(Guid id)
+        public IEnumerable<TListModel> GetAllList()
         {
-            return mapper.Map(repository.GetById(id));
+            return mapper.MapListModels(repository.GetAll().ToList());
+        }
+
+        public TDetailModel GetById(Guid id)
+        {
+            return mapper.MapDetailModel(repository.GetById(id));
         }
 
         public void Delete(Guid id)
@@ -39,22 +45,27 @@ namespace School.BL
             unitOfWork.Commit();
         }
 
-        public void Delete(TModel model)
+        public void Delete(TListModel model)
         {
             Delete(model.Id);
         }
 
-        public TModel InitializeNew()
+        public void Delete(TDetailModel model)
         {
-            return mapper.Map(repository.InitializeNew());
+            Delete(model.Id);
         }
 
-        public TModel Save(TModel model)
+        public TDetailModel InitializeNew()
         {
-            var entity = mapper.Map(model);
+            return mapper.MapDetailModel(repository.InitializeNew());
+        }
+
+        public TDetailModel Save(TDetailModel model)
+        {
+            var entity = mapper.MapEntity(model);
 
             if (entity.Id == Guid.Empty)
-                model = mapper.Map(repository.Insert(entity));
+                model = mapper.MapDetailModel(repository.Insert(entity));
             else
                 repository.Update(entity);
 

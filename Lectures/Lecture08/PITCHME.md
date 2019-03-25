@@ -248,6 +248,7 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 
 +++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/CourseMapper.cs&lang=C#&title=School Mapping Sample 10/10
 @[9-10]
+@[11-19]
 @[21-22]
 @[23-41]
 @[44-52]

@@ -283,6 +283,32 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
   * **Simple configuration of types**
   * **Simple testing of mappings**
 
+### How to Use AutoMapper
+* Create sourse and destination types
+* AutoMapper works best as long as the names of the members match up to the source type’s members
+  * Source member called `FirstName` will automatically be mapped to a destination member with the name `FirstName`
+* Automapper by default ignores null reference exceptions when mapping your source to your target
+* Create a map for the two types
+  * On the left is source type
+  * On the right is destination type
+
+```
+Mapper.Initialize(cfg => cfg.CreateMap<Order, OrderDto>());
+//or
+var config = new MapperConfiguration(cfg => cfg.CreateMap<Order, OrderDto>());
+```
+
+* Perform mapping
+
+```
+var mapper = config.CreateMapper();
+// or
+var mapper = new Mapper(config);
+OrderDto dto = mapper.Map<OrderDto>(order);
+// or
+OrderDto dto = Mapper.Map<OrderDto>(order);
+```
+
 +++?code=/Lectures/Lecture08/Assets/sln/Samples/AutoMapperTests.cs&lang=C#&title=Auto Mapper Sample
 @[12-32]
 @[14-20]

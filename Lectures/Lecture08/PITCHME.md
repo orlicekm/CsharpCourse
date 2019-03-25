@@ -326,6 +326,32 @@ OrderDto dto = Mapper.Map<OrderDto>(order);
 @[12-32]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/Samples/AutoMapperTests.cs)
 
+
++++
+### How to test Mapping
+* **Create a test** that
+  * Calls *bootstrapper class to create all the mappings*
+  * Calls *MapperConfiguration.AssertConfigurationIsValid*
+
+```C#
+var config = AutoMapperConfiguration.Configure();
+
+config.AssertConfigurationIsValid();
+```
+
++++
+### AutoMapper Supports
+* **Flattering**
+  * Take a complex object model and flatten it to a simpler model
+* **Reverse Mapping** and **Unflattening**
+  * Calling `ReverseMap`, *AutoMapper* creates a reverse mapping configuration that includes unflattening
+* **Projection**
+* **Configuration Validation**
+* **Inline Mapping**
+* **Nested Mapping**
+* Custom **Converters**, **Resolvers**
+* ⋮
+
 ---
 ## Facade
 * **Provides a unified interface** to the set of interfaces in a subsystem

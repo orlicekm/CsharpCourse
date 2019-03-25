@@ -203,24 +203,23 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 
 +++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/ListModels/StudentListModel.cs&lang=C#&title=School Mapping Sample 4/10
 @[5-8]
-@[7]
-@[5-8]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Models/ListModels/StudentListModel.cs)
 
-+++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/StudentMapper.cs&lang=C#&title=School Mapping Sample 4/10
-@[8-9]
-@[10-11]
-@[12]
-@[13-14, 25]
-@[15-18]
-@[19-20, 24]
-@[21-23]
-@[27-29]
-@[31]
-@[34-35]
-@[36]
-@[37-38, 44]
-@[39-43]
++++?code=/Lectures/Lecture08/Assets/sln/School.BL/Mappers/StudentMapper.cs&lang=C#&title=School Mapping Sample 5/10
+@[9-10]
+@[11-19]
+@[13]
+@[14-18]
+@[11-19]
+@[21-22]
+@[23]
+@[24-29, 36]
+@[30-35]
+@[38-40]
+@[42]
+@[23-42]
+@[45-53]
+@[55-66]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL/Mappers/StudentMapper.cs)
 
 +++?code=/Lectures/Lecture08/Assets/sln/School.BL/Models/AddressModel.cs&lang=C#&title=School Mapping Sample 5/10

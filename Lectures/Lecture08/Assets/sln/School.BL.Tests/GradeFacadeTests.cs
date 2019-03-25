@@ -37,7 +37,7 @@ namespace School.BL.Tests
         }
 
         [Fact]
-        public void InsertGradeWithStrudents()
+        public void InsertGradeWithStrudent()
         {
             //Arrange
             var gradeModel = testContext.CrudFacadeSUT.InitializeNew();

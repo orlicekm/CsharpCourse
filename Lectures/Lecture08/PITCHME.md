@@ -390,14 +390,14 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL.Tests/StudentFacadeTests.cs)
 
 +++?code=/Lectures/Lecture08/Assets/sln/School.BL.Tests/GradeFacadeTests.cs&lang=C#&title=School Facade Tests Sample 5/5
-@[7]
-@[9-12]
-@[14]
-@[17-29]
-@[19-22]
-@[24-25]
-@[27-28]
-@[17-29]
+@[15-16]
+@[25-37]
+@[40-41]
+@[42-45]
+@[47-19]
+@[51-59]
+@[61-62]
+@[64-66]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture08/Assets/sln/School.BL.Tests/GradeFacadeTests.cs)
 
 ---

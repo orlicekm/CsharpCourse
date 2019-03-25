@@ -394,7 +394,7 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 @[25-37]
 @[40-41]
 @[42-45]
-@[47-19]
+@[47-49]
 @[51-59]
 @[61-62]
 @[64-66]

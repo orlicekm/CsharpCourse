@@ -778,7 +778,7 @@ public class TestClass2
 
 ---
 ## Azure Pipelines
-* Automate builds and deployments with Pipelines
+* **Builds and deployments automatization**
 * Integration with GitHub
 
 @img[span-70](/Lectures/Lecture05/Assets/img/AzurePipelinesSample.jpg)

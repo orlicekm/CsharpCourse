@@ -774,9 +774,7 @@ public class TestClass2
 +++
 ## GitHub Flow
 
-@snap[east]
-@img[span-75](/Lectures/Lecture05/Assets/img/GitHubFlow.png)
-@snapend
+![](/Lectures/Lecture05/Assets/img/GitHubFlow.png)
 
 ---
 ## Azure Pipelines

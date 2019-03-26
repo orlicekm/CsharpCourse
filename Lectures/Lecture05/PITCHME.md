@@ -643,7 +643,7 @@ public class TestClass2
   * *Azure Artifacts*
   * ⋮
 
-@snap[east]
+@snap[east span+40]
 ![](/Lectures/Lecture05/Assets/img/devopsLogo.png)
 @snapend
 
@@ -654,8 +654,8 @@ public class TestClass2
 ---
 ## Azure Boards
 
-@snap[south-east span+40]
-![](/Lectures/Lecture05/Assets/img/AzureBoards.svg)
+@snap[north-east span+40]
+![](/Lectures/Lecture05/Assets/img/AzureBoards.png)
 @snapend
 
 ---

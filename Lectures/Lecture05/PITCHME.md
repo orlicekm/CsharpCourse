@@ -655,7 +655,7 @@ public class TestClass2
 * Refers to the **release into production of software that passes the automated tests**
 * Closely **related to Continuous Integration**
 * *"Essentially, it is the practice of releasing every good build to users”* - Jez Humble, author of Continuous Delivery
-* Low-risk releases
+* **Low-risk** releases
 
 ---
 ## Azure Devops
@@ -690,12 +690,12 @@ public class TestClass2
 +++
 ### Boards - Dashboards customization
 
-![](/Lectures/Lecture05/Assets/img/AzureDashboards.jpg)
+@img[span-70](/Lectures/Lecture05/Assets/img/AzureDashboards.jpg)
 
 +++
 ### Boards - Workflow customization
 
-![](/Lectures/Lecture05/Assets/img/AzureWorkFlow.jpg)
+@img[span-70](/Lectures/Lecture05/Assets/img/AzureWorkFlow.jpg)
 
 ---
 ## Azure Repos

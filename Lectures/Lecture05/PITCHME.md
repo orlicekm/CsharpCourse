@@ -635,6 +635,7 @@ public class TestClass2
 ---
 ## Azure Devops
 * [Web](https://azure.microsoft.com/en-us/services/devops/)
+* [Effective DevOps Book](https://www.amazon.com/Effective-DevOps-Building-Collaboration-Affinity/dp/1491926309/)
 * Provides **development collaboration tools**:
   * *Azure Boards*
   * *Azure Repos*
@@ -692,6 +693,7 @@ public class TestClass2
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [The Art of Unit Testing](https://www.amazon.de/Art-Unit-Testing-Roy-Osherove/dp/1617290890)  
 [Agile Principles, Patterns, and Practices in C#](https://www.amazon.com/Agile-Principles-Patterns-Practices-C/dp/0131857258)  
+[Effective DevOps: Building a Culture of Collaboration, Affinity, and Tooling at Scale](https://www.amazon.com/Effective-DevOps-Building-Collaboration-Affinity/dp/1491926309/)  
 [CodingBlocks.NET - How to Write Amazing Unit Tests](https://www.codingblocks.net/podcast/how-to-write-amazing-unit-tests/)  
 [Atlassian - Continuous delivery](https://www.atlassian.com/continuous-delivery)  
 [Software Testing Help](https://www.softwaretestinghelp.com/)  

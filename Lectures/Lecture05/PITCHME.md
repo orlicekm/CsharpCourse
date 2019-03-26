@@ -816,6 +816,7 @@ public class TestClass2
 [Introducing GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)  
 [WikiWikiWeb](http://wiki.c2.com/)  
 [ThoughtWorks](https://www.thoughtworks.com/)  
+[GitLab Docs](https://docs.gitlab.com/)  
 [xUnit.net](https://xunit.github.io/)  
 [DZone](https://dzone.com/)
 
@@ -826,3 +827,4 @@ public class TestClass2
 [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)  
 [APPFAB TECHNOLOGY](http://appfab.technology/)  
 [Introducing GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)  
+[GitLab Docs](https://docs.gitlab.com/)  

@@ -762,7 +762,9 @@ public class TestClass2
 
 +++
 ## GitLab Flow
+@snap[north-west]
 * Simpler alternative of Git Flow
+@snapend
 
 @snap[south-west]
 @img[span-75](/Lectures/Lecture05/Assets/img/GitLabFlow1.png)

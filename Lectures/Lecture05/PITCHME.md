@@ -797,6 +797,7 @@ Githubflow
 [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)  
 [Microsoft Docs](https://docs.microsoft.com/en-us/)  
 [Agile Alliance](https://www.agilealliance.org/)  
+[Introducing GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)  
 [WikiWikiWeb](http://wiki.c2.com/)  
 [ThoughtWorks](https://www.thoughtworks.com/)  
 [xUnit.net](https://xunit.github.io/)  
@@ -808,3 +809,4 @@ Githubflow
 [CodeProject](https://www.codeproject.com/)  
 [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)  
 [APPFAB TECHNOLOGY](http://appfab.technology/)  
+[Introducing GitFlow](https://datasift.github.io/gitflow/IntroducingGitFlow.html)  

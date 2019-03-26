@@ -762,20 +762,21 @@ public class TestClass2
 
 +++
 ## GitLab Flow
-@snap[north-west]
-* Simpler alternative of Git Flow
-@snapend
 
-@snap[south-west]
+@snap[west]
 @img[span-75](/Lectures/Lecture05/Assets/img/GitLabFlow1.png)
 @snapend
 
-@snap[south-east]
+@snap[east]
 @img[span-75](/Lectures/Lecture05/Assets/img/GitLabFlow2.png)
 @snapend
 
 +++
 ## GitHub Flow
+
+@snap[east]
+@img[span-75](/Lectures/Lecture05/Assets/img/GitHubFlow.png)
+@snapend
 
 ---
 ## Azure Pipelines

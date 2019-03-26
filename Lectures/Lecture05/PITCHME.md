@@ -644,7 +644,7 @@ public class TestClass2
   * ⋮
 
 @snap[north-east]
-@img[span-20](/Lectures/Lecture05/Assets/img/devopsLogo.png)
+@img[span-30](/Lectures/Lecture05/Assets/img/devopsLogo.png)
 @snapend
 
 @snap[south-east span+40]

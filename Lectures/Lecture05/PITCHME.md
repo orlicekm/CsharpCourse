@@ -667,6 +667,7 @@ public class TestClass2
   * *Azure Pipelines*
   * *Azure Test Plans*
   * *Azure Artifacts*
+  * *Wiki*
   * ⋮
 
 @snap[north-east]
@@ -677,10 +678,15 @@ public class TestClass2
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
 
++++
+### Dashboards
+
+@img[span-70](/Lectures/Lecture05/Assets/img/AzureDashboards.jpg)
+
 ---
 ## Azure Boards
-* Tracking tasks, features, and bugs associated with project
-  * Adding one of three work item types
+* **Tracking tasks, features, and bugs** associated with project
+  * Work item types
 * Integration with GitHub
 
 @snap[north-east span+40]
@@ -688,17 +694,25 @@ public class TestClass2
 @snapend
 
 +++
-### Boards - Dashboards customization
-
-@img[span-70](/Lectures/Lecture05/Assets/img/AzureDashboards.jpg)
+### Boards Sample Screen
+![](/Lectures/Lecture05/Assets/img/AzureBoardsSample.jpg)
 
 +++
-### Boards - Workflow customization
+### Boards Processes
+![](/Lectures/Lecture05/Assets/img/AzureProcesses.png)
+
++++
+### Scrum Work Item Types
+![](/Lectures/Lecture05/Assets/img/ScrumTypes.png)
+
++++
+### Workflow customization
 
 @img[span-70](/Lectures/Lecture05/Assets/img/AzureWorkFlow.jpg)
 
 ---
 ## Azure Repos
+* todo
 
 @snap[north-east span+40]
 ![](/Lectures/Lecture05/Assets/img/AzureRepos.png)
@@ -706,6 +720,7 @@ public class TestClass2
 
 ---
 ## Azure Pipelines
+* todo
 
 @snap[north-east span+40]
 ![](/Lectures/Lecture05/Assets/img/AzurePipelines.png)
@@ -713,6 +728,7 @@ public class TestClass2
 
 ---
 ## Azure Test Plans
+* todo
 
 @snap[north-east span+40]
 ![](/Lectures/Lecture05/Assets/img/AzureTestPlans.png)
@@ -720,6 +736,7 @@ public class TestClass2
 
 ---
 ## Azure Artifacts
+* todo
 
 @snap[north-east span+40]
 ![](/Lectures/Lecture05/Assets/img/AzureArtifacts.png)

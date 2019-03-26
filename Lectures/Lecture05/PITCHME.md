@@ -764,11 +764,11 @@ public class TestClass2
 ## GitLab Flow
 * Simpler alternative of Git Flow
 
-@snap[west]
+@snap[south-west]
 @img[span-75](/Lectures/Lecture05/Assets/img/GitLabFlow1.png)
 @snapend
 
-@snap[east]
+@snap[south-east]
 @img[span-75](/Lectures/Lecture05/Assets/img/GitLabFlow2.png)
 @snapend
 

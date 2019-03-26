@@ -633,7 +633,6 @@ public class TestClass2
 
 
 ---
-+++
 ## Continuous Integration
 * **Development practice** that requires developers to **integrate code into a shared repository** several times a day
 * Helps **detect errors quickly**, and locate them more easily

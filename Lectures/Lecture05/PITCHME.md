@@ -761,9 +761,17 @@ public class TestClass2
 @img[span-35](/Lectures/Lecture05/Assets/img/GitFlow5.png)
 
 +++
-todo
-Gitlabflow
-Githubflow
+## GitLab Flow
+@snap[west]
+![](/Lectures/Lecture05/Assets/img/GitLabFlow1.png)
+@snapend
+
+@snap[east]
+![](/Lectures/Lecture05/Assets/img/GitLabFlow2.png)
+@snapend
+
++++
+## GitHub Flow
 
 ---
 ## Azure Pipelines

@@ -633,6 +633,32 @@ public class TestClass2
 
 
 ---
++++
+## Continuous Integration
+* **Development practice** that requires developers to **integrate code into a shared repository** several times a day
+* Helps **detect errors quickly**, and locate them more easily
+* Each check-in can be **verified by an automated build**, allowing to detect problems
+
+![](/Lectures/Lecture05/Assets/img/CI.png)
+
+---
+## Continuous Integration Benefits
+* Significantly **less back-tracking to discover where things went wrong**
+* It's **cheap**
+* Increases **visibility** enabling greater communication
+* **Less time debugging** and **more time adding features**
+* Solid foundation
+* Stops waiting to find out if your code’s going to work
+* Reduce integration problems
+
++++
+## Continuous Deployment
+* Refers to the **release into production of software that passes the automated tests**
+* Closely **related to Continuous Integration**
+* *"Essentially, it is the practice of releasing every good build to users”* - Jez Humble, author of Continuous Delivery
+* Low-risk releases
+
+---
 ## Azure Devops
 * [Web](https://azure.microsoft.com/en-us/services/devops/)
 * [Effective DevOps Book](https://www.amazon.com/Effective-DevOps-Building-Collaboration-Affinity/dp/1491926309/)
@@ -654,10 +680,23 @@ public class TestClass2
 
 ---
 ## Azure Boards
+* Tracking tasks, features, and bugs associated with project
+  * Adding one of three work item types
+* Integration with GitHub
 
 @snap[north-east span+40]
 ![](/Lectures/Lecture05/Assets/img/AzureBoards.png)
 @snapend
+
++++
+### Boards - Dashboards customization
+
+![](/Lectures/Lecture05/Assets/img/AzureDashboards.jpg)
+
++++
+### Boards - Workflow customization
+
+![](/Lectures/Lecture05/Assets/img/AzureWorkFlow.jpg)
 
 ---
 ## Azure Repos
@@ -701,6 +740,7 @@ public class TestClass2
 [Microsoft Docs](https://docs.microsoft.com/en-us/)  
 [Agile Alliance](https://www.agilealliance.org/)  
 [WikiWikiWeb](http://wiki.c2.com/)  
+[ThoughtWorks](https://www.thoughtworks.com/)  
 [xUnit.net](https://xunit.github.io/)  
 [DZone](https://dzone.com/)
 
@@ -709,3 +749,4 @@ public class TestClass2
 [xUnit.net](https://xunit.github.io/)  
 [CodeProject](https://www.codeproject.com/)  
 [Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)  
+[APPFAB TECHNOLOGY](http://appfab.technology/)  

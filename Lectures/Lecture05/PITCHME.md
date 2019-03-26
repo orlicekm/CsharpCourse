@@ -639,9 +639,9 @@ public class TestClass2
 * Helps **detect errors quickly**, and locate them more easily
 * Each check-in can be **verified by an automated build**, allowing to detect problems
 
-![](/Lectures/Lecture05/Assets/img/CI.png)
+@img[span-80](/Lectures/Lecture05/Assets/img/CI.png)
 
----
++++
 ## Continuous Integration Benefits
 * Significantly **less back-tracking to discover where things went wrong**
 * It's **cheap**

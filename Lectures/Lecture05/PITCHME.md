@@ -712,11 +712,14 @@ public class TestClass2
 
 ---
 ## Azure Repos
-* todo
+* Free private **Git repositories**, pull requests, and code search
+![](/Lectures/Lecture05/Assets/img/AzureReposSample.jpg)
 
 @snap[north-east span+40]
 ![](/Lectures/Lecture05/Assets/img/AzureRepos.png)
 @snapend
+
++++
 
 ---
 ## Azure Pipelines

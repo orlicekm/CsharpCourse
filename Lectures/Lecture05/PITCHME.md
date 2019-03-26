@@ -720,6 +720,45 @@ public class TestClass2
 @snapend
 
 +++
+## GitFlow
+* **Branching model** for Git
+* Created by Vincent Driessen
+* Benefits
+  * *Parallel Development*
+  * *Collaboration*
+  * *Release Staging Area*
+  * *Support For Emergency Fixes*
+
++++
+### How GitFlow Works 1/5
+* New development is built in **feature branches**
+![](/Lectures/Lecture05/Assets/img/GitFlow1.png)
+
++++
+### How GitFlow Works 2/5
+* Feature branches are branched off of the **develop branch**
+* Finished features and fixes are merged back into the **develop branch**
+![](/Lectures/Lecture05/Assets/img/GitFlow2.png)
+
++++
+### How GitFlow Works 3/5
+* When it is time to make a release, a **release branch** is created off of **develop**
+![](/Lectures/Lecture05/Assets/img/GitFlow3.png)
+
++++
+### How GitFlow Works 4/5
+* When the release is finished, the **release branch** is merged into **master and** into **develop** too
+![](/Lectures/Lecture05/Assets/img/GitFlow4.png)
+
++++
+### How GitFlow Works 5/5
+* **Hotfix branches** are used to create emergency fixes
+![](/Lectures/Lecture05/Assets/img/GitFlow5.png)
+
++++
+todo
+Gitlabflow
+Githubflow
 
 ---
 ## Azure Pipelines

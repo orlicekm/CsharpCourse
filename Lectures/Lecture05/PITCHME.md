@@ -778,11 +778,16 @@ public class TestClass2
 
 ---
 ## Azure Pipelines
-* todo
+* Automate builds and deployments with Pipelines
+* Integration with GitHub
+@img[span-70](/Lectures/Lecture05/Assets/img/AzurePipelinesSample.jpg)
 
 @snap[north-east span+40]
 ![](/Lectures/Lecture05/Assets/img/AzurePipelines.png)
 @snapend
+
++++
+todo
 
 ---
 ## Azure Test Plans

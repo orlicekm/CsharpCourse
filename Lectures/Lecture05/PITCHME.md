@@ -643,8 +643,8 @@ public class TestClass2
   * *Azure Artifacts*
   * ⋮
 
-@snap[north-east span+60]
-![](/Lectures/Lecture05/Assets/img/devopsLogo.png)
+@snap[north-east]
+@img[span-20](/Lectures/Lecture05/Assets/img/devopsLogo.png)
 @snapend
 
 @snap[south-east span+40]

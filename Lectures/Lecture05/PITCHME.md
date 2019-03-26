@@ -633,7 +633,42 @@ public class TestClass2
 
 
 ---
-## CI in DevOps
+## Azure Devops
+* [Web](https://azure.microsoft.com/en-us/services/devops/)
+* Provides **development collaboration tools**:
+  * *Azure Boards*
+  * *Azure Repos*
+  * *Azure Pipelines*
+  * *Azure Test Plans*
+  * *Azure Artifacts*
+  * ⋮
+
+@snap[east]
+![](/Lectures/Lecture05/Assets/img/devopsLogo.png)
+@snapend
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
+---
+## Azure Boards
+
+@snap[south-east span+40]
+![](/Lectures/Lecture05/Assets/img/AzureBoards.svg)
+@snapend
+
+---
+## Azure Repos
+
+---
+## Azure Pipelines
+
+---
+## Azure Test Plans
+
+---
+## Azure Artifacts
 
 
 ---
@@ -644,6 +679,7 @@ public class TestClass2
 [CodingBlocks.NET - How to Write Amazing Unit Tests](https://www.codingblocks.net/podcast/how-to-write-amazing-unit-tests/)  
 [Atlassian - Continuous delivery](https://www.atlassian.com/continuous-delivery)  
 [Software Testing Help](https://www.softwaretestinghelp.com/)  
+[Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)  
 [Microsoft Docs](https://docs.microsoft.com/en-us/)  
 [Agile Alliance](https://www.agilealliance.org/)  
 [WikiWikiWeb](http://wiki.c2.com/)  
@@ -653,4 +689,5 @@ public class TestClass2
 +++
 ## Refences to used images:
 [xUnit.net](https://xunit.github.io/)  
-[CodeProject](https://www.codeproject.com/)
+[CodeProject](https://www.codeproject.com/)  
+[Azure DevOps](https://azure.microsoft.com/en-us/services/devops/)  

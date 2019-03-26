@@ -732,7 +732,7 @@ public class TestClass2
 +++
 ### How GitFlow Works 1/5
 * New development is built in **feature branches**
-@img[span-70](/Lectures/Lecture05/Assets/img/GitFlow1.png)
+@img[span-40](/Lectures/Lecture05/Assets/img/GitFlow1.png)
 
 +++
 ### How GitFlow Works 2/5

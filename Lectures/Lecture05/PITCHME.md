@@ -661,14 +661,30 @@ public class TestClass2
 ---
 ## Azure Repos
 
+@snap[north-east span+40]
+![](/Lectures/Lecture05/Assets/img/AzureRepos.png)
+@snapend
+
 ---
 ## Azure Pipelines
+
+@snap[north-east span+40]
+![](/Lectures/Lecture05/Assets/img/AzurePipelines.png)
+@snapend
 
 ---
 ## Azure Test Plans
 
+@snap[north-east span+40]
+![](/Lectures/Lecture05/Assets/img/AzureTestPlans.png)
+@snapend
+
 ---
 ## Azure Artifacts
+
+@snap[north-east span+40]
+![](/Lectures/Lecture05/Assets/img/AzureArtifacts.png)
+@snapend
 
 
 ---

@@ -839,7 +839,7 @@ public class TestClass2
   * Contains a lot of templates
   
 @snap[east]
-@img[span-40](/Lectures/Lecture05/Assets/img/Pipe5.png)
+@img[span-70](/Lectures/Lecture05/Assets/img/Pipe5.png)
 @snapend
 
 ---

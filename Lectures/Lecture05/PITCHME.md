@@ -788,7 +788,55 @@ public class TestClass2
 @snapend
 
 +++
-todo
+### Azure Pipelines Benefits
+* **Any language**
+* **Any platform**
+* Cloud deployment
+* Push images to container registries
+* Extensible
+* Advanced workflows and features
+  * Support for YAML
+  * Test integration
+  * Release gates
+  * Reporting
+  * ⋮
+
++++
+### Simple Pipeline Creation 1/5
+* **Open Pipelines**
+* If there is no pipeline created, **clink on "New pipeline" button**
+
+![](/Lectures/Lecture05/Assets/img/Pipe1.png)
+
++++
+### Simple Pipeline Creation 2/5
+* **Select repository and branch** for pipeline
+* There is also option for classic editor without YAML
+
+![](/Lectures/Lecture05/Assets/img/Pipe2.png)
+
++++ 
+### Simple Pipeline Creation 3/5
+* **Select predefined configurations**
+* Configurations can be customized
+  * Also .yml file can be edited
+
+![](/Lectures/Lecture05/Assets/img/Pipe3.png)
+
++++
+### Simple Pipeline Creation 4/5
+* **Hit Run** and pipeline will be runned
+* My build pipeline for simple WPF app:
+
+![](/Lectures/Lecture05/Assets/img/Pipe4.png)
+
++++
+### Simple Pipeline Creation 5/5
+* **Release pipeline**
+  * Way how to deploy your code
+  * Contains a lot of templates
+  
+![](/Lectures/Lecture05/Assets/img/Pipe5.png)
 
 ---
 ## Azure Test Plans
@@ -800,12 +848,20 @@ todo
 
 ---
 ## Azure Artifacts
-* todo
+* **Integrated package management** to (CI/CD) pipelines
+* Dhare *Maven*, *npm*, and *NuGet* packages from public and private sources
+* Unlimited size
+* Stored in cloud
+* It is not part of basic access level
 
 @snap[north-east span+40]
 ![](/Lectures/Lecture05/Assets/img/AzureArtifacts.png)
 @snapend
 
++++
+## Azure Artifacts Screen
+
+@img[span-70](/Lectures/Lecture05/Assets/img/AzureArtifactsSample.jpg)
 
 ---
 ## References:

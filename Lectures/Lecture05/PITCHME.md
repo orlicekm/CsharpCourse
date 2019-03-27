@@ -844,11 +844,19 @@ public class TestClass2
 
 ---
 ## Azure Test Plans
-* todo
+* **Manual and exploratory testing **
+  * Capture rich data
+  * Web and desktop
+  * Traceability
+* Automated tests are in Pipelines
 
 @snap[north-east span+40]
 ![](/Lectures/Lecture05/Assets/img/AzureTestPlans.png)
 @snapend
+
++++
+## Azure Test Plans Screen
+@img[span-80](/Lectures/Lecture05/Assets/img/AzureTestPlansSample.jpg)
 
 ---
 ## Azure Artifacts
@@ -865,7 +873,7 @@ public class TestClass2
 +++
 ## Azure Artifacts Screen
 
-@img[span-70](/Lectures/Lecture05/Assets/img/AzureArtifactsSample.jpg)
+@img[span-80](/Lectures/Lecture05/Assets/img/AzureArtifactsSample.jpg)
 
 ---
 ## References:

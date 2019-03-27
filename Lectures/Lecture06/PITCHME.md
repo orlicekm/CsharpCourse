@@ -62,6 +62,32 @@
 
 ---
 ##  Abstract Factory
+* **Definition:** *Provide an interface for creating families of related or dependent objects without specifying their concrete classes*
+* **Frequency of use:** High
+
++++
+###  Abstract Factory - UML Diagram
+
++++
+### Abstract Factory - UML Diagram
+
++++
+### Abstract Factory - Participants
+
++++
+### Abstract Factory - Sample
+
+---
+## Builder
+
+---
+## Factory Method
+
+---
+## Prototype
+
+---
+## Singleton
 
 ---
 ## Structural Patterns

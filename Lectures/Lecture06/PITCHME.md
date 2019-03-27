@@ -26,10 +26,15 @@
 * Allow developers to communicate **using well-known, well understood names** for software interactions
 * Can be **improved over time**, making them more robust than ad-hoc designs
 
-+++
+---
 ## Gang of Four 
-* Gang of Four *(GoF)*
-* 
+* *GoF*
+* Generally considered the foundation for all other patterns
+* The authors of the *DesignPatternsBook* came to be known as the *Gang of Four*
+  * The name of the book: *Design Patterns: Elements of Reusable Object-Oriented Software* is too long for e-mail
+  * So "*book by the gang of four*" became a shorthand name for it
+ 
+![]/Lectures/Lecture01/Assets/img/DesignPatterns.png
 
 +++
 ## GoF Pattern Groups

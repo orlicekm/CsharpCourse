@@ -831,7 +831,7 @@ public class TestClass2
 * My build pipeline for simple WPF app:
 
 @snap[east]
-@img[span-65](/Lectures/Lecture05/Assets/img/Pipe4.png)
+@img[span-40](/Lectures/Lecture05/Assets/img/Pipe4.png)
 @snapend
 
 +++

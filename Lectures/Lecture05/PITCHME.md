@@ -821,7 +821,9 @@ public class TestClass2
 * Configurations can be customized
   * Also *.yml file* can be edited
 
-@img[span-40](/Lectures/Lecture05/Assets/img/Pipe3.png)
+@snap[east]
+@img[span-50](/Lectures/Lecture05/Assets/img/Pipe3.png)
+@snapend
 
 +++
 ### Simple Pipeline Creation 4/5

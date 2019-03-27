@@ -68,7 +68,7 @@
 +++
 ###  Abstract Factory - UML Diagram
 
-![](/Lectures/Lecture05/Assets/img/AbstractFactory.gif)
+![](/Lectures/Lecture06/Assets/img/AbstractFactory.gif)
 
 +++
 ### Abstract Factory - UML Diagram

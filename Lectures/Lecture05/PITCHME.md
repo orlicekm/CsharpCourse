@@ -813,7 +813,7 @@ public class TestClass2
 * **Select repository and branch** for pipeline
 * There is also option for classic editor without YAML
 
-@img[span-70](/Lectures/Lecture05/Assets/img/Pipe2.png)
+@img[span-50](/Lectures/Lecture05/Assets/img/Pipe2.png)
 
 +++ 
 ### Simple Pipeline Creation 3/5

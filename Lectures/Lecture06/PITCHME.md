@@ -11,13 +11,25 @@
 @snapend 
 
 ---
-## Design pattern
-* todo
+## Design Pattern
+* **General repeatable solution to a commonly occurring problem** in software design
+* It is **not a finished design** that can be transformed directly into code
+* **Description or template** for how to solve a problem
+  * Can be used in many different situations
+
++++
+### Design Patterns Benefits
+* **Speeds up the development** process by providing *tested, proven development paradigms*
+* **Helps to prevent issues** that can cause major problems
+* **Improves code readability** for coders and architects familiar with the patterns
+* **Provide general solutions**, documented in a format that doesn't require specifics tied to a particular problem
+* Allow developers to communicate **using well-known, well understood names** for software interactions
+* Can be **improved over time**, making them more robust than ad-hoc designs
 
 +++
 ## Gang of Four 
 * Gang of Four *(GoF)*
-* todo
+* 
 
 +++
 ## GoF Pattern Groups
@@ -27,6 +39,10 @@
   * *Structural*
   * *Behavioral*
 
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
 ---
 ## Creational Patterns
 * *Abstract Factory*
@@ -34,6 +50,10 @@
 * *Factory Method*
 * *Prototype*
 * *Singleton*
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 ---
 ##  Abstract Factory
@@ -47,6 +67,10 @@
 * *Facade*
 * *Flyweight*
 * *Proxy*
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 ---
 ## Behavioral Patterns
@@ -62,12 +86,17 @@
 * *Template Method*
 * *Visitor*
 
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [Agile Principles, Patterns, and Practices in C#](https://www.amazon.de/Agile-Principles-Patterns-Practices-C/dp/0131857258)  
 [Design Patterns. Elements of Reusable Object-Oriented Software](https://www.amazon.de/Patterns-Elements-Reusable-Object-Oriented-Software/dp/0201633612)
 [Data & Object Factory](https://www.dofactory.com/)  
+[SourceMaking.com](https://sourcemaking.com/)  
 [Wikipedia](https://en.wikipedia.org)  
 
 +++

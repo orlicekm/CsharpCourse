@@ -71,10 +71,18 @@
 ![](/Lectures/Lecture06/Assets/img/AbstractFactory.gif)
 
 +++
-### Abstract Factory - UML Diagram
-
-+++
 ### Abstract Factory - Participants
+* **AbstractFactory**  *(ContinentFactory)*
+  * Declares an interface for operations that create abstract products
+* **ConcreteFactory**  *(AfricaFactory, AmericaFactory)*
+  * Implements the operations to create concrete product objects
+* **AbstractProduct**  *(Herbivore, Carnivore)*
+  * Declares an interface for a type of product object
+* **Product**  *(Wildebeest, Lion, Bison, Wolf)*
+  * Defines a product object to be created by the corresponding concrete factory
+  * Implements the *AbstractProduct* interface
+* **Client**  *(AnimalWorld)*
+  * Uses interfaces declared by *AbstractFactory* and *AbstractProduct* classes
 
 +++
 ### Abstract Factory - Sample
@@ -87,8 +95,7 @@
 +++
 ###  Builder - UML Diagram
 
-+++
-### Builder - UML Diagram
+![](/Lectures/Lecture06/Assets/img/Builder.gif)
 
 +++
 ### Builder - Participants
@@ -104,8 +111,7 @@
 +++
 ###  Factory Method - UML Diagram
 
-+++
-### Factory Method - UML Diagram
+![](/Lectures/Lecture06/Assets/img/FactoryMethod.gif)
 
 +++
 ### Factory Method - Participants
@@ -121,8 +127,7 @@
 +++
 ###  Prototype - UML Diagram
 
-+++
-### Prototype - UML Diagram
+![](/Lectures/Lecture06/Assets/img/Prototype.gif)
 
 +++
 ### Prototype - Participants
@@ -138,8 +143,7 @@
 +++
 ###  Singleton - UML Diagram
 
-+++
-### Singleton - UML Diagram
+![](/Lectures/Lecture06/Assets/img/Singleton.gif)
 
 +++
 ### Singleton - Participants

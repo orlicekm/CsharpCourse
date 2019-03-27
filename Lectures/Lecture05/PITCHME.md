@@ -819,7 +819,7 @@ public class TestClass2
 ### Simple Pipeline Creation 3/5
 * **Select predefined configurations**
 * Configurations can be customized
-  * Also .yml file can be edited
+  * Also *.yml file* can be edited
 
 @img[span-40](/Lectures/Lecture05/Assets/img/Pipe3.png)
 

@@ -822,7 +822,7 @@ public class TestClass2
   * Also *.yml file* can be edited
 
 @snap[east]
-@img[span-50](/Lectures/Lecture05/Assets/img/Pipe3.png)
+@img[span-60](/Lectures/Lecture05/Assets/img/Pipe3.png)
 @snapend
 
 +++

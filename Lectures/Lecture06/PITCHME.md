@@ -34,7 +34,7 @@
   * The name of the book: *Design Patterns: Elements of Reusable Object-Oriented Software* is too long for e-mail
   * So "*book by the gang of four*" became a shorthand name for it
  
-![](/Lectures/Lecture01/Assets/img/DesignPatterns.png)
+@[span-40](/Lectures/Lecture01/Assets/img/DesignPatterns.png)
 
 +++
 ## GoF Pattern Groups

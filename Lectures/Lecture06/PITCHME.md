@@ -28,7 +28,7 @@
 
 ---
 ## Gang of Four 
-* ***GoF**
+* **GoF**
 * Generally considered the **foundation for all other patterns**
 * The authors of the *DesignPatternsBook* came to be known as the *Gang of Four*
   * The name of the book *Design Patterns: Elements of Reusable Object-Oriented Software* is too long for e-mail
@@ -63,7 +63,7 @@
 ---
 ##  Abstract Factory
 * **Definition:** *Provide an interface for creating families of related or dependent objects without specifying their concrete classes*
-* **Frequency of use:** High
+* **Frequency of use:** *High*
 
 +++
 ###  Abstract Factory - UML Diagram

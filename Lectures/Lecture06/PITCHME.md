@@ -34,7 +34,7 @@
   * The name of the book: *Design Patterns: Elements of Reusable Object-Oriented Software* is too long for e-mail
   * So "*book by the gang of four*" became a shorthand name for it
  
-@img[span-40](/Lectures/Lecture01/Assets/img/DesignPatterns.png)
+@img[span-25](/Lectures/Lecture01/Assets/img/DesignPatterns.png)
 
 +++
 ## GoF Pattern Groups
@@ -102,6 +102,7 @@
 [Design Patterns. Elements of Reusable Object-Oriented Software](https://www.amazon.de/Patterns-Elements-Reusable-Object-Oriented-Software/dp/0201633612)
 [Data & Object Factory](https://www.dofactory.com/)  
 [SourceMaking.com](https://sourcemaking.com/)  
+[WikiWikiWeb](http://wiki.c2.com/)  
 [Wikipedia](https://en.wikipedia.org)  
 
 +++

@@ -821,7 +821,7 @@ public class TestClass2
 * Configurations can be customized
   * Also .yml file can be edited
 
-![](/Lectures/Lecture05/Assets/img/Pipe3.png)
+@img[span-40](/Lectures/Lecture05/Assets/img/Pipe3.png)
 
 +++
 ### Simple Pipeline Creation 4/5

@@ -68,6 +68,8 @@
 +++
 ###  Abstract Factory - UML Diagram
 
+![](/Lectures/Lecture05/Assets/img/AbstractFactory.gif)
+
 +++
 ### Abstract Factory - UML Diagram
 
@@ -79,15 +81,71 @@
 
 ---
 ## Builder
+* **Definition:** *Separate the construction of a complex object from its representation so that the same construction process can create different representations*
+* **Frequency of use:** *Medium low*
+
++++
+###  Builder - UML Diagram
+
++++
+### Builder - UML Diagram
+
++++
+### Builder - Participants
+
++++
+### Builder - Sample
 
 ---
 ## Factory Method
+* **Definition:** *Define an interface for creating an object, but let subclasses decide which class to instantiate. Lets a class defer instantiation to subclasses*
+* **Frequency of use:** *High*
+
++++
+###  Factory Method - UML Diagram
+
++++
+### Factory Method - UML Diagram
+
++++
+### Factory Method - Participants
+
++++
+### Factory Method - Sample
 
 ---
 ## Prototype
+* **Definition:** *Specify the kind of objects to create using a prototypical instance, and create new objects by copying this prototype*
+* **Frequency of use:** *Medium*
+
++++
+###  Prototype - UML Diagram
+
++++
+### Prototype - UML Diagram
+
++++
+### Prototype - Participants
+
++++
+### Prototype - Sample
 
 ---
 ## Singleton
+* **Definition:** *Ensure a class has only one instance and provide a global point of access to it*
+* **Frequency of use:** *Medium high*
+
++++
+###  Singleton - UML Diagram
+
++++
+### Singleton - UML Diagram
+
++++
+### Singleton - Participants
+
++++
+### Singleton - Sample
 
 ---
 ## Structural Patterns

@@ -830,7 +830,9 @@ public class TestClass2
 * **Hit Run** and pipeline will be runned
 * My build pipeline for simple WPF app:
 
-![](/Lectures/Lecture05/Assets/img/Pipe4.png)
+@snap[east]
+@img[span-65](/Lectures/Lecture05/Assets/img/Pipe4.png)
+@snapend
 
 +++
 ### Simple Pipeline Creation 5/5

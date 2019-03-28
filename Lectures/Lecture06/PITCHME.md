@@ -214,12 +214,52 @@ Vehicle Type: MotorCycle
 
 +++
 ### Factory Method - Participants
+* **Product**  *(Page)*
+  * Defines the interface of objects the factory method creates
+* **ConcreteProduct**  *(SkillsPage, EducationPage, ExperiencePage)*
+  * Implements the *Product* interface
+* **Creator**  *(Document)*
+  * Declares the factory method, which returns an object of type *Product*
+  * May define a default implementation of the factory method that returns a default *ConcreteProduct* object
+  * May call the factory method to create a *Product* object
+* **ConcreteCreator*  *(Report, Resume)*
+  * Overrides the factory method to return an instance of a ConcreteProduct
 
-+++
-### Factory Method - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/FactoryMethod.cs&lang=C#&title=Factory Method - Sample
+@[6-23]
+@[10-11]
+@[13-14]
+@[16-21]
+@[6-23]
+@[25-27]
+@[29-43]
+@[45-59]
+@[61-75]
+@[63]
+@[65-69]
+@[71]
+@[74]
+@[61-75]
+@[77-85]
+@[87-97]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/FactoryMethod.cs)
 
 +++
 ### Factory Method - Sample Output
+
+```
+Resume -------
+ SkillsPage
+ EducationPage
+ ExperiencePage
+
+Report -------
+ IntroductionPage
+ ResultsPage
+ ConclusionPage
+ SummaryPage
+ BibliographyPage
+```
 
 ---
 ## Prototype
@@ -233,12 +273,38 @@ Vehicle Type: MotorCycle
 
 +++
 ### Prototype - Participants
+* **Prototype**  *(ColorPrototype)*
+  * Declares an interface for cloning itself
+* **ConcretePrototype**  *(Color)*
+  * Implements an operation for cloning itself
+* **Client**  *(ColorManager)*
+  * Creates a new object by asking a prototype to clone itself
 
-+++
-### Prototype - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Prototype.cs&lang=C#&title=Prototype - Sample
+@[6-7]
+@[8-26]
+@[10-20]
+@[8-26]
+@[29-32]
+@[34-54]
+@[36-45]
+@[47-53]
+@[34-54]
+@[56-66]
+@[58-59]
+@[61-65]
+@[56-66]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Prototype.cs)
+
 
 +++
 ### Prototype - Sample Output
+
+```
+Cloning color RGB: 255,  0,  0
+Cloning color RGB: 128,211,128
+Cloning color RGB: 211, 34, 20
+```
 
 ---
 ## Singleton

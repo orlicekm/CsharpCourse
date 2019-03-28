@@ -48,6 +48,14 @@
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
 
++++
+### GoF Samples
+* Samples in this lecture 
+  * Can be runned from `ConsoleApp` in the solution
+  * **From real world**
+  * For better demonstration and understanding, they are **not .NET optimized**
+    * Without *generics*, *delegates*, *reflection* and more...
+
 ---
 ## Creational Patterns
 * *Abstract Factory*
@@ -318,12 +326,51 @@ Cloning color RGB: 211, 34, 20
 
 +++
 ### Singleton - Participants
+* **Singleton**  *(LoadBalancer)*
+  * Defines an Instance operation that lets clients access its unique instance
+  * Instance is a class operation
+  * Responsible for creating and maintaining its own unique instance
 
-+++
-### Singleton - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Singleton.cs&lang=C#&title=Singleton - Sample
+@[6-7]
+@[8-25]
+@[10-13]
+@[15-16]
+@[18-24]
+@[8-25]
+@[28-29]
+@[34, 36-43]
+@[33]
+@[46-53]
+@[55-68]
+@[61]
+@[62-63, 65]
+@[64]
+@[55-68]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Singleton.cs)
 
 +++
 ### Singleton - Sample Output
+
+```
+Same instance
+
+ServerIII
+ServerII
+ServerI
+ServerII
+ServerI
+ServerIII
+ServerI
+ServerIII
+ServerIV
+ServerII
+ServerII
+ServerIII
+ServerIV
+ServerII
+ServerIV
+```
 
 ---
 ## Structural Patterns

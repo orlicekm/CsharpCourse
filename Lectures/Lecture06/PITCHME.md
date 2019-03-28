@@ -92,7 +92,7 @@
 * **Client**  *(AnimalWorld)*
   * Uses interfaces declared by *AbstractFactory* and *AbstractProduct* classes
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/AbstractFactory.cs&lang=C#&title=Abstract Factory - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/AbstractFactory.cs&lang=C#&title=Abstract Factory - Sample
 @[5-6]
 @[7-18]
 @[9-12]
@@ -118,7 +118,7 @@
 @[93-97]
 @[99-102]
 @[88-103]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/AbstractFactory.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/AbstractFactory.cs)
 
 +++
 ### Abstract Factory - Sample Output
@@ -152,7 +152,7 @@ Wolf eats Bison
   * Represents the complex object under construction, *ConcreteBuilder* builds the product's internal representation and defines the process by which it's assembled
   * Includes classes that define the constituent parts, including interfaces for assembling the parts into the final result
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Builder.cs&lang=C#&title=Builder - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/Builder.cs&lang=C#&title=Builder - Sample
 @[6-7]
 @[8-28]
 @[10]
@@ -183,7 +183,7 @@ Wolf eats Bison
 @[143-148]
 @[140-141, 150-156]
 @[157-165]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Builder.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/Builder.cs)
 
 +++
 ### Builder - Sample Output
@@ -234,7 +234,7 @@ Vehicle Type: MotorCycle
 * **ConcreteCreator*  *(Report, Resume)*
   * Overrides the factory method to return an instance of a ConcreteProduct
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/FactoryMethod.cs&lang=C#&title=Factory Method - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/FactoryMethod.cs&lang=C#&title=Factory Method - Sample
 @[6-23]
 @[10-11]
 @[13-14]
@@ -251,7 +251,7 @@ Vehicle Type: MotorCycle
 @[61-75]
 @[77-85]
 @[87-97]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/FactoryMethod.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/FactoryMethod.cs)
 
 +++
 ### Factory Method - Sample Output
@@ -289,7 +289,7 @@ Report -------
 * **Client**  *(ColorManager)*
   * Creates a new object by asking a prototype to clone itself
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Prototype.cs&lang=C#&title=Prototype - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/Prototype.cs&lang=C#&title=Prototype - Sample
 @[6-7]
 @[8-26]
 @[10-20]
@@ -303,7 +303,7 @@ Report -------
 @[58-59]
 @[61-65]
 @[56-66]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Prototype.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/Prototype.cs)
 
 
 +++
@@ -332,7 +332,7 @@ Cloning color RGB: 211, 34, 20
   * Instance is a class operation
   * Responsible for creating and maintaining its own unique instance
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Singleton.cs&lang=C#&title=Singleton - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/Singleton.cs&lang=C#&title=Singleton - Sample
 @[6-7]
 @[8-25]
 @[10-13]
@@ -348,7 +348,7 @@ Cloning color RGB: 211, 34, 20
 @[62-63, 65]
 @[64]
 @[55-68]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Singleton.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/Singleton.cs)
 
 +++
 ### Singleton - Sample Output
@@ -388,6 +388,111 @@ ServerIV
 @snapend
 
 ---
+## Adapter
+
++++
+###  Adapter - UML Diagram
+
++++
+### Adapter - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Adapter.cs&lang=C#&title=Adapter - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Adapter.cs)
+
++++
+### Adapter - Sample Output
+
+---
+## Bridge
+
++++
+###  Bridge - UML Diagram
+
++++
+### Bridge - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Bridge.cs&lang=C#&title=Bridge - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Bridge.cs)
+
++++
+### Bridge - Sample Output
+
+---
+## Composite
+
++++
+###  Composite - UML Diagram
+
++++
+### Composite - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Composite.cs&lang=C#&title=Composite - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Composite.cs)
+
++++
+### Composite - Sample Output
+
+---
+## Decorator
+
++++
+###  Decorator - UML Diagram
+
++++
+### Decorator - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Decorator.cs&lang=C#&title=Decorator - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Decorator.cs)
+
++++
+### Decorator - Sample Output
+
+---
+## Facade
+
++++
+###  Facade - UML Diagram
+
++++
+### Facade - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Facade.cs&lang=C#&title=Facade - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Facade.cs)
+
++++
+### Facade - Sample Output
+
+---
+## Flyweight
+
++++
+###  Flyweight - UML Diagram
+
++++
+### Flyweight - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Flyweight.cs&lang=C#&title=Flyweight - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Flyweight.cs)
+
++++
+### Flyweight - Sample Output
+
+---
+## Proxy
+
++++
+###  Proxy - UML Diagram
+
++++
+### Proxy - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Proxy.cs&lang=C#&title=Proxy - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Proxy.cs)
+
++++
+### Proxy - Sample Output
+
+---
 ## Behavioral Patterns
 * *Chain of Responsibility*
 * *Command*
@@ -404,6 +509,21 @@ ServerIV
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
+
+---
+## Chain of Responsibility
+
++++
+###  Chain of Responsibility - UML Diagram
+
++++
+### Chain of Responsibility - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/ChainOfResponsibility.cs&lang=C#&title=Chain of Responsibility - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/ChainOfResponsibility.cs)
+
++++
+### Chain of Responsibility - Sample Output
 
 ---
 ## References:

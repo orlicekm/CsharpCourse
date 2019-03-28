@@ -84,8 +84,40 @@
 * **Client**  *(AnimalWorld)*
   * Uses interfaces declared by *AbstractFactory* and *AbstractProduct* classes
 
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/AbstractFactory.cs&lang=C#&title=Abstract Factory - Sample
+@[5-21]
+@[9-12]
+@[14-17]
+@[5-21]
+@[23-27]
+@[29-40]
+@[31-34]
+@[36-39]
+@[29-40]
+@[42-53]
+@[44-47]
+@[49-52]
+@[42-53]
+@[55-58]
+@[59-62]
+@[64-66]
+@[68-75]
+@[77-79]
+@[81-88]
+@[90-105]
+@[92-93]
+@[95-99]
+@[101-104]
+@[90-105]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/AbstractFactory.cs)
+
 +++
-### Abstract Factory - Sample
+### Abstract Factory - Sample Output
+
+```
+Lion eats Wildebeest
+Wolf eats Bison
+```
 
 ---
 ## Builder

@@ -2,7 +2,7 @@
 
 namespace Samples.Behavioral
 {
-    public class MainApp
+    public class AbstractFactory
     {
         public static void Main()
         {
@@ -15,8 +15,6 @@ namespace Samples.Behavioral
             ContinentFactory america = new AmericaFactory();
             world = new AnimalWorld(america);
             world.RunFoodChain();
-
-            Console.ReadKey();
         }
     }
 

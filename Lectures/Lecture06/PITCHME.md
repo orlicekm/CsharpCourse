@@ -131,9 +131,76 @@ Wolf eats Bison
 
 +++
 ### Builder - Participants
+* **Builder**  *(VehicleBuilder)*
+  * Specifies an abstract interface for creating parts of a *Product* object
+* **ConcreteBuilder**  *(MotorCycleBuilder, CarBuilder, ScooterBuilder)*
+  * Constructs and assembles parts of the product by implementing the *Builder* interface
+  * Defines and keeps track of the representation it creates
+  * Provides an interface for retrieving the product
+* **Director**  *(Shop)*
+  * Constructs an object using the *Builder* interface
+* **Product**  *(Vehicle)*
+  * Represents the complex object under construction, *ConcreteBuilder* builds the product's internal representation and defines the process by which it's assembled
+  * Includes classes that define the constituent parts, including interfaces for assembling the parts into the final result
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Builder.cs&lang=C#&title=Builder - Sample
+@[6-7]
+@[8-28]
+@[10]
+@[13]
+@[15-18]
+@[20-22]
+@[24-26]
+@[8-28]
+@[30-40]
+@[35-38]
+@[30-40]
+@[42-52]
+@[44]
+@[46]
+@[48-51]
+@[42-52]
+@[54-55]
+@[56-59]
+@[61-64]
+@[66-69]
+@[71-74]
+@[76-79]
+@[82-87]
+@[89-107]
+@[110-115]
+@[117-135]
+@[138-139]
+@[143-148]
+@[140-141, 150-156]
+@[157-165]
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Builder.cs)
 
 +++
-### Builder - Sample
+### Builder - Sample Output
+
+```
+---------------------------
+Vehicle Type: Scooter
+ Frame  : Scooter Frame
+ Engine : none
+ #Wheels: 2
+ #Doors : 0
+
+---------------------------
+Vehicle Type: Car
+ Frame  : Car Frame
+ Engine : 2500 cc
+ #Wheels: 4
+ #Doors : 4
+
+---------------------------
+Vehicle Type: MotorCycle
+ Frame  : MotorCycle Frame
+ Engine : 500 cc
+ #Wheels: 2
+ #Doors : 0
+```
 
 ---
 ## Factory Method
@@ -151,6 +218,9 @@ Wolf eats Bison
 +++
 ### Factory Method - Sample
 
++++
+### Factory Method - Sample Output
+
 ---
 ## Prototype
 * **Definition:** *Specify the kind of objects to create using a prototypical instance, and create new objects by copying this prototype*
@@ -167,6 +237,9 @@ Wolf eats Bison
 +++
 ### Prototype - Sample
 
++++
+### Prototype - Sample Output
+
 ---
 ## Singleton
 * **Definition:** *Ensure a class has only one instance and provide a global point of access to it*
@@ -182,6 +255,9 @@ Wolf eats Bison
 
 +++
 ### Singleton - Sample
+
++++
+### Singleton - Sample Output
 
 ---
 ## Structural Patterns

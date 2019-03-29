@@ -1153,6 +1153,8 @@ To a non-Beatle: John to Yoko: 'My sweet love'
 
 ---
 ## Memento
+* **Definition:** *Without violating encapsulation, capture and externalize an object's internal state so that the object can be restored to this state later*
+* **Frequency of use:** *Low*
 
 +++
 ###  Memento - UML Diagram
@@ -1161,12 +1163,60 @@ To a non-Beatle: John to Yoko: 'My sweet love'
 
 +++
 ### Memento - Participants
+* **Memento**  *(Memento)*
+  * Stores internal state of the *Originator* object
+  * May store as much or as little of the originator's internal state as necessary at its originator's discretion
+  * Protect against access by objects of other than the originator
+  * Mementos have effectively two interfaces
+    * **Caretaker** sees a narrow interface to the Memento -- it can only pass the memento to the other objects
+    * **Originator**, in contrast, sees a wide interface, one that lets it access all the data necessary to restore itself to its previous state
+      * Ideally, only the originator that produces the memento would be permitted to access the memento's internal state
+* **Originator**  *(SalesProspect)*
+  * Creates a memento containing a snapshot of its current internal state
+  * Uses the memento to restore its internal state
+* **Caretaker**  *(Caretaker)*
+  * Responsible for the memento's safekeeping
+  * Never operates on or examines the contents of a memento
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/MementoSample.cs&lang=C#&title=Memento - Sample
+@[5-6]
+@[9-14]
+@[16-20]
+@[22-25]
+@[27-28]
+@[32-33]
+@[34-36]
+@[38-46]
+@[48-56]
+@[58-66]
+@[68-72]
+@[74-80]
+@[83-84]
+@[85-90]
+@[92-94]
+@[97-100]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/MementoSample.cs)
 
 +++
 ### Memento - Sample Output
+
+```
+Name:   Noel van Halen
+Phone:  (412) 256-0990
+Budget: 25000
+
+Saving state --
+
+Name:   Leo Welch
+Phone:  (310) 209-7111
+Budget: 1000000
+
+Restoring state --
+
+Name:   Noel van Halen
+Phone:  (412) 256-0990
+Budget: 25000
+```
 
 ---
 ## Observer

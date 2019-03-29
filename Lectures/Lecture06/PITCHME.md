@@ -1007,6 +1007,30 @@ Current value = 500 (following * 10)
   * Invokes the Interpret operation
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/InterpreterSample.cs&lang=C#&title=Interpreter - Sample
+@[6-7]
+@[8-26]
+@[10-11]
+@[13-20]
+@[22-23]
+@[25]
+@[8-26]
+@[29-38]
+@[31-34]
+@[36-37]
+@[29-38]
+@[40-41]
+@[42-45]
+@[47-61]
+@[63-67]
+@[70-74]
+@[77-87]
+@[89-102]
+@[105-115]
+@[117-130]
+@[133-143]
+@[145-158]
+@[161-171]
+@[173-186]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/InterpreterSample.cs)
 
 +++

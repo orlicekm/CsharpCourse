@@ -2,7 +2,7 @@
 
 namespace Samples.Behavioral
 {
-    public class ChainOfResponsibility
+    public class ChainOfResponsibilitySample
     {
         private static void Main()
         {

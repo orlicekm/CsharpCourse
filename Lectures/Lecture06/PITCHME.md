@@ -908,7 +908,8 @@ Request# 2036 requires an executive meeting!
 
 ---
 ## Command
-
+* **Definition:** *Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations*
+* **Frequency of use:** *Medium high*
 
 +++
 ###  Command - UML Diagram
@@ -917,8 +918,20 @@ Request# 2036 requires an executive meeting!
 
 +++
 ### Command - Participants
+* **Command**  *(Command)*
+  * Declares an interface for executing an operation
+* **ConcreteCommand**  *(CalculatorCommand)*
+  * Defines a binding between a *Receiver* object and an action
+  * Implements *Execute* by invoking the corresponding operation(s) on *Receiver*
+* **Client**  *(CommandApp)*
+  * Creates a *ConcreteCommand* object and sets its receiver
+* **Invoker**  *(User)*
+  * Asks the command to carry out the request
+* **Receiver**  *(Calculator)*
+  * Knows how to perform the operations associated with carrying out the request
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/CommandSample.cs&lang=C#&title=Command - Sample
+
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/CommandSample.cs)
 
 +++

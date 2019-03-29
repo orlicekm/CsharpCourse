@@ -239,7 +239,7 @@ public class StackTests
 ### Class Fixtures
 * Creates a single test context and **share it among all the tests in the class**
 * **Cleans it up after all the tests in the class have finished**
-* Fixture instance will be created before any of the tests have run
+* Fixture instance will be created before any of the tests are run
   * Once all the tests have finished, it will clean up the fixture object by calling `Dispose`
 
 +++
@@ -375,11 +375,10 @@ public class DatabaseTestClass2
 ---
 ## Running Tests in Parallel -  xUnit
 * From *xUnit.net version 2*
-* **Test collections decides witch tests can run against each other in parallel**
-* By default, **each test class is a unique test collection**
+* **Test collections decide which tests can run against each other in parallel**
+* By default, **each test class is an unique test collection**
 * **Tests within the same test class will not run in parallel** against each other
 * If multiple test classes should not be run in parallel against one another, then place them into the same test collection
-
 
 +++
 #### Running Tests in Parallel Sample 1/3 

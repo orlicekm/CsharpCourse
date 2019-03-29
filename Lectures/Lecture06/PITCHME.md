@@ -787,6 +787,8 @@ B (pointsize 18)
 
 ---
 ## Proxy
+* **Definition:** *Provide a surrogate or placeholder for another object to control access to it*
+* **Frequency of use:** *Medium high*
 
 +++
 ###  Proxy - UML Diagram
@@ -794,7 +796,23 @@ B (pointsize 18)
 ![](/Lectures/Lecture06/Assets/img/Proxy.gif)
 
 +++
-### Proxy - Participants
+### Proxy - Participants part 1/2
+* **Proxy**  *(MathProxy)*
+  * Maintains a reference that lets the proxy access the real subject
+    * Proxy may refer to a *Subject* if the *RealSubject* and *Subject* interfaces are the same
+  * Provides an interface identical to *Subject*'s so that a proxy can be substituted for for the real subject
+  * Controls access to the real subject and may be responsible for creating and deleting it
+  * Other responsibilites depend on the kind of proxy:
+    * **Remote proxies** are responsible for encoding a request and its arguments and for sending the encoded request to the real subject in a different address space
+    * **Virtual proxies** may cache additional information about the real subject so that they can postpone accessing it
+    * **Protection proxies** check that the caller has the access permissions required to perform a request
+
++++
+### Proxy - Participants part 2/2
+* **Subject**  *(IMath)*
+  * Defines the common interface for *RealSubject* and *Proxy* so that a *Proxy* can be used anywhere a *RealSubject* is expected
+* **RealSubject**  *(Math)*
+  * Defines the real object that the proxy represents
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/ProxySample.cs&lang=C#&title=Proxy - Sample
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/ProxySample.cs)

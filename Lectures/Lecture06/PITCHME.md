@@ -725,7 +725,7 @@ Ann McKinsey has been Approved
 ![](/Lectures/Lecture06/Assets/img/Flyweight.gif)
 
 +++
-### Flyweight - Participants
+### Flyweight - Participants part 1/2
 * **Flyweight**  *(Character)*
   * Declares an interface through which flyweights can receive and act on extrinsic state
 * **ConcreteFlyweight**  *(CharacterA, CharacterB, ..., CharacterZ)*
@@ -736,6 +736,9 @@ Ann McKinsey has been Approved
   * Not all *Flyweight* subclasses need to be shared
   * The Flyweight interface enables sharing, but it doesn't enforce it
     * It is common for *UnsharedConcreteFlyweight* objects to have *ConcreteFlyweight* objects as children at some level in the flyweight object structure (as the Row and Column classes have)
+
++++
+### Flyweight - Participants part 2/2
 * **FlyweightFactory**  *(CharacterFactory)*
   * Creates and manages flyweight objects
   * Ensures that flyweight are shared properly

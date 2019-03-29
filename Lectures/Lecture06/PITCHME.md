@@ -1012,6 +1012,10 @@ Current value = 500 (following * 10)
 +++
 ### Interpreter - Sample Output
 
+```
+MCMXXVIII = 1928
+```
+
 ---
 ## Iterator
 

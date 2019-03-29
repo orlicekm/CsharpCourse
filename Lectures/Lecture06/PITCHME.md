@@ -1042,6 +1042,8 @@ MCMXXVIII = 1928
 
 ---
 ## Iterator
+* **Definition:** *Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation*
+* **Frequency of use:** *High*
 
 +++
 ###  Iterator - UML Diagram
@@ -1050,12 +1052,48 @@ MCMXXVIII = 1928
 
 +++
 ### Iterator - Participants
+* **Iterator**  *(AbstractIterator)*
+  * Defines an interface for accessing and traversing elements
+* **ConcreteIterator**  *(Iterator)*
+  * Implements the *Iterator* interface
+  * Keeps track of the current position in the traversal of the aggregate
+* **Aggregate**  *(AbstractCollection)*
+  * Defines an interface for creating an *Iterator* object
+* **ConcreteAggregate**  *(Collection)*
+  * Implements the *Iterator* creation interface to return an instance of the proper *ConcreteIterator*
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/IteratorSample.cs&lang=C#&title=Iterator - Sample
+@[6-7]
+@[8-22]
+@[10]
+@[12-13]
+@[15-21]
+@[8-22]
+@[25-28]
+@[30-46]
+@[32]
+@[34]
+@[36-40]
+@[43-45]
+@[30-46]
+@[48-54]
+@[56-57]
+@[58-64]
+@[66-69]
+@[71-77]
+@[84-86]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/IteratorSample.cs)
 
 +++
 ### Iterator - Sample Output
+
+```
+Iterating over collection:
+Item A
+Item B
+Item C
+Item D
+```
 
 ---
 ## Mediator

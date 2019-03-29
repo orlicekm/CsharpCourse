@@ -716,6 +716,8 @@ Ann McKinsey has been Approved
 
 ---
 ## Flyweight
+* **Definition:** *Use sharing to support large numbers of fine-grained objects efficiently*
+* **Frequency of use:** *Low*
 
 +++
 ###  Flyweight - UML Diagram
@@ -724,6 +726,23 @@ Ann McKinsey has been Approved
 
 +++
 ### Flyweight - Participants
+* **Flyweight**  *(Character)*
+  * Declares an interface through which flyweights can receive and act on extrinsic state
+* **ConcreteFlyweight**  *(CharacterA, CharacterB, ..., CharacterZ)*
+  * Implements the *Flyweight* interface and adds storage for intrinsic state, if any
+  * Must be sharable
+  * Any state it stores must be intrinsic, that is, it must be independent of the *ConcreteFlyweight* object's context
+* **UnsharedConcreteFlyweight**  *(not used)*
+  * Not all *Flyweight* subclasses need to be shared
+  * The Flyweight interface enables sharing, but it doesn't enforce it
+    * It is common for *UnsharedConcreteFlyweight* objects to have *ConcreteFlyweight* objects as children at some level in the flyweight object structure (as the Row and Column classes have)
+* **FlyweightFactory**  *(CharacterFactory)*
+  * Creates and manages flyweight objects
+  * Ensures that flyweight are shared properly
+  * When a client requests a flyweight, the *FlyweightFactory* objects assets an existing instance or creates one, if none exists
+* **Client**  *(FlyweightApp)*
+  * Maintains a reference to flyweight(s)
+  * Computes or stores the extrinsic state of flyweight(s)
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/FlyweightSample.cs&lang=C#&title=Flyweight - Sample
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/FlyweightSample.cs)

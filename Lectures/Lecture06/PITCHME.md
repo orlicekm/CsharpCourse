@@ -458,14 +458,53 @@ Compound: Alcohol ------
 
 ---
 ## Bridge
+* **Definition:** *Decouple an abstraction from its implementation so that the two can vary independently*
+* **Frequency of use:** *Medium*
 
 +++
 ###  Bridge - UML Diagram
 
+![](/Lectures/Lecture06/Assets/img/Bridge.gif)
+
 +++
 ### Bridge - Participants
+* **Abstraction**  *(BusinessObject)*
+  * Defines the abstraction's interface
+  * Maintains a reference to an object of type *Implementor*
+* **RefinedAbstraction**  *(CustomersBusinessObject)*
+  * Extends the interface defined by *Abstraction*
+* **Implementor**  *(DataObject)*
+  * Defines the interface for implementation classes
+  * Doesn't have to correspond exactly to *Abstraction*'s interface
+    * In fact the two interfaces can be quite different
+    * Typically the *Implementation* interface provides only primitive operations, and *Abstraction* defines higher-level operations based on these primitives
+* **ConcreteImplementor**  *(CustomersDataObject)*
+  * Implements the *Implementor* interface and defines its concrete implementation
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Bridge.cs&lang=C#&title=Bridge - Sample
+@[6-7]
+@[8-24]
+@[10-11]
+@[13-14]
+@[16-23]
+@[8-24]
+@[27-28]
+@[29-34]
+@[36]
+@[38-51]
+@[53-67]
+@[70-84]
+@[72-75]
+@[77-83]
+@[70-84]
+@[86-94]
+@[88-93]
+@[86-94]
+@[96-97]
+@[98-99]
+@[101-109]
+@[111-124]
+@[126-139]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Bridge.cs)
 
 +++
@@ -476,6 +515,8 @@ Compound: Alcohol ------
 
 +++
 ###  Composite - UML Diagram
+
+![](/Lectures/Lecture06/Assets/img/Composite.gif)
 
 +++
 ### Composite - Participants
@@ -492,6 +533,8 @@ Compound: Alcohol ------
 +++
 ###  Decorator - UML Diagram
 
+![](/Lectures/Lecture06/Assets/img/Decorator.gif)
+
 +++
 ### Decorator - Participants
 
@@ -506,6 +549,8 @@ Compound: Alcohol ------
 
 +++
 ###  Facade - UML Diagram
+
+![](/Lectures/Lecture06/Assets/img/Facade.gif)
 
 +++
 ### Facade - Participants
@@ -522,6 +567,8 @@ Compound: Alcohol ------
 +++
 ###  Flyweight - UML Diagram
 
+![](/Lectures/Lecture06/Assets/img/Flyweight.gif)
+
 +++
 ### Flyweight - Participants
 
@@ -536,6 +583,8 @@ Compound: Alcohol ------
 
 +++
 ###  Proxy - UML Diagram
+
+![](/Lectures/Lecture06/Assets/img/Proxy.gif)
 
 +++
 ### Proxy - Participants

@@ -666,6 +666,8 @@ borrower: Customer #2
 
 ---
 ## Facade
+* **Definition:** *Provide a unified interface to a set of interfaces in a subsystem, defines a higher-level interface that makes the subsystem easier to use*
+* **Frequency of use:** *High*
 
 +++
 ###  Facade - UML Diagram
@@ -674,12 +676,43 @@ borrower: Customer #2
 
 +++
 ### Facade - Participants
+* **Facade**  *(MortgageApplication)*
+  * Knows which subsystem classes are responsible for a request
+  * Delegates client requests to appropriate subsystem objects
+* **Subsystem classes**  *(Bank, Credit, Loan)*
+  * Implement subsystem functionality
+  * Handle work assigned by the *Facade* object
+  * Have no knowledge of the facade and keep no reference to it
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/FacadeSample.cs&lang=C#&title=Facade - Sample
+@[5-6]
+@[7-17]
+@[9]
+@[11-16]
+@[7-17]
+@[20-27]
+@[29-36]
+@[38-45]
+@[47-55]
+@[57-77]
+@[59-61]
+@[63-65, 77]
+@[67-76]
+@[57-77]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/FacadeSample.cs)
 
 +++
 ### Facade - Sample Output
+
+```
+Ann McKinsey applies for $125,000.00 loan
+
+Check bank for Ann McKinsey
+Check loans for Ann McKinsey
+Check credit for Ann McKinsey
+
+Ann McKinsey has been Approved
+```
 
 ---
 ## Flyweight

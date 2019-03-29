@@ -745,10 +745,42 @@ Ann McKinsey has been Approved
   * Computes or stores the extrinsic state of flyweight(s)
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/FlyweightSample.cs&lang=C#&title=Flyweight - Sample
+@[6-7]
+@[8-26]
+@[10-12]
+@[14]
+@[16-17]
+@[19-25]
+@[8-26]
+@[29-30]
+@[31-32]
+@[34-35]
+@[36-41]
+@[42-60]
+@[62]
+@[66-76]
+@[78-94]
+@[80-87]
+@[89-93]
+@[78-94]
+@[96-112]
+@[114]
+@[116-132]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/FlyweightSample.cs)
 
 +++
 ### Flyweight - Sample Output
+
+```
+A (pointsize 11)
+A (pointsize 12)
+Z (pointsize 13)
+Z (pointsize 14)
+B (pointsize 15)
+B (pointsize 16)
+Z (pointsize 17)
+B (pointsize 18)
+```
 
 ---
 ## Proxy

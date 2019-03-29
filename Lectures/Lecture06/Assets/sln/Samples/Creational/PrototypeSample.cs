@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Samples.Behavioral
+namespace Samples.Creational
 {
-    public class Prototype
+    public class PrototypeSample
     {
         private static void Main()
         {

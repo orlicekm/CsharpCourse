@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Samples.Structural
 {
-    public class Bridge
+    public class BridgeSample
     {
         private static void Main()
         {

@@ -2,7 +2,7 @@
 
 namespace Samples.Structural
 {
-    public class Adapter
+    public class AdapterSample
     {
         private static void Main()
         {

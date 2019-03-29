@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Samples.Behavioral
+namespace Samples.Creational
 {
-    public class AbstractFactory
+    public class AbstractFactorySample
     {
         public static void Main()
         {

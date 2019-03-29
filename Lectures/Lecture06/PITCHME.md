@@ -92,7 +92,7 @@
 * **Client**  *(AnimalWorld)*
   * Uses interfaces declared by *AbstractFactory* and *AbstractProduct* classes
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/AbstractFactory.cs&lang=C#&title=Abstract Factory - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/AbstractFactorySample.cs&lang=C#&title=Abstract Factory - Sample
 @[5-6]
 @[7-18]
 @[9-12]
@@ -118,7 +118,7 @@
 @[93-97]
 @[99-102]
 @[88-103]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/AbstractFactory.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/AbstractFactorySample.cs)
 
 +++
 ### Abstract Factory - Sample Output
@@ -152,7 +152,7 @@ Wolf eats Bison
   * Represents the complex object under construction, *ConcreteBuilder* builds the product's internal representation and defines the process by which it's assembled
   * Includes classes that define the constituent parts, including interfaces for assembling the parts into the final result
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/Builder.cs&lang=C#&title=Builder - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/BuilderSample.cs&lang=C#&title=Builder - Sample
 @[6-7]
 @[8-28]
 @[10]
@@ -183,7 +183,7 @@ Wolf eats Bison
 @[143-148]
 @[140-141, 150-156]
 @[157-165]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/Builder.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/BuilderSample.cs)
 
 +++
 ### Builder - Sample Output
@@ -234,7 +234,7 @@ Vehicle Type: MotorCycle
 * **ConcreteCreator*  *(Report, Resume)*
   * Overrides the factory method to return an instance of a ConcreteProduct
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/FactoryMethod.cs&lang=C#&title=Factory Method - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/FactoryMethodSample.cs&lang=C#&title=Factory Method - Sample
 @[6-23]
 @[10-11]
 @[13-14]
@@ -251,7 +251,7 @@ Vehicle Type: MotorCycle
 @[61-75]
 @[77-85]
 @[87-97]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/FactoryMethod.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/FactoryMethodSample.cs)
 
 +++
 ### Factory Method - Sample Output
@@ -289,7 +289,7 @@ Report -------
 * **Client**  *(ColorManager)*
   * Creates a new object by asking a prototype to clone itself
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/Prototype.cs&lang=C#&title=Prototype - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/PrototypeSample.cs&lang=C#&title=Prototype - Sample
 @[6-7]
 @[8-26]
 @[10-20]
@@ -303,7 +303,7 @@ Report -------
 @[58-59]
 @[61-65]
 @[56-66]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/Prototype.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/PrototypeSample.cs)
 
 
 +++
@@ -332,7 +332,7 @@ Cloning color RGB: 211, 34, 20
   * Instance is a class operation
   * Responsible for creating and maintaining its own unique instance
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/Singleton.cs&lang=C#&title=Singleton - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Creational/SingletonSample.cs&lang=C#&title=Singleton - Sample
 @[6-7]
 @[8-25]
 @[10-13]
@@ -348,7 +348,7 @@ Cloning color RGB: 211, 34, 20
 @[62-63, 65]
 @[64]
 @[55-68]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/Singleton.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Creational/SingletonSample.cs)
 
 +++
 ### Singleton - Sample Output
@@ -408,7 +408,7 @@ ServerIV
 * **Client**  *(AdapterApp)*
   * Collaborates with objects conforming to the *Target* interface
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Adapter.cs&lang=C#&title=Adapter - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/AdapterSample.cs&lang=C#&title=Adapter - Sample
 @[5-6]
 @[7-22]
 @[9-11]
@@ -429,7 +429,7 @@ ServerIV
 @[75-94]
 @[96-105]
 @[107-116]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Adapter.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/AdapterSample.cs)
 
 +++
 ### Adapter - Sample Output
@@ -481,7 +481,7 @@ Compound: Alcohol ------
 * **ConcreteImplementor**  *(CustomersDataObject)*
   * Implements the *Implementor* interface and defines its concrete implementation
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Bridge.cs&lang=C#&title=Bridge - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/BridgeSample.cs&lang=C#&title=Bridge - Sample
 @[6-7]
 @[8-24]
 @[10-11]
@@ -505,7 +505,7 @@ Compound: Alcohol ------
 @[101-109]
 @[111-124]
 @[126-139]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Bridge.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/BridgeSample.cs)
 
 +++
 ### Bridge - Sample Output
@@ -554,7 +554,7 @@ Henry Velasquez
 * **Client**  *(CompositeApp)*
   * Manipulates objects in the composition through the *Component* interface
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Composite.cs&lang=C#&title=Composite - Sample
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/CompositeSample.cs&lang=C#&title=Composite - Sample
 @[6-7]
 @[10-15]
 @[17-22]
@@ -573,7 +573,7 @@ Henry Velasquez
 @[85-88]
 @[90-93]
 @[95-102]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Composite.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/CompositeSample.cs)
 
 +++
 ### Composite - Sample Output
@@ -590,6 +590,8 @@ Henry Velasquez
 
 ---
 ## Decorator
+* **Definition:** *Attach additional responsibilities to an object dynamically, provide a flexible alternative to subclassing for extending functionality*
+* **Frequency of use:** *Medium*
 
 +++
 ###  Decorator - UML Diagram
@@ -598,12 +600,45 @@ Henry Velasquez
 
 +++
 ### Decorator - Participants
+* **Component**  *(LibraryItem)*
+  * Defines the interface for objects that can have responsibilities added to them dynamically
+* **ConcreteComponent**  *(Book, Video)*
+  * Defines an object to which additional responsibilities can be attached
+* **Decorator**  *(Decorator)*
+  * Maintains a reference to a *Component* object and defines an interface that conforms to *Component*'s interface
+* **ConcreteDecorator**  *(Borrowable)*
+* Adds responsibilities to the component
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Decorator.cs&lang=C#&title=Decorator - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Decorator.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/DecoratorSample.cs&lang=C#&title=Decorator - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/DecoratorSample.cs)
 
 +++
 ### Decorator - Sample Output
+
+```
+Book ------
+Author: Worley
+Title: Inside ASP.NET
+# Copies: 10
+
+Video -----
+Director: Spielberg
+Title: Jaws
+# Copies: 23
+Playtime: 92
+
+
+Making video borrowable:
+
+Video -----
+Director: Spielberg
+Title: Jaws
+# Copies: 21
+Playtime: 92
+
+borrower: Customer #1
+borrower: Customer #2
+```
 
 ---
 ## Facade
@@ -616,8 +651,8 @@ Henry Velasquez
 +++
 ### Facade - Participants
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Facade.cs&lang=C#&title=Facade - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Facade.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/FacadeSample.cs&lang=C#&title=Facade - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/FacadeSample.cs)
 
 +++
 ### Facade - Sample Output
@@ -633,8 +668,8 @@ Henry Velasquez
 +++
 ### Flyweight - Participants
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Flyweight.cs&lang=C#&title=Flyweight - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Flyweight.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/FlyweightSample.cs&lang=C#&title=Flyweight - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/FlyweightSample.cs)
 
 +++
 ### Flyweight - Sample Output
@@ -650,8 +685,8 @@ Henry Velasquez
 +++
 ### Proxy - Participants
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Proxy.cs&lang=C#&title=Proxy - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Proxy.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/ProxySample.cs&lang=C#&title=Proxy - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/ProxySample.cs)
 
 +++
 ### Proxy - Sample Output
@@ -683,8 +718,8 @@ Henry Velasquez
 +++
 ### Chain of Responsibility - Participants
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/ChainOfResponsibility.cs&lang=C#&title=Chain of Responsibility - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/ChainOfResponsibility.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/ChainOfResponsibilitySample.cs&lang=C#&title=Chain of Responsibility - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/ChainOfResponsibilitySample.cs)
 
 +++
 ### Chain of Responsibility - Sample Output
@@ -698,8 +733,8 @@ Henry Velasquez
 +++
 ### Command - Participants
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Command.cs&lang=C#&title=Command - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Command.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/CommandSample.cs&lang=C#&title=Command - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/CommandSample.cs)
 
 +++
 ### Command - Sample Output
@@ -713,8 +748,8 @@ Henry Velasquez
 +++
 ### Interpreter - Participants
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Interpreter.cs&lang=C#&title=Interpreter - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Interpreter.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/InterpreterSample.cs&lang=C#&title=Interpreter - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/InterpreterSample.cs)
 
 +++
 ### Interpreter - Sample Output
@@ -728,8 +763,8 @@ Henry Velasquez
 +++
 ### Iterator - Participants
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Iterator.cs&lang=C#&title=Iterator - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Iterator.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/IteratorSample.cs&lang=C#&title=Iterator - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/IteratorSample.cs)
 
 +++
 ### Iterator - Sample Output
@@ -743,8 +778,8 @@ Henry Velasquez
 +++
 ### Mediator - Participants
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Mediator.cs&lang=C#&title=Mediator - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Mediator.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/MediatorSample.cs&lang=C#&title=Mediator - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/MediatorSample.cs)
 
 +++
 ### Mediator - Sample Output
@@ -758,8 +793,8 @@ Henry Velasquez
 +++
 ### Memento - Participants
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Memento.cs&lang=C#&title=Memento - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Memento.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/MementoSample.cs&lang=C#&title=Memento - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/MementoSample.cs)
 
 +++
 ### Memento - Sample Output
@@ -773,8 +808,8 @@ Henry Velasquez
 +++
 ### Observer - Participants
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Observer.cs&lang=C#&title=Observer - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Observer.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/ObserverSample.cs&lang=C#&title=Observer - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/ObserverSample.cs)
 
 +++
 ### Observer - Sample Output
@@ -788,8 +823,8 @@ Henry Velasquez
 +++
 ### State - Participants
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/State.cs&lang=C#&title=State - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/State.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/StateSample.cs&lang=C#&title=State - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/StateSample.cs)
 
 +++
 ### State - Sample Output
@@ -803,8 +838,8 @@ Henry Velasquez
 +++
 ### Strategy - Participants
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Strategy.cs&lang=C#&title=Strategy - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Strategy.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/StrategySample.cs&lang=C#&title=Strategy - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/StrategySample.cs)
 
 +++
 ### Strategy - Sample Output
@@ -818,8 +853,8 @@ Henry Velasquez
 +++
 ### Template Method - Participants
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/TemplateMethod.cs&lang=C#&title=Template Method - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/TemplateMethod.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/TemplateMethodSample.cs&lang=C#&title=Template Method - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/TemplateMethodSample.cs)
 
 +++
 ### Template Method - Sample Output
@@ -833,8 +868,8 @@ Henry Velasquez
 +++
 ### Visitor - Participants
 
-+++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Visitor.cs&lang=C#&title=Visitor - Sample
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Visitor.cs)
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/VisitorSample.cs&lang=C#&title=Visitor - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/VisitorSample.cs)
 
 +++
 ### Visitor - Sample Output

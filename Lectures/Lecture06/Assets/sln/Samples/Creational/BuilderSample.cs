@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Samples.Behavioral
+namespace Samples.Creational
 {
-    public class Builder
+    public class BuilderSample
     {
         public static void Main()
         {

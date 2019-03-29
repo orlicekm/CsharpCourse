@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Samples.Structural
 {
-    public class Composite
+    public class CompositeSample
     {
         private static void Main()
         {

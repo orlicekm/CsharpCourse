@@ -646,7 +646,7 @@ public class TestClass2
 * Increases **visibility** enabling greater communication
 * **Less time debugging** and **more time adding features**
 * Solid foundation
-* Stops waiting to find out if your code’s going to work
+* No more waiting to find out if your code’s going to work
 * Reduce integration problems
 
 +++

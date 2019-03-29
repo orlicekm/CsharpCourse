@@ -815,10 +815,25 @@ B (pointsize 18)
   * Defines the real object that the proxy represents
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/ProxySample.cs&lang=C#&title=Proxy - Sample
+@[5-6]
+@[7-17]
+@[20-26]
+@[28-29]
+@[30-48]
+@[51-52]
+@[53]
+@[55-73]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/ProxySample.cs)
 
 +++
 ### Proxy - Sample Output
+
+```
+4 + 2 = 6
+4 - 2 = 2
+4 * 2 = 8
+4 / 2 = 2
+```
 
 ---
 ## Behavioral Patterns

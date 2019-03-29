@@ -389,18 +389,72 @@ ServerIV
 
 ---
 ## Adapter
+* **Definition:** *Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.*
+* **Frequency of use:** *Medium high*
 
 +++
 ###  Adapter - UML Diagram
 
+![](/Lectures/Lecture06/Assets/img/Adapter.gif)
+
 +++
 ### Adapter - Participants
+* **Target**  *(ChemicalCompound)*
+  * Defines the domain-specific interface that *Client* uses
+* **Adapter**  *(Compound)*
+  * Adapts the interface *Adaptee* to the *Target* interface
+* **Adaptee**  *(ChemicalDatabank)*
+  * Defines an existing interface that needs adapting
+* **Client**  *(AdapterApp)*
+  * Collaborates with objects conforming to the *Target* interface
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Adapter.cs&lang=C#&title=Adapter - Sample
+@[5-6]
+@[7-22]
+@[9-11]
+@[13-21]
+@[7-22]
+@[25-42]
+@[27-31]
+@[33-36]
+@[38-41]
+@[25-42]
+@[44-45]
+@[46]
+@[49-52]
+@[54-57, 69]
+@[59-62]
+@[64-68]
+@[72-74]
+@[75-94]
+@[96-105]
+@[107-116]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Adapter.cs)
 
 +++
 ### Adapter - Sample Output
+
+```
+Compound: Unknown ------
+
+Compound: Water ------
+ Formula: H20
+ Weight : 18.015
+ Melting Pt: 0
+ Boiling Pt: 100
+
+Compound: Benzene ------
+ Formula: C6H6
+ Weight : 78.1134
+ Melting Pt: 5.5
+ Boiling Pt: 80.1
+
+Compound: Alcohol ------
+ Formula: C2H6O2
+ Weight : 46.0688
+ Melting Pt: -114.1
+ Boiling Pt: 78.3
+```
 
 ---
 ## Bridge

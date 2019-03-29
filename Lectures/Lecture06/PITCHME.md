@@ -931,7 +931,26 @@ Request# 2036 requires an executive meeting!
   * Knows how to perform the operations associated with carrying out the request
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/CommandSample.cs&lang=C#&title=Command - Sample
-
+@[6-7]
+@[8-24]
+@[10-11]
+@[13-17]
+@[19-23]
+@[8-24]
+@[27-31]
+@[33-34]
+@[35-46]
+@[47-55]
+@[57-65]
+@[68-80]
+@[83-84]
+@[85]
+@[87-107]
+@[110-111]
+@[112-114]
+@[116-124]
+@[127-136]
+@[138-148]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/CommandSample.cs)
 
 +++

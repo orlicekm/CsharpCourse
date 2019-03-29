@@ -510,6 +510,22 @@ Compound: Alcohol ------
 +++
 ### Bridge - Sample Output
 
+```
+Jim Jones
+Samual Jackson
+Allen Good
+
+------------------------
+Customer Group: Chicago
+Jim Jones
+Samual Jackson
+Allen Good
+Ann Stills
+Lisa Giolani
+Henry Velasquez
+------------------------
+```
+
 ---
 ## Composite
 

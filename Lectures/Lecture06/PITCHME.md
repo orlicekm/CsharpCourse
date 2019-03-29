@@ -976,6 +976,8 @@ Current value = 500 (following * 10)
 
 ---
 ## Interpreter
+* **Definition:** *Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language*
+* **Frequency of use:** *Low*
 
 +++
 ###  Interpreter - UML Diagram
@@ -984,6 +986,22 @@ Current value = 500 (following * 10)
 
 +++
 ### Interpreter - Participants
+* **AbstractExpression**  *(Expression)*
+  * Declares an interface for executing an operation
+* **TerminalExpression**  *(ThousandExpression, HundredExpression, TenExpression, OneExpression)*
+  * Implements an Interpret operation associated with terminal symbols in the grammar
+  * An instance is required for every terminal symbol in the sentence
+* **NonterminalExpression**  *(not used)*
+  * One such class is required for every rule R ::= R1R2...Rn in the grammar
+  * Maintains instance variables of type *AbstractExpression* for each of the symbols R1 through Rn
+  * Implements an Interpret operation for nonterminal symbols in the grammar
+    * Interpret typically calls itself recursively on the variables representing R1 through Rn
+* **Context**  *(Context)*
+  * Contains information that is global to the interpreter
+* **Client**  *(InterpreterApp)*
+  * Builds (or is given) an abstract syntax tree representing a particular sentence in the language that the grammar defines
+    * The abstract syntax tree is assembled from instances of the *NonterminalExpression* and *TerminalExpression* classes
+  * Invokes the Interpret operation
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/InterpreterSample.cs&lang=C#&title=Interpreter - Sample
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/InterpreterSample.cs)

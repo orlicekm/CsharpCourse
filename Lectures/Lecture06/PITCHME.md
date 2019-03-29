@@ -859,6 +859,8 @@ B (pointsize 18)
 +++
 ###  Chain of Responsibility - UML Diagram
 
+![](/Lectures/Lecture06/Assets/img/ChainOfResponsibility.gif)
+
 +++
 ### Chain of Responsibility - Participants
 
@@ -873,6 +875,8 @@ B (pointsize 18)
 
 +++
 ###  Command - UML Diagram
+
+![](/Lectures/Lecture06/Assets/img/Command.gif)
 
 +++
 ### Command - Participants
@@ -889,6 +893,8 @@ B (pointsize 18)
 +++
 ###  Interpreter - UML Diagram
 
+![](/Lectures/Lecture06/Assets/img/Interpreter.gif)
+
 +++
 ### Interpreter - Participants
 
@@ -903,6 +909,8 @@ B (pointsize 18)
 
 +++
 ###  Iterator - UML Diagram
+
+![](/Lectures/Lecture06/Assets/img/Iterator.gif)
 
 +++
 ### Iterator - Participants
@@ -919,6 +927,8 @@ B (pointsize 18)
 +++
 ###  Mediator - UML Diagram
 
+![](/Lectures/Lecture06/Assets/img/Mediator.gif)
+
 +++
 ### Mediator - Participants
 
@@ -933,6 +943,8 @@ B (pointsize 18)
 
 +++
 ###  Memento - UML Diagram
+
+![](/Lectures/Lecture06/Assets/img/Memento.gif)
 
 +++
 ### Memento - Participants
@@ -949,6 +961,8 @@ B (pointsize 18)
 +++
 ###  Observer - UML Diagram
 
+![](/Lectures/Lecture06/Assets/img/Observer.gif)
+
 +++
 ### Observer - Participants
 
@@ -963,6 +977,8 @@ B (pointsize 18)
 
 +++
 ###  State - UML Diagram
+
+![](/Lectures/Lecture06/Assets/img/State.gif)
 
 +++
 ### State - Participants
@@ -979,6 +995,8 @@ B (pointsize 18)
 +++
 ###  Strategy - UML Diagram
 
+![](/Lectures/Lecture06/Assets/img/Strategy.gif)
+
 +++
 ### Strategy - Participants
 
@@ -994,6 +1012,8 @@ B (pointsize 18)
 +++
 ###  Template Method - UML Diagram
 
+![](/Lectures/Lecture06/Assets/img/TemplateMethod.gif)
+
 +++
 ### Template Method - Participants
 
@@ -1008,6 +1028,8 @@ B (pointsize 18)
 
 +++
 ###  Visitor - UML Diagram
+
+![](/Lectures/Lecture06/Assets/img/Visitor.gif)
 
 +++
 ### Visitor - Participants

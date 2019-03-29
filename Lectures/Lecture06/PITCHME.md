@@ -1097,6 +1097,8 @@ Item D
 
 ---
 ## Mediator
+* **Definition:** *Define an object that encapsulates how a set of objects interact, promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently*
+* **Frequency of use:** *Medium low*
 
 +++
 ###  Mediator - UML Diagram
@@ -1105,12 +1107,49 @@ Item D
 
 +++
 ### Mediator - Participants
+* **Mediator**  *(IChatroom)*
+  * Defines an interface for communicating with *Colleague objects*
+* **ConcreteMediator**  *(Chatroom)*
+  * Implements cooperative behavior by coordinating *Colleague objects*
+  * Knows and maintains its colleagues
+* **Colleague classes**  *(Participant)*
+  * Each Colleague class knows its *Mediator* object
+  * Each colleague communicates with its mediator whenever it would have otherwise communicated with another colleague
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/MediatorSample.cs&lang=C#&title=Mediator - Sample
+@[6-7]
+@[10]
+@[12-17]
+@[19-23]
+@[25-30]
+@[34-39]
+@[41-56]
+@[43]
+@[45-49]
+@[51-55]
+@[41-56]
+@[58-59]
+@[60-63]
+@[65-66]
+@[68-71]
+@[73-76]
+@[79-91]
+@[81-84]
+@[86-90]
+@[79-91]
+@[93-105]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/MediatorSample.cs)
 
 +++
 ### Mediator - Sample Output
+
+```
+To a Beatle: Yoko to John: 'Hi John!'
+To a Beatle: Paul to Ringo: 'All you need is love'
+To a Beatle: Ringo to George: 'My sweet Lord'
+To a Beatle: Paul to John: 'Can't buy me love'
+To a non-Beatle: John to Yoko: 'My sweet love'
+```
 
 ---
 ## Memento

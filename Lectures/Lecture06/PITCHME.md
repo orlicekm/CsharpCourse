@@ -610,6 +610,30 @@ Henry Velasquez
 * Adds responsibilities to the component
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/DecoratorSample.cs&lang=C#&title=Decorator - Sample
+@[6-7]
+@[8-24]
+@[10-12]
+@[14-16]
+@[18-23]
+@[8-24]
+@[27-32]
+@[34-53]
+@[36-44]
+@[46-52]
+@[34-53]
+@[55-56]
+@[57-68]
+@[70-77]
+@[80-93]
+@[82-87]
+@[89-92]
+@[80-93]
+@[95-96]
+@[97]
+@[99-102]
+@[104-108]
+@[110-114]
+@[116-120]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/DecoratorSample.cs)
 
 +++

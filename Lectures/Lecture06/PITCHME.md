@@ -985,7 +985,7 @@ Current value = 500 (following * 10)
 ![](/Lectures/Lecture06/Assets/img/Interpreter.gif)
 
 +++
-### Interpreter - Participants
+### Interpreter - Participants part 1/2
 * **AbstractExpression**  *(Expression)*
   * Declares an interface for executing an operation
 * **TerminalExpression**  *(ThousandExpression, HundredExpression, TenExpression, OneExpression)*
@@ -996,6 +996,9 @@ Current value = 500 (following * 10)
   * Maintains instance variables of type *AbstractExpression* for each of the symbols R1 through Rn
   * Implements an Interpret operation for nonterminal symbols in the grammar
     * Interpret typically calls itself recursively on the variables representing R1 through Rn
+
++++
+### Interpreter - Participants part 2/2
 * **Context**  *(Context)*
   * Contains information that is global to the interpreter
 * **Client**  *(InterpreterApp)*

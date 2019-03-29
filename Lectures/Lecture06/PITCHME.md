@@ -736,7 +736,7 @@ Ann McKinsey has been Approved
   * Not all *Flyweight* subclasses need to be shared
   * The Flyweight interface enables sharing, but it doesn't enforce it
     * It is common for *UnsharedConcreteFlyweight* objects to have *ConcreteFlyweight* objects as children at some level in the flyweight object structure (as the Row and Column classes have)
-dsadas
+
 +++
 ### Flyweight - Participants part 2/2
 * **FlyweightFactory**  *(CharacterFactory)*

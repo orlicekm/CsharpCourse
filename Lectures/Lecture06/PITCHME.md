@@ -956,6 +956,24 @@ Request# 2036 requires an executive meeting!
 +++
 ### Command - Sample Output
 
+```
+Current value = 100 (following + 100)
+Current value =  50 (following - 50)
+Current value = 500 (following * 10)
+Current value = 250 (following / 2)
+
+---- Undo 4 levels
+Current value = 500 (following * 2)
+Current value =  50 (following / 10)
+Current value = 100 (following + 50)
+Current value =   0 (following - 100)
+
+---- Redo 3 levels
+Current value = 100 (following + 100)
+Current value =  50 (following - 50)
+Current value = 500 (following * 10)
+```
+
 ---
 ## Interpreter
 

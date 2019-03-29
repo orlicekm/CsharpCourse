@@ -860,7 +860,7 @@ public class TestClass2
 ---
 ## Azure Artifacts
 * **Integrated package management** to (CI/CD) pipelines
-* Dhare *Maven*, *npm*, and *NuGet* packages from public and private sources
+* Create and share *Maven*, *npm*, and *NuGet* packages from public and private sources
 * Unlimited size
 * Stored in cloud
 * It is not part of basic access level

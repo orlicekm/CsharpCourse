@@ -855,6 +855,8 @@ B (pointsize 18)
 
 ---
 ## Chain of Responsibility
+* **Definition:** *Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request, chain the receiving objects and pass the request along the chain until an object handles it*
+* **Frequency of use:** *Medium low*
 
 +++
 ###  Chain of Responsibility - UML Diagram
@@ -863,12 +865,46 @@ B (pointsize 18)
 
 +++
 ### Chain of Responsibility - Participants
+* **Handler**  *(Approver)*
+  * Defines an interface for handling the requests
+  * (optional) implements the successor link
+* **ConcreteHandler**  *(Director, VicePresident, President)*
+  * Handles requests it is responsible for
+  * Can access its successor
+  * If the *ConcreteHandler* can handle the request, it does so; otherwise it forwards the request to its successor
+* **Client**  *(ChainApp)*
+  * Initiates the request to a *ConcreteHandler* object on the chain
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/ChainOfResponsibilitySample.cs&lang=C#&title=Chain of Responsibility - Sample
+@[5-6]
+@[7-26]
+@[9-15]
+@[17-25]
+@[7-26]
+@[29-39]
+@[31-36]
+@[38]
+@[29-39]
+@[41-51]
+@[45-47]
+@[48-49]
+@[41-51]
+@[53-63]
+@[65-77]
+@[79-91]
+@[81-86]
+@[88-90]
+@[79-91]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/ChainOfResponsibilitySample.cs)
 
 +++
 ### Chain of Responsibility - Sample Output
+
+```
+Director Larry approved request# 2034
+President Tammy approved request# 2035
+Request# 2036 requires an executive meeting!
+```
 
 ---
 ## Command

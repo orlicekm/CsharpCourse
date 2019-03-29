@@ -35,7 +35,7 @@
 +++
 ### Repository vs UnitOfWork
 * **Repository** design pattern
-  * Should **not have sematic of database**
+  * Should **not have sematics of database**
   * E.g. *Update*, *Save*, *Delete*... 
 * How are these objects going to be saved to database?
   * **UnitOfWork** design pattern
@@ -285,7 +285,7 @@ var topSellingCourses = schoolCourses.Where(c => c.IsPublic && c.IsApproved).Ord
 
 +++
 ### How to Use AutoMapper
-1. **Create sourse and destination** types
+1. **Create source and destination** types
   * AutoMapper works best as long as the names of the members match up to the source type’s members
     * Source member called `FirstName` will automatically be mapped to a destination member with the name `FirstName`
   * Automapper by default ignores null reference exceptions when mapping your source to your target
@@ -341,7 +341,7 @@ config.AssertConfigurationIsValid();
 
 +++
 ### AutoMapper Supports
-* **Flattering**
+* **Flattening**
   * Take a complex object model and flatten it to a simpler model
 * **Reverse Mapping** and **Unflattening**
   * Calling `ReverseMap`, *AutoMapper* creates a reverse mapping configuration that includes unflattening

@@ -526,6 +526,156 @@ ServerIV
 ### Chain of Responsibility - Sample Output
 
 ---
+## Command
+
++++
+###  Command - UML Diagram
+
++++
+### Command - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Command.cs&lang=C#&title=Command - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Command.cs)
+
++++
+### Command - Sample Output
+
+---
+## Interpreter
+
++++
+###  Interpreter - UML Diagram
+
++++
+### Interpreter - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Interpreter.cs&lang=C#&title=Interpreter - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Interpreter.cs)
+
++++
+### Interpreter - Sample Output
+
+---
+## Iterator
+
++++
+###  Iterator - UML Diagram
+
++++
+### Iterator - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Iterator.cs&lang=C#&title=Iterator - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Iterator.cs)
+
++++
+### Iterator - Sample Output
+
+---
+## Mediator
+
++++
+###  Mediator - UML Diagram
+
++++
+### Mediator - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Mediator.cs&lang=C#&title=Mediator - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Mediator.cs)
+
++++
+### Mediator - Sample Output
+
+---
+## Memento
+
++++
+###  Memento - UML Diagram
+
++++
+### Memento - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Memento.cs&lang=C#&title=Memento - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Memento.cs)
+
++++
+### Memento - Sample Output
+
+---
+## Observer
+
++++
+###  Observer - UML Diagram
+
++++
+### Observer - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Observer.cs&lang=C#&title=Observer - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Observer.cs)
+
++++
+### Observer - Sample Output
+
+---
+## State
+
++++
+###  State - UML Diagram
+
++++
+### State - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/State.cs&lang=C#&title=State - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/State.cs)
+
++++
+### State - Sample Output
+
+---
+## Strategy
+
++++
+###  Strategy - UML Diagram
+
++++
+### Strategy - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Strategy.cs&lang=C#&title=Strategy - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Strategy.cs)
+
++++
+### Strategy - Sample Output
+
+---
+## Template Method
+
++++
+###  Template Method - UML Diagram
+
++++
+### Template Method - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/TemplateMethod.cs&lang=C#&title=Template Method - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/TemplateMethod.cs)
+
++++
+### Template Method - Sample Output
+
+---
+## Visitor
+
++++
+###  Visitor - UML Diagram
+
++++
+### Visitor - Participants
+
++++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Visitor.cs&lang=C#&title=Visitor - Sample
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/Visitor.cs)
+
++++
+### Visitor - Sample Output
+
+---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [Agile Principles, Patterns, and Practices in C#](https://www.amazon.de/Agile-Principles-Patterns-Practices-C/dp/0131857258)  

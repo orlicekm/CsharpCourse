@@ -24,7 +24,7 @@
 * **NUnit**
   * Most used
 * **xUnit**
-  * Successor of Nunit
+  * Successor to Nunit
 * ⋮
 
 +++
@@ -164,7 +164,7 @@
 +++
 ### Single Concept per Test
 * Tests are laser focused 
-* Not testing miscellaenous
+* Not testing miscellaneous
  * Non-related things
 
 ---

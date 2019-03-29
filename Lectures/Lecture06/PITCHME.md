@@ -528,6 +528,8 @@ Henry Velasquez
 
 ---
 ## Composite
+* **Definition:** *Compose objects into tree structures to represent part-whole hierarchies, lets clients treat individual objects and compositions of objects uniformly*
+* **Frequency of use:** *Medium high*
 
 +++
 ###  Composite - UML Diagram
@@ -536,12 +538,55 @@ Henry Velasquez
 
 +++
 ### Composite - Participants
+* **Component**  *(DrawingElement)*
+  * Declares the interface for objects in the composition
+  * Implements default behavior for the interface common to all classes, as appropriate
+  * Declares an interface for accessing and managing its child components
+  * (optional) defines an interface for accessing a component's parent in the recursive structure, and implements it if that's appropriate
+* **Leaf**  *(PrimitiveElement)*
+  * Represents leaf objects in the composition
+  * Has no children
+  * Defines behavior for primitive objects in the composition
+* **Composite**  *(CompositeElement)*
+  * Defines behavior for components having children
+  * Stores child components
+  * Implements child-related operations in the *Component* interface
+* **Client**  *(CompositeApp)*
+  * Manipulates objects in the composition through the *Component* interface
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Structural/Composite.cs&lang=C#&title=Composite - Sample
+@[6-7]
+@[10-15]
+@[17-22]
+@[24-28]
+@[30-31]
+@[35-47]
+@[37-42]
+@[44-46]
+@[35-47]
+@[49-50]
+@[51-54]
+@[56-72]
+@[75-76]
+@[77-78]
+@[80-83]
+@[85-88]
+@[90-93]
+@[95-102]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Structural/Composite.cs)
 
 +++
 ### Composite - Sample Output
+
+```
+-+ Picture
+--- Red Line
+--- Blue Circle
+--- Green Box
+---+ Two Circles
+----- Black Circle
+----- White Circle
+```
 
 ---
 ## Decorator

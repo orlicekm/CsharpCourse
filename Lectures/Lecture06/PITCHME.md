@@ -1284,6 +1284,8 @@ Notified Berkshire of IBM's change to $120.75
 
 ---
 ## State
+* **Definition:** *Allow an object to alter its behavior when its internal state changes, the object will appear to change its class*
+* **Frequency of use:** *Medium*
 
 +++
 ###  State - UML Diagram
@@ -1292,12 +1294,75 @@ Notified Berkshire of IBM's change to $120.75
 
 +++
 ### State - Participants
+* **Context**  *(Account)*
+  * Defines the interface of interest to clients
+  * Maintains an instance of a *ConcreteState* subclass that defines the current state
+* **State**  *(State)*
+  * Defines an interface for encapsulating the behavior associated with a particular state of the *Context*
+* **Concrete State**  *(RedState, SilverState, GoldState)*
+  * Each subclass implements a behavior associated with a state of *Context*
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/StateSample.cs&lang=C#&title=State - Sample
+@[5-6]
+@[9-10]
+@[12-18]
+@[22-23]
+@[24-28]
+@[30-34]
+@[36-40]
+@[42-44]
+@[47-48]
+@[49]
+@[51-56]
+@[58-64]
+@[66-70]
+@[72-76]
+@[78-81]
+@[83-86]
+@[89-108]
+@[110-127]
+@[128-133]
+@[136]
+@[183-184]
+@[185-191]
+@[193-194]
+@[196-203]
+@[205-211]
+@[213-219]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/StateSample.cs)
 
 +++
 ### State - Sample Output
+
+```
+Deposited $500.00 ---
+ Balance = $500.00
+ Status = SilverState
+
+
+Deposited $300.00 ---
+ Balance = $800.00
+ Status = SilverState
+
+
+Deposited $550.00 ---
+ Balance = $1,350.00
+ Status = GoldState
+
+
+Interest Paid ---
+ Balance = $1,417.50
+ Status = GoldState
+
+Withdrew $2,000.00 ---
+ Balance = ($582.50)
+ Status = RedState
+
+No funds available for withdrawal!
+Withdrew $1,100.00 ---
+ Balance = ($582.50)
+ Status = RedState
+```
 
 ---
 ## Strategy

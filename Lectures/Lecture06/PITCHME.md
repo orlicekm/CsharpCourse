@@ -1220,6 +1220,8 @@ Budget: 25000
 
 ---
 ## Observer
+* **Definition:** *Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically*
+* **Frequency of use:** *High*
 
 +++
 ###  Observer - UML Diagram
@@ -1228,12 +1230,57 @@ Budget: 25000
 
 +++
 ### Observer - Participants
+* **Subject**  *(Stock)*
+  * Knows its observers
+  * Any number of *Observer* objects may observe a subject
+  * Provides an interface for attaching and detaching *Observer* objects
+* **ConcreteSubject**  *(IBM)*
+  * Stores state of interest to *ConcreteObserver*
+  * Sends a notification to its observers when its state changes
+* **Observer**  *(IInvestor)*
+  * Defines an updating interface for objects that should be notified of changes in a subject
+* **ConcreteObserver**  *(Investor)*
+  * Maintains a reference to a *ConcreteSubject* object
+  * Stores state that should stay consistent with the subject's
+  * Implements the *Observer* updating interface to keep its state consistent with the subject's
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/ObserverSample.cs&lang=C#&title=Observer - Sample
+@[6-7]
+@[10-13]
+@[15-19]
+@[23-24]
+@[25-26]
+@[28-32]
+@[34-45]
+@[47]
+@[49-52]
+@[54-57]
+@[59-63]
+@[66-72]
+@[74-77]
+@[79-94]
+@[81-86]
+@[88]
+@[90-93]
+@[79-94]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/ObserverSample.cs)
 
 +++
 ### Observer - Sample Output
+
+```
+Notified Sorros of IBM's change to $120.10
+Notified Berkshire of IBM's change to $120.10
+
+Notified Sorros of IBM's change to $121.00
+Notified Berkshire of IBM's change to $121.00
+
+Notified Sorros of IBM's change to $120.50
+Notified Berkshire of IBM's change to $120.50
+
+Notified Sorros of IBM's change to $120.75
+Notified Berkshire of IBM's change to $120.75
+```
 
 ---
 ## State

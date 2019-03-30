@@ -1466,7 +1466,7 @@ MergeSorted list
 @[49-68]
 @[70-71, 89]
 @[72-80]
-@[82, 88]
+@[82-88]
 @[70-89]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/TemplateMethodSample.cs)
 
@@ -1498,6 +1498,8 @@ Mishi Kobe Niku
 
 ---
 ## Visitor
+* **Definition:** *Represent an operation to be performed on the elements of an object structure, lets you define a new operation without changing the classes of the elements on which it operates*
+* **Frequency of use:** *Low*
 
 +++
 ###  Visitor - UML Diagram
@@ -1506,12 +1508,59 @@ Mishi Kobe Niku
 
 +++
 ### Visitor - Participants
+* **Visitor**  *(Visitor)*
+  * Declares a Visit operation for each class of *ConcreteElement* in the object structure
+    * The operation's name and signature identifies the class that sends the Visit request to the visitor
+      * That lets the visitor determine the concrete class of the element being visited, then the visitor can access the elements directly through its particular interface
+* **ConcreteVisitor**  *(IncomeVisitor, VacationVisitor)*
+  * Implements each operation declared by *Visitor*
+    * Each operation implements a fragment of the algorithm defined for the corresponding class or object in the structure
+  * Provides the context for the algorithm and stores its local state
+    * This state often accumulates results during the traversal of the structure
+* **Element**  *(Element)*
+  * Defines an Accept operation that takes a visitor as an argument
+* **ConcreteElement**  *(Employee)*
+  * Implements an Accept operation that takes a visitor as an argument
+* **ObjectStructure**  *(Employees)*
+  * Can enumerate its elements
+  * May provide a high-level interface to allow the visitor to visit its elements
+  * May either be a Composite (pattern) or a collection such as a list or a set
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/VisitorSample.cs&lang=C#&title=Visitor - Sample
+@[6-7]
+@[8-19]
+@[22-25]
+@[27-28, 37]
+@[29-36]
+@[39-40, 50]
+@[41-49]
+@[52-55]
+@[57-58]
+@[59-65]
+@[67-69]
+@[71-74]
+@[77-78]
+@[79]
+@[81-84]
+@[86-89]
+@[91-95]
+@[98-104]
+@[106-112]
+@[114-120]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/VisitorSample.cs)
 
 +++
 ### Visitor - Sample Output
+
+```
+Clerk Hank's new income: $27,500.00
+Director Elly's new income: $38,500.00
+President Mike's new income: $49,500.00
+
+Clerk Hank's new vacation days: 17
+Director Elly's new vacation days: 19
+President Mike's new vacation days: 24
+```
 
 ---
 ## References:

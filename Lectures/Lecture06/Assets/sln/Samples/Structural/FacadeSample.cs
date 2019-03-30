@@ -4,7 +4,7 @@ namespace Samples.Structural
 {
     public class FacadeSample
     {
-        private static void Main()
+        public static void Main()
         {
             var mortgage = new Mortgage();
 

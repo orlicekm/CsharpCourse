@@ -5,7 +5,7 @@ namespace Samples.Behavioral
 {
     public class InterpreterSample
     {
-        private static void Main()
+        public static void Main()
         {
             var roman = "MCMXXVIII";
             var context = new Context(roman);

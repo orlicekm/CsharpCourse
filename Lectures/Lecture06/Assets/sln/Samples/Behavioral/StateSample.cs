@@ -2,9 +2,9 @@
 
 namespace Samples.Behavioral
 {
-    internal class StateSample
+    public class StateSample
     {
-        private static void Main()
+        public static void Main()
         {
             // Open a new account
             var account = new Account("Jim Johnson");

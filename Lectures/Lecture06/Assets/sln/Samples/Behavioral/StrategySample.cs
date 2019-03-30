@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Samples.Behavioral
 {
-    internal class StrategySample
+    public class StrategySample
     {
-        private static void Main()
+        public static void Main()
         {
             // Two contexts following different strategies
             var studentRecords = new SortedList();

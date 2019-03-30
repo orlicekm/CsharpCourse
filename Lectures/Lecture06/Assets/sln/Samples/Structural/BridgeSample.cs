@@ -5,7 +5,7 @@ namespace Samples.Structural
 {
     public class BridgeSample
     {
-        private static void Main()
+        public static void Main()
         {
             // Create RefinedAbstraction
             var customers = new Customers("Chicago");

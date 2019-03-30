@@ -4,7 +4,7 @@ namespace Samples.Behavioral
 {
     public class MementoSample
     {
-        private static void Main()
+        public static void Main()
         {
             var salesProspect = new SalesProspect
             {

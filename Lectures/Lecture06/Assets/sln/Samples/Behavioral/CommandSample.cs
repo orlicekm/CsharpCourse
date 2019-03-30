@@ -5,7 +5,7 @@ namespace Samples.Behavioral
 {
     public class CommandSample
     {
-        private static void Main()
+        public static void Main()
         {
             // Create user and let her compute
             var user = new User();

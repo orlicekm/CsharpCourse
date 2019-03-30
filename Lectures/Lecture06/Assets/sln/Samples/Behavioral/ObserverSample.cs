@@ -5,7 +5,7 @@ namespace Samples.Behavioral
 {
     public class ObserverSample
     {
-        private static void Main()
+        public static void Main()
         {
             // Create IBM stock and attach investors
             var ibm = new IBM("IBM", 120.00);

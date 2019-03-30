@@ -5,7 +5,7 @@ namespace Samples.Creational
 {
     public class PrototypeSample
     {
-        private static void Main()
+        public static void Main()
         {
             var colormanager = new ColorManager
             {

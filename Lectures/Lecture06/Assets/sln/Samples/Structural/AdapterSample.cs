@@ -4,7 +4,7 @@ namespace Samples.Structural
 {
     public class AdapterSample
     {
-        private static void Main()
+        public static void Main()
         {
             // Non-adapted chemical compound
             var unknown = new Compound("Unknown");

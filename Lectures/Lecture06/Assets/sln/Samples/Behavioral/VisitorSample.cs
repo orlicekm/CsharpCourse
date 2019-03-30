@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Samples.Behavioral
 {
-    internal class VisitorSample
+    public class VisitorSample
     {
-        private static void Main()
+        public static void Main()
         {
             // Setup employee collection
             var e = new Employees();

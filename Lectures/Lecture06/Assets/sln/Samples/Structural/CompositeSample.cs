@@ -5,7 +5,7 @@ namespace Samples.Structural
 {
     public class CompositeSample
     {
-        private static void Main()
+        public static void Main()
         {
             // Create a tree structure
             var root =

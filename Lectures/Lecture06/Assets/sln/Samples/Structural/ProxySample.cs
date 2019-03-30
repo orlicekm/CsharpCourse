@@ -4,7 +4,7 @@ namespace Samples.Structural
 {
     public class ProxySample
     {
-        private static void Main()
+        public static void Main()
         {
             // Create math proxy
             var proxy = new MathProxy();

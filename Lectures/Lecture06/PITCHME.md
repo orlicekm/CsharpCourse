@@ -22,8 +22,8 @@
 * **Speeds up the development** process by providing *tested, proven development paradigms*
 * **Helps to prevent issues** that can cause major problems
 * **Improves code readability** for coders and architects familiar with the patterns
-* **Provide general solutions**, documented in a format that doesn't require specifics tied to a particular problem
-* Allow developers to communicate **using well-known, well understood names** for software interactions
+* **Provides general solutions**, documented in a format that doesn't require specifics tied to a particular problem
+* Allows developers to communicate **using well-known, well understood names** for software interactions
 * Can be **improved over time**, making them more robust than ad-hoc designs
 
 ---
@@ -39,7 +39,7 @@
 +++
 ## GoF Pattern Groups
 * 23+ patterns 
-* Categirized into three groups
+* Categorized into three groups
   * *Creational*
   * *Structural*
   * *Behavioral*
@@ -51,7 +51,7 @@
 +++
 ### GoF Samples
 * Samples in this lecture 
-  * Can be runned from `ConsoleApp` in the solution
+  * Can be run from `ConsoleApp` in the solution
   * **From real world**
   * For better demonstration and understanding, they are **not .NET optimized**
     * Without *generics*, *delegates*, *reflection* and more...
@@ -70,7 +70,7 @@
 
 ---
 ##  Abstract Factory
-* **Definition:** *Provide an interface for creating families of related or dependent objects without specifying their concrete classes*
+* **Definition:** *Provides an interface for creating families of related or dependent objects without specifying their concrete classes*
 * **Frequency of use:** *High*
 
 +++
@@ -130,7 +130,7 @@ Wolf eats Bison
 
 ---
 ## Builder
-* **Definition:** *Separate the construction of a complex object from its representation so that the same construction process can create different representations*
+* **Definition:** *Separates the construction of a complex object from its representation so that the same construction process can create different representations*
 * **Frequency of use:** *Medium low*
 
 +++
@@ -213,7 +213,7 @@ Vehicle Type: MotorCycle
 
 ---
 ## Factory Method
-* **Definition:** *Define an interface for creating an object, but let subclasses decide which class to instantiate. Lets a class defer instantiation to subclasses*
+* **Definition:** *Defines an interface for creating an object, but let subclasses decide which class to instantiate. Lets a class defer instantiation to subclasses*
 * **Frequency of use:** *High*
 
 +++
@@ -272,7 +272,7 @@ Report -------
 
 ---
 ## Prototype
-* **Definition:** *Specify the kind of objects to create using a prototypical instance, and create new objects by copying this prototype*
+* **Definition:** *Specifies the kind of objects to create using a prototypical instance, and create new objects by copying this prototype*
 * **Frequency of use:** *Medium*
 
 +++
@@ -317,7 +317,7 @@ Cloning color RGB: 211, 34, 20
 
 ---
 ## Singleton
-* **Definition:** *Ensure a class has only one instance and provide a global point of access to it*
+* **Definition:** *Ensures a class has only one instance and provide a global point of access to it*
 * **Frequency of use:** *Medium high*
 
 +++
@@ -389,7 +389,7 @@ ServerIV
 
 ---
 ## Adapter
-* **Definition:** *Convert the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.*
+* **Definition:** *Converts the interface of a class into another interface clients expect. Adapter lets classes work together that couldn't otherwise because of incompatible interfaces.*
 * **Frequency of use:** *Medium high*
 
 +++

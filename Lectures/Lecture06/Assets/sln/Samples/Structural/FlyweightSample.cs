@@ -5,7 +5,7 @@ namespace Samples.Structural
 {
     public class FlyweightSample
     {
-        private static void Main()
+        public static void Main()
         {
             // Build a document with text
             var document = "AAZZBBZB";

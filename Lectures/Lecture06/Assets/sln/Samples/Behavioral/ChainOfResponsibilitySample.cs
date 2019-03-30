@@ -4,7 +4,7 @@ namespace Samples.Behavioral
 {
     public class ChainOfResponsibilitySample
     {
-        private static void Main()
+        public static void Main()
         {
             // Setup Chain of Responsibility
             Approver larry = new Director();

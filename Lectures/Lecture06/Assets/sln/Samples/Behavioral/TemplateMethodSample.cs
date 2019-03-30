@@ -5,7 +5,7 @@ namespace Samples.Behavioral
 {
     public class TemplateMethodSample
     {
-        private static void Main()
+        public static void Main()
         {
             DataAccessObject daoCategories = new Categories();
             daoCategories.Run();

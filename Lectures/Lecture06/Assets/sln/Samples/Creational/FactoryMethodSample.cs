@@ -5,7 +5,7 @@ namespace Samples.Creational
 {
     public class FactoryMethodSample
     {
-        private static void Main()
+        public static void Main()
         {
             // Note: constructors call Factory Method
             var documents = new Document[2];

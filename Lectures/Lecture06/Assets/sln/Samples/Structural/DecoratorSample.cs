@@ -5,7 +5,7 @@ namespace Samples.Structural
 {
     public class DecoratorSample
     {
-        private static void Main()
+        public static void Main()
         {
             // Create book
             var book = new Book("Worley", "Inside ASP.NET", 10);

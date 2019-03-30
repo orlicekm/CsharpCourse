@@ -5,7 +5,7 @@ namespace Samples.Behavioral
 {
     public class IteratorSample
     {
-        private static void Main()
+        public static void Main()
         {
             var aggregate = new ConcreteAggregate {[0] = "Item A", [1] = "Item B", [2] = "Item C", [3] = "Item D"};
 

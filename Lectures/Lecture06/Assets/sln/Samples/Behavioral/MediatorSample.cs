@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Samples.Behavioral
 {
-    internal class MediatorSample
+    public class MediatorSample
     {
-        private static void Main()
+        public static void Main()
         {
             var chatroom = new Chatroom();
 

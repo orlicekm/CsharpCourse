@@ -1467,7 +1467,7 @@ MergeSorted list
 @[70-71, 89]
 @[72-80]
 @[82, 88]
-@[70-71, 89]
+@[70-89]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/TemplateMethodSample.cs)
 
 +++

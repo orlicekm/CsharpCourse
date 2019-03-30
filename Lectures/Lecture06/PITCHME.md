@@ -1431,6 +1431,8 @@ MergeSorted list
 
 ---
 ## Template Method
+* **Definition:** *Define the skeleton of an algorithm in an operation, deferring some steps to subclasses, lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure*
+* **Frequency of use:** *Medium*
 
 +++
 ###  Template Method - UML Diagram
@@ -1439,12 +1441,60 @@ MergeSorted list
 
 +++
 ### Template Method - Participants
+* **AbstractClass**  *(DataObject)*
+  * Defines abstract primitive operations that concrete subclasses define to implement steps of an algorithm
+  * Implements a template method defining the skeleton of an algorithm
+    * The template method calls primitive operations as well as operations defined in *AbstractClass* or those of other objects
+* **ConcreteClass**  *(CustomerDataObject)*
+  * Implements the primitive operations ot carry out subclass-specific steps of the algorithm
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/TemplateMethodSample.cs&lang=C#&title=Template Method - Sample
+@[6-7]
+@[8-15]
+@[18-19]
+@[23-29]
+@[31-32]
+@[34-37]
+@[39-45]
+@[49-68]
+@[51-52, 59]
+@[53-54]
+@[56-58]
+@[61-62, 67]
+@[63-64]
+@[65-66]
+@[49-68]
+@[70-71, 89]
+@[72-80]
+@[82, 88]
+@[70-71, 89]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/TemplateMethodSample.cs)
 
 +++
 ### Template Method - Sample Output
+
+```
+Categories ----
+Beverages
+Condiments
+Confections
+Dairy Products
+Grains/Cereals
+Meat/Poultry
+Produce
+Seafood
+
+Products ----
+Chai
+Chang
+Aniseed Syrup
+Chef Anton's Cajun Seasoning
+Chef Anton's Gumbo Mix
+Grandma's Boysenberry Spread
+Uncle Bob's Organic Dried Pears
+Northwoods Cranberry Sauce
+Mishi Kobe Niku
+```
 
 ---
 ## Visitor

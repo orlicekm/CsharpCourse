@@ -48,7 +48,7 @@
 * *Shapes* are represented by *vectors* and can be *easily manipulated*
 * Developer defines a shape and lets WPF render it in the most optimal way
 * WPF contains multiple predefined shapes
-  * E.g. `Line, Rectangle, Ellipse, Path` etc...
+  * E.g., `Line, Rectangle, Ellipse, Path` etc...
 * *Shapes* are used inside *panels* and multiplicity of other WPF component contents
 
 +++
@@ -101,7 +101,7 @@
 * These objects are called *user interface elements* or *UI elements*
 
 +++
-#### Hello WPF Sample
+#### Hello WPF - Sample
 ![](/Lectures/Lecture10/Assets/img/HelloWPF.png)
 
 +++?code=/Lectures/Lecture10/Assets/sln/HelloWpf/MainWindow.xaml&lang=XML&title=Hello WPF XAML
@@ -123,7 +123,7 @@
 [Code sample](/Lectures/Lecture10/Assets/sln/HelloWpf/MainWindow.xaml.cs)
 
 +++
-### Hello WPF Explanation
+### Hello WPF - Explanation
 * Declarations
   * *Window/UserControl/…* - inheritance
   * `x:Class` - class containing *Code-behind*
@@ -136,8 +136,8 @@
 * *Element* `Button` declares item button
 
 +++
-### Elements & Attributes - Object properties 
-* *UI Elements* have common subset of *properties* and *functions*
+### Elements & Attributes - Object Properties 
+* `System.Windows.UIElement` (*UI Element*) have common subset of *properties* and *functions*
   * E.g., `Width, Height, Cursor, Tag` properties
 * Declaration of XML *element* in XAML
   * Same effect as calling *parameterless constructor*
@@ -147,8 +147,8 @@
 * **Element** – *UI Element*, complex property, class initialization
 
 +++
-### Property elements
-* Not all *properties* has to contain `string` only
+### Property Elements
+* Not all *properties* has to contain only a `string` 
 * **Properties can contain instances of other objects**
 * XAML defines syntactical notation for *complex property* definition called **property elements**
 * Form *TypeName.PropertyName* contained inside *TypeName* element
@@ -163,7 +163,7 @@
 ```
 
 ---
-## Class hierarchy
+## Class Hierarchy
 * `System.Object`
 * `System.Windows.DependencyObject`
   * Support dependency properties
@@ -173,6 +173,16 @@
   * Support for data-binding, styles, etc...
 * `System.Windows.Controls.Control`
   * Base class for definitions of *UI Elements*
+
+```
+System.Object
+  System.Windows.Threading.DispatcherObject
+    System.Windows.DependencyObject
+      System.Windows.Media.Visual
+        System.Windows.UIElement
+          System.Windows.FrameworkElement
+            System.Windows.Controls.Control
+```
 
 ---
 ## Controls
@@ -187,12 +197,11 @@
 
 +++
 ## Panels
-* Only components that can have multiple descendants
-* Used to create **layout** 
+* Are **the only components** that **can have multiple elements declared in content**
+* Used to create a **layout** 
 * Common practice in WPF
-  * Vector graphics
-  * UI adaptation to available space
-  * "Flexible layout"
+  * To use vector graphics
+  * UI adapts to available space - **Flexible layout**
 
 ```
 System.Object
@@ -207,7 +216,7 @@ System.Object
 +++
 ### Canvas
 * `Canvas`
-* Positioning of content according to **absolute x- and y-coordinates**
+* Position the content according to the **absolute x- and y-coordinates**
 * Properties like `Canvas.Top, Canvas.Left, Canvas.Top, Canvas.Bottom`
 
 ![](/Lectures/Lecture10/Assets/img/canvas.png)
@@ -215,7 +224,7 @@ System.Object
 +++
 ### Grid
 * `Grid`
-* Merges 
+* Combination of: 
   * Absolute positioning
   * **Tabular data control**
 * Properties like `Grid.Row, Grid.Column, Grid.RowSpan, Grid.ColumnSpan`
@@ -225,14 +234,13 @@ System.Object
 +++
 ### StackPanel and DockPanel
 * `StackPanel`, `DockPanel`
-* **Components beside one-another**
-* *Vertical* or *Horizontal* rendering
+* **Components are placed next to one-another**
+* *Vertical* or *Horizontal* stacking
 * Properties like `StackPanel.Orientation`, `DockPanel.Dock`
-* Difference
-  * DockPanel on the top
-  * StackPanel on the bottom
-
+  
 ![](/Lectures/Lecture10/Assets/img/StackVsDockPanel.png)
+  * DockPanel - the last item is squeezed
+  * StackPanel - the last item is trimmed
 
 +++
 ### WrapPanel
@@ -252,7 +260,7 @@ System.Object
 * `Label`
 * `CheckBox, RadioButton`
 * `ScrollViewer`
-  * In case that content is longer or wider than space defined in parent
+  * In case that content is longer or wider than space defined in the parent
   * Creates *scrolling bar*
 * and others...
 
@@ -378,7 +386,7 @@ and others...
 * *Source* 
   * Property that we bind to
 * *Target*
-  * Component, that defines `{Binding}`
+  * Component that defines `{Binding}`
 
 +++
 ### Data-binding how it works?
@@ -416,23 +424,27 @@ and others...
 [Code sample](/Lectures/Lecture10/Assets/sln/Sample.App/ViewModels/MainViewModel.cs)
 
 +++
-### Collections
-* Property is a Collection
-  * Items are represented by a collection of inner elements
-  * `System.Object`
-    * `System.Collections.*`
-  * Implements interface `IEnumerable`
-  * *Source* (collection) needs to notify that collection has changed
-    * Implementing `INotifyCollectionChanged`
+### Binding to Collections
+* *View-Model* declares a collection typed property, i.e., type implements `IEnumerable`
+  * WPF sees items as a representation of collection's inner elements typed as `System.Object`
+  * *Source* (collection) needs to notify that collection has changed, if you need to update the collection from *View-Model* side.
+    * The collection needs to implement `INotifyCollectionChanged`
+    * E.g., `ObservableCollection<T>`
 
 ```C#
 public class MainViewModel {
-   public ObservableCollection<MenuItem> MenuItems { get; } = new ObservableCollection<MenuItem>();
+   public ObservableCollection<MenuItem> MenuItems { get; } 
+                     = new ObservableCollection<MenuItem>();
+}
+
+public class MenuItem {
+  public string Title {get; set;}
+  public string SubTitle {get; set;}
 }
 ```
 
 +++
-### ItemsControls To Visualize Collections
+### ItemsControls - Collection Visualization
 * `ComboBox`
 * `ListBox`
 * `TabControl`
@@ -442,7 +454,7 @@ public class MainViewModel {
 * `System.Windows.Controls.ItemsControl`
 
 +++
-### ItemsControl - To Visualize Collections
+### ItemsControl - Collection Visualization
 * Property `Items`
   * General objects, rendered inside ItemControl
 * Property `ItemsSource`
@@ -453,7 +465,8 @@ public class MainViewModel {
 
 ```XML
 <ListBox ItemsSource="{Binding MenuItems}">
-   <ListBox.ItemTemplate>  <DataTemplate>
+   <ListBox.ItemTemplate>  
+      <DataTemplate>
          <StackPanel>
             <TextBlock Text="{Binding Title}" />
             <TextBlock Text="{Binding SubTitle}" />
@@ -467,19 +480,19 @@ public class MainViewModel {
 ### ItemsControl - Collection Change
 *  How to re-render collection?
 *  Property `ItemsSource`
-  * Assignment of a different object
+  * Assignment of a different object to the bound property
     * Content is cleared, now data is generated
-  * Change of item in a `ItemsSource` collection
+  * Change of an item in the `ItemsSource` collection
     * Only with objects implementing interface `INotifyPropertyChanged`
-  * Adding or Removing items in a collection
-    * Collection must implement interface `INotifyCollectionChanged`
+  * Adding or Removing items in the collection
+    * The collection must implement interface `INotifyCollectionChanged`
 
 +++
 ### ItemsControl - ListBox
 * Property `SelectedItem`
   * Object that is *bindable*
 * Property `SelectedValuePath`
-  * Defines path to a property that is binded by `SelectedValue`
+  * Defines path to a property that is bound by `SelectedValue`
   * E.g., `Object.Property1.Property2`
 * Property `SelectedValue`
   * Value of property defined by `SelectedValuePath`
@@ -525,7 +538,7 @@ public class MainViewModel {
 * E.g., *Copy, Cut, Paste, Save, etc...*
 * Reduces the necessary code amount
 * Enables UI changes without a need to change *back-end* logic
-* Commands have *action, source, target and binding*
+* Commands have *action, source, target, and binding*
 
 +++
 ### Command Class
@@ -547,18 +560,36 @@ public class MainViewModel {
 * **Data** in this property **will be passed to the code** that runs when the command executes
 
 ```XML
+<TextBox x:name="TextBox" Text="Hello!">
+
 <Button Content="Send" Command="{Binding MyCommand}"
      CommandParameter="{Binding ElementName=TextBox, Path=Text}" />
 ```
+@[1]
+@[3-4]
 
 ```C#
-public void Execute(object parameter)
-{
-    var textFromTextBox = parameter as string;
+public class ViewModel {
+    public MyCommand MyCommand {get;} = new MyCommand();
+}
+
+public class MyCommand : ICommand {
+    public void Execute(object parameter)
+    {
+        var textFromTextBox = parameter as string;
+        ///....
+    }
+
+    public bool CanExecute(object parameter) => true;
+    public event EventHandler CanExecuteChanged {get;}
 }
 ```
-@[1-2]
-@[3-6]
+@[5-7]
+@[9-18]
+@[10-14]
+@[16]
+@[17]
+@[1-18]
 
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Views/MainView.xaml&lang=XML&title=Command Class Sample 1/4
 @[45-48]
@@ -597,7 +628,7 @@ public void Execute(object parameter)
 * *Clean Code* without *Code-behind*
 * **Command design pattern**
   * Launches *action*
-  * *Checks* if the action is permited to launch
+  * *Checks* if the action is permitted to launch
 
 +++
 ### Commands - RelayCommand
@@ -607,14 +638,15 @@ public void Execute(object parameter)
 
 ```C#
 private RelayCommand myCommand;
+
 public RelayCommand MyCommand => myCommand ?? 
    (myCommand = new RelayCommand(Execute,CanExecute);
+
 private void Execute() {
       //...
 }
-private bool CanExecute() {
-   return 1 == 1;
-}
+
+private bool CanExecute() => true;
 ```
 
 +++?code=/Lectures/Lecture10/Assets/sln/Sample.App/Commands/RelayCommand.cs&lang=C#&title=Relay Command Sample 1/3
@@ -677,18 +709,18 @@ private bool CanExecute() {
   * Creating a new window is a job for the *ViewModel*
     * It is not part of ViewModel responsibilities to know, what View should be created
     * See [Demonstration project](https://github.com/orlicekm/CsharpCourse/tree/master/Lectures/Lecture10/Assets/sln/OpeningWindow)
-  * Recommends to use MVVM framework
-    * Solves problems with wraping all this up
+  * Recommends using MVVM framework
+    * Solves problems with wrapping all this up
 
 ---
 ### Styles
 * **Style** is a *set of properties* applied to the *content*
   * Defines *changes in rendering*
   * Concept is the same as with *CSS*
-  * E.g. change *button's text's font*
+  * E.g., change *button's text's font*
 * Used for **visual state standardization** to set the same set of properties for particular items
 * WPF styles contain specific properties for UI creation
-  * E.g. *begin a set of visual effects* as a *reaction to a user action*
+  * E.g., *begin a set of visual effects* as a *reaction to a user action*
 
 +++
 ### Templates
@@ -699,7 +731,7 @@ private bool CanExecute() {
     * E.g. `ListBox`
   * `DataTemplate` – item look inside a panel
   * `HierarchicalDataTemplate` - object look inside panels with hierarchical structure
-    * E.g. `TreeView`
+    * E.g., `TreeView`
 
 +++
 ### Custom Control Creation
@@ -712,7 +744,7 @@ private bool CanExecute() {
 ![](/Lectures/Lecture10/Assets/img/CustomControl.jpeg)
 
 +++?code=/Lectures/Lecture10/Assets/sln/CustomControl/MainWindow.xaml&lang=XML&title=Custom Control Sample
-@[11-12]
+@[11-15]
 [Code sample](/Lectures/Lecture10/Assets/sln/CustomControl/MainWindow.xaml)
 
 ---
@@ -743,7 +775,7 @@ private bool CanExecute() {
 +++
 ### Material Design Quick Start 1/3
 * Start new WPF project
-* Install MaterialDesignThemes nuget: `Install-Package MaterialDesignThemes`
+* Install MaterialDesignThemes NuGet: `Install-Package MaterialDesignThemes`
 * Edit *App.xaml* to following:
 
 ```XML
@@ -790,7 +822,7 @@ private bool CanExecute() {
 ![](/Lectures/Lecture10/Assets/img/materialquickstart.png)
 
 ---
-## Declarative UI - WPF principle
+## Declarative UI - WPF Principle
 * Designer, UI developer
   * Uses **Blend for Visual Studio** former **Expression Blend**
   * Edits only *XAML files*
@@ -804,10 +836,10 @@ private bool CanExecute() {
 
 ![](/Lectures/Lecture10/Assets/img/vs.jpg)
 
-* Typically, role of *Designer* and *Developer* overlaps
+* Typically, the role of *Designer* and *Developer* overlaps
 
 +++
-### *Declarative* vs. *imperative* UI
+### *Declarative* vs. *Imperative* UI
 * **Supports both** *declarative* and *imperative* UI element instantiations
 * **No difference** between both approaches
 * Instantiation of UI element from *Code-behind* goes against WPF principle of *loose code coupling*
@@ -827,7 +859,7 @@ MainWindow.xaml.cs:
 ```
 
 +++
-### Declarative UI - WPF principle
+### Declarative UI - WPF Principle
 * What happens when *XAML is no used in WPF*?
   * Idea of **separation of concerns** is lost
   * *Designer* and *Developer* can not *coop* on the *same file*
@@ -876,7 +908,7 @@ MainWindow.xaml.cs:
 @snapend
 
 +++
-### Siverlight - Deprecated
+### Silverlight - Deprecated
 * End of overall support is scheduled to **5th of October 2021**  
   * *IE7-8* - support had been removed between 2014-2016 (depending on the OS)
   * *IE9-11* - support will last until late 2021

@@ -1366,6 +1366,9 @@ Withdrew $1,100.00 ---
 
 ---
 ## Strategy
+* **Definition:** *Define a family of algorithms, encapsulate each one, and make them interchangeabl, lets the algorithm vary independently from clients that use it*
+* **Frequency of use:** *Medium high*
+
 
 +++
 ###  Strategy - UML Diagram
@@ -1374,12 +1377,57 @@ Withdrew $1,100.00 ---
 
 +++
 ### Strategy - Participants
+* **Strategy**  *(SortStrategy)*
+  * Declares an interface common to all supported algorithms
+  * Context uses this interface to call the algorithm defined by a *ConcreteStrategy*
+* **ConcreteStrategy**  *(QuickSort, ShellSort, MergeSort)*
+  * Implements the algorithm using the *Strategy* interface
+* **Context**  *(SortedList)*
+  * Is configured with a *ConcreteStrategy* object
+  * Maintains a reference to a *Strategy* object
+  * May define an interface that lets *Strategy* access its data
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/StrategySample.cs&lang=C#&title=Strategy - Sample
+@[6-7]
+@[10-11]
+@[13-17]
+@[19-26]
+@[30-33]
+@[35-42]
+@[44-51]
+@[53-60]
+@[62-63]
+@[64-65]
+@[67-70]
+@[72-75]
+@[77-83]
 [Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture06/Assets/sln/Samples/Behavioral/StrategySample.cs)
 
 +++
 ### Strategy - Sample Output
+
+```
+QuickSorted list
+ Anna
+ Jimmy
+ Samual
+ Sandra
+ Vivek
+
+ShellSorted list
+ Anna
+ Jimmy
+ Samual
+ Sandra
+ Vivek
+
+MergeSorted list
+ Anna
+ Jimmy
+ Samual
+ Sandra
+ Vivek
+```
 
 ---
 ## Template Method

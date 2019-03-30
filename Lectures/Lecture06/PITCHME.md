@@ -1507,7 +1507,7 @@ Mishi Kobe Niku
 ![](/Lectures/Lecture06/Assets/img/Visitor.gif)
 
 +++
-### Visitor - Participants
+### Visitor - Participants part 1/2
 * **Visitor**  *(Visitor)*
   * Declares a Visit operation for each class of *ConcreteElement* in the object structure
     * The operation's name and signature identifies the class that sends the Visit request to the visitor
@@ -1517,6 +1517,9 @@ Mishi Kobe Niku
     * Each operation implements a fragment of the algorithm defined for the corresponding class or object in the structure
   * Provides the context for the algorithm and stores its local state
     * This state often accumulates results during the traversal of the structure
+
++++
+### Visitor - Participants part 2/2
 * **Element**  *(Element)*
   * Defines an Accept operation that takes a visitor as an argument
 * **ConcreteElement**  *(Employee)*

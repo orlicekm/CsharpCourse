@@ -1528,6 +1528,7 @@ Mishi Kobe Niku
   * Can enumerate its elements
   * May provide a high-level interface to allow the visitor to visit its elements
   * May either be a Composite (pattern) or a collection such as a list or a set
+  * TEST
 
 +++?code=/Lectures/Lecture06/Assets/sln/Samples/Behavioral/VisitorSample.cs&lang=C#&title=Visitor - Sample
 @[6-7]

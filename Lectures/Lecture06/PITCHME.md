@@ -528,7 +528,7 @@ Henry Velasquez
 
 ---
 ## Composite
-* **Definition:** *Compose objects into tree structures to represent part-whole hierarchies, lets clients treat individual objects and compositions of objects uniformly*
+* **Definition:** *Composes objects into tree structures to represent part-whole hierarchies, lets clients treat individual objects and compositions of objects uniformly*
 * **Frequency of use:** *Medium high*
 
 +++
@@ -590,7 +590,7 @@ Henry Velasquez
 
 ---
 ## Decorator
-* **Definition:** *Attach additional responsibilities to an object dynamically, provide a flexible alternative to subclassing for extending functionality*
+* **Definition:** *Attaches additional responsibilities to an object dynamically, provide a flexible alternative to subclassing for extending functionality*
 * **Frequency of use:** *Medium*
 
 +++
@@ -666,7 +666,7 @@ borrower: Customer #2
 
 ---
 ## Facade
-* **Definition:** *Provide a unified interface to a set of interfaces in a subsystem, defines a higher-level interface that makes the subsystem easier to use*
+* **Definition:** *Provides a unified interface to a set of interfaces in a subsystem, defines a higher-level interface that makes the subsystem easier to use*
 * **Frequency of use:** *High*
 
 +++
@@ -716,7 +716,7 @@ Ann McKinsey has been Approved
 
 ---
 ## Flyweight
-* **Definition:** *Use sharing to support large numbers of fine-grained objects efficiently*
+* **Definition:** *Uses sharing to support large numbers of fine-grained objects efficiently*
 * **Frequency of use:** *Low*
 
 +++
@@ -787,7 +787,7 @@ B (pointsize 18)
 
 ---
 ## Proxy
-* **Definition:** *Provide a surrogate or placeholder for another object to control access to it*
+* **Definition:** *Provides a surrogate or placeholder for another object to control access to it*
 * **Frequency of use:** *Medium high*
 
 +++
@@ -800,7 +800,7 @@ B (pointsize 18)
 * **Proxy**  *(MathProxy)*
   * Maintains a reference that lets the proxy access the real subject
     * Proxy may refer to a *Subject* if the *RealSubject* and *Subject* interfaces are the same
-  * Provides an interface identical to *Subject*'s so that a proxy can be substituted for for the real subject
+  * Provides an interface identical to *Subject*'s so that a proxy can be substituted for the real subject
   * Controls access to the real subject and may be responsible for creating and deleting it
   * Other responsibilites depend on the kind of proxy:
     * **Remote proxies** are responsible for encoding a request and its arguments and for sending the encoded request to the real subject in a different address space
@@ -855,7 +855,7 @@ B (pointsize 18)
 
 ---
 ## Chain of Responsibility
-* **Definition:** *Avoid coupling the sender of a request to its receiver by giving more than one object a chance to handle the request, chain the receiving objects and pass the request along the chain until an object handles it*
+* **Definition:** *Avoids coupling the sender of a request to its receiver by giving more than one object a chance to handle the request, chain the receiving objects and pass the request along the chain until an object handles it*
 * **Frequency of use:** *Medium low*
 
 +++
@@ -908,7 +908,7 @@ Request# 2036 requires an executive meeting!
 
 ---
 ## Command
-* **Definition:** *Encapsulate a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations*
+* **Definition:** *Encapsulates a request as an object, thereby letting you parameterize clients with different requests, queue or log requests, and support undoable operations*
 * **Frequency of use:** *Medium high*
 
 +++
@@ -976,7 +976,7 @@ Current value = 500 (following * 10)
 
 ---
 ## Interpreter
-* **Definition:** *Given a language, define a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language*
+* **Definition:** *Given a language, it defines a representation for its grammar along with an interpreter that uses the representation to interpret sentences in the language*
 * **Frequency of use:** *Low*
 
 +++
@@ -1042,7 +1042,7 @@ MCMXXVIII = 1928
 
 ---
 ## Iterator
-* **Definition:** *Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation*
+* **Definition:** *Provides a way to access the elements of an aggregate object sequentially without exposing its underlying representation*
 * **Frequency of use:** *High*
 
 +++
@@ -1097,7 +1097,7 @@ Item D
 
 ---
 ## Mediator
-* **Definition:** *Define an object that encapsulates how a set of objects interact, promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently*
+* **Definition:** *Defines an object that encapsulates how a set of objects interact, promotes loose coupling by keeping objects from referring to each other explicitly, and it lets you vary their interaction independently*
 * **Frequency of use:** *Medium low*
 
 +++
@@ -1153,7 +1153,7 @@ To a non-Beatle: John to Yoko: 'My sweet love'
 
 ---
 ## Memento
-* **Definition:** *Without violating encapsulation, capture and externalize an object's internal state so that the object can be restored to this state later*
+* **Definition:** *Without violating encapsulation, captures and externalize an object's internal state so that the object can be restored to this state later*
 * **Frequency of use:** *Low*
 
 +++
@@ -1220,7 +1220,7 @@ Budget: 25000
 
 ---
 ## Observer
-* **Definition:** *Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically*
+* **Definition:** *Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically*
 * **Frequency of use:** *High*
 
 +++
@@ -1284,7 +1284,7 @@ Notified Berkshire of IBM's change to $120.75
 
 ---
 ## State
-* **Definition:** *Allow an object to alter its behavior when its internal state changes, the object will appear to change its class*
+* **Definition:** *Allows an object to alter its behavior when its internal state changes, the object will appear to change its class*
 * **Frequency of use:** *Medium*
 
 +++
@@ -1366,7 +1366,7 @@ Withdrew $1,100.00 ---
 
 ---
 ## Strategy
-* **Definition:** *Define a family of algorithms, encapsulate each one, and make them interchangeabl, lets the algorithm vary independently from clients that use it*
+* **Definition:** *Defines a family of algorithms, encapsulate each one, and make them interchangeable, lets the algorithm vary independently from clients that use it*
 * **Frequency of use:** *Medium high*
 
 
@@ -1431,7 +1431,7 @@ MergeSorted list
 
 ---
 ## Template Method
-* **Definition:** *Define the skeleton of an algorithm in an operation, deferring some steps to subclasses, lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure*
+* **Definition:** *Defines the skeleton of an algorithm in an operation, deferring some steps to subclasses, lets subclasses redefine certain steps of an algorithm without changing the algorithm's structure*
 * **Frequency of use:** *Medium*
 
 +++
@@ -1498,7 +1498,7 @@ Mishi Kobe Niku
 
 ---
 ## Visitor
-* **Definition:** *Represent an operation to be performed on the elements of an object structure, lets you define a new operation without changing the classes of the elements on which it operates*
+* **Definition:** *Represents an operation to be performed on the elements of an object structure, lets you define a new operation without changing the classes of the elements on which it operates*
 * **Frequency of use:** *Low*
 
 +++

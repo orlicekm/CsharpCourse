@@ -43,6 +43,18 @@
 ![](/Lectures/Lecture09/Assets/img/LayeredPattern.png)
 @snapend
 
++++
+### Client-server pattern
+* Consists of **server and multiple clients**
+* **Server provides services** to multiple clients
+* **Clients request services** from the server
+* **Usage:**
+  * *Online applications*
+
+@snap[east]
+![](/Lectures/Lecture09/Assets/img/ClientServerPattern.png)
+@snapend
+
 
 +++
 ## Pre-MVVM Software Architectural Patterns

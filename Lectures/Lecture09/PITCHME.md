@@ -40,7 +40,7 @@
   * *General desktop applications*
   * *E commerce web applications*
 
-@snap[south-east]
+@snap[east]
 ![](/Lectures/Lecture09/Assets/img/LayeredPattern.png)
 @snapend
 
@@ -52,7 +52,7 @@
 * **Usage:**
   * *Online applications*
 
-@snap[south-east]
+@snap[east]
 ![](/Lectures/Lecture09/Assets/img/ClientServerPattern.png)
 @snapend
 
@@ -66,15 +66,18 @@
   * *Database replication*
   * *Peripherals connected to a bus*
 
-@snap[south-east]
 ![](/Lectures/Lecture09/Assets/img/MasterSlavePattern.png)
-@snapend
 
 +++
+### Pipe-filter pattern
+
+---
 ## Pre-MVVM Software Architectural Patterns
 * MVC
 * MVP
 * Presentation Model
+
+TODO
 
 ---
 ### Model–View–ViewModel

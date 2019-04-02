@@ -90,7 +90,7 @@
 * **Usage:**
   * *Message broker softwares*
 
-@img[span-60](/Lectures/Lecture09/Assets/img/BrokerPattern.png)
+@img[span-30](/Lectures/Lecture09/Assets/img/BrokerPattern.png)
 
 +++
 ### Peer-to-peer pattern
@@ -104,6 +104,19 @@
 @snap[east]
 ![](/Lectures/Lecture09/Assets/img/PeerToPerrPattern.png)
 @snapend
+
++++
+### Event-bus pattern
+* **Deals with events** and has 4 major components:
+  * *Event source*, *event listener*, *channel* and *event bus*
+* **Sources publish messages to particular channels** on an event bus
+* **Listeners subscribe to particular channels**
+* Listeners are notified of messages that are published to a channel to which they have subscribed before
+* **Usage:**
+  * *Android development*
+  * *Notification services*
+
+@img[span-30](/Lectures/Lecture09/Assets/img/EvenmtBusPattern.png)
 
 ---
 ## Pre-MVVM Software Architectural Patterns

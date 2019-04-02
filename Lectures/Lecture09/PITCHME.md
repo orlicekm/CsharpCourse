@@ -40,7 +40,7 @@
   * *General desktop applications*
   * *E commerce web applications*
 
-@snap[east]
+@snap[south-east]
 ![](/Lectures/Lecture09/Assets/img/LayeredPattern.png)
 @snapend
 
@@ -52,13 +52,23 @@
 * **Usage:**
   * *Online applications*
 
-@snap[east]
+@snap[south-east]
 ![](/Lectures/Lecture09/Assets/img/ClientServerPattern.png)
 @snapend
 
 +++
 ### Master-slave pattern
-consists of master and slaves
+* Consists of **master and multiple slaves**
+* The master 
+  * **Distributes the work** among identical slaves
+  * **Computes a final result** from the results which the slaves return
+* **Usage:**
+  * *Database replication*
+  * *Peripherals connected to a bus*
+
+@snap[south-east]
+![](/Lectures/Lecture09/Assets/img/MasterSlavePattern.png)
+@snapend
 
 +++
 ## Pre-MVVM Software Architectural Patterns

@@ -19,16 +19,17 @@
 
 +++
 ### Common Architectural Patterns
-* Layered pattern
-* Client-server pattern
-* Master-slave pattern
-* Pipe-filter pattern
-* Broker pattern
-* Peer-to-peer pattern
-* Event-bus pattern
-* Model-view-controller pattern
-* Blackboard pattern
-* Interpreter pattern
+* *Layered pattern*
+* *Client-server pattern*
+* *Master-slave pattern*
+* *Pipe-filter pattern*
+* *Broker pattern*
+* *Peer-to-peer pattern*
+* *Event-bus pattern*
+* *Model-view-controller pattern*
+* *Blackboard pattern*
+* *Interpreter pattern*
+* *⋮
 
 +++
 ### Layered pattern
@@ -55,6 +56,9 @@
 ![](/Lectures/Lecture09/Assets/img/ClientServerPattern.png)
 @snapend
 
++++
+### Master-slave pattern
+consists of master and slaves
 
 +++
 ## Pre-MVVM Software Architectural Patterns

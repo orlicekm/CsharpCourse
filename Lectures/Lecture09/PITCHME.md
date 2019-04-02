@@ -118,6 +118,19 @@
 
 @img[span-30](/Lectures/Lecture09/Assets/img/EvenmtBusPattern.png)
 
++++
+### Model-view-controller pattern
+* **MVC pattern** divides an interactive application in to **3 parts**:
+  * **Model** — contains the core functionality and data
+  * **View** — displays the information to the user
+  * **Controller** — handles the input from the user
+* To separate internal representations of information
+* **Usage:**
+  * *Architecture for World Wide Web applications in major programming languages*
+  * *Web frameworks*
+
+@img[span-50](/Lectures/Lecture09/Assets/img/MVCpattern.png)
+
 ---
 ## Pre-MVVM Software Architectural Patterns
 * MVC

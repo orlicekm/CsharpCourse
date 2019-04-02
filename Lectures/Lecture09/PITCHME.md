@@ -66,7 +66,7 @@
   * *Database replication*
   * *Peripherals connected to a bus*
 
-![](/Lectures/Lecture09/Assets/img/MasterSlavePattern.png)
+![span-60](/Lectures/Lecture09/Assets/img/MasterSlavePattern.png)
 
 +++
 ### Pipe-filter pattern
@@ -90,7 +90,10 @@
 * **Usage:**
   * *Message broker softwares*
 
-![](/Lectures/Lecture09/Assets/img/BrokerPattern.png)
+@[](/Lectures/Lecture09/Assets/img/BrokerPattern.png)
+
++++
+### Peer-to-peer pattern
 
 ---
 ## Pre-MVVM Software Architectural Patterns

@@ -29,7 +29,7 @@
 * *Model-view-controller pattern*
 * *Blackboard pattern*
 * *Interpreter pattern*
-* *⋮
+* *⋮*
 
 +++
 ### Layered pattern
@@ -79,6 +79,18 @@
   * *Workflows in bioinformatics*
 
 ![](/Lectures/Lecture09/Assets/img/PipeFilterPattern.png)
+
++++
+### Broker pattern
+* For structure distributed **systems with decoupled components**
+* **Components can interact with each other by remote service invocations**
+* **Broker component is responsible for the coordination** of communication among components
+* Servers publish their capabilities to a broker
+* Clients request a capabilities from the broker
+* **Usage:**
+  * *Message broker softwares*
+
+![](/Lectures/Lecture09/Assets/img/BrokerPattern.png)
 
 ---
 ## Pre-MVVM Software Architectural Patterns

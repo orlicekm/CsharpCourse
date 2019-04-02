@@ -32,7 +32,7 @@
 
 +++
 ### Layered pattern
-* Used to structure programs that can be **decomposed into groups of subtasks**
+* For structure programs that can be **decomposed into groups of subtasks**
   * **Each of which is at a particular level of abstraction**
 * Layer provides services to the next higher layer
 * **Usage:**

@@ -70,6 +70,15 @@
 
 +++
 ### Pipe-filter pattern
+* For structure systems which **produce and process a stream of data**
+* **Each processing step is enclosed within a filter component**
+* Data to be **processed is passed through pipes**
+  * Pipes can be **used for buffering or for synchronization purposes**
+* **Usage:**
+  * *Compilers*
+  * *Workflows in bioinformatics*
+
+![](/Lectures/Lecture09/Assets/img/PipeFilterPattern.png)
 
 ---
 ## Pre-MVVM Software Architectural Patterns

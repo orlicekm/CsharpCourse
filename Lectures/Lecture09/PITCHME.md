@@ -66,7 +66,7 @@
   * *Database replication*
   * *Peripherals connected to a bus*
 
-![span-60](/Lectures/Lecture09/Assets/img/MasterSlavePattern.png)
+![](/Lectures/Lecture09/Assets/img/MasterSlavePattern.png)
 
 +++
 ### Pipe-filter pattern
@@ -90,10 +90,20 @@
 * **Usage:**
   * *Message broker softwares*
 
-@[](/Lectures/Lecture09/Assets/img/BrokerPattern.png)
+@img[span-60](/Lectures/Lecture09/Assets/img/BrokerPattern.png)
 
 +++
 ### Peer-to-peer pattern
+* Individual **components are known as peers**
+  * **May act as a client or as a server or as both**
+  * It can **change its role dynamically** with time
+* **Usage:**
+  * *File-sharing networks*
+  * *Multimedia protocols*
+
+@snap[east]
+![](/Lectures/Lecture09/Assets/img/PeerToPerrPattern.png)
+@snapend
 
 ---
 ## Pre-MVVM Software Architectural Patterns

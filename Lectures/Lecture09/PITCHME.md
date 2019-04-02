@@ -3,7 +3,7 @@
 @snapend
 
 @snap[midpoint span-100]
-## Desktop applications architecture, MVVM, Mapper
+## Applications architectures
 @snapend
 
 @snap[south-east span-30]
@@ -11,15 +11,44 @@
 @snapend
 
 ---
-## Desktop Applications Architecture
-* TODO
-co sem?
+## Architectural Pattern
+* **General**, **reusable** solution
+* **To a commonly occurring problem in software architecture** within a given context
+* Similar to software design pattern but **have a broader scope**
+* Choose right architectural pattern is **must decision** in desktop application development
 
-* Historical patterns?
-  * MVC
-  * MVP
-  * Presentation Model
++++
+### Common Architectural Patterns
+* Layered pattern
+* Client-server pattern
+* Master-slave pattern
+* Pipe-filter pattern
+* Broker pattern
+* Peer-to-peer pattern
+* Event-bus pattern
+* Model-view-controller pattern
+* Blackboard pattern
+* Interpreter pattern
 
++++
+#### Layered pattern
+* Used to structure programs that can be **decomposed into groups of subtasks**
+  * **Each of which is at a particular level of abstraction**
+* Layer provides services to the next higher layer
+* **Usage:**
+  * *General desktop applications*
+  * *E commerce web applications*
+
+@snap[east]
+![](/Lectures/Lecture09/Assets/img/LayeredPattern.png)
+@snapend
+
+
++++
+## Pre-MVVM Software Architectural Patterns
+* MVC
+* MVP
+* Presentation Model
 
 ---
 ### Model–View–ViewModel
@@ -80,20 +109,22 @@ co sem?
 +++
 frameworks
 
----
-### Mapper
+ViewModelLocator
+Messanger
+Mvvm light
+IoC/DI containter mby?
 
-automapper
-repozitar
-unit of work
+todo -> rename subtitle
 
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [Wintellect LLC](https://www.wintellect.com/)  
 [Tutorialspoint](https://www.tutorialspoint.com)  
-[Sagitec blog](http://www.sagitec.com/blog)
+[Sagitec blog](http://www.sagitec.com/blog)  
+[Wikipedia](https://en.wikipedia.org/)
 
 +++
 ## Refences to used images:
-[Wintellect LLC](https://www.wintellect.com/)
+[Towards Data Science](https://towardsdatascience.com/)  
+[Wintellect LLC](https://www.wintellect.com/)  

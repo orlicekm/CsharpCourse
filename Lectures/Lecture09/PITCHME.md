@@ -174,7 +174,62 @@
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
 @snapend
 
+---
+### MVVM Benefits
+* **Separation of concerns**
+  * Designer and developer can work on the project simultaneously
+* **Speed and performance enhancements**
+* **Testable code**
+* **Maintainable code**
+* **Easier code extensibility**
+* **Reusable components**
+* **Flexibility**
+  * E.g., changing UI without having refactor other logic
+
 +++
+### MVVM Drawbacks
+* **Overkill** for simple applications
+* **Memory consumption** with data binding in very large applications
+* **More lines of code**
+  * But it is better arranged
+
+---
+### MVVM Usage
+* **XAML**
+  * *WPF*
+  * *UWP*
+  * *Xamarin*
+  * *Silverlight*
+  * *WP*
+  * *⋮*
+* **Web client**
+  * *AngularJS*
+  * *knockout.js*
+  * *⋮*
+* **⋮**
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+### MVVM XAML Usage
+* **ViewModel** (*C#*)
+![](/Lectures/Lecture09/Assets/img/UsageXAML1.png)
+
+* **View** (*XAML*)
+![](/Lectures/Lecture09/Assets/img/UsageXAML2.png)
+
++++
+### MVVM Web Usage
+* **ViewModel** (*JavaScript*)
+![](/Lectures/Lecture09/Assets/img/UsageWeb1.png)
+
+* **View** (*HTML*)
+![](/Lectures/Lecture09/Assets/img/UsageWeb2.png)
+
+
+---
 ## The Model
 * Represents the **actual data and information**
 * **Holds the information, but not behaviors or services** that manipulate the information
@@ -202,50 +257,17 @@
 * **Exposes methods, commands, and other points** that help maintain the state of the *View*
 * **Manipulates the Model** as the result of actions on the view, and trigger events in the *View*
 
-+++
-### MVVM Benefits
-* **Separation of concerns**
-  * Designer and developer can work on the project simultaneously
-* **Speed and performance enhancements**
-* **Testable code**
-* **Maintainable code**
-* **Easier code extensibility**
-* **Reusable components**
-* **Flexibility**
-  * E.g., changing UI without having refactor other logic
+---
+todo samples to view, model, viewmodel
 
-+++
-### MVVM Drawbacks
-* **Overkill** for simple applications
-* **Memory consumption** with data binding in very large applications
-* **More lines of code**
-  * But it is better arranged
-
-+++
-### MVVM Usage
-* **XAML**
-  * *WPF*
-  * *UWP*
-  * *Xamarin*
-  * *Silverlight*
-  * *WP*
-  * *⋮*
-* **Web client**
-  * *AngularJS*
-  * *knockout.js*
-  * *⋮*
-* **⋮**
-
-+++
-
-frameworks
-
+---
 ViewModelLocator
 Messanger
-Mvvm light
 IoC/DI containter mby?
 
-todo -> rename subtitle
+---
+frameworks
+Mvvm light
 
 ---
 ## References:

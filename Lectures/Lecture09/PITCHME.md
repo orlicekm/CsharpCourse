@@ -215,17 +215,21 @@
 +++
 ### MVVM XAML Usage
 * **ViewModel** (*C#*)
+
 ![](/Lectures/Lecture09/Assets/img/UsageXAML1.png)
 
 * **View** (*XAML*)
+
 ![](/Lectures/Lecture09/Assets/img/UsageXAML2.png)
 
 +++
 ### MVVM Web Usage
 * **ViewModel** (*JavaScript*)
+
 ![](/Lectures/Lecture09/Assets/img/UsageWeb1.png)
 
 * **View** (*HTML*)
+
 ![](/Lectures/Lecture09/Assets/img/UsageWeb2.png)
 
 

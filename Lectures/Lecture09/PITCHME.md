@@ -261,8 +261,16 @@
 * **Exposes methods, commands, and other points** that help maintain the state of the *View*
 * **Manipulates the Model** as the result of actions on the view, and trigger events in the *View*
 
++++
+### View-Viewmodel
+
+![](/Lectures/Lecture09/Assets/img/View-ViewModel.png)
+
 ---
 todo samples to view, model, viewmodel
+
+---
+viewfirst, viewmodel first...
 
 ---
 ViewModelLocator

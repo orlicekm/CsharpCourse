@@ -124,12 +124,12 @@
 
 +++
 ### Model-View-Controller pattern
-* Described in the context of Smalltalk at Xerox **in 1979**
+* Described in the context of Smalltalk at Xerox *in 1979*
 * **MVC pattern** divides an interactive application in to **3 parts**:
   * **Model** — contains the core functionality and data
   * **View** — displays the information to the user
   * **Controller** — handles the input from the user
-* To separate internal representations of information
+* To **separate internal representations** of information
 * **Usage:**
   * *Architecture for World Wide Web applications in major programming languages*
   * *Web frameworks*
@@ -140,7 +140,7 @@
 
 +++
 ### Model-View-Presenter pattern
-* Introduced **in 1996**
+* Introduced *in 1996*
 * **MVP pattern** builds on *MVC* but places **special constraints on the controller**
   * **Called the presenter**
 
@@ -150,7 +150,7 @@
 
 +++
 ### Presentation Model pattern
-* **In 2004**, Martin Fowler published his description of the Presentation Model
+* *In 2004*, Martin Fowler published his description of the Presentation Model
 * Represent the state and behavior of the presentation **independently of the GUI controls** used in the interface
   * **MVVM is a specialized form of this pattern**
 
@@ -175,30 +175,15 @@
 @snapend
 
 +++
-### MVVM Benefits
-* **Separation of concerns**
-  * Designer and developer can work on the project simultaneously
-* **Speed and performance enhancements**
-* **Unit testing**
-* **Reusable components**
-* **Flexibility**
-  * E.g changing UI without having refactor other logic
-
-+++
-### MVVM Drawbacks
-* **Overkill** for simple applications
-* **Memory consumption** with data binding in very large applications
-
-+++
-## Model
+## The Model
 * Represents the **actual data and information**
 * **Holds the information, but not behaviors or services** that manipulate the information
   * **Business logic is encapsulated** in other classes that act on the model
   * Not always true
-    * E. g. some *Models* may contain validation
+    * E.g., some *Models* may contain validation
 
 +++
-## View
+## The View
 * **Presentation of the data**
 * Only thing the end user really interacts with
 * Contains *behaviors*, *events* and *data-bindings*
@@ -209,12 +194,48 @@
 
 
 +++
-## ViewModel 
+## The ViewModel 
 * **Presentation Separation**
   * *View* separate from the *Model*
-  * 
+  * *ViewModel* acts as the liaison
+* **Holds context** of the actual *View*
+* **Exposes methods, commands, and other points** that help maintain the state of the *View*
+* **Manipulates the Model** as the result of actions on the view, and trigger events in the *View*
 
 +++
+### MVVM Benefits
+* **Separation of concerns**
+  * Designer and developer can work on the project simultaneously
+* **Speed and performance enhancements**
+* **Testable code**
+* **Maintainable code**
+* **Easier code extensibility**
+* **Reusable components**
+* **Flexibility**
+  * E.g., changing UI without having refactor other logic
+
++++
+### MVVM Drawbacks
+* **Overkill** for simple applications
+* **Memory consumption** with data binding in very large applications
+* **More lines of code**
+  * But it is better arranged
+
++++
+### MVVM Usage
+* XAML
+  * WPF
+  * UWP
+  * Xamarin
+  * Silverlight
+  * WP
+  * ⋮
+* Web client
+  * angular.js
+  * knockout.js
+  * ⋮
+* ⋮
+
 frameworks
 
 ViewModelLocator

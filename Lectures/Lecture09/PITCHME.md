@@ -11,14 +11,14 @@
 @snapend
 
 ---
-## Architectural Pattern
+## Architectural pattern
 * **General**, **reusable** solution
 * **To a commonly occurring problem in software architecture** within a given context
 * Similar to software design pattern but **have a broader scope**
 * Choose right architectural pattern is **must decision** in desktop application development
 
 +++
-### Common Architectural Patterns
+### Common Architectural patterns
 * *Layered pattern*
 * *Client-server pattern*
 * *Master-slave pattern*
@@ -26,8 +26,6 @@
 * *Broker pattern*
 * *Peer-to-peer pattern*
 * *Event-bus pattern*
-* *Model-view-controller pattern*
-* *Blackboard pattern*
 * *Interpreter pattern*
 * *⋮*
 
@@ -118,8 +116,15 @@
 
 @img[span-30](/Lectures/Lecture09/Assets/img/EvenmtBusPattern.png)
 
+---
+## Pre-MVVM Software Architectural patterns
+* *Model-View-Controller*
+* *Model-View-Presenter*
+* *Presentation Model*
+
 +++
-### Model-view-controller pattern
+### Model-View-Controller pattern
+* Described in the context of Smalltalk at Xerox **in 1979**
 * **MVC pattern** divides an interactive application in to **3 parts**:
   * **Model** — contains the core functionality and data
   * **View** — displays the information to the user
@@ -131,21 +136,29 @@
 
 @img[span-50](/Lectures/Lecture09/Assets/img/MVCpattern.png)
 
----
-## Pre-MVVM Software Architectural Patterns
-* MVC
-* MVP
-* Presentation Model
++++
+### Model-View-Presenter pattern
+* Introduced **in 1996**
+* **MVP pattern** builds on *MVC* but places **special constraints on the controller**
+  * **Called the presenter**
 
-TODO
+@img[span-50](/Lectures/Lecture09/Assets/img/MVPpattern.png)
+
++++
+### Presentation Model pattern
+* **In 2004**, Martin Fowler published his description of the Presentation Model
+* Represent the state and behavior of the presentation **independently of the GUI controls** used in the interface
+  * **MVVM is a specialized form of this pattern**
+
+@img[span-30](/Lectures/Lecture09/Assets/img/PresentationModelPattern.png)
 
 ---
 ### Model–View–ViewModel
 * **Software architectural pattern**
 * **MVVM**
-  * Model
-  * ViewModel
-  * View
+  * *Model*
+  * *ViewModel*
+  * *View*
 
 @snap[east]
 @img[span-80](/Lectures/Lecture09/Assets/img/mvvm.png)

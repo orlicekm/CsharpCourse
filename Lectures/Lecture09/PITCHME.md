@@ -134,7 +134,9 @@
   * *Architecture for World Wide Web applications in major programming languages*
   * *Web frameworks*
 
-@img[span-50](/Lectures/Lecture09/Assets/img/MVCpattern.png)
++++
+### Model-View-Controller overview
+![](/Lectures/Lecture09/Assets/img/MVCpattern.png)
 
 +++
 ### Model-View-Presenter pattern
@@ -142,7 +144,9 @@
 * **MVP pattern** builds on *MVC* but places **special constraints on the controller**
   * **Called the presenter**
 
-@img[span-50](/Lectures/Lecture09/Assets/img/MVPpattern.png)
++++
+### Model-View-Presenter overview
+![](/Lectures/Lecture09/Assets/img/MVPpattern.png)
 
 +++
 ### Presentation Model pattern
@@ -150,7 +154,9 @@
 * Represent the state and behavior of the presentation **independently of the GUI controls** used in the interface
   * **MVVM is a specialized form of this pattern**
 
-@img[span-30](/Lectures/Lecture09/Assets/img/PresentationModelPattern.png)
++++
+### Presentation Model overview
+![](/Lectures/Lecture09/Assets/img/PresentationModelPattern.png)
 
 ---
 ### Model–View–ViewModel

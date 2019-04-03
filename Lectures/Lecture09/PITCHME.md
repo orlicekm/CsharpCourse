@@ -223,18 +223,20 @@
 
 +++
 ### MVVM Usage
-* XAML
-  * WPF
-  * UWP
-  * Xamarin
-  * Silverlight
-  * WP
-  * ⋮
-* Web client
-  * angular.js
-  * knockout.js
-  * ⋮
-* ⋮
+* **XAML**
+  * *WPF*
+  * *UWP*
+  * *Xamarin*
+  * *Silverlight*
+  * *WP*
+  * *⋮*
+* **Web client**
+  * *AngularJS*
+  * *knockout.js*
+  * *⋮*
+* **⋮**
+
++++
 
 frameworks
 

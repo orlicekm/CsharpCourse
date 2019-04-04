@@ -40,7 +40,7 @@
 * Layer provides services to the next higher layer
 * **Usage:**
   * *General desktop applications*
-  * *E commerce web applications*
+  * *E-commerce web applications*
 
 @snap[east]
 ![](/Lectures/Lecture09/Assets/img/LayeredPattern.png)
@@ -129,7 +129,7 @@
 +++
 ### Model-View-Controller pattern
 * Described in the context of Smalltalk at Xerox *in 1979*
-* **MVC pattern** divides an interactive application in to **3 parts**:
+* **MVC pattern** divides an interactive application into **3 parts**:
   * **Model** — contains the core functionality and data
   * **View** — displays the information to the user
   * **Controller** — handles the input from the user
@@ -155,7 +155,7 @@
 +++
 ### Presentation Model pattern
 * *In 2004*, Martin Fowler published his description of the Presentation Model
-* Represent the state and behavior of the presentation **independently of the GUI controls** used in the interface
+* Represents the state and behavior of the presentation **independently of the GUI controls** used in the interface
   * **MVVM is a specialized form of this pattern**
 
 +++

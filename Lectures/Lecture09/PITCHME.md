@@ -275,7 +275,7 @@ todo samples to view, model, viewmodel
 viewfirst, viewmodel first...
 
 ---
-ViewModelLocator
+ViewModelLocator + seed to app(not to presentation)
 Messanger
 IoC/DI containter mby?
 

@@ -14,8 +14,8 @@
 ## Architectural pattern
 * **General**, **reusable** solution
 * **To a commonly occurring problem in software architecture** within a given context
-* Similar to software design pattern but **have a broader scope**
-* Choose right architectural pattern is **must decision** in desktop application development
+* Similar to software design pattern but **has a broader scope**
+* To choose right architectural pattern is **must decision** in desktop application development
 
 +++
 ### Common Architectural patterns
@@ -28,6 +28,10 @@
 * *Event-bus pattern*
 * *Interpreter pattern*
 * *⋮*
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
 
 +++
 ### Layered pattern

@@ -214,13 +214,13 @@
 
 +++
 ### MVVM XAML Usage
-* **ViewModel** (*C#*)
+* **View** (*XAML*)
 
 @snap[east]
 ![](/Lectures/Lecture09/Assets/img/UsageXAML1.png)
 @snapend
 
-* **View** (*XAML*)
+* **ViewModel** (*C#*)
 
 ![](/Lectures/Lecture09/Assets/img/UsageXAML2.png)
 

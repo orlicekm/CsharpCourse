@@ -1,4 +1,5 @@
-﻿using School.BL;
+﻿using System.Collections.ObjectModel;
+using School.BL;
 using School.BL.Models.DetailModels;
 using School.BL.Models.ListModels;
 using School.DAL.Entities;
@@ -15,6 +16,10 @@ namespace School.App.ViewModels
         {
             this.messenger = messenger;
             this.studentFacade = studentFacade;
+
+            students = new ObservableCollection<StudentListModel>(studentFacade.GetAllList());
         }
+
+        public ObservableCollection<StudentListModel> students;
     }
 }

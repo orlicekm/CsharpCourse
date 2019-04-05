@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using AutoMapper;
 using School.BL.Models.Base;
 using School.DAL;
 using School.DAL.Entities.Base;
@@ -23,17 +24,17 @@ namespace School.BL
 
         public IEnumerable<TDetailModel> GetAllDetail()
         {
-            return repository.GetAll().Select(AutoMapper.Mapper.Map<TEntity, TDetailModel>);
+            return repository.GetAll().Select(Mapper.Map<TEntity, TDetailModel>);
         }
 
         public IEnumerable<TListModel> GetAllList()
         {
-            return repository.GetAll().Select(AutoMapper.Mapper.Map<TEntity, TListModel>);
+            return repository.GetAll().Select(Mapper.Map<TEntity, TListModel>);
         }
 
         public TDetailModel GetById(Guid id)
         {
-            return AutoMapper.Mapper.Map<TEntity, TDetailModel>(repository.GetById(id));
+            return Mapper.Map<TEntity, TDetailModel>(repository.GetById(id));
         }
 
         public void Delete(Guid id)
@@ -54,15 +55,15 @@ namespace School.BL
 
         public TDetailModel InitializeNew()
         {
-            return AutoMapper.Mapper.Map<TEntity, TDetailModel>(repository.InitializeNew());
+            return Mapper.Map<TEntity, TDetailModel>(repository.InitializeNew());
         }
 
         public TDetailModel Save(TDetailModel model)
         {
-            var entity = AutoMapper.Mapper.Map<TDetailModel, TEntity>(model);
+            var entity = Mapper.Map<TDetailModel, TEntity>(model);
 
             if (entity.Id == Guid.Empty)
-                model = AutoMapper.Mapper.Map<TEntity, TDetailModel>(repository.Insert(entity));
+                model = Mapper.Map<TEntity, TDetailModel>(repository.Insert(entity));
             else
                 repository.Update(entity);
 

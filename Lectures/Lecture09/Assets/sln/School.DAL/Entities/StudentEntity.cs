@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using School.DAL.Entities.Base;
+﻿using School.DAL.Entities.Base;
 
 namespace School.DAL.Entities
 {

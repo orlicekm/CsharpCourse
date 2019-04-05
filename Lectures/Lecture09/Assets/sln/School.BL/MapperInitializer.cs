@@ -1,4 +1,5 @@
-﻿using School.BL.Models.DetailModels;
+﻿using AutoMapper;
+using School.BL.Models.DetailModels;
 using School.BL.Models.ListModels;
 using School.DAL.Entities;
 
@@ -8,7 +9,7 @@ namespace School.BL
     {
         public void Initialize()
         {
-            AutoMapper.Mapper.Initialize(cfg =>
+            Mapper.Initialize(cfg =>
             {
                 cfg.CreateMap<StudentEntity, StudentDetailModel>();
                 cfg.CreateMap<StudentEntity, StudentListModel>();

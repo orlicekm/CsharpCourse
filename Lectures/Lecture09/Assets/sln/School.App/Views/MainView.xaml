@@ -15,10 +15,10 @@
         Title="MainView" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
         </Grid.ColumnDefinitions>
-        <views:StudentView Grid.Column="0"/>
-        <views:AddressView Grid.Column="1"/>
+        <views:StudentView Grid.Column="0" />
+        <views:AddressView Grid.Column="1" />
     </Grid>
 </Window>

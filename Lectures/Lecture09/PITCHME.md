@@ -281,7 +281,7 @@ viewfirst, viewmodel first...
 ---
 ViewModelLocator + seed to app(not to presentation)
 Messanger
-IoC/DI containter mby?
+IoC/DI containter
 
 ---
 frameworks

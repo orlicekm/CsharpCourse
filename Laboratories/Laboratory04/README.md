@@ -1,7 +1,7 @@
 ﻿# Laboratory 04
 ## Subtitle
-* [Before](/Laboratories/Laboratory01/Laboratory04_Before)
-* [After](/Laboratories/Laboratory01/Laboratory04_After)
+* [Before](/Laboratories/Laboratory04/Laboratory04_Before)
+* [After](/Laboratories/Laboratory04/Laboratory04_After)
 ---
 * TODO
 * ukázat novinky v projektu (Seed, DesignTimeDbContextFactory)

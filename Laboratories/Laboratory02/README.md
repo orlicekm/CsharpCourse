@@ -1,6 +1,6 @@
 # Laboratory 02
 ## Subtitle
-* [Before](/Laboratories/Laboratory02/Laboiratory02_Before)
-* [After](/Laboratories/Laboratory02/Laboiratory02_After)
+* [Before](/Laboratories/Laboratory02/Laboratory02_Before)
+* [After](/Laboratories/Laboratory02/Laboratory02_After)
 ---
 * TODO

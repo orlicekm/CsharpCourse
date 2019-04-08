@@ -247,7 +247,7 @@
   * Not always true
     * E.g., some *Models* may contain validation
 
-+++?code=/Lectures/Lecture09/Assets/sln/School.BL/Models/StudentDetailModel.cs&lang=C#&title=Model Sample
++++?code=/Lectures/Lecture09/Assets/sln/School.BL/Models/DetailModels/StudentDetailModel.cs&lang=C#&title=Model Sample
 @[6-11]
 [Code sample](/Lectures/Lecture10/Assets/sln/School.BL/Models/StudentDetailModel.cs)
 
@@ -261,7 +261,7 @@
   * It will synchronize this with the *ViewModel*
 * In *XAML* (in this course)
 
-+++?code=/Lectures/Lecture09/Assets/sln/School.App/Views/StudentView.xaml&lang=XAML&title=View Sample
++++?code=/Lectures/Lecture09/Assets/sln/School.App/Views/StudentView.xaml&lang=XML&title=View Sample
 @[1-13]
 @[15-19]
 @[21-27]

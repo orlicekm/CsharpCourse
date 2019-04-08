@@ -324,9 +324,11 @@
   * Often return other ViewModel implementation in design time
 * Controls life cycle of viewmodel
 
++++
+### View Model Locator Sample 1/4
 ![](/Lectures/Lecture09/Assets/img/ViewModelLocator.png)
 
-+++?code=/Lectures/Lecture09/Assets/sln/School.App/ViewModelLocator.cs&lang=C#&title=View Model Locator Sample 1/3
++++?code=/Lectures/Lecture09/Assets/sln/School.App/ViewModelLocator.cs&lang=C#&title=View Model Locator Sample 2/4
 @[10-11]
 @[12-14]
 @[16-17, 26]
@@ -337,11 +339,11 @@
 @[32-45]
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/ViewModelLocator.cs)
 
-+++?code=/Lectures/Lecture09/Assets/sln/School.App/Views/StudentView.xaml&lang=XML&title=View Model Locator Sample 2/3
++++?code=/Lectures/Lecture09/Assets/sln/School.App/Views/StudentView.xaml&lang=XML&title=View Model Locator Sample 3/4
 @[11-12]
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/Views/StudentView.xaml)
 
-+++?code=/Lectures/Lecture09/Assets/sln/School.App/App.xaml&lang=XML&title=View Model Locator Sample 3/3
++++?code=/Lectures/Lecture09/Assets/sln/School.App/App.xaml&lang=XML&title=View Model Locator Sample 4/4
 @[18]
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/App.xaml)
 

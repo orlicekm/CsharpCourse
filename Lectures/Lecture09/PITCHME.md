@@ -247,6 +247,10 @@
   * Not always true
     * E.g., some *Models* may contain validation
 
++++?code=/Lectures/Lecture09/Assets/sln/School.BL/Models/StudentDetailModel.cs&lang=C#&title=Model Sample
+@[6-11]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.BL/Models/StudentDetailModel.cs)
+
 +++
 ## The View
 * **Presentation of the data**
@@ -257,6 +261,14 @@
   * It will synchronize this with the *ViewModel*
 * In *XAML* (in this course)
 
++++?code=/Lectures/Lecture09/Assets/sln/School.App/Views/StudentView.xaml&lang=XAML&title=View Sample
+@[1-13]
+@[15-19]
+@[21-27]
+@[36-48]
+@[49]
+@[51-61]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.App/Views/StudentView.xaml)
 
 +++
 ## The ViewModel 
@@ -268,9 +280,23 @@
 * **Manipulates the Model** as the result of actions on the view, and trigger events in the *View*
 
 +++
-### View-Viewmodel
+### View-ViewModel
 
 ![](/Lectures/Lecture09/Assets/img/View-ViewModel.png)
+
++++?code=/Lectures/Lecture09/Assets/sln/School.App/ViewModels/StudentViewModel.cs&lang=C#&title=ViewModel Sample
+@[14-18]
+@[20-35]
+@[37-40]
+@[42-43]
+@[45-52]
+@[54-59]
+@[61-64]
+@[66-73]
+@[75-79]
+@[81-84]
+@[86-95]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.App/ViewModels/StudentViewModel.cs)
 
 ---
 todo samples to view, model, viewmodel
@@ -281,7 +307,10 @@ viewfirst, viewmodel first...
 ---
 ViewModelLocator + seed to app(not to presentation)
 Messanger
-IoC/DI containter
+
+
+---
+IoC/DI containter - Microsoft abstractions servicecollections
 
 ---
 frameworks

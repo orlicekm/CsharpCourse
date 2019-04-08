@@ -36,12 +36,12 @@ namespace School.App
 
         private StudentViewModel CreateStudentViewModel()
         {
-            return new StudentViewModel(messenger, studentFacade);
+            return new StudentViewModel(messenger, studentFacade, addressFacade);
         }
 
         private AddressViewModel CreateAddressViewModel()
         {
-            return new AddressViewModel(messenger, addressFacade);
+            return new AddressViewModel(messenger, studentFacade, addressFacade);
         }
     }
 }

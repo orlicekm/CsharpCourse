@@ -1,4 +1,5 @@
-﻿using School.BL.Models.Base;
+﻿using System;
+using School.BL.Models.Base;
 using School.BL.Models.ListModels;
 
 namespace School.BL.Models.DetailModels
@@ -10,6 +11,7 @@ namespace School.BL.Models.DetailModels
         public string State { get; set; }
         public string Country { get; set; }
 
+        public Guid StudentId { get; set; }
         public StudentListModel StudentDetail { get; set; }
     }
 }

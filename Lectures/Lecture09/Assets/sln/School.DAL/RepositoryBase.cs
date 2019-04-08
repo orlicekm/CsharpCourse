@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 using School.DAL.Entities.Base;
 
 namespace School.DAL
@@ -17,6 +18,7 @@ namespace School.DAL
 
         public void Delete(TEntity entity)
         {
+            Detach(entity);
             unitOfWork.DbContext.Set<TEntity>().Remove(entity);
         }
 
@@ -44,12 +46,19 @@ namespace School.DAL
 
         public void Update(TEntity entity)
         {
+            Detach(entity);
             unitOfWork.DbContext.Set<TEntity>().Update(entity);
         }
 
         public IEnumerable<TEntity> GetAll()
         {
             return unitOfWork.DbContext.Set<TEntity>().ToArray();
+        }
+
+        private void Detach(TEntity entity)
+        {
+            var attachedEntity = unitOfWork.DbContext.Find<TEntity>(entity.Id);
+            unitOfWork.DbContext.Entry(attachedEntity).State = EntityState.Detached;
         }
     }
 }

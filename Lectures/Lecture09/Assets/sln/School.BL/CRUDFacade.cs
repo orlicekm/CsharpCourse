@@ -32,25 +32,20 @@ namespace School.BL
             return repository.GetAll().Select(Mapper.Map<TEntity, TListModel>);
         }
 
-        public TDetailModel GetById(Guid id)
+        public TDetailModel GetDetailById(Guid id)
         {
             return Mapper.Map<TEntity, TDetailModel>(repository.GetById(id));
+        }
+
+        public TListModel GetListById(Guid id)
+        {
+            return Mapper.Map<TEntity, TListModel>(repository.GetById(id));
         }
 
         public void Delete(Guid id)
         {
             repository.DeleteById(id);
             unitOfWork.Commit();
-        }
-
-        public void Delete(TListModel model)
-        {
-            Delete(model.Id);
-        }
-
-        public void Delete(TDetailModel model)
-        {
-            Delete(model.Id);
         }
 
         public TDetailModel InitializeNew()
@@ -60,14 +55,25 @@ namespace School.BL
 
         public TDetailModel Save(TDetailModel model)
         {
-            var entity = Mapper.Map<TDetailModel, TEntity>(model);
+            return Save<TDetailModel>(model);
+        }
+
+        public TListModel Save(TListModel model)
+        {
+            return Save<TListModel>(model);
+        }
+
+        private T Save<T>(T model) where T : ModelBase, new()
+        {
+            var entity = Mapper.Map<T, TEntity>(model);
 
             if (entity.Id == Guid.Empty)
-                model = Mapper.Map<TEntity, TDetailModel>(repository.Insert(entity));
+                model = Mapper.Map<TEntity, T>(repository.Insert(entity));
             else
                 repository.Update(entity);
 
             unitOfWork.Commit();
+
             return model;
         }
     }

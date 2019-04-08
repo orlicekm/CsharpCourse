@@ -8,15 +8,9 @@ namespace School.DAL
     public class SchoolDbContext : DbContext
     {
         private readonly string connectionString;
-        private readonly bool useLazyLoadingProxies;
 
-        public SchoolDbContext() : this(true)
+        public SchoolDbContext()
         {
-        }
-
-        public SchoolDbContext(bool useLazyLoadingProxies = true)
-        {
-            this.useLazyLoadingProxies = useLazyLoadingProxies;
             connectionString = GetConnectionString();
         }
 
@@ -30,9 +24,16 @@ namespace School.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseLazyLoadingProxies(useLazyLoadingProxies);
             if (optionsBuilder.IsConfigured) return;
             optionsBuilder.UseSqlServer(connectionString);
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<AddressEntity>()
+                .HasOne(a => a.Student)
+                .WithOne(s => s.Address)
+                .OnDelete(DeleteBehavior.Cascade);
         }
 
         private string GetConnectionString()

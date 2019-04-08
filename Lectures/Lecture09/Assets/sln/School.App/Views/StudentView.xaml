@@ -5,9 +5,59 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:School.App.Views"
              xmlns:viewModels="clr-namespace:School.App.ViewModels"
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:componentModel="clr-namespace:System.ComponentModel;assembly=WindowsBase"
              mc:Ignorable="d"
              DataContext="{Binding StudentViewModel, Source={StaticResource ViewModelLocator}}"
              d:DataContext="{d:DesignInstance viewModels:StudentViewModel, IsDesignTimeCreatable=False}"
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid />
+
+    <i:Interaction.Triggers>
+        <i:EventTrigger EventName="Loaded">
+            <i:InvokeCommandAction Command="{Binding Path=OnLoadCommand}" />
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+
+    <UserControl.Resources>
+        <CollectionViewSource x:Key='Students' Source="{Binding Students}">
+            <CollectionViewSource.SortDescriptions>
+                <componentModel:SortDescription PropertyName="Name" />
+            </CollectionViewSource.SortDescriptions>
+        </CollectionViewSource>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+
+        <ListBox Name="StudentsListBox" Grid.Row="0" ItemsSource="{Binding Source={StaticResource Students}}">
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <i:InvokeCommandAction Command="{Binding SelectStudentCommand}"
+                                           CommandParameter="{Binding ElementName=StudentsListBox, Path=SelectedItem}" />
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding Name}" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <TextBox Name="NewStudentTextBox" Grid.Row="1" Text="New Student" />
+
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Command="{Binding AddStudentCommand }"
+                    CommandParameter="{Binding ElementName=NewStudentTextBox, Path=Text}" Content="Add" />
+            <Button Grid.Column="1" Command="{Binding RemoveStudentCommand }"
+                    CommandParameter="{Binding ElementName=StudentsListBox, Path=SelectedItem}" Content="Remove"
+                    IsEnabled="{Binding ElementName=StudentsListBox, Path=SelectedItems.Count}" />
+        </Grid>
+    </Grid>
 </UserControl>

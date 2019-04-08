@@ -299,13 +299,53 @@
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/ViewModels/StudentViewModel.cs)
 
 ---
-todo samples to view, model, viewmodel
+## View or ViewModel First
+* **The Chicken or the Egg?**
+* In general
+  * There is *no need to attach multiple ViewModels to a single View*
+  * *Single ViewModel might be used by multiple Views*
+    * E.g., a wizard, that has three Views but all bind to the same ViewModel that drives the process
+
++++
+### View First
+* **View** is what **drives the creation** or discovery of the view model
+* Very **common method** for managing *Views* and *ViewModels*
+* In this scenario *View*:
+  * Typically binds to the *ViewModel* as a resource
+  * Uses a locator pattern, or has the *ViewModel* injected via e.g. MEF
+
++++
+### ViewModel First
+* **ViewModel is responsible for creating** the *View* and binding itself to the *View*
 
 ---
-viewfirst, viewmodel first...
+## View Model Locator
+* Desides which ViewModel will be used for the View
+  * Often return other ViewModel implementation in design time
+* Controls life cycle of viewmodel
+
+![](/Lectures/Lecture09/Assets/img/ViewModelLocator.png)
+
++++?code=/Lectures/Lecture09/Assets/sln/School.App/ViewModelLocator.cs&lang=C#&title=View Model Locator Sample 1/3
+@[10-11]
+@[12-14]
+@[16-17, 26]
+@[18-20]
+@[22-25]
+@[16-26]
+@[28-30]
+@[32-45]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.App/ViewModelLocator.cs)
+
++++?code=/Lectures/Lecture09/Assets/sln/School.App/Views/StudentView.xaml&lang=XML&title=View Model Locator Sample 2/3
+@[11-12]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.App/Views/StudentView.xaml)
+
++++?code=/Lectures/Lecture09/Assets/sln/School.App/App.xaml&lang=XML&title=View Model Locator Sample 3/3
+@[18]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.App/App.xaml)
 
 ---
-ViewModelLocator + seed to app(not to presentation)
 Messanger
 
 

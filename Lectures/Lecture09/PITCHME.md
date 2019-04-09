@@ -348,8 +348,59 @@
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/App.xaml)
 
 ---
-## Messanger
+### ViewModels Bad Communication
+![](/Lectures/Lecture09/Assets/img/MessengerBad.png)
 
++++
+### ViewModels Good Communication
+![](/Lectures/Lecture09/Assets/img/MessengerGood.png)
+
++++
+## Messanger
+* **Mediator design pattern**
+* **Communication bettween viewmodels**
+* Implementatin:
+
+![](/Lectures/Lecture09/Assets/img/MessengerImplemetation.png)
+
++++?code=/Lectures/Lecture09/Assets/sln/School.App/IMessenger.cs&lang=C#&title=IMessenger Implementation
+@[5-6, 9]
+@[7]
+@[8]
+@[9]
+@[5-10]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.App/IMessenger.cs)
+
+
++++?code=/Lectures/Lecture09/Assets/sln/School.App/Messenger.cs&lang=C#&title=Messenger Implementation
+@[7-8]
+@[9]
+@[11-12]
+@[14-15, 28]
+@[16]
+@[18-19, 27]
+@[20-21, 24]
+@[22]
+@[23]
+@[26]
+@[14-28]
+@[30-31, 35]
+@[32]
+@[33]
+@[34]
+@[30-35]
+@[37-38, 48]
+@[41-42, 47]
+@[44]
+@[45]
+@[39, 47]
+@[37-48]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.App/Messenger.cs)
+
+
++++
+### Messenger Recapitulation
+![](/Lectures/Lecture09/Assets/img/MVVMLightMessenger.png)
 
 ---
 IoC/DI containter - Microsoft abstractions servicecollections

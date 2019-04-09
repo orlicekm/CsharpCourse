@@ -371,7 +371,6 @@
 @[5-10]
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/IMessenger.cs)
 
-
 +++?code=/Lectures/Lecture09/Assets/sln/School.App/Messenger.cs&lang=C#&title=Messenger Implementation
 @[7-8]
 @[9]
@@ -397,6 +396,21 @@
 @[37-48]
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/Messenger.cs)
 
++++?code=/Lectures/Lecture09/Assets/sln/School.App/ViewModels/StudentViewModel.cs&lang=C#&title=Messenger Sample 1/3
+@[54-59]
+@[58]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.App/ViewModels/StudentViewModel.cs)
+
++++?code=/Lectures/Lecture09/Assets/sln/School.App/Messages/SelectStudentMessage.cs&lang=C#&title=Messenger Sample 2/3
+@[5-6, 12]
+@[5-12]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.App/Messages/SelectStudentMessage.cs)
+
++++?code=/Lectures/Lecture09/Assets/sln/School.App/ViewModels/AddressViewModel.cs&lang=C#&title=Messenger Sample 3/3
+@[20, 23, 30]
+@[28]
+@[66-70]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.App/ViewModels/AddressViewModel.cs)
 
 +++
 ### Messenger Recapitulation

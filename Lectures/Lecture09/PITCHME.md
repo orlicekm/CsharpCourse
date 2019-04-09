@@ -364,7 +364,7 @@
 ![](/Lectures/Lecture09/Assets/img/MessengerImplemetation.png)
 
 +++?code=/Lectures/Lecture09/Assets/sln/School.App/IMessenger.cs&lang=C#&title=IMessenger Implementation
-@[5-6, 9]
+@[5-6, 10]
 @[7]
 @[8]
 @[9]
@@ -390,10 +390,10 @@
 @[34]
 @[30-35]
 @[37-38, 48]
-@[41-42, 47]
+@[41-43, 47]
 @[44]
 @[45]
-@[39, 47]
+@[39, 46]
 @[37-48]
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/Messenger.cs)
 

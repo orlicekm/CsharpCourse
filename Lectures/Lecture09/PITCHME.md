@@ -402,7 +402,7 @@
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/ViewModels/StudentViewModel.cs)
 
 +++?code=/Lectures/Lecture09/Assets/sln/School.App/Messages/SelectStudentMessage.cs&lang=C#&title=Messenger Sample 2/3
-@[5-6, 12]
+@[5-6, 13]
 @[5-12]
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/Messages/SelectStudentMessage.cs)
 

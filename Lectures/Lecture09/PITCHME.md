@@ -421,3 +421,4 @@ Mvvm light
 ## Refences to used images:
 [Towards Data Science](https://towardsdatascience.com/)  
 [Wintellect LLC](https://www.wintellect.com/)  
+[DotNetPattern.com](http://dotnetpattern.com)  

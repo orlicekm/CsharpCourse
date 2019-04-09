@@ -357,7 +357,7 @@
 
 +++
 ## Messanger
-* **Mediator design pattern**
+* **Mediator design pattern**F
 * **Communication bettween viewmodels**
 * Implementatin:
 
@@ -420,8 +420,57 @@
 IoC/DI containter - Microsoft abstractions servicecollections
 
 ---
-frameworks
-Mvvm light
+## MVVM Light
+* todo
+
++++
+### Other MVVM Frameworks
+* *Prism*
+* *Catel*
+* *ReactiveUI*
+* *Caliburn.Micro*
+* **⋮**
+
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+### Prism
+* [GitHub](https://github.com/PrismLibrary/Prism)
+* Commands
+* Event aggregation
+* Region management
+* ⋮
+
++++
+### Catel
+* [GitHub](https://github.com/Catel/Catel)
+* Automatic implementation INPC
+  * Reflection
+* Convertors
+* Services
+* Binding
+* R# Support
+* ⋮
+
++++
+### ReactiveUI
+* [GitHub](https://github.com/reactiveui/reactiveui)
+* ReactiveObject
+* MessageBus
+* Binding
+* Service locator
+* ⋮
+
++++ 
+### Caliburn.Micro
+* [GitHub](https://github.com/Caliburn-Micro/Caliburn.Micro)
+* Viewmodel-first framework 
+* More than just MVVM
+  * Full application framework
+
 
 ---
 ## References:

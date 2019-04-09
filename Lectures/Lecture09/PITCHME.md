@@ -320,8 +320,8 @@
 
 ---
 ## View Model Locator
-* Desides which ViewModel will be used for the View
-  * Often return other ViewModel implementation in design time
+* Desides **which ViewModel will be used for the View**
+  * Often return other *ViewModel* implementation in design time
 * Controls life cycle of viewmodel
 
 +++
@@ -348,7 +348,7 @@
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/App.xaml)
 
 ---
-Messanger
+## Messanger
 
 
 ---

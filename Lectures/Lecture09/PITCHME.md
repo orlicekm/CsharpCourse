@@ -442,7 +442,7 @@
 
 +++
 ### Dependency Injection
-* *Design pattern** which **implements IoC principle**
+* **Design pattern** which **implements IoC principle**
 * To invert the creation of dependent objects
 
 +++
@@ -458,9 +458,40 @@
 
 ![](/Lectures/Lecture09/Assets/img/ioc-steps.png)
 
+
++++
+### Container Support
+* All the containers must provide easy support for the following
+* **Register**
+  * Container must know which dependency to instantiate when it encounters a particular type
+  * Basically, it must include some way to register type-mapping
+* **Resolve**
+  * Container creates objects for developer, he does not create them manually
+  * Container must include some methods to resolve the specified type
+  * Container creates an object of specified type, injects required dependencies if any and returns it
+* **Dispose**
+  * Container must manage the lifetime of dependent objects
+  * Most IoC containers include different lifetimemanagers to manage an object's lifecycle and dispose it
+
++++
+### Containers
+* There are many open source or commercial containers available
+  * *Castle Windsor*
+  * *Unity*
+  * StructureMap
+  * Ninject
+  * ⋮
+
++++
+### Dependency Injection in ASP.NET Core
+
 ---
 ## MVVM Light
-* todo
+Light but useful set of classes
+ViewModelBase
+Messenger
+Binding
+Simple IoC
 
 +++
 ### Other MVVM Frameworks
@@ -468,8 +499,7 @@
 * *Catel*
 * *ReactiveUI*
 * *Caliburn.Micro*
-* **⋮**
-
+* ⋮
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)

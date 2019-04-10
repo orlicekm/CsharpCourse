@@ -417,7 +417,46 @@
 ![](/Lectures/Lecture09/Assets/img/MVVMLightMessenger.png)
 
 ---
-IoC/DI containter - Microsoft abstractions servicecollections
+## IoC Terms
+
+![](/Lectures/Lecture09/Assets/img/IOCprinciples-and-patterns.png)
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+### Inversion of Control
+* **Design principle**
+* Recommends *inversion of different kinds of controls* in object oriented design
+  * Control means any additional responsibilities
+* To achieve loose coupling between the application classes
+
++++
+### Dependency Inversion
+* **Principle**
+* Suggests that *high-level modules should not depend on low level modules*
+  * **Both should depend on abstraction**
+* Helps in achieving loose coupling between the classes
+* It is recommended to use DIP and IoC together
+
++++
+### Dependency Injection
+* *Design pattern** which **implements IoC principle**
+* To invert the creation of dependent objects
+
++++
+### IoC Container
+* **Framework**
+* *Manage automatic dependency injection* throughout the application
+  * Developers do not need to put more time and effort on it
+
++++
+### Tightly Coupled Classes to Losely ones
+* Loosely coupled classes cannot be achieved only by using IoC
+  * Along with IoC also needs to used DIP, DI and IoC container
+
+![](/Lectures/Lecture09/Assets/img/ioc-steps.png)
 
 ---
 ## MVVM Light
@@ -475,6 +514,7 @@ IoC/DI containter - Microsoft abstractions servicecollections
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
+[TutorialsTeacher.com](https://www.tutorialsteacher.com/)  
 [Wintellect LLC](https://www.wintellect.com/)  
 [Tutorialspoint](https://www.tutorialspoint.com)  
 [Sagitec blog](http://www.sagitec.com/blog)  
@@ -482,6 +522,7 @@ IoC/DI containter - Microsoft abstractions servicecollections
 
 +++
 ## Refences to used images:
+[TutorialsTeacher.com](https://www.tutorialsteacher.com/)  
 [Towards Data Science](https://towardsdatascience.com/)  
 [Wintellect LLC](https://www.wintellect.com/)  
 [DotNetPattern.com](http://dotnetpattern.com)  

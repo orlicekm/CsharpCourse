@@ -397,13 +397,13 @@
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/Messenger.cs)
 
 +++?code=/Lectures/Lecture09/Assets/sln/School.App/ViewModels/StudentViewModel.cs&lang=C#&title=Messenger Sample 1/3
-@[54-59]
-@[58]
+@[53-58]
+@[57]
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/ViewModels/StudentViewModel.cs)
 
 +++?code=/Lectures/Lecture09/Assets/sln/School.App/Messages/SelectStudentMessage.cs&lang=C#&title=Messenger Sample 2/3
 @[5-6, 13]
-@[5-12]
+@[7-12]
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/Messages/SelectStudentMessage.cs)
 
 +++?code=/Lectures/Lecture09/Assets/sln/School.App/ViewModels/AddressViewModel.cs&lang=C#&title=Messenger Sample 3/3

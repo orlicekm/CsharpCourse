@@ -549,12 +549,12 @@
 @[6]
 [Code sample](/Lectures/Lecture10/Assets/sln/School.FrameworkBL/Models/Base/ModelBase.cs)
 
-+++?code=/Lectures/Lecture09/Assets/sln/School.FrameworkBL/Models/DetailModels/StudentListModel.cs&lang=C#&title=MVVM Light ObservableObject 2/2
++++?code=/Lectures/Lecture09/Assets/sln/School.FrameworkBL/Models/ListModels/StudentListModel.cs&lang=C#&title=MVVM Light ObservableObject 2/2
 @[5-14]
 @[7]
 @[9-13]
 @[12]
-[Code sample](/Lectures/Lecture10/Assets/sln/School.FrameworkBL/Models/DetailModels/StudentListModel.cs)
+[Code sample](/Lectures/Lecture10/Assets/sln/School.FrameworkBL/Models/ListModels/StudentListModel.cs)
 
 +++
 ### Other MVVM Frameworks

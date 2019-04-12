@@ -285,17 +285,17 @@
 ![](/Lectures/Lecture09/Assets/img/View-ViewModel.png)
 
 +++?code=/Lectures/Lecture09/Assets/sln/School.App/ViewModels/StudentViewModel.cs&lang=C#&title=ViewModel Sample
-@[14-18]
-@[20-35]
-@[37-40]
-@[42-43]
-@[45-52]
-@[54-59]
-@[61-64]
-@[66-73]
-@[75-79]
-@[81-84]
-@[86-95]
+@[14-17]
+@[19-34]
+@[36-39]
+@[41-42]
+@[44-51]
+@[53-58]
+@[60-63]
+@[65-72]
+@[74-78]
+@[80-83]
+@[85-94]
 [Code sample](/Lectures/Lecture10/Assets/sln/School.App/ViewModels/StudentViewModel.cs)
 
 ---

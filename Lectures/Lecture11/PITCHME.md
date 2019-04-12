@@ -18,7 +18,7 @@
 
 +++?code=/Lectures/Lecture11/Assets/sln/Examples/ProcessSample.cs&lang=C#&title=Process Sample
 @[7-10]
-#[9]
+@[9]
 @[12-15]
 @[14]
 @[17-26]
@@ -28,9 +28,11 @@
 @[17-26]
 [Code sample](/Lectures/Lecture11/Assets/sln/Examples/ProcessSample.cs)
 
-
++++
 thread
 Task
+
++++
 Async await
 Lock
 Mutex
@@ -47,7 +49,8 @@ Brenchmark dotnet - s kozolovkou ktora to spusti
 
 ---
 ## References:
-[C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
+[C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)    
+[Microsoft documentation](https://docs.microsoft.com)  
 
 +++
 ## Refences to used images:

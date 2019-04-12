@@ -485,11 +485,76 @@
 
 ---
 ## MVVM Light
-Light but useful set of classes
-ViewModelBase
-Messenger
-Binding
-Simple IoC
+* Light but useful set of features
+  * Simple IoC
+  * ViewModelBase
+  * RelayCommand
+  * Messenger
+  * ObservableObject
+
++++
+### MVVM Light Sample projects
+* `Lecture09` solution
+* Without MVVM Light Framework
+  * `School.App`
+  * `School.BL`
+* With MVVM Light Framework
+  * `School.FrameworkApp`
+  * `School.FrameworkBL`
+
++++?code=/Lectures/Lecture09/Assets/sln/School.FrameworkApp/ViewModelLocator.cs&lang=C#&title=MVVM Light Simple IoC
+@[14-15]
+@[16]
+@[21-23]
+@[26-28]
+@[18-19]
+@[30-42]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.FrameworkApp/ViewModelLocator.cs)
+
++++?code=/Lectures/Lecture09/Assets/sln/School.FrameworkApp/ViewModels/AddressViewModel.cs&lang=C#&title=MVVM Light ViewModelBase
+@[16]
+@[36-44]
+@[42]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.FrameworkApp/ViewModels/AddressViewModel.cs)
+
++++?code=/Lectures/Lecture09/Assets/sln/School.FrameworkApp/ViewModels/StudentViewModel.cs&lang=C#&title=MVVM Light RelayCommand 1/2
+@[23]
+@[32]
+@[62-66]
+@[29-31]
+@[84-93]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.FrameworkApp/ViewModels/StudentViewModel.cs)
+
++++?code=/Lectures/Lecture09/Assets/sln/School.FrameworkApp/ViewModels/AddressViewModel.cs&lang=C#&title=MVVM Light RelayCommand 2/2
+@[16]
+@[31]
+@[56-66]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.FrameworkApp/ViewModels/AddressViewModel.cs)
+
+
++++?code=/Lectures/Lecture09/Assets/sln/School.FrameworkApp/ViewModels/StudentViewModel.cs&lang=C#&title=MVVM Light Messenger 1/2
+@[23]
+@[84-93]
+@[925]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.FrameworkApp/ViewModels/StudentViewModel.cs)
+
++++?code=/Lectures/Lecture09/Assets/sln/School.FrameworkApp/ViewModels/AddressViewModel.cs&lang=C#&title=MVVM Light Messenger 2/2
+@[16]
+@[30]
+@[68-72]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.FrameworkApp/ViewModels/AddressViewModel.cs)
+
++++?code=/Lectures/Lecture09/Assets/sln/School.FrameworkBL/Models/Base/ModelBase.cs&lang=C#&title=MVVM Light ObservableObject 1/2
+@[6-9]
+@[6]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.FrameworkBL/Models/Base/ModelBase.cs)
+
++++?code=/Lectures/Lecture09/Assets/sln/School.FrameworkBL/Models/DetailModels/StudentListModel.cs&lang=C#&title=MVVM Light ObservableObject 2/2
+@[5-14]
+@[7]
+@[9-13]
+@[12]
+[Code sample](/Lectures/Lecture10/Assets/sln/School.FrameworkBL/Models/DetailModels/StudentListModel.cs)
 
 +++
 ### Other MVVM Frameworks

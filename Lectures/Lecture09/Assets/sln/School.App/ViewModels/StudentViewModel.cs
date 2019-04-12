@@ -13,7 +13,6 @@ namespace School.App.ViewModels
 {
     public class StudentViewModel : ViewModelBase
     {
-        private readonly CrudFacade<AddressEntity, AddressListModel, AddressDetailModel> addressFacade;
         private readonly Messenger messenger;
         private readonly CrudFacade<StudentEntity, StudentListModel, StudentDetailModel> studentFacade;
 

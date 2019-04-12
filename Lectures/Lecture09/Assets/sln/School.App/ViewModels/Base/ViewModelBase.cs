@@ -7,7 +7,6 @@ namespace School.App.ViewModels.Base
     public class ViewModelBase : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-        public event NotifyCollectionChangedEventHandler CollectionChanged;
 
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {

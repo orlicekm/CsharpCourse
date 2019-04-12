@@ -31,7 +31,7 @@ namespace School.App
 
         private MainViewModel CreateMainViewModel()
         {
-            return new MainViewModel(messenger);
+            return new MainViewModel();
         }
 
         private StudentViewModel CreateStudentViewModel()

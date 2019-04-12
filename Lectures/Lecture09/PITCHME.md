@@ -476,14 +476,12 @@
 +++
 ### Containers
 * There are many open source or commercial containers available
-  * *Castle Windsor*
-  * *Unity*
-  * StructureMap
-  * Ninject
+  * [Dependency injection in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-2.2)
+  * [*Castle Windsor*](http://www.castleproject.org/)
+  * [*Unity*](https://github.com/unitycontainer/unity)
+  * [*StructureMap*](http://structuremap.github.io/)
+  * [*Ninject*](http://www.ninject.org/)
   * ⋮
-
-+++
-### Dependency Injection in ASP.NET Core
 
 ---
 ## MVVM Light

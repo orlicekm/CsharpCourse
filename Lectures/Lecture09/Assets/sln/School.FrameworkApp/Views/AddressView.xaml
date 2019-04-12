@@ -1,0 +1,58 @@
+﻿<UserControl x:Class="School.FrameworkApp.Views.AddressView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:School.FrameworkApp.Views"
+             mc:Ignorable="d"
+             DataContext="{Binding AddressViewModel, Source={StaticResource Locator}}"
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Content="Name: " />
+            <TextBox Grid.Row="0" Grid.Column="1"
+                     Text="{Binding StudentList.Name, UpdateSourceTrigger=PropertyChanged}"
+                     IsEnabled="{Binding ElementName=SaveStudentButton, Path=IsEnabled}" />
+
+            <Label Grid.Row="1" Grid.Column="0" Content="Street: " />
+            <TextBox Grid.Row="1" Grid.Column="1"
+                     Text="{Binding AddressDetail.Street, UpdateSourceTrigger=PropertyChanged}"
+                     IsEnabled="{Binding ElementName=SaveStudentButton, Path=IsEnabled}" />
+
+            <Label Grid.Row="2" Grid.Column="0" Content="City: " />
+            <TextBox Grid.Row="2" Grid.Column="1"
+                     Text="{Binding AddressDetail.City, UpdateSourceTrigger=PropertyChanged}"
+                     IsEnabled="{Binding ElementName=SaveStudentButton, Path=IsEnabled}" />
+
+            <Label Grid.Row="3" Grid.Column="0" Content="State: " />
+            <TextBox Grid.Row="3" Grid.Column="1"
+                     Text="{Binding AddressDetail.State, UpdateSourceTrigger=PropertyChanged}"
+                     IsEnabled="{Binding ElementName=SaveStudentButton, Path=IsEnabled}" />
+
+            <Label Grid.Row="4" Grid.Column="0" Content="Country: " />
+            <TextBox Grid.Row="4" Grid.Column="1"
+                     Text="{Binding AddressDetail.Country, UpdateSourceTrigger=PropertyChanged}"
+                     IsEnabled="{Binding ElementName=SaveStudentButton, Path=IsEnabled}" />
+
+        </Grid>
+        <Button Grid.Row="1" Content="Save" Name="SaveStudentButton" Command="{Binding SaveStudentCommand }" />
+    </Grid>
+</UserControl>

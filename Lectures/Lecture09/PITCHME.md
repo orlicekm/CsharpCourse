@@ -608,6 +608,8 @@
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [TutorialsTeacher.com](https://www.tutorialsteacher.com/)  
+[MVVM light toolkit](http://www.mvvmlight.net/)  
+[DotNetPattern.com](http://dotnetpattern.com/)  
 [Wintellect LLC](https://www.wintellect.com/)  
 [Tutorialspoint](https://www.tutorialspoint.com)  
 [Sagitec blog](http://www.sagitec.com/blog)  

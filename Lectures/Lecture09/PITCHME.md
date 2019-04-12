@@ -320,8 +320,8 @@
 
 ---
 ## View Model Locator
-* Desides **which ViewModel will be used for the View**
-  * Often return other *ViewModel* implementation in design time
+* Decides **which ViewModel will be used for the View**
+  * Often returns other *ViewModel* implementation in design time
 * Controls life cycle of viewmodel
 
 +++
@@ -356,12 +356,12 @@
 ![](/Lectures/Lecture09/Assets/img/MessengerGood.png)
 
 +++
-## Messanger
-* **Mediator design pattern**F
-* **Communication bettween viewmodels**
-* Implementatin:
+## Messenger
+* **Mediator design pattern**
+* **Communication between viewmodels**
+* How to implement:
 
-![](/Lectures/Lecture09/Assets/img/MessengerImplemetation.png)
+![](/Lectures/Lecture09/Assets/img/MessengerImplemetation.jpg)
 
 +++?code=/Lectures/Lecture09/Assets/sln/School.App/IMessenger.cs&lang=C#&title=IMessenger Implementation
 @[5-6, 10]

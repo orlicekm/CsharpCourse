@@ -535,7 +535,7 @@
 +++?code=/Lectures/Lecture09/Assets/sln/School.FrameworkApp/ViewModels/StudentViewModel.cs&lang=C#&title=MVVM Light Messenger 1/2
 @[23]
 @[84-93]
-@[925]
+@[92]
 [Code sample](/Lectures/Lecture10/Assets/sln/School.FrameworkApp/ViewModels/StudentViewModel.cs)
 
 +++?code=/Lectures/Lecture09/Assets/sln/School.FrameworkApp/ViewModels/AddressViewModel.cs&lang=C#&title=MVVM Light Messenger 2/2

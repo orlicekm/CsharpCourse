@@ -454,7 +454,7 @@
 +++
 ### Tightly Coupled Classes to Losely ones
 * Loosely coupled classes cannot be achieved only by using IoC
-  * Along with IoC also needs to used DIP, DI and IoC container
+  * Along with IoC also needs to be used DIP, DI and IoC container
 
 ![](/Lectures/Lecture09/Assets/img/ioc-steps.png)
 
@@ -471,7 +471,7 @@
   * Container creates an object of specified type, injects required dependencies if any and returns it
 * **Dispose**
   * Container must manage the lifetime of dependent objects
-  * Most IoC containers include different lifetimemanagers to manage an object's lifecycle and dispose it
+  * Most IoC containers include different lifetime managers to manage an object's lifecycle and dispose it
 
 +++
 ### Containers

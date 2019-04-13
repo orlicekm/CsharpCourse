@@ -18,7 +18,7 @@
 * Provides **access to local and remote processes**
 * Enables to **start and stop local system processes**
 
-![](/Lectures/Lecture10/Assets/img/TaskManager.png)
+![](/Lectures/Lecture11/Assets/img/TaskManager.png)
 
 +++?code=/Lectures/Lecture11/Assets/sln/Examples/ProcessSample.cs&lang=C#&title=Process Sample
 @[7-10]

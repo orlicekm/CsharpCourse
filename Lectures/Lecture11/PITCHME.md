@@ -107,7 +107,7 @@
 * **Useful if multiple instances (N) of a resource** is to be shared among a set of users
   * As soon as all N resources are acquired, any new requester has to wait
   * Since there is no single lock to hold, there is as such no ownership of a semaphore
-* `Semaphore` Struct in `System.Threading` namespace
+* `Semaphore` Class in `System.Threading` namespace
 
 +++?code=/Lectures/Lecture11/Assets/sln/Examples/SemaphoreSample.cs&lang=C#&title=Semaphore Sample
 @[8-9]
@@ -132,7 +132,7 @@
   * **As soon as the resource is free, they go and grab it**
   * In process of spinning, they **consume many CPU cycles**
     * On a uni-processor machine, they are useless and perform very badly
-* `SpinLock ` Struct in `System.Threading` namespace
+* `SpinLock` Struct in `System.Threading` namespace
 
 +++?code=/Lectures/Lecture11/Assets/sln/Examples/SpinLockSample.cs&lang=C#&title=SpinLock Sample
 @[13-14]
@@ -148,6 +148,26 @@
 
 +++
 ### Monitor
+* Provides a mechanism that synchronizes access to objects
+* Can be done by acquiring a significant lock
+  * Is no different from `lock`
+  * But the monitor class provides more control over the synchronization
+* `Monitor` Class in `System.Threading` namespace
+* Methods for the synchronize access 
+  * `Monitor.Enter `
+  * `Monitor.TryEnter`
+  * `Monitor.Exit`
+
++++?code=/Lectures/Lecture11/Assets/sln/Examples/MonitorSample.cs&lang=C#&title=Monitor Sample
+@[8]
+@[10-11, 30]
+@[12-15]
+@[17-18, 25]
+@[19-24]
+@[26-27, 29]
+@[28]
+@[10-30]
+[Code sample](/Lectures/Lecture11/Assets/sln/Examples/MonitorSample.cs)
 
 +++
 ### ThreadPool

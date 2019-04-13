@@ -14,6 +14,7 @@
 ## Process
 * Process is the **instance of a computer program that is being executed**
   * Contains the program code and its activity
+  * Different processes do not share resources
 * Class `Process` is in the `System.Diagnostics` namespace
 * Provides **access to local and remote processes**
 * Enables to **start and stop local system processes**
@@ -48,7 +49,16 @@
 
 ---
 ## Thread
-* Namespace `System.Threading`
+* Way for a program to split itself into two or more simultaneous runs
+  * Thread is contained inside a process
+  * Different threads in the same process share same resources
+  * Threads are lightweight, in terms of the system resources 
+* `Thread` Class in `System.Threading` namespace
+  * Creates and controls a thread
+    * Sets its priority
+    * Sets its status
+
+![](/Lectures/Lecture11/Assets/img/Multithreaded_process.png)
 
 ---
 ## Task

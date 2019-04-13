@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-using System.Runtime.InteropServices.ComTypes;
 
 namespace Examples
 {

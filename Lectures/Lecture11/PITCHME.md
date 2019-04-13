@@ -33,15 +33,15 @@
 [Code sample](/Lectures/Lecture11/Assets/sln/Examples/ProcessSample.cs)
 
 +++?code=/Lectures/Lecture11/Assets/sln/Tests/ProcessSampleTest.cs&lang=C#&title=Process Sample Tests
-@[12-14]
-@[17-25]
-@[19]
+@[10-12]
+@[15-23]
+@[17]
+@[18]
 @[20]
 @[22]
-@[24]
-@[17-25]
-@[28-36]
-@[39-47]
+@[15-23]
+@[26-34]
+@[37-45]
 [Code sample](/Lectures/Lecture11/Assets/sln/Examples/ProcessSampleTest.cs)
 
 ---

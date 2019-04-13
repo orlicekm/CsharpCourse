@@ -103,16 +103,34 @@
 
 +++
 ### Semaphore
+* **Limits the number of threads that can access a resource or pool of resources concurrently**
+* **Useful if multiple instances (N) of a resource** is to be shared among a set of users
+  * As soon as all N resources are acquired, any new requester has to wait
+  * Since there is no single lock to hold, there is as such no ownership of a semaphore
+* `Semaphore` Struct in `System.Threading` namespace
+
++++?code=/Lectures/Lecture11/Assets/sln/Examples/SemaphoreSample.cs&lang=C#&title=Semaphore Sample
+@[8-9]
+@[11-12]
+@[13-16]
+@[18-23]
+@[25-27]
+@[29-33]
+@[35]
+@[38-39, 55]
+@[]
+@[38-55]
+[Code sample](/Lectures/Lecture11/Assets/sln/Examples/SemaphoreSample.cs)
 
 +++
 ### SpinLock
-* "An aggressive mutex"
-  * As soon as the resource is free, they go and grab it
-  * In process of spinning, they consume many CPU cycles
+* **Provides a mutual exclusion lock primitive**
+  * Thread is trying to acquire the lock **waits in a loop repeatedly checking** until the lock becomes available
+* *"An aggressive mutex"*
+  * **As soon as the resource is free, they go and grab it**
+  * In process of spinning, they **consume many CPU cycles**
     * On a uni-processor machine, they are useless and perform very badly
 * `SpinLock ` Struct in `System.Threading` namespace
-* Provides a mutual exclusion lock primitive
-  * Thread is trying to acquire the lock waits in a loop repeatedly checking until the lock becomes available
 
 +++?code=/Lectures/Lecture11/Assets/sln/Examples/SpinLockSample.cs&lang=C#&title=SpinLock Sample
 @[13-14]

@@ -1,15 +1,13 @@
-using System;
-using System.Threading;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Xunit;
 
 namespace Tests
 {
-    public class Lock
+    public class LockTest
     {
         private readonly object thisLock = new object();
 
-        private int increment = 0;
+        private int increment;
         private void CriticalSection()
         {
             lock (thisLock)

@@ -62,13 +62,25 @@
 ### Multithreaded Process
 ![](/Lectures/Lecture11/Assets/img/Multithreaded_process.png)
 
++++
+### Lock statement
+* For *safe access* to the resource from the concurrent context
+* Simplification of a *Monitor synchronization primitive*
+* While a `lock` is held
+  * The **thread that holds the lock can again acquire and release the lock**
+  * Any **other thread is blocked from acquiring the lock and waits until the lock is released**
+
++++?code=/Lectures/Lecture11/Assets/sln/Tests/LockTest.cs&lang=C#&title=Lock Sample
+@[9-19]
+@[24-30]
+[Code sample](/Lectures/Lecture11/Assets/sln/Tests/Lock.cs)
+
 ---
 ## Task
 
 ---
 ### Async await
 
-Lock
 Mutex
 Spinlock
 Monitor

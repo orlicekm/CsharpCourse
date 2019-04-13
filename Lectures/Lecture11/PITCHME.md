@@ -49,15 +49,17 @@
 
 ---
 ## Thread
-* Way for a program to split itself into two or more simultaneous runs
+* **Way for a program to split itself into two or more simultaneous runs**
   * Thread is contained inside a process
-  * Different threads in the same process share same resources
-  * Threads are lightweight, in terms of the system resources 
+  * Different threads in the same process **share same resources**
+  * Threads are *lightweight*, in terms of the system resources 
 * `Thread` Class in `System.Threading` namespace
-  * Creates and controls a thread
-    * Sets its priority
-    * Sets its status
+  * **Creates and controls a thread**
+    * **Sets its priority**
+    * **Sets its status**
 
++++
+### Multithreaded Process
 ![](/Lectures/Lecture11/Assets/img/Multithreaded_process.png)
 
 ---

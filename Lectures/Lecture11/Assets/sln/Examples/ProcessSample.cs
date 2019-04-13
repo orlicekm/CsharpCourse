@@ -1,28 +1,29 @@
 ﻿using System.Diagnostics;
+using System.Runtime.InteropServices.ComTypes;
 
 namespace Examples
 {
     public class ProcessSample
     {
-        public void OpenApplication()
+        public Process OpenApplication(string name)
         {
-            Process.Start("IExplore.exe");
+            return Process.Start(name);
         }
 
-        public void OpenApplicationWithArguments()
+        public Process OpenApplicationWithArguments(string name, string arg)
         {
-            Process.Start("IExplore.exe", @"C:\TestFile.html");
+            return Process.Start(name, arg);
         }
 
-        public void OpeApplicationWithStartInfo()
+        public Process OpeApplicationWithStartInfo(string name, string arg)
         {
-            var startInfo = new ProcessStartInfo("IExplore.exe")
+            var startInfo = new ProcessStartInfo(name)
             {
                 WindowStyle = ProcessWindowStyle.Minimized,
-                Arguments = @"C:\TestFile.html"
+                Arguments = arg
             };
 
-            Process.Start(startInfo);
+            return Process.Start(startInfo);
         }
     }
 }

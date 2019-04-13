@@ -83,8 +83,10 @@ Brenchmark dotnet - s kozolovkou ktora to spusti
 
 ---
 ## References:
-[C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)    
+[C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [Microsoft documentation](https://docs.microsoft.com)  
+[Wikipedia](https://en.wikipedia.org)  
 
 +++
 ## Refences to used images:
+[Wikipedia](https://en.wikipedia.org)  

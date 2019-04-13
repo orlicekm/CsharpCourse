@@ -73,7 +73,31 @@
 +++?code=/Lectures/Lecture11/Assets/sln/Tests/LockTest.cs&lang=C#&title=Lock Sample
 @[9-19]
 @[24-30]
-[Code sample](/Lectures/Lecture11/Assets/sln/Tests/Lock.cs)
+[Code sample](/Lectures/Lecture11/Assets/sln/Tests/LockTest.cs)
+
++++
+### Mutex
+* **Synchronization primitive**
+  * Can also be used for *interprocess synchronization*
+* `Mutex` Class in `System.Threading` namespace
+* Sample shows how mutex is used to synchronize access to a protected resource
+
++++?code=/Lectures/Lecture11/Assets/sln/Examples/MutexSample.cs&lang=C#&title=Lock Sample
+@[8]
+@[10-11, 21]
+@[12-13, 20]
+@[15-19]
+@[10-21]
+@[23-24, 27]
+@[25-26]
+@[29-30, 36]
+@[31]
+@[32]
+@[33]
+@[34]
+@[35]
+@[29-36]
+[Code sample](/Lectures/Lecture11/Assets/sln/Examples/MutexSample.cs)
 
 ---
 ## Task
@@ -81,7 +105,7 @@
 ---
 ### Async await
 
-Mutex
+---
 Spinlock
 Monitor
 Semafor

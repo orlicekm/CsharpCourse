@@ -18,6 +18,8 @@
 * Provides **access to local and remote processes**
 * Enables to **start and stop local system processes**
 
++++
+### Processes in Task Manager
 ![](/Lectures/Lecture11/Assets/img/TaskManager.png)
 
 +++?code=/Lectures/Lecture11/Assets/sln/Examples/ProcessSample.cs&lang=C#&title=Process Sample

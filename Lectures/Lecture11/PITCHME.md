@@ -118,7 +118,9 @@
 @[29-33]
 @[35]
 @[38-39, 55]
-@[]
+@[40-42]
+@[44-51]
+@[53-54]
 @[38-55]
 [Code sample](/Lectures/Lecture11/Assets/sln/Examples/SemaphoreSample.cs)
 

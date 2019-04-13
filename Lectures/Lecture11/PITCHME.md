@@ -78,11 +78,13 @@
 +++
 ### Mutex
 * **Synchronization primitive**
-  * Can also be used for *interprocess synchronization*
+  * Can be used for *interprocess synchronization*
+* Provides one person to access a single resource at a time
+  * Others must wait in a queue
 * `Mutex` Class in `System.Threading` namespace
 * Sample shows how mutex is used to synchronize access to a protected resource
 
-+++?code=/Lectures/Lecture11/Assets/sln/Examples/MutexSample.cs&lang=C#&title=Lock Sample
++++?code=/Lectures/Lecture11/Assets/sln/Examples/MutexSample.cs&lang=C#&title=Mutex Sample
 @[8]
 @[10-11, 21]
 @[12-13, 20]
@@ -99,18 +101,45 @@
 @[29-36]
 [Code sample](/Lectures/Lecture11/Assets/sln/Examples/MutexSample.cs)
 
++++
+### Semaphore
+
++++
+### SpinLock
+* "An aggressive mutex"
+  * As soon as the resource is free, they go and grab it
+  * In process of spinning, they consume many CPU cycles
+    * On a uni-processor machine, they are useless and perform very badly
+* `SpinLock ` Struct in `System.Threading` namespace
+* Provides a mutual exclusion lock primitive
+  * Thread is trying to acquire the lock waits in a loop repeatedly checking until the lock becomes available
+
++++?code=/Lectures/Lecture11/Assets/sln/Examples/SpinLockSample.cs&lang=C#&title=SpinLock Sample
+@[13-14]
+@[37-38]
+@[16-20, 35]
+@[21-22, 34]
+@[23]
+@[24-28]
+@[29-33]
+@[19-35]
+@[40-42]
+[Code sample](/Lectures/Lecture11/Assets/sln/Examples/SpinLockSample.cs)
+
++++
+### Monitor
+
++++
+### ThreadPool
+
 ---
 ## Task
 
----
++++
 ### Async await
 
 ---
-Spinlock
-Monitor
-Semafor
 Thread sleep vs task delay
-Tread pool
 Concurrent collection (fail vyhledavani v listu, update dictionary)
 Api sample
 Rozsirit repository o asynch metody

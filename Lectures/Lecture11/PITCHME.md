@@ -62,6 +62,11 @@
 ### Multithreaded Process
 ![](/Lectures/Lecture11/Assets/img/Multithreaded_process.png)
 
+
++++
+### Thread Life Cycle
+![](/Lectures/Lecture11/Assets/img/threadlifecycle.png)
+
 +++
 ### Lock statement
 * For *safe access* to the resource from the concurrent context
@@ -148,10 +153,10 @@
 
 +++
 ### Monitor
-* Provides a mechanism that synchronizes access to objects
+* Provides a **mechanism that synchronizes access to objects**
 * Can be done by acquiring a significant lock
   * Is no different from `lock`
-  * But the monitor class provides more control over the synchronization
+  * But the **monitor provides more control over the synchronization**
 * `Monitor` Class in `System.Threading` namespace
 * Methods for the synchronize access 
   * `Monitor.Enter `
@@ -179,7 +184,12 @@
 ### Async await
 
 ---
+Thread vs Task
+
++++
 Thread sleep vs task delay
+
++++
 Concurrent collection (fail vyhledavani v listu, update dictionary)
 Api sample
 Rozsirit repository o asynch metody
@@ -189,8 +199,9 @@ Brenchmark dotnet - s kozolovkou ktora to spusti
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
-[Simplify Complexities](https://freethreads.net/)
 [Microsoft documentation](https://docs.microsoft.com)  
+[Simplify Complexities](https://freethreads.net/)  
+[C# Corner](https://www.c-sharpcorner.com/)  
 [Wikipedia](https://en.wikipedia.org)  
 
 +++

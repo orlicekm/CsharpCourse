@@ -312,6 +312,7 @@ Brenchmark dotnet - s kozolovkou ktora to spusti
 [Learn CSharp Tutorials](http://www.learncsharptutorial.com/)  
 [Microsoft documentation](https://docs.microsoft.com)  
 [Simplify Complexities](https://freethreads.net/)  
+[Csharp Star](https://www.csharpstar.com/)  
 [C# Corner](https://www.c-sharpcorner.com/)  
 [Wikipedia](https://en.wikipedia.org)  
 

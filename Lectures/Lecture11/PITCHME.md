@@ -175,7 +175,36 @@
 [Code sample](/Lectures/Lecture11/Assets/sln/Examples/MonitorSample.cs)
 
 +++
-### ThreadPool
+### Thread Pool
+* A collection of threads which **can be used to execute tasks in background**
+  * **Once thread completes its task then it sent to the pool to a queue of waiting threads, where it can be reused**
+  * Reusability avoids to create more threads and this enables **less memory consumption**
+* `ThreadPool` Class in `System.Threading` namespace
+
++++
+### Thread Pool - Initialization
+![](/Lectures/Lecture11/Assets/img/threadpool1.png)
+
++++
+### Thread Pool - Next uses
+![](/Lectures/Lecture11/Assets/img/threadpool2.png)
+
+
++++?code=/Lectures/Lecture11/Assets/sln/Examples/ThreadPoolSample.cs&lang=C#&title=Thread Pool Sample
+@[9-29]
+@[11]
+@[13-17]
+@[15]
+@[28-31]
+@[30]
+@[38-40]
+@[19]
+@[21-25]
+@[33-36]
+@[35]
+@[9-29]
+[Code sample](/Lectures/Lecture11/Assets/sln/Examples/ThreadPoolSample.cs)
+Sample compares how much time does thread object takes and how much time does thread pool takes to executes any methods
 
 ---
 ## Task
@@ -199,6 +228,7 @@ Brenchmark dotnet - s kozolovkou ktora to spusti
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
+[Learn CSharp Tutorials](http://www.learncsharptutorial.com/)  
 [Microsoft documentation](https://docs.microsoft.com)  
 [Simplify Complexities](https://freethreads.net/)  
 [C# Corner](https://www.c-sharpcorner.com/)  
@@ -206,4 +236,5 @@ Brenchmark dotnet - s kozolovkou ktora to spusti
 
 +++
 ## Refences to used images:
+[Learn CSharp Tutorials](http://www.learncsharptutorial.com/)  
 [Wikipedia](https://en.wikipedia.org)  

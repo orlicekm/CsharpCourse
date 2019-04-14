@@ -209,6 +209,86 @@
 
 ---
 ## Task
+* *Is an object that represents some work that should be done*
+  * Usually **executes asynchronously**
+* Can **tell you if the work is completed** and if the operation returns a result
+* Can **give you the result**
+* `Task` Class in `System.Threading.Tasks` namespace
+
++++
+### Properties of Task
+| Property      | Description                                                           |
+|:-------------:|:----------------------------------------------------------------------|
+| `Exception`   | Returns any exceptions that caused the task to end early              |
+| `Status`      | Returns the Tasks status                                              |
+| `IsCancelled` | Returns true if the Task was cancelled                                |
+| `IsCompleted` | Returns true if the task is completed successfully                    |
+| `IsFaulted`   | Returns true if the task is stopped due to unhandled exception        |
+| `Factory`     | Provides acess to TaskFactory class, can be used that to create Tasks |
+
++++
+### Methods in Task
+
+| Methods          | Purpose                                                              |
+|:------------------:|:--------------------------------------------------------------------:|
+| `ConfigureAwait`   | You can use Await keyword for the Task to complete                   |
+| `ContinueWith`     | Creates continuation tasks.                                          |
+| `Delay`            | Creates a task after specified amount of time                        |
+| `Run`              | Creates a Task and queues it to start running                        |
+| `RunSynchronously` | Runs a task Synchronously                                            |
+| `Start`            | Starts a task                                                        |
+| `Wait`             | Waits for the task to complete                                       |
+| `WaitAll`          | Waits until all tasks are completed                                  |
+| `WaitAny`          | Waits until any one of the tasks in a set completes                  |
+| `WhenAll`          | Creates a Task that completes when all specified tasks are completed |
+| `WhenAny`          | Creates a Task that completes when any specified tasks completes     |
+
++++?code=/Lectures/Lecture11/Assets/sln/Examples/TaskSample.cs&lang=C#&title=Task Sample
+@[8-16]
+@[10-11, 14]
+@[12-13]
+@[15]
+@[8-16]
+[Code sample](/Lectures/Lecture11/Assets/sln/Examples/TaskSample.cs)
+ will print “Hi” 50 times to the console
+
++++?code=/Lectures/Lecture11/Assets/sln/Tests/TaskReturnsValueTest.cs&lang=C#&title=Task Returning Value Sample
+@[8]
+@[9]
+@[8, 14]
+@[9, 14]
+@[8-16]
+[Code sample](/Lectures/Lecture11/Assets/sln/Tests/TaskReturnsValueTest.cs)
+
++++?code=/Lectures/Lecture11/Assets/sln/Tests/ChildTaskTest.cs&lang=C#&title=Child Tasks Sample
+@[11-12, 21]
+@[13]
+@[14-15]
+@[16-17]
+@[18-19]
+@[20]
+@[11-21]
+@[23]
+@[24-25]
+@[26]
+@[28]
+@[11-28]
+[Code sample](/Lectures/Lecture11/Assets/sln/Tests/ChildTaskTest.cs)  
+*Final task* runs only after the *parent* is finished, and the *parent* finishes when all three *childrens* are finished
+
++++?code=/Lectures/Lecture11/Assets/sln/Examples/TaskFactorySample.cs&lang=C#&title=Task Factory Sample
+@[10-11]
+@[13-14, 20]
+@[15]
+@[16-18]
+@[19]
+@[13-20]
+@[22, 27]
+@[23-26]
+@[22-27]
+@[29]
+@[10-29]
+[Code sample](/Lectures/Lecture11/Assets/sln/Examples/TaskFactorySample.cs)
 
 +++
 ### Async await

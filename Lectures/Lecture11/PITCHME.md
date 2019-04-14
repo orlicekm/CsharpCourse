@@ -200,11 +200,12 @@
 @[38-40]
 @[19]
 @[21-25]
+@[23]
 @[33-36]
 @[35]
 @[9-29]
 [Code sample](/Lectures/Lecture11/Assets/sln/Examples/ThreadPoolSample.cs)
-Sample compares how much time does thread object takes and how much time does thread pool takes to executes any methods
+ compares how much time does thread object takes and how much time does thread pool takes to executes any methods
 
 ---
 ## Task

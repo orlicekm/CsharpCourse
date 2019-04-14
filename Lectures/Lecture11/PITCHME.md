@@ -230,7 +230,7 @@
 ### Methods in Task
 
 | Methods          | Purpose                                                              |
-|:------------------:|:--------------------------------------------------------------------:|
+|:------------------:|:--------------------------------------------------------------------|
 | `ConfigureAwait`   | You can use Await keyword for the Task to complete                   |
 | `ContinueWith`     | Creates continuation tasks.                                          |
 | `Delay`            | Creates a task after specified amount of time                        |
@@ -256,7 +256,7 @@
 @[8]
 @[9]
 @[8, 14]
-@[9, 14]
+@[9, 15]
 @[8-16]
 [Code sample](/Lectures/Lecture11/Assets/sln/Tests/TaskReturnsValueTest.cs)
 

@@ -414,6 +414,7 @@ Finished Task. Total of $70 after tax of 20% is $84
 ---
 ## Task-base Aynchronous Pattern
 ![](/Lectures/Lecture11/Assets/img/TaskBasedPattern.png)
+
 +++
 ### Support in .NET
 

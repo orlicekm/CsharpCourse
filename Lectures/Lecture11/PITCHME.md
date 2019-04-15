@@ -417,10 +417,9 @@ Finished Task. Total of $70 after tax of 20% is $84
 
 +++
 ### Support in .NET
-
-- I/O handling classes
-    - `StreamReader`, `StreamWriter`- for streams and files access
-    - `HttpClient`, `WebClient` - for accessing web resources
+* I/O handling classes
+  * `StreamReader`, `StreamWriter`- for streams and files access
+  * `HttpClient`, `WebClient` - for accessing web resources
 
 
 ---

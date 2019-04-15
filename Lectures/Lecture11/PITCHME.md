@@ -422,11 +422,99 @@ Finished Task. Total of $70 after tax of 20% is $84
   * `HttpClient`, `WebClient` - for accessing web resources
 
 
----
-Concurrent collection (fail vyhledavani v listu, update dictionary)
++++
 Api sample
 Rozsirit repository o asynch metody
-Value task
+
+---
+## Synchronized Collections 
+* Provided in namespace `System.Collections.Concurrent`
+  * `BlockingCollection<T>` - ordered collection
+  * `ConcurrentQueue<T>` - queue
+  * `ConcurrentBag<T>` - unordered collection 
+  * `ConcurrentStack<T>` - stack
+
++++
+todo
+sample
+(fail vyhledavani v listu, update dictionary)
+
+---
+## Value Task
+* `System.Threading.Tasks` namespace
+* Task vs value task:
+  * `Task<T>` is a **class**
+    * Causes the **unnecessary overhead** of its allocation when the result is immediately available
+  * `ValueTask<T>` is a **structure**
+    * Introduced to **prevent the allocation** of a `Task` object **in case the result of the async operation is already available** at the time of awaiting
+
++++
+## Value Task Benefits
+#### **Performance increase**
+  * `Task<T>` example:
+    * Requires heap allocation
+    * Takes 120ns with JIT
+      ```C#
+      async Task<int> TestTask(int d)
+      {
+          await Task.Delay(d);
+          return 10;
+      }
+      ```
+    * Analog `ValueTask<T>` example
+      * No heap allocation if the result is known
+      * Takes 65ns with JIT
+       ```C#
+      async ValueTask<int> TestValueTask(int d)
+      {
+          await Task.Delay(d);
+          return 10;
+      }
+      ```
+
++++
+## Value Task Benefits
+#### **Increased implementation flexibility**
+* `ValueTask<T>` implementations are more free to choose between being synchronous or asynchronous without impacting callers
+  * For example:
+    ```C#
+    interface IFoo<T>
+    {
+        ValueTask<T> BarAsync();
+    }
+    ...
+    IFoo<T> thing = getThing();
+    var x = await thing.BarAsync();
+    ```
+  * With `ValueTask`, the above code will work with either **synchronous or asynchronous implementations**
+
++++
+#### Synchronous implementation:
+```C#
+class SynchronousFoo<T> : IFoo<T>
+{
+    public ValueTask<T> BarAsync()
+    {
+        var value = default(T);
+        return new ValueTask<T>(value);
+    }
+}
+```
+
+#### Asynchronous implementation
+```C#
+class AsynchronousFoo<T> : IFoo<T>
+{
+    public async ValueTask<T> BarAsync()
+    {
+        var value = default(T);
+        await Task.Delay(1);
+        return value;
+    }
+}
+```
+
++++
 Brenchmark dotnet - s kozolovkou ktora to spusti
 
 ---

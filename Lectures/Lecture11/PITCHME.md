@@ -10,6 +10,44 @@
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
 @snapend
 
+--- 
+## Serial computing
+![](/Lectures/Lecture11/Assets/img/SerialComputing.png)
+
++++
+## Parallel computing
+![](/Lectures/Lecture11/Assets/img/ParallelComputing.png)
+
++++
+### Parallel computing
+* **Running multiple things at once**
+* **Used for achieving performance**
+* Can be achieved using
+  * *Mutliple processes*
+  * *Multithreading*
+
++++
+### Synchronous vs Asynchronous computing
+* **Synchronous computing**
+  * Blocking execution
+  * Waiting for execution to finish
+* **Asynchronous computing**
+  * Nonblocking execution
+  * I don't wait I get notified
+
++++
+### Asynchronous computing
+![](/Lectures/Lecture11/Assets/img/asynchronousVsSynchronous.png)
+
++++
+### Parallel Programming Issues
+* Shared resources
+* Read/write synchronization
+* Exceptions handling in threads
+* UI thread access
+* Debugging multiple threads
+* Deadlock
+
 ---
 ## Process
 * Process is the **instance of a computer program that is being executed**
@@ -62,6 +100,9 @@
 ### Multithreaded Process
 ![](/Lectures/Lecture11/Assets/img/Multithreaded_process.png)
 
++++
+### Thread vs Process
+![](/Lectures/Lecture11/Assets/img/ThreadVsProcess.jpg)
 
 +++
 ### Thread Life Cycle
@@ -369,6 +410,17 @@ Finished Task. Total of $70 after tax of 20% is $84
   * **Create a task which will complete after a time delay**
   * It is **not blocking the calling thread**
   * Since the timer controls the delay, it **can be canceled anytime**
+
+---
+## Task-base Aynchronous Pattern
+![](/Lectures/Lecture11/Assets/img/TaskBasedPattern.png)
++++
+### Support in .NET
+
+- I/O handling classes
+    - `StreamReader`, `StreamWriter`- for streams and files access
+    - `HttpClient`, `WebClient` - for accessing web resources
+
 
 ---
 Concurrent collection (fail vyhledavani v listu, update dictionary)

@@ -290,16 +290,43 @@
 @[10-29]
 [Code sample](/Lectures/Lecture11/Assets/sln/Examples/TaskFactorySample.cs)
 
-+++
-### Async await
-
 ---
+### Async and Await keywords
+* `async`, `await`
+* Simple and easy **keywords to transform code from synchronous to asynchronous**
+* **Code markers**
+  * **Marks code positions from where the control should resume after a task completes**
+
++++
+### Async Await Benefits
+* **Increase the performance and responsiveness** of application
+* **Organize code in a neat and readable way**
+  * **Less code**
+  * Code will be **more maintainable** than using the previous asynchronous programming methods such as using plain tasks ot threads
+* `async` / `await` is the newer replacement to `BackgroundWorker`, which has been used on *Windows Forms desktop applications*
+* Use of the **latest upgrades of the language** features
+  * `async` / `await` was introduced in C# 5
+  * There have been some improvements added (e.g., foreach async and generalized async type)
+
++++
+### Async and Await Structure
+* Changes to turn normal code into asynchronous using `async` / `wait`:
+  * **Method definition should include the keyword `async`**
+    * Keyword by itself doesn't do anything except **enabling use of the keyword `await`** within the method
+  * Method **return type should change** to return either `void` or `Task` or `Task<T>`
+    * `T` is the return data type e.g.,
+    ```C#
+    public async Task<String> GetUserNameAsync(){ }
+    ``` 
+  * According to the naming convention, an asynchronous **method name should end with the word *Async***
+
++++
 Thread vs Task
 
 +++
 Thread sleep vs task delay
 
-+++
+---
 Concurrent collection (fail vyhledavani v listu, update dictionary)
 Api sample
 Rozsirit repository o asynch metody
@@ -313,6 +340,7 @@ Brenchmark dotnet - s kozolovkou ktora to spusti
 [Microsoft documentation](https://docs.microsoft.com)  
 [Simplify Complexities](https://freethreads.net/)  
 [Csharp Star](https://www.csharpstar.com/)  
+[CodinGame](https://www.codingame.com)
 [C# Corner](https://www.c-sharpcorner.com/)  
 [Wikipedia](https://en.wikipedia.org)  
 

@@ -344,11 +344,31 @@ Doing some synchronous work
 Finished Task. Total of $70 after tax of 20% is $84 
 ```
 
-+++
-Thread vs Task
+---
+## Thread vs Task
+* Task provides following powerful features over thread
+  1. If system has multiple tasks then it make use of the CLR thread pool internally
+    *  Also reduce the context switching time among multiple threads
+  2. Task can return a result
+  3. Wait on a set of tasks, without a signaling construct
+  4. Tasks can be chained together to execute one after the other
+  5. Establish a parent/child relationship when one task is started from another task
+  6. Child task exception can propagate to parent task
+  7. Task support cancellation through the use of cancellation tokens
+  8. Asynchronous implementation is easy in task, using `async` and `await` keywords
 
 +++
-Thread sleep vs task delay
+### Thread.Sleep vs Task.Delay
+* Use both to suspend the execution of a program for a given timespan
+* **`Thread.Sleep()`**
+  * **Will suspend the current thread until the given amount of time**
+  * There is **nothing what can be done to abort this**
+    * Except waiting until the time elapse or application reset
+  * **Suspends the thread that's making the call**
+* **`Task.Delay()`**
+  * **Create a task which will complete after a time delay**
+  * It is **not blocking the calling thread**
+  * Since the timer controls the delay, it **can be canceled anytime**
 
 ---
 Concurrent collection (fail vyhledavani v listu, update dictionary)
@@ -360,11 +380,12 @@ Brenchmark dotnet - s kozolovkou ktora to spusti
 ---
 ## References:
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
-[Learn CSharp Tutorials](http://www.learncsharptutorial.com/)  
 [Microsoft documentation](https://docs.microsoft.com)  
+[Learn CSharp Tutorials](http://www.learncsharptutorial.com/)  
 [Simplify Complexities](https://freethreads.net/)  
+[Microsoft TechNet](https://technet.microsoft.com/)  
 [Csharp Star](https://www.csharpstar.com/)  
-[CodinGame](https://www.codingame.com)
+[CodinGame](https://www.codingame.com)  
 [C# Corner](https://www.c-sharpcorner.com/)  
 [Wikipedia](https://en.wikipedia.org)  
 

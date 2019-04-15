@@ -412,7 +412,7 @@ Finished Task. Total of $70 after tax of 20% is $84
   * Since the timer controls the delay, it **can be canceled anytime**
 
 ---
-## Task-base Aynchronous Pattern
+## Task-base Pattern
 ![](/Lectures/Lecture11/Assets/img/TaskBasedPattern.png)
 
 +++

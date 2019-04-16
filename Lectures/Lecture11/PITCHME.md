@@ -424,7 +424,7 @@ Finished Task. Total of $70 after tax of 20% is $84
 
 +++
 ### Usage in School Sample
-* With that knowledge, UnitOfWork and Repository pattern can be extended with async methods
+* With `await`/`async` knowledge, UnitOfWork and Repository pattern can be extended with async methods
   * E.g., **UnitOfWork**
     ```C#
       virtual async Task CommitAsync();

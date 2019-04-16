@@ -432,7 +432,7 @@ Finished Task. Total of $70 after tax of 20% is $84
     ```
   * E.g., **Repository**
     ```C#
-      Task<TEntity>` GetByIdAsync(TKey id);
+      Task<TEntity> GetByIdAsync(TKey id);
       ⋮
     ```
 
@@ -445,9 +445,43 @@ Finished Task. Total of $70 after tax of 20% is $84
   * `ConcurrentStack<T>` - stack
 
 +++
-todo
-sample
-(fail vyhledavani v listu, update dictionary)
+### Concurrent Dictionary Sample
+```C#
+// Create the dictionary
+ConcurrentDictionary<int, int> dictionary = new ConcurrentDictionary<int, int>();
+ 
+// Add [1, 2] and [2, 3]
+dictionary.GetOrAdd(1, 2);
+dictionary.GetOrAdd(2, 3);
+ 
+// This will succeed
+Assert.IsTrue(((ICollection<KeyValuePair<int, int>>) dictionary)
+.Remove(new KeyValuePair<int, int>(1, 2)));
+ 
+// Let's get the value from 2 and confirm it's 3.
+int value;
+dictionary.TryGetValue(2, out value);
+ 
+Assert.AreEqual(value, 3);
+ 
+// Meanwhile, imagine this runs on another thread...
+dictionary.AddOrUpdate(2, 4, (k, v) => 4);
+ 
+// This remove will fail as value still equals 3, but the dictionary now contains 4!
+Assert.IsFalse(((ICollection<KeyValuePair<int, int>>)dictionary)
+.Remove(new KeyValuePair<int, int>(2, value)));
+ 
+// The dictionary keeps it's key nice and safe.
+Assert.IsTrue(dictionary.ContainsKey(2));
+```
+@[1-2]
+@[4-6]
+@[8-10]
+@[12-14]
+@[16]
+@[18-19]
+@[21-23]
+@[25-26]
 
 ---
 ## Value Task

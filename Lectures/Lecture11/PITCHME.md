@@ -423,8 +423,19 @@ Finished Task. Total of $70 after tax of 20% is $84
 
 
 +++
-Api sample
-Rozsirit repository o asynch metody
+### Usage in School Sample
+* With that knowledge, UnitOfWork and Repository pattern can be extended with async methods
+  * E.g., **UnitOfWork**
+    ```C#
+      virtual async Task CommitAsync();
+      virtual async Task CommitAsync(CancellationToken cancellationToken);
+      ⋮
+    ```
+  * E.g., **Repository**
+    ```C#
+      Task<TEntity>` GetByIdAsync(TKey id);
+      ⋮
+    ```
 
 ---
 ## Synchronized Collections 
@@ -482,7 +493,7 @@ sample
     {
         ValueTask<T> BarAsync();
     }
-    ...
+    ⋮
     IFoo<T> thing = getThing();
     var x = await thing.BarAsync();
     ```

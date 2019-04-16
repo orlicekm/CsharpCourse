@@ -568,7 +568,9 @@ Brenchmark dotnet - s kozolovkou ktora to spusti
 [Learn CSharp Tutorials](http://www.learncsharptutorial.com/)  
 [Simplify Complexities](https://freethreads.net/)  
 [Microsoft TechNet](https://technet.microsoft.com/)  
+[RIP Tutorial](https://riptutorial.com/)  
 [Csharp Star](https://www.csharpstar.com/)  
+[thagy.com](http://thargy.com/)  
 [CodinGame](https://www.codingame.com)  
 [C# Corner](https://www.c-sharpcorner.com/)  
 [Wikipedia](https://en.wikipedia.org)  
@@ -576,4 +578,6 @@ Brenchmark dotnet - s kozolovkou ktora to spusti
 +++
 ## Refences to used images:
 [Learn CSharp Tutorials](http://www.learncsharptutorial.com/)  
+[Eloquent JavaScript](https://eloquentjavascript.net/)  
+[Tech Differences](https://techdifferences.com/)  
 [Wikipedia](https://en.wikipedia.org)  

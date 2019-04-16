@@ -533,7 +533,7 @@ Assert.IsTrue(dictionary.ContainsKey(2));
   * With `ValueTask`, the above code will work with either **synchronous or asynchronous implementations**
 
 +++
-#### Synchronous implementation:
+#### Synchronous Implementation:
 ```C#
 class SynchronousFoo<T> : IFoo<T>
 {
@@ -545,7 +545,7 @@ class SynchronousFoo<T> : IFoo<T>
 }
 ```
 
-#### Asynchronous implementation
+#### Asynchronous Implementation
 ```C#
 class AsynchronousFoo<T> : IFoo<T>
 {

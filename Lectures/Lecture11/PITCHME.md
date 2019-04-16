@@ -421,14 +421,13 @@ Finished Task. Total of $70 after tax of 20% is $84
   * `StreamReader`, `StreamWriter`- for streams and files access
   * `HttpClient`, `WebClient` - for accessing web resources
 
-
 +++
 ### Usage in School Sample
 * With `await`/`async` knowledge, *UnitOfWork* and *Repository* pattern can be extended with async methods
   * E.g., **UnitOfWork**
     ```C#
-      virtual async Task CommitAsync();
-      virtual async Task CommitAsync(CancellationToken cancellationToken);
+      Task CommitAsync();
+      Task CommitAsync(CancellationToken cancellationToken);
       ⋮
     ```
   * E.g., **Repository**

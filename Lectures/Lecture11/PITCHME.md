@@ -111,7 +111,6 @@ process.Start();
 process.BeginOutputReadLine();
 ```
 
-
 ---
 ## Thread
 * **Way for a program to split itself into two or more simultaneous runs**

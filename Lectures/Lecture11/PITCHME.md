@@ -20,7 +20,7 @@
 
 +++
 ### Parallel computing
-* **Running multiple things at once**
+* **Running multiple things at at the same time**
 * **Used for achieving performance**
 * Can be achieved using
   * *Mutliple processes*
@@ -50,7 +50,7 @@
 
 ---
 ## Process
-* Process is the **instance of a computer program that is being executed**
+* Process is the **instance of a computer program which is being executed**
   * Contains the program code and its activity
   * Different processes do not share resources
 * Class `Process` is in the `System.Diagnostics` namespace
@@ -113,7 +113,7 @@
 * For *safe access* to the resource from the concurrent context
 * Simplification of a *Monitor synchronization primitive*
 * While a `lock` is held
-  * The **thread that holds the lock can again acquire and release the lock**
+  * The **thread that holds the lock can acquire and release the lock again**
   * Any **other thread is blocked from acquiring the lock and waits until the lock is released**
 
 +++?code=/Lectures/Lecture11/Assets/sln/Tests/LockTest.cs&lang=C#&title=Lock Sample
@@ -125,7 +125,7 @@
 ### Mutex
 * **Synchronization primitive**
   * Can be used for *interprocess synchronization*
-* Provides one person to access a single resource at a time
+* Provides the access to a single resource to one person at the time
   * Others must wait in a queue
 * `Mutex` Class in `System.Threading` namespace
 * Sample shows how mutex is used to synchronize access to a protected resource
@@ -150,9 +150,9 @@
 +++
 ### Semaphore
 * **Limits the number of threads that can access a resource or pool of resources concurrently**
-* **Useful if multiple instances (N) of a resource** is to be shared among a set of users
+* **Useful if multiple instances (N) of a resource** are shared among a set of users
   * As soon as all N resources are acquired, any new requester has to wait
-  * Since there is no single lock to hold, there is as such no ownership of a semaphore
+  * Since there is no single lock to hold, there is no ownership of a semaphore
 * `Semaphore` Class in `System.Threading` namespace
 
 +++?code=/Lectures/Lecture11/Assets/sln/Examples/SemaphoreSample.cs&lang=C#&title=Semaphore Sample
@@ -173,7 +173,7 @@
 +++
 ### SpinLock
 * **Provides a mutual exclusion lock primitive**
-  * Thread is trying to acquire the lock **waits in a loop repeatedly checking** until the lock becomes available
+  * Thread which is trying to acquire the lock **waits in a loop repeatedly checking** until the lock becomes available
 * *"An aggressive mutex"*
   * **As soon as the resource is free, they go and grab it**
   * In process of spinning, they **consume many CPU cycles**
@@ -218,7 +218,7 @@
 +++
 ### Thread Pool
 * A collection of threads which **can be used to execute tasks in background**
-  * **Once thread completes its task then it sent to the pool to a queue of waiting threads, where it can be reused**
+  * **Once the thread completes its task it is sent to the pool to a queue of waiting threads, where it can be reused**
   * Reusability avoids to create more threads and this enables **less memory consumption**
 * `ThreadPool` Class in `System.Threading` namespace
 
@@ -246,7 +246,7 @@
 @[35]
 @[9-29]
 [Code sample](/Lectures/Lecture11/Assets/sln/Examples/ThreadPoolSample.cs)
- compares how much time does thread object takes and how much time does thread pool takes to executes any methods
+ compares how much time does it take to the thread object and to the thread pool to execute any methods
 
 ---
 ## Task
@@ -315,7 +315,7 @@
 @[28]
 @[11-28]
 [Code sample](/Lectures/Lecture11/Assets/sln/Tests/ChildTaskTest.cs)  
-*Final task* runs only after the *parent* is finished, and the *parent* finishes when all three *childrens* are finished
+*Final task* runs only after the *parent* is finished, and the *parent* finishes when all three *children* are finished
 
 +++?code=/Lectures/Lecture11/Assets/sln/Examples/TaskFactorySample.cs&lang=C#&title=Task Factory Sample
 @[10-11]
@@ -343,7 +343,7 @@
 * **Increase the performance and responsiveness** of application
 * **Organize code in a neat and readable way**
   * **Less code**
-  * Code will be **more maintainable** than using the previous asynchronous programming methods such as using plain tasks ot threads
+  * Code will be **more maintainable** than using the previous asynchronous programming methods such as using plain tasks or threads
 * `async` / `await` is the newer replacement to `BackgroundWorker`, which has been used on *Windows Forms desktop applications*
 * Use of the **latest upgrades of the language** features
   * `async` / `await` was introduced in C# 5
@@ -395,7 +395,7 @@ Finished Task. Total of $70 after tax of 20% is $84
   4. Tasks can be chained together to execute one after the other
   5. Establish a parent/child relationship when one task is started from another task
   6. Child task exception can propagate to parent task
-  7. Task support cancellation through the use of cancellation tokens
+  7. Task supports cancellation through the use of cancellation tokens
   8. Asynchronous implementation is easy in task, using `async` and `await` keywords
 
 +++
@@ -404,10 +404,10 @@ Finished Task. Total of $70 after tax of 20% is $84
 * **`Thread.Sleep()`**
   * **Will suspend the current thread until the given amount of time**
   * There is **nothing what can be done to abort this**
-    * Except waiting until the time elapse or application reset
+    * Except waiting until the time elapse or application resets
   * **Suspends the thread that's making the call**
 * **`Task.Delay()`**
-  * **Create a task which will complete after a time delay**
+  * **Creates a task which will complete after a time delay**
   * It is **not blocking the calling thread**
   * Since the timer controls the delay, it **can be canceled anytime**
 
@@ -530,7 +530,7 @@ Assert.IsTrue(dictionary.ContainsKey(2));
     IFoo<T> thing = getThing();
     var x = await thing.BarAsync();
     ```
-  * With `ValueTask`, the above code will work with either **synchronous or asynchronous implementations**
+  * With `ValueTask`, the code above will work with either **synchronous or asynchronous implementations**
 
 +++
 #### Synchronous Implementation:

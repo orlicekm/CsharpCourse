@@ -85,6 +85,33 @@
 @[37-45]
 [Code sample](/Lectures/Lecture11/Assets/sln/Examples/ProcessSampleTest.cs)
 
++++
+### Process Input/Output
+* Accessing output via events:
+  * `ErrorDataReceived` - output written to `stderr`
+  * `OutputDataReceived` - output written to `stdout`
+* Needs to be enabled via `BeginOutputReadLine()` or `BeginErrorReadLine()`
+* Allows opening of file with associated executable
+ * Set `FileName` to associated file and set `UseShellExecute` to `true`
+
+
+```C#
+var lineCount = 0;
+var output = new StringBuilder();
+process.OutputDataReceived += new DataReceivedEventHandler((sender, e) =>
+{
+    // Prepend line numbers to each line of the output.
+    if (!string.IsNullOrEmpty(e.Data))
+    {
+        lineCount++;
+        output.Append("\n[" + lineCount + "]: " + e.Data);
+    }
+});
+process.Start();
+process.BeginOutputReadLine();
+```
+
+
 ---
 ## Thread
 * **Way for a program to split itself into two or more simultaneous runs**

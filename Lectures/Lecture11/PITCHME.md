@@ -411,6 +411,64 @@ Doing some synchronous work
 Finished Task. Total of $70 after tax of 20% is $84 
 ```
 
++++
+#### Async Await Exception Handling 1/2
+
+```C#
+public async void Foo()
+{
+    var x = await DoSomethingAsync(); // throw in here
+}
+
+public void DoFoo()
+{
+    try
+    {
+        Foo();
+    }
+    catch (ProtocolException ex)
+    {
+          // The exception will never be caught.
+    }
+}
+```
+
+* Async void methods have different error-handling semantics. When an exception is thrown out of an async Task or async Task method, that exception is captured and placed on the Task object. With async void methods, there is no Task object, so any exceptions thrown out of an async void method will be raised directly on the SynchronizationContext that was active when the async void method started. *
+
+
++++
+#### Async Await Exception Handling @/2
+
+```C#
+public async void DoFoo()
+{
+    try
+    {
+        await Foo();
+    }
+    catch (ProtocolException ex)
+    {
+          // The exception will be caught
+    }
+}
+```
+
+or
+
+```C#
+public void DoFoo()
+{
+    try
+    {
+        Foo().Wait();
+    }
+    catch (ProtocolException ex)
+    {
+          // The exception will be caught
+    }
+} 
+```
+
 ---
 ## Thread vs Task
 * Task provides following powerful features over thread

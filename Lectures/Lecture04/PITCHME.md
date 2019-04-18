@@ -1,5 +1,5 @@
 ﻿@snap[north span-100]
-# Entity framework and repository design pattern
+# Entity framework
 @snapend
 
 @snap[midpoint span-100]

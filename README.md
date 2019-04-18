@@ -7,7 +7,7 @@
 * [Lecture 01](/Lectures/Lecture01)  - Introduction to C#, Visual studio and .NET
 * [Lecture 02](/Lectures/Lecture02)  - Object-oriented programming and advanced constructs in C#
 * [Lecture 03](/Lectures/Lecture03)  - .NET Standard and Language Integrated Query (LINQ)
-* [Lecture 04](/Lectures/Lecture04)  - Entity framework and repository design pattern
+* [Lecture 04](/Lectures/Lecture04)  - Entity framework
 * [Lecture 05](/Lectures/Lecture05)  - Application testing and continous integration in C#
 * [Lecture 06](/Lectures/Lecture06)  - Design patterns in C#
 * [Lecture 07](/Lectures/Lecture07)  - Clean code in C#

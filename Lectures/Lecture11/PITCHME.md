@@ -258,19 +258,14 @@ process.BeginOutputReadLine();
 
 
 +++?code=/Lectures/Lecture11/Assets/sln/Examples/ThreadPoolSample.cs&lang=C#&title=Thread Pool Sample
-@[9-29]
-@[11]
-@[13-17]
-@[15]
-@[28-31]
-@[30]
-@[38-40]
-@[19]
-@[21-25]
-@[23]
-@[33-36]
-@[35]
-@[9-29]
+@[8-9]
+@[21-22]
+@[11-14]
+@[13]
+@[16-19]
+@[18]
+@[25-26]
+@[28-29]
 [Code sample](/Lectures/Lecture11/Assets/sln/Examples/ThreadPoolSample.cs)
  compares how much time does it take to the thread object and to the thread pool to execute any methods
 
@@ -433,11 +428,11 @@ public void DoFoo()
 }
 ```
 
-* Async void methods have different error-handling semantics. When an exception is thrown out of an async Task or async Task method, that exception is captured and placed on the Task object. With async void methods, there is no Task object, so any exceptions thrown out of an async void method will be raised directly on the SynchronizationContext that was active when the async void method started. *
+*Async void methods have different error-handling semantics. When an exception is thrown out of an async Task or async Task method, that exception is captured and placed on the Task object. With async void methods, there is no Task object, so any exceptions thrown out of an async void method will be raised directly on the SynchronizationContext that was active when the async void method started.*
 
 
 +++
-#### Async Await Exception Handling @/2
+#### Async Await Exception Handling 2/2
 
 ```C#
 public async void DoFoo()
@@ -577,8 +572,7 @@ Assert.IsTrue(dictionary.ContainsKey(2));
     * Introduced to **prevent the allocation** of a `Task` object **in case the result of the async operation is already available** at the time of awaiting
 
 +++
-## Value Task Benefits
-#### **Performance increase**
+## Value Task Performance increase
   * `Task<T>` example:
     * Requires heap allocation
     * Takes 120ns with JIT
@@ -589,58 +583,16 @@ Assert.IsTrue(dictionary.ContainsKey(2));
           return 10;
       }
       ```
-    * Analog `ValueTask<T>` example
-      * No heap allocation if the result is known
-      * Takes 65ns with JIT
-       ```C#
-      async ValueTask<int> TestValueTask(int d)
-      {
-          await Task.Delay(d);
-          return 10;
-      }
-      ```
-
-+++
-## Value Task Benefits
-#### **Increased implementation flexibility**
-* `ValueTask<T>` implementations are more free to choose between being synchronous or asynchronous without impacting callers
-  * For example:
+  * Analog `ValueTask<T>` example
+  * No heap allocation if the result is known
+  * Takes 65ns with JIT
     ```C#
-    interface IFoo<T>
+    async ValueTask<int> TestValueTask(int d)
     {
-        ValueTask<T> BarAsync();
+        await Task.Delay(d);
+        return 10;
     }
-    ⋮
-    IFoo<T> thing = getThing();
-    var x = await thing.BarAsync();
     ```
-  * With `ValueTask`, the code above will work with either **synchronous or asynchronous implementations**
-
-+++
-#### Synchronous Implementation:
-```C#
-class SynchronousFoo<T> : IFoo<T>
-{
-    public ValueTask<T> BarAsync()
-    {
-        var value = default(T);
-        return new ValueTask<T>(value);
-    }
-}
-```
-
-#### Asynchronous Implementation
-```C#
-class AsynchronousFoo<T> : IFoo<T>
-{
-    public async ValueTask<T> BarAsync()
-    {
-        var value = default(T);
-        await Task.Delay(1);
-        return value;
-    }
-}
-```
 
 ---
 ## References:

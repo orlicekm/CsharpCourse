@@ -1212,14 +1212,14 @@ var query = from m in musos
     select m;
 ```
 
-+++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqMaterialization.cs&lang=C#&title=LINQ Materialization Sample
++++?code=/Lectures/Lecture03/Assets/sln/Tests/LinqMaterializationTest.cs&lang=C#&title=LINQ Materialization Sample
 @[10-20]
 @[12]
 @[14-15]
 @[17]
 @[19]
 @[10-20]
-[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqMaterialization.cs)
+[Code sample](https://github.com/orlicekm/CsharpCourse/blob/master/Lectures/Lecture03/Assets/sln/Tests/LinqMaterializationTest.cs)
 
 +++
 ### LINQ Operators

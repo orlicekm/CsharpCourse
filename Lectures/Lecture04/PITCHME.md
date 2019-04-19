@@ -171,7 +171,7 @@
 
 +++
 ## ADO.NET
-* Set of classes that **expose data access services
+* Set of classes that **expose data access service**
   * *SqlClient* (`System.Data.SqlClient`)
   * *OleDb* (`System.Data.OleDb`)
   * *Odbc* (`System.Data.Odbc`)

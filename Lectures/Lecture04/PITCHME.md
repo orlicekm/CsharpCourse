@@ -1,5 +1,5 @@
 ﻿@snap[north span-100]
-# Entity framework
+# Entity Framework
 @snapend
 
 @snap[midpoint span-100]

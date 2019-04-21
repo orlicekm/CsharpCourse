@@ -3,4 +3,11 @@
 * [Before](/Laboratories/Laboratory05/Laboratory05_Before)
 * [After](/Laboratories/Laboratory05/Laboratory05_After)
 ---
-* TODO
+* Create 
+  * Views for viewmodels
+    * Converters
+    * Material Design
+  * Messenger
+  * View Model Locator
+  * Commands
+  

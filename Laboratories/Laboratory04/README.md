@@ -3,11 +3,10 @@
 * [Before](/Laboratories/Laboratory04/Laboratory04_Before)
 * [After](/Laboratories/Laboratory04/Laboratory04_After)
 ---
-* TODO
-* ukázat novinky v projektu (Seed, DesignTimeDbContextFactory)
-* vytvořit BL a APP projekty (.NET Standard a WPF)
-* vytvořit DbContextFactory
-* vytvořit repozitáře, mappingy a modely pro Ingredienci
-* vytvořit testy pro BL (podle času)
-* napsat viewmodel pro správu Ingredience
-* když bude čas WPF
+* Show new in project (Seed, DesignTimeDbContextFactory)
+* Create BL and App projects (.NET Standard a WPF)
+* Create DbContextFactory
+* Create repositories, mapping and models
+* Create tests for BL
+* Create main part of viewmodels
+* WPF

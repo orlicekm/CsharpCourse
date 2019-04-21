@@ -19,8 +19,8 @@
 * [Lecture 13](/Lectures/Lecture13)  - Multiplatform development, .NET Core, application containerization
 
 ## Laboratories
-* [Laboratory 01](/Laboratories/Laboratory01) - TODO1
-* [Laboratory 02](/Laboratories/Laboratory02) - TODO2
-* [Laboratory 03](/Laboratories/Laboratory03) - TODO3
-* [Laboratory 04](/Laboratories/Laboratory04) - TODO4
-* [Laboratory 05](/Laboratories/Laboratory05) - TODO5
+* [Laboratory 01](/Laboratories/Laboratory01) - Work in Visual studio environment
+* [Laboratory 02](/Laboratories/Laboratory02) - Data management using Entity Framework
+* [Laboratory 03](/Laboratories/Laboratory03) - Clean code
+* [Laboratory 04](/Laboratories/Laboratory04) - View Model creation, WPF basics
+* [Laboratory 05](/Laboratories/Laboratory05) - WPF View binding to View Model

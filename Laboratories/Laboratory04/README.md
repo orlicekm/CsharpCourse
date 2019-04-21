@@ -1,5 +1,5 @@
 ﻿# Laboratory 04
-## Subtitle
+## View Model creation, WPF basics
 * [Before](/Laboratories/Laboratory04/Laboratory04_Before)
 * [After](/Laboratories/Laboratory04/Laboratory04_After)
 ---

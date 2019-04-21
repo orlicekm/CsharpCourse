@@ -13,8 +13,8 @@
 
         public void Test(IMathOperation mathExercise)
         {
-            var leftOperand = numberReader.ReadNumber($"Zadejte 1. číslo pro {mathExercise.OperationName}: ");
-            var rightOperand = numberReader.ReadNumber($"Zadejte 2. číslo pro {mathExercise.OperationName}: ");
+            var leftOperand = numberReader.ReadNumber($"Write 1. number for {mathExercise.OperationName}: ");
+            var rightOperand = numberReader.ReadNumber($"Write 1. number for {mathExercise.OperationName}: ");
 
             var askForSolution = $"{leftOperand} {mathExercise.Operand} {rightOperand} = ";
             var userAnswer = numberReader.ReadNumber(askForSolution);
@@ -29,7 +29,7 @@
             var wasAnswerCorrectMessage = GetWasAnswerCorrectMessage(wasUserAnswerCorrect);
             var messageType = GetMessageType(wasUserAnswerCorrect);
 
-            var message = $"Vaše odpověď \"{userAnswer}\" {wasAnswerCorrectMessage}";
+            var message = $"Your answer \"{userAnswer}\" {wasAnswerCorrectMessage}";
             textWriter.Write(message, messageType);
         }
 
@@ -40,7 +40,7 @@
 
         private static string GetWasAnswerCorrectMessage(bool wasUserAnswerCorrect)
         {
-            return wasUserAnswerCorrect ? "byla správná" : "nebyla správná";
+            return wasUserAnswerCorrect ? "is wrong" : "is right";
         }
     }
 }

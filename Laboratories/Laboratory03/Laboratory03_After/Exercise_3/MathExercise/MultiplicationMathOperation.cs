@@ -3,7 +3,7 @@
     internal class MultiplicationMathOperation : IMathOperation
     {
         public char Operand => '*';
-        public string OperationName => "násobení";
+        public string OperationName => "multiplication";
 
         public int GetCorrectResult(int leftOperand, int rightOperand)
         {

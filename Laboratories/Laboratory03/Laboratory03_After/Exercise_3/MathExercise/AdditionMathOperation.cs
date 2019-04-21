@@ -3,7 +3,7 @@
     internal class AdditionMathOperation : IMathOperation
     {
         public char Operand => '+';
-        public string OperationName => "sčítání";
+        public string OperationName => "addition";
 
         public int GetCorrectResult(int leftOperand, int rightOperand)
         {

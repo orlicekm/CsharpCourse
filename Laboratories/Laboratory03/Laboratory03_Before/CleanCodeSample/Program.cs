@@ -22,7 +22,7 @@ namespace CleanCodeSample
             int r;
 
             // Asking user to input a number
-            Console.Write("Zadejte 1. číslo pro sčítání: ");
+            Console.Write("Write 1. number for addition: ");
 
             // Reading number from console
             while (!int.TryParse(Console.ReadLine(), out n1))
@@ -30,14 +30,14 @@ namespace CleanCodeSample
             }
 
             // Asking user to input a number
-            Console.Write("Zadejte 2. číslo pro sčítání: ");
+            Console.Write("Write 2. number for addition: ");
 
             // Reading number from console
             while (!int.TryParse(Console.ReadLine(), out n2))
             {
             }
 
-            Console.Write("Zadejte Vaši odpověď: ");
+            Console.Write("Write your answer: ");
 
             // Reading number from console
             while (!int.TryParse(Console.ReadLine(), out a))
@@ -54,9 +54,9 @@ namespace CleanCodeSample
                 Console.ForegroundColor = ConsoleColor.Green;
 
                 // Printing the result
-                Console.Write("Vaše odpověď \"");
+                Console.Write("Your answer \"");
                 Console.Write(a);
-                Console.Write("\" byla správná");
+                Console.Write("\" is right");
             }
             else
             {
@@ -64,9 +64,9 @@ namespace CleanCodeSample
                 Console.ForegroundColor = ConsoleColor.Red;
 
                 // Printing the result
-                Console.Write("Vaše odpověď \"");
+                Console.Write("Your answer \"");
                 Console.Write(a);
-                Console.Write("\" byla nesprávná");
+                Console.Write("\" is wrong");
             }
 
             // Waiting for input from user

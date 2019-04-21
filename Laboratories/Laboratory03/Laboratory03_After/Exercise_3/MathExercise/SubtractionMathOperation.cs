@@ -3,7 +3,7 @@
     internal class SubtractionMathOperation : IMathOperation
     {
         public char Operand => '-';
-        public string OperationName => "odčítání";
+        public string OperationName => "subtraction";
 
         public int GetCorrectResult(int leftOperand, int rightOperand)
         {

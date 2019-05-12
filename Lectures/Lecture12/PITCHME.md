@@ -23,8 +23,11 @@
 
 ---
 ## Data Types
-* Value types
-* Reference types
+* **Value types**
+  * Must be assigned some value before use
+  * (Field in a class can be declared without initialization)
+* **Reference types**
+  * Null value by default
 
 @snap[south-east span+40]
 ![](/Lectures/Assets/img/MagnifyingGlass.png)
@@ -94,11 +97,14 @@
 ![](/Lectures/Lecture12/Assets/img/ValueTypes_MemoryLayout.png)
 
 ---
-## CPU Cache
+## CPU Optimalization
 * CPU **implements numerous performance optimizations**
 * One of them is **cache**
   * It is just a memory with the most recently used data
 
+
++++
+## CPU Cache
 ![](/Lectures/Lecture12/Assets/img/Cache.png)
 
 +++
@@ -192,8 +198,56 @@
 
 For the iteration of reference types cache misses were **2.38 times more common** (8456940 / 3545088)
 
++++
+### Value, Reference Types Location
+
+* **MYTH** - *Value types are located on the stack and reference types on the heap*
+  * **FACT** -*Value types* can be allocated *both on the stack and the heap*
+  * **FACT** - *Reference types* are always allocated on the managed *heap*
+
 ---
 ## Heap
+* **Code heap**
+* **Small object heap**
+  * Classic heap
+* **Large object heap**
+  * Objects larger than 85KB
+* **Process heap**
+
+
++++
+## Garbage Collector (GC)
+* John McCarthny 1959
+* Searches for unnecessary objects
+* CLR process
+
+## Garbage Collector Benefits
+* Enables you to develop your application **without having to free memory**
+* **Allocates objects** on the managed heap efficiently
+* **Reclaims objects** that are no longer being used
+  * Clears their memory
+  * Keeps the memory available for future allocations
+* Provides **memory safety** by making sure that an object cannot use the content of another object
+
++++
+### Reference counting GC
+* **Pros**
+  * Can clean objects faster
+  * It **doesn't suspend** the running of program (usefull for RT systems)
+* **Cons**
+
++++ 
+### Tracing GB
+
++++
+### Garbage Collecting
+![](/Lectures/Lecture12/Assets/img/GarbageCollecting.png)
+
++++
+## Gargbage Collector Roots
+
++++
+## Garbage Collector Generations
 
 ---
 Benchmark.net

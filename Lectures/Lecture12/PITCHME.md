@@ -20,6 +20,7 @@
   * `new` to alocate
   * Managed by Garbage Collector
 
+
 ---
 ## Data Types
 * Value types
@@ -140,15 +141,66 @@
 
 +++
 ### CPU Cache - .NET Types
+* How the two extra fields per every reference type instance **affect data locality:**
+  * Image shows *how many instances of* `ValueTuple<int, int>` *and* `Tuple<int, int>` *can fit into single cache line*
+    * For *64bit architecture*
 
+![](/Lectures/Lecture12/Assets/img/CacheLines.png)
 
++++?code=/Lectures/Lecture12/Assets/sln/DataLocalityBenchmark/DataLocality.cs&lang=C#&title=Data Locality Benchmark
+@[8-10]
+@[12-13]
+@[15-16]
+@[18-23]
+@[25-39]
+@[41-55]
+[Code sample](/Lectures/Lecture11/Assetssln/DataLocalityBenchmark/DataLocality.cs)
 
 ---
+### Benchmark Output
+| Method                | Jit       | Platform | Count | Mean      | Scaled | CacheMisses/Op |
+|-----------------------|-----------|----------|-------|-----------|--------|----------------|
+| IterateValueTypes     | LegacyJit | X86      | 100   | 68.96 ns  | 1.00   | 0              |
+| IterateReferenceTypes | LegacyJit | X86      | 100   | 317.49 ns | **4.60**   | 0              |
+| IterateValueTypes     | RyuJit    | X64      | 100   | 76.56 ns  | 1.00   | 0              |
+| IterateReferenceTypes | RyuJit    | X64      | 100   | 252.23 ns | **3.29**   | 0              |
+
+**As you can see the difference (Scaled column) is really significant!**
+
++++
+### Benchmark Output Explanation
+* **Why is CacheMisses/Op column empty?**
+  * In value type benchmark I should get Cache Miss once every 8 loop iterations 
+    * `(cacheLineSize / sizeOf(ValueTuple<int, int>) = 64 / 8 = 8)`
+  * For 100 iterations like here, it should be 12 Cache Misses for Benchmark
+    * `100 / 8 = 120 `
+  * BenchmarkDotNet is using ETW to collect hardware counters
+    * ETW is simply exposing what the hardware has to offer
+    * Each Performance Monitoring Units (PMU) register is configured to count a specific event and given a sample-after value
+  * But the PMU will notify ETW, which will notify BenchmarkDotNet every 4 000 events (4000 for my PC)
+    * It this example the method was executed too few times to capture enough of events
+  * **So if you want to capture some hardware counters with BenchmarkDotNet you need to perform plenty of iterations**
+
+
++++
+### Benchmark Output - More Interations
+
+| Method                | Jit    | Platform | Count       | Mean              | Scaled | CacheMisses/Op |
+|-----------------------|--------|----------|-------------|-------------------|--------|----------------|
+| IterateValueTypes     | RyuJit | X64      | 100 000 000 | 88,735,182.11 ns  | 1.00   | **3545088**     |
+| IterateReferenceTypes | RyuJit | X64      | 100 000 000 | 280,721,189.70 ns | **3.16** | **8456940**   |
+
+For the iteration of reference types cache misses were **2.38 times more common** (8456940 / 3545088)
+
+---
+## Heap
+
 ---
 Benchmark.net
 
 ---
 ## References:
+[Pro .NET Performance: Optimize Your C# Applications](https://www.amazon.com/Pro-NET-Performance-Optimize-Applications/dp/1430244585)  
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [Interactive Latencies](https://github.com/colin-scott/interactive_latencies)  
 [Adam Sitnik](https://adamsitnik.com/)  

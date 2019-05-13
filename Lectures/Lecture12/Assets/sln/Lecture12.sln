@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeakReferenceGenericSample"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LargeObjectSample", "LargeObjectSample\LargeObjectSample.csproj", "{D4094D61-9E31-4E71-8222-D48E3AEA97F9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BenchmarkDotNetSample", "BenchmarkDotNetSample\BenchmarkDotNetSample.csproj", "{24B50E85-6BCB-4D23-953A-6DAC73B923CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{D4094D61-9E31-4E71-8222-D48E3AEA97F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4094D61-9E31-4E71-8222-D48E3AEA97F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4094D61-9E31-4E71-8222-D48E3AEA97F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B50E85-6BCB-4D23-953A-6DAC73B923CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B50E85-6BCB-4D23-953A-6DAC73B923CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B50E85-6BCB-4D23-953A-6DAC73B923CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B50E85-6BCB-4D23-953A-6DAC73B923CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

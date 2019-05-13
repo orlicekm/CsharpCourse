@@ -424,6 +424,50 @@ GC.Collect();
 
 ---
 ## Benchmark.net
+@snap[north-east span+40]
+![](/Lectures/Lecture12/Assets/img/logo.png)
+@snapend
+
+* [Docs](https://benchmarkdotnet.org/articles/overview.html)
+* [GitHub](https://github.com/dotnet/BenchmarkDotNet)
+* Powerful  **.NET library for benchmarking**
+* Protect you from the common pitfalls
+* Easy to design a performance experiment 
+* MIT licence
+
++++
+### Benchmark.net - Enviroments
+* **Runtimes** .NET Framework (4.6.1+), .NET Core (2.0+), Mono, CoreRT
+* **Languages** C#, F#, Visual Basic
+* **OS** Windows, Linux, macOS
+* **Processor architectures** (x86/x64)
+* **JIT versions** (LegacyJIT/RyuJIT)
+* **Different sets of GC flags** (like Server/Workstation)
+
++++
+### Benchmark.net - How it works
+* *Generates an isolated project* per each benchmark method
+* *Does several launches* of this project
+* *Runs multiple iterations of the method* (include warm-up)
+* *One or several parameters can be introduced* and the performance can be checked on different inputs at once
+* *Analyzes the results*
+  * Renerates reports in different formats and renders nice plots
+* ⋮
+
++++
+### Benchmark.net - How to use
+* Mark method with the `[Benchmark]` attribute
+
++++?code=/Lectures/Lecture12/Assets/sln/BenchmarkDotNetSample/Program.cs&lang=C#&title=Benchmark .NET Sample
+@[35-38]
+@[37]
+@[8-10]
+@[12-14]
+@[16-17]
+@[19-24]
+@[26-27]
+@[29-30]
+[Code sample](/Lectures/Lecture12/Assetssln/BenchmarkDotNetSample/Program.cs)  
 
 ---
 ## References:
@@ -432,10 +476,12 @@ GC.Collect();
 [Interactive Latencies](https://github.com/colin-scott/interactive_latencies)  
 [Wikipedia - Reference counting](https://en.wikipedia.org/wiki/Reference_counting)  
 [Wikipedia - Tracing garbage collection](https://en.wikipedia.org/wiki/Tracing_garbage_collection)  
-[Microsoft Documentation - Implementing a Dispose method](https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/implementing-dispose)
+[Microsoft Documentation - Implementing a Dispose method](https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/implementing-dispose)  
 [Adam Sitnik](https://adamsitnik.com/)  
+[BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet)
 
 +++
 ## Refences to used images:
-[MSDN - The garbage collector](https://blogs.msdn.microsoft.com/floditt/2008/12/15/1-the-garbage-collector-in-x-and-the-clr/)
+[MSDN - The garbage collector](https://blogs.msdn.microsoft.com/floditt/2008/12/15/1-the-garbage-collector-in-x-and-the-clr/)  
 [Adam Sitnik](https://adamsitnik.com/)  
+[BenchmarkDotNet](https://github.com/dotnet/BenchmarkDotNet) 

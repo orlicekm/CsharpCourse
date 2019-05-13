@@ -160,7 +160,7 @@
 @[18-23]
 @[25-39]
 @[41-55]
-[Code sample](/Lectures/Lecture11/Assetssln/DataLocalityBenchmark/DataLocality.cs)
+[Code sample](/Lectures/Lecture12/Assetssln/DataLocalityBenchmark/DataLocality.cs)
 
 ---
 ### Benchmark Output
@@ -232,33 +232,147 @@ For the iteration of reference types cache misses were **2.38 times more common*
 +++
 ### Reference counting GC
 * **Pros**
-  * Can clean objects faster
+  * **Can clean objects faster**
   * It **doesn't suspend** the running of program (usefull for RT systems)
 * **Cons**
+  * **Memory**
+    * Have to remember number of references for every object
+  * **Can not handle reference cycles**
 
 +++ 
-### Tracing GB
+### Tracing GC
+* **Pros**
+  * **Suspends program** only when collecting
+  * **Can handle reference cycles**
+  * Partially **solves heap fragmentation**
+* **Cons**
+  * Have to suspend the program
+  * Collecting is **nondeterministic** 
 
 +++
 ### Garbage Collecting
 ![](/Lectures/Lecture12/Assets/img/GarbageCollecting.png)
 
 +++
-## Gargbage Collector Roots
+### Gargbage Collector Roots
+* *Local variables*
+* *GCHndlers*
+  * *Pin*
+  * *Static*
+* *Registers*
+* *F-Reachable queue*
 
 +++
-## Garbage Collector Generations
+### Garbage Collector Generations
+* **Generation 0**
+  * Contains *short-lived objects*
+     * E.g., temporary variable
+  * Garbage collection occurs most frequentl
+  * *Newly allocated objects*
+  * Most objects are reclaimed for garbage collection and do not survive to the next generation
+* **Generation 1**
+  * Contains short-lived objects and serves as a *buffer between short-lived objects and long-lived objects*
+* **Generation 2** 
+  * Contains *long-lived objects*
+    * E.g., object in a server application that contains static data that is live for the duration of the process
+
++++
+### Garbage Collector Generations Sample 1/3
+![](/Lectures/Lecture12/Assets/img/image_2.png)
+
++++
+### Garbage Collector Generations Sample 2/3
+![](/Lectures/Lecture12/Assets/img/image_4.png)
+
++++
+### Garbage Collector Generations Sample 3/3
+![](/Lectures/Lecture12/Assets/img/image_8.png)
+
++++
+### Garbage Collector Invokation
+* Generation 0 is full
+* System wide memory pressure
+* `GC.Collect()` 
+
++++
+### Garbage Collector Versions
+* *Mobile*
+* *Workstation*
+* *Server*
+
++++
+### Bacground Garbage Collector
+* Workstation .NET 4.0
+* Server .NET 4.5
+* Can be turned off
+  * `<gcConcurrent enabled="False">`
+
++++
+### Finalization
+* Finalize queue
+* F-reachable queue
+* ResourceWrapper, IDispoze
 
 ---
-Benchmark.net
+## .NET Tips for saving Memory
+* String.Empty
+* Dispose Pattern
+* WeakReference
+* Large object heap compacting
+
+@snap[south-east span+40]
+![](/Lectures/Assets/img/MagnifyingGlass.png)
+@snapend
+
++++
+### String.Empty
+* `String.Empty`
+* **More effective** from .NET 2.0
+* Readonly field in `String` class
+* Immutable
+* If "" is used
+  * *Space have to be alocated*
+  * *Constructor have to be called*
+
++++
+### Dispose Pattern
+* Ways
+  * IDisposable
+  * Destruktor
+  * Using
+  * CA2000, CA1816
+  * GC.SuppressFinalize(this)
+* We can control when an object frees resources
+
++++?code=/Lectures/Lecture12/Assets/sln/DisposeSample/Program.cs&lang=C#&title=Dispose Demo
+@[40-50]
+@[44]
+@[45-48]
+@[5-6]
+@[9-13]
+@[15-19]
+@[21-24]
+@[26-37]
+[Code sample](/Lectures/Lecture12/Assetssln/DisposeSample/Program.cs)
+*Project-> Properties -> Code Analysis -> Enable Code Analysis on Build*
+
++++
+### Weak Reference
+
+---
+## Benchmark.net
 
 ---
 ## References:
 [Pro .NET Performance: Optimize Your C# Applications](https://www.amazon.com/Pro-NET-Performance-Optimize-Applications/dp/1430244585)  
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
 [Interactive Latencies](https://github.com/colin-scott/interactive_latencies)  
+[Wikipedia - Reference counting](https://en.wikipedia.org/wiki/Reference_counting)  
+[Wikipedia - Tracing garbage collection](https://en.wikipedia.org/wiki/Tracing_garbage_collection)  
+[Microsoft Documentation - Implementing a Dispose method](https://docs.microsoft.com/en-us/dotnet/standard/garbage-collection/implementing-dispose)
 [Adam Sitnik](https://adamsitnik.com/)  
 
 +++
 ## Refences to used images:
-[Adam Sitnik](https://adamsitnik.com/)
+[MSDN - The garbage collector](https://blogs.msdn.microsoft.com/floditt/2008/12/15/1-the-garbage-collector-in-x-and-the-clr/)
+[Adam Sitnik](https://adamsitnik.com/)  

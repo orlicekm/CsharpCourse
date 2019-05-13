@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLocalityBenchmark", "DataLocalityBenchmark\DataLocalityBenchmark.csproj", "{45C8F53F-F24E-44B7-B80A-BB9EFAE4E436}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DisposeSample", "DisposeSample\DisposeSample.csproj", "{B0F9850D-732A-43C4-A061-1EFB2B624351}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{45C8F53F-F24E-44B7-B80A-BB9EFAE4E436}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{45C8F53F-F24E-44B7-B80A-BB9EFAE4E436}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{45C8F53F-F24E-44B7-B80A-BB9EFAE4E436}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0F9850D-732A-43C4-A061-1EFB2B624351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F9850D-732A-43C4-A061-1EFB2B624351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F9850D-732A-43C4-A061-1EFB2B624351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0F9850D-732A-43C4-A061-1EFB2B624351}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

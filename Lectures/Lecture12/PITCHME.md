@@ -289,7 +289,7 @@ For the iteration of reference types cache misses were **2.38 times more common*
 ![](/Lectures/Lecture12/Assets/img/image_8.png)
 
 +++
-### Garbage Collector Invokation
+### Garbage Collector Invocation
 * Generation 0 is full
 * System wide memory pressure
 * `GC.Collect()` 
@@ -353,11 +353,74 @@ For the iteration of reference types cache misses were **2.38 times more common*
 @[15-19]
 @[21-24]
 @[26-37]
-[Code sample](/Lectures/Lecture12/Assetssln/DisposeSample/Program.cs)
+[Code sample](/Lectures/Lecture12/Assetssln/DisposeSample/Program.cs)  
 *Project-> Properties -> Code Analysis -> Enable Code Analysis on Build*
 
 +++
 ### Weak Reference
+Does **not protect the referenced object from collection by a garbage collector**
+
++++?code=/Lectures/Lecture12/Assets/sln/WeakReferenceSample/Program.cs&lang=C#&title=Weak Reference Demo
+@[6-7]
+@[8]
+@[10-19]
+@[12]
+@[14]
+@[21-32]
+@[23, 26]
+@[28, 30]
+@[21-32]
+@[16]
+@[34-42]
+@[37, 41]
+@[39-40]
+@[34-42]
+@[18]
+[Code sample](/Lectures/Lecture12/Assetssln/WeakReferenceSample/Program.cs)  
+
++++?code=/Lectures/Lecture12/Assets/sln/WeakReferenceGenericSample/Program.cs&lang=C#&title=Weak Reference Generic Demo
+@[6-7]
+@[8]
+@[10-19]
+@[12]
+@[34-38]
+@[36-37]
+@[14]
+@[21-32]
+@[23]
+@[24, 36]
+@[28, 30]
+@[21-32]
+@[16]
+@[40-48]
+@[43]
+@[45-46]
+@[18]
+[Code sample](/Lectures/Lecture12/Assetssln/WeakReferenceGenericSample/Program.cs)  
+
++++
+### Large Object Heap Compacting
+* From .Net 4.5.1
+* Takes a lot of time
+
+```C#
+GCSettings.LargeObjectHeapCompactionMode = 	GCLargeObjectHeapCompactionMode.CompactOnce;
+GC.Collect();
+```
+
++++
+### Large Object Support
+* Ability to create objects larger than 2GB
+  * Only for 64-Bit
+  * `<gcAllowVeryLargeObjects enabled="true"/>`
+
++++?code=/Lectures/Lecture12/Assets/sln/LargeObjectSample/Program.cs&lang=C#&title=Large Object Sample
+@[9]
+@[10]
+@[11]
+@[12]
+@[14]
+[Code sample](/Lectures/Lecture12/Assetssln/LargeObjectSample/Program.cs)  
 
 ---
 ## Benchmark.net

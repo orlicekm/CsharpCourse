@@ -174,12 +174,54 @@ dotnet publish -c Release -r win10-x64
 
 +++
 ### Containerize .NET Core Prerequisites
-* *.NET Core SDK* (2.2) - [link](https://dotnet.microsoft.com/download)
+* *.NET Core SDK* 2.2 - [link](https://dotnet.microsoft.com/download)
 * *Docker Community Edition* - [link](https://www.docker.com/products/docker-desktop)
 * Temporary working directory for the Dockerfile and .NET Core example app
 
 ---
+## Docker Containerization Sample
+1. Create simple .NET Core 2.2 Application
+
++++?code=/Lectures/Lecture13/Assets/sln/ContainerizationSample/Program.cs&lang=C#&title=Sample App
+@[7-8, 17]
+@[9]
+@[10]
+@[11-12, 16]
+@[13-14]
+@[15]
+[Code sample](/Lectures/Lecture11/Assets/sln/ContainerizationSample/Program.cs)  
+This app runs indefinitely!
+
++++
+### Open Solution Folder in Commandline
+1. Try `dotnet run`
+   * Use the cancel command `CTRL + C` to stop it
+2. Publish .NET Core app
+   * Erite `dotnet publish -c Release`
+   * Compiles app to the publish folder in the output folder
+     * `\ContainerizationSample\bin\Release\netcoreapp2.2\publish\`
+
++++
+### Create the Dockerfile
+1. Create plaintext file named `Dockerfile` in working directory (without extension)
+2. Write this text to the file
+  ```C#
+  FROM mcr.microsoft.com/dotnet/core/runtime:2.2
+  
+  COPY ContainerizationSample/bin/Release/netcoreapp2.2/publish/ ContainerizationSample/
+  
+  ENTRYPOINT ["dotnet", "ContainerizationSample/myapp.dll"]
+  ```
+3. Save the file
+
++++?code=/Lectures/Lecture13/Assets/sln/Dockerfile&title=Dockerfile
+
+* `FROM` command tells Docker to **pull down the image tagged 2.2** from the mcr.microsoft.com/dotnet/core/runtime repository
+* `COPY` command tells Docker to **copy the specified folder to a folder in the container**
+* `ENTRYPOINT` command tells Docker to **configure the container to run as an executable**
+
+---
 ## References:
-[Docker Docs](https://docs.docker.com/)
-[Microsoft Docs - Introduction to .NET and Docker](https://docs.microsoft.com/en-us/dotnet/core/docker/intro-net-docker)
+[Docker Docs](https://docs.docker.com/)  
+[Microsoft Docs - Introduction to .NET and Docker](https://docs.microsoft.com/en-us/dotnet/core/docker/intro-net-docker)  
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  

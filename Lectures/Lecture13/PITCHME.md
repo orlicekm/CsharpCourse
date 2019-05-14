@@ -174,7 +174,7 @@ dotnet publish -c Release -r win10-x64
 
 +++
 ### Containerize .NET Core Prerequisites
-* *.NET Core SDK* 2.2 - [link](https://dotnet.microsoft.com/download)
+* *.NET Core SDK 2.2* - [link](https://dotnet.microsoft.com/download)
 * *Docker Community Edition* - [link](https://www.docker.com/products/docker-desktop)
 * Temporary working directory for the Dockerfile and .NET Core example app
 
@@ -210,7 +210,7 @@ This app runs indefinitely!
   
   COPY ContainerizationSample/bin/Release/netcoreapp2.2/publish/ ContainerizationSample/
   
-  ENTRYPOINT ["dotnet", "ContainerizationSample/myapp.dll"]
+  ENTRYPOINT ["dotnet", "ContainerizationSample/ContainerizationSample.dll"]
   ```
 3. Save the file
 
@@ -219,6 +219,66 @@ This app runs indefinitely!
 * `FROM` command tells Docker to **pull down the image tagged 2.2** from the mcr.microsoft.com/dotnet/core/runtime repository
 * `COPY` command tells Docker to **copy the specified folder to a folder in the container**
 * `ENTRYPOINT` command tells Docker to **configure the container to run as an executable**
+
++++
+### Build Image
+1. Run `docker build -t myimage .`
+2. Run `docker images`
+
+```
+>docker build -t myimage .
+Sending build context to Docker daemon  3.551MB
+Step 1/3 : FROM mcr.microsoft.com/dotnet/core/runtime:2.2
+ ---> e4ab7c996edf
+Step 2/3 : COPY ContainerizationSample/bin/Release/netcoreapp2.2/publish/ ContainerizationSample/
+ ---> 3359c63a3d14
+Step 3/3 : ENTRYPOINT ["dotnet", "ContainerizationSample/myapp.dll"]
+ ---> Running in 89f6c998c871
+Removing intermediate container 89f6c998c871
+ ---> 0b02def176f4
+Successfully built 0b02def176f4
+Successfully tagged myimage:latest
+
+>docker images
+REPOSITORY                              TAG                 IMAGE ID            CREATED             SIZE
+myimage                                 latest              0b02def176f4        17 seconds ago      181MB
+mcr.microsoft.com/dotnet/core/runtime   2.2                 e4ab7c996edf        2 days ago          181MB
+```
+
++++
+### Create Container
+1. Create new container that is stopped
+  * `docker create myimage` or `docker create --name="mycontainer" myimage`
+  * First option creates container with random name
+2. To see list of all containers
+   * `docker ps -a`
+
+```
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+4509a1eb7686        myimage             "dotnet Containeriza…"   11 seconds ago      Created                                 mycontainer
+```
+
++++
+### Work with Container
+1. `docker start mycontainer` to start container
+2. `docker ps` shows containers that are running
+  ```
+  CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+  965797f01ea0        myimage             "dotnet Containeriza…"   12 seconds ago      Up 3 seconds                            mycontainer
+  ```
+3. `docker attach mycontainer` peek at the output stream
+  * `CTRL + C` is used to detach from container
+  * `--sig-proxy=false` parameter ensures that `CTRL + C` will not stop the process in the container
+  * You can try to reattach to verify that it's still running
+4. `docker stop` deletes a container
+
++++
+### Single Run
+* `docker run -it --rm myimage`
+  * Eliminates the need to run docker create and then docker start
+  * Automatically delete the container when the container stops
+  * Automatically use the current terminal to connect to the container
+   
 
 ---
 ## References:

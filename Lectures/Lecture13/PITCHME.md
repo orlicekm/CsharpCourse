@@ -262,10 +262,13 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 ### Work with Container
 1. `docker start mycontainer` to start container
 2. `docker ps` shows containers that are running
-  ```
-  CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
-  965797f01ea0        myimage             "dotnet Containeriza…"   12 seconds ago      Up 3 seconds                            mycontainer
-  ```
+
+
+ ```
+ CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+ 965797f01ea0        myimage             "dotnet Containeriza…"   12 seconds ago      Up 3 seconds                            mycontainer
+ ```
+
 3. `docker attach mycontainer` peek at the output stream
   * `CTRL + C` is used to detach from container
   * `--sig-proxy=false` parameter ensures that `CTRL + C` will not stop the process in the container
@@ -283,12 +286,15 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 ---
 ### Docker and Orchestrator support in Visual Studio
 * Can be enabled during project creation
-  ![](/Lectures/Lecture13/Assets/img/Docker.png)
 * To an existing project by selecting
   * `Add > Docker Support in Solution Explorer`
   * `Add > Container Orchestrator Support`
 
+![](/Lectures/Lecture13/Assets/img/Docker.png)
+
 +++
+### Docker and Orchestrator support in Visual Studio
+* Visual Studio automatically generate required files
 ![](/Lectures/Lecture13/Assets/img/Docker2.png)
 
 ---

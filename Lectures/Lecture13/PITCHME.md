@@ -104,11 +104,9 @@ dotnet publish -c Release -r win10-x64
 * [Extension Download](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer)
 
 +++
-### Portability Screenshot
 ![](/Lectures/Lecture13/Assets/img/portability-report.png)
 
 +++
-### Portability Report
 ![](/Lectures/Lecture13/Assets/img/portability-screenshot.png)
 
 ---

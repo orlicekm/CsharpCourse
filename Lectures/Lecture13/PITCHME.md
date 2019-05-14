@@ -281,6 +281,17 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
    
 
 ---
+### Docker and Orchestrator support in Visual Studio
+* Can be enabled during project creation
+  ![](/Lectures/Lecture13/Assets/img/Docker.png)
+* To an existing project by selecting
+  * `Add > Docker Support in Solution Explorer`
+  * `Add > Container Orchestrator Support`
+
++++
+![](/Lectures/Lecture13/Assets/img/Docker2.png)
+
+---
 ## References:
 [Docker Docs](https://docs.docker.com/)  
 [Microsoft Docs - Introduction to .NET and Docker](https://docs.microsoft.com/en-us/dotnet/core/docker/intro-net-docker)  

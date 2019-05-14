@@ -101,6 +101,15 @@ dotnet publish -c Release -r win10-x64
   * *Console Application*
   * *Visual Studio extension*
 * **Reports API compatibility**
+* [Extension Download](https://marketplace.visualstudio.com/items?itemName=ConnieYau.NETPortabilityAnalyzer)
+
++++
+### Portability Screenshot
+![](/Lectures/Lecture13/Assets/img/portability-report.png)
+
++++
+### Portability Report
+![](/Lectures/Lecture13/Assets/img/portability-screenshot.png)
 
 ---
 ### Multitargeting
@@ -301,3 +310,5 @@ CONTAINER ID        IMAGE               COMMAND                  CREATED        
 [Docker Docs](https://docs.docker.com/)  
 [Microsoft Docs - Introduction to .NET and Docker](https://docs.microsoft.com/en-us/dotnet/core/docker/intro-net-docker)  
 [C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
+#### Images
+[Microsoft Docs](https://docs.microsoft.com/en-us/)

@@ -3,7 +3,7 @@
 @snapend
 
 @snap[midpoint span-100]
-## Docker, Kubernetes
+## Docker
 @snapend
 
 @snap[south-east span-30]

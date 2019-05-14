@@ -132,8 +132,54 @@ dotnet publish -c Release -r win10-x64
 
 
 ---
-## References:
-[C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  
+## Containerization
+* Containers provide a **lightweight way to isolate the application** from the rest of the host system
+* Sharing just the kernel
+* Using resources given to your application
+* **.NET Core**
 
 +++
-## Refences to used images:
+## Docker
+* [Docs](https://docs.docker.com/)
+* Open platform for **developing**, **shipping**, and **running** applications
+* **Separate applications from infrastructure** so software can be delivered quickly
+
++++
+### Image
+* **Ordered collection of filesystem changes** 
+* Form the basis of a container
+* Doesn't have a state
+* Read-only
+* Can be based on another image
+
++++ 
+### Container
+* **Runnable instance of an image**
+* Multiple containers can be instantiated
+  * Isolated from one another
+* Each container instance has its own filesystem, memory, and network interface
+
++++
+### Registries
+* **Collection of image repositories**
+
+![](/Lectures/Lecture13/Assets/img/TaxaonomyInDocker.png)
+
++++
+### Dockerfile
+* **File that defines a set of instructions that creates an image**
+* Each instruction in the Dockerfile creates a layer in the image
+  * When you rebuild the image only the layers that have changed are rebuilt
+* Allows to distribute the instructions on how to create the image
+
++++
+### Containerize .NET Core Prerequisites
+* *.NET Core SDK* (2.2) - [link](https://dotnet.microsoft.com/download)
+* *Docker Community Edition* - [link](https://www.docker.com/products/docker-desktop)
+* Temporary working directory for the Dockerfile and .NET Core example app
+
+---
+## References:
+[Docker Docs](https://docs.docker.com/)
+[Microsoft Docs - Introduction to .NET and Docker](https://docs.microsoft.com/en-us/dotnet/core/docker/intro-net-docker)
+[C# 7.0 in a Nutshell: The Definitive Reference](https://www.amazon.com/C-7-0-Nutshell-Definitive-Reference/dp/1491987650)  

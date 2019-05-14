@@ -117,10 +117,10 @@ dotnet publish -c Release -r win10-x64
 ```
 
 +++
-## IDE
+## IDEs
 * Microsoft Visual Studio
 * Microsoft Visual Studio Code
-* Microsoft Visual Studio for Mac (Xamarin Studio)
+* Microsoft Visual Studio for Mac (Xamarin Studio, Monodevelop)
 * JetBrains Rider
 * ⋮
 

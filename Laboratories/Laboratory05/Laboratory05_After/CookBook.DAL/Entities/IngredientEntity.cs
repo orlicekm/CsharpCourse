@@ -1,4 +1,6 @@
-﻿namespace CookBook.DAL.Entities
+﻿using System.Collections.Generic;
+
+namespace CookBook.DAL.Entities
 {
     public class IngredientEntity : EntityBase
     {

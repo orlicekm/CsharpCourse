@@ -1,4 +1,7 @@
-﻿namespace CookBook.DAL
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+
+namespace CookBook.DAL
 {
     internal class DesignTimeCookbookDbContextFactory : IDesignTimeDbContextFactory<CookBookDbContext>
     {

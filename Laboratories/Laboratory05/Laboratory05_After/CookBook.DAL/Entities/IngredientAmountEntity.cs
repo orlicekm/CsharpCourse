@@ -1,4 +1,5 @@
-﻿using CookBook.DAL.Enums;
+﻿using System.Collections.Generic;
+using CookBook.DAL.Enums;
 
 namespace CookBook.DAL.Entities
 {

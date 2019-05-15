@@ -1,4 +1,7 @@
-﻿namespace CookBook.DAL.Migrations
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
+
+namespace CookBook.DAL.Migrations
 {
     public partial class CreateCookBookdatabase : Migration
     {

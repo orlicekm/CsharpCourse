@@ -1,5 +1,8 @@
-﻿using CookBook.DAL.Entities;
+﻿using System.Linq;
+using CookBook.DAL.Entities;
 using CookBook.DAL.Enums;
+using Microsoft.EntityFrameworkCore;
+using Xunit;
 
 namespace CookBook.DAL.Tests
 {

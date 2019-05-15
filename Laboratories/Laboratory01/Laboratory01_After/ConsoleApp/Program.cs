@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Exercise_01.ConsoleApp
+namespace ConsoleApp
 {
     internal class Program
     {

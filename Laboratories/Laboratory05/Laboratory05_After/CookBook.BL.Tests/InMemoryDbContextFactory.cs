@@ -1,4 +1,6 @@
 ﻿using CookBook.BL.Factories;
+using CookBook.DAL;
+using Microsoft.EntityFrameworkCore;
 
 namespace CookBook.BL.Tests
 {

@@ -1,6 +1,12 @@
 ﻿using System;
+using System.Windows;
+using System.Windows.Input;
 using CookBook.App.Commands;
 using CookBook.App.Services;
+using CookBook.BL.Messages;
+using CookBook.BL.Models;
+using CookBook.BL.Repositories;
+using CookBook.BL.Services;
 
 namespace CookBook.App.ViewModels
 {

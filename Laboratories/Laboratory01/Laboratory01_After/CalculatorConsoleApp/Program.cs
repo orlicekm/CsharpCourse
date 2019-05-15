@@ -1,7 +1,7 @@
 ﻿using System;
 using CommandLine;
 
-namespace Exercise_01.CalculatorConsoleApp
+namespace CalculatorConsoleApp
 {
     internal class Program
     {

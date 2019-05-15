@@ -17,8 +17,8 @@ namespace CookBook.BL.Tests
         {
             var model = new IngredientDetailModel
             {
-                Description = "Testovací ingredience",
-                Name = "Ingredience 1"
+                Description = "test ingredient",
+                Name = "ingredient 1"
             };
 
             var returnedModel = fixture.Repository.Create(model);

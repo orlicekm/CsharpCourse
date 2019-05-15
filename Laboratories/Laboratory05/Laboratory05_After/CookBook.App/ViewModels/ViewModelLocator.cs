@@ -1,4 +1,7 @@
 ﻿using CookBook.App.Services;
+using CookBook.BL.Factories;
+using CookBook.BL.Repositories;
+using CookBook.BL.Services;
 
 namespace CookBook.App.ViewModels
 {

@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Linq;
 
-namespace Exercise_01.CalculatorConsoleApp
+namespace CalculatorConsoleApp
 {
     internal static class EnumExtensions
     {

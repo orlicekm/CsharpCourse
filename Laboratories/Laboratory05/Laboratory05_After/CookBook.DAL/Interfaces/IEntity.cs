@@ -1,4 +1,6 @@
-﻿namespace CookBook.DAL.Entities
+﻿using System;
+
+namespace CookBook.DAL.Entities
 {
     public interface IEntity
     {

@@ -1,4 +1,6 @@
-﻿using CookBook.App.ViewModels;
+﻿using System.Windows;
+using System.Windows.Controls;
+using CookBook.App.ViewModels;
 
 namespace CookBook.App.Views
 {

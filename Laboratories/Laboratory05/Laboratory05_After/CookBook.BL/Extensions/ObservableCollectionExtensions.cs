@@ -1,4 +1,7 @@
-﻿namespace CookBook.BL.Extensions
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
+
+namespace CookBook.BL.Extensions
 {
     public static class ObservableCollectionExtensions
     {

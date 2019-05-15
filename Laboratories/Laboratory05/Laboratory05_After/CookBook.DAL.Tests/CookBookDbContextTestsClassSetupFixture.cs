@@ -1,4 +1,7 @@
-﻿namespace CookBook.DAL.Tests
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+
+namespace CookBook.DAL.Tests
 {
     public class CookBookDbContextTestsClassSetupFixture : IDisposable
     {

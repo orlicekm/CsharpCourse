@@ -1,4 +1,8 @@
-﻿namespace CookBook.BL.Models
+﻿using System;
+using System.ComponentModel;
+using System.Runtime.CompilerServices;
+
+namespace CookBook.BL.Models
 {
     public abstract class ModelBase : INotifyPropertyChanged
     {

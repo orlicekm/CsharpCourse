@@ -1,7 +1,7 @@
-﻿using CommandLine;
-using Exercise_01.CalculatorUtils;
+﻿using CalculatorUtils;
+using CommandLine;
 
-namespace Exercise_01.CalculatorConsoleApp
+namespace CalculatorConsoleApp
 {
     /// <summary>
     ///     CommandLine parser settings

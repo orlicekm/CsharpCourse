@@ -1,4 +1,6 @@
-﻿namespace CookBook.App.Services
+﻿using System.Windows;
+
+namespace CookBook.App.Services
 {
     public class MessageBoxService : IMessageBoxService
     {

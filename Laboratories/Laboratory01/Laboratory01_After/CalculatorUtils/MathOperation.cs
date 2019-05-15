@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace Exercise_01.CalculatorUtils
+namespace CalculatorUtils
 {
     public enum MathOperation
     {

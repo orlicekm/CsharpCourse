@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Exercise_01.CalculatorUtils
+namespace CalculatorUtils
 {
     public class Calculator
     {

@@ -1,4 +1,6 @@
-﻿namespace CookBook.BL.Messages
+﻿using System;
+
+namespace CookBook.BL.Messages
 {
     public class IngredientDeletedMessage : IMessage
     {

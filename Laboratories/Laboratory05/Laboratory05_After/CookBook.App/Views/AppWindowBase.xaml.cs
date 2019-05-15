@@ -1,4 +1,6 @@
-﻿namespace CookBook.App.Views
+﻿using System.Windows;
+
+namespace CookBook.App.Views
 {
     /// <summary>
     ///     Interaction logic for AppWindowBase.xaml

@@ -1,7 +1,7 @@
 ﻿using System;
-using Exercise_01.CalculatorUtils;
+using CalculatorUtils;
 
-namespace Exercise_01.CalculatorConsoleApp
+namespace CalculatorConsoleApp
 {
     internal class CalculatorWrapper
     {

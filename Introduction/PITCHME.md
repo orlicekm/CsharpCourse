@@ -127,3 +127,12 @@
   * 40 hours
 * Online distribution
 * Presented offline
+
+---
+# Otázky k obhajobě
+1. Zdůvodněte, že časový harmonogram kurzu je adekvátní k množství informací v něm prezentovaných?
+* *Text1*
+2. Kde lze najít zadání pro jednotlivé laboratoře? Lze vypracovat laboratoře samostatně, nebo je uvažováno vedení studentů v průběhu laboratoří?
+* *Text2*
+3. Můžete prosím porovnat vytvořený kurz s existujícími kurzy? V čem se liší/shodují a proč?
+* *Text3*

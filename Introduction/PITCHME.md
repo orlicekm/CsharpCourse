@@ -5,6 +5,10 @@
 <font size="5">[ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]</font>
 </div>
 
+<div class="left">
+<a href="https://gitpitch.com/orlicekm/CsharpCourse/master?p=Introduction#/">[ Online ]</a>
+</div>
+
 ---
 # **Term thesis assignment**
 1. **Find out**
@@ -129,10 +133,23 @@
 * Presented offline
 
 ---
-# Otázky k obhajobě
-1. Zdůvodněte, že časový harmonogram kurzu je adekvátní k množství informací v něm prezentovaných?
-* *Text1*
-2. Kde lze najít zadání pro jednotlivé laboratoře? Lze vypracovat laboratoře samostatně, nebo je uvažováno vedení studentů v průběhu laboratoří?
-* *Text2*
-3. Můžete prosím porovnat vytvořený kurz s existujícími kurzy? V čem se liší/shodují a proč?
-* *Text3*
+## Otázky k obhajobě - 1/3
+*Zdůvodněte, že časový harmonogram kurzu je adekvátní k množství informací v něm prezentovaných?*
+* Jediny zdroj informacii v kurze 
+* Jednoduchá úprava kurzu
+* Prezentácie skúšané predniesť v časovom limite
+
++++
+## Otázky k obhajobě - 2/3
+*Kde lze najít zadání pro jednotlivé laboratoře? Lze vypracovat laboratoře samostatně, nebo je uvažováno vedení studentů v průběhu laboratoří?*
+* Výčet úloh
+* V '.README' súboroch v koreňovej zložke káždého cvičenia
+* Očakáva sa vedenie študentov lektorom
+
++++
+## Otázky k obhajobě - 3/3
+*Můžete prosím porovnat vytvořený kurz s existujícími kurzy? V čem se liší/shodují a proč?*
+* Zhoduje sa s 20483C 
+  * Dĺžke rozdelení a počte materiálov
+* Obsah nemá spoločný s inými kurzami
+  * Komplexnú znalosť - desktopovú aplikáciu napojenú na databázu

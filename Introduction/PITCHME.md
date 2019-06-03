@@ -1,13 +1,18 @@
-﻿
+﻿@snap[north span-100]
 # Technological IT Course for Internal Education
-## **Term thesis - presentation**
-<div class="right">
-<font size="5">[ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]</font>
-</div>
+@snapend
 
-<div class="left">
-<a href="https://gitpitch.com/orlicekm/CsharpCourse/master?p=Introduction#/">[ Online ]</a>
-</div>
+@snap[midpoint span-100]
+## **Term thesis - presentation**
+@snapend
+
+@snap[south-east span-30]
+[ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
+@snapend
+
+@snap[south-west span-30]
+[[ Online ]](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Introduction#/)
+@snapend
 
 ---
 # **Term thesis assignment**

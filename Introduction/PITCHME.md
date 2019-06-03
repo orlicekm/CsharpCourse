@@ -50,7 +50,7 @@
 
 ---
 # **Motivation**
-* **Open source** - *MIT* lisence
+* **Open source** - *MIT* licence
   * Free to use
   * Free to change
 * **Distribution**
@@ -142,7 +142,7 @@
 *Zdůvodněte, že časový harmonogram kurzu je adekvátní k množství informací v něm prezentovaných?*
 * Jediný zdroj informácií v kurze 
 * Jednoduchá úprava kurzu
-* Prezentácie skúšané predniesť v časovom limite
+* Prezentácie boli prednášané v časovom limite
 
 +++
 ## Otázky k obhajobě - 2/3

@@ -8,16 +8,35 @@
     font-size: 22pt; }
   
 .reveal h1 {
-    font-size: 2.5em; }
+    text-align: center;
+    font-size: 2.5em;
+    top: 25px;
+    left: 50%;
+    position: fixed;
+    transform: translateX(-50%);
+}
 
 .reveal h2 {
-    font-size: 1.5em; }
+    text-align: center;
+    font-size: 1.7em;
+    top: 25px;
+    left: 50%;
+    position: fixed;
+    transform: translateX(-50%);
+}
 
 .reveal h3 {
-    font-size: 1.3em; }
+    font-size: 1.6em;
+    top: 25px;
+    left: 50%;
+    position: fixed;
+    text-align: center;
+    transform: translateX(-50%);
+}
 
 .reveal h4 {
-    font-size: 1.1em; }
+    font-size: 1.5em;
+}
 
 
     .reveal span.menu-title.slide-title {

@@ -71,7 +71,7 @@
     * *GitPitch*
 * **Practical - exercises**
     * *C# solutions*
-      * **Before**
+      * **Before** - requires implementation
       * **After** - model solution for control
     * *Visual Studio*
 

@@ -2,10 +2,6 @@
 # Technological IT Course for Internal Education
 @snapend
 
-@snap[midpoint span-100]
-## **Term thesis - presentation**
-@snapend
-
 @snap[south-east span-30]
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
 @snapend

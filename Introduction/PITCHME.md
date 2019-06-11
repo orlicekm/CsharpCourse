@@ -32,7 +32,7 @@
 
 ---
 # **Resources**
-* Related to **C#** programming language(course theme)
+* Related to **C#** programming language (course theme)
 * **Courses**
   * Mostly online
   * Material forms

@@ -6,10 +6,6 @@
 [ Michal Orlicek <xorlic00@stud.fit.vutbr.cz> ]
 @snapend
 
-@snap[south-west span-30]
-[[ Online ]](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Introduction#/)
-@snapend
-
 ---
 # **Term thesis assignment**
 1. **Find out**

@@ -132,25 +132,3 @@
   * 40 hours
 * Online distribution
 * Presented offline
-
----
-## Otázky k obhajobě - 1/3
-*Zdůvodněte, že časový harmonogram kurzu je adekvátní k množství informací v něm prezentovaných?*
-* Jediný zdroj informácií v kurze 
-* Jednoduchá úprava kurzu
-* Prezentácie boli prednášané v časovom limite
-
-+++
-## Otázky k obhajobě - 2/3
-*Kde lze najít zadání pro jednotlivé laboratoře? Lze vypracovat laboratoře samostatně, nebo je uvažováno vedení studentů v průběhu laboratoří?*
-* Výčet úloh
-* V `.README` súboroch v koreňovej zložke káždého cvičenia
-* Očakáva sa vedenie študentov lektorom
-
-+++
-## Otázky k obhajobě - 3/3
-*Můžete prosím porovnat vytvořený kurz s existujícími kurzy? V čem se liší/shodují a proč?*
-* Zhoduje sa s 20483C 
-  * V dĺžke, rozdelení materiálov a ich počte
-* Obsah nemá spoločný s inými kurzami
-  * Učí komplexnú znalosť - vytváranie desktopovej aplikácie napojenej na databázu

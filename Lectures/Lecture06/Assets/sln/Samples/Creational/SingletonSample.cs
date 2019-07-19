@@ -7,16 +7,19 @@ namespace Samples.Creational
     {
         public static void Main()
         {
-            var b1 = LoadBalancer.GetLoadBalancer();
-            var b2 = LoadBalancer.GetLoadBalancer();
-            var b3 = LoadBalancer.GetLoadBalancer();
-            var b4 = LoadBalancer.GetLoadBalancer();
+            var b1 = LoadBalancer.Instance;
+            var b2 = LoadBalancer.Instance;
+            var b3 = LoadBalancer.Instance;
+            var b4 = LoadBalancer.Instance;
 
             // Same instance?
-            if (b1 == b2 && b2 == b3 && b3 == b4) Console.WriteLine("Same instance\n");
+            if (b1 == b2 && b2 == b3 && b3 == b4)
+            {
+                Console.WriteLine("Same instance\n");
+            }
 
             // Load balance 15 server requests
-            var balancer = LoadBalancer.GetLoadBalancer();
+            var balancer = LoadBalancer.Instance;
             for (var i = 0; i < 15; i++)
             {
                 var server = balancer.Server;
@@ -25,11 +28,11 @@ namespace Samples.Creational
         }
     }
 
+    /// <summary>
+    /// https://csharpindepth.com/Articles/Singleton
+    /// </summary>
     internal class LoadBalancer
     {
-        private static LoadBalancer instance;
-        private static readonly object syncLock = new object();
-
         private readonly Random random = new Random();
         private readonly List<string> servers = new List<string>();
 
@@ -42,6 +45,8 @@ namespace Samples.Creational
             servers.Add("ServerV");
         }
 
+        public static LoadBalancer Instance { get; } = new LoadBalancer();
+
         // Random load balancer
         public string Server
         {
@@ -50,21 +55,6 @@ namespace Samples.Creational
                 var r = random.Next(servers.Count);
                 return servers[r];
             }
-        }
-
-        public static LoadBalancer GetLoadBalancer()
-        {
-            // Support multithreaded applications through
-            // 'Double checked locking' pattern which (once
-            // the instance exists) avoids locking each
-            // time the method is invoked
-            if (instance == null)
-                lock (syncLock)
-                {
-                    if (instance == null) instance = new LoadBalancer();
-                }
-
-            return instance;
         }
     }
 }

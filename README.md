@@ -1,4 +1,6 @@
 # C# course
+For more informations about course please look at my [Bachelor's thesis](https://www.vutbr.cz/www_base/zav_prace_soubor_verejne.php?file_id=197505) (in Slovak language).
+
 ## Introduction
 * [Slides](https://gitpitch.com/orlicekm/CsharpCourse/master?p=Introduction)  
 * [Markdown](/Introduction/PITCHME.md)
@@ -12,7 +14,7 @@
 * [Lecture 06](/Lectures/Lecture06)  - Design patterns in C#
 * [Lecture 07](/Lectures/Lecture07)  - Clean code in C#
 * [Lecture 08](/Lectures/Lecture08)  - Repository, UnitOfWork, Facade and Mapper design patterns
-* [Lecture 09](/Lectures/Lecture09)  - Model–View–ViewModel (MVVM) design pattern
+* [Lecture 09](/Lectures/Lecture09)  - Modelâ€“Viewâ€“ViewModel (MVVM) design pattern
 * [Lecture 10](/Lectures/Lecture10)  - Windows Presentation Foundation (WPF)
 * [Lecture 11](/Lectures/Lecture11)  - Asynchronous and parallel programming in C#
 * [Lecture 12](/Lectures/Lecture12)  - Performance analyzing and memory managment in C#
